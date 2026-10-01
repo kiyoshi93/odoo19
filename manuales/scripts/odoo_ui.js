@@ -51,6 +51,7 @@ async function esperarCarga(pagina, extra = 600) {
 async function irA(pagina, rutaRelativa) {
   await pagina.goto(`${URL_BASE}${rutaRelativa}`, { waitUntil: 'domcontentloaded' });
   await esperarCarga(pagina, 1200);
+  await pagina.mouse.move(1, 1);
 }
 
 // Captura con resaltado opcional (recuadro rojo) sobre uno o varios selectores
@@ -100,13 +101,25 @@ async function escribir(raiz, nombre, valor) {
 }
 
 async function fecha(raiz, nombre, valor, { enter = true } = {}) {
-  // valor en formato dd/mm/aaaa
-  const entrada = campo(raiz, nombre).locator('input').first();
-  await cerrarSelectorFecha(entrada.page());
-  await entrada.click();
-  await entrada.fill(valor);
-  if (enter) await entrada.press('Enter');
-  await cerrarSelectorFecha(entrada.page());
+  // valor en formato dd/mm/aaaa. Soporta input directo y el botón de rango de fechas de Odoo 19
+  const widget = campo(raiz, nombre);
+  const pagina = widget.page();
+  await cerrarSelectorFecha(pagina);
+  let entrada = widget.locator('input').first();
+  if (!(await entrada.count())) {
+    await widget.locator('.o_input').first().click();
+    await pagina.waitForTimeout(400);
+    entrada = widget.locator('input').first();
+  }
+  if (await entrada.count()) {
+    await entrada.click();
+    await entrada.fill(valor);
+  } else {
+    await pagina.keyboard.press('Control+A');
+    await pagina.keyboard.type(valor);
+  }
+  if (enter) await pagina.keyboard.press('Enter');
+  await cerrarSelectorFecha(pagina);
 }
 
 async function cerrarSelectorFecha(pagina) {
@@ -114,6 +127,7 @@ async function cerrarSelectorFecha(pagina) {
 }
 
 async function muchosAUno(pagina, raiz, nombre, texto, opcion = null) {
+  await pagina.mouse.move(1, 1);
   const entrada = campo(raiz, nombre).locator('input').first();
   await cerrarSelectorFecha(pagina);
   await entrada.click();
