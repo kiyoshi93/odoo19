@@ -2,11 +2,16 @@
 import json, os, subprocess, sys
 import imageio_ffmpeg
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from voz import sintetizar
+if os.environ.get('VOZ'):
+    from voz_neural import sintetizar  # VOZ=ef_dora | em_alex | em_santa
+else:
+    from voz import sintetizar
+SUFIJO = f"_{os.environ['VOZ']}" if os.environ.get('VOZ') else ''
+SOLO_CON_VOZ = bool(os.environ.get('SOLO_CON_VOZ'))
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 BASE = os.path.dirname(os.path.abspath(__file__))
-TRAMOS = os.path.join(BASE, 'tramos'); os.makedirs(TRAMOS, exist_ok=True)
+TRAMOS = os.path.join(BASE, 'tramos' + os.environ.get('VOZ', '')); os.makedirs(TRAMOS, exist_ok=True)
 SALIDA = os.path.join(BASE, 'salida'); os.makedirs(SALIDA, exist_ok=True)
 FPS, ENTRADA, COLA = 30, 0.35, 0.75  # silencio antes y después de cada locución
 
@@ -57,7 +62,7 @@ def main():
     correr(['-f', 'concat', '-safe', '0', '-i', os.path.join(TRAMOS, 'lista.txt'), '-c', 'copy', base_mp4])
 
     # Subtítulos: SRT editable y ASS con estilo de caja para quemar en el video
-    with open(os.path.join(SALIDA, 'Promo_Nomina_Enterprise_subtitulos.srt'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(SALIDA, f'Promo_Nomina_Enterprise_subtitulos{SUFIJO}.srt'), 'w', encoding='utf-8') as f:
         for i, (a, b, texto) in enumerate(subtitulos, 1):
             f.write(f'{i}\n{marca_srt(a)} --> {marca_srt(b)}\n{texto}\n\n')
     ass = os.path.join(TRAMOS, 'subtitulos.ass')
@@ -72,11 +77,13 @@ def main():
 
     fuentes = os.path.join(BASE, 'fuentes')
     filtro_sub = f"subtitles={ass}:fontsdir={fuentes}"
-    con_voz = os.path.join(SALIDA, 'Promo_Nomina_Enterprise_con_voz.mp4')
+    con_voz = os.path.join(SALIDA, f'Promo_Nomina_Enterprise_con_voz{SUFIJO}.mp4')
     sin_voz = os.path.join(SALIDA, 'Promo_Nomina_Enterprise_sin_voz_con_subtitulos.mp4')
     limpio = os.path.join(SALIDA, 'Promo_Nomina_Enterprise_sin_voz_sin_subtitulos.mp4')
     comunes = ['-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-movflags', '+faststart']
     correr(['-i', base_mp4, '-vf', filtro_sub, '-c:a', 'copy'] + comunes + [con_voz])
+    if SOLO_CON_VOZ:
+        print('total', round(t, 1), 's'); return
     # Las versiones sin voz llevan pista silenciosa: algunas redes rechazan videos sin audio
     silencio = ['-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo']
     correr(['-i', base_mp4] + silencio + ['-map', '0:v', '-map', '1:a', '-shortest', '-vf', filtro_sub, '-c:a', 'aac'] + comunes + [sin_voz])

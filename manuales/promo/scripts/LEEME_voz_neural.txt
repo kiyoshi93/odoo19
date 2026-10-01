@@ -1,0 +1,8 @@
+Voz neuronal (Kokoro, offline)
+1. pip install kokoro-onnx soundfile
+2. Descargar en una carpeta (por defecto ../tts respecto a los scripts, o indicar KOKORO_DIR):
+   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+   https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+3. Voces en español: ef_dora (mujer), em_alex (hombre), em_santa (hombre)
+4. VOZ=ef_dora SOLO_CON_VOZ=1 python3 montar_promo.py
+   Sin VOZ se usa la voz robótica de eSpeak (voz.py) y se generan también las versiones sin voz.
