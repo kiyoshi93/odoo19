@@ -36,7 +36,7 @@ def marca_srt(s):
 
 
 def main():
-    escenas = json.load(open(os.path.join(BASE, 'escenas.json')))
+    escenas = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'escenas.json')))
     lista, subtitulos, guion, t = [], [], [], 0.0
     for n, e in enumerate(escenas):
         wav = os.path.join(TRAMOS, f'{e["id"]}.wav')
