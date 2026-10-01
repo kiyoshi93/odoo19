@@ -1,0 +1,119 @@
+[
+ {
+  "n": 1,
+  "titulo": "Portada",
+  "inicio": 0.0,
+  "fin": 17.2,
+  "texto": "Hola. Les comparto el resumen de nuestra primera sesión de soporte sobre la nómina peruana en Odoo diecinueve Enterprise. En unos minutos repasamos lo que vimos en su propia base, con datos de prueba ficticios.",
+  "lectura": 15.2,
+  "holgura": 2.0
+ },
+ {
+  "n": 2,
+  "titulo": "Lo que compraron",
+  "inicio": 17.2,
+  "fin": 41.4,
+  "texto": "Ustedes adquirieron dos piezas que trabajan juntas: la nómina Enterprise y la facturación electrónica. Las dos escriben en la misma contabilidad: cada boleta validada genera su asiento en el diario de salarios, y cada recibo por honorarios se registra como factura de proveedor tipo cero dos, que luego alimenta el PLAME.",
+  "lectura": 22.2,
+  "holgura": 2.0
+ },
+ {
+  "n": 3,
+  "titulo": "El ciclo de cada mes",
+  "inicio": 41.4,
+  "fin": 63.4,
+  "texto": "Cada mes el ciclo es el mismo: revisar parámetros como la remuneración mínima y la remuneración máxima asegurable; registrar las novedades, como altas, bajas y vacaciones aprobadas; completar asistencias; calcular y validar los recibos; publicar asientos e imprimir boletas; y, al final, generar los archivos legales.",
+  "lectura": 20.0,
+  "holgura": 2.0
+ },
+ {
+  "n": 4,
+  "titulo": "Demo: menú Nómina PE",
+  "inicio": 63.4,
+  "fin": 85.46521739130435,
+  "texto": "En la aplicación Nómina, el tablero muestra advertencias útiles, como trabajadores sin cuenta bancaria. El menú Nómina PE reúne todo lo de la localización: parámetros legales, maestros de SUNAT, seguros, los reportes de planilla, PLAME, AFPnet y pago a bancos, y la contabilidad de nómina.",
+  "lectura": 19.6,
+  "holgura": 2.5
+ },
+ {
+  "n": 5,
+  "titulo": "Demo: alta de un trabajador",
+  "inicio": 85.46521739130435,
+  "fin": 122.74782608695654,
+  "texto": "La ficha del trabajador tiene todo lo necesario. En la pestaña Personal van el DNI, la fecha de nacimiento y las cuentas bancarias de sueldo y de CTS. En Nómina PE se registran los datos del T-Registro, la AFP con su CUSPP, el régimen de salud y la EPS. Los hijos menores de dieciocho años generan automáticamente la asignación familiar. Y en la pestaña Nómina se indica la fecha de inicio del contrato, el sueldo y la categoría de pago.",
+  "lectura": 34.8,
+  "holgura": 2.5
+ },
+ {
+  "n": 6,
+  "titulo": "Demo: recibo, asiento y boleta",
+  "inicio": 122.74782608695654,
+  "fin": 160.41782608695655,
+  "texto": "Este es el recibo de julio de Carlos. En el cálculo se ven los ingresos, los aportes a la AFP, EsSalud, la EPS, SENATI y el neto a pagar: tres mil ciento cuarenta y nueve soles con nueve céntimos, el mismo valor que espera el caso de prueba de la localización. Al validar, Odoo genera el asiento contable con las cuentas del plan contable general empresarial, y con el botón imprimir se obtiene la boleta de pago de remuneraciones.",
+  "lectura": 34.3,
+  "holgura": 3.3
+ },
+ {
+  "n": 7,
+  "titulo": "El orden dentro del mes",
+  "inicio": 160.41782608695655,
+  "fin": 184.11782608695654,
+  "texto": "Una regla que evita muchos errores: el orden dentro del mes. Primero el adelanto quincenal, luego la gratificación, después las vacaciones y al final la planilla mensual. Cada paso se valida antes del siguiente, porque el descuento del adelanto, la renta de quinta y la CTS solo leen recibos validados.",
+  "lectura": 21.7,
+  "holgura": 2.0
+ },
+ {
+  "n": 8,
+  "titulo": "Demo: vacaciones y faltas",
+  "inicio": 184.11782608695654,
+  "fin": 210.01782608695655,
+  "texto": "Las vacaciones se registran como una ausencia aprobada. Aquí, Jorge tuvo dos faltas y tres días de vacaciones en septiembre. La remuneración básica descuenta los días calendario sobre un mes de treinta días, como indica el decreto legislativo setecientos trece: novecientos cuarenta y uno con sesenta y siete.",
+  "lectura": 20.9,
+  "holgura": 5.0
+ },
+ {
+  "n": 9,
+  "titulo": "Demo: PLAME",
+  "inicio": 210.01782608695655,
+  "fin": 228.98782608695655,
+  "texto": "Los archivos para el PDT PLAME se generan en un clic: se elige el mes y Odoo arma el archivo comprimido con remuneraciones, jornada y el anexo de cuarta categoría, listo para importar.",
+  "lectura": 14.3,
+  "holgura": 4.6
+ },
+ {
+  "n": 10,
+  "titulo": "Demo: recibos por honorarios",
+  "inicio": 228.98782608695655,
+  "fin": 246.81782608695653,
+  "texto": "Los recibos por honorarios se registran en contabilidad, con la retención de ocho por ciento cuando corresponde. El exportador declara los recibos pagados en el mes y genera los archivos de cuarta categoría.",
+  "lectura": 14.3,
+  "holgura": 3.5
+ },
+ {
+  "n": 11,
+  "titulo": "Recomendaciones",
+  "inicio": 246.81782608695653,
+  "fin": 271.0178260869565,
+  "texto": "Antes de salir en vivo les recomendamos: validar el archivo del banco antes del primer pago, procesar gratificación y CTS con recibos individuales, regenerar las entradas de trabajo antes de calcular el mes, mantener al día los parámetros y feriados, y hacer la primera nómina en paralelo con su planilla actual.",
+  "lectura": 22.2,
+  "holgura": 2.0
+ },
+ {
+  "n": 12,
+  "titulo": "Cierre mensual",
+  "inicio": 271.0178260869565,
+  "fin": 282.11782608695654,
+  "texto": "Y esta es la lista del cierre mensual en diez pasos. La encontrarán con más detalle en el manual de usuario.",
+  "lectura": 9.1,
+  "holgura": 2.0
+ },
+ {
+  "n": 13,
+  "titulo": "Cierre",
+  "inicio": 282.11782608695654,
+  "fin": 294.5178260869565,
+  "texto": "Gracias por su tiempo. En las próximas sesiones trabajaremos con sus propios datos: carga de trabajadores, una nómina en paralelo y los archivos legales.",
+  "lectura": 10.4,
+  "holgura": 2.0
+ }
+]
