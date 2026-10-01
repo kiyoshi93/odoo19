@@ -1,10 +1,13 @@
 // Capítulo 8: recibo de nómina individual (gratificación y mensual de julio 2026)
 const u = require('./odoo_ui');
 const EMPLEADO = process.env.EMPLEADO || 'Carlos Alberto Quispe';
-const recibos = [
+const SOLO = process.env.SOLO_ESTRUCTURA;
+const PREF = process.env.PREFIJO_RECIBO;
+let recibos = [
   { prefijo: 'p08a', estructura: 'Gratificaciones', desde: '01/07/2026', hasta: '31/07/2026', validar: true },
   { prefijo: 'p08b', estructura: 'Nómina Mensual Empleados', desde: '01/07/2026', hasta: '31/07/2026', validar: true },
 ];
+if (SOLO) recibos = recibos.filter((r) => r.estructura === SOLO).map((r) => ({ ...r, prefijo: PREF || r.prefijo }));
 
 (async () => {
   const { navegador, contexto, pagina } = await u.abrir();
@@ -21,7 +24,8 @@ const recibos = [
     await u.muchosAUno(pagina, f, 'struct_id', r.estructura, r.estructura);
     await u.fecha(f, 'date_from', r.desde);
     await u.fecha(f, 'date_to', r.hasta);
-    await pagina.waitForTimeout(1000);
+    await pagina.locator('.o_form_sheet').first().click({ position: { x: 5, y: 5 } });
+    await pagina.waitForTimeout(1500);
     await u.captura(pagina, `${r.prefijo}_01_recibo_nuevo`, { resaltar: [u.campo(f, 'employee_id'), u.campo(f, 'struct_id'), u.campo(f, 'date_from')] });
     await u.guardar(pagina);
     }
