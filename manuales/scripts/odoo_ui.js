@@ -123,7 +123,7 @@ async function fecha(raiz, nombre, valor, { enter = true } = {}) {
 }
 
 async function cerrarSelectorFecha(pagina) {
-  if (await pagina.locator('.o_datetime_picker').count()) { await pagina.keyboard.press('Escape'); await pagina.waitForTimeout(300); }
+  if (await pagina.locator('.o_datetime_picker:visible').count()) { await pagina.keyboard.press('Escape'); await pagina.waitForTimeout(300); }
 }
 
 async function muchosAUno(pagina, raiz, nombre, texto, opcion = null) {
@@ -163,7 +163,7 @@ async function pestana(pagina, texto) {
 async function guardar(pagina) {
   const boton = pagina.locator('.o_form_button_save').first();
   if (await boton.isVisible()) { await boton.click(); await pagina.waitForTimeout(1500); }
-  const error = pagina.locator('.o_notification.border-danger, .o_error_dialog, .modal .o_dialog_warning');
+  const error = pagina.locator('.o_notification:has-text("obligatorio"), .o_notification.border-danger, .o_error_dialog, .modal .o_dialog_warning');
   if (await error.count()) throw new Error('Error al guardar: ' + (await error.first().innerText()));
 }
 
