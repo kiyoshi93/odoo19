@@ -1,8 +1,8 @@
 // Capítulo 12 (cont.): prestadores de servicios de 4ta categoría
 const u = require('./odoo_ui');
 const prestadores = [
-  { ruc: '10400000030', nombre: 'FLORES PAREDES ROSA ELENA', paterno: 'FLORES', materno: 'PAREDES', nombres: 'ROSA ELENA', captura: true },
-  { ruc: '10400000013', nombre: 'QUISPE HUAMAN ANA LUCIA', paterno: 'QUISPE', materno: 'HUAMAN', nombres: 'ANA LUCIA' },
+  { ruc: '10999999048', nombre: 'FLORES PAREDES ROSA ELENA', paterno: 'FLORES', materno: 'PAREDES', nombres: 'ROSA ELENA', captura: true },
+  { ruc: '10999999056', nombre: 'QUISPE HUAMAN ANA LUCIA', paterno: 'QUISPE', materno: 'HUAMAN', nombres: 'ANA LUCIA' },
 ];
 
 (async () => {

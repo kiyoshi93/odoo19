@@ -122,6 +122,39 @@ async function fecha(raiz, nombre, valor, { enter = true } = {}) {
   await cerrarSelectorFecha(pagina);
 }
 
+// Rango de fechas de Odoo 19: se elige en el calendario (clic en el día inicial y en el final),
+// porque escribir en las dos entradas del widget no se aplica de forma estable.
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+async function rangoFechas(pagina, raiz, campoDesde, campoHasta, desde, hasta) {
+  await cerrarSelectorFecha(pagina);
+  await raiz.locator(`[data-field="${campoDesde}"]`).first().click();
+  await pagina.waitForTimeout(500);
+  const selector = pagina.locator('.o_datetime_picker:visible');
+  const irAlMes = async (fechaTexto) => {
+    const [, mes, anio] = fechaTexto.split('/').map(Number);
+    for (let i = 0; i < 36; i++) {
+      const cabecera = (await selector.locator('.o_header_part').first().innerText()).toLowerCase();
+      const [nombreMes, anioMostrado] = cabecera.trim().split(/\s+/);
+      const indice = nombreMes.startsWith('set') ? 8 : MESES.findIndex((m) => nombreMes.startsWith(m.slice(0, 4)));
+      const diferencia = (anio - Number(anioMostrado)) * 12 + (mes - 1 - indice);
+      if (diferencia === 0) return;
+      await selector.locator(diferencia < 0 ? '.o_previous' : '.o_next').click();
+      await pagina.waitForTimeout(200);
+    }
+    throw new Error(`No se pudo navegar al mes de ${fechaTexto}`);
+  };
+  const elegirDia = async (fechaTexto) => {
+    await irAlMes(fechaTexto);
+    const dia = Number(fechaTexto.split('/')[0]);
+    await selector.locator('.o_date_item_cell:not(.o_out_of_range)').filter({ hasText: new RegExp(`^${dia}$`) }).first().click();
+    await pagina.waitForTimeout(400);
+  };
+  await elegirDia(desde);
+  await elegirDia(hasta);
+  await pagina.keyboard.press('Escape').catch(() => {});
+  await pagina.waitForTimeout(500);
+}
+
 async function cerrarSelectorFecha(pagina) {
   if (await pagina.locator('.o_datetime_picker:visible').count()) { await pagina.keyboard.press('Escape'); await pagina.waitForTimeout(300); }
 }
@@ -139,6 +172,7 @@ async function muchosAUno(pagina, raiz, nombre, texto, opcion = null) {
   else await desplegable.first().click();
   await pagina.waitForTimeout(400);
   await pagina.locator('.o-autocomplete--dropdown-menu:visible').waitFor({ state: 'hidden', timeout: 4000 }).catch(() => {});
+  if (await pagina.locator('.o-autocomplete--dropdown-menu:visible').count()) { await pagina.keyboard.press('Escape'); await pagina.waitForTimeout(300); }
 }
 
 async function seleccion(pagina, raiz, nombre, etiqueta) {
@@ -168,4 +202,4 @@ async function guardar(pagina) {
   if (await error.count()) throw new Error('Error al guardar: ' + (await error.first().innerText()));
 }
 
-module.exports = { campo, escribir, fecha, muchosAUno, seleccion, casilla, pestana, guardar, alInicio, abrir, asegurarLogin, esperarCarga, irA, captura, URL_BASE, BD };
+module.exports = { rangoFechas, campo, escribir, fecha, muchosAUno, seleccion, casilla, pestana, guardar, alInicio, abrir, asegurarLogin, esperarCarga, irA, captura, URL_BASE, BD };

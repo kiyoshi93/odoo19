@@ -2,10 +2,10 @@
 const u = require('./odoo_ui');
 
 const trabajadores = [
-  { nombre: 'Jorge Luis Fernández Rojas', puesto: 'Operario de Confección', dni: '47852169', nacimiento: '20/08/1995',
+  { nombre: 'Jorge Luis Fernández Rojas', puesto: 'Operario de Confección', dni: '99999902', nacimiento: '20/08/1995',
     nombres: 'Jorge Luis', paterno: 'Fernández', materno: 'Rojas', pension: 'ONP', pensionOpcion: 'ONP',
     salud: 'ESSALUD REGULAR', inicio: '01/01/2025', sueldo: '1130', cuenta: '19147852169011', cci: '00219119147852169011' },
-  { nombre: 'María Elena Torres Vega', puesto: 'Jefa de Administración', dni: '41236547', nacimiento: '03/02/1985',
+  { nombre: 'María Elena Torres Vega', puesto: 'Jefa de Administración', dni: '99999903', nacimiento: '03/02/1985',
     nombres: 'María Elena', paterno: 'Torres', materno: 'Vega', pension: 'INTEGRA', pensionOpcion: 'SPP INTEGRA', cuspp: '412365MTVE8', mixta: true,
     salud: 'ESSALUD REGULAR', inicio: '01/01/2025', sueldo: '8000', cuenta: '19141236547012', cci: '00219119141236547012' },
 ];

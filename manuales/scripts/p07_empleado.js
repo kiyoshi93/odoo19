@@ -3,7 +3,7 @@ const u = require('./odoo_ui');
 
 const trabajador = {
   nombre: 'Carlos Alberto Quispe Mamani', puesto: 'Analista Comercial',
-  dni: '45781236', nacimiento: '12/05/1990',
+  dni: '99999901', nacimiento: '12/05/1990',
   nombres: 'Carlos Alberto', paterno: 'Quispe', materno: 'Mamani',
   educacion: 'UNIVERSITARIA COMPLETA', pension: 'SPP HABITAT', cuspp: '578412CAQM5',
   salud: 'ESSALUD REGULAR Y EPS',
