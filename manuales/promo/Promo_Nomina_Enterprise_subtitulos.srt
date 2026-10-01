@@ -1,0 +1,92 @@
+1
+00:00:00,350 --> 00:00:03,785
+¿Tu planilla todavía vive en hojas de cálculo?
+
+2
+00:00:03,785 --> 00:00:07,445
+Conoce la nómina peruana para Odoo 19 Enterprise.
+
+3
+00:00:08,540 --> 00:00:10,126
+Todo en un solo menú:
+
+4
+00:00:10,126 --> 00:00:15,565
+parámetros legales con vigencias, maestros de SUNAT, seguros y reportes.
+
+5
+00:00:16,670 --> 00:00:19,700
+Una ficha del trabajador completa:
+
+6
+00:00:19,700 --> 00:00:24,869
+AFP u ONP con CUSPP, salud, EPS y cuentas de sueldo y CTS.
+
+7
+00:00:25,970 --> 00:00:30,102
+Registra a los hijos y la asignación familiar se calcula sola.
+
+8
+00:00:31,200 --> 00:00:34,180
+La planilla se calcula automáticamente:
+
+9
+00:00:34,180 --> 00:00:38,305
+AFP, EsSalud, EPS, SENATI y renta de quinta categoría.
+
+10
+00:00:39,410 --> 00:00:42,660
+Al validar, el asiento contable se genera solo,
+
+11
+00:00:42,660 --> 00:00:45,496
+con el plan contable general empresarial.
+
+12
+00:00:46,600 --> 00:00:49,409
+Las marcaciones de asistencia se convierten
+
+13
+00:00:49,409 --> 00:00:52,153
+en faltas y tardanzas dentro de la boleta.
+
+14
+00:00:53,250 --> 00:00:56,361
+Vacaciones según el D. Leg. 713,
+
+15
+00:00:56,361 --> 00:01:00,542
+en días calendario sobre un mes de 30 días.
+
+16
+00:01:01,640 --> 00:01:05,519
+El PLAME se genera en un clic,
+
+17
+00:01:05,519 --> 00:01:09,398
+listo para importar en el PDT.
+
+18
+00:01:10,500 --> 00:01:14,679
+También el Excel de AFPnet y el archivo de pago al banco,
+
+19
+00:01:14,679 --> 00:01:16,072
+para haberes y CTS.
+
+20
+00:01:17,170 --> 00:01:20,400
+Y los recibos por honorarios, con su retención,
+
+21
+00:01:20,400 --> 00:01:23,699
+quedan listos para el PLAME de cuarta categoría.
+
+22
+00:01:24,800 --> 00:01:29,728
+Tu nómina peruana, completa y en regla, en Odoo 19 Enterprise.
+
+23
+00:01:29,728 --> 00:01:32,669
+Escríbenos y agenda una demostración.
+
