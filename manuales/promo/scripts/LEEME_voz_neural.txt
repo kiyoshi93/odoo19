@@ -12,3 +12,8 @@ Voz de Azure Speech (acento peruano)
 - VOZ=es-PE-CamilaNeural SOLO_CON_VOZ=1 python3 manuales/promo/scripts/montar_promo.py
 - VOZ=es-PE-AlexNeural   SOLO_CON_VOZ=1 python3 manuales/promo/scripts/montar_promo.py
   (requiere pip install imageio-ffmpeg; los videos quedan en manuales/promo/salida)
+
+Voz de ElevenLabs
+- Variable ELEVENLABS_API_KEY; dominio permitido api.elevenlabs.io
+- Listar voces: python3 manuales/promo/scripts/voz_elevenlabs.py
+- VOZ=el:<voice_id> SOLO_CON_VOZ=1 python3 manuales/promo/scripts/montar_promo.py  (MODELO=eleven_multilingual_v2 por defecto)

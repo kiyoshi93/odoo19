@@ -2,20 +2,22 @@
 import json, os, subprocess, sys
 import imageio_ffmpeg
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-if os.environ.get('VOZ', '').startswith('es-'):
+if os.environ.get('VOZ', '').startswith('el:'):
+    from voz_elevenlabs import sintetizar  # VOZ=el:<voice_id>
+elif os.environ.get('VOZ', '').startswith('es-'):
     from voz_azure import sintetizar  # VOZ=es-PE-CamilaNeural | es-PE-AlexNeural
 elif os.environ.get('VOZ'):
     from voz_neural import sintetizar  # VOZ=ef_dora | em_alex | em_santa
 else:
     from voz import sintetizar
-SUFIJO = f"_{os.environ['VOZ']}" if os.environ.get('VOZ') else ''
+SUFIJO = '_' + os.environ['VOZ'].replace(':', '_') if os.environ.get('VOZ') else ''
 SOLO_CON_VOZ = bool(os.environ.get('SOLO_CON_VOZ'))
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 BASE = os.path.dirname(os.path.abspath(__file__))
 if not os.path.isdir(os.path.join(BASE, 'escenas')):  # en el repo los scripts están en promo/scripts
     BASE = os.path.dirname(BASE)
-TRAMOS = os.path.join(BASE, 'tramos' + os.environ.get('VOZ', '')); os.makedirs(TRAMOS, exist_ok=True)
+TRAMOS = os.path.join(BASE, 'tramos' + os.environ.get('VOZ', '').replace(':', '_')); os.makedirs(TRAMOS, exist_ok=True)
 SALIDA = os.path.join(BASE, 'salida'); os.makedirs(SALIDA, exist_ok=True)
 FPS, ENTRADA, COLA = 30, 0.35, 0.75  # silencio antes y después de cada locución
 
