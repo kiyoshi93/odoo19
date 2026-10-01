@@ -26,6 +26,8 @@ if (SOLO) recibos = recibos.filter((r) => r.estructura === SOLO).map((r) => ({ .
     await u.fecha(f, 'date_to', r.hasta);
     await pagina.locator('.o_form_sheet').first().click({ position: { x: 5, y: 5 } });
     await pagina.waitForTimeout(1500);
+    await u.guardar(pagina);
+    await pagina.reload(); await u.esperarCarga(pagina, 1500);
     await u.captura(pagina, `${r.prefijo}_01_recibo_nuevo`, { resaltar: [u.campo(f, 'employee_id'), u.campo(f, 'struct_id'), u.campo(f, 'date_from')] });
     await u.guardar(pagina);
     }

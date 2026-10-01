@@ -138,6 +138,7 @@ async function muchosAUno(pagina, raiz, nombre, texto, opcion = null) {
   if (opcion) await desplegable.filter({ hasText: opcion }).first().click();
   else await desplegable.first().click();
   await pagina.waitForTimeout(400);
+  await pagina.locator('.o-autocomplete--dropdown-menu:visible').waitFor({ state: 'hidden', timeout: 4000 }).catch(() => {});
 }
 
 async function seleccion(pagina, raiz, nombre, etiqueta) {
