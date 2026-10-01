@@ -6,3 +6,9 @@ Voz neuronal (Kokoro, offline)
 3. Voces en español: ef_dora (mujer), em_alex (hombre), em_santa (hombre)
 4. VOZ=ef_dora SOLO_CON_VOZ=1 python3 montar_promo.py
    Sin VOZ se usa la voz robótica de eSpeak (voz.py) y se generan también las versiones sin voz.
+
+Voz de Azure Speech (acento peruano)
+- Variables de entorno: AZURE_SPEECH_KEY y AZURE_SPEECH_REGION; dominio permitido <región>.tts.speech.microsoft.com
+- VOZ=es-PE-CamilaNeural SOLO_CON_VOZ=1 python3 manuales/promo/scripts/montar_promo.py
+- VOZ=es-PE-AlexNeural   SOLO_CON_VOZ=1 python3 manuales/promo/scripts/montar_promo.py
+  (requiere pip install imageio-ffmpeg; los videos quedan en manuales/promo/salida)
