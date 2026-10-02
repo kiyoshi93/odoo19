@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, ImageRun, HeadingLevel, AlignmentType, Table, TableRow, TableCell,
-  WidthType, ShadingType, BorderStyle, LevelFormat, TableOfContents, PageBreak, Header, Footer, PageNumber,
+  WidthType, ShadingType, BorderStyle, LevelFormat, Bookmark, InternalHyperlink, PageBreak, Header, Footer, PageNumber,
   PageOrientation,
 } = require('docx');
 
@@ -27,8 +27,15 @@ function corridas(texto, base = {}) {
 }
 
 const p = (texto, opciones = {}) => new Paragraph({ children: corridas(texto), spacing: { after: 120 }, ...opciones });
-const h1 = (texto) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun(texto)], pageBreakBefore: true });
-const h2 = (texto) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(texto)] });
+// Los títulos llevan marcador para el índice estático (no depende de que Word actualice campos)
+const indice = [];
+const marcador = (nivel, texto) => {
+  const id = `t${indice.length + 1}`;
+  indice.push({ nivel, texto, id });
+  return new Bookmark({ id, children: [new TextRun(texto)] });
+};
+const h1 = (texto) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [marcador(1, texto)], pageBreakBefore: true });
+const h2 = (texto) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [marcador(2, texto)] });
 const h3 = (texto) => new Paragraph({ heading: HeadingLevel.HEADING_3, children: [new TextRun(texto)] });
 
 function pasos(lista) {
@@ -120,15 +127,15 @@ agregar(
   tabla(['Dato', 'Valor'], [
     ['Versión de Odoo', '19.0 Enterprise'],
     ['Módulos documentados', 'solse_pe_payroll 19.0.0.45 · solse_pe_payroll_catalogo · solse_pe_payroll_asistencia_ee · solse_pe_plame_rxh · solse_pe_plame_4ta_ee'],
-    ['Empresa de ejemplo', 'MANUFACTURER OF KNITWEAR & BLAZERS EXPORT S.A. (base de pruebas)'],
+    ['Empresa de ejemplo', 'Base de pruebas multiempresa (los datos de las empresas se ocultan en las capturas)'],
     ['Público', 'Usuarios de RR.HH./contabilidad e implementadores'],
     ['Fecha', 'Octubre 2026 · versión 2 (contrastada con la biblia SOLSE, encargo manual-nomina-ee)'],
   ], [2600, 7038]),
   espacio(),
-  nota('Todos los trabajadores, prestadores, cuentas bancarias y montos de este manual son **datos ficticios de prueba**. Los DNI (`99999901`–`99999903`) y RUC (`10999999048`, `10999999056`) son **sintéticos**: se comprobó en la consulta RENIEC/SUNAT de Odoo que no corresponden a ninguna persona. Las capturas se tomaron en una base de pruebas; los resultados se contrastaron con los valores esperados del caso de demostración de la localización.'),
+  nota('Todos los trabajadores, prestadores, cuentas bancarias y montos de este manual son **datos ficticios de prueba**. Los DNI (`99999901`–`99999903`) y RUC (`10999999048`, `10999999056`) son **sintéticos**: se comprobó en la consulta RENIEC/SUNAT de Odoo que no corresponden a ninguna persona. Las capturas se tomaron en una base de pruebas y los datos de las empresas (razón social, RUC, dirección, correos y logo) aparecen difuminados; los resultados se contrastaron con los valores esperados del caso de demostración de la localización.'),
   new Paragraph({ children: [new PageBreak()] }),
   new Paragraph({ children: [new TextRun({ text: 'Contenido', bold: true, size: 32, color: COLOR })], spacing: { after: 200 } }),
-  new TableOfContents('Contenido', { hyperlink: true, headingStyleRange: '1-2' }),
+  'INDICE',
 );
 
 // 1. Introducción
@@ -271,7 +278,7 @@ agregar(
   ...figura('p05_01_asignar_cuentas', 'Asistente Asignar cuentas contables.'),
   ...figura('p05_02_asignar_cuentas_resultado', 'Resultado: prefijos sin cuenta en el plan.'),
   nota('En la base de ejemplo falta la cuenta **6221** (Participación de los trabajadores en utilidades). Créela en el plan contable antes de registrar utilidades (regla UTIL_001) y vuelva a ejecutar el asistente.', 'importante'),
-  nota('**Multiempresa**: el inicializador recorre **todas las compañías con país Perú** y deja en cada una su propio diario de salarios y las cuentas de las reglas. Medido en la base de ejemplo: la segunda compañía (MAKABE TAPIA JOSE AMALFI) tiene su diario **Salarios** propio y Remuneración básica → 6211, Neto → 4111, EsSalud → 6271/4031, igual que la principal. Valide siempre con la compañía correcta activa en el selector de compañías.'),
+  nota('**Multiempresa**: el inicializador recorre **todas las compañías con país Perú** y deja en cada una su propio diario de salarios y las cuentas de las reglas. Medido en la base de ejemplo: la segunda compañía de la base tiene su diario **Salarios** propio y Remuneración básica → 6211, Neto → 4111, EsSalud → 6271/4031, igual que la principal. Valide siempre con la compañía correcta activa en el selector de compañías.'),
   h2('7.2 Mapeo contable PCGE'),
   p('Lista editable que relaciona cada regla salarial con su prefijo de débito y crédito (por ejemplo, Remuneración básica → 6211; ONP → 4032; AFP → 4170; EsSalud → 6271/4031; Neto → 4111).'),
   ...figura('p05_03_mapeo_contable', 'Mapeo contable PCGE por regla salarial.'),
@@ -667,12 +674,19 @@ agregar(
   p('Los scripts de Playwright que generaron estas capturas están en `manuales/scripts/` y permiten regenerarlas ante cambios de versión.'),
 );
 
+// ---------- Índice estático con enlaces internos ----------
+const entradasIndice = indice.map(({ nivel, texto, id }) => new Paragraph({
+  spacing: { before: nivel === 1 ? 120 : 0, after: nivel === 1 ? 40 : 20 },
+  indent: { left: nivel === 1 ? 0 : 400 },
+  children: [new InternalHyperlink({ anchor: id, children: [new TextRun({ text: texto, bold: nivel === 1, size: nivel === 1 ? 22 : 20, color: nivel === 1 ? COLOR : '333333' })] })],
+}));
+contenido.splice(contenido.indexOf('INDICE'), 1, ...entradasIndice);
+
 // ---------- Documento ----------
 const documento = new Document({
   creator: 'SOLSE - Implementación Odoo',
   title: 'Manual de Nómina Peruana - Odoo 19',
   description: 'Manual de usuario de la nómina peruana (localización SOLSE) en Odoo 19 Enterprise',
-  features: { updateFields: true },
   styles: {
     default: { document: { run: { font: 'Calibri', size: 22 } } },
     paragraphStyles: [
