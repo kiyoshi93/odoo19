@@ -1,0 +1,737 @@
+caso,estructura,clave,campo,esperado,obtenido,resultado
+PLAME-RXH,4TA,10400000013|E001|101,retencion,0,0,ok
+PLAME-RXH,4TA,10400000013|E001|101,campos,11,11,ok
+PLAME-RXH,4TA,10400000013|E001|101,campo_11,,,ok
+PLAME-RXH,4TA,10400000013|E001|101,campo_10,,,ok
+PLAME-RXH,4TA,10400000013|E001|101,numero_documento,10400000013,10400000013,ok
+PLAME-RXH,4TA,10400000013|E001|101,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000013|E001|101,numero,101,101,ok
+PLAME-RXH,4TA,10400000013|E001|101,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000013|E001|101,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000013|E001|101,monto,800,800,ok
+PLAME-RXH,4TA,10400000013|E001|101,fecha_emision,03/07/2026,03/07/2026,ok
+PLAME-RXH,4TA,10400000013|E001|101,fecha_pago,10/07/2026,10/07/2026,ok
+PLAME-RXH,4TA,10400000013|E001|109,numero_documento,10400000013,10400000013,ok
+PLAME-RXH,4TA,10400000013|E001|109,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000013|E001|109,numero,109,109,ok
+PLAME-RXH,4TA,10400000013|E001|109,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000013|E001|109,tipo_comprobante,N,N,ok
+PLAME-RXH,4TA,10400000013|E001|109,monto,200,200,ok
+PLAME-RXH,4TA,10400000013|E001|109,fecha_emision,15/07/2026,15/07/2026,ok
+PLAME-RXH,4TA,10400000013|E001|109,fecha_pago,15/07/2026,15/07/2026,ok
+PLAME-RXH,4TA,10400000013|E001|109,retencion,0,0,ok
+PLAME-RXH,4TA,10400000013|E001|109,campo_10,,,ok
+PLAME-RXH,4TA,10400000013|E001|109,campo_11,,,ok
+PLAME-RXH,4TA,10400000013|E001|109,campos,11,11,ok
+PLAME-RXH,4TA,10400000021|E001|102,retencion,0,0,ok
+PLAME-RXH,4TA,10400000021|E001|102,numero_documento,10400000021,10400000021,ok
+PLAME-RXH,4TA,10400000021|E001|102,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000021|E001|102,numero,102,102,ok
+PLAME-RXH,4TA,10400000021|E001|102,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000021|E001|102,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000021|E001|102,monto,1200,1200,ok
+PLAME-RXH,4TA,10400000021|E001|102,fecha_emision,20/06/2026,20/06/2026,ok
+PLAME-RXH,4TA,10400000021|E001|102,fecha_pago,05/07/2026,05/07/2026,ok
+PLAME-RXH,4TA,10400000021|E001|102,campo_10,,,ok
+PLAME-RXH,4TA,10400000021|E001|102,campo_11,,,ok
+PLAME-RXH,4TA,10400000021|E001|102,campos,11,11,ok
+PLAME-RXH,4TA,10400000030|E001|103,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000030|E001|103,monto,3000,3000,ok
+PLAME-RXH,4TA,10400000030|E001|103,fecha_emision,05/07/2026,05/07/2026,ok
+PLAME-RXH,4TA,10400000030|E001|103,fecha_pago,12/07/2026,12/07/2026,ok
+PLAME-RXH,4TA,10400000030|E001|103,retencion,1,1,ok
+PLAME-RXH,4TA,10400000030|E001|103,campo_10,,,ok
+PLAME-RXH,4TA,10400000030|E001|103,campo_11,,,ok
+PLAME-RXH,4TA,10400000030|E001|103,campos,11,11,ok
+PLAME-RXH,4TA,10400000030|E001|103,numero_documento,10400000030,10400000030,ok
+PLAME-RXH,4TA,10400000030|E001|103,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000030|E001|103,numero,103,103,ok
+PLAME-RXH,4TA,10400000030|E001|103,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000048|E001|104,campos,11,11,ok
+PLAME-RXH,4TA,10400000048|E001|104,campo_11,,,ok
+PLAME-RXH,4TA,10400000048|E001|104,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000048|E001|104,numero_documento,10400000048,10400000048,ok
+PLAME-RXH,4TA,10400000048|E001|104,numero,104,104,ok
+PLAME-RXH,4TA,10400000048|E001|104,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000048|E001|104,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000048|E001|104,monto,4500,4500,ok
+PLAME-RXH,4TA,10400000048|E001|104,fecha_emision,06/07/2026,06/07/2026,ok
+PLAME-RXH,4TA,10400000048|E001|104,fecha_pago,13/07/2026,13/07/2026,ok
+PLAME-RXH,4TA,10400000048|E001|104,retencion,0,0,ok
+PLAME-RXH,4TA,10400000048|E001|104,campo_10,,,ok
+PLAME-RXH,4TA,10400000056|E001|105,fecha_pago,14/07/2026,14/07/2026,ok
+PLAME-RXH,4TA,10400000056|E001|105,numero_documento,10400000056,10400000056,ok
+PLAME-RXH,4TA,10400000056|E001|105,monto,2000,2000,ok
+PLAME-RXH,4TA,10400000056|E001|105,fecha_emision,07/07/2026,07/07/2026,ok
+PLAME-RXH,4TA,10400000056|E001|105,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000056|E001|105,retencion,0,0,ok
+PLAME-RXH,4TA,10400000056|E001|105,campo_10,,,ok
+PLAME-RXH,4TA,10400000056|E001|105,campo_11,,,ok
+PLAME-RXH,4TA,10400000056|E001|105,campos,11,11,ok
+PLAME-RXH,4TA,10400000056|E001|105,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000056|E001|105,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000056|E001|105,numero,105,105,ok
+PLAME-RXH,4TA,10400000064|E001|106,campo_10,,,ok
+PLAME-RXH,4TA,10400000064|E001|106,numero_documento,10400000064,10400000064,ok
+PLAME-RXH,4TA,10400000064|E001|106,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000064|E001|106,numero,106,106,ok
+PLAME-RXH,4TA,10400000064|E001|106,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000064|E001|106,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000064|E001|106,monto,1200,1200,ok
+PLAME-RXH,4TA,10400000064|E001|106,fecha_emision,14/06/2026,14/06/2026,ok
+PLAME-RXH,4TA,10400000064|E001|106,fecha_pago,10/07/2026,10/07/2026,ok
+PLAME-RXH,4TA,10400000064|E001|106,retencion,0,0,ok
+PLAME-RXH,4TA,10400000064|E001|106,campo_11,,,ok
+PLAME-RXH,4TA,10400000064|E001|106,campos,11,11,ok
+PLAME-RXH,4TA,10400000072|E001|107,campos,11,11,ok
+PLAME-RXH,4TA,10400000072|E001|107,numero_documento,10400000072,10400000072,ok
+PLAME-RXH,4TA,10400000072|E001|107,serie,E001,E001,ok
+PLAME-RXH,4TA,10400000072|E001|107,numero,107,107,ok
+PLAME-RXH,4TA,10400000072|E001|107,tipo_documento,06,06,ok
+PLAME-RXH,4TA,10400000072|E001|107,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,10400000072|E001|107,monto,1122.60,1122.60,ok
+PLAME-RXH,4TA,10400000072|E001|107,campo_11,,,ok
+PLAME-RXH,4TA,10400000072|E001|107,campo_10,,,ok
+PLAME-RXH,4TA,10400000072|E001|107,retencion,0,0,ok
+PLAME-RXH,4TA,10400000072|E001|107,fecha_pago,11/07/2026,11/07/2026,ok
+PLAME-RXH,4TA,10400000072|E001|107,fecha_emision,03/07/2026,03/07/2026,ok
+PLAME-RXH,4TA,PA1234567|E001|110,numero_documento,PA1234567,PA1234567,ok
+PLAME-RXH,4TA,PA1234567|E001|110,serie,E001,E001,ok
+PLAME-RXH,4TA,PA1234567|E001|110,numero,110,110,ok
+PLAME-RXH,4TA,PA1234567|E001|110,tipo_documento,07,07,ok
+PLAME-RXH,4TA,PA1234567|E001|110,tipo_comprobante,R,R,ok
+PLAME-RXH,4TA,PA1234567|E001|110,monto,1000,1000,ok
+PLAME-RXH,4TA,PA1234567|E001|110,fecha_emision,08/07/2026,08/07/2026,ok
+PLAME-RXH,4TA,PA1234567|E001|110,fecha_pago,16/07/2026,16/07/2026,ok
+PLAME-RXH,4TA,PA1234567|E001|110,retencion,0,0,ok
+PLAME-RXH,4TA,PA1234567|E001|110,campo_10,,,ok
+PLAME-RXH,4TA,PA1234567|E001|110,campo_11,,,ok
+PLAME-RXH,4TA,PA1234567|E001|110,campos,11,11,ok
+PLAME-RXH,Archivos,4ta,archivo,4ta,4ta,ok
+PLAME-RXH,Archivos,4ta,nombre,060120260720603456786.4ta,060120260720603456786.4ta,ok
+PLAME-RXH,Archivos,4ta,crlf,SI,SI,ok
+PLAME-RXH,Archivos,4ta,ascii,SI,SI,ok
+PLAME-RXH,Archivos,4ta,errores,0,0,ok
+PLAME-RXH,Archivos,4ta,advertencia_e001_105,SI,SI,ok
+PLAME-RXH,Archivos,ps4,errores,0,0,ok
+PLAME-RXH,Archivos,ps4,advertencia_e001_105,SI,SI,ok
+PLAME-RXH,Archivos,ps4,ascii,SI,SI,ok
+PLAME-RXH,Archivos,ps4,crlf,SI,SI,ok
+PLAME-RXH,Archivos,ps4,nombre,060120260720603456786.ps4,060120260720603456786.ps4,ok
+PLAME-RXH,Archivos,ps4,archivo,ps4,ps4,ok
+PLAME-RXH,Diagnóstico,1 · documentos sembrados y posteados,etapa,1 · documentos sembrados y posteados,1 · documentos sembrados y posteados,ok
+PLAME-RXH,Diagnóstico,1 · documentos sembrados y posteados,cantidad,10,10,ok
+PLAME-RXH,Diagnóstico,1b · sembrados dentro del periodo,cantidad,8,8,ok
+PLAME-RXH,Diagnóstico,1b · sembrados dentro del periodo,etapa,1b · sembrados dentro del periodo,1b · sembrados dentro del periodo,ok
+PLAME-RXH,Diagnóstico,2 · marcados como recibo de honorarios,etapa,2 · marcados como recibo de honorarios,2 · marcados como recibo de honorarios,ok
+PLAME-RXH,Diagnóstico,2 · marcados como recibo de honorarios,cantidad,10,10,ok
+PLAME-RXH,Diagnóstico,3 · con algún pago registrado,etapa,3 · con algún pago registrado,3 · con algún pago registrado,ok
+PLAME-RXH,Diagnóstico,3 · con algún pago registrado,cantidad,8,8,ok
+PLAME-RXH,Diagnóstico,3a · search: es_recibo_honorarios,etapa,3a · search: es_recibo_honorarios,3a · search: es_recibo_honorarios,ok
+PLAME-RXH,Diagnóstico,3a · search: es_recibo_honorarios,cantidad,10,10,ok
+PLAME-RXH,Diagnóstico,3b · search: + fecha de emisión,cantidad,10,10,ok
+PLAME-RXH,Diagnóstico,3b · search: + fecha de emisión,etapa,3b · search: + fecha de emisión,3b · search: + fecha de emisión,ok
+PLAME-RXH,Diagnóstico,3c · search: + payment_state,cantidad,8,8,ok
+PLAME-RXH,Diagnóstico,3c · search: + payment_state,etapa,3c · search: + payment_state,3c · search: + payment_state,ok
+PLAME-RXH,Diagnóstico,4 · candidatos del exportador,etapa,4 · candidatos del exportador,4 · candidatos del exportador,ok
+PLAME-RXH,Diagnóstico,4 · candidatos del exportador,cantidad,10,10,ok
+PLAME-RXH,Diagnóstico,5 · con datos del periodo,etapa,5 · con datos del periodo,5 · con datos del periodo,ok
+PLAME-RXH,Diagnóstico,5 · con datos del periodo,cantidad,9,9,ok
+PLAME-RXH,PS4,10400000013,apellido_paterno,QUISPE,QUISPE,ok
+PLAME-RXH,PS4,10400000013,numero_documento,10400000013,10400000013,ok
+PLAME-RXH,PS4,10400000013,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000013,apellido_materno,HUAMAN,HUAMAN,ok
+PLAME-RXH,PS4,10400000013,nombres,ANA LUCIA,ANA LUCIA,ok
+PLAME-RXH,PS4,10400000013,campos,7,7,ok
+PLAME-RXH,PS4,10400000013,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000013,convenio,0,0,ok
+PLAME-RXH,PS4,10400000021,apellido_materno,CONDORI,CONDORI,ok
+PLAME-RXH,PS4,10400000021,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000021,numero_documento,10400000021,10400000021,ok
+PLAME-RXH,PS4,10400000021,campos,7,7,ok
+PLAME-RXH,PS4,10400000021,convenio,0,0,ok
+PLAME-RXH,PS4,10400000021,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000021,nombres,JUAN CARLOS,JUAN CARLOS,ok
+PLAME-RXH,PS4,10400000021,apellido_paterno,MAMANI,MAMANI,ok
+PLAME-RXH,PS4,10400000030,apellido_materno,PAREDES,PAREDES,ok
+PLAME-RXH,PS4,10400000030,apellido_paterno,FLORES,FLORES,ok
+PLAME-RXH,PS4,10400000030,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000030,numero_documento,10400000030,10400000030,ok
+PLAME-RXH,PS4,10400000030,campos,7,7,ok
+PLAME-RXH,PS4,10400000030,convenio,0,0,ok
+PLAME-RXH,PS4,10400000030,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000030,nombres,ROSA ELENA,ROSA ELENA,ok
+PLAME-RXH,PS4,10400000048,nombres,PEDRO PABLO,PEDRO PABLO,ok
+PLAME-RXH,PS4,10400000048,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000048,convenio,0,0,ok
+PLAME-RXH,PS4,10400000048,campos,7,7,ok
+PLAME-RXH,PS4,10400000048,numero_documento,10400000048,10400000048,ok
+PLAME-RXH,PS4,10400000048,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000048,apellido_paterno,ROJAS,ROJAS,ok
+PLAME-RXH,PS4,10400000048,apellido_materno,VARGAS,VARGAS,ok
+PLAME-RXH,PS4,10400000056,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000056,numero_documento,10400000056,10400000056,ok
+PLAME-RXH,PS4,10400000056,convenio,0,0,ok
+PLAME-RXH,PS4,10400000056,campos,7,7,ok
+PLAME-RXH,PS4,10400000056,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000056,apellido_paterno,CASTILLO,CASTILLO,ok
+PLAME-RXH,PS4,10400000056,apellido_materno,MENDOZA,MENDOZA,ok
+PLAME-RXH,PS4,10400000056,nombres,CARMEN ROSA,CARMEN ROSA,ok
+PLAME-RXH,PS4,10400000064,convenio,0,0,ok
+PLAME-RXH,PS4,10400000064,campos,7,7,ok
+PLAME-RXH,PS4,10400000064,apellido_materno,SALAZAR,SALAZAR,ok
+PLAME-RXH,PS4,10400000064,nombres,LUIS FERNANDO,LUIS FERNANDO,ok
+PLAME-RXH,PS4,10400000064,apellido_paterno,TORRES,TORRES,ok
+PLAME-RXH,PS4,10400000064,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000064,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000064,numero_documento,10400000064,10400000064,ok
+PLAME-RXH,PS4,10400000072,convenio,0,0,ok
+PLAME-RXH,PS4,10400000072,numero_documento,10400000072,10400000072,ok
+PLAME-RXH,PS4,10400000072,domiciliado,1,1,ok
+PLAME-RXH,PS4,10400000072,nombres,MARIA ISABEL,MARIA ISABEL,ok
+PLAME-RXH,PS4,10400000072,apellido_materno,CHAVEZ,CHAVEZ,ok
+PLAME-RXH,PS4,10400000072,tipo_documento,06,06,ok
+PLAME-RXH,PS4,10400000072,apellido_paterno,RAMOS,RAMOS,ok
+PLAME-RXH,PS4,10400000072,campos,7,7,ok
+PLAME-RXH,PS4,PA1234567,numero_documento,PA1234567,PA1234567,ok
+PLAME-RXH,PS4,PA1234567,apellido_paterno,ROSSI,ROSSI,ok
+PLAME-RXH,PS4,PA1234567,tipo_documento,07,07,ok
+PLAME-RXH,PS4,PA1234567,campos,7,7,ok
+PLAME-RXH,PS4,PA1234567,convenio,2,2,ok
+PLAME-RXH,PS4,PA1234567,domiciliado,0,0,ok
+PLAME-RXH,PS4,PA1234567,nombres,MARCO ANTONIO,MARCO ANTONIO,ok
+PLAME-RXH,PS4,PA1234567,apellido_materno,BIANCHI,BIANCHI,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,dni,40125836,40125836,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,codigo,AFP_PRI_001,AFP_PRI_001,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,concepto,Ana AFP prima TOPEADA por RMA,Ana AFP prima TOPEADA por RMA,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,importe,172.61,172.61,ok
+NOMINA,Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,trabajador,Ana,Ana,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,dni,41236547,41236547,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,importe,0.00,0.00,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,trabajador,María,María,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,codigo,AFP_COM_001,AFP_COM_001,ok
+NOMINA,Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,concepto,María AFP comisión mixta = 0,María AFP comisión mixta = 0,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,dni,41785296,41785296,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,trabajador,Miguel,Miguel,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,codigo,ONP_001,ONP_001,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,concepto,Miguel ONP,Miguel ONP,ok
+NOMINA,Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,importe,390.00,390.00,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,codigo,ONP_001,ONP_001,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,concepto,Pedro ONP semanal,Pedro ONP semanal,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,dni,42589631,42589631,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,importe,45.50,45.50,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,trabajador,Pedro,Pedro,ok
+NOMINA,Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,estructura,semanal,semanal,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,importe,361.30,361.30,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,concepto,Carlos AFP aporte,Carlos AFP aporte,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,codigo,AFP_APO_001,AFP_APO_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,importe,53.11,53.11,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,concepto,Carlos AFP comisión Habitat,Carlos AFP comisión Habitat,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,codigo,AFP_COM_001,AFP_COM_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,codigo,AFP_PRI_001,AFP_PRI_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,concepto,Carlos AFP prima,Carlos AFP prima,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,importe,49.50,49.50,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,codigo,EPS_APO_001,EPS_APO_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,importe,162.59,162.59,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,concepto,Carlos EPS aporte,Carlos EPS aporte,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,codigo,EPS_CRED_001,EPS_CRED_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,concepto,Carlos EPS crédito (negativo),Carlos EPS crédito (negativo),ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,importe,-81.29,-81.29,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,importe,325.17,325.17,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,codigo,ESSALUD_001,ESSALUD_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,concepto,Carlos ESSALUD,Carlos ESSALUD,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,trabajador,Carlos,Carlos,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,dni,45781236,45781236,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,importe,27.10,27.10,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,concepto,Carlos SENATI,Carlos SENATI,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,codigo,SENATI_001,SENATI_001,ok
+NOMINA,Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,dni,46321478,46321478,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,trabajador,Rosa,Rosa,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,concepto,Rosa SCTR Salud,Rosa SCTR Salud,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,codigo,SCTR_SAL_001,SCTR_SAL_001,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,estructura,semanal,semanal,ok
+NOMINA,Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,importe,5.46,5.46,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,concepto,Jorge ONP,Jorge ONP,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,codigo,ONP_001,ONP_001,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,estructura,mensual,mensual,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,trabajador,Jorge,Jorge,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,dni,47852169,47852169,ok
+NOMINA,Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,importe,146.90,146.90,ok
+NOMINA,Asiento,asiento de la mensual de julio de Carlos,chequeo,asiento de la mensual de julio de Carlos,asiento de la mensual de julio de Carlos,ok
+NOMINA,Asiento,asiento de la mensual de julio de Carlos,valor,existe,existe,ok
+NOMINA,Asiento,boletas validadas sin asiento,valor,0,0,ok
+NOMINA,Asiento,boletas validadas sin asiento,chequeo,boletas validadas sin asiento,boletas validadas sin asiento,ok
+NOMINA,Asiento,cuentas ajenas a la compañía del caso,valor,0,0,ok
+NOMINA,Asiento,cuentas ajenas a la compañía del caso,chequeo,cuentas ajenas a la compañía del caso,cuentas ajenas a la compañía del caso,ok
+NOMINA,Asiento,descuadre (debe − haber),chequeo,descuadre (debe − haber),descuadre (debe − haber),ok
+NOMINA,Asiento,descuadre (debe − haber),valor,0.00,0.00,ok
+NOMINA,Asiento,líneas sin cuenta contable,valor,0,0,ok
+NOMINA,Asiento,líneas sin cuenta contable,chequeo,líneas sin cuenta contable,líneas sin cuenta contable,ok
+NOMINA,Asiento,total del debe,valor,4673.06,4673.06,ok
+NOMINA,Asiento,total del debe,chequeo,total del debe,total del debe,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,importe,11839.64,11839.64,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,concepto,Ana NETO,Ana NETO,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,trabajador,Ana,Ana,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,dni,40125836,40125836,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,codigo,R5TA_001,R5TA_001,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,concepto,Ana Renta 5ta (2 tramos),Ana Renta 5ta (2 tramos),ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,importe,1267.25,1267.25,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,dni,40125836,40125836,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,trabajador,Ana,Ana,ok
+NOMINA,Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,trabajador,María,María,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,importe,720.00,720.00,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,concepto,María bono gratificación 9%,María bono gratificación 9%,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,codigo,BONO_GRATI_001,BONO_GRATI_001,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,estructura,gratis,gratis,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,dni,41236547,41236547,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,trabajador,María,María,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,importe,8000.00,8000.00,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,concepto,María gratificación,María gratificación,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,codigo,GRATI_001,GRATI_001,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,estructura,gratis,gratis,ok
+NOMINA,Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,dni,41236547,41236547,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,importe,6821.00,6821.00,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,dni,41236547,41236547,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,trabajador,María,María,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,concepto,María NETO julio,María NETO julio,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,trabajador,María,María,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,dni,41236547,41236547,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,importe,269.40,269.40,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,concepto,María Renta 5ta julio,María Renta 5ta julio,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,codigo,R5TA_001,R5TA_001,ok
+NOMINA,Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,codigo,R5TA_001,R5TA_001,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,concepto,María Renta 5ta agosto (con grati en acumulado),María Renta 5ta agosto (con grati en acumulado),ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,trabajador,María,María,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,importe,377.16,377.16,ok
+NOMINA,Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,dni,41236547,41236547,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,concepto,Miguel descuento judicial (20% del disponible),Miguel descuento judicial (20% del disponible),ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,dni,41785296,41785296,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,trabajador,Miguel,Miguel,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,codigo,DJ_001,DJ_001,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,importe,522.00,522.00,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,concepto,Miguel NETO,Miguel NETO,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,trabajador,Miguel,Miguel,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,dni,41785296,41785296,ok
+NOMINA,Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,importe,2088.00,2088.00,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,trabajador,Pedro,Pedro,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,importe,304.50,304.50,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,concepto,Pedro NETO semanal,Pedro NETO semanal,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,estructura,semanal,semanal,ok
+NOMINA,Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,dni,42589631,42589631,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,dni,43698521,43698521,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,importe,1800.00,1800.00,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,concepto,Luis descuento de adelanto en mensual,Luis descuento de adelanto en mensual,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,codigo,DESC_ADEL_001,DESC_ADEL_001,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,trabajador,Luis,Luis,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,importe,2112.30,2112.30,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,dni,43698521,43698521,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,trabajador,Luis,Luis,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,concepto,Luis NETO mensual,Luis NETO mensual,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,dni,43698521,43698521,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,trabajador,Luis,Luis,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,estructura,quincena,quincena,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,periodo,01/07/2026 a 15/07/2026,01/07/2026 a 15/07/2026,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,codigo,ADEL_001,ADEL_001,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,concepto,Luis adelanto quincenal 40%,Luis adelanto quincenal 40%,ok
+NOMINA,Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,importe,1800.00,1800.00,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,dni,44567123,44567123,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,importe,750.00,750.00,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,concepto,José gratificación MYPE (factor 0.5),José gratificación MYPE (factor 0.5),ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,codigo,GRATI_001,GRATI_001,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,estructura,gratis,gratis,ok
+NOMINA,Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,trabajador,José,José,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,estructura,gratis,gratis,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,importe,243.88,243.88,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,concepto,Carlos gratificación (bono EPS 6.75%),Carlos gratificación (bono EPS 6.75%),ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,codigo,BONO_GRATI_001,BONO_GRATI_001,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,trabajador,Carlos,Carlos,ok
+NOMINA,Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,dni,45781236,45781236,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,codigo,ASF_001,ASF_001,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,trabajador,Carlos,Carlos,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,dni,45781236,45781236,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,importe,113.00,113.00,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,concepto,Carlos Asig. Familiar,Carlos Asig. Familiar,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,concepto,Carlos NETO mensual,Carlos NETO mensual,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,trabajador,Carlos,Carlos,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,dni,45781236,45781236,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,importe,3149.09,3149.09,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,codigo,RB_001,RB_001,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,estructura,mensual,mensual,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,trabajador,Carlos,Carlos,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,dni,45781236,45781236,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,importe,3500.00,3500.00,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,concepto,Carlos RB mensual,Carlos RB mensual,ok
+NOMINA,Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,dni,45896327,45896327,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,codigo,BONO_GRATI_TRUNCA_001,BONO_GRATI_TRUNCA_001,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,estructura,liquidacion,liquidacion,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,concepto,Carmen bono s/ trunca 9%,Carmen bono s/ trunca 9%,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,importe,75.00,75.00,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,trabajador,Carmen,Carmen,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,concepto,Carmen CTS trunca 4/12 (sexto SIN bono),Carmen CTS trunca 4/12 (sexto SIN bono),ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,importe,972.22,972.22,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,codigo,CTS_TRUNCA_001,CTS_TRUNCA_001,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,dni,45896327,45896327,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,trabajador,Carmen,Carmen,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,estructura,liquidacion,liquidacion,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,importe,833.33,833.33,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,concepto,Carmen gratificación trunca 2/6,Carmen gratificación trunca 2/6,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,codigo,GRATI_TRUNCA_001,GRATI_TRUNCA_001,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,estructura,liquidacion,liquidacion,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,trabajador,Carmen,Carmen,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,dni,45896327,45896327,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,estructura,liquidacion,liquidacion,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,trabajador,Carmen,Carmen,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,dni,45896327,45896327,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,concepto,Carmen NETO liquidación,Carmen NETO liquidación,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,importe,3547.22,3547.22,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,importe,1666.67,1666.67,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,dni,45896327,45896327,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,trabajador,Carmen,Carmen,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,estructura,liquidacion,liquidacion,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,codigo,VAC_TRUNCA_001,VAC_TRUNCA_001,ok
+NOMINA,Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,concepto,Carmen vacaciones truncas 8/12,Carmen vacaciones truncas 8/12,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,dni,46321478,46321478,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,trabajador,Rosa,Rosa,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,estructura,semanal,semanal,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,concepto,Rosa NETO semanal,Rosa NETO semanal,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,importe,361.33,361.33,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,dni,46321478,46321478,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,trabajador,Rosa,Rosa,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,estructura,semanal,semanal,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,codigo,RBS_002,RBS_002,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,concepto,Rosa RBS semana comercial,Rosa RBS semana comercial,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,importe,420.00,420.00,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,dni,46321478,46321478,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,trabajador,Rosa,Rosa,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,importe,4.20,4.20,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,concepto,Rosa cuota sindical,Rosa cuota sindical,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,codigo,SIND_001,SIND_001,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA,Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,estructura,semanal,semanal,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,codigo,NET,NET,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,concepto,Jorge NETO,Jorge NETO,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,importe,983.10,983.10,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,dni,47852169,47852169,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,trabajador,Jorge,Jorge,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,estructura,mensual,mensual,ok
+NOMINA,Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA,Configuración,Cuentas contables asignadas a reglas clave,chequeo,Cuentas contables asignadas a reglas clave,Cuentas contables asignadas a reglas clave,ok
+NOMINA,Configuración,Cuentas contables asignadas a reglas clave,estado,SI,SI,ok
+NOMINA,Configuración,Cuentas de las reglas en la compañía del caso,chequeo,Cuentas de las reglas en la compañía del caso,Cuentas de las reglas en la compañía del caso,ok
+NOMINA,Configuración,Cuentas de las reglas en la compañía del caso,estado,SI,SI,ok
+NOMINA,Configuración,Diario de salarios y cuenta predeterminada,estado,SI,SI,ok
+NOMINA,Configuración,Diario de salarios y cuenta predeterminada,chequeo,Diario de salarios y cuenta predeterminada,Diario de salarios y cuenta predeterminada,ok
+NOMINA,Configuración,Estructuras salariales pobladas,chequeo,Estructuras salariales pobladas,Estructuras salariales pobladas,ok
+NOMINA,Configuración,Estructuras salariales pobladas,estado,SI,SI,ok
+NOMINA,Configuración,"Parámetros PE vigentes (UIT 2026 = 5,500)",chequeo,"Parámetros PE vigentes (UIT 2026 = 5,500)","Parámetros PE vigentes (UIT 2026 = 5,500)",ok
+NOMINA,Configuración,"Parámetros PE vigentes (UIT 2026 = 5,500)",estado,SI,SI,ok
+NOMINA,Configuración,Plan de acumulación de vacaciones,chequeo,Plan de acumulación de vacaciones,Plan de acumulación de vacaciones,ok
+NOMINA,Configuración,Plan de acumulación de vacaciones,estado,SI,SI,ok
+NOMINA,Configuración,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),chequeo,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),ok
+NOMINA,Configuración,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),estado,SI,SI,ok
+NOMINA,Configuración,Vacaciones PE como no-pagado en la mensual,chequeo,Vacaciones PE como no-pagado en la mensual,Vacaciones PE como no-pagado en la mensual,ok
+NOMINA,Configuración,Vacaciones PE como no-pagado en la mensual,estado,SI,SI,ok
+NOMINA,Diagnóstico,1 · empleados de la matriz en la compañía,cantidad,13,13,ok
+NOMINA,Diagnóstico,1 · empleados de la matriz en la compañía,etapa,1 · empleados de la matriz en la compañía,1 · empleados de la matriz en la compañía,ok
+NOMINA,Diagnóstico,2 · con régimen laboral y sistema pensionario,etapa,2 · con régimen laboral y sistema pensionario,2 · con régimen laboral y sistema pensionario,ok
+NOMINA,Diagnóstico,2 · con régimen laboral y sistema pensionario,cantidad,13,13,ok
+NOMINA,Diagnóstico,3 · boletas creadas,etapa,3 · boletas creadas,3 · boletas creadas,ok
+NOMINA,Diagnóstico,3 · boletas creadas,cantidad,36,36,ok
+NOMINA,Diagnóstico,4 · boletas validadas (done),cantidad,35,35,ok
+NOMINA,Diagnóstico,4 · boletas validadas (done),etapa,4 · boletas validadas (done),4 · boletas validadas (done),ok
+NOMINA,Diagnóstico,5 · boletas validadas con asiento,cantidad,35,35,ok
+NOMINA,Diagnóstico,5 · boletas validadas con asiento,etapa,5 · boletas validadas con asiento,5 · boletas validadas con asiento,ok
+NOMINA,Diagnóstico,6 · boletas en otra compañía,cantidad,0,0,ok
+NOMINA,Diagnóstico,6 · boletas en otra compañía,etapa,6 · boletas en otra compañía,6 · boletas en otra compañía,ok
+NOMINA,Diagnóstico,7 · deducciones de Carlos (categoría DED),cantidad,463.91,463.91,ok
+NOMINA,Diagnóstico,7 · deducciones de Carlos (categoría DED),etapa,7 · deducciones de Carlos (categoría DED),7 · deducciones de Carlos (categoría DED),ok
+NOMINA,Diagnóstico,8 · ausencias de vacaciones aprobadas,cantidad,2,2,ok
+NOMINA,Diagnóstico,8 · ausencias de vacaciones aprobadas,etapa,8 · ausencias de vacaciones aprobadas,8 · ausencias de vacaciones aprobadas,ok
+NOMINA,Diagnóstico,9 · motivo del corte de la generación,cantidad,ninguno,ninguno,ok
+NOMINA,Diagnóstico,9 · motivo del corte de la generación,etapa,9 · motivo del corte de la generación,9 · motivo del corte de la generación,ok
+NOMINA,Vacaciones,42736514|RB_001 (mensual de julio),dni,42736514,42736514,ok
+NOMINA,Vacaciones,42736514|RB_001 (mensual de julio),concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA,Vacaciones,42736514|RB_001 (mensual de julio),origen,30 − 30 días comerciales de goce,30 − 30 días comerciales de goce,ok
+NOMINA,Vacaciones,42736514|RB_001 (mensual de julio),importe,0.00,0.00,ok
+NOMINA,Vacaciones,42736514|RB_001 (mensual de julio),trabajador,Nilda,Nilda,ok
+NOMINA,Vacaciones,42736514|VAC_001 (boleta de vacaciones),origen,"30 días de goce × 100,00","30 días de goce × 100,00",ok
+NOMINA,Vacaciones,42736514|VAC_001 (boleta de vacaciones),concepto,VAC_001 (boleta de vacaciones),VAC_001 (boleta de vacaciones),ok
+NOMINA,Vacaciones,42736514|VAC_001 (boleta de vacaciones),trabajador,Nilda,Nilda,ok
+NOMINA,Vacaciones,42736514|VAC_001 (boleta de vacaciones),dni,42736514,42736514,ok
+NOMINA,Vacaciones,42736514|VAC_001 (boleta de vacaciones),importe,3000.00,3000.00,ok
+NOMINA,Vacaciones,42736514|suma de las dos boletas,origen,"C-7: goce y mensual suman UN sueldo, no dos","C-7: goce y mensual suman UN sueldo, no dos",ok
+NOMINA,Vacaciones,42736514|suma de las dos boletas,concepto,suma de las dos boletas,suma de las dos boletas,ok
+NOMINA,Vacaciones,42736514|suma de las dos boletas,trabajador,Nilda,Nilda,ok
+NOMINA,Vacaciones,42736514|suma de las dos boletas,dni,42736514,42736514,ok
+NOMINA,Vacaciones,42736514|suma de las dos boletas,importe,3000.00,3000.00,ok
+NOMINA,Vacaciones,43815927|RB_001 (mensual de julio),dni,43815927,43815927,ok
+NOMINA,Vacaciones,43815927|RB_001 (mensual de julio),trabajador,Óscar,Óscar,ok
+NOMINA,Vacaciones,43815927|RB_001 (mensual de julio),concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA,Vacaciones,43815927|RB_001 (mensual de julio),origen,"(30 − 15) × 100,00","(30 − 15) × 100,00",ok
+NOMINA,Vacaciones,43815927|RB_001 (mensual de julio),importe,1500.00,1500.00,ok
+NOMINA,Vacaciones,43815927|VAC_001 (boleta de vacaciones),dni,43815927,43815927,ok
+NOMINA,Vacaciones,43815927|VAC_001 (boleta de vacaciones),trabajador,Óscar,Óscar,ok
+NOMINA,Vacaciones,43815927|VAC_001 (boleta de vacaciones),importe,1500.00,1500.00,ok
+NOMINA,Vacaciones,43815927|VAC_001 (boleta de vacaciones),origen,"15 × 100,00","15 × 100,00",ok
+NOMINA,Vacaciones,43815927|VAC_001 (boleta de vacaciones),concepto,VAC_001 (boleta de vacaciones),VAC_001 (boleta de vacaciones),ok
+NOMINA,Vacaciones,43815927|suma de las dos boletas,dni,43815927,43815927,ok
+NOMINA,Vacaciones,43815927|suma de las dos boletas,importe,3000.00,3000.00,ok
+NOMINA,Vacaciones,43815927|suma de las dos boletas,origen,"C-7: goce y mensual suman UN sueldo, no dos","C-7: goce y mensual suman UN sueldo, no dos",ok
+NOMINA,Vacaciones,43815927|suma de las dos boletas,concepto,suma de las dos boletas,suma de las dos boletas,ok
+NOMINA,Vacaciones,43815927|suma de las dos boletas,trabajador,Óscar,Óscar,ok
+NOMINA,Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),dni,44927358,44927358,ok
+NOMINA,Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),importe,0.00,0.00,ok
+NOMINA,Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),origen,el adelanto está en borrador: nada que recuperar,el adelanto está en borrador: nada que recuperar,ok
+NOMINA,Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),concepto,DESC_ADEL_001 (mensual de julio),DESC_ADEL_001 (mensual de julio),ok
+NOMINA,Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),trabajador,Teresa,Teresa,ok
+NOMINA,Vacaciones,44927358|RB_001 (mensual de julio),importe,4500.00,4500.00,ok
+NOMINA,Vacaciones,44927358|RB_001 (mensual de julio),origen,"mes completo, 4500/30 × 30","mes completo, 4500/30 × 30",ok
+NOMINA,Vacaciones,44927358|RB_001 (mensual de julio),concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA,Vacaciones,44927358|RB_001 (mensual de julio),trabajador,Teresa,Teresa,ok
+NOMINA,Vacaciones,44927358|RB_001 (mensual de julio),dni,44927358,44927358,ok
+PLAME,Anexo4ta,4ta,archivo,4ta,4ta,ok
+PLAME,Anexo4ta,4ta,igual_al_caso_rxh,SI,SI,ok
+PLAME,Anexo4ta,4ta,lineas,9,9,ok
+PLAME,Anexo4ta,ps4,igual_al_caso_rxh,SI,SI,ok
+PLAME,Anexo4ta,ps4,lineas,8,8,ok
+PLAME,Anexo4ta,ps4,archivo,ps4,ps4,ok
+PLAME,Diagnóstico,1 · boletas validadas del periodo en la compañía,cantidad,32,32,ok
+PLAME,Diagnóstico,1 · boletas validadas del periodo en la compañía,etapa,1 · boletas validadas del periodo en la compañía,1 · boletas validadas del periodo en la compañía,ok
+PLAME,Diagnóstico,2 · boletas que recoge el asistente,etapa,2 · boletas que recoge el asistente,2 · boletas que recoge el asistente,ok
+PLAME,Diagnóstico,2 · boletas que recoge el asistente,cantidad,31,31,ok
+PLAME,Diagnóstico,3 · trabajadores en el .rem,etapa,3 · trabajadores en el .rem,3 · trabajadores en el .rem,ok
+PLAME,Diagnóstico,3 · trabajadores en el .rem,cantidad,13,13,ok
+PLAME,Diagnóstico,4 · trabajadores en el .jor,etapa,4 · trabajadores en el .jor,4 · trabajadores en el .jor,ok
+PLAME,Diagnóstico,4 · trabajadores en el .jor,cantidad,13,13,ok
+PLAME,JOR,42589631,dias,20,20,ok
+PLAME,JOR,42589631,trabajador,Pedro,Pedro,ok
+PLAME,JOR,42589631,dni,42589631,42589631,ok
+PLAME,JOR,46321478,dni,46321478,46321478,ok
+PLAME,JOR,46321478,trabajador,Rosa,Rosa,ok
+PLAME,JOR,46321478,dias,20,20,ok
+PLAME,REM,40125836|0605,trabajador,Ana,Ana,ok
+PLAME,REM,40125836|0605,monto,1267.25,1267.25,ok
+PLAME,REM,40125836|0605,origen,R5TA_001,R5TA_001,ok
+PLAME,REM,40125836|0605,concepto,0605,0605,ok
+PLAME,REM,40125836|0605,dni,40125836,40125836,ok
+PLAME,REM,41236547|0312,dni,41236547,41236547,ok
+PLAME,REM,41236547|0312,trabajador,María,María,ok
+PLAME,REM,41236547|0312,concepto,0312,0312,ok
+PLAME,REM,41236547|0312,origen,BONO_GRATI_001,BONO_GRATI_001,ok
+PLAME,REM,41236547|0312,monto,720.00,720.00,ok
+PLAME,REM,41236547|0406,monto,8000.00,8000.00,ok
+PLAME,REM,41236547|0406,origen,GRATI_001,GRATI_001,ok
+PLAME,REM,41236547|0406,concepto,0406,0406,ok
+PLAME,REM,41236547|0406,trabajador,María,María,ok
+PLAME,REM,41236547|0406,dni,41236547,41236547,ok
+PLAME,REM,41236547|0605,monto,269.40,269.40,ok
+PLAME,REM,41236547|0605,origen,R5TA_001,R5TA_001,ok
+PLAME,REM,41236547|0605,concepto,0605,0605,ok
+PLAME,REM,41236547|0605,trabajador,María,María,ok
+PLAME,REM,41236547|0605,dni,41236547,41236547,ok
+PLAME,REM,41785296|0703,trabajador,Miguel,Miguel,ok
+PLAME,REM,41785296|0703,concepto,0703,0703,ok
+PLAME,REM,41785296|0703,origen,DJ_001,DJ_001,ok
+PLAME,REM,41785296|0703,monto,522.00,522.00,ok
+PLAME,REM,41785296|0703,dni,41785296,41785296,ok
+PLAME,REM,43698521|0701,dni,43698521,43698521,ok
+PLAME,REM,43698521|0701,monto,1800.00,1800.00,ok
+PLAME,REM,43698521|0701,origen,DESC_ADEL_001,DESC_ADEL_001,ok
+PLAME,REM,43698521|0701,concepto,0701,0701,ok
+PLAME,REM,43698521|0701,trabajador,Luis,Luis,ok
+PLAME,REM,44567123|0406,origen,GRATI_001,GRATI_001,ok
+PLAME,REM,44567123|0406,trabajador,José,José,ok
+PLAME,REM,44567123|0406,dni,44567123,44567123,ok
+PLAME,REM,44567123|0406,concepto,0406,0406,ok
+PLAME,REM,44567123|0406,monto,750.00,750.00,ok
+PLAME,REM,45781236|0121,monto,3500.00,3500.00,ok
+PLAME,REM,45781236|0121,origen,RB_001,RB_001,ok
+PLAME,REM,45781236|0121,concepto,0121,0121,ok
+PLAME,REM,45781236|0121,trabajador,Carlos,Carlos,ok
+PLAME,REM,45781236|0121,dni,45781236,45781236,ok
+PLAME,REM,45781236|0201,dni,45781236,45781236,ok
+PLAME,REM,45781236|0201,monto,113.00,113.00,ok
+PLAME,REM,45781236|0201,origen,ASF_001,ASF_001,ok
+PLAME,REM,45781236|0201,concepto,0201,0201,ok
+PLAME,REM,45781236|0201,trabajador,Carlos,Carlos,ok
+PLAME,REM,45781236|0312,concepto,0312,0312,ok
+PLAME,REM,45781236|0312,dni,45781236,45781236,ok
+PLAME,REM,45781236|0312,trabajador,Carlos,Carlos,ok
+PLAME,REM,45781236|0312,monto,243.88,243.88,ok
+PLAME,REM,45781236|0312,origen,BONO_GRATI_001,BONO_GRATI_001,ok
+PLAME,REM,46321478|0121,trabajador,Rosa,Rosa,ok
+PLAME,REM,46321478|0121,monto,1680.00,1680.00,ok
+PLAME,REM,46321478|0121,origen,RBS_002 × 4 semanas,RBS_002 × 4 semanas,ok
+PLAME,REM,46321478|0121,concepto,0121,0121,ok
+PLAME,REM,46321478|0121,dni,46321478,46321478,ok
+PLAME,REM,46321478|0702,trabajador,Rosa,Rosa,ok
+PLAME,REM,46321478|0702,dni,46321478,46321478,ok
+PLAME,REM,46321478|0702,monto,16.80,16.80,ok
+PLAME,REM,46321478|0702,origen,SIND_001 × 4 semanas,SIND_001 × 4 semanas,ok
+PLAME,REM,46321478|0702,concepto,0702,0702,ok
+PLAME,ZIP,4ta,archivo,4ta,4ta,ok
+PLAME,ZIP,4ta,presente,SI,SI,ok
+PLAME,ZIP,4ta,nombre,060120260720603456786.4ta,060120260720603456786.4ta,ok
+PLAME,ZIP,jor,nombre,060120260720603456786.jor,060120260720603456786.jor,ok
+PLAME,ZIP,jor,presente,SI,SI,ok
+PLAME,ZIP,jor,archivo,jor,jor,ok
+PLAME,ZIP,ps4,nombre,060120260720603456786.ps4,060120260720603456786.ps4,ok
+PLAME,ZIP,ps4,archivo,ps4,ps4,ok
+PLAME,ZIP,ps4,presente,SI,SI,ok
+PLAME,ZIP,rem,presente,SI,SI,ok
+PLAME,ZIP,rem,nombre,060120260720603456786.rem,060120260720603456786.rem,ok
+PLAME,ZIP,rem,archivo,rem,rem,ok
+PLAME,ZIP,snl,presente,SI,SI,ok
+PLAME,ZIP,snl,nombre,060120260720603456786.snl,060120260720603456786.snl,ok
+PLAME,ZIP,snl,archivo,snl,snl,ok
+ASISTENCIA,Combinado,43815927|FALTA · días,trabajador,Óscar,Óscar,ok
+ASISTENCIA,Combinado,43815927|FALTA · días,valor,2.00,2.00,ok
+ASISTENCIA,Combinado,43815927|FALTA · días,origen,2 faltas,2 faltas,ok
+ASISTENCIA,Combinado,43815927|FALTA · días,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA,Combinado,43815927|FALTA · días,dni,43815927,43815927,ok
+ASISTENCIA,Combinado,43815927|RB_001,origen,3.000/30 × (30 − 2 faltas − 3 vacaciones),3.000/30 × (30 − 2 faltas − 3 vacaciones),ok
+ASISTENCIA,Combinado,43815927|RB_001,dni,43815927,43815927,ok
+ASISTENCIA,Combinado,43815927|RB_001,trabajador,Óscar,Óscar,ok
+ASISTENCIA,Combinado,43815927|RB_001,concepto,RB_001,RB_001,ok
+ASISTENCIA,Combinado,43815927|RB_001,valor,2500.00,2500.00,ok
+ASISTENCIA,Combinado,43815927|días no pagados,valor,5.00,5.00,ok
+ASISTENCIA,Combinado,43815927|días no pagados,dni,43815927,43815927,ok
+ASISTENCIA,Combinado,43815927|días no pagados,trabajador,Óscar,Óscar,ok
+ASISTENCIA,Combinado,43815927|días no pagados,concepto,días no pagados,días no pagados,ok
+ASISTENCIA,Combinado,43815927|días no pagados,origen,2 faltas + 3 días de vacaciones,2 faltas + 3 días de vacaciones,ok
+ASISTENCIA,Combinado,43815927|vacaciones aprobadas · días,dni,43815927,43815927,ok
+ASISTENCIA,Combinado,43815927|vacaciones aprobadas · días,valor,3.00,3.00,ok
+ASISTENCIA,Combinado,43815927|vacaciones aprobadas · días,origen,del 21 al 23,del 21 al 23,ok
+ASISTENCIA,Combinado,43815927|vacaciones aprobadas · días,concepto,vacaciones aprobadas · días,vacaciones aprobadas · días,ok
+ASISTENCIA,Combinado,43815927|vacaciones aprobadas · días,trabajador,Óscar,Óscar,ok
+ASISTENCIA,Diagnóstico,1 · empleados del caso NOMINA encontrados,cantidad,4,4,ok
+ASISTENCIA,Diagnóstico,1 · empleados del caso NOMINA encontrados,etapa,1 · empleados del caso NOMINA encontrados,1 · empleados del caso NOMINA encontrados,ok
+ASISTENCIA,Diagnóstico,2 · boletas de septiembre,etapa,2 · boletas de septiembre,2 · boletas de septiembre,ok
+ASISTENCIA,Diagnóstico,2 · boletas de septiembre,cantidad,4,4,ok
+ASISTENCIA,Diagnóstico,3 · vacación de Óscar validada,cantidad,SI,SI,ok
+ASISTENCIA,Diagnóstico,3 · vacación de Óscar validada,etapa,3 · vacación de Óscar validada,3 · vacación de Óscar validada,ok
+ASISTENCIA,Diagnóstico,4 · motivo del corte,cantidad,ninguno,ninguno,ok
+ASISTENCIA,Diagnóstico,4 · motivo del corte,etapa,4 · motivo del corte,4 · motivo del corte,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · horas,trabajador,María,María,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · horas,dni,41236547,41236547,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · horas,valor,4.00,4.00,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · horas,origen,medio día,medio día,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · horas,concepto,FALTA_PARCIAL · horas,FALTA_PARCIAL · horas,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · pagada,trabajador,María,María,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · pagada,dni,41236547,41236547,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · pagada,valor,NO,NO,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · pagada,origen,no se paga,no se paga,ok
+ASISTENCIA,Faltas,41236547|FALTA_PARCIAL · pagada,concepto,FALTA_PARCIAL · pagada,FALTA_PARCIAL · pagada,ok
+ASISTENCIA,Faltas,41236547|RB_001,origen,"8.000 − 0,5 × 8.000/30 (fase 2)","8.000 − 0,5 × 8.000/30 (fase 2)",ok
+ASISTENCIA,Faltas,41236547|RB_001,valor,7866.67,7866.67,ok
+ASISTENCIA,Faltas,41236547|RB_001,dni,41236547,41236547,ok
+ASISTENCIA,Faltas,41236547|RB_001,trabajador,María,María,ok
+ASISTENCIA,Faltas,41236547|RB_001,concepto,RB_001,RB_001,ok
+ASISTENCIA,Faltas,45781236|FALTA · días,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA,Faltas,45781236|FALTA · días,trabajador,Carlos,Carlos,ok
+ASISTENCIA,Faltas,45781236|FALTA · días,dni,45781236,45781236,ok
+ASISTENCIA,Faltas,45781236|FALTA · días,valor,0.00,0.00,ok
+ASISTENCIA,Faltas,45781236|FALTA · días,origen,sin faltas: no hay línea,sin faltas: no hay línea,ok
+ASISTENCIA,Faltas,47852169|FALTA · días,trabajador,Jorge,Jorge,ok
+ASISTENCIA,Faltas,47852169|FALTA · días,valor,2.00,2.00,ok
+ASISTENCIA,Faltas,47852169|FALTA · días,origen,2 faltas,2 faltas,ok
+ASISTENCIA,Faltas,47852169|FALTA · días,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA,Faltas,47852169|FALTA · días,dni,47852169,47852169,ok
+ASISTENCIA,Faltas,47852169|FALTA · pagada,valor,NO,NO,ok
+ASISTENCIA,Faltas,47852169|FALTA · pagada,trabajador,Jorge,Jorge,ok
+ASISTENCIA,Faltas,47852169|FALTA · pagada,dni,47852169,47852169,ok
+ASISTENCIA,Faltas,47852169|FALTA · pagada,origen,no se paga,no se paga,ok
+ASISTENCIA,Faltas,47852169|FALTA · pagada,concepto,FALTA · pagada,FALTA · pagada,ok
+ASISTENCIA,Faltas,47852169|RB_001,origen,1.130 − 2 × 1.130/30,1.130 − 2 × 1.130/30,ok
+ASISTENCIA,Faltas,47852169|RB_001,valor,1054.67,1054.67,ok
+ASISTENCIA,Faltas,47852169|RB_001,concepto,RB_001,RB_001,ok
+ASISTENCIA,Faltas,47852169|RB_001,dni,47852169,47852169,ok
+ASISTENCIA,Faltas,47852169|RB_001,trabajador,Jorge,Jorge,ok
+ASISTENCIA,Tardanzas,45781236|NET = ingresos − |deducciones|,origen,definición del neto,definición del neto,ok
+ASISTENCIA,Tardanzas,45781236|NET = ingresos − |deducciones|,concepto,NET = ingresos − |deducciones|,NET = ingresos − |deducciones|,ok
+ASISTENCIA,Tardanzas,45781236|NET = ingresos − |deducciones|,trabajador,Carlos,Carlos,ok
+ASISTENCIA,Tardanzas,45781236|NET = ingresos − |deducciones|,dni,45781236,45781236,ok
+ASISTENCIA,Tardanzas,45781236|NET = ingresos − |deducciones|,valor,SI,SI,ok
+ASISTENCIA,Tardanzas,45781236|TAR_001,origen,3 × 25 min − 10 de tolerancia = 45 min,3 × 25 min − 10 de tolerancia = 45 min,ok
+ASISTENCIA,Tardanzas,45781236|TAR_001,trabajador,Carlos,Carlos,ok
+ASISTENCIA,Tardanzas,45781236|TAR_001,concepto,TAR_001,TAR_001,ok
+ASISTENCIA,Tardanzas,45781236|TAR_001,dni,45781236,45781236,ok
+ASISTENCIA,Tardanzas,45781236|TAR_001,valor,10.94,10.94,ok

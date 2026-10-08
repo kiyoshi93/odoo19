@@ -1,0 +1,2928 @@
+[
+ {
+  "id": 51,
+  "number": false,
+  "employee_id": [
+   20,
+   "Ana Cecilia Gonzales Ruiz"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   490,
+   "MISCE/2026/07/0008"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    15000.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    1350.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    16350.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    16350.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    16350.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 62,
+  "number": false,
+  "employee_id": [
+   20,
+   "Ana Cecilia Gonzales Ruiz"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   500,
+   "MISCE/2026/07/0018"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    500.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    15000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    15000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    15000.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    1500.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    220.5
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    172.605067
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    1267.25
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    1350.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    112.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    11839.64
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 45,
+  "number": false,
+  "employee_id": [
+   14,
+   "Carlos Alberto Quispe Mamani"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   484,
+   "MISCE/2026/07/0002"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    3613.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    243.87750000000003
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    3856.88
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    3856.88
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3856.88
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 58,
+  "number": false,
+  "employee_id": [
+   14,
+   "Carlos Alberto Quispe Mamani"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   496,
+   "MISCE/2026/07/0014"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    116.66666666666669
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    3500.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    113.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3613.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3613.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    361.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    53.11109999999999
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    49.4981
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    325.17
+   ],
+   [
+    "EPS_APO_001",
+    "EPS - Aporte del empleador",
+    162.585
+   ],
+   [
+    "EPS_CRED_001",
+    "EPS - Crédito contra ESSALUD",
+    -81.2925
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    27.0975
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3149.09
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 64,
+  "number": false,
+  "employee_id": [
+   22,
+   "Carmen Rosa Vásquez León"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   502,
+   "MISCE/2026/07/0020"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    83.33333333333331
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    2500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2500.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    250.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    38.75
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    34.25
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    225.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    18.75
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2177.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 53,
+  "number": false,
+  "employee_id": [
+   22,
+   "Carmen Rosa Vásquez León"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   492,
+   "MISCE/2026/07/0010"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    2500.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    225.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    2725.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    2725.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2725.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 60,
+  "number": false,
+  "employee_id": [
+   16,
+   "Jorge Luis Fernández Rojas"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   498,
+   "MISCE/2026/07/0016"
+  ],
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    37.666666666666664
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    1130.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1130.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1130.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    146.9
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    101.7
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    8.475
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    983.1
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 47,
+  "number": false,
+  "employee_id": [
+   16,
+   "Jorge Luis Fernández Rojas"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   486,
+   "MISCE/2026/07/0004"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    1130.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    101.7
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    1231.7
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    1231.7
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1231.7
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 63,
+  "number": false,
+  "employee_id": [
+   21,
+   "José Antonio Ramírez Flores"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   501,
+   "MISCE/2026/07/0019"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    50.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    1500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    195.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    135.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    11.25
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1305.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 52,
+  "number": false,
+  "employee_id": [
+   21,
+   "José Antonio Ramírez Flores"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   491,
+   "MISCE/2026/07/0009"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    750.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    67.5
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    817.5
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    817.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    817.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 50,
+  "number": false,
+  "employee_id": [
+   19,
+   "Luis Miguel Sánchez Díaz"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   489,
+   "MISCE/2026/07/0007"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    4500.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    405.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    4905.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    4905.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    4905.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 61,
+  "number": false,
+  "employee_id": [
+   19,
+   "Luis Miguel Sánchez Díaz"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   499,
+   "MISCE/2026/07/0017"
+  ],
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    4500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    4500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    4500.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    450.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    76.05
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    61.65
+   ],
+   [
+    "DESC_ADEL_001",
+    "Descuento de adelanto",
+    1800.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    405.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    33.75
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2112.3
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 44,
+  "number": false,
+  "employee_id": [
+   19,
+   "Luis Miguel Sánchez Díaz"
+  ],
+  "struct_id": [
+   5,
+   "Nómina Quincenal / Adelanto"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-15",
+  "state": "done",
+  "move_id": [
+   483,
+   "MISCE/2026/07/0001"
+  ],
+  "lineas": [
+   [
+    "ADEL_001",
+    "Adelanto de remuneración",
+    1800.0
+   ],
+   [
+    "GROSS",
+    "Total adelanto",
+    1800.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1800.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    11.0,
+    88.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 59,
+  "number": false,
+  "employee_id": [
+   15,
+   "María Elena Torres Vega"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   497,
+   "MISCE/2026/07/0015"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    266.6666666666667
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    8000.000000000001
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    8000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    8000.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    800.0
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    109.6
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    269.4
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    720.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    60.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    6821.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 46,
+  "number": false,
+  "employee_id": [
+   15,
+   "María Elena Torres Vega"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   485,
+   "MISCE/2026/07/0003"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    8000.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    720.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    8720.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    8720.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    8720.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 65,
+  "number": false,
+  "employee_id": [
+   23,
+   "Miguel Ángel Castro Núñez"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   503,
+   "MISCE/2026/07/0021"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    3000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3000.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    390.0
+   ],
+   [
+    "DJ_001",
+    "Descuento judicial",
+    522.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    270.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    22.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2088.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 54,
+  "number": false,
+  "employee_id": [
+   23,
+   "Miguel Ángel Castro Núñez"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   493,
+   "MISCE/2026/07/0011"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    3000.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    270.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    3270.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    3270.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3270.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 66,
+  "number": false,
+  "employee_id": [
+   24,
+   "Nilda Beatriz Apaza Condori"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   504,
+   "MISCE/2026/07/0022"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    101.7
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ],
+   [
+    "VACPE100",
+    -22.0,
+    -176.0,
+    false
+   ]
+  ]
+ },
+ {
+  "id": 56,
+  "number": false,
+  "employee_id": [
+   24,
+   "Nilda Beatriz Apaza Condori"
+  ],
+  "struct_id": [
+   8,
+   "Vacaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-30",
+  "state": "done",
+  "move_id": [
+   494,
+   "MISCE/2026/07/0012"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "VAC_001",
+    "Remuneración vacacional",
+    3000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3000.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    390.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    270.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    22.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2610.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    22.0,
+    176.0,
+    true
+   ],
+   [
+    "VACPE100",
+    -22.0,
+    -176.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 69,
+  "number": false,
+  "employee_id": [
+   17,
+   "Pedro Pablo Huamán Ccopa"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-07",
+  "state": "done",
+  "move_id": [
+   507,
+   "MISCE/2026/07/0025"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    50.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    350.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    350.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    350.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    45.5
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    31.5
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    4.55
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    5.95
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    2.625
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    304.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 48,
+  "number": false,
+  "employee_id": [
+   17,
+   "Pedro Pablo Huamán Ccopa"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   487,
+   "MISCE/2026/07/0005"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    1500.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    135.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    1635.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    1635.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1635.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 49,
+  "number": false,
+  "employee_id": [
+   18,
+   "Rosa Isabel Chávez Paredes"
+  ],
+  "struct_id": [
+   6,
+   "Gratificaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   488,
+   "MISCE/2026/07/0006"
+  ],
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    1800.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    162.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    1962.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    1962.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1962.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 73,
+  "number": false,
+  "employee_id": [
+   18,
+   "Rosa Isabel Chávez Paredes"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-07",
+  "state": "done",
+  "move_id": [
+   511,
+   "MISCE/2026/07/0029"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    60.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    420.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    420.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    420.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    42.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    6.72
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    5.754000000000001
+   ],
+   [
+    "SIND_001",
+    "Cuota sindical",
+    4.2
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    37.8
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    5.46
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    7.14
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    3.15
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    361.33
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 68,
+  "number": false,
+  "employee_id": [
+   26,
+   "Teresa Isabel Meza Palomino"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   506,
+   "MISCE/2026/07/0024"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    4500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    4500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    4500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    585.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    405.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    33.75
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3915.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 55,
+  "number": false,
+  "employee_id": [
+   26,
+   "Teresa Isabel Meza Palomino"
+  ],
+  "struct_id": [
+   5,
+   "Nómina Quincenal / Adelanto"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-15",
+  "state": "draft",
+  "move_id": false,
+  "lineas": [],
+  "dias": [
+   [
+    "WORK100",
+    11.0,
+    88.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 67,
+  "number": false,
+  "employee_id": [
+   25,
+   "Óscar Eduardo Salazar Ibáñez"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-31",
+  "state": "done",
+  "move_id": [
+   505,
+   "MISCE/2026/07/0023"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    1500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    195.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    135.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    11.25
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1305.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ],
+   [
+    "VACPE100",
+    -11.0,
+    -88.0,
+    false
+   ]
+  ]
+ },
+ {
+  "id": 57,
+  "number": false,
+  "employee_id": [
+   25,
+   "Óscar Eduardo Salazar Ibáñez"
+  ],
+  "struct_id": [
+   8,
+   "Vacaciones"
+  ],
+  "date_from": "2026-07-01",
+  "date_to": "2026-07-15",
+  "state": "done",
+  "move_id": [
+   495,
+   "MISCE/2026/07/0013"
+  ],
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "VAC_001",
+    "Remuneración vacacional",
+    1500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    195.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    135.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    11.25
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1305.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    11.0,
+    88.0,
+    true
+   ],
+   [
+    "VACPE100",
+    -11.0,
+    -88.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 70,
+  "number": false,
+  "employee_id": [
+   17,
+   "Pedro Pablo Huamán Ccopa"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-08",
+  "date_to": "2026-07-14",
+  "state": "done",
+  "move_id": [
+   508,
+   "MISCE/2026/07/0026"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    50.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    350.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    350.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    350.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    45.5
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    31.5
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    4.55
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    5.95
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    2.625
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    304.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 74,
+  "number": false,
+  "employee_id": [
+   18,
+   "Rosa Isabel Chávez Paredes"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-08",
+  "date_to": "2026-07-14",
+  "state": "done",
+  "move_id": [
+   512,
+   "MISCE/2026/07/0030"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    60.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    420.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    420.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    420.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    42.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    6.72
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    5.754000000000001
+   ],
+   [
+    "SIND_001",
+    "Cuota sindical",
+    4.2
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    37.8
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    5.46
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    7.14
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    3.15
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    361.33
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 71,
+  "number": false,
+  "employee_id": [
+   17,
+   "Pedro Pablo Huamán Ccopa"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-15",
+  "date_to": "2026-07-21",
+  "state": "done",
+  "move_id": [
+   509,
+   "MISCE/2026/07/0027"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    50.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    350.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    350.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    350.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    45.5
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    31.5
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    4.55
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    5.95
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    2.625
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    304.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 75,
+  "number": false,
+  "employee_id": [
+   18,
+   "Rosa Isabel Chávez Paredes"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-15",
+  "date_to": "2026-07-21",
+  "state": "done",
+  "move_id": [
+   513,
+   "MISCE/2026/07/0031"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    60.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    420.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    420.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    420.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    42.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    6.72
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    5.754000000000001
+   ],
+   [
+    "SIND_001",
+    "Cuota sindical",
+    4.2
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    37.8
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    5.46
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    7.14
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    3.15
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    361.33
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 72,
+  "number": false,
+  "employee_id": [
+   17,
+   "Pedro Pablo Huamán Ccopa"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-22",
+  "date_to": "2026-07-28",
+  "state": "done",
+  "move_id": [
+   510,
+   "MISCE/2026/07/0028"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    50.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    350.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    350.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    350.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    45.5
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    31.5
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    4.55
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    5.95
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    2.625
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    304.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 76,
+  "number": false,
+  "employee_id": [
+   18,
+   "Rosa Isabel Chávez Paredes"
+  ],
+  "struct_id": [
+   4,
+   "Nómina Semanal Obreros"
+  ],
+  "date_from": "2026-07-22",
+  "date_to": "2026-07-28",
+  "state": "done",
+  "move_id": [
+   514,
+   "MISCE/2026/07/0032"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    60.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    5.0
+   ],
+   [
+    "RBS_002",
+    "Remuneración básica semanal",
+    420.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    420.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    420.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    42.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    6.72
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    5.754000000000001
+   ],
+   [
+    "SIND_001",
+    "Cuota sindical",
+    4.2
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    37.8
+   ],
+   [
+    "SCTR_SAL_001",
+    "SCTR Salud",
+    5.46
+   ],
+   [
+    "SCTR_PEN_001",
+    "SCTR Pensión",
+    7.14
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    3.15
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    361.33
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    5.0,
+    40.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 78,
+  "number": false,
+  "employee_id": [
+   22,
+   "Carmen Rosa Vásquez León"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-08-01",
+  "date_to": "2026-08-31",
+  "state": "done",
+  "move_id": [
+   516,
+   "MISCE/2026/08/0002"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    83.33333333333331
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    2500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2500.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    250.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    38.75
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    34.25
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    225.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    18.75
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2177.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 77,
+  "number": false,
+  "employee_id": [
+   22,
+   "Carmen Rosa Vásquez León"
+  ],
+  "struct_id": [
+   9,
+   "Liquidación"
+  ],
+  "date_from": "2026-08-01",
+  "date_to": "2026-08-31",
+  "state": "done",
+  "move_id": [
+   515,
+   "MISCE/2026/08/0001"
+  ],
+  "lineas": [
+   [
+    "VAC_TRUNCA_001",
+    "Vacaciones truncas",
+    1666.6666666666665
+   ],
+   [
+    "GRATI_TRUNCA_001",
+    "Gratificación trunca",
+    833.3333333333335
+   ],
+   [
+    "BONO_GRATI_TRUNCA_001",
+    "Bonificación extraordinaria s/ gratificación trunca",
+    74.9997
+   ],
+   [
+    "CTS_TRUNCA_001",
+    "CTS trunca",
+    972.2222222222222
+   ],
+   [
+    "GROSS",
+    "Total liquidación",
+    3547.22
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (liquidación)",
+    2575.0
+   ],
+   [
+    "NET",
+    "Neto de liquidación",
+    3547.22
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 79,
+  "number": false,
+  "employee_id": [
+   15,
+   "María Elena Torres Vega"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-08-01",
+  "date_to": "2026-08-31",
+  "state": "done",
+  "move_id": [
+   517,
+   "MISCE/2026/08/0003"
+  ],
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    266.6666666666667
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    8000.000000000001
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    8000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    8000.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    800.0
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    109.6
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    377.16
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    720.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    60.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    6713.24
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ]
+ },
+ {
+  "id": 80,
+  "number": false,
+  "employee_id": [
+   14,
+   "Carlos Alberto Quispe Mamani"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-09-01",
+  "date_to": "2026-09-30",
+  "state": "draft",
+  "move_id": false,
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    116.66666666666669
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    3500.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    113.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3613.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3613.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    361.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    53.11109999999999
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    49.4981
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    325.17
+   ],
+   [
+    "EPS_APO_001",
+    "EPS - Aporte del empleador",
+    162.585
+   ],
+   [
+    "EPS_CRED_001",
+    "EPS - Crédito contra ESSALUD",
+    -81.2925
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    27.0975
+   ],
+   [
+    "TAR_001",
+    "Descuento por tardanzas",
+    10.9375
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3138.15
+   ]
+  ],
+  "dias": []
+ },
+ {
+  "id": 81,
+  "number": false,
+  "employee_id": [
+   16,
+   "Jorge Luis Fernández Rojas"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-09-01",
+  "date_to": "2026-09-30",
+  "state": "draft",
+  "move_id": false,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    37.666666666666664
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    1054.6666666666665
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1054.67
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1054.67
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    137.1071
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    101.7
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    7.910025000000001
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    917.56
+   ]
+  ],
+  "dias": [
+   [
+    "FALTA",
+    2.0,
+    16.0,
+    false
+   ]
+  ]
+ },
+ {
+  "id": 82,
+  "number": false,
+  "employee_id": [
+   15,
+   "María Elena Torres Vega"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-09-01",
+  "date_to": "2026-09-30",
+  "state": "draft",
+  "move_id": false,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    266.6666666666667
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    7866.666666666668
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    7866.67
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    7866.67
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    786.6669999999999
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    107.773379
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    366.4936
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    708.0003
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    59.00002500000001
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    6605.74
+   ]
+  ],
+  "dias": [
+   [
+    "FALTA_PARCIAL",
+    0.5,
+    4.0,
+    false
+   ]
+  ]
+ },
+ {
+  "id": 83,
+  "number": false,
+  "employee_id": [
+   25,
+   "Óscar Eduardo Salazar Ibáñez"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "date_from": "2026-09-01",
+  "date_to": "2026-09-30",
+  "state": "draft",
+  "move_id": false,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    2500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    325.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    225.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    18.75
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2175.0
+   ]
+  ],
+  "dias": [
+   [
+    "FALTA",
+    2.0,
+    16.0,
+    false
+   ]
+  ]
+ }
+]
