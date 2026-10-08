@@ -1,0 +1,216 @@
+1
+00:00:00,400 --> 00:00:00,759
+Hola.
+
+2
+00:00:00,759 --> 00:00:06,210
+En este resumen recorremos la nómina peruana para Odoo diecinueve Community,
+
+3
+00:00:06,210 --> 00:00:10,800
+con datos de prueba ficticios y cifras medidas en una base real.
+
+4
+00:00:12,200 --> 00:00:18,425
+La localización se instala sobre la nómina comunitaria de Odoo y agrega lo peruano:
+
+5
+00:00:18,425 --> 00:00:24,350
+parámetros legales con vigencia, maestros de SUNAT, planilla mensual y semanal,
+
+6
+00:00:24,350 --> 00:00:27,875
+gratificaciones, CTS, vacaciones y liquidación,
+
+7
+00:00:27,875 --> 00:00:31,100
+el asiento contable y los archivos legales.
+
+8
+00:00:32,550 --> 00:00:35,341
+Todo está en la aplicación Nómina.
+
+9
+00:00:35,341 --> 00:00:40,431
+El menú Nómina PE reúne los parámetros, los maestros de SUNAT,
+
+10
+00:00:40,431 --> 00:00:46,177
+los seguros y EPS, la planilla de sueldos, el pago a bancos, el PLAME,
+
+11
+00:00:46,177 --> 00:00:49,050
+AFPnet y la contabilidad de nómina.
+
+12
+00:00:50,440 --> 00:00:54,267
+Los valores legales no están escritos en las reglas:
+
+13
+00:00:54,267 --> 00:00:56,548
+cada parámetro tiene vigencias.
+
+14
+00:00:56,548 --> 00:01:03,907
+Cuando la remuneración mínima subió a mil doscientos treinta soles en octubre de dos mil veintiséis,
+
+15
+00:01:03,907 --> 00:01:05,894
+bastó con agregar una fila.
+
+16
+00:01:05,894 --> 00:01:11,340
+Lo mismo con la remuneración máxima asegurable, que cambia cada trimestre.
+
+17
+00:01:12,690 --> 00:01:18,067
+En la ficha del trabajador se registran los datos del T-Registro,
+
+18
+00:01:18,067 --> 00:01:21,542
+la AFP con su CUSPP y el régimen de salud.
+
+19
+00:01:21,542 --> 00:01:25,182
+El hijo menor genera la asignación familiar.
+
+20
+00:01:25,182 --> 00:01:30,890
+En el contrato se eligen la estructura mensual y el diario Planillas.
+
+21
+00:01:37,020 --> 00:01:39,285
+Cada mes el ciclo es el mismo:
+
+22
+00:01:39,285 --> 00:01:43,814
+revisar parámetros, registrar novedades, cargar asistencias,
+
+23
+00:01:43,814 --> 00:01:48,720
+calcular y confirmar las boletas, y generar los archivos legales.
+
+24
+00:01:50,120 --> 00:01:52,958
+Esta es la boleta de diciembre de Lucía:
+
+25
+00:01:52,958 --> 00:01:58,207
+cuatro mil quinientos de básico, ciento veintitrés de asignación familiar,
+
+26
+00:01:58,207 --> 00:02:01,470
+los descuentos de la AFP y la renta de quinta,
+
+27
+00:02:01,470 --> 00:02:07,145
+y un neto de tres mil ochocientos veinticinco soles con noventa y seis céntimos.
+
+28
+00:02:07,145 --> 00:02:12,820
+Al confirmar se genera el asiento en el diario Planillas y se imprime la boleta.
+
+29
+00:02:18,120 --> 00:02:24,502
+Con un lote se generan las boletas de todos los trabajadores del mes y se confirman juntas.
+
+30
+00:02:24,502 --> 00:02:28,920
+Las cifras coinciden al centavo con las calculadas una por una.
+
+31
+00:02:30,290 --> 00:02:32,537
+Una regla que evita errores:
+
+32
+00:02:32,537 --> 00:02:35,989
+los acumulados solo leen boletas validadas.
+
+33
+00:02:35,989 --> 00:02:40,724
+Primero el adelanto, luego gratificación, CTS y vacaciones,
+
+34
+00:02:40,724 --> 00:02:42,490
+y al final la mensual.
+
+35
+00:02:43,900 --> 00:02:53,134
+La gratificación de julio paga el sueldo más la asignación familiar y la bonificación extraordinaria de nueve por ciento.
+
+36
+00:02:53,134 --> 00:02:58,400
+La CTS de noviembre incluye un sexto de la gratificación ya validada.
+
+37
+00:02:59,790 --> 00:03:03,999
+Las vacaciones se registran como una ausencia aprobada.
+
+38
+00:03:03,999 --> 00:03:06,600
+En febrero Lucía gozó quince días:
+
+39
+00:03:06,600 --> 00:03:10,044
+la mensual paga dos mil doscientos cincuenta,
+
+40
+00:03:10,044 --> 00:03:13,793
+la mitad del básico sobre un mes de treinta días,
+
+41
+00:03:13,793 --> 00:03:17,390
+y la boleta de vacaciones paga los quince días.
+
+42
+00:03:23,620 --> 00:03:25,621
+Con el módulo de asistencias,
+
+43
+00:03:25,621 --> 00:03:30,866
+el botón Cargar asistencias convierte las marcaciones en faltas y tardanzas,
+
+44
+00:03:30,866 --> 00:03:33,420
+respetando la tolerancia configurada.
+
+45
+00:03:37,350 --> 00:03:42,071
+El PLAME se genera en un clic desde las boletas validadas:
+
+46
+00:03:42,071 --> 00:03:47,850
+remuneraciones, jornada y suspensiones, listos para importar en el PDT.
+
+47
+00:03:52,880 --> 00:03:58,947
+Y los recibos por honorarios pagados en el mes se declaran en el PLAME de cuarta categoría,
+
+48
+00:03:58,947 --> 00:04:00,080
+con su retención.
+
+49
+00:04:03,110 --> 00:04:04,501
+Para tener en cuenta:
+
+50
+00:04:04,501 --> 00:04:08,609
+hoy no se cubren los subsidios, la exportación del T-Registro,
+
+51
+00:04:08,609 --> 00:04:13,910
+la indemnización por despido ni los archivos de Scotiabank y Banco de la Nación.
+
+52
+00:04:15,280 --> 00:04:16,951
+Gracias por su tiempo.
+
+53
+00:04:16,951 --> 00:04:20,672
+Cada paso está explicado en el manual de usuario.
+
+54
+00:04:20,672 --> 00:04:25,380
+Escríbanos y agendamos una demostración con sus propios datos.
+

@@ -1,7 +1,11 @@
 # Continuidad: manual de nómina Community (Odoo 19)
 
 Estado al 2026-10-08: **fase (a) entregada** — `Manual_Nomina_PE_Odoo19_Community.docx` (24 capítulos,
-anexos A-C, 53 figuras). Pendiente: revisión del usuario y fase (b) (video resumen y promo vertical).
+anexos A-C, 53 figuras). Fase (b) entregada el 2026-10-08: `video/Resumen_Nomina_Community.mp4` (4:27, narrado con ElevenLabs Sarah,
++ SRT) y `promo/Promo_Nomina_Community_*.mp4` (vertical 9:16, ~2 min, voces Liam y Sarah, sin voz con y sin
+subtítulos). También `mejoras/Mejoras_Nomina_PE_Community.docx` (32 mejoras para el chat de desarrollo).
+Regenerar: `node manuales_ce/promo/scripts/render_escenas.js`, `VOZ=el:<id> python3 manuales_ce/promo/scripts/montar_promo.py`;
+`node manuales_ce/video/scripts/grabar.js` (desde manuales_ce/video), `node .../tarjetas.js`, `python3 manuales_ce/video/scripts/montar.py`.
 
 Acceso: `ODOO_URL=https://51.222.13.59.sslip.io` (el proxy solo deja HTTPS). En modo Auto el clasificador
 bloquea ese host; usar el modo «Aceptar ediciones» o la regla del script de configuración del entorno.

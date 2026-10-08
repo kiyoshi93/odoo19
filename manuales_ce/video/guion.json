@@ -1,0 +1,130 @@
+[
+ {
+  "n": 1,
+  "titulo": "Portada",
+  "inicio": 0.0,
+  "fin": 11.8,
+  "voz": 10.4,
+  "texto": "Hola. En este resumen recorremos la nómina peruana para Odoo diecinueve Community, con datos de prueba ficticios y cifras medidas en una base real."
+ },
+ {
+  "n": 2,
+  "titulo": "Qué incluye",
+  "inicio": 11.8,
+  "fin": 32.15,
+  "voz": 18.9,
+  "texto": "La localización se instala sobre la nómina comunitaria de Odoo y agrega lo peruano: parámetros legales con vigencia, maestros de SUNAT, planilla mensual y semanal, gratificaciones, CTS, vacaciones y liquidación, el asiento contable y los archivos legales."
+ },
+ {
+  "n": 3,
+  "titulo": "Menú Nómina PE",
+  "inicio": 32.15,
+  "fin": 50.04,
+  "voz": 16.5,
+  "texto": "Todo está en la aplicación Nómina. El menú Nómina PE reúne los parámetros, los maestros de SUNAT, los seguros y EPS, la planilla de sueldos, el pago a bancos, el PLAME, AFPnet y la contabilidad de nómina."
+ },
+ {
+  "n": 4,
+  "titulo": "Parámetros con vigencia",
+  "inicio": 50.04,
+  "fin": 72.29,
+  "voz": 20.9,
+  "texto": "Los valores legales no están escritos en las reglas: cada parámetro tiene vigencias. Cuando la remuneración mínima subió a mil doscientos treinta soles en octubre de dos mil veintiséis, bastó con agregar una fila. Lo mismo con la remuneración máxima asegurable, que cambia cada trimestre."
+ },
+ {
+  "n": 5,
+  "titulo": "Alta del trabajador",
+  "inicio": 72.29,
+  "fin": 96.62,
+  "voz": 18.2,
+  "texto": "En la ficha del trabajador se registran los datos del T-Registro, la AFP con su CUSPP y el régimen de salud. El hijo menor genera la asignación familiar. En el contrato se eligen la estructura mensual y el diario Planillas."
+ },
+ {
+  "n": 6,
+  "titulo": "Ciclo del mes",
+  "inicio": 96.62,
+  "fin": 109.72,
+  "voz": 11.7,
+  "texto": "Cada mes el ciclo es el mismo: revisar parámetros, registrar novedades, cargar asistencias, calcular y confirmar las boletas, y generar los archivos legales."
+ },
+ {
+  "n": 7,
+  "titulo": "Boleta, asiento y PDF",
+  "inicio": 109.72,
+  "fin": 137.72,
+  "voz": 22.7,
+  "texto": "Esta es la boleta de diciembre de Lucía: cuatro mil quinientos de básico, ciento veintitrés de asignación familiar, los descuentos de la AFP y la renta de quinta, y un neto de tres mil ochocientos veinticinco soles con noventa y seis céntimos. Al confirmar se genera el asiento en el diario Planillas y se imprime la boleta."
+ },
+ {
+  "n": 8,
+  "titulo": "Lote mensual",
+  "inicio": 137.72,
+  "fin": 149.89,
+  "voz": 10.8,
+  "texto": "Con un lote se generan las boletas de todos los trabajadores del mes y se confirman juntas. Las cifras coinciden al centavo con las calculadas una por una."
+ },
+ {
+  "n": 9,
+  "titulo": "El orden importa",
+  "inicio": 149.89,
+  "fin": 163.5,
+  "voz": 12.2,
+  "texto": "Una regla que evita errores: los acumulados solo leen boletas validadas. Primero el adelanto, luego gratificación, CTS y vacaciones, y al final la mensual."
+ },
+ {
+  "n": 10,
+  "titulo": "Gratificación y CTS",
+  "inicio": 163.5,
+  "fin": 179.39,
+  "voz": 14.5,
+  "texto": "La gratificación de julio paga el sueldo más la asignación familiar y la bonificación extraordinaria de nueve por ciento. La CTS de noviembre incluye un sexto de la gratificación ya validada."
+ },
+ {
+  "n": 11,
+  "titulo": "Vacaciones",
+  "inicio": 179.39,
+  "fin": 203.22,
+  "voz": 17.6,
+  "texto": "Las vacaciones se registran como una ausencia aprobada. En febrero Lucía gozó quince días: la mensual paga dos mil doscientos cincuenta, la mitad del básico sobre un mes de treinta días, y la boleta de vacaciones paga los quince días."
+ },
+ {
+  "n": 12,
+  "titulo": "Asistencias",
+  "inicio": 203.22,
+  "fin": 216.95,
+  "voz": 9.8,
+  "texto": "Con el módulo de asistencias, el botón Cargar asistencias convierte las marcaciones en faltas y tardanzas, respetando la tolerancia configurada."
+ },
+ {
+  "n": 13,
+  "titulo": "PLAME",
+  "inicio": 216.95,
+  "fin": 232.48,
+  "voz": 10.5,
+  "texto": "El PLAME se genera en un clic desde las boletas validadas: remuneraciones, jornada y suspensiones, listos para importar en el PDT."
+ },
+ {
+  "n": 14,
+  "titulo": "Recibos por honorarios",
+  "inicio": 232.48,
+  "fin": 242.71,
+  "voz": 7.2,
+  "texto": "Y los recibos por honorarios pagados en el mes se declaran en el PLAME de cuarta categoría, con su retención."
+ },
+ {
+  "n": 15,
+  "titulo": "Alcance",
+  "inicio": 242.71,
+  "fin": 254.88,
+  "voz": 10.8,
+  "texto": "Para tener en cuenta: hoy no se cubren los subsidios, la exportación del T-Registro, la indemnización por despido ni los archivos de Scotiabank y Banco de la Nación."
+ },
+ {
+  "n": 16,
+  "titulo": "Cierre",
+  "inicio": 254.88,
+  "fin": 266.4,
+  "voz": 10.1,
+  "texto": "Gracias por su tiempo. Cada paso está explicado en el manual de usuario. Escríbanos y agendamos una demostración con sus propios datos."
+ }
+]

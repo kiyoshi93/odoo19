@@ -1,0 +1,140 @@
+{
+ "a_menu": {
+  "inicio": 3.631,
+  "fin": 19.057,
+  "cortes": [
+   [
+    3.631,
+    6.497999999999999
+   ]
+  ],
+  "archivo": "crudo/a_menu.webm"
+ },
+ "b_parametros": {
+  "inicio": 3.653,
+  "fin": 22.276,
+  "cortes": [
+   [
+    3.653,
+    6.242
+   ],
+   [
+    13.362,
+    15.161999999999999
+   ]
+  ],
+  "archivo": "crudo/b_parametros.webm"
+ },
+ "c_empleado": {
+  "inicio": 3.329,
+  "fin": 33.416,
+  "cortes": [
+   [
+    3.33,
+    6.399
+   ],
+   [
+    23.151,
+    25.882
+   ]
+  ],
+  "archivo": "crudo/c_empleado.webm"
+ },
+ "d_boleta": {
+  "inicio": 3.436,
+  "fin": 37.621,
+  "cortes": [
+   [
+    3.436,
+    5.637
+   ],
+   [
+    17.784,
+    21.062
+   ],
+   [
+    28.466,
+    29.217000000000002
+   ]
+  ],
+  "archivo": "crudo/d_boleta.webm"
+ },
+ "e_lote": {
+  "inicio": 3.903,
+  "fin": 17.474,
+  "cortes": [
+   [
+    3.903,
+    6.521
+   ]
+  ],
+  "archivo": "crudo/e_lote.webm"
+ },
+ "f_beneficios": {
+  "inicio": 3.652,
+  "fin": 22.655,
+  "cortes": [
+   [
+    3.653,
+    6.366
+   ],
+   [
+    13.44,
+    15.558
+   ]
+  ],
+  "archivo": "crudo/f_beneficios.webm"
+ },
+ "g_vacaciones": {
+  "inicio": 3.237,
+  "fin": 35.08,
+  "cortes": [
+   [
+    3.237,
+    6.521
+   ],
+   [
+    11.925,
+    14.49
+   ],
+   [
+    26.711,
+    28.922
+   ]
+  ],
+  "archivo": "crudo/g_vacaciones.webm"
+ },
+ "h_asistencias": {
+  "inicio": 3.519,
+  "fin": 19.424,
+  "cortes": [
+   [
+    3.519,
+    5.7059999999999995
+   ]
+  ],
+  "archivo": "crudo/h_asistencias.webm"
+ },
+ "i_plame": {
+  "inicio": 3.807,
+  "fin": 21.797,
+  "cortes": [
+   [
+    3.808,
+    6.314
+   ]
+  ],
+  "archivo": "crudo/i_plame.webm"
+ },
+ "j_rxh": {
+  "inicio": 3.603,
+  "fin": 16.445,
+  "cortes": [
+   [
+    3.603,
+    6.213
+   ]
+  ],
+  "archivo": "crudo/j_rxh.webm"
+ }
+}
