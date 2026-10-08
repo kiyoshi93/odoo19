@@ -59,3 +59,10 @@
   afecta: ONP_001 se calcula sobre INA con la RB completa (2.389,75 × 13 % = 310,67). Pregunta para la contadora:
   ¿la tardanza descuenta remuneración computable (afecta a aportes y 5.ª) o es solo descuento del neto?
   En cambio FALTA/FALTA_PARCIAL (asistencia) sí reducen RB_001.
+- H-CE-8 (ampliado, medido en la boleta PDF de Lucía dic-2026) «Total descuentos: 797.03» (suma sin redondear
+  462,30 + 71,6565 + 63,3351 + 199,7378 = 797,0294) y «Neto a pagar: 3825.96» (NET sobre líneas redondeadas):
+  4.623,00 − 797,03 = 3.825,97 ≠ 3.825,96. La boleta impresa no cuadra por 0,01. Los aportes del empleador también se
+  suman sin redondear (450,74). Asiento: cuadra (5.870,78 = 5.870,78) porque usa importes redondeados.
+- H-CE-20 (medido) La boleta PDF y el .jor muestran «Días laborados/computables: 20 / 160 h» en un mes completo de
+  diciembre (feriados 8, 9 y 25 descontados como GLOBAL) aunque se paga el mes completo (RB 4.500). Confirmar con la
+  contadora qué deben decir boleta y PLAME.

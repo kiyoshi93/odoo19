@@ -1,5 +1,5 @@
-// Genera el manual de Nómina PE (Odoo 19 Enterprise + localización SOLSE) en formato Word.
-// Uso: NODE_PATH=<carpeta con docx> node manuales/scripts/generar_manual.js
+// Genera el manual de Nómina PE (Odoo 19 Community + localización SOLSE) en formato Word.
+// Uso: NODE_PATH=<carpeta con docx> node manuales_ce/scripts/generar_manual.js
 const fs = require('fs');
 const path = require('path');
 const {
@@ -9,7 +9,7 @@ const {
 } = require('docx');
 
 const CAPTURAS = path.join(__dirname, '..', 'capturas');
-const SALIDA = path.join(__dirname, '..', 'Manual_Nomina_PE_Odoo19.docx');
+const SALIDA = path.join(__dirname, '..', 'Manual_Nomina_PE_Odoo19_Community.docx');
 const COLOR = '714B67';
 const ANCHO_UTIL = 9638; // A4 con márgenes de 2 cm (DXA)
 
@@ -116,23 +116,36 @@ const espacio = () => new Paragraph({ children: [], spacing: { after: 120 } });
 const contenido = [];
 const agregar = (...elementos) => elementos.flat().forEach((e) => contenido.push(e));
 
+
+// ---------- Datos medidos (corridas en contable19, 2026-10-07/08) ----------
+const EVIDENCIAS = path.join(__dirname, '..', 'evidencias');
+const anioCompleto = JSON.parse(fs.readFileSync(path.join(EVIDENCIAS, 'anio_completo_fm.json'), 'utf8'));
+const dinero = (valor) => (valor === undefined || valor === null || valor === '') ? '—'
+  : Number(valor).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const importe = (fila, codigo) => {
+  const linea = fila.lineas.find(([c]) => c === codigo);
+  return linea ? dinero(linea[1]) : '—';
+};
+const MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'set', 'oct', 'nov', 'dic'];
+const periodoTexto = (periodo) => `${MESES_CORTOS[Number(periodo.slice(5)) - 1]}-${periodo.slice(2, 4)}`;
+
 // Portada
 agregar(
   new Paragraph({ spacing: { before: 2400 }, children: [] }),
   new Paragraph({ alignment: AlignmentType.LEFT, children: [new TextRun({ text: 'MANUAL DE USUARIO', bold: true, size: 28, color: '888888' })] }),
-  new Paragraph({ spacing: { after: 200 }, children: [new TextRun({ text: 'Nómina Peruana en Odoo 19 Enterprise', bold: true, size: 56, color: COLOR })] }),
-  new Paragraph({ spacing: { after: 600 }, children: [new TextRun({ text: 'Localización SOLSE: planilla, beneficios sociales, asistencias, PLAME, AFPnet, pago a bancos y recibos por honorarios (4ta categoría)', size: 28, color: '444444' })] }),
+  new Paragraph({ spacing: { after: 200 }, children: [new TextRun({ text: 'Nómina Peruana en Odoo 19 Community', bold: true, size: 56, color: COLOR })] }),
+  new Paragraph({ spacing: { after: 600 }, children: [new TextRun({ text: 'Localización SOLSE sobre om_hr_payroll: planilla, aportes, renta de 5.ª, gratificaciones, CTS, liquidación, vacaciones, feriados, asistencias, PLAME, AFPnet, pago a bancos y recibos por honorarios', size: 28, color: '444444' })] }),
   new Paragraph({ border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: COLOR, space: 4 } }, children: [] }),
   espacio(),
   tabla(['Dato', 'Valor'], [
-    ['Versión de Odoo', '19.0 Enterprise'],
-    ['Módulos documentados', 'solse_pe_payroll 19.0.0.45 · solse_pe_payroll_catalogo · solse_pe_payroll_asistencia_ee · solse_pe_plame_rxh · solse_pe_plame_4ta_ee'],
-    ['Empresa de ejemplo', 'Base de pruebas multiempresa (los datos de las empresas se ocultan en las capturas)'],
-    ['Público', 'Usuarios de RR.HH./contabilidad e implementadores'],
-    ['Fecha', 'Octubre 2026 · versión 2 (contrastada con la biblia SOLSE, encargo manual-nomina-ee)'],
+    ['Versión de Odoo', '19.0 Community'],
+    ['Módulos documentados', 'om_hr_payroll 19.0.1.0 · om_hr_payroll_account 19.0.0.0 · solse_pe_payroll_base 19.0.1.6.0 · solse_pe_payroll_ce 19.0.1.8.0 · solse_pe_payroll_asistencia 19.0.1.0.0 · solse_pe_plame_rxh 19.0.1.2.0 · solse_pe_plame_4ta 19.0.1.0.0'],
+    ['Base de medición', 'Base de pruebas contable19: compañía FM SYSTEMS SOLUTIONS EIRL (recorrido del manual) y compañía «SOLSE Demo Servicios S.A.C.» del laboratorio de demostración (casos medidos)'],
+    ['Público', 'Usuarios de RR. HH. y contabilidad, e implementadores'],
+    ['Fecha', 'Octubre de 2026 · versión 1'],
   ], [2600, 7038]),
   espacio(),
-  nota('Todos los trabajadores, prestadores, cuentas bancarias y montos de este manual son **datos ficticios de prueba**. Los DNI (`99999901`–`99999903`) y RUC (`10999999048`, `10999999056`) son **sintéticos**: se comprobó en la consulta RENIEC/SUNAT de Odoo que no corresponden a ninguna persona. Las capturas se tomaron en una base de pruebas y los datos de las empresas (razón social, RUC, dirección, correos y logo) aparecen difuminados; los resultados se contrastaron con los valores esperados del caso de demostración de la localización.'),
+  nota('Todas las cifras de este manual salen de una **corrida real** en la base de pruebas (7 y 8 de octubre de 2026); ninguna se dedujo a mano. Los trabajadores del recorrido son **ficticios** y sus DNI son **sintéticos** (`99999901` y `99999902`). En las capturas del laboratorio de demostración, los DNI de sus trabajadores y los RUC de sus prestadores aparecen difuminados.'),
   new Paragraph({ children: [new PageBreak()] }),
   new Paragraph({ children: [new TextRun({ text: 'Contenido', bold: true, size: 32, color: COLOR })], spacing: { after: 200 } }),
   'INDICE',
@@ -141,539 +154,498 @@ agregar(
 // 1. Introducción
 agregar(
   h1('1. Introducción'),
-  p('Este manual guía, paso a paso y con capturas de pantalla, el uso de la nómina peruana en Odoo 19 Enterprise con la localización SOLSE. Cubre desde la configuración inicial hasta la generación de los archivos que se presentan a SUNAT, AFPnet y los bancos.'),
-  h2('1.1 Módulos que intervienen'),
-  tabla(['Módulo', 'Función'], [
-    ['`solse_pe_payroll`', 'Núcleo: maestros SUNAT, parámetros legales, estructuras y reglas salariales (NME, NSO, NQA, GRAT, CTS, VAC, LIQ), boleta PE, planilla, PLAME, AFPnet, pago a bancos, utilidades y contabilidad de nómina.'],
-    ['`solse_pe_payroll_catalogo`', 'Puente con el catálogo SUNAT: agrega el acceso SUNAT › Nómina PE.'],
-    ['`solse_pe_payroll_asistencia_ee`', 'Concilia las marcaciones de Asistencias con la boleta: faltas, medias jornadas y tardanzas.'],
-    ['`solse_pe_plame_rxh`', 'Recibos por honorarios: datos del prestador, retención de 4ta y archivos .ps4/.4ta.'],
-    ['`solse_pe_plame_4ta_ee`', 'Incluye los archivos de 4ta categoría dentro del ZIP PLAME de la nómina.'],
-  ], [3000, 6638]),
-  espacio(),
-  h2('1.2 Flujo general'),
-  ...pasos([
-    'Instalar los módulos y configurar la compañía.',
-    'Revisar parámetros legales (UIT, RMV, AFP, RMA…) y maestros SUNAT.',
-    'Verificar la contabilidad de nómina (diario y mapeo PCGE).',
-    'Registrar seguros (EPS / Vida Ley) y dar de alta a los trabajadores.',
-    'Registrar asistencias (si aplica) y procesar los recibos: adelantos → gratificación → vacaciones → mensual.',
-    'Validar recibos, publicar asientos e imprimir boletas.',
-    'Generar planilla, PLAME, AFPnet y el archivo de pago a bancos.',
-    'Registrar y pagar los recibos por honorarios y exportar la 4ta categoría.',
+  p('Este manual explica cómo procesar la planilla peruana en **Odoo 19 Community** con la localización SOLSE. A diferencia de Enterprise, Community no trae nómina: la base es el módulo comunitario `om_hr_payroll` (Odoo Mates) y SOLSE le agrega la capa peruana (parámetros con vigencia, reglas salariales, maestros SUNAT, archivos PLAME, AFPnet y TXT bancarios).'),
+  h2('1.1 Cómo leer este manual'),
+  vinetas([
+    'Los capítulos 2 a 9 son de **configuración**: se hacen una vez, al implementar.',
+    'Los capítulos 10 a 20 son el **proceso mensual**: boletas, lote, beneficios y novedades.',
+    'Los capítulos 21 y 22 son las **salidas legales**: planilla, PLAME, AFPnet, bancos y 4.ª categoría.',
+    'El capítulo 23 dice **qué no cubre** la localización; el 24 es la lista de cierre mensual.',
+    'Los recuadros **Para implementadores** y el **Anexo A** recogen observaciones medidas que conviene conocer antes de salir a producción.',
   ]),
-  h2('1.3 Estados del recibo en Enterprise'),
-  p('En Odoo 19 Enterprise un recibo pasa por **Borrador → Validado → Pagado** (o **Cancelado**). No existen los estados "Por verificar" ni "Hecho" de versiones anteriores o de la edición Community. Al validar se genera el asiento (en borrador) en el diario de la estructura; al cancelar, el asiento se elimina o se revierte.'),
-  h2('1.4 Convenciones'),
-  ...vinetas([
-    'Las rutas de menú se escriben así: **Nómina › Nómina PE › Parámetros de Nómina PE**.',
-    'En las figuras, el **recuadro rojo** señala el campo o botón que se usa en el paso.',
-    'Los cuadros **Para implementadores** contienen detalles técnicos o hallazgos a tener en cuenta en la puesta en marcha.',
-  ]),
+  h2('1.2 La regla de oro: los acumulados leen boletas VALIDADAS'),
+  p('La renta de 5.ª, el sexto de gratificación de la CTS y el descuento del adelanto se calculan con acumulados que **solo leen boletas en estado Hecho**. El orden del proceso importa: primero se validan adelantos, gratificaciones y vacaciones, y después se calcula la mensual (capítulo 11).'),
+  h2('1.3 De dónde salen las cifras'),
+  tabla(['Escenario', 'Dónde', 'Qué mide'], [
+    ['Recorrido del manual', 'FM SYSTEMS SOLUTIONS EIRL', 'Dos trabajadores sintéticos con planilla completa de enero de 2025 a diciembre de 2026: 64 boletas (mensuales, gratificaciones, CTS y vacaciones)'],
+    ['Caso NOMINA', 'Laboratorio · SOLSE Demo Servicios', '13 trabajadores de julio–agosto de 2026: aportes, 5.ª, gratificación, adelanto, vacaciones, judicial, sindicato, liquidación y asiento. **100 % conforme** (736 celdas comparadas en los cuatro casos)'],
+    ['Caso ASISTENCIA', 'Laboratorio', 'Tardanzas, faltas y faltas parciales de septiembre de 2026. **100 %**'],
+    ['Casos PLAME y PLAME-RXH', 'Laboratorio', 'ZIP del PDT con .rem, .jor, .snl, .ps4 y .4ta de julio de 2026. **100 %**'],
+  ], [2200, 2500, 4938]),
 );
 
 // 2. Instalación
 agregar(
   h1('2. Instalación de los módulos'),
-  p('Los módulos de nómina se instalan desde **Aplicaciones**. Como varios son técnicos, primero se quita el filtro "Aplicaciones" del buscador.'),
-  ...pasos([
-    'Abra **Aplicaciones**, elimine el filtro predeterminado y busque `solse_pe_plame`.',
-    'En la tarjeta **Nómina Peruana - PLAME 4ta Categoría (Enterprise)** pulse **Activar**. Odoo instala también su dependencia **Perú - PLAME Recibos por Honorarios**.',
-    'Instale de la misma forma `solse_pe_payroll` (núcleo) y `solse_pe_payroll_asistencia_ee` si usará asistencias. `solse_pe_payroll_catalogo` se instala solo.',
-  ]),
-  ...figura('p00_01_aplicaciones_buscar_plame', 'Búsqueda de los módulos PLAME en Aplicaciones (sin el filtro "Aplicaciones").'),
-  ...figura('p00_02_activar_plame_4ta_ee', 'Botón Activar del módulo PLAME 4ta Categoría (Enterprise).'),
-  nota('No instale los módulos marcados como **(Community)** ni los de **datos de demostración** en una base productiva. Las ramas Enterprise (`solse_pe_payroll`) y Community (`solse_pe_payroll_base` / `_ce`) son excluyentes: el instalador bloquea la convivencia.', 'importante'),
-  nota('Si al instalar `solse_pe_plame_4ta_ee` aparece el error *External ID not found: solse_pe_payroll.plame_wizard_view_form*, el núcleo de nómina está desactualizado en la base (versión registrada menor que la del código). Actualice `solse_pe_payroll` (**Aplicaciones › Actualizar** o `-u solse_pe_payroll`) y reintente.', 'implementador'),
+  p('Instale desde **Aplicaciones** (modo desarrollador) en este orden. `om_hr_payroll` y `om_hr_payroll_account` no vienen en los paquetes SOLSE: deben estar en el `addons_path`.'),
+  tabla(['Orden', 'Módulo', 'Para qué'], [
+    ['1', '`om_hr_payroll` + `om_hr_payroll_account`', 'Nómina base Community y su contabilización'],
+    ['2', '`solse_pe_payroll_base`', 'Capa de compatibilidad: parámetros con vigencia, acumulados por SQL, días no pagados'],
+    ['3', '`solse_pe_payroll_ce`', 'Núcleo peruano: estructuras, reglas, maestros, PLAME, AFPnet, bancos, planilla, utilidades'],
+    ['4', '`solse_pe_payroll_asistencia`', 'Tardanzas y faltas desde Asistencias (opcional)'],
+    ['5', '`solse_pe_plame_rxh` y `solse_pe_plame_4ta`', 'PLAME de recibos por honorarios; el segundo los añade al ZIP de la planilla (opcional)'],
+  ], [900, 3600, 5138]),
+  nota('Las variantes Community y Enterprise **no se pueden mezclar**: `solse_pe_payroll_base` tiene un control previo a la instalación que la bloquea si encuentra la nómina Enterprise de SOLSE (`solse_pe_payroll`), porque ambas siembran los mismos parámetros.', 'importante'),
+  h2('2.1 Qué hace el inicializador'),
+  p('Al instalar y en **cada actualización**, `solse_pe_payroll_ce` ejecuta su inicializador: crea o repara las estructuras (NME, NSO, NQA, GRAT, CTS, VAC, LIQ), copia las reglas de la plantilla «Reglas Básicas», asigna las cuentas contables por prefijo PCGE, crea el diario **Planillas (PLLA)** y marca el tipo de ausencia **Vacaciones PE (D.Leg. 713)** como no pagado en las mensuales.'),
+  nota('Una vacación aprobada impide actualizar los módulos de nómina (N-6 de la biblia): antes de `-u`, rechace o archive las ausencias de prueba.', 'implementador'),
 );
 
 // 3. Menú
 agregar(
-  h1('3. Menú de Nómina PE'),
-  p('Tras la instalación, la aplicación **Nómina** muestra el menú **Nómina PE**, que agrupa todo lo propio de la localización. El tablero de Nómina muestra además advertencias útiles (empleados sin contrato, sin cuenta bancaria, sin DNI, RMA desactualizada).'),
-  ...figura('p01_01_tablero_nomina', 'Tablero de Nómina con advertencias.'),
-  ...figura('p01_02_menu_nomina_pe', 'Menú Nómina PE desplegado.'),
-  tabla(['Opción', 'Uso'], [
-    ['Parámetros de Nómina PE', 'UIT, RMV, asignación familiar, tasas ONP/AFP/EsSalud, RMA, renta de 5ta, factores por régimen, etc., con vigencias.'],
-    ['Maestros SUNAT', 'Tablas T11, T33, T8, T12, T30, T17, T9, T35, T19 y T22 (conceptos PLAME).'],
-    ['Seguros y EPS', 'Planes EPS y pólizas Vida Ley.'],
-    ['Planilla de sueldos', 'Reporte mensual en PDF o Excel.'],
-    ['Pago masivo a bancos', 'TXT de abono de haberes o CTS (BCP, Interbank, Scotiabank).'],
-    ['PLAME (archivos PDT)', 'ZIP con .rem, .jor, .snl (y .ps4/.4ta si está el puente de 4ta).'],
-    ['AFPnet', 'Excel de la planilla previsional para el portal AFPnet.'],
-    ['Reparto de utilidades', 'Cálculo anual de participación de utilidades.'],
-    ['Contabilidad de nómina', 'Mapeo contable PCGE y asistente para asignar cuentas.'],
-  ], [3000, 6638]),
+  h1('3. Menú de Nómina'),
+  p('Todo está bajo la aplicación **Nómina** (en Community, se abre desde la cuadrícula de aplicaciones).'),
+  ...figura('01_menu_principal', 'Aplicaciones de la base de pruebas; la nómina está en «Nómina».'),
+  ...figura('p03_01_menu_nomina_pe', 'Menú Nómina PE: maestros SUNAT, seguros, salidas legales y contabilidad de nómina.'),
+  ...figura('p03_02_menu_configuracion', 'Menú Configuración de om_hr_payroll: estructuras, reglas y parámetros.'),
+  tabla(['Menú', 'Para qué'], [
+    ['Nóminas del empleado', 'Boletas individuales (capítulo 10)'],
+    ['Procesamientos de nóminas', 'Lotes mensuales (capítulo 11)'],
+    ['Nómina PE › Parámetros de Nómina PE', 'UIT, RMV, tasas y topes con fecha de vigencia (capítulo 4)'],
+    ['Nómina PE › Maestros SUNAT', 'Tablas T8, T9, T11, T12, T17, T19, T22, T30, T33 y T35 (capítulo 5)'],
+    ['Nómina PE › Seguros y EPS', 'Planes EPS y Vida Ley (capítulo 6)'],
+    ['Nómina PE › Planilla de sueldos / Pago masivo a bancos / PLAME / AFPnet / Reparto de utilidades', 'Salidas legales (capítulo 21)'],
+    ['Nómina PE › Contabilidad de nómina', 'Mapeo PCGE y asignación de cuentas (capítulo 7)'],
+  ], [4200, 5438]),
 );
 
-// 4. Compañía
+// 4. Parámetros
 agregar(
-  h1('4. Configuración de la compañía'),
-  p('Ruta: **Ajustes › Usuarios y empresas › Empresas** › seleccione la compañía.'),
-  h2('4.1 Datos generales'),
-  ...pasos([
-    'Verifique que el **país** sea Perú y que el **RUC** esté completo: se usa en los nombres de los archivos PLAME, AFPnet y de bancos.',
-    'Marque **Afecta a SENATI** si la empresa realiza actividad industrial (manufactura, como en el ejemplo). Activa la contribución SENATI (0.75 %) en la boleta.',
+  h1('4. Parámetros legales con vigencia'),
+  p('Los valores normativos no están escritos en las reglas: viven en **Nómina › Nómina PE › Parámetros de Nómina PE**, cada uno con una lista de **vigencias**. La boleta usa el valor vigente a su fecha final.'),
+  ...figura('p04_01_parametros_lista', 'Parámetros agrupados por categoría.'),
+  tabla(['Código', 'Concepto', 'Valor en la base (vigente desde)'], [
+    ['pe_uit', 'UIT', '5,350 (01/01/2025) · 5,500 (01/01/2026)'],
+    ['pe_rmv', 'Remuneración mínima vital', '1,130 (01/01/2025) · **1,230 (01/10/2026, cargado para este manual)**'],
+    ['pe_asig_familiar', 'Asignación familiar', '113 (01/01/2025) · **123 (01/10/2026, cargado)**'],
+    ['pe_onp_tasa / pe_afp_aporte / pe_afp_prima_seguro', 'ONP / fondo AFP / prima de seguro', '13 % / 10 % / 1.37 %'],
+    ['pe_afp_comision_flujo', 'Comisión sobre flujo por AFP', 'Habitat 1.47 %, Integra 1.55 %, Prima 1.60 %, Profuturo 1.69 % (01/01/2026; **01/01/2025 cargado**)'],
+    ['pe_afp_rma', 'Remuneración máxima asegurable', '**12,184.88 (01/01/2025)**, **12,209.11 (01/01/2026)**, 12,598.91 (01/04/2026), **12,732.70 (01/10/2026)**'],
+    ['pe_essalud_tasa / pe_eps_credito_max', 'EsSalud / tope crédito EPS', '9 % / 25 %'],
+    ['pe_renta5_deduccion_uit / pe_renta5_tramos', 'Renta de 5.ª', '7 UIT; 8 %, 14 %, 17 %, 20 %, 30 % (hasta 5, 20, 35, 45 UIT y exceso)'],
+    ['pe_grati_bono_essalud / pe_grati_bono_eps', 'Bonificación extraordinaria', '9 % / 6.75 %'],
+    ['pe_regimen_factores', 'Factores por régimen', 'general 1.0; pequeña 0.5; micro 0.0 (grati y CTS)'],
+  ], [3000, 2600, 4038]),
+  h2('4.1 Registrar una vigencia nueva'),
+  pasos([
+    'Abra el parámetro (por ejemplo **RMV - Remuneración Mínima Vital**).',
+    'En la pestaña **Vigencias**, pulse **Agregar una línea**.',
+    'Escriba **Vigente desde** (`01/10/2026`) y el **Valor** (`1230`). Guarde.',
   ]),
-  ...figura('p02_02_compania_senati_marcado', 'Casilla Afecta a SENATI en la ficha de la compañía.'),
-  h2('4.2 Pestaña Nómina PE - Asistencias'),
-  p('Solo aparece con `solse_pe_payroll_asistencia_ee`. Define cómo se concilian las marcaciones con la boleta:'),
-  tabla(['Campo', 'Valor sugerido', 'Efecto'], [
-    ['Tolerancia de tardanza (minutos)', '10', 'Minutos de gracia por día antes de contar tardanza.'],
-    ['Descontar tardanzas en la boleta', 'Activo', 'Genera la entrada TARDANZAS y la regla TAR_001.'],
-    ['Conciliar asistencias al calcular la boleta', 'Opcional', 'Si está activo, "Calcular hoja" concilia automáticamente; si no, use el botón "Cargar asistencias".'],
-    ['Evaluar horas trabajadas por día (Fase 2)', 'Opcional', 'Detecta medias jornadas (FALTA_PARCIAL) con el margen indicado.'],
-  ], [3300, 1600, 4738]),
-  ...figura('p02_03_compania_asistencias', 'Configuración de conciliación de asistencias.'),
+  ...figura('p04_02_rmv_nueva_vigencia', 'RMV 1,230 desde el 01/10/2026 (D.S. 015-2026-TR) agregada como nueva vigencia.'),
+  ...figura('p04_03_rma_vigencias', 'RMA con sus vigencias trimestrales.'),
+  p('**Efecto medido:** con la vigencia nueva, la asignación familiar de octubre de 2026 en adelante sale **123.00** (antes 113.00) y la gratificación de diciembre de 2026 de la trabajadora con hijo sube a **4,623.00** (sueldo 4,500 + 123).'),
+  nota('Tal como se instala, la nómina de **2025 no se puede calcular** con AFP: la boleta se detiene con «No existe una vigencia del parámetro de nómina "pe_afp_comision_flujo" para la fecha 2025-01-31». Para este manual se cargaron la comisión 2025 y las RMA indicadas en negrita. Son **valores de prueba tomados de fuentes secundarias: verifíquelos en la SBS** antes de usarlos. La RMA no cambia ninguna cifra de los trabajadores de ejemplo, que ganan muy por debajo del tope.', 'importante'),
+  nota('La RMA cambia cada trimestre. El módulo programa una actividad de aviso cuando su vigencia supera **95 días**. Revise los parámetros al inicio de cada trimestre y cuando cambie la RMV.', 'implementador'),
 );
 
-// 5. Parámetros
+// 5. Maestros
 agregar(
-  h1('5. Parámetros legales'),
-  p('Ruta: **Nómina › Nómina PE › Parámetros de Nómina PE** (también desde **SUNAT › Nómina PE**). Cada parámetro guarda un **historial de vigencias**: para actualizar un valor no se modifica el anterior, se agrega una línea nueva con la fecha desde la que rige.'),
-  ...figura('p03_01_parametros_grupos', 'Parámetros agrupados por categoría.'),
-  ...figura('p03_01_parametros_lista', 'Grupo Generales: UIT, RMV y asignación familiar con su valor vigente.'),
-  h2('5.1 Registrar una nueva vigencia'),
-  ...pasos([
-    'Abra el parámetro (por ejemplo **UIT - Unidad Impositiva Tributaria**).',
-    'En la pestaña **Historial** pulse **Agregar una línea**.',
-    'Indique la fecha **Desde** y el **Valor de parámetro**; guarde. Los recibos usan el valor vigente a la fecha del periodo.',
+  h1('5. Maestros SUNAT'),
+  p('Las tablas de la Planilla Electrónica se cargan con el módulo y se usan en la ficha del trabajador, el contrato y el PLAME.'),
+  tabla(['Tabla', 'Menú', 'Registros en la base'], [
+    ['T8 Tipos de trabajador', 'Tipos de trabajador (T8)', '26'],
+    ['T9 Situación educativa', 'Situación educativa (T9)', '21'],
+    ['T11 Sistemas pensionarios', 'Sistemas pensionarios (T11)', '17'],
+    ['T12 Contratos MINTRA', 'Contratos MINTRA (T12)', '**0 (vacía: no hay datos en el módulo)**'],
+    ['T17 Motivos de baja', 'Motivos de baja (T17)', '21'],
+    ['T22 Conceptos PLAME', 'Conceptos PLAME (T22)', '293'],
+    ['T30 Ocupaciones', 'Ocupaciones (T30)', '4,643'],
+    ['T33 Regímenes laborales', 'Regímenes laborales (T33)', '26'],
+    ['T35 Situaciones especiales', 'Situaciones especiales (T35)', '9'],
+  ], [3000, 3400, 3238]),
+  ...figura('p05_01_maestro_t22', 'Conceptos PLAME (T22): cada regla salarial se vincula a su código.'),
+  ...figura('p05_02_maestro_t11', 'Sistemas pensionarios (T11): el código 02 es ONP; las AFP llevan su clave para la comisión.'),
+);
+
+// 6. Seguros
+agregar(
+  h1('6. Seguros: EPS, SCTR y Vida Ley'),
+  vinetas([
+    '**Planes EPS** (Nómina PE › Seguros y EPS): tasa del empleador y del trabajador. La regla `EPS_CRED_001` aplica el crédito contra EsSalud con tope del 25 %. Medido en el caso NOMINA: aporte EPS **162.59** y crédito **−81.29**.',
+    '**SCTR**: casilla **SCTR Pensión** en la ficha del trabajador; tasas en parámetros (salud 1.30 %, pensión 1.70 %). Medido: SCTR salud de un obrero semanal **5.46**.',
+    '**Vida Ley**: existe el catálogo, pero **no hay regla salarial** que calcule la prima. En la base el catálogo está vacío.',
   ]),
-  ...figura('p03_03_parametro_uit', 'UIT con dos vigencias: 5,350 (2025) y 5,500 (2026).'),
-  h2('5.2 Remuneración Máxima Asegurable (RMA) de AFP'),
-  p('La SBS actualiza la RMA **cada trimestre** (enero, abril, julio y octubre). Si la última vigencia tiene más de 95 días, el tablero muestra la advertencia "RMA de AFP posiblemente desactualizada". Registre el nuevo tope publicado por la SBS como una vigencia más.'),
-  ...figura('p03_02_parametro_rma', 'Parámetro RMA con su historial.'),
-  nota('En la base revisada, la RMV solo tiene vigencia 2025 (S/ 1,130) y la RMA vigente es la de abril 2026. Antes de procesar la nómina, confirme los valores oficiales del periodo y agréguelos como nuevas vigencias.', 'importante'),
+  ...figura('p06_01_planes_eps', 'Planes EPS.'),
 );
 
-// 6. Maestros
-agregar(
-  h1('6. Maestros SUNAT'),
-  p('Ruta: **Nómina › Nómina PE › Maestros SUNAT**. Vienen cargados con las tablas oficiales; normalmente solo se revisan.'),
-  h2('6.1 Sistemas pensionarios (T11)'),
-  p('Cada AFP debe tener su **Clave AFP** (Habitat, Integra, Prima, Profuturo): con ella se busca la comisión sobre flujo en el parámetro `pe_afp_comision_flujo`. La casilla **CUSPP** hace obligatorio el CUSPP en la ficha del trabajador.'),
-  ...figura('p04_01_sistemas_pensionarios', 'Sistemas pensionarios con su clave AFP.'),
-  ...figura('p04_02_sistema_pensionario_habitat', 'Detalle de SPP HABITAT: clave AFP y CUSPP.'),
-  nota('**SPP HORIZONTE** no tiene clave AFP: un trabajador asignado a ella tendría comisión 0. Si aún hay afiliados, revise su reasignación.', 'implementador'),
-  h2('6.2 Regímenes laborales (T33)'),
-  p('La **Clave de cálculo** determina los factores de gratificación, CTS y vacaciones (General, Pequeña Empresa, Microempresa, Agrario).'),
-  ...figura('p04_03_regimenes_laborales', 'Regímenes laborales y su clave de cálculo.'),
-  h2('6.3 Otros maestros'),
-  p('**Vínculos familiares (T19)**: la asignación familiar se paga si el trabajador tiene un derechohabiente con parentesco que contenga "Hijo" menor de 18 años (o con discapacidad). **Conceptos PLAME (T22)**: catálogo de conceptos remunerativos con sus afectaciones.'),
-  ...figura('p04_04_vinculos_familiares', 'Vínculos familiares (T19).'),
-  ...figura('p04_05_conceptos_plame', 'Conceptos PLAME (T22).'),
-  nota('El maestro **Contratos MINTRA (T12)** viene vacío: si lo usará en la plantilla de contrato, cárguelo manualmente.', 'implementador'),
-);
-
-// 7. Contabilidad de nómina
+// 7. Contabilidad
 agregar(
   h1('7. Contabilidad de nómina'),
-  p('Al instalar el módulo se asigna el diario **Salarios** a las estructuras y se completan las cuentas de las reglas según el plan PCGE. Si crea una compañía nueva después de la instalación, ejecute el asistente de esta sección.'),
-  h2('7.1 Asignar cuentas contables'),
-  ...pasos([
-    'Ingrese a **Nómina › Nómina PE › Contabilidad de nómina › Asignar cuentas contables**.',
-    'Seleccione la compañía y pulse **Asignar cuentas**.',
-    'Revise el resultado: indica cuántas cuentas se asignaron y qué prefijos no existen en el plan contable.',
-  ]),
-  ...figura('p05_01_asignar_cuentas', 'Asistente Asignar cuentas contables.'),
-  ...figura('p05_02_asignar_cuentas_resultado', 'Resultado: prefijos sin cuenta en el plan.'),
-  nota('En la base de ejemplo falta la cuenta **6221** (Participación de los trabajadores en utilidades). Créela en el plan contable antes de registrar utilidades (regla UTIL_001) y vuelva a ejecutar el asistente.', 'importante'),
-  nota('**Multiempresa**: el inicializador recorre **todas las compañías con país Perú** y deja en cada una su propio diario de salarios y las cuentas de las reglas. Medido en la base de ejemplo: la segunda compañía de la base tiene su diario **Salarios** propio y Remuneración básica → 6211, Neto → 4111, EsSalud → 6271/4031, igual que la principal. Valide siempre con la compañía correcta activa en el selector de compañías.'),
-  h2('7.2 Mapeo contable PCGE'),
-  p('Lista editable que relaciona cada regla salarial con su prefijo de débito y crédito (por ejemplo, Remuneración básica → 6211; ONP → 4032; AFP → 4170; EsSalud → 6271/4031; Neto → 4111).'),
-  ...figura('p05_03_mapeo_contable', 'Mapeo contable PCGE por regla salarial.'),
+  p('Cada regla salarial lleva su cuenta al debe y al haber **por compañía**. El inicializador las asigna desde **Mapeo contable PCGE** (prefijos 62/40/41/14) y el asistente **Asignar cuentas contables** las vuelve a aplicar a la compañía que elija.'),
+  ...figura('p07_01_mapeo_pcge', 'Mapeo contable PCGE por regla.'),
+  ...figura('p07_02_asignar_cuentas', 'Asistente para asignar las cuentas a una compañía.'),
+  tabla(['Concepto', 'Debe', 'Haber'], [
+    ['Remuneración básica y asignación familiar', '6211', '4111'],
+    ['AFP (fondo, comisión, prima)', '4111', '4170'],
+    ['ONP', '4111', '4032'],
+    ['Renta de 5.ª', '4111', '40173'],
+    ['EsSalud (empleador)', '6271', '4031'],
+    ['SENATI (empleador)', '6277', '4033'],
+    ['Gratificación / vacaciones / CTS (neto)', '6214 / 6215 / 6291', '4114 / 4115 / 4151'],
+  ], [4200, 2700, 2738]),
+  h2('7.1 Diario de planillas'),
+  p('El inicializador crea el diario **Planillas (PLLA)**. En Community, la boleta **no toma el diario de la estructura**: usa el diario del **contrato** (campo **Salary Journal**) o, si está vacío, el primer diario general («Operaciones varias»). Elija **Planillas** en el contrato de cada trabajador, en la boleta o en el lote.'),
+  ...figura('p07_03_diario_planillas', 'Diario Planillas (PLLA).'),
+  nota('Medido: las boletas calculadas sin diario elegido se asentaron en «Operaciones varias» (MISCE/2026/12/…); con **Planillas** elegido en la boleta o en el lote salieron PLLA/2026/12/0001 y 0002.', 'implementador'),
 );
 
-// 8. Seguros
+// 8. Alta del trabajador
 agregar(
-  h1('8. Seguros: planes EPS'),
-  p('Ruta: **Nómina › Nómina PE › Seguros y EPS › Planes EPS**. El plan EPS determina el aporte del empleador a la EPS y el crédito contra EsSalud (máximo 25 % del aporte EsSalud).'),
-  ...pasos([
-    'Pulse **Nuevo**.',
-    'Complete **Entidad**, **N° de póliza**, **Fecha de inicio** y **Fecha de finalización**.',
-    'Ingrese la **Tasa empleador** y la **Tasa trabajador** en forma decimal (4.5 % = `0.045`).',
-    'Guarde.',
+  h1('8. Alta de un trabajador'),
+  p('Ejemplo del manual: **Lucía Fernanda Ramos Ticona**, DNI sintético `99999901`, analista contable, ingreso 01/01/2025, sueldo 4,500, AFP Integra (flujo), EsSalud regular y un hijo menor (genera asignación familiar).'),
+  h2('8.1 Datos principales y personales'),
+  pasos(['**Empleados › Nuevo**: nombre completo y puesto.', 'Pestaña **Personal**: **Número de identificación** = DNI y **Fecha de nacimiento**.']),
+  ...figura('p08_01_empleado_nuevo', 'Nombre y puesto.'),
+  ...figura('p08_02_personal', 'DNI y fecha de nacimiento en la pestaña Personal.'),
+  h2('8.2 Pestaña Nómina PE'),
+  pasos([
+    '**Identificación T-Registro**: nombres, apellido paterno y materno por separado, situación educativa.',
+    '**Sistema pensionario**: SPP INTEGRA; **CUSPP**; **Tipo de comisión AFP** = flujo o mixta (con mixta la comisión sale 0.00: medido en el caso NOMINA).',
+    '**Salud**: régimen y, si corresponde, plan EPS. **SCTR Pensión** y **Vida Ley** si aplica.',
+    '**Derechohabientes**: agregue al hijo con parentesco **Hijo** y su fecha de nacimiento. La asignación familiar se paga mientras sea menor de 18 años (o con discapacidad).',
   ]),
-  ...figura('p06_02_plan_eps_formulario', 'Formulario de plan EPS.'),
-  ...figura('p06_03_plan_eps_guardado', 'Plan EPS guardado.'),
-  nota('La vista redondea la tasa a 2 decimales (0.045 se ve como 0.05), pero el valor guardado y usado en el cálculo es 0.045. El plan no tiene campo nombre y en los desplegables aparece como `eps.management,1`; identifíquelo por el orden de creación.', 'implementador'),
+  ...figura('p08_03_nomina_pe', 'Pensión y salud en la pestaña Nómina PE.'),
+  ...figura('p08_04_derechohabientes', 'Derechohabiente que da derecho a la asignación familiar.'),
+  h2('8.3 Contrato (versión del empleado)'),
+  p('En Odoo 19 el contrato es una **versión** del empleado (`hr.version`). En la pestaña **Nómina** indique la fecha de inicio, el salario y la **Categoría del pago** «Régimen General».'),
+  ...figura('p08_05_contrato', 'Inicio del contrato, salario y categoría del pago.'),
+  pasos([
+    'Abra **Nómina › Empleados › Contratos** y entre al contrato.',
+    'Elija **Salary Structure** = **Nómina Mensual Empleados**. Sin estructura, al crear la boleta no se cargan los días trabajados.',
+    'Elija **Salary Journal** = **Planillas**.',
+    'Complete **Perú - Datos laborales (T-Registro / PLAME)**: régimen laboral, ocupación, tipo de pago y, al cesar, **motivo de baja**.',
+  ]),
+  ...figura('p08_07_contrato_tregistro', 'Contrato con estructura, diario de planillas y datos T-Registro.'),
+  ...figura('p08_06_empleado_guardado', 'Trabajador guardado.'),
 );
 
-// 9. Alta de trabajador
+// 9. Estructuras
 agregar(
-  h1('9. Alta de un trabajador'),
-  p('Ruta: **Empleados › Nuevo** (o **Nómina › Empleados**). Se usa como ejemplo a **Carlos Alberto Quispe Mamani**: sueldo S/ 3,500, AFP Habitat (comisión sobre flujo), EPS y una hija menor (genera asignación familiar).'),
-  h2('9.1 Datos principales'),
-  ...pasos(['Escriba el **nombre completo** y el **puesto**.']),
-  ...figura('p07_01_empleado_nuevo', 'Nombre y puesto del trabajador.'),
-  h2('9.2 Pestaña Personal'),
-  ...pasos([
-    'Registre la **Fecha de nacimiento** (se calcula la edad).',
-    'En **Ciudadanía › Número de identificación** registre el **DNI**: aparece en la boleta, PLAME y AFPnet (en el ejemplo, el DNI sintético `99999901`).',
-  ]),
-  ...figura('p07_02_personal_nacimiento', 'Fecha de nacimiento.'),
-  ...figura('p07_02b_personal_dni', 'Número de identificación (DNI).'),
-  h2('9.3 Pestaña Nómina PE'),
-  p('Es la pestaña propia de la localización (datos del T-Registro).'),
-  ...pasos([
-    '**Identificación T-Registro**: Nombres, Apellido paterno, Apellido materno y Situación educativa.',
-    '**Sistema pensionario**: elija la AFP u ONP. Si es AFP, el **CUSPP** es obligatorio y se elige el **Tipo de comisión** (flujo o mixta).',
-    '**Salud**: régimen de salud (EsSalud regular, EsSalud + EPS, etc.), plan EPS, SCTR pensión y Vida Ley.',
-    '**Derechohabientes**: agregue los hijos con parentesco **Hijo(a)**, nombre, género y fecha de nacimiento.',
-  ]),
-  ...figura('p07_03_nomina_pe_identificacion_pension', 'Identificación T-Registro y sistema pensionario.'),
-  ...figura('p07_04_nomina_pe_salud', 'Régimen de salud y plan EPS.'),
-  ...figura('p07_05_nomina_pe_derechohabientes', 'Derechohabientes: la hija genera la asignación familiar.'),
-  h2('9.4 Pestaña Nómina (contrato)'),
-  ...pasos([
-    'En **Contrato** indique la fecha de inicio (y de fin si es a plazo fijo).',
-    'Registre el **Salario** mensual.',
-    'En **Categoría del pago** elija el tipo de estructura: **Régimen General** (mensual), **Obreros - Semanal** o **Quincenal - Adelanto**.',
-    'Verifique el **horario laboral** (se usa para asistencias y días trabajados). Guarde.',
-  ]),
-  ...figura('p07_06_nomina_contrato', 'Fecha de contrato, salario y categoría del pago.'),
-  nota('Los campos laborales peruanos del contrato (régimen laboral, condición, ocupación, porcentaje de adelanto, sindicalizado, motivo de baja) solo están en **Empleados › Configuración › Plantillas de contrato** y "Cargar una plantilla" no los copia al empleado. Si el régimen queda vacío, el cálculo asume **Régimen General**. Para MYPE, sindicalizados o adelantos por porcentaje se requiere un ajuste de la vista (pendiente en la localización).', 'implementador'),
-  h2('9.5 Cuentas bancarias de sueldo y CTS'),
-  ...pasos([
-    'En la pestaña **Personal**, campo **Cuentas bancarias**, escriba el número de cuenta y elija **Crear y editar…**.',
-    'Elija el **Banco**, el **Uso de la cuenta** (Sueldo o CTS) y el **CCI** de 20 dígitos. Guarde.',
-    'Repita para la cuenta CTS.',
-  ]),
-  ...figura('p07_08_cuenta_bancaria_sueldo', 'Cuenta sueldo: banco, uso de la cuenta y CCI.'),
-  ...figura('p07_10_personal_cuentas', 'Cuentas sueldo y CTS registradas.'),
-  ...figura('p07_12_nomina_pe_cuentas_derechohabientes', 'La pestaña Nómina PE muestra las cuentas sueldo y CTS detectadas.'),
-  nota('El formulario de cuenta bancaria muestra el campo **CCI** dos veces (dos módulos agregan el mismo campo). Además, mientras la cuenta no tenga activado **Enviar dinero**, los recibos validados muestran la advertencia "Cuentas bancarias no confiables".', 'implementador'),
+  h1('9. Estructuras salariales'),
+  tabla(['Código', 'Estructura', 'Uso'], [
+    ['NME', 'Nómina Mensual Empleados', 'Planilla mensual'],
+    ['NSO', 'Nómina Semanal Obreros', 'Planilla semanal (remuneración por semana comercial)'],
+    ['NQA', 'Nómina Quincenal / Adelanto', 'Adelanto quincenal (porcentaje del contrato)'],
+    ['GRAT', 'Gratificaciones', 'Julio y diciembre'],
+    ['CTS', 'CTS', 'Mayo y noviembre'],
+    ['VAC', 'Vacaciones', 'Boleta de los días de goce'],
+    ['LIQ', 'Liquidación', 'Truncas al cese'],
+  ], [1100, 3300, 5238]),
+  ...figura('p09_01_estructuras', 'Estructuras salariales.'),
+  ...figura('p09_02_estructura_nme', 'Reglas de la estructura mensual.'),
 );
 
-// 10. Recibo individual
+// 10. Boleta individual
+const lucia = { RB: '4,500.00', ASF: '123.00', GROSS: '4,623.00', APO: '462.30', COM: '71.66', PRI: '63.34', R5TA: '199.74', NET: '3,825.96', ESSALUD: '416.07', SENATI: '34.67' };
 agregar(
-  h1('10. Recibo de nómina individual'),
-  p('Ruta: **Nómina › Recibos de nómina › Recibos** › **Nuevo**.'),
-  nota('Orden obligatorio dentro de un mes: **1)** adelanto quincenal (NQA) validado, **2)** gratificación (julio y diciembre), **3)** vacaciones (VAC), **4)** mensual (NME) o semanal (NSO). El descuento del adelanto, la proyección de renta de 5ta y la CTS solo leen recibos **validados**.', 'importante'),
-  h2('10.1 Crear y calcular'),
-  ...pasos([
-    'Elija el **Empleado** y la **Estructura** (por ejemplo **Gratificaciones** o **Nómina Mensual Empleados**). Los tipos de estructura no tienen estructura por defecto: selecciónela siempre.',
-    'Indique el **Periodo** (del 1 al último día del mes) y guarde.',
-    'Pulse **Calcular hoja** y revise la pestaña **Cálculo del salario**.',
+  h1('10. Boleta de pago individual'),
+  pasos([
+    '**Nóminas del empleado › Nuevo**: elija el trabajador y el **Período** (01/12/2026 – 31/12/2026). La estructura y los días trabajados se cargan del contrato.',
+    'En **Información contable**, elija el diario **Planillas**.',
+    'Guarde y pulse **Calcular hoja**.',
+    'Revise **Cálculo de la nómina** y pulse **Confirmar**: la boleta pasa a **Hecho** y genera el asiento.',
   ]),
-  ...figura('p13a_01_recibo_septiembre', 'Recibo con empleado, estructura y periodo.'),
-  h3('Gratificación de julio'),
-  ...figura('p08a_02_calculo', 'Gratificación de julio: (3,500 + 113) × 6/6 + bonificación extraordinaria Ley 30334 (9 %).'),
-  h3('Recibo mensual de julio'),
-  ...figura('p08b_02_calculo', 'Cálculo del recibo mensual: ingresos, AFP, EsSalud, EPS, SENATI y neto.'),
-  h2('10.2 Validar'),
-  ...pasos([
-    'Pulse **Validate** (el botón aparece en inglés por traducción faltante de hr_payroll) y confirme con **De acuerdo**.',
-    'El recibo pasa a **Validado** y se genera el asiento contable en borrador.',
-  ]),
-  ...figura('p08b_03a_confirmar', 'Confirmación de la validación.'),
-  ...figura('p08c_01_recibo_validado_imprimir', 'Recibo validado: botones Pagar, Imprimir y acceso al asiento.'),
-  h2('10.3 Asiento contable'),
-  ...pasos([
-    'Pulse el botón inteligente **Asiento contable (borrador)**.',
-    'Revise los apuntes (6211, 4170, 6271/4031, 6275/4699, 6277/4033, 4111) y pulse **Publicar**.',
-  ]),
-  ...figura('p08c_03_asiento_borrador', 'Asiento de nómina en borrador.'),
-  ...figura('p08c_04_asiento_publicado', 'Asiento publicado (SLR/2026/07/0001).'),
-  h2('10.4 Boleta de pago'),
-  p('El botón **Imprimir** genera la **Boleta de Pago de Remuneraciones** (D.S. N° 001-98-TR): datos del empleador y del trabajador, días y horas, ingresos, descuentos, aportes del empleador y neto en letras.'),
-  ...figura('p08c_05_boleta_pago_pe', 'Boleta de Pago PE generada.', 560),
-  nota('El PDF que Odoo adjunta automáticamente al validar (y envía por correo al trabajador) usa la plantilla estándar de hr_payroll, en inglés. Para que el adjunto sea la Boleta PE, configure el reporte en la estructura salarial.', 'implementador'),
-  h2('10.5 Verificación del cálculo'),
-  tabla(['Concepto (julio 2026)', 'Carlos Quispe', 'Jorge Fernández', 'María Torres'], [
-    ['Remuneración básica', '3,500.00', '1,130.00', '8,000.00'],
-    ['Asignación familiar', '113.00', '—', '—'],
-    ['ONP / AFP aporte', 'AFP 361.30', 'ONP 146.90', 'AFP (mixta)'],
-    ['AFP comisión / prima', '53.11 / 49.50', '—', '0.00 / —'],
-    ['Renta de 5ta', '0.00', '0.00', '269.40'],
-    ['EsSalud / EPS / crédito EPS', '325.17 / 162.59 / −81.29', 'EsSalud', 'EsSalud'],
-    ['SENATI', '27.10', '—', '—'],
-    ['**Neto a pagar**', '**3,149.09**', '**983.10**', '**6,821.00**'],
-    ['Gratificación + bono (julio)', '3,613.00 + 243.88', '1,130.00 + 101.70', '8,000.00 + 720.00'],
-  ], [2900, 2350, 2050, 2338]),
-  p('Todos los valores coinciden con los esperados por el caso de demostración de la localización.'),
+  ...figura('p10_04_boleta_nueva', 'Boleta nueva: estructura y días trabajados traídos del contrato.'),
+  ...figura('p10_05_boleta_calculada', 'Líneas calculadas.'),
+  tabla(['Concepto', 'Código', 'Importe'], [
+    ['Remuneración básica', 'RB_001', lucia.RB], ['Asignación familiar', 'ASF_001', lucia.ASF], ['Total ingresos', 'GROSS', lucia.GROSS],
+    ['AFP – aporte obligatorio (10 %)', 'AFP_APO_001', lucia.APO], ['AFP – comisión Integra (1.55 %)', 'AFP_COM_001', lucia.COM], ['AFP – prima de seguro (1.37 %)', 'AFP_PRI_001', lucia.PRI],
+    ['Renta de 5.ª categoría', 'R5TA_001', lucia.R5TA], ['**Neto a pagar**', 'NET', `**${lucia.NET}**`],
+    ['EsSalud (empleador, 9 %)', 'ESSALUD_001', lucia.ESSALUD], ['SENATI (empleador, 0.75 %)', 'SENATI_001', lucia.SENATI],
+  ], [4600, 2200, 2838]),
+  p('La boleta creada desde la interfaz coincidió **al centavo** con la calculada por el proceso automático del mismo mes.'),
+  ...figura('p10_06_boleta_confirmada', 'Boleta confirmada con su asiento en el diario Planillas.'),
+  h2('10.1 Boleta impresa (D.S. 001-98-TR)'),
+  p('Botón **Imprimir** › **Boleta de Pago (PE)**: encabezado de empleador y trabajador, días y horas, tres columnas (ingresos, descuentos, aportes) y el neto en letras.'),
+  ...figura('p10_07_boleta_pdf', 'Boleta de pago de diciembre de 2026.', 600),
+  nota('En la boleta impresa, **Total descuentos 797.03 + Neto 3,825.96 = 4,622.99**, un centavo menos que el total de ingresos (4,623.00). Las líneas guardan importes sin redondear (comisión 71.6565, prima 63.3351, 5.ª 199.7378): el total de descuentos se suma sin redondear y el neto con líneas redondeadas. El asiento sí cuadra. Ver Anexo A.', 'implementador'),
+  h2('10.2 Asiento contable'),
+  ...figura('p10_08_asiento', 'Asiento de la boleta: 5,870.78 al debe y al haber.'),
 );
 
 // 11. Lote
 agregar(
-  h1('11. Periodo (lote) de nómina'),
-  p('Para procesar a varios trabajadores a la vez: **Nómina › Recibos de nómina › Periodos de nómina** (Pay Runs).'),
-  ...pasos([
-    'Pulse **Nuevo**, elija la **Estructura salarial** y el **Periodo**, y pulse **Siguiente**.',
-    'Marque los trabajadores a incluir (excluya a quien ya tiene recibo del periodo) y pulse **Seleccionar**. Odoo crea y calcula los recibos.',
-    'Revise netos y advertencias y pulse **Validar** (confirme con **De acuerdo**).',
+  h1('11. Lote mensual y orden del proceso'),
+  pasos([
+    '**Procesamientos de nóminas › Nuevo**: nombre, periodo y **Diario de salarios = Planillas**. Guarde.',
+    '**Generar nóminas**: en el asistente, **Agregar una línea** y elija a los trabajadores; pulse **Generar**.',
+    'Revise las boletas creadas y pulse **Marcar como hecho**: las boletas pasan a Hecho y se asientan.',
   ]),
-  ...figura('p10_02_nuevo_periodo', 'Nuevo periodo de nómina: estructura y periodo.'),
-  ...figura('p10_03_seleccionar_empleados', 'Selección de trabajadores.'),
-  ...figura('p10_04_periodo_creado', 'Recibos del periodo creados y calculados.'),
-  ...figura('p10_06_periodo_validado', 'Periodo validado.'),
-  nota('El asistente filtra a los trabajadores por **tipo de estructura**. Gratificaciones, CTS, Vacaciones y Liquidación pertenecen al tipo **Beneficios Sociales**, y los trabajadores al tipo Régimen General, por eso el lote de gratificación sale vacío. Mientras no se ajuste, procese estos beneficios con **recibos individuales**.', 'importante'),
-  ...figura('p10a_03_paso2', 'Lote de gratificación: el asistente no encuentra trabajadores.'),
+  ...figura('p11_01_lote_nuevo', 'Lote de diciembre de 2026 con diario Planillas.'),
+  ...figura('p11_03_lote_seleccion', 'Asistente «Generar nóminas» con el trabajador elegido.'),
+  ...figura('p11_04_lote_generado', 'Boleta generada dentro del lote.'),
+  ...figura('p11_05_lote_hecho', 'Lote marcado como hecho.'),
+  p('Medido: la boleta de Héctor Manuel Salas Quispe (DNI sintético `99999902`, ONP, sueldo 2,200) salió con ONP **286.00** y neto **1,914.00**, igual que la calculada por el proceso automático.'),
+  h2('11.1 Orden del mes'),
+  pasos([
+    'Adelanto quincenal (NQA), si hay. **Valídelo**: la mensual solo descuenta adelantos en Hecho (medido: un adelanto en borrador no se descontó, `DESC_ADEL_001` = 0.00).',
+    'Gratificación (julio y diciembre), CTS (mayo y noviembre) y vacaciones del mes. **Valídelas**.',
+    'Mensuales (NME) y semanales (NSO).',
+    'Salidas: planilla, PLAME, AFPnet, TXT bancarios.',
+  ]),
 );
 
-// 12. Asistencias
+// 12. Aportes
 agregar(
-  h1('12. Asistencias y su efecto en la boleta'),
-  p('Con `solse_pe_payroll_asistencia_ee`, las marcaciones de la aplicación **Asistencias** (reloj, kiosko o registro manual) se convierten en faltas y tardanzas dentro del recibo.'),
-  h2('12.1 Registrar marcaciones'),
-  p('Normalmente provienen del reloj biométrico o del modo quiosco. Para un registro manual: **Asistencias › Gestión › Asistencias › Nuevo**, indique el empleado, la **Entrada** y la **Salida**.'),
-  ...figura('p13_01_marcacion_manual', 'Marcación manual: llegada a las 8:25 a. m.'),
-  ...figura('p13_02_lista_asistencias', 'Lista de asistencias del mes.'),
-  h2('12.2 Conciliar en el recibo'),
-  ...pasos([
-    'Cree el recibo mensual del periodo (en borrador).',
-    'Pulse **Cargar asistencias**.',
-    'Revise **Días trabajados** (líneas de Falta injustificada no pagada), **Entradas salariales** (Horas de tardanza) y la pestaña **Asistencias** (detalle día por día).',
-    'Pulse **Calcular hoja**.',
-  ]),
-  ...figura('p13a_02_dias_trabajados', 'Jorge: 20 días de asistencia y 2 faltas injustificadas.'),
-  ...figura('p13a_04_resumen_asistencias', 'Detalle de la conciliación: faltas del 10 y 24 de septiembre.'),
-  ...figura('p13a_05_calculo', 'Remuneración básica con 2 faltas: 1,130 / 30 × 28 = 1,054.67.'),
-  p('Nota: estas capturas de Jorge son anteriores a registrar su vacación del 21 al 23 de septiembre. Con la vacación, el mismo mes queda como se muestra en el capítulo 13.6.'),
-  ...figura('p13b_03_entradas', 'Carlos: 0.75 h de tardanza (3 días × 15 min sobre la tolerancia de 10 min).'),
-  ...figura('p13b_05_calculo', 'Descuento por tardanzas: 3,500 / 240 × 0.75 = 10.94.'),
-  nota('El importe de la pestaña Días trabajados (por horas del calendario) puede diferir de la Remuneración básica de la boleta, que se calcula sobre 30 días según la norma peruana. El importe válido es el de la regla **Remuneración básica**.'),
-  nota('En Enterprise el **Descuento por tardanzas** (TAR_001) se muestra con importe **positivo** porque es una deducción (Neto = Ingresos − Deducciones). Las horas del recibo sí descuentan los minutos brutos de retraso: Carlos queda con **174.75 h** en septiembre (176 h − 3 × 25 min), que es lo que llega al `.jor` de PLAME.'),
-  nota('En la prueba, el descuento por tardanza **no reduce** el concepto 0121 del `.rem` de PLAME (se declaró 3,500.00 con una tardanza de 10.94). Consulte con su contador cómo declararlo; queda registrado como observación (Anexo A, H-MAN-6).', 'implementador'),
+  h1('12. Aportes y retenciones'),
+  tabla(['Concepto', 'Regla', 'Cálculo', 'Medido'], [
+    ['ONP', 'ONP_001', '13 % de los ingresos afectos', 'Héctor 2,200 → **286.00**; Miguel (demo) 3,000 → 390.00'],
+    ['AFP fondo', 'AFP_APO_001', '10 % de los ingresos afectos', 'Lucía 4,613 → **461.30**'],
+    ['AFP comisión flujo', 'AFP_COM_001', 'Tasa de la AFP; con comisión mixta = 0', 'Lucía Integra → **71.50**; María (mixta) → 0.00'],
+    ['AFP prima', 'AFP_PRI_001', '1.37 % con tope en la RMA', 'Lucía → **63.20**; Ana (demo, 15,000) topeada → 172.61'],
+    ['EsSalud', 'ESSALUD_001', '9 % (mínimo sobre la RMV)', 'Lucía → **415.17**'],
+    ['EPS', 'EPS_APO_001 / EPS_CRED_001', 'Aporte y crédito ≤ 25 % de EsSalud', 'Carlos (demo) 162.59 / −81.29'],
+    ['Descuento judicial', 'DJ_001', '% o monto, tope 60 % del disponible', 'Miguel (demo) 20 % → 522.00'],
+    ['Cuota sindical', 'SIND_001', '1 % del básico si es sindicalizado', 'Rosa (demo) → 4.20'],
+  ], [1700, 2200, 2900, 2838]),
+  p('Valores de enero de 2025 para Lucía (ingresos afectos 4,613). Las cifras de la demo son del caso NOMINA (julio de 2026).'),
+  nota('SENATI (0.75 %) aparece porque la compañía tiene marcada **Afecta a SENATI** (Ajustes › Compañías). Solo corresponde a empresas industriales (CIIU D) con más de 20 trabajadores. En la base quedó marcada por una siembra antigua de la demo: revise esa casilla en producción.', 'importante'),
 );
 
-// 13. Vacaciones y feriados
+// 13. Renta de 5.ª
+const r5ta = anioCompleto.filter((r) => r.emp === 27 && r.estructura === 'NME');
 agregar(
-  h1('13. Vacaciones y feriados'),
-  p('Las vacaciones se rigen por el **D. Leg. 713** (descanso de 30 días calendario) y el D.S. 012-92-TR. La contadora del proyecto confirmó el criterio de cálculo que aplica la localización: durante el goce, la remuneración básica del mes **descuenta los días de vacaciones contados en días CALENDARIO** (incluidos sábados, domingos y feriados) sobre un **mes comercial de 30 días**.'),
-  tabla(['Concepto', 'Fórmula', 'Dónde'], [
-    ['Remuneración vacacional (VAC_001)', '(sueldo + asignación familiar) / 30 × días calendario de goce', 'Boleta de estructura **Vacaciones**'],
-    ['Remuneración básica del mes (RB_001)', 'sueldo / 30 × (30 − días calendario no pagados)', 'Boleta **Nómina Mensual Empleados**'],
-    ['Días no pagados', 'vacaciones + faltas + medias jornadas del periodo, en días calendario', 'Se suman todas las ausencias no pagadas del mes'],
-  ], [2900, 4300, 2438]),
-  espacio(),
-  p('Resultado: el goce y la mensual del mismo mes suman **un solo sueldo**. Ejemplos medidos:'),
-  tabla(['Caso', 'Goce', 'VAC_001', 'Básica del mes', 'Total'], [
-    ['María (S/ 8,000) · base de ejemplo', '1–15 ago.', '4,000.00', '8,000/30 × (30 − 15) = 4,000.00', '8,000.00'],
-    ['Jorge (S/ 1,130) · 2 faltas + vacaciones', '21–23 set.', '113.00', '1,130/30 × (30 − 2 − 3) = 941.67', '1,054.67'],
-    ['Laboratorio SOLSE · S/ 3,000', '1–30 jul.', '3,000.00', '3,000/30 × (30 − 30) = 0.00', '3,000.00'],
-    ['Laboratorio SOLSE · S/ 3,000', '1–15 jul.', '1,500.00', '3,000/30 × (30 − 15) = 1,500.00', '3,000.00'],
-  ], [2900, 1200, 1200, 2900, 1438]),
-  espacio(),
-  h2('13.1 Tipo de ausencia'),
-  p('La localización crea el tipo de ausencia **Vacaciones PE (D.Leg. 713)** (tipo de entrada de trabajo `VACPE100`), con asignación obligatoria y aprobación de RR.HH. El inicializador lo marca como **no pagado** en las estructuras mensual y semanal: **no** desmarque "Pagado" a mano en los días trabajados.'),
-  h2('13.2 Asignar días de vacaciones'),
-  ...pasos([
-    'Ruta: **Vacaciones › Gestión › Asignaciones** › **Nuevo**.',
-    'Tipo de permiso **Vacaciones PE (D.Leg. 713)**, el **Empleado**, el periodo de validez y la **Asignación** en días (30 por año completo de servicios). Guarde.',
-    'Pulse **Validar**.',
+  h1('13. Renta de 5.ª categoría'),
+  p('La regla `R5TA_001` retiene en las boletas mensuales (periodo de 20 días o más):'),
+  pasos([
+    '**Proyección anual** = lo percibido hasta el mes anterior (boletas validadas) + ingresos afectos del mes × meses restantes + gratificaciones pendientes × (1 + bonificación).',
+    'Resta **7 UIT** y aplica los tramos 8 %, 14 %, 17 %, 20 % y 30 %.',
+    'Divide según el mes: enero–marzo ÷ 12; abril ÷ 9 (descontando lo retenido); mayo–julio ÷ 8; agosto ÷ 5; setiembre–noviembre ÷ 4; diciembre, el saldo.',
   ]),
-  ...figura('p16a_01_asignacion', 'Asignación de 30 días de Vacaciones PE.'),
-  h2('13.3 Solicitar y aprobar el goce'),
-  ...pasos([
-    'Ruta: **Vacaciones › Gestión › Todo el tiempo personal** › **Nuevo** (o el propio trabajador desde **Mi tiempo**).',
-    'Empleado, tipo **Vacaciones PE** y las **Fechas** del goce (elíjalas en el calendario: clic en el primer día y en el último). Guarde.',
-    'Pulse **Validar**. El estado pasa a **Aprobado** y la ausencia queda "A calcular en el siguiente recibo de nómina".',
-  ]),
-  ...figura('p16a_03_solicitud', 'Solicitud del 1 al 15 de agosto: Odoo muestra 10 días (hábiles).'),
-  ...figura('p16a_05_solicitud_aprobada', 'Vacación aprobada.'),
-  nota('Una vacación en borrador o "Por aprobar" **no descuenta nada y no avisa**: verifique que esté **Aprobada** antes de calcular la nómina.', 'importante'),
-  nota('Odoo descuenta del **saldo** los días **hábiles** del horario del trabajador (10 días para el goce del 1 al 15 de agosto), no los 15 días calendario. El **cálculo de la boleta sí usa días calendario** y es correcto; lo que queda sobrestimado es el saldo de vacaciones que muestra Odoo. Controle el saldo legal aparte hasta que se corrija (Anexo A, H-MAN-2).', 'implementador'),
-  h2('13.4 Boleta de vacaciones'),
-  ...pasos([
-    'Cree un recibo con estructura **Vacaciones** y como periodo las fechas del goce (ej. 01/08 al 15/08).',
-    'Pulse **Calcular hoja**: la línea **Remuneración vacacional** paga los días calendario del goce. Valide.',
-    'Valide la boleta de vacaciones **antes** que la mensual del mes.',
-  ]),
-  ...figura('p17a_01_boleta_vacaciones', 'Boleta de vacaciones: 8,000 / 30 × 15 = 4,000.00.'),
-  h2('13.5 Efecto en el recibo mensual'),
-  p('Cree la mensual del mes **después** de aprobar la vacación. En **Días trabajados** la vacación aparece como línea **no pagada** y la **Remuneración básica** descuenta sus días calendario.'),
-  ...figura('p17a_02_mensual_dias_trabajados', 'María, agosto: Vacaciones PE (no pagado) y Asistencia.'),
-  ...figura('p17a_03_mensual_calculo', 'Remuneración básica de agosto: 4,000.00 (30 − 15 días).'),
-  h2('13.6 Faltas y vacaciones en el mismo mes'),
-  p('Las faltas (de la conciliación de asistencias) y las vacaciones se **suman** como días no pagados. Jorge, septiembre: 2 faltas + 3 días de vacaciones.'),
-  ...figura('p17b_01_faltas_y_vacaciones_dias', 'Vacaciones PE 3 días, Asistencia 17 y Faltas 2.'),
-  ...figura('p17b_02_faltas_y_vacaciones_calculo', 'Remuneración básica: 1,130 / 30 × (30 − 2 − 3) = 941.67.'),
-  nota('Si la vacación se aprueba **después** de crear el recibo mensual, la pestaña Días trabajados no la muestra ("Cargar asistencias" no la agrega), aunque la Remuneración básica sí la descuenta. Como el `.jor` de PLAME suma esas líneas, **elimine el borrador y vuelva a crear el recibo** (Anexo A, H-MAN-5).', 'importante'),
-  h2('13.7 Feriados'),
-  p('Los feriados están **dentro** de los 30 días comerciales: no aumentan ni reducen la remuneración básica. Para que la boleta los muestre como día pagado, hay que registrarlos **con un tipo de entrada de trabajo pagado**.'),
-  ...pasos([
-    'Ruta: **Vacaciones › Configuración › Días festivos** › **Nuevo**.',
-    'Nombre (ej. **Combate de Angamos**), fecha de inicio y fin (el mismo día) y **Tipo de entrada de trabajo**: un tipo **pagado**, por ejemplo **Tiempo personal genérico**. Guarde.',
-    'Registre los feriados del año **antes** de calcular la nómina de cada mes.',
-  ]),
-  ...figura('p18_03_dia_festivo_tipo_entrada', 'Feriado del 8 de octubre con tipo de entrada Tiempo personal genérico.'),
-  nota('Sin **Tipo de entrada de trabajo**, el día del feriado queda como entrada **en conflicto** y la boleta no lo muestra. La localización no trae un tipo "Feriado": use uno pagado del estándar o cree uno propio (Anexo A, H-MAN-4).', 'implementador'),
-  h3('Regenerar las entradas de trabajo'),
-  p('Odoo genera las entradas de trabajo por adelantado. Un feriado (o una ausencia) registrado **después** no se aplica a las entradas ya generadas: hay que **regenerarlas**.'),
-  ...pasos([
-    'Ruta: **Nómina › Entradas de trabajo › Entradas de trabajo**.',
-    'Pulse **Restablecer**, elija los **Empleados** y el **Periodo** (el mes completo) y pulse **Volver a generar entradas de trabajo**.',
-    'Cree (o vuelva a crear) los recibos del mes.',
-  ]),
-  ...figura('p18_04b_restablecer_entradas', 'Regeneración de entradas de trabajo del mes.'),
-  ...figura('p18_04c_entradas_trabajo_despues', 'El 8 de octubre de Carlos pasa a "GTO" (Tiempo personal genérico).'),
-  ...figura('p18_05_recibo_linea_feriado', 'Boleta de octubre: feriado pagado (1 día, 8 h) y 21 días de asistencia; básica 3,500.'),
-  nota('Regenere las entradas del mes **antes de crear los recibos**. En la prueba, tras aprobar la vacación de María, agosto quedó solo con las entradas de vacaciones y **sin entradas de asistencia**: su mensual tuvo una sola línea y el `.jor` de PLAME la declaró con **0 días y 0 horas** aunque cobró el mes. Tras "Restablecer" y rehacer el recibo, el `.jor` declaró 11 días y 88 horas (Anexo A, H-MAN-3).', 'importante'),
+  ...figura('p13_01_r5ta_enero', 'Retención de 5.ª en la boleta de enero de 2025.'),
+  h2('13.1 Retenciones medidas de Lucía (sueldo 4,500 + asignación familiar)'),
+  tabla(['Mes', 'R5TA_001', 'Mes', 'R5TA_001'],
+    Array.from({ length: Math.ceil(r5ta.length / 2) }, (_, i) => {
+      const a = r5ta[i]; const b = r5ta[i + Math.ceil(r5ta.length / 2)];
+      return [periodoTexto(a.periodo), importe(a, 'R5TA_001'), b ? periodoTexto(b.periodo) : '', b ? importe(b, 'R5TA_001') : ''];
+    }), [1800, 3019, 1800, 3019]),
+  p('Total retenido en 2025: **2,292.45** (suma de las retenciones de cada boleta). Otros casos medidos en la demo: María (8,000) **269.40** en julio y **377.16** en agosto, con la gratificación ya en el acumulado; Ana (15,000) **1,267.25** en julio.'),
+  nota('En febrero de 2026 la retención baja a **12.77** porque Lucía gozó 15 días de vacaciones: la proyección multiplica los ingresos del mes (reducidos) por los meses restantes, y la boleta de vacaciones del mismo mes aún no está en el acumulado. Se recupera desde marzo.', 'nota'),
+  nota('La proyección de gratificaciones usa el **sueldo sin asignación familiar**, aunque la gratificación sí la incluye. Medido en 2025: retenido 2,292.45 frente a 2,309.73 con la renta real (65,412.34), una diferencia de 17.28 (≈ 113 × 1.09 × 14 %). Ver Anexo A.', 'implementador'),
 );
 
-// 13. Reportes
+// 14. Gratificaciones
+const gratis = anioCompleto.filter((r) => r.estructura === 'GRAT');
 agregar(
-  h1('14. Reportes y archivos legales'),
-  p('Todos los asistentes toman únicamente los recibos **validados** del mes y año indicados.'),
-  h2('14.1 Planilla de sueldos'),
-  p('Ruta: **Nómina › Nómina PE › Planilla de sueldos**. Elija mes y año; **Imprimir PDF** o **Generar Excel**.'),
-  ...figura('p11_01_planilla_asistente', 'Asistente de planilla de sueldos.'),
-  ...figura('p11_01b_planilla_pdf', 'Planilla de sueldos de julio 2026 (PDF).'),
-  h2('14.2 PLAME (archivos PDT)'),
-  p('Ruta: **Nómina › Nómina PE › PLAME (archivos PDT)**. Genera un ZIP `0601AAAAMM<RUC>` con `.rem` (remuneraciones), `.jor` (jornada) y `.snl`. Con el módulo de 4ta, incluye además `.ps4` y `.4ta` (casilla **Incluir 4ta categoría**). El resumen indica trabajadores, líneas y conceptos T22.'),
-  ...figura('p11_04_plame_generado', 'ZIP PLAME generado con su resumen.'),
-  p('Formato del archivo de jornada **`.jor`** (una línea por trabajador, campos separados y terminados con `|`):'),
-  tabla(['Campo', 'Contenido', 'Ejemplo (Carlos, septiembre)'], [
-    ['1', 'Tipo de documento', '01'],
-    ['2', 'Número de documento', '99999901'],
-    ['3', 'Días efectivamente laborados (líneas pagadas de Días trabajados)', '22'],
-    ['4', 'Horas ordinarias', '174'],
-    ['5', '**Minutos** de la jornada ordinaria (confirmado por la contadora, P-02)', '45'],
-    ['6', 'Horas de sobretiempo (HE25 + HE35)', '0'],
-    ['7', 'Minutos de sobretiempo', '0'],
-  ], [900, 5600, 3138]),
-  espacio(),
-  p('Línea generada en la base de ejemplo: `01|99999901|22|174|45|0|0|` (174.75 h = 174 h 45 min, por las tardanzas de septiembre). Con jornadas exactas de 8 h el campo de minutos sale 0. Las vacaciones y faltas no cuentan como días laborados.'),
-  ...figura('p14_02_plame_setiembre', 'PLAME de septiembre 2026.'),
-  h2('14.3 AFPnet'),
-  p('Ruta: **Nómina › Nómina PE › AFPnet**. Genera el Excel (hoja TRABAJADOR) con los afiliados al SPP que tienen CUSPP.'),
-  ...figura('p11_05_afpnet_generado', 'Excel AFPnet generado.'),
-  h2('14.4 Pago masivo a bancos'),
-  ...pasos([
-    'Ruta: **Nómina › Nómina PE › Pago masivo a bancos**.',
-    'Elija mes, año, **Tipo de pago** (Haberes o CTS), **Banco de cargo**, **Cuenta de cargo** de la empresa y **Fecha de pago**.',
-    'Pulse **Generar TXT** y descargue el archivo para cargarlo en la banca por internet.',
-  ]),
-  ...figura('p11_06_bancos_asistente', 'Parámetros del pago masivo.'),
-  ...figura('p11_07_bancos_generado', 'TXT generado: 3 trabajadores, total S/ 10,953.19.'),
-  nota('Antes de cargar el TXT en producción, valídelo con el banco. En la prueba: (a) las cuentas del propio BCP salieron como interbancarias (usa el CCI), porque el código de banco se toma del BIC; (b) los nombres llevan tildes (ej. "Fernández"), que algunos formatos bancarios no aceptan; (c) al elegir **Scotiabank** se genera el formato Interbank.', 'implementador'),
+  h1('14. Gratificaciones'),
+  p('Estructura **GRAT**, solo en julio y diciembre. Base = sueldo + asignación familiar; se paga por sextos de **meses completos** del semestre y por el factor del régimen (general 1.0, pequeña empresa 0.5, microempresa 0). La bonificación extraordinaria (Ley 30334) es 9 %, o 6.75 % si el trabajador tiene EPS.'),
+  tabla(['Trabajador', 'Periodo', 'GRATI_001', 'BONO_GRATI_001', 'Neto'],
+    gratis.map((r) => [r.emp === 27 ? 'Lucía' : 'Héctor', periodoTexto(r.periodo), importe(r, 'GRATI_001'), importe(r, 'BONO_GRATI_001'), importe(r, 'NET')]),
+    [1800, 1500, 2100, 2100, 2138]),
+  p('Héctor ingresó el 01/03/2025: en julio de 2025 recibe 4/6 (marzo a junio) = **1,466.67**. En diciembre de 2026 la de Lucía incluye la asignación familiar nueva (4,500 + 123). En la demo: régimen MYPE (José, 1,500) **750.00**; con EPS (Carlos) bonificación **243.88** (6.75 %).'),
+  ...figura('p14_01_grati_julio', 'Boleta de gratificación de julio de 2026.'),
 );
 
-// 14. RxH
+// 15. CTS
+const cts = anioCompleto.filter((r) => r.estructura === 'CTS');
 agregar(
-  h1('15. Recibos por honorarios (4ta categoría)'),
-  p('Los recibos por honorarios se registran en Contabilidad como facturas de proveedor con tipo de documento **02**; el pago determina el periodo en que se declaran (criterio de percepción).'),
-  h2('15.1 Configuración (una sola vez)'),
-  h3('Tipo de documento 02 para compras'),
-  ...pasos([
-    'Ruta: **Contabilidad › Configuración › Tipos de documento** › **Nuevo**.',
-    'Nombre **Recibo por Honorarios**, código **02**, prefijo **E**, país Perú, tipo **Factura** y **Sub tipo: Compra**, de la compañía. Guarde.',
-  ]),
-  ...figura('p12_00_tipo_documento_rxh', 'Tipo de documento 02 con sub tipo Compra.'),
-  nota('Sin este registro el tipo 02 **no aparece** en la factura de proveedor: la localización solo ofrece tipos de documento de la compañía con sub tipo Compra. Los RxH no se incluyen en el Registro de Compras (SIRE/PLE), por eso esas casillas quedan desmarcadas.', 'implementador'),
-  h3('Ajustes PLAME - Recibos por Honorarios'),
-  p('Ruta: **Contabilidad › Configuración › Ajustes**, bloque **PLAME - Recibos por Honorarios**. Deje vacío el régimen pensionario (campo 10) y desactivado el relleno con ceros, salvo indicación del contador.'),
-  ...figura('p12_01_ajustes_plame_rxh', 'Ajustes PLAME - Recibos por Honorarios.'),
-  h3('Impuesto de retención de 4ta (8 %)'),
-  ...pasos([
-    'Ruta: **Contabilidad › Configuración › Impuestos** › **Nuevo**.',
-    'Nombre **Retención Renta 4ta Categoría 8%**, tipo **Compras**, importe **-8 %**.',
-    'En **Definición**, asigne la cuenta **4017200** (Renta de cuarta categoría) a la línea de impuesto de factura y de nota de crédito.',
-    'En **Opciones avanzadas**, marque **Retención de renta de 4ta categoría**. Guarde.',
-  ]),
-  ...figura('p12_02_impuesto_retencion_4ta', 'Impuesto de retención: compras, -8 %.'),
-  ...figura('p12_03_impuesto_cuentas', 'Cuenta 4017200 en las líneas de distribución.'),
-  ...figura('p12_04_impuesto_marcar_retencion_4ta', 'Casilla Retención de renta de 4ta categoría.'),
-  nota('Cree un **grupo de impuestos** propio (por ejemplo "Retenciones 4ta"): con el grupo por defecto, la retención se muestra como "IGV: -240.00" en los totales de la factura.', 'implementador'),
-  h2('15.2 Prestador de servicios'),
-  ...pasos([
-    'Ruta: **Contabilidad › Proveedores › Proveedores** › **Nuevo**. Seleccione **Persona**.',
-    'Escriba el nombre, tipo de identificación **RUC** y el número (RUC 10…).',
-    'Guarde. Recién entonces aparece la pestaña **PLAME 4ta categoría**.',
-    'En esa pestaña complete **Apellido paterno**, **Apellido materno** y **Nombres** tal como figuran en el RUC (o use **Separar desde el nombre completo** y revise). Verifique Tipo de documento PLAME (06) y Domiciliado. Registre las constancias de suspensión de retención si las hubiera.',
-  ]),
-  ...figura('p12_05_prestador_datos', 'Prestador persona con RUC (búsqueda automática desactivada en el ejemplo).'),
-  ...figura('p12_06_prestador_pestana_plame', 'Pestaña PLAME 4ta categoría.'),
-  nota('La casilla **Búsqueda automática** consulta SUNAT al ingresar el RUC y reemplaza el nombre y el tipo de contacto con los datos oficiales. En producción es lo deseable; en este manual se desactivó porque los datos son ficticios.'),
-  h2('15.3 Registrar y pagar el recibo'),
-  ...pasos([
-    'Ruta: **Contabilidad › Proveedores › Facturas** › **Nuevo**.',
-    'Proveedor, **Tipo de Documento: (02) Recibo por Honorarios**, **Número de Documento** (ej. `E001-103`), **Referencia de factura** (obligatoria; use el mismo número) y **Fecha de la factura** (emisión).',
-    'Agregue la línea del servicio con su importe. Si supera S/ 1,500 y el prestador no tiene suspensión, aplique la **retención de 4ta**; si no, deje la línea sin impuestos.',
-    'Pulse **Confirmar**.',
-    'Pulse **Pagar**: elija el diario de banco, la **Fecha de pago** y el **Medio de Pago** (Tabla 1 SUNAT, obligatorio), y pulse **Crear pago**.',
-  ]),
-  ...figura('p12_07_recibo_honorarios', 'Recibo por honorarios E001-103: S/ 3,000 con retención de 8 % (neto S/ 2,760).'),
-  ...figura('p12_07b_registrar_pago', 'Registro del pago con medio de pago SUNAT.'),
-  h2('15.4 Exportar la 4ta categoría'),
-  ...pasos([
-    'Ruta: **Contabilidad › Reportes › PLAME - Recibos por Honorarios**.',
-    'Indique **Ejercicio** y **Mes**; pulse **Revisar periodo**. Se listan los recibos **pagados** en el mes.',
-    'Revise la pestaña **Validaciones** (errores bloquean, advertencias no).',
-    'Pulse **Generar archivos** y descargue `.ps4` (prestadores) y `.4ta` (comprobantes). En el PDT se importa primero el .ps4 y luego el .4ta.',
-  ]),
-  ...figura('p12_09_exportar_rxh_revision', 'Revisión del periodo: 2 prestadores, 2 comprobantes, S/ 3,800.'),
-  ...figura('p12_11_exportar_rxh_archivos', 'Archivos .ps4 y .4ta generados.'),
-  p('Con `solse_pe_plame_4ta_ee`, el asistente **PLAME (archivos PDT)** de nómina incluye estos dos archivos dentro del mismo ZIP:'),
-  ...figura('p12_12_plame_nomina_con_4ta', 'ZIP PLAME de nómina con el anexo de 4ta categoría.'),
+  h1('15. CTS'),
+  p('Estructura **CTS**, en mayo y noviembre. Remuneración computable = sueldo + asignación familiar + 1/6 de la última gratificación **validada** (sin bonificación); tiempo = meses/12 + días/360 del semestre; por el factor del régimen.'),
+  tabla(['Trabajador', 'Depósito', 'CTS_001'], cts.map((r) => [r.emp === 27 ? 'Lucía' : 'Héctor', periodoTexto(r.periodo), importe(r, 'CTS_001')]), [3200, 3000, 3438]),
+  p('Mayo de 2025: Lucía tiene 4 meses (enero–abril) y aún no hay gratificación, 4,613 × 4/12 = **1,537.67**. Noviembre de 2025: (4,613 + 4,613/6) × 6/12 = **2,690.92**.'),
+  ...figura('p15_01_cts_noviembre', 'Boleta de CTS de noviembre de 2026.'),
+  nota('El TXT de abono CTS al BCP salió **sin trabajadores** (solo cabecera, total 0.00) aunque había dos CTS validadas: el banco BCP de la base se identifica por su código BIC y el generador espera el código 02. Hasta corregirlo, revise el TXT antes de enviarlo. Ver capítulo 21 y Anexo A.', 'importante'),
 );
 
-// 15. Cierre mensual
+// 16. Liquidación
 agregar(
-  h1('16. Lista de verificación del cierre mensual'),
-  ...pasos([
-    'Actualizar parámetros con nuevas vigencias (RMA trimestral, RMV, UIT en enero, comisiones AFP).',
-    'Altas, bajas y cambios de sueldo de trabajadores; cuentas bancarias con CCI.',
-    'Feriados del mes registrados con tipo de entrada pagado.',
-    'Ausencias (vacaciones) **aprobadas** y asistencias completas del mes.',
-    'Regenerar las entradas de trabajo del mes (**Restablecer**) antes de crear los recibos.',
-    'Validar adelantos quincenales (NQA).',
-    'Gratificaciones (julio/diciembre) y CTS (mayo/noviembre) con recibos individuales.',
-    'Boletas de vacaciones (VAC) del mes, validadas antes de la mensual.',
-    'Recibos mensuales (NME) / semanales (NSO): calcular, revisar y validar (individual o por periodo).',
-    'Publicar asientos de nómina.',
-    'Imprimir boletas y enviarlas.',
-    'Planilla de sueldos, AFPnet, PLAME (con 4ta) y TXT de bancos.',
-    'Recibos por honorarios pagados en el mes y exportación .ps4/.4ta.',
+  h1('16. Liquidación por cese'),
+  pasos([
+    'En el contrato, registre la **fecha de fin** y el **motivo de baja** (T17).',
+    'Cree la boleta con la estructura **Liquidación** para el mes del cese.',
+  ]),
+  ...figura('p16_02_cese_contrato', 'Contrato con fecha de cese y motivo de baja (laboratorio).'),
+  ...figura('p16_01_liquidacion', 'Liquidación medida: vacaciones, gratificación, bonificación y CTS truncas.'),
+  tabla(['Concepto', 'Regla', 'Medido (Carmen, sueldo 2,500, cese 31/08/2026)'], [
+    ['Vacaciones truncas 8/12', 'VAC_TRUNCA_001', '1,666.67'],
+    ['Gratificación trunca 2/6', 'GRATI_TRUNCA_001', '833.33'],
+    ['Bonificación 9 %', 'BONO_GRATI_TRUNCA_001', '75.00'],
+    ['CTS trunca 4/12 (sexto sin bonificación)', 'CTS_TRUNCA_001', '972.22'],
+    ['**Neto de liquidación**', 'NET', '**3,547.22**'],
+  ], [3800, 2500, 3338]),
+  nota('**No cubierto por la localización:** indemnización por despido arbitrario y regularización de la renta de 5.ª al cese. Calcúlelas aparte y cárguelas como entrada si corresponde.', 'importante'),
+);
+
+// 17. Vacaciones
+agregar(
+  h1('17. Vacaciones'),
+  p('Se registran con el tipo de ausencia **Vacaciones PE (D.Leg. 713)**. Devengan 2.5 días por mes (plan «Vacaciones PE - Devengo mensual»). El pago va en una boleta **VAC** por el rango de días de goce; la mensual descuenta esos días.'),
+  ...figura('p17_05_asignaciones', 'Asignaciones de vacaciones devengadas.'),
+  ...figura('p17_04_ausencias', 'Ausencia de vacaciones aprobada: 11 días hábiles para 15 días calendario.'),
+  h2('17.1 Goce parcial medido (Lucía, 2 al 16 de febrero de 2026: 15 días)'),
+  tabla(['Boleta', 'Concepto', 'Importe'], [
+    ['VAC (02/02–16/02)', 'VAC_001 = (4,500 + 113) × 15/30', '2,306.50'],
+    ['NME febrero', 'RB_001 = 4,500 × (30 − 15)/30', '2,250.00'],
+    ['NME febrero', 'ASF_001', '113.00'],
+  ], [2600, 4600, 2438]),
+  ...figura('p17_02_vac_mensual_dias', 'Mensual de febrero: la línea de vacaciones con «Pagado» desmarcado.'),
+  ...figura('p17_01_vac_boleta', 'Boleta de vacaciones de febrero de 2026.'),
+  p('Casos de la demo (julio de 2026, sueldo 3,000): goce de 30 días → mensual **0.00** y vacaciones **3,000.00**; goce de 15 días → mensual **1,500.00** y vacaciones **1,500.00**. Héctor (septiembre de 2026, 10 días): vacaciones **733.33** y mensual **1,466.67**.'),
+  nota('La mensual se calcula con **mes comercial de 30 días**: resta los días de goce en días calendario. La ausencia, en cambio, cuenta días hábiles (11 para los 15 días calendario de Lucía).', 'nota'),
+  nota('En el mes de goce parcial, la asignación familiar se pagó 1.5 veces: prorrateada dentro de VAC_001 (56.50) y completa en ASF_001 (113.00). Consulte con su contador si corresponde. Ver Anexo A.', 'implementador'),
+);
+
+// 18. Feriados
+agregar(
+  h1('18. Feriados'),
+  p('Los feriados se registran en **Vacaciones › Configuración › Días festivos** (para este manual se cargaron los 16 feriados nacionales de 2025 y de 2026).'),
+  ...figura('p18_01_feriados', 'Feriados nacionales registrados.'),
+  p('**No hay regla salarial de feriados.** El mes comercial de 30 días ya los paga. om_hr_payroll los muestra en los días trabajados como una línea **GLOBAL** («Global Leaves») en negativo y pagada, que no descuenta nada.'),
+  ...figura('p18_02_boleta_global', 'Enero de 2025: 23 días hábiles y la línea GLOBAL del 1 de enero.'),
+  p('**Efecto medido en salidas:** en diciembre de 2026 (feriados 8, 9 y 25) la boleta impresa y el `.jor` del PLAME declaran **20 días / 160 horas** para un mes pagado completo. Confirme con su contador qué deben declarar.'),
+);
+
+// 19. Asistencias
+agregar(
+  h1('19. Asistencias: tardanzas y faltas'),
+  p('Con `solse_pe_payroll_asistencia`, la boleta tiene el botón **Cargar asistencias**: concilia los registros de Asistencias y crea las faltas y tardanzas. La configuración está en **Ajustes › Compañías › Nómina PE - Asistencias**.'),
+  ...figura('p19_04_ajustes_asistencia', 'Tolerancia de tardanza (10 minutos) y opciones de la compañía.'),
+  tabla(['Caso medido (septiembre de 2026)', 'Resultado'], [
+    ['Carlos: tres tardanzas de 25 minutos (tolerancia 10)', '`TAR_001` = **10.94** (horas × sueldo/240)'],
+    ['Jorge (1,130): faltas el 10 y el 24', 'Línea FALTA de 2 días no pagada; `RB_001` = **1,054.67**'],
+    ['María (8,000): falta de 4 horas', 'FALTA_PARCIAL no pagada; `RB_001` = **7,866.67**'],
+    ['Óscar (3,000): 2 faltas y 3 días de vacaciones', '`RB_001` = **2,500.00**'],
+  ], [4900, 4738]),
+  ...figura('p19_01_boleta_tardanzas', 'Boleta con «Cargar asistencias» (laboratorio).'),
+  ...figura('p19_03_boleta_faltas', 'Faltas como línea no pagada en los días trabajados.'),
+);
+
+// 20. Otras novedades
+agregar(
+  h1('20. Horas extra, nocturnidad, movilidad, adelantos y utilidades'),
+  p('Se cargan como **Otras entradas** en la boleta (pestaña Días trabajados y entradas), con su código.'),
+  tabla(['Entrada', 'Código', 'Cálculo', 'Medido (Héctor, 2,200)'], [
+    ['Horas extra 25 %', 'HE25_001', 'horas × sueldo/30/8 × 1.25', '10 h → **114.58**'],
+    ['Horas extra 35 %', 'HE35_001', 'horas × sueldo/30/8 × 1.35', '4 h → **49.50**'],
+    ['Horas nocturnas', 'BNOC_001', 'horas × máx(sueldo, RMV)/240 × 35 %', '8 h → **25.67**'],
+    ['Movilidad (no afecta)', 'MOV_001', 'importe', '150 → **150.00**, fuera de la base de ONP y 5.ª'],
+    ['Tardanza (minutos)', 'TARD_001', 'minutos × sueldo/240/60', '30 min → **4.58**'],
+    ['Utilidades', 'UTIL_001', 'importe (sale del asistente Reparto de utilidades)', '—'],
+  ], [2000, 1500, 3300, 2838]),
+  ...figura('p20_01_entradas', 'Entradas de la boleta de prueba.'),
+  ...figura('p20_02_entradas_calculo', 'Cálculo con horas extra, nocturnidad, movilidad y tardanza (ONP 310.67 sobre 2,389.75).'),
+  p('Boleta de prueba en borrador, eliminada después de medir. **Adelanto quincenal** (NQA): porcentaje del contrato; medido en la demo: adelanto del 40 % de 4,500 = **1,800.00**, descontado en la mensual (`DESC_ADEL_001` 1,800.00).'),
+  nota('La tardanza (`TARD_001`) descuenta del neto pero **no reduce la base afecta**: la ONP de la prueba se calculó sobre 2,389.75 con la remuneración básica completa. Las faltas sí reducen la remuneración básica.', 'implementador'),
+);
+
+// 21. Reportes
+agregar(
+  h1('21. Reportes y archivos legales'),
+  h2('21.1 Planilla de sueldos'),
+  p('**Nómina PE › Planilla de sueldos**: mes y año; **Imprimir PDF** o **Generar Excel** (`Planilla_AAAA_MM.xlsx`).'),
+  ...figura('p21_01_planilla_asistente', 'Asistente de la planilla de sueldos.'),
+  h2('21.2 PLAME (archivos del PDT)'),
+  p('**Nómina PE › PLAME (archivos PDT)**: genera `PLAME_0601AAAAMMRUC.zip` con `.rem`, `.jor` y `.snl` desde las boletas validadas; con **Incluir 4ta categoría** añade `.ps4` y `.4ta`.'),
+  ...figura('p21_02_plame_resultado', 'Resultado del PLAME de diciembre de 2026 (FM SYSTEMS).'),
+  p('Contenido medido del `.rem` de diciembre de 2026 (FM SYSTEMS):'),
+  tabla(['Tipo doc.', 'DNI', 'Concepto T22', 'Devengado', 'Pagado'], [
+    ['01', '99999901', '0121 remuneración básica', '4500.00', '4500.00'],
+    ['01', '99999901', '0201 asignación familiar', '123.00', '123.00'],
+    ['01', '99999901', '0312 bonificación extraordinaria', '416.07', '416.07'],
+    ['01', '99999901', '0406 gratificación', '4623.00', '4623.00'],
+    ['01', '99999901', '0605 renta de 5.ª', '199.74', '199.74'],
+    ['01', '99999902', '0121 remuneración básica', '2200.00', '2200.00'],
+    ['01', '99999902', '0312 bonificación extraordinaria', '198.00', '198.00'],
+    ['01', '99999902', '0406 gratificación', '2200.00', '2200.00'],
+  ], [1100, 1500, 3300, 1800, 1938]),
+  p('`.jor`: `01|99999901|20|160|0|0|0|` (días, horas, **minutos** de la jornada ordinaria, horas y minutos de sobretiempo). `.snl` vacío: no hay suspensiones. Separador `|`, fin de línea CRLF. Los aportes (06xx/08xx salvo 0605) no se exportan: los calcula el PDT.'),
+  ...figura('p21_03_plame_4ta_resultado', 'PLAME de julio de 2026 del laboratorio con la 4.ª categoría incluida (5 archivos).'),
+  h2('21.3 AFPnet'),
+  p('**Nómina PE › AFPnet**: Excel `AFPNET_AAAA_MM.xlsx` (hoja TRABAJADOR, 17 columnas) para el portal AFPnet.'),
+  ...figura('p21_04_afpnet_asistente', 'Asistente AFPnet.'),
+  h2('21.4 Pago masivo a bancos'),
+  p('**Nómina PE › Pago masivo a bancos**: TXT de haberes o CTS para **BCP Telecrédito** o **Interbank**, desde las boletas validadas y las cuentas del trabajador marcadas con **Uso de la cuenta** = sueldo o CTS (con CCI).'),
+  ...figura('p21_05_bancos_sueldo_asistente', 'Asistente de pago masivo.'),
+  p('Medido (haberes de diciembre de 2026, cuenta de cargo BCP): `ABONO_BCP_SUELDO_202612.txt` con 2 abonos y total **5,739.96** (3,825.96 + 1,914.00).'),
+  nota('Tres comportamientos medidos que conviene conocer: (1) si un trabajador **no tiene cuenta**, el TXT **no se genera** (mensaje «Trabajadores sin cuenta de Haberes (sueldo) registrada»); (2) una cuenta **del propio BCP** sale como interbancaria (registro 2B con CCI) porque el banco se identifica por su BIC; (3) por la misma causa, el **TXT de CTS al BCP sale vacío**. Scotiabank y Banco de la Nación no están implementados.', 'importante'),
+);
+
+// 22. RxH
+agregar(
+  h1('22. Recibos por honorarios (4.ª categoría)'),
+  p('Hay **dos puertas con el mismo contenido** (medido byte a byte en el caso PLAME):'),
+  vinetas([
+    '**Sin nómina**: Contabilidad › Reportes › **PLAME - Recibos por Honorarios** (`solse_pe_plame_rxh`): genera `.ps4` (prestadores) y `.4ta` (comprobantes).',
+    '**Con nómina**: casilla **Incluir 4ta categoría** del asistente PLAME (`solse_pe_plame_4ta`).',
+  ]),
+  p('Criterio de **percepción**: entran los recibos **pagados** en el mes, sin importar su fecha de emisión; los pagos parciales se prorratean y las notas de crédito toman la fecha de pago del recibo origen. La retención sale del impuesto marcado como **retención de 4.ª**. Los datos del prestador (apellidos y nombres separados, domiciliado, convenio, suspensiones) se registran en el contacto.'),
+  ...figura('p22_04_rxh_revision', 'Revisión de julio de 2026: 8 prestadores, 9 comprobantes, total declarado S/ 15,022.60 (laboratorio).'),
+  ...figura('p22_02_ajustes_4ta', 'Opciones de 4.ª categoría de la compañía.'),
+  nota('El formato se comparó con archivos aceptados por el PDT 4.6. La **validación final en el PDT del cliente está pendiente**: verifíquelo con su primera declaración.', 'importante'),
+);
+
+// 23. No cubierto
+agregar(
+  h1('23. Lo que la localización no cubre'),
+  tabla(['Tema', 'Estado medido en el código y la base'], [
+    ['Subsidios (maternidad, incapacidad temporal)', 'No hay reglas ni flujo. Solo existe una categoría «subsidio» sin uso y el `.snl` sale vacío («suspensiones aún no gestionadas»).'],
+    ['T-Registro (altas, bajas, modificaciones)', 'No hay exportación. Los campos del trabajador y del contrato llevan la etiqueta T-Registro, pero el archivo se hace en el portal SUNAT.'],
+    ['Indemnización por despido arbitrario', 'No cubierta.'],
+    ['Regularización de 5.ª al cese', 'No cubierta: la liquidación no recalcula la 5.ª.'],
+    ['Prima de Vida Ley', 'Catálogo sin regla salarial.'],
+    ['TXT Scotiabank y Banco de la Nación', 'No implementados (solo BCP e Interbank).'],
+    ['Flujo de pagos de nómina', 'En Community no existe; el «importe pagado» de la boleta es manual.'],
+    ['Maestro T12 (contratos MINTRA)', 'Tabla vacía: cárguela a mano si la necesita.'],
+  ], [3600, 6038]),
+);
+
+// 24. Cierre
+agregar(
+  h1('24. Lista de verificación del cierre mensual'),
+  pasos([
+    'Parámetros: ¿cambió la RMA (trimestral), la RMV o la UIT? Registre la vigencia antes de calcular.',
+    'Novedades: ingresos, ceses (fecha de fin y motivo), vacaciones aprobadas, asistencias, horas extra, adelantos.',
+    'Valide en orden: adelanto → gratificación/CTS/vacaciones → mensuales y semanales.',
+    'Revise el asiento de cada lote en el diario **Planillas**.',
+    'Genere planilla, PLAME, AFPnet y TXT bancarios; **abra cada archivo** antes de enviarlo.',
+    'Importe el PLAME en el PDT y compare totales con la planilla.',
   ]),
 );
 
 // Anexo A
 agregar(
   h1('Anexo A. Observaciones para implementadores'),
-  p('Hallazgos de la prueba integral en Odoo 19 Enterprise, contrastados con la biblia del proyecto (rama de nómina Enterprise, planes NOM-1/2/3, respuestas de la contadora y mapa de pendientes). La columna **Biblia** indica si la observación ya estaba registrada. Las correcciones corresponden al equipo de desarrollo; el detalle está en `99-sintesis/manual-hallazgos-nuevos.md` de la biblia.'),
-  tabla(['#', 'Observación', 'Impacto / acción', 'Biblia'], [
-    ['1', 'Lote (Periodo de nómina) de Gratificación/CTS/VAC/LIQ no encuentra trabajadores: filtra por tipo de estructura (Beneficios Sociales).', 'Alto. Recibos individuales.', 'Nuevo'],
-    ['2', 'Campos laborales PE de hr.version (régimen, adelanto %, sindicalizado, motivo de baja) solo en la plantilla de contrato; no se copian al cargar plantilla.', 'Alto para MYPE, sindicalizados y adelantos.', 'Nuevo'],
-    ['3', 'Pago a bancos: cuentas BCP tratadas como interbancarias (código desde BIC); Scotiabank genera formato Interbank; `CODIGO_SCOTIABANK` no definido; nombres con tildes.', 'Alto. Validar el TXT con el banco.', 'Nuevo (zona sin caso de prueba)'],
-    ['H-MAN-3', 'Tras aprobar una vacación, el mes puede quedar sin entradas de asistencia: el `.jor` declara 0 días y 0 horas.', 'Alto. Restablecer entradas antes de los recibos (cap. 13.7).', 'Nuevo'],
-    ['4', 'Tipo de documento 02 de compra no existe por defecto para la compañía: los RxH no se pueden registrar hasta crearlo.', 'Medio. Paso de configuración (cap. 15).', 'Causa registrada (M-4); hueco nuevo'],
-    ['5', 'Instalación de solse_pe_plame_4ta_ee falla si solse_pe_payroll no está actualizado en la base.', 'Medio. Actualizar el núcleo.', 'Nuevo'],
-    ['6', 'Tipos de estructura sin estructura por defecto.', 'Medio. Elegir la estructura en cada recibo.', 'Nuevo'],
-    ['7', 'El PDF adjunto al validar es la plantilla estándar (inglés), no la Boleta PE.', 'Medio. Configurar el reporte en la estructura.', 'Nuevo'],
-    ['8', 'Falta la cuenta 6221 en el plan para UTIL_001.', 'Medio. Crear la cuenta.', 'Nuevo'],
-    ['9', 'RMV sin vigencia 2026; la RMA de abril 2026 dispara la alerta trimestral.', 'Medio. Registrar valores oficiales.', 'RMV nuevo; alerta RMA = comportamiento documentado'],
-    ['H-MAN-2', 'El saldo de Vacaciones PE se consume en días hábiles (10 por un goce de 15 días calendario); el cálculo de la boleta sí usa calendario.', 'Medio. Controlar el saldo legal aparte.', 'Nuevo'],
-    ['H-MAN-4', 'Feriado sin tipo de entrada de trabajo → día en conflicto; la localización no trae tipo "Feriado".', 'Medio. Asignar un tipo pagado (cap. 13.7).', 'Nuevo (la "línea GLOBAL" de la biblia es de Community)'],
-    ['H-MAN-6', 'El descuento por tardanza (TAR_001) no reduce el 0121 del `.rem`.', 'Medio. Consultar al contador.', 'Nuevo'],
-    ['H-MAN-5', 'Vacación aprobada después de crear la mensual: no aparece en Días trabajados (la básica sí la descuenta).', 'Bajo en importes. Rehacer el recibo.', 'Nuevo'],
-    ['10', 'Contratos MINTRA (T12) vacío.', 'Bajo.', 'Nuevo'],
-    ['11', 'Plan EPS sin nombre (`eps.management,1`); tasa mostrada con 2 decimales.', 'Bajo (cosmético).', 'Nuevo'],
-    ['12', 'Campo CCI duplicado en la cuenta bancaria; pestaña PLAME 4ta del contacto visible solo tras guardar.', 'Bajo (cosmético).', 'Nuevo'],
-    ['13', 'Botón "Validate" sin traducir; Año mostrado como "2,026" en asistentes.', 'Bajo (cosmético).', 'Nuevo'],
-    ['14 / H-MAN-1', 'Identificadores de los datos demo que pertenecen a personas reales: un RUC del padrón de RxH y un DNI de la matriz de empleados de nómina devuelven nombre en la consulta SUNAT/RENIEC (números en la biblia, H-MAN-1).', 'Bajo en la operación, sensible en privacidad. Usar sintéticos.', 'Nuevo; contradice la ficha QA del padrón RxH'],
-  ], [900, 4500, 2300, 1938]),
+  p('Observaciones **medidas** durante la elaboración del manual. Están registradas para la línea de desarrollo; aquí se conservan como avisos.'),
+  tabla(['#', 'Observación', 'Medición'], [
+    ['A1', 'Parámetros sin vigencia 2025 (comisión AFP, RMA) y RMV 1,230 de 10/2026 sin cargar', 'Boleta de 2025 detenida por falta de `pe_afp_comision_flujo`'],
+    ['A2', 'La 5.ª proyecta las gratificaciones sin asignación familiar', '2025: 2,292.45 retenido frente a 2,309.73'],
+    ['A3', 'Asignación familiar 1.5 veces en el mes de goce parcial', 'Febrero de 2026: +56.50'],
+    ['A4', 'Boleta impresa descuadrada por 0.01 (importes sin redondear)', '797.03 + 3,825.96 ≠ 4,623.00'],
+    ['A5', 'TXT BCP: cuentas BCP tratadas como interbancarias; CTS vacía', 'ABONO_BCP_CTS_202611 con total 0.00'],
+    ['A6', 'TXT bloqueado si un trabajador no tiene cuenta', 'Mensaje de validación'],
+    ['A7', 'Sin diario en el contrato el asiento va a «Operaciones varias»', 'MISCE/2026/12/…'],
+    ['A8', 'Sin estructura en el contrato no se cargan días trabajados', 'Al crear la boleta'],
+    ['A9', 'Feriados restados en días de boleta y `.jor`', '20 días en diciembre de 2026'],
+    ['A10', 'La tardanza no reduce la base afecta', 'ONP sobre 2,389.75'],
+    ['A11', 'SENATI activado por la demo en la compañía donde corre', 'FM SYSTEMS afecta a SENATI'],
+    ['A12', 'Maestro T12 vacío; campos ajenos a Perú en el contrato (HRA, DA…)', 'Conteo de registros'],
+  ], [700, 5400, 3538]),
 );
 
 // Anexo B
 agregar(
   h1('Anexo B. Datos de prueba utilizados'),
-  p('Todos los datos son **ficticios**. Los identificadores son **sintéticos**: se comprobó con el botón "Buscar por RUC/DNI" de Odoo (consulta RENIEC/SUNAT) que no devuelven ninguna persona. Para crear más, use DNI de la serie `9999xxxx` y, para RUC de persona natural, `10` + DNI + dígito verificador módulo 11.'),
-  tabla(['Trabajador', 'DNI (sintético)', 'Sueldo', 'Pensión', 'Particularidades'], [
-    ['Carlos Alberto Quispe Mamani', '99999901', '3,500', 'SPP Habitat (flujo)', 'EPS Pacífico, hija menor, tardanzas en septiembre, feriado en octubre'],
-    ['Jorge Luis Fernández Rojas', '99999902', '1,130', 'ONP', '2 faltas y 3 días de vacaciones en septiembre'],
-    ['María Elena Torres Vega', '99999903', '8,000', 'SPP Integra (mixta)', 'Renta de 5ta; vacaciones del 1 al 15 de agosto'],
-  ], [2700, 1400, 900, 1800, 2838]),
-  espacio(),
-  tabla(['Prestador (ficticio)', 'RUC (sintético)', 'Recibo', 'Importe', 'Emisión / Pago', 'Retención'], [
-    ['FLORES PAREDES ROSA ELENA', '10999999048', 'E001-103', '3,000.00', '05/07 / 12/07', '8 % (240.00)'],
-    ['QUISPE HUAMAN ANA LUCIA', '10999999056', 'E001-101', '800.00', '03/07 / 10/07', 'No'],
-  ], [2700, 1400, 1100, 1100, 1800, 1538]),
-  espacio(),
-  p('Los scripts de Playwright que generaron estas capturas están en `manuales/scripts/` y permiten regenerarlas ante cambios de versión.'),
+  p('Trabajadores del recorrido (FM SYSTEMS SOLUTIONS EIRL). Datos **ficticios**; DNI **sintéticos**.'),
+  tabla(['Trabajador', 'DNI', 'Ingreso', 'Sueldo', 'Pensión', 'Particularidades'], [
+    ['Lucía Fernanda Ramos Ticona', '99999901', '01/01/2025', '4,500', 'SPP Integra (flujo)', 'Hijo menor; vacaciones 02–16/02/2026; cuentas BCP sueldo y CTS'],
+    ['Héctor Manuel Salas Quispe', '99999902', '01/03/2025', '2,200', 'ONP', 'Vacaciones 14–23/09/2026; cuentas Interbank'],
+  ], [2300, 1100, 1200, 900, 1700, 2438]),
+  p('Los casos del laboratorio (NOMINA, ASISTENCIA, PLAME, PLAME-RXH) se siembran desde **SOLSE Demo › Casos de demostración** con los botones Sembrar, Generar y Comparar, en la compañía «SOLSE Demo Servicios S.A.C.». Sus identificadores no se reproducen en este manual.'),
 );
 
+// Anexo C
+agregar(
+  h1('Anexo C. Planilla medida de enero de 2025 a diciembre de 2026'),
+  p('Boletas validadas de los dos trabajadores del recorrido (64 boletas; las mensuales de diciembre de 2026 se rehicieron desde la interfaz con el mismo resultado). Fuente: `manuales_ce/evidencias/anio_completo_fm.json`.'),
+  tabla(['Trab.', 'Mes', 'Estr.', 'Básica', 'AF', 'Vac./Grati/CTS', 'Pensión', '5.ª', 'Neto'],
+    anioCompleto.map((r) => {
+      const l = Object.fromEntries(r.lineas);
+      const pension = (l.AFP_APO_001 || 0) + (l.AFP_COM_001 || 0) + (l.AFP_PRI_001 || 0) + (l.ONP_001 || 0);
+      const beneficio = l.VAC_001 || l.GRATI_001 || l.CTS_001;
+      return [r.emp === 27 ? 'Lucía' : 'Héctor', periodoTexto(r.periodo), r.estructura, dinero(l.RB_001), dinero(l.ASF_001), dinero(beneficio), pension ? dinero(Math.round(pension * 100) / 100) : '—', dinero(l.R5TA_001), dinero(l.NET)];
+    }), [900, 900, 800, 1100, 800, 1500, 1200, 1000, 1438]),
+);
 // ---------- Índice estático con enlaces internos ----------
 const entradasIndice = indice.map(({ nivel, texto, id }) => new Paragraph({
   spacing: { before: nivel === 1 ? 120 : 0, after: nivel === 1 ? 40 : 20 },
@@ -685,8 +657,8 @@ contenido.splice(contenido.indexOf('INDICE'), 1, ...entradasIndice);
 // ---------- Documento ----------
 const documento = new Document({
   creator: 'SOLSE - Implementación Odoo',
-  title: 'Manual de Nómina Peruana - Odoo 19',
-  description: 'Manual de usuario de la nómina peruana (localización SOLSE) en Odoo 19 Enterprise',
+  title: 'Manual de Nómina Peruana - Odoo 19 Community',
+  description: 'Manual de usuario de la nómina peruana (localización SOLSE) en Odoo 19 Community',
   styles: {
     default: { document: { run: { font: 'Calibri', size: 22 } } },
     paragraphStyles: [
@@ -703,7 +675,7 @@ const documento = new Document({
   },
   sections: [{
     properties: { page: { size: { width: 11906, height: 16838, orientation: PageOrientation.PORTRAIT }, margin: { top: 1134, bottom: 1134, left: 1134, right: 1134 } } },
-    headers: { default: new Header({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: 'Manual de Nómina Peruana · Odoo 19 Enterprise', size: 16, color: '888888' })] })] }) },
+    headers: { default: new Header({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: 'Manual de Nómina Peruana · Odoo 19 Community', size: 16, color: '888888' })] })] }) },
     footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ children: ['Página ', PageNumber.CURRENT, ' de ', PageNumber.TOTAL_PAGES], size: 16, color: '888888' })] })] }) },
     children: contenido,
   }],

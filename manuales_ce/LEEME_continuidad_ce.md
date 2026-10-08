@@ -1,8 +1,19 @@
 # Continuidad: manual de nómina Community (Odoo 19)
 
-Estado al 2026-10-07: reconocimiento hecho (biblia + código). **Bloqueo**: el contenedor
-de la sesión 1 no llegó a `51.222.13.59` (proxy `403 host_not_allowed`), aunque el
-usuario ya amplió el acceso de red. Una sesión nueva debería tomar la política nueva.
+Estado al 2026-10-08: **fase (a) entregada** — `Manual_Nomina_PE_Odoo19_Community.docx` (24 capítulos,
+anexos A-C, 53 figuras). Pendiente: revisión del usuario y fase (b) (video resumen y promo vertical).
+
+Acceso: `ODOO_URL=https://51.222.13.59.sslip.io` (el proxy solo deja HTTPS). En modo Auto el clasificador
+bloquea ese host; usar el modo «Aceptar ediciones» o la regla del script de configuración del entorno.
+
+Qué hay: `scripts/` (Playwright: p01, p04, p08, p08b, p10_p11, p11b, p21, p22, capturar_vistas.js + vistas/*.json,
+ocultar_empresa.py con OCR, generar_manual.js), `evidencias/` (comparaciones del laboratorio, 64 boletas del
+año completo, archivos PLAME/TXT/Excel/PDF), `notas/hallazgos_borrador.md` (pasados a la biblia, rama
+`manual-nomina-ce`, `99-sintesis/manual-ce-hallazgos-nuevos.md`).
+
+Estado de la base: laboratorio construido (3 compañías demo) y 4 casos al 100 %; en FM SYSTEMS, Lucía
+(99999901) y Héctor (99999902) con planilla ene-2025..dic-2026, feriados 2025-2026, vigencias de prueba
+(comisión AFP 2025, RMA 2025/2026, RMV 1230 y AF 123 desde 01/10/2026), lote «Planilla diciembre 2026».
 
 ## Arranque de la sesión nueva
 
