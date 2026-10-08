@@ -128,8 +128,13 @@ const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', '
 async function rangoFechas(pagina, raiz, campoDesde, campoHasta, desde, hasta) {
   await cerrarSelectorFecha(pagina);
   await raiz.locator(`[data-field="${campoDesde}"]`).first().click();
-  await pagina.waitForTimeout(500);
-  const selector = pagina.locator('.o_datetime_picker:visible');
+  // El calendario puede tardar tras un onchange: esperar antes de reintentar el clic
+  const abierto = await pagina.locator('.o_datetime_picker').first().waitFor({ timeout: 4000 }).then(() => true).catch(() => false);
+  if (!abierto) {
+    await raiz.locator(`[data-field="${campoDesde}"]`).first().click();
+    await pagina.locator('.o_datetime_picker').first().waitFor({ timeout: 4000 });
+  }
+  const selector = pagina.locator('.o_datetime_picker:has(.o_header_part)').first();
   const irAlMes = async (fechaTexto) => {
     const [, mes, anio] = fechaTexto.split('/').map(Number);
     for (let i = 0; i < 36; i++) {
@@ -150,6 +155,11 @@ async function rangoFechas(pagina, raiz, campoDesde, campoHasta, desde, hasta) {
     await pagina.waitForTimeout(400);
   };
   await elegirDia(desde);
+  // Si el calendario se cerró al elegir el inicio (campos de fecha separados), abrirlo desde el campo final
+  if (!(await pagina.locator('.o_datetime_picker .o_header_part').count())) {
+    await raiz.locator(`[data-field="${campoHasta}"]`).first().click();
+    await pagina.locator('.o_datetime_picker .o_header_part').first().waitFor({ timeout: 4000 });
+  }
   await elegirDia(hasta);
   await pagina.keyboard.press('Escape').catch(() => {});
   await pagina.waitForTimeout(500);

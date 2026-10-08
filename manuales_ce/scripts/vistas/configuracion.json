@@ -1,0 +1,13 @@
+[
+ {"nombre": "p03_01_menu_nomina_pe", "ruta": "/odoo/action-1005", "menu": "Nómina PE"},
+ {"nombre": "p03_02_menu_configuracion", "ruta": "/odoo/action-1005", "menu": "Configuración"},
+ {"nombre": "p05_01_maestro_t22", "ruta": "/odoo/action-1026"},
+ {"nombre": "p05_02_maestro_t11", "ruta": "/odoo/action-1023"},
+ {"nombre": "p06_01_planes_eps", "ruta": "/odoo/action-1033"},
+ {"nombre": "p06_02_vida_ley", "ruta": "/odoo/action-1032"},
+ {"nombre": "p07_01_mapeo_pcge", "ruta": "/odoo/action-1035"},
+ {"nombre": "p07_02_asignar_cuentas", "ruta": "/odoo/action-1036"},
+ {"nombre": "p09_01_estructuras", "ruta": "/odoo/action-999"},
+ {"nombre": "p09_02_estructura_nme", "ruta": "/odoo/action-999", "abrirPrimero": true},
+ {"nombre": "p09_03_reglas_salariales", "ruta": "/odoo/action-1002"}
+]

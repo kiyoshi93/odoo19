@@ -32,3 +32,30 @@
   vacía; hay que elegir NME en la pestaña Nómina.
 - H-CE-10 (medido) Las vacaciones VACPE100 cuentan días hábiles: goce 02-16 feb-2026 (15 calendario) = 11 días en la
   ausencia; la boleta VAC paga 15 (rango de fechas). Es N-7 de la biblia; confirmar que sigue abierto.
+- H-CE-11 (medido) Asientos de las boletas creadas sin lote ni diario explícito: diario «Miscellaneous Operations»
+  (MISCE/2026/12/0002…), no «Planillas» (PLLA). om_hr_payroll_account toma `version.journal_id` o el primer diario
+  general; el diario de la estructura (plataforma_ce.py:16-20) no se usa. Con el diario elegido en la boleta o en el
+  lote sale PLLA/2026/12/0001 y 0002 (medido, boletas 148 y 149).
+- H-CE-12 (medido) TXT bancario: un trabajador sin cuenta de sueldo BLOQUEA la generación con ValidationError
+  «Trabajadores sin cuenta de Haberes (sueldo) registrada: - Héctor…». La biblia (§6 caso 16) esperaba «omitido con
+  motivo». Decidir cuál es el comportamiento deseado.
+- H-CE-13 (medido, ALTA) TXT BCP: `_cuenta_empleado` toma `bank_id.bic` como código; el BCP de la base tiene bic
+  «BCPLPEPL» y no «02», así que una cuenta BCP se trata como otro banco: en haberes sale con registro «2B» por CCI
+  (debería «2A» por número de cuenta) y en CTS se SALTA sin aviso (`if self.tipo == 'cts' and codigo != CODIGO_BCP:
+  continue`). Medido: ABONO_BCP_CTS_202611.txt solo con cabecera y total 0,00 pese a 2 boletas CTS validadas
+  (2.695,92 y 1.283,33). bancos.py:128-147 y 191-193.
+- H-CE-14 (medido) El TXT se codifica latin-1 con tildes (Héctor, Lucía); Telecrédito suele exigir ASCII. Verificar.
+- H-CE-15 (medido) .jor de diciembre 2026: 20 días / 160 h para mensuales (23 hábiles − 3 feriados GLOBAL). Si el PDT
+  espera días laborados con feriados incluidos, se subdeclara. Pregunta para la contadora (relacionado con N-2b).
+- H-CE-16 (cosmético) Botón del lote «Marcar como echo» (sin h) en om_hr_payroll es_PE; nombre de boleta en inglés
+  «Salary Slip of … for diciembre-2026» al crearla por la interfaz (fork sin traducción).
+- H-CE-17 (medido) Maestro T12 «Contratos MINTRA» (`mintra.contract`) vacío en contable19: 0 registros, y no hay data
+  que lo siembre en solse_pe_payroll_ce (grep sin resultados). Vida Ley (`life.insurance`) también 0 (es catálogo
+  del cliente). El campo del contrato queda vacío. Resto de maestros con datos: T8 26, T9 21, T11 17, T17 21, T33 26,
+  T35 9, T30 4.643, T22 293.
+- H-CE-18 (cosmético) El formulario del contrato (hr.version) muestra campos de om_hr_payroll ajenos a Perú: hra, da,
+  travel_allowance, meal_allowance, medical_allowance, other_allowance.
+- H-CE-19 (medido, boleta de prueba borrada) TARD_001 (30 min → 4,58) es deducción de NET pero no reduce la base
+  afecta: ONP_001 se calcula sobre INA con la RB completa (2.389,75 × 13 % = 310,67). Pregunta para la contadora:
+  ¿la tardanza descuenta remuneración computable (afecta a aportes y 5.ª) o es solo descuento del neto?
+  En cambio FALTA/FALTA_PARCIAL (asistencia) sí reducen RB_001.

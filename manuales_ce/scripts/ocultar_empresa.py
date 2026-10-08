@@ -1,44 +1,54 @@
-# Difumina en las capturas los datos reales de las empresas de la base (nombre, RUC, dirección, correos, logo).
-# Usa OCR (rapidocr_onnxruntime) para ubicar los textos; las zonas extra se definen a mano en ZONAS_MANUALES.
-import json, os, re, sys
+# Difumina en las capturas los identificadores que podrían ser reales: DNI de los trabajadores de la demo,
+# RUC de los prestadores y de las compañías del laboratorio. FM SYSTEMS se muestra (empresa del usuario)
+# y los DNI sintéticos 999999xx no se tocan.
+# Uso: python3 -I ocultar_empresa.py <carpeta_capturas> [archivo ...]
+import os, re, sys
 from PIL import Image, ImageFilter
+from rapidocr_onnxruntime import RapidOCR
 
-PATRON = re.compile(r'KNIT|BLAZ|MANUFACTURER|ACTURER|MKB|mkb\.|tienda1|cotizaciones|20452491746|MANZANILLA|MAKABE|AMALFI', re.I)
-ZONAS_MANUALES = {  # archivo -> [(x1, y1, x2, y2), ...]: logos y textos que el OCR no detecta
-    'p02_02_compania_senati_marcado.png': [(33, 130, 123, 220), (1085, 305, 1580, 352)],
-    'p02_03_compania_asistencias.png': [(33, 130, 123, 220), (1085, 305, 1580, 352)],
-    'p08c_05_boleta_pago_pe.png': [(108, 5, 262, 48)],
-    'p17a_01_boleta_vacaciones.png': [(1083, 163, 1232, 207)],
-}
+PATRON = re.compile(
+	r'(?<!\d)(4\d{7})(?!\d)'                       # DNI de la demo (4xxxxxxx)
+	r'|1040000\d*'                                 # RUC de prestadores de la demo (también truncado)
+	r'|PA\s?12345'                                 # pasaporte del no domiciliado (también truncado)
+	r'|2060(1234565|2345671|3456786)',             # RUC de las compañías del laboratorio
+	re.I)
 MARGEN = 4
+# Zonas que el OCR no separa bien (filas resaltadas o con tooltip): columnas de documento y prestador
+ZONAS_MANUALES = {
+	'p22_04_rxh_revision.png': [(318, 438, 600, 795)],
+	'p22_05_rxh_archivos.png': [(318, 438, 600, 795)],
+}
 
 
 def difuminar(imagen, caja):
-    x1, y1, x2, y2 = [int(v) for v in caja]
-    x1, y1 = max(0, x1 - MARGEN), max(0, y1 - MARGEN)
-    x2, y2 = min(imagen.width, x2 + MARGEN), min(imagen.height, y2 + MARGEN)
-    zona = imagen.crop((x1, y1, x2, y2))
-    # Pixelado + desenfoque: ilegible incluso al ampliar
-    pequena = zona.resize((max(1, zona.width // 12), max(1, zona.height // 12)), Image.BILINEAR)
-    zona = pequena.resize(zona.size, Image.NEAREST).filter(ImageFilter.GaussianBlur(6))
-    imagen.paste(zona, (x1, y1))
+	x1, y1, x2, y2 = [int(v) for v in caja]
+	x1, y1 = max(0, x1 - MARGEN), max(0, y1 - MARGEN)
+	x2, y2 = min(imagen.width, x2 + MARGEN), min(imagen.height, y2 + MARGEN)
+	zona = imagen.crop((x1, y1, x2, y2))
+	# Pixelado + desenfoque: ilegible incluso al ampliar
+	pequena = zona.resize((max(1, zona.width // 12), max(1, zona.height // 12)), Image.BILINEAR)
+	zona = pequena.resize(zona.size, Image.NEAREST).filter(ImageFilter.GaussianBlur(6))
+	imagen.paste(zona, (x1, y1))
 
 
-def main(carpeta, ocr_json):
-    ocr = json.load(open(ocr_json))
-    for archivo, textos in sorted(ocr.items()):
-        cajas = [(min(p[0] for p in c), min(p[1] for p in c), max(p[0] for p in c), max(p[1] for p in c))
-                 for c, texto, _ in textos if PATRON.search(texto)]
-        cajas += ZONAS_MANUALES.get(archivo, [])
-        if not cajas:
-            continue
-        ruta = os.path.join(carpeta, archivo)
-        imagen = Image.open(ruta).convert('RGB')
-        for caja in cajas:
-            difuminar(imagen, caja)
-        imagen.save(ruta)
-        print(archivo, len(cajas))
+def main(carpeta, archivos):
+	ocr = RapidOCR()
+	for archivo in archivos or sorted(os.listdir(carpeta)):
+		if not archivo.endswith('.png'):
+			continue
+		ruta = os.path.join(carpeta, archivo)
+		resultado, _ = ocr(ruta)
+		cajas = [(min(p[0] for p in c), min(p[1] for p in c), max(p[0] for p in c), max(p[1] for p in c))
+				 for c, texto, _ in (resultado or []) if PATRON.search(texto.replace(' ', ''))]
+		cajas += ZONAS_MANUALES.get(archivo, [])
+		if not cajas:
+			continue
+		imagen = Image.open(ruta).convert('RGB')
+		for caja in cajas:
+			difuminar(imagen, caja)
+		imagen.save(ruta)
+		print(archivo, len(cajas))
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2])
+	main(sys.argv[1], sys.argv[2:])

@@ -1,0 +1,4 @@
+[
+ {"nombre": "p10_08_asiento", "ruta": "/odoo/action-account.action_move_journal_line/601"},
+ {"nombre": "p07_03_diario_planillas", "ruta": "/odoo/action-account.action_account_journal_form/13"}
+]

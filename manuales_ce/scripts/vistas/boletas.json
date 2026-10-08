@@ -1,0 +1,20 @@
+[
+ {"nombre": "p10_01_boleta_dias", "ruta": "/odoo/action-1005/145", "pestana": "Días trabajados y entradas"},
+ {"nombre": "p10_02_boleta_calculo", "ruta": "/odoo/action-1005/145", "pestana": "Cálculo de la nómina"},
+ {"nombre": "p10_03_boleta_contable", "ruta": "/odoo/action-1005/145", "pestana": "Información contable"},
+ {"nombre": "p13_01_r5ta_enero", "ruta": "/odoo/action-1005/84", "pestana": "Cálculo de la nómina", "resaltar": ["tr:has(td:text-is('R5TA_001'))"]},
+ {"nombre": "p14_01_grati_julio", "ruta": "/odoo/action-1005/129", "pestana": "Cálculo de la nómina"},
+ {"nombre": "p15_01_cts_noviembre", "ruta": "/odoo/action-1005/140", "pestana": "Cálculo de la nómina"},
+ {"nombre": "p16_01_liquidacion", "ruta": "/odoo/action-1005/77", "pestana": "Cálculo de la nómina", "cids": 4},
+ {"nombre": "p17_01_vac_boleta", "ruta": "/odoo/action-1005/116", "pestana": "Cálculo de la nómina"},
+ {"nombre": "p17_02_vac_mensual_dias", "ruta": "/odoo/action-1005/117", "pestana": "Días trabajados y entradas"},
+ {"nombre": "p17_03_vac_mensual_calculo", "ruta": "/odoo/action-1005/117", "pestana": "Cálculo de la nómina"},
+ {"nombre": "p17_04_ausencias", "ruta": "/odoo/action-979"},
+ {"nombre": "p17_05_asignaciones", "ruta": "/odoo/action-984"},
+ {"nombre": "p18_01_feriados", "ruta": "/odoo/action-974"},
+ {"nombre": "p18_02_boleta_global", "ruta": "/odoo/action-1005/84", "pestana": "Días trabajados y entradas", "resaltar": ["tr:has(td:text-is('GLOBAL'))"]},
+ {"nombre": "p19_01_boleta_tardanzas", "ruta": "/odoo/action-1005/80", "pestana": "Cálculo de la nómina", "cids": 4},
+ {"nombre": "p19_02_boleta_asistencias", "ruta": "/odoo/action-1005/80", "pestana": "Asistencias", "cids": 4},
+ {"nombre": "p19_03_boleta_faltas", "ruta": "/odoo/action-1005/81", "pestana": "Días trabajados y entradas", "cids": 4},
+ {"nombre": "p22_01_rxh_exportar", "ruta": "/odoo/action-1078", "cids": 4}
+]

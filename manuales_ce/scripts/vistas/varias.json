@@ -1,0 +1,7 @@
+[
+ {"nombre": "p18_01_feriados", "ruta": "/odoo/action-975"},
+ {"nombre": "p19_04_ajustes_asistencia", "ruta": "/odoo/action-base.action_res_company_form/1", "pestana": "Nómina PE - Asistencias"},
+ {"nombre": "p22_02_ajustes_4ta", "ruta": "/odoo/action-base.action_res_company_form/1", "pestana": "Nómina PE - 4ta Categoría"},
+ {"nombre": "p16_02_cese_contrato", "ruta": "/odoo/action-1009/22", "cids": 4, "resaltar": [".o_field_widget[name='contract_date_end']", ".o_field_widget[name='reason_low_id']"]},
+ {"nombre": "p17_06_tipo_ausencia", "ruta": "/odoo/action-1005", "menu": "Configuración"}
+]

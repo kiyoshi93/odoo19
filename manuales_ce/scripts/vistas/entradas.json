@@ -1,0 +1,4 @@
+[
+ {"nombre": "p20_01_entradas", "ruta": "/odoo/action-1005/150", "pestana": "Días trabajados y entradas", "desplazar": ".o_field_widget[name='input_line_ids']", "resaltar": [".o_field_widget[name='input_line_ids']"]},
+ {"nombre": "p20_02_entradas_calculo", "ruta": "/odoo/action-1005/150", "pestana": "Cálculo de la nómina"}
+]
