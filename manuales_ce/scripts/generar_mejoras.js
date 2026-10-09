@@ -177,13 +177,15 @@ agregar(
     ['C-10', 'Tardanza no reduce la base afecta', 'Consultar', 'Corrección'],
     ['C-11', '5.ª cae en el mes de vacaciones', 'Baja', 'Corrección'],
     ['C-12', 'TXT bancario con tildes (latin-1)', 'Baja', 'Corrección'],
+    ['C-13', 'Opción Scotiabank genera el formato de Interbank', 'Alta', 'Corrección'],
     ['Q-01', 'La demo activa SENATI en la compañía donde corre', 'Media', 'Calidad'],
     ['Q-02', 'Maestro T12 sin datos', 'Media', 'Calidad'],
     ['Q-03', 'Estructuras con compañía fija', 'Baja', 'Calidad'],
     ['Q-04', 'Pruebas automáticas de las salidas (TXT, AFPnet)', 'Media', 'Calidad'],
+    ['Q-05', 'Cobertura pendiente de medición (utilidades, microempresa, alerta RMA…)', 'Media', 'Calidad'],
     ['N-01 … N-08', 'Subsidios, T-Registro, indemnización, regularización de 5.ª, Vida Ley, Scotiabank/BN, pagos, envío de boletas', 'Según demanda', 'Nueva'],
   ], [1200, 5600, 1500, 1338]),
-  p('**Orden sugerido**: C-01, C-02 y V-01 (afectan dinero o bloquean la planilla), luego U-01 a U-03 (lo primero que ve el cliente), después C-03 a C-08 y el resto. Los marcados «consultar» necesitan respuesta de la contadora antes de programar.'),
+  p('**Orden sugerido**: C-01, C-13, C-02 y V-01 (afectan dinero o bloquean la planilla), luego U-01 a U-03 (lo primero que ve el cliente), después C-03 a C-08 y el resto. Los marcados «consultar» necesitan respuesta de la contadora antes de programar.'),
 );
 
 // Correcciones
@@ -237,6 +239,10 @@ agregar(h1('1. Correcciones funcionales'));
     problema: 'Los nombres salen con tildes (Héctor, Lucía) codificados en latin-1.',
     propuesta: 'Normalizar a ASCII mayúsculas sin tildes si el banco lo exige (como ya hace el PLAME de 4.ª).',
     aceptacion: 'TXT solo con caracteres ASCII.' },
+  { id: 'C-13', titulo: 'La opción Scotiabank genera el TXT con formato de Interbank', prioridad: '**Alta**', donde: '`solse_pe_payroll_ce/wizard/bancos.py` · `action_generar` (l. 150-162)',
+    problema: 'Verificado en el código: el campo `banco` ofrece BCP, Interbank y **Scotiabank** (l. 80-83), pero `action_generar` hace `if self.banco == \'bcp\': _generar_bcp(...) else: _generar_interbank(...)`. Elegir Scotiabank produce un archivo con formato Interbank y nombre «ABONO_SCOTIABANK_…», sin aviso; `_generar_scotiabank` (l. 272) nunca se llama.',
+    propuesta: 'Despachar por banco (bcp / interbank / scotiabank) y, mientras un formato no esté validado, ocultarlo del selector o bloquearlo con un mensaje claro.',
+    aceptacion: 'Elegir Scotiabank genera el formato de Scotiabank (o un aviso de «no disponible»), nunca el de Interbank.' },
 ].forEach((m) => agregar(mejora(m)));
 
 // Interfaz
@@ -322,18 +328,79 @@ agregar(h1('4. Calidad, datos y demo'));
 // Nuevas
 agregar(
   h1('5. Funcionalidades nuevas (cobertura)'),
-  p('Lo que hoy **no existe en el código** y el manual declara «no cubierto». Útil para la hoja de ruta comercial.'),
-  tabla(['ID', 'Funcionalidad', 'Alcance sugerido'], [
-    ['N-01', 'Subsidios (incapacidad temporal, maternidad)', 'Tipos de ausencia subsidiada, días subsidiados en la boleta y en el `.snl`; hoy el `.snl` sale vacío y la categoría «subsidio» no se usa'],
-    ['N-02', 'T-Registro', 'Exportación de altas, bajas y modificaciones desde los datos ya cargados (trabajador, contrato, derechohabientes)'],
-    ['N-03', 'Indemnización por despido arbitrario', 'Regla en la estructura LIQ con tope de 12 remuneraciones'],
-    ['N-04', 'Regularización de 5.ª al cese', 'Recalcular la renta anual en la liquidación'],
-    ['N-05', 'Prima de Vida Ley', 'Regla de aporte del empleador desde el catálogo (hoy solo catálogo)'],
-    ['N-06', 'TXT Scotiabank y Banco de la Nación', 'Formatos pendientes según `bancos.py` (l. 5-13)'],
-    ['N-07', 'Pago de la planilla', 'Registrar el pago desde el lote (en Community `paid_amount` es manual)'],
-    ['N-08', 'Envío masivo de boletas y constancias', 'Boletas por correo desde el lote; constancia de CTS y certificado de 5.ª'],
-  ], [1000, 3200, 5438]),
+  p('Lo que hoy **no existe en el código** y el manual (capítulo 23) y el video resumen (tarjeta «Lo que hoy no cubre la localización») declaran como no cubierto. Cada ficha indica qué se verificó en el código para afirmar que falta.'),
 );
+[
+  { id: 'N-01', titulo: 'Subsidios (incapacidad temporal y maternidad)', prioridad: 'Alta (aparece en el video y el manual)', donde: '`solse_pe_payroll_ce`: reglas, `wizard/plame.py` (.snl), tipos de ausencia',
+    problema: 'Verificado en el código: no hay reglas de subsidio; la categoría BSM_001 (subsidios) existe pero ninguna regla la usa; `plame.py` escribe el `.snl` vacío con el comentario «suspensiones aún no gestionadas» (l. 14-16 y 156). Medido: el `.snl` de diciembre 2026 sale vacío.',
+    propuesta: 'Tipos de ausencia subsidiada con su código de suspensión (tabla 21: 21 incapacidad temporal, 22 maternidad, etc.); los días subsidiados no pagados en la mensual; regla de subsidio (pagado por el empleador y recuperable de EsSalud) en BSM_001; el `.snl` con tipo de documento, documento, código de suspensión y días.',
+    aceptacion: 'Trabajador con 10 días de descanso médico: la mensual paga 20 días + subsidio de 10, el `.snl` trae la línea con el código de suspensión y 10 días, y el `.jor` declara 20 días.' },
+  { id: 'N-02', titulo: 'Exportación del T-Registro', prioridad: 'Media (aparece en el video y el manual)', donde: 'Nuevo asistente en `solse_pe_payroll_ce`',
+    problema: 'Verificado: no hay asistente ni exportación; solo campos y etiquetas «Identificación T-Registro» y «Perú - Datos laborales (T-Registro / PLAME)» (hr_employee.py:6, hr_version_views.xml:12).',
+    propuesta: 'Asistente de altas, bajas y modificaciones que genere los archivos de importación del T-Registro (estructuras de datos personales, datos laborales, periodos, derechohabientes) a partir de la ficha, el contrato y los derechohabientes ya cargados; validación previa de datos faltantes.',
+    aceptacion: 'Alta de Lucía (99999901) exportada; los archivos se importan en el T-Registro de prueba sin rechazos (validación externa como el PDT).' },
+  { id: 'N-03', titulo: 'Indemnización por despido arbitrario', prioridad: 'Media (aparece en el video y el manual)', donde: 'Estructura LIQ (`bloque9`)',
+    problema: 'Verificado: la estructura Liquidación solo tiene vacaciones, gratificación, bonificación y CTS truncas (medido: Carmen, neto 3,547.22); no hay regla de indemnización.',
+    propuesta: 'Regla opcional activada por el motivo de baja (T17) o por una entrada: 1.5 remuneraciones por año completo (proporcional por meses y días) con tope de 12 remuneraciones (D.S. 003-97-TR, art. 38); para plazo fijo, 1.5 por mes restante con el mismo tope.',
+    aceptacion: 'Cese con despido arbitrario de un trabajador con 1 año y 8 meses: indemnización calculada y verificada por la contadora.' },
+  { id: 'N-04', titulo: 'Regularización de la renta de 5.ª al cese', prioridad: 'Media (aparece en el video y el manual)', donde: 'Estructura LIQ / R5TA_001',
+    problema: 'Verificado: la estructura LIQ excluye R5TA y no recalcula el impuesto anual con los ingresos reales del año al cese.',
+    propuesta: 'Regla en LIQ que calcule el impuesto anual con lo percibido + la liquidación (sin proyección) y retenga la diferencia contra lo ya retenido.',
+    aceptacion: 'Cese en agosto: retención total del año igual al impuesto anual recalculado con los ingresos reales.' },
+  { id: 'N-05', titulo: 'Prima de Vida Ley', prioridad: 'Baja', donde: '`life.insurance` + nueva regla',
+    problema: 'Verificado: existe el catálogo (entidad, póliza, vigencia, tasa, importe, empleados) pero ninguna regla salarial lo usa; en la base el catálogo está vacío.',
+    propuesta: 'Regla de aporte del empleador (tasa sobre la remuneración o importe fijo) con cuentas 6273/46xx, solo para los empleados de la póliza vigente.',
+    aceptacion: 'Trabajador en la póliza: aporte del empleador en la boleta y en el asiento.' },
+  { id: 'N-06', titulo: 'TXT de Scotiabank y Banco de la Nación', prioridad: 'Media (aparece en el video y el manual)', donde: '`wizard/bancos.py` (l. 5-13 lo declara pendiente)',
+    problema: 'Verificado: el selector ofrece BCP, Interbank y Scotiabank, y existe `_generar_scotiabank` (l. 272), pero nunca se llama (ver C-13). Banco de la Nación no existe.',
+    propuesta: 'Conectar Scotiabank (haberes y CTS) y agregar Banco de la Nación con sus formatos oficiales; resolver antes C-01 y C-13.',
+    aceptacion: 'TXT de prueba aceptado por la banca por internet de cada banco (validación externa).' },
+  { id: 'N-07', titulo: 'Pago de la planilla', prioridad: 'Baja', donde: 'hr.payslip / hr.payslip.run (Community)',
+    problema: 'Verificado: en Community no hay flujo de pagos de nómina; `paid_amount` es un campo manual con valor 0 (payroll_base).',
+    propuesta: 'Botón en el lote para registrar el pago (asiento 4111 contra banco) a partir del TXT generado, y marcar las boletas como pagadas.',
+    aceptacion: 'Lote de diciembre pagado: cuenta 4111 en cero para esos trabajadores.' },
+  { id: 'N-08', titulo: 'Envío masivo de boletas y constancias', prioridad: 'Baja', donde: 'hr.payslip.run · reportes',
+    problema: 'La boleta se imprime una por una; om_hr_payroll tiene `action_send_email` por boleta pero no hay envío desde el lote con la boleta PE, ni constancia de depósito de CTS ni certificado de retenciones de 5.ª.',
+    propuesta: 'Envío desde el lote con la plantilla «Boleta de Pago (PE)»; reportes de constancia de CTS y certificado anual de 5.ª.',
+    aceptacion: 'Lote de diciembre: cada trabajador recibe su boleta en PDF.' },
+].forEach((m) => agregar(mejora(m)));
+
+agregar(
+  h2('Q-05 · Cobertura pendiente de medición'),
+  tabla(['Campo', 'Detalle'], [
+    ['Prioridad', 'Media'],
+    ['Módulo / archivo', 'Laboratorio (`solse_pe_demo_libros`) y casos de `solse_pe_payroll_ce_demo`'],
+    ['Problema', 'Funciones que existen pero que ni el laboratorio ni este manual midieron: **reparto de utilidades** (asistente D.Leg. 892), **microempresa** (sin gratificación ni CTS), **alerta de la RMA** a los 95 días, **AFPnet** solo con afiliados con CUSPP, **checksum** del TXT BCP, nómina **semanal** de obreros en FM SYSTEMS y **descuento judicial / cuota sindical** fuera de la demo. Son los casos 7, 15, 16, 17 y 19 abiertos en la biblia (§6).'],
+    ['Propuesta', 'Agregar estas filas a los casos NOMINA y PLAME (o un caso BANCOS, ver Q-04).'],
+    ['Criterio de aceptación', 'Cada función con al menos un valor esperado comparado en el laboratorio.'],
+  ], [2200, 7438]),
+  espacio(),
+);
+
+// Plan de re-ejecución
+agregar(
+  h1('6. Al confirmar los cambios: qué se vuelve a correr'),
+  p('Cuando el chat de desarrollo entregue las correcciones, la sesión del manual vuelve a medir y actualiza manual y videos con este orden:'),
+  pasos([
+    'Actualizar los módulos en contable19 (antes, rechazar las vacaciones aprobadas de prueba: N-6 de la biblia).',
+    'Laboratorio: Limpiar, Sembrar, Generar y Comparar los cuatro casos (deben seguir al 100 %) y los casos nuevos de Q-04 y Q-05.',
+    'FM SYSTEMS: recalcular la planilla de enero de 2025 a diciembre de 2026 (borrar y regenerar las 64 boletas) y comparar contra `anio_completo_fm.json`. Las diferencias esperadas son solo las de C-03, C-04, C-05 y C-11.',
+    'Repetir los archivos legales: PLAME, AFPnet, planilla y TXT de haberes y de CTS (C-01, C-08 y C-12).',
+    'Recapturar las pantallas afectadas por U-01 a U-09 y por las funcionalidades nuevas, y volver a difuminar.',
+    'Manual: actualizar los capítulos 4, 10, 13, 15, 17, 21 y 23, y el Anexo A (cerrar las observaciones resueltas).',
+    'Video resumen: regrabar los clips afectados y cambiar la tarjeta «Lo que hoy no cubre» según lo que se haya implementado. Promo: agregar escenas si entran N-01 o N-02.',
+  ]),
+  tabla(['Mejora', 'Capítulo del manual', 'Segmento del video'], [
+    ['C-01, C-08, C-12, N-06', '21 Reportes (pago a bancos), 15 CTS', 'Nuevo clip de pago a bancos'],
+    ['C-02, V-01, V-02, U-08', '4 Parámetros', 'Parámetros con vigencia'],
+    ['C-03, C-11', '13 Renta de 5.ª', '—'],
+    ['C-04, C-09', '17 Vacaciones, 18 Feriados', 'Vacaciones'],
+    ['C-05, C-06, C-07', '7 Contabilidad, 8 Alta, 10 Boleta', 'Alta del trabajador; boleta, asiento y PDF'],
+    ['U-01 a U-07, U-09', '3, 5, 6, 8, 9', 'Menú Nómina PE'],
+    ['N-01 a N-05, N-07, N-08', '16 Liquidación, 21, 23', 'Tarjeta «Alcance» y clips nuevos'],
+  ], [3000, 3600, 3038]),
+);
+
 // ---------- Índice estático con enlaces internos ----------
 const entradasIndice = indice.map(({ nivel, texto, id }) => new Paragraph({
   spacing: { before: nivel === 1 ? 120 : 0, after: nivel === 1 ? 40 : 20 },

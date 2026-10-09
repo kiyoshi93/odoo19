@@ -66,3 +66,4 @@
 - H-CE-20 (medido) La boleta PDF y el .jor muestran «Días laborados/computables: 20 / 160 h» en un mes completo de
   diciembre (feriados 8, 9 y 25 descontados como GLOBAL) aunque se paga el mes completo (RB 4.500). Confirmar con la
   contadora qué deben decir boleta y PLAME.
+- H-CE-21 (verificado en código 2026-10-09) Opción Scotiabank del TXT genera formato Interbank (action_generar solo distingue bcp). Manual cap. 21 y 23 dicen «no implementado»: corregir al re-medir.
