@@ -13,6 +13,7 @@ const TAREAS = [
   { nombre: 'p21_04_afpnet', accion: 1042, mes: 'Diciembre', anio: 2026, boton: 'Generar Excel AFPnet' },
   { nombre: 'p21_05_bancos_sueldo', accion: 1041, mes: 'Diciembre', anio: 2026, cuenta: '1919999999001', boton: 'Generar TXT' },
   { nombre: 'p21_06_bancos_cts', accion: 1041, mes: 'Noviembre', anio: 2026, tipo: 'CTS', cuenta: '1919999999001', boton: 'Generar TXT' },
+  { nombre: 'p21_07_bancos_scotiabank', accion: 1041, mes: 'Diciembre', anio: 2026, banco: 'Scotiabank', cuenta: '1919999999001', boton: 'Generar TXT' },
 ];
 
 (async () => {
@@ -29,6 +30,7 @@ const TAREAS = [
         await ui.seleccion(pagina, f, 'mes', t.mes);
         await ui.escribir(f, 'anio', t.anio);
         if (t.tipo) await ui.seleccion(pagina, f, 'tipo', t.tipo);
+        if (t.banco) await ui.seleccion(pagina, f, 'banco', t.banco);
         if (t.cuenta) await ui.escribir(f, 'cuenta_cargo', t.cuenta);
         if (t.casilla) await ui.casilla(f, t.casilla, true);
         await ui.captura(pagina, `${t.nombre}_asistente`);
