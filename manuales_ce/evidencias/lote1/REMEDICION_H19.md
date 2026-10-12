@@ -65,3 +65,37 @@ no se ejecutó.
 PLAME-RXH no tuvo esperados que dependan del convenio o la renta con diferencias (0 celdas distintas).
 
 **H-19: corregido por la línea principal en `solse_pe_plame_rxh_demo` 19.0.2.3.0 — verificado.**
+
+---
+
+# Tercera re-medición (versiones corregidas) — 2026-10-12 23:06–23:08 · RESULTADO FINAL
+
+La medición anterior se hizo con módulos de nómina de un chat previo, por un error de carga. Ya está corregido.
+
+## Versiones (disco = base)
+
+| Módulo | Versión |
+|---|---|
+| solse_pe_payroll_base | 19.0.1.8.2 ✓ |
+| solse_pe_payroll_ce | 19.0.1.9.4 ✓ (el asistente de bancos tiene `modo_estricto` y `hay_omitidos`) |
+| solse_pe_payroll_ce_demo | 19.0.2.5.0 ✓ |
+| solse_pe_payroll_asistencia / _demo | 19.0.1.0.0 / 19.0.1.1.1 ✓ |
+| solse_pe_plame_rxh_demo | **19.0.2.3.1** (se pidió 19.0.2.3.0; es una revisión posterior de la línea principal) |
+| solse_pe_sire_compra_8_5 | 19.0.2.5 ✓ |
+| solse_pe_plame_demo · solse_pe_demo_libros | 19.0.1.2.0 · 19.0.1.38 |
+
+## Resultados
+
+| Paso | Resultado |
+|---|---|
+| PLAME-RXH | **100 % CONFORME** (comparación 11, 23:06:42) |
+| PLAME | **100 % CONFORME** (comparación 12, 23:06:45) |
+| E001-110 (id 777) | convenio 02 · renta 19 · modalidad 3 · exoneración vacía · vinculación 00 · anotación 0 ✓ |
+| Warnings «se omite» | Log no accesible. Los 5 valores llegaron al recibo, así que no se omitió ninguno |
+| ASISTENCIA | **100 % CONFORME** (comparación 13, 23:06:50) |
+| NOMINA | **100 % CONFORME** (comparación 14, 23:07:09) |
+| TXT lote 1 (regenerados y comparados byte a byte con los de esta carpeta) | BCP haberes dic: idéntico · Scotiabank dic: idéntico · CTS BCP nov: idéntico salvo la fecha de pago (no se indicó en la prueba), omitidos = sí · Interbank dic: idéntico salvo la hora de generación |
+
+Ningún esperado depende del convenio o la renta con diferencias: 0 celdas distintas en todos los casos.
+
+**H-19: corregido por la línea principal en `solse_pe_plame_rxh_demo` (19.0.2.3.x) — verificado. Lote 1 de nómina: sigue validado.**
