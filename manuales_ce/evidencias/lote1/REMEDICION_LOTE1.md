@@ -35,3 +35,4 @@ Evidencias: archivos TXT en esta carpeta; `remedicion_anio_completo.json`; captu
 - PLAME-RXH: «Sembrar» sigue fallando con `Wrong value for account.move.nd_exoneracion: '00'`. La selección vigente es `1…6` (tabla 33). H-19 **no está corregido**.
 - PLAME: no corre porque depende de que PLAME-RXH esté sembrado.
 - Log «C-02:» / «V-01:»: no hay rastro en `ir.logging` ni en `mail.message`; solo se escriben en el log del servidor (no accesible desde la sesión).
+- Además, `nd_modalidad_servicio: '02'` del mismo diccionario tampoco es válido: la selección vigente es `1/2/3` («3 - exclusivamente en el extranjero»). Odoo solo informa el primer error, así que al corregir `nd_exoneracion` fallaría por este.
