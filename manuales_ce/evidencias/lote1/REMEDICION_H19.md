@@ -34,3 +34,34 @@ No hubo diferencias de esperados que reportar: PLAME-RXH no llegó a comparar.
 2. Reiniciar Odoo y actualizar con `-u solse_pe_plame_rxh_demo -d contable19`.
 3. Confirmar en Aplicaciones que muestra 19.0.2.3.0.
 4. Repetir los pasos 2 a 5.
+
+---
+
+# Segunda re-medición (servidor corregido) — 2026-10-12 22:19–22:22
+
+## 1. Versiones (`installed_version` = manifiesto en disco · `latest_version` = base)
+
+| Módulo | Esperado | Disco | Base | |
+|---|---|---|---|---|
+| solse_pe_plame_rxh_demo | 19.0.2.3.0 | 19.0.2.3.0 | 19.0.2.3.0 | ✓ |
+| solse_pe_sire_compra_8_5 | 19.0.2.5 | 19.0.2.5 | 19.0.2.5 | ✓ |
+| solse_pe_payroll_base | 19.0.1.8.2 | **19.0.1.6.0** | 19.0.1.8.2 | ✗ |
+| solse_pe_payroll_ce | 19.0.1.9.4 | **19.0.1.8.0** | 19.0.1.9.4 | ✗ |
+
+**Nómina NO coincide con el lote 1.** En este servidor el código de nómina es anterior
+al lote 1: `solse.payroll.bancos.wizard` ya no tiene el campo del «Modo estricto».
+Por la regla del encargo, la medición se detuvo aquí. El paso 6 (NOMINA y ASISTENCIA)
+no se ejecutó.
+
+## 2–5. H-19 (ya medido antes de detectar lo anterior)
+
+| Paso | Resultado |
+|---|---|
+| 2. PLAME-RXH | Limpiar, Sembrar, Generar y Comparar OK · **100 % CONFORME** (comparación 9, 22:19:58) |
+| 3. PLAME | Limpiar, Sembrar, Generar y Comparar OK · **100 % CONFORME** (comparación 10, 22:20:00) |
+| 4. Recibo E001-110 (id 758, ROSSI BIANCHI MARCO ANTONIO, pasaporte, Chile) | convenio **02** · renta **19** · modalidad **3** · exoneración **vacía** · vinculación **00** · anotación 0 ✓ |
+| 5. Warnings «se omite» | Log no accesible. Evidencia indirecta: los 5 valores llegaron al recibo, así que no se omitió ninguno |
+
+PLAME-RXH no tuvo esperados que dependan del convenio o la renta con diferencias (0 celdas distintas).
+
+**H-19: corregido por la línea principal en `solse_pe_plame_rxh_demo` 19.0.2.3.0 — verificado.**
