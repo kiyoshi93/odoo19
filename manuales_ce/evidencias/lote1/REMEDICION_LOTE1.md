@@ -28,3 +28,10 @@ datos de PLAME-RXH del laboratorio.
 
 Evidencias: archivos TXT en esta carpeta; `remedicion_anio_completo.json`; capturas
 `p21_06_bancos_cts_resultado.png` y `p21_07_bancos_scotiabank_resultado.png`.
+
+## Re-intento tras la actualización de módulos (2026-10-12, 21:40)
+
+- Versiones: `solse_pe_plame_rxh_demo` sigue en 19.0.2.2.0; `solse_pe_sire_compra_8_5` 19.0.2.5; `solse_pe_demo_libros` 19.0.1.38; nómina sin cambios (base 19.0.1.8.2, ce 19.0.1.9.4).
+- PLAME-RXH: «Sembrar» sigue fallando con `Wrong value for account.move.nd_exoneracion: '00'`. La selección vigente es `1…6` (tabla 33). H-19 **no está corregido**.
+- PLAME: no corre porque depende de que PLAME-RXH esté sembrado.
+- Log «C-02:» / «V-01:»: no hay rastro en `ir.logging` ni en `mail.message`; solo se escriben en el log del servidor (no accesible desde la sesión).
