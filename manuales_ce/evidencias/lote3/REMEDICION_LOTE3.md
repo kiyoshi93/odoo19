@@ -76,7 +76,7 @@ Después del recálculo: 4 623,00 − 778,34 = **3 844,66**, igual al neto esper
 
 | Qué | Esperado | Medido | |
 |---|---|---|---|
-| Héctor: R5TA en todas sus boletas | 0 | 0 en las 32 | OK |
+| Héctor: R5TA en todas sus boletas | 0 | 0 en las 31 | OK |
 | Otras líneas frente a `anio_completo_fm.json` | Solo el redondeo de C-05 | 116 líneas cambian solo por redondeo a 2 decimales; ninguna otra diferencia. Días trabajados iguales. Las 64 en estado Hecho y con asiento | OK |
 | Ejemplo del encargo: ESSALUD de la VAC de feb-2026 (boleta 116) | 207,585 → 207,59 | 207,59. La línea base guarda 207,58499999999995 (flotante); el script la marca, pero es el redondeo esperado | OK |
 
