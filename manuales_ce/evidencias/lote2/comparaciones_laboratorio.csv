@@ -1,0 +1,737 @@
+comparacion,caso,estructura,clave,posicion,campo,esperado,obtenido,resultado
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,fecha_emision,03/07/2026,03/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,fecha_pago,10/07/2026,10/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,monto,800,800,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,numero,101,101,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,numero_documento,10400000013,10400000013,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|101,1,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,fecha_emision,20/06/2026,20/06/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,fecha_pago,05/07/2026,05/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,monto,1200,1200,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,numero,102,102,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,numero_documento,10400000021,10400000021,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000021|E001|102,2,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,fecha_emision,05/07/2026,05/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,fecha_pago,12/07/2026,12/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,monto,3000,3000,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,numero,103,103,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,numero_documento,10400000030,10400000030,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,retencion,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000030|E001|103,3,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,fecha_emision,06/07/2026,06/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,fecha_pago,13/07/2026,13/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,monto,4500,4500,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,numero,104,104,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,numero_documento,10400000048,10400000048,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000048|E001|104,4,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,fecha_emision,07/07/2026,07/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,fecha_pago,14/07/2026,14/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,monto,2000,2000,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,numero,105,105,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,numero_documento,10400000056,10400000056,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000056|E001|105,5,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,fecha_emision,14/06/2026,14/06/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,fecha_pago,10/07/2026,10/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,monto,1200,1200,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,numero,106,106,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,numero_documento,10400000064,10400000064,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000064|E001|106,6,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,fecha_emision,03/07/2026,03/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,fecha_pago,11/07/2026,11/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,monto,1122.60,1122.60,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,numero,107,107,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,numero_documento,10400000072,10400000072,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000072|E001|107,7,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,fecha_emision,15/07/2026,15/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,fecha_pago,15/07/2026,15/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,monto,200,200,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,numero,109,109,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,numero_documento,10400000013,10400000013,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,tipo_comprobante,N,N,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,10400000013|E001|109,8,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,campo_10,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,campo_11,,,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,campos,11,11,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,fecha_emision,08/07/2026,08/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,fecha_pago,16/07/2026,16/07/2026,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,monto,1000,1000,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,numero,110,110,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,numero_documento,PA1234567,PA1234567,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,retencion,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,serie,E001,E001,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,tipo_comprobante,R,R,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,4TA,PA1234567|E001|110,9,tipo_documento,07,07,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,advertencia_e001_105,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,archivo,ps4,ps4,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,ascii,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,crlf,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,errores,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,ps4,1,nombre,060120260720603456786.ps4,060120260720603456786.ps4,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,advertencia_e001_105,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,archivo,4ta,4ta,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,ascii,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,crlf,SI,SI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,errores,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Archivos,4ta,2,nombre,060120260720603456786.4ta,060120260720603456786.4ta,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,1 · documentos sembrados y posteados,1,cantidad,10,10,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,1 · documentos sembrados y posteados,1,etapa,1 · documentos sembrados y posteados,1 · documentos sembrados y posteados,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,1b · sembrados dentro del periodo,2,cantidad,8,8,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,1b · sembrados dentro del periodo,2,etapa,1b · sembrados dentro del periodo,1b · sembrados dentro del periodo,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,2 · marcados como recibo de honorarios,3,cantidad,10,10,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,2 · marcados como recibo de honorarios,3,etapa,2 · marcados como recibo de honorarios,2 · marcados como recibo de honorarios,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3 · con algún pago registrado,4,cantidad,8,8,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3 · con algún pago registrado,4,etapa,3 · con algún pago registrado,3 · con algún pago registrado,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3a · search: es_recibo_honorarios,5,cantidad,10,10,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3a · search: es_recibo_honorarios,5,etapa,3a · search: es_recibo_honorarios,3a · search: es_recibo_honorarios,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3b · search: + fecha de emisión,6,cantidad,10,10,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3b · search: + fecha de emisión,6,etapa,3b · search: + fecha de emisión,3b · search: + fecha de emisión,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3c · search: + payment_state,7,cantidad,8,8,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,3c · search: + payment_state,7,etapa,3c · search: + payment_state,3c · search: + payment_state,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,4 · candidatos del exportador,8,cantidad,10,10,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,4 · candidatos del exportador,8,etapa,4 · candidatos del exportador,4 · candidatos del exportador,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,5 · con datos del periodo,9,cantidad,9,9,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,Diagnóstico,5 · con datos del periodo,9,etapa,5 · con datos del periodo,5 · con datos del periodo,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,apellido_materno,HUAMAN,HUAMAN,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,apellido_paterno,QUISPE,QUISPE,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,nombres,ANA LUCIA,ANA LUCIA,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,numero_documento,10400000013,10400000013,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000013,1,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,apellido_materno,CONDORI,CONDORI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,apellido_paterno,MAMANI,MAMANI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,nombres,JUAN CARLOS,JUAN CARLOS,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,numero_documento,10400000021,10400000021,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000021,2,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,apellido_materno,PAREDES,PAREDES,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,apellido_paterno,FLORES,FLORES,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,nombres,ROSA ELENA,ROSA ELENA,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,numero_documento,10400000030,10400000030,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000030,3,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,apellido_materno,VARGAS,VARGAS,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,apellido_paterno,ROJAS,ROJAS,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,nombres,PEDRO PABLO,PEDRO PABLO,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,numero_documento,10400000048,10400000048,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000048,4,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,apellido_materno,MENDOZA,MENDOZA,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,apellido_paterno,CASTILLO,CASTILLO,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,nombres,CARMEN ROSA,CARMEN ROSA,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,numero_documento,10400000056,10400000056,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000056,5,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,apellido_materno,SALAZAR,SALAZAR,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,apellido_paterno,TORRES,TORRES,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,nombres,LUIS FERNANDO,LUIS FERNANDO,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,numero_documento,10400000064,10400000064,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000064,6,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,apellido_materno,CHAVEZ,CHAVEZ,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,apellido_paterno,RAMOS,RAMOS,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,convenio,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,domiciliado,1,1,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,nombres,MARIA ISABEL,MARIA ISABEL,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,numero_documento,10400000072,10400000072,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,10400000072,7,tipo_documento,06,06,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,apellido_materno,BIANCHI,BIANCHI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,apellido_paterno,ROSSI,ROSSI,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,campos,7,7,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,convenio,2,2,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,domiciliado,0,0,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,nombres,MARCO ANTONIO,MARCO ANTONIO,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,numero_documento,PA1234567,PA1234567,ok
+PLAME-RXH · 2026-10-13 14:59:36 · CONFORME,PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta,PS4,PA1234567,8,tipo_documento,07,07,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,ps4,1,archivo,ps4,ps4,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,ps4,1,igual_al_caso_rxh,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,ps4,1,lineas,8,8,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,4ta,2,archivo,4ta,4ta,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,4ta,2,igual_al_caso_rxh,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Anexo4ta,4ta,2,lineas,9,9,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,1 · boletas validadas del periodo en la compañía,1,cantidad,32,32,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,1 · boletas validadas del periodo en la compañía,1,etapa,1 · boletas validadas del periodo en la compañía,1 · boletas validadas del periodo en la compañía,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,2 · boletas que recoge el asistente,2,cantidad,31,31,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,2 · boletas que recoge el asistente,2,etapa,2 · boletas que recoge el asistente,2 · boletas que recoge el asistente,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,3 · trabajadores en el .rem,3,cantidad,13,13,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,3 · trabajadores en el .rem,3,etapa,3 · trabajadores en el .rem,3 · trabajadores en el .rem,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,4 · trabajadores en el .jor,4,cantidad,13,13,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,Diagnóstico,4 · trabajadores en el .jor,4,etapa,4 · trabajadores en el .jor,4 · trabajadores en el .jor,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,42589631,1,dias,20,20,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,42589631,1,dni,42589631,42589631,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,42589631,1,trabajador,Pedro,Pedro,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,46321478,2,dias,20,20,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,46321478,2,dni,46321478,46321478,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,JOR,46321478,2,trabajador,Rosa,Rosa,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0121,1,concepto,0121,0121,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0121,1,dni,45781236,45781236,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0121,1,monto,3500.00,3500.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0121,1,origen,RB_001,RB_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0121,1,trabajador,Carlos,Carlos,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0201,2,concepto,0201,0201,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0201,2,dni,45781236,45781236,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0201,2,monto,113.00,113.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0201,2,origen,ASF_001,ASF_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0201,2,trabajador,Carlos,Carlos,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0312,3,concepto,0312,0312,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0312,3,dni,45781236,45781236,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0312,3,monto,243.88,243.88,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0312,3,origen,BONO_GRATI_001,BONO_GRATI_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,45781236|0312,3,trabajador,Carlos,Carlos,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0406,4,concepto,0406,0406,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0406,4,dni,41236547,41236547,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0406,4,monto,8000.00,8000.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0406,4,origen,GRATI_001,GRATI_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0406,4,trabajador,María,María,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0312,5,concepto,0312,0312,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0312,5,dni,41236547,41236547,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0312,5,monto,720.00,720.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0312,5,origen,BONO_GRATI_001,BONO_GRATI_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0312,5,trabajador,María,María,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0605,6,concepto,0605,0605,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0605,6,dni,41236547,41236547,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0605,6,monto,269.40,269.40,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0605,6,origen,R5TA_001,R5TA_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41236547|0605,6,trabajador,María,María,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,40125836|0605,7,concepto,0605,0605,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,40125836|0605,7,dni,40125836,40125836,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,40125836|0605,7,monto,1267.25,1267.25,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,40125836|0605,7,origen,R5TA_001,R5TA_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,40125836|0605,7,trabajador,Ana,Ana,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,44567123|0406,8,concepto,0406,0406,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,44567123|0406,8,dni,44567123,44567123,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,44567123|0406,8,monto,750.00,750.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,44567123|0406,8,origen,GRATI_001,GRATI_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,44567123|0406,8,trabajador,José,José,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,43698521|0701,9,concepto,0701,0701,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,43698521|0701,9,dni,43698521,43698521,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,43698521|0701,9,monto,1800.00,1800.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,43698521|0701,9,origen,DESC_ADEL_001,DESC_ADEL_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,43698521|0701,9,trabajador,Luis,Luis,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41785296|0703,10,concepto,0703,0703,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41785296|0703,10,dni,41785296,41785296,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41785296|0703,10,monto,522.00,522.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41785296|0703,10,origen,DJ_001,DJ_001,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,41785296|0703,10,trabajador,Miguel,Miguel,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0121,11,concepto,0121,0121,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0121,11,dni,46321478,46321478,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0121,11,monto,1680.00,1680.00,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0121,11,origen,RBS_002 × 4 semanas,RBS_002 × 4 semanas,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0121,11,trabajador,Rosa,Rosa,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0702,12,concepto,0702,0702,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0702,12,dni,46321478,46321478,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0702,12,monto,16.80,16.80,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0702,12,origen,SIND_001 × 4 semanas,SIND_001 × 4 semanas,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,REM,46321478|0702,12,trabajador,Rosa,Rosa,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,rem,1,archivo,rem,rem,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,rem,1,nombre,060120260720603456786.rem,060120260720603456786.rem,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,rem,1,presente,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,jor,2,archivo,jor,jor,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,jor,2,nombre,060120260720603456786.jor,060120260720603456786.jor,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,jor,2,presente,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,snl,3,archivo,snl,snl,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,snl,3,nombre,060120260720603456786.snl,060120260720603456786.snl,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,snl,3,presente,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,ps4,4,archivo,ps4,ps4,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,ps4,4,nombre,060120260720603456786.ps4,060120260720603456786.ps4,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,ps4,4,presente,SI,SI,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,4ta,5,archivo,4ta,4ta,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,4ta,5,nombre,060120260720603456786.4ta,060120260720603456786.4ta,ok
+PLAME · 2026-10-13 14:59:40 · CONFORME,PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro,ZIP,4ta,5,presente,SI,SI,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|RB_001,1,concepto,RB_001,RB_001,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|RB_001,1,dni,43815927,43815927,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|RB_001,1,origen,3.000/30 × (30 − 2 faltas − 3 vacaciones),3.000/30 × (30 − 2 faltas − 3 vacaciones),ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|RB_001,1,trabajador,Óscar,Óscar,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|RB_001,1,valor,2500.00,2500.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|días no pagados,2,concepto,días no pagados,días no pagados,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|días no pagados,2,dni,43815927,43815927,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|días no pagados,2,origen,2 faltas + 3 días de vacaciones,2 faltas + 3 días de vacaciones,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|días no pagados,2,trabajador,Óscar,Óscar,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|días no pagados,2,valor,5.00,5.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|FALTA · días,3,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|FALTA · días,3,dni,43815927,43815927,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|FALTA · días,3,origen,2 faltas,2 faltas,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|FALTA · días,3,trabajador,Óscar,Óscar,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|FALTA · días,3,valor,2.00,2.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|vacaciones aprobadas · días,4,concepto,vacaciones aprobadas · días,vacaciones aprobadas · días,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|vacaciones aprobadas · días,4,dni,43815927,43815927,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|vacaciones aprobadas · días,4,origen,del 21 al 23,del 21 al 23,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|vacaciones aprobadas · días,4,trabajador,Óscar,Óscar,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Combinado,43815927|vacaciones aprobadas · días,4,valor,3.00,3.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,1 · empleados del caso NOMINA encontrados,1,cantidad,4,4,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,1 · empleados del caso NOMINA encontrados,1,etapa,1 · empleados del caso NOMINA encontrados,1 · empleados del caso NOMINA encontrados,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,2 · boletas de septiembre,2,cantidad,4,4,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,2 · boletas de septiembre,2,etapa,2 · boletas de septiembre,2 · boletas de septiembre,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,3 · vacación de Óscar validada,3,cantidad,SI,SI,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,3 · vacación de Óscar validada,3,etapa,3 · vacación de Óscar validada,3 · vacación de Óscar validada,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,4 · motivo del corte,4,cantidad,ninguno,ninguno,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Diagnóstico,4 · motivo del corte,4,etapa,4 · motivo del corte,4 · motivo del corte,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|RB_001,1,concepto,RB_001,RB_001,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|RB_001,1,dni,47852169,47852169,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|RB_001,1,origen,1.130 − 2 × 1.130/30,1.130 − 2 × 1.130/30,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|RB_001,1,trabajador,Jorge,Jorge,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|RB_001,1,valor,1054.67,1054.67,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · días,2,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · días,2,dni,47852169,47852169,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · días,2,origen,2 faltas,2 faltas,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · días,2,trabajador,Jorge,Jorge,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · días,2,valor,2.00,2.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · pagada,3,concepto,FALTA · pagada,FALTA · pagada,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · pagada,3,dni,47852169,47852169,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · pagada,3,origen,no se paga,no se paga,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · pagada,3,trabajador,Jorge,Jorge,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,47852169|FALTA · pagada,3,valor,NO,NO,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,45781236|FALTA · días,4,concepto,FALTA · días,FALTA · días,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,45781236|FALTA · días,4,dni,45781236,45781236,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,45781236|FALTA · días,4,origen,sin faltas: no hay línea,sin faltas: no hay línea,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,45781236|FALTA · días,4,trabajador,Carlos,Carlos,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,45781236|FALTA · días,4,valor,0.00,0.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|RB_001,5,concepto,RB_001,RB_001,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|RB_001,5,dni,41236547,41236547,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|RB_001,5,origen,"8.000 − 0,5 × 8.000/30 (fase 2)","8.000 − 0,5 × 8.000/30 (fase 2)",ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|RB_001,5,trabajador,María,María,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|RB_001,5,valor,7866.67,7866.67,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · horas,6,concepto,FALTA_PARCIAL · horas,FALTA_PARCIAL · horas,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · horas,6,dni,41236547,41236547,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · horas,6,origen,medio día,medio día,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · horas,6,trabajador,María,María,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · horas,6,valor,4.00,4.00,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · pagada,7,concepto,FALTA_PARCIAL · pagada,FALTA_PARCIAL · pagada,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · pagada,7,dni,41236547,41236547,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · pagada,7,origen,no se paga,no se paga,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · pagada,7,trabajador,María,María,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Faltas,41236547|FALTA_PARCIAL · pagada,7,valor,NO,NO,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|TAR_001,1,concepto,TAR_001,TAR_001,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|TAR_001,1,dni,45781236,45781236,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|TAR_001,1,origen,3 × 25 min − 10 de tolerancia = 45 min,3 × 25 min − 10 de tolerancia = 45 min,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|TAR_001,1,trabajador,Carlos,Carlos,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|TAR_001,1,valor,10.94,10.94,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|NET = ingresos − |deducciones|,2,concepto,NET = ingresos − |deducciones|,NET = ingresos − |deducciones|,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|NET = ingresos − |deducciones|,2,dni,45781236,45781236,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|NET = ingresos − |deducciones|,2,origen,definición del neto,definición del neto,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|NET = ingresos − |deducciones|,2,trabajador,Carlos,Carlos,ok
+ASISTENCIA · 2026-10-13 14:59:44 · CONFORME,"ASISTENCIA — Asistencias — tardanzas, faltas y medias jornadas",Tardanzas,45781236|NET = ingresos − |deducciones|,2,valor,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,codigo,AFP_APO_001,AFP_APO_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,concepto,Carlos AFP aporte,Carlos AFP aporte,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,importe,361.30,361.30,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001,1,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,codigo,AFP_COM_001,AFP_COM_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,concepto,Carlos AFP comisión Habitat,Carlos AFP comisión Habitat,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,importe,53.11,53.11,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,2,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,codigo,AFP_PRI_001,AFP_PRI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,concepto,Carlos AFP prima,Carlos AFP prima,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,importe,49.50,49.50,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,3,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,codigo,ESSALUD_001,ESSALUD_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,concepto,Carlos ESSALUD,Carlos ESSALUD,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,importe,325.17,325.17,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001,4,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,codigo,EPS_APO_001,EPS_APO_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,concepto,Carlos EPS aporte,Carlos EPS aporte,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,importe,162.59,162.59,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001,5,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,codigo,EPS_CRED_001,EPS_CRED_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,concepto,Carlos EPS crédito (negativo),Carlos EPS crédito (negativo),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,importe,-81.29,-81.29,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001,6,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,codigo,SENATI_001,SENATI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,concepto,Carlos SENATI,Carlos SENATI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,importe,27.10,27.10,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001,7,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,codigo,ONP_001,ONP_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,concepto,Jorge ONP,Jorge ONP,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,dni,47852169,47852169,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,importe,146.90,146.90,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,47852169|mensual|01/07/2026 a 31/07/2026|ONP_001,8,trabajador,Jorge,Jorge,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,codigo,AFP_COM_001,AFP_COM_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,concepto,María AFP comisión mixta = 0,María AFP comisión mixta = 0,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,importe,0.00,0.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001,9,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,codigo,AFP_PRI_001,AFP_PRI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,concepto,Ana AFP prima TOPEADA por RMA,Ana AFP prima TOPEADA por RMA,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,dni,40125836,40125836,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,importe,173.62,173.62,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001,10,trabajador,Ana,Ana,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,codigo,ONP_001,ONP_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,concepto,Miguel ONP,Miguel ONP,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,dni,41785296,41785296,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,importe,390.00,390.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,41785296|mensual|01/07/2026 a 31/07/2026|ONP_001,11,trabajador,Miguel,Miguel,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,codigo,SCTR_SAL_001,SCTR_SAL_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,concepto,Rosa SCTR Salud,Rosa SCTR Salud,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,dni,46321478,46321478,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,importe,5.46,5.46,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001,12,trabajador,Rosa,Rosa,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,codigo,ONP_001,ONP_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,concepto,Pedro ONP semanal,Pedro ONP semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,dni,42589631,42589631,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,importe,45.50,45.50,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Aportes,42589631|semanal|01/07/2026 a 07/07/2026|ONP_001,13,trabajador,Pedro,Pedro,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,asiento de la mensual de julio de Carlos,1,chequeo,asiento de la mensual de julio de Carlos,asiento de la mensual de julio de Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,asiento de la mensual de julio de Carlos,1,valor,existe,existe,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,descuadre (debe − haber),2,chequeo,descuadre (debe − haber),descuadre (debe − haber),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,descuadre (debe − haber),2,valor,0.00,0.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,total del debe,3,chequeo,total del debe,total del debe,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,total del debe,3,valor,4673.06,4673.06,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,líneas sin cuenta contable,4,chequeo,líneas sin cuenta contable,líneas sin cuenta contable,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,líneas sin cuenta contable,4,valor,0,0,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,cuentas ajenas a la compañía del caso,5,chequeo,cuentas ajenas a la compañía del caso,cuentas ajenas a la compañía del caso,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,cuentas ajenas a la compañía del caso,5,valor,0,0,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,boletas validadas sin asiento,6,chequeo,boletas validadas sin asiento,boletas validadas sin asiento,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Asiento,boletas validadas sin asiento,6,valor,0,0,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,codigo,RB_001,RB_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,concepto,Carlos RB mensual,Carlos RB mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,importe,3500.00,3500.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|RB_001,1,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,codigo,ASF_001,ASF_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,concepto,Carlos Asig. Familiar,Carlos Asig. Familiar,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,importe,113.00,113.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|ASF_001,2,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,concepto,Carlos NETO mensual,Carlos NETO mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,importe,3149.09,3149.09,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|mensual|01/07/2026 a 31/07/2026|NET,3,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,codigo,BONO_GRATI_001,BONO_GRATI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,concepto,Carlos gratificación (bono EPS 6.75%),Carlos gratificación (bono EPS 6.75%),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,dni,45781236,45781236,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,estructura,gratis,gratis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,importe,243.88,243.88,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,4,trabajador,Carlos,Carlos,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,concepto,Jorge NETO,Jorge NETO,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,dni,47852169,47852169,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,importe,983.10,983.10,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,47852169|mensual|01/07/2026 a 31/07/2026|NET,5,trabajador,Jorge,Jorge,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,codigo,R5TA_001,R5TA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,concepto,María Renta 5ta julio,María Renta 5ta julio,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,importe,269.40,269.40,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001,6,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,concepto,María NETO julio,María NETO julio,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,importe,6821.00,6821.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/07/2026 a 31/07/2026|NET,7,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,codigo,GRATI_001,GRATI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,concepto,María gratificación,María gratificación,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,estructura,gratis,gratis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,importe,8000.00,8000.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001,8,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,codigo,BONO_GRATI_001,BONO_GRATI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,concepto,María bono gratificación 9%,María bono gratificación 9%,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,estructura,gratis,gratis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,importe,720.00,720.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001,9,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,codigo,R5TA_001,R5TA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,concepto,María Renta 5ta agosto (con grati en acumulado),María Renta 5ta agosto (con grati en acumulado),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,dni,41236547,41236547,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,importe,377.16,377.16,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001,10,trabajador,María,María,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,codigo,R5TA_001,R5TA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,concepto,Ana Renta 5ta (2 tramos),Ana Renta 5ta (2 tramos),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,dni,40125836,40125836,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,importe,1267.25,1267.25,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001,11,trabajador,Ana,Ana,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,concepto,Ana NETO,Ana NETO,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,dni,40125836,40125836,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,importe,11838.63,11838.63,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,40125836|mensual|01/07/2026 a 31/07/2026|NET,12,trabajador,Ana,Ana,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,codigo,GRATI_001,GRATI_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,concepto,José gratificación MYPE (factor 0.5),José gratificación MYPE (factor 0.5),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,dni,44567123,44567123,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,estructura,gratis,gratis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,importe,750.00,750.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001,13,trabajador,José,José,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,codigo,ADEL_001,ADEL_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,concepto,Luis adelanto quincenal 40%,Luis adelanto quincenal 40%,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,dni,43698521,43698521,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,estructura,quincena,quincena,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,importe,1800.00,1800.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,periodo,01/07/2026 a 15/07/2026,01/07/2026 a 15/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001,14,trabajador,Luis,Luis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,codigo,DESC_ADEL_001,DESC_ADEL_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,concepto,Luis descuento de adelanto en mensual,Luis descuento de adelanto en mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,dni,43698521,43698521,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,importe,1800.00,1800.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001,15,trabajador,Luis,Luis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,concepto,Luis NETO mensual,Luis NETO mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,dni,43698521,43698521,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,importe,2112.30,2112.30,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,43698521|mensual|01/07/2026 a 31/07/2026|NET,16,trabajador,Luis,Luis,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,codigo,DJ_001,DJ_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,concepto,Miguel descuento judicial (20% del disponible),Miguel descuento judicial (20% del disponible),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,dni,41785296,41785296,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,importe,522.00,522.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|DJ_001,17,trabajador,Miguel,Miguel,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,concepto,Miguel NETO,Miguel NETO,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,dni,41785296,41785296,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,estructura,mensual,mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,importe,2088.00,2088.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,periodo,01/07/2026 a 31/07/2026,01/07/2026 a 31/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,41785296|mensual|01/07/2026 a 31/07/2026|NET,18,trabajador,Miguel,Miguel,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,codigo,RBS_002,RBS_002,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,concepto,Rosa RBS semana comercial,Rosa RBS semana comercial,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,dni,46321478,46321478,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,importe,420.00,420.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|RBS_002,19,trabajador,Rosa,Rosa,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,codigo,SIND_001,SIND_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,concepto,Rosa cuota sindical,Rosa cuota sindical,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,dni,46321478,46321478,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,importe,4.20,4.20,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|SIND_001,20,trabajador,Rosa,Rosa,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,concepto,Rosa NETO semanal,Rosa NETO semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,dni,46321478,46321478,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,importe,361.33,361.33,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,46321478|semanal|01/07/2026 a 07/07/2026|NET,21,trabajador,Rosa,Rosa,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,concepto,Pedro NETO semanal,Pedro NETO semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,dni,42589631,42589631,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,estructura,semanal,semanal,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,importe,304.50,304.50,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,periodo,01/07/2026 a 07/07/2026,01/07/2026 a 07/07/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,42589631|semanal|01/07/2026 a 07/07/2026|NET,22,trabajador,Pedro,Pedro,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,codigo,VAC_TRUNCA_001,VAC_TRUNCA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,concepto,Carmen vacaciones truncas 8/12,Carmen vacaciones truncas 8/12,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,dni,45896327,45896327,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,estructura,liquidacion,liquidacion,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,importe,1666.67,1666.67,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001,23,trabajador,Carmen,Carmen,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,codigo,GRATI_TRUNCA_001,GRATI_TRUNCA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,concepto,Carmen gratificación trunca 2/6,Carmen gratificación trunca 2/6,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,dni,45896327,45896327,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,estructura,liquidacion,liquidacion,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,importe,833.33,833.33,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001,24,trabajador,Carmen,Carmen,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,codigo,BONO_GRATI_TRUNCA_001,BONO_GRATI_TRUNCA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,concepto,Carmen bono s/ trunca 9%,Carmen bono s/ trunca 9%,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,dni,45896327,45896327,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,estructura,liquidacion,liquidacion,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,importe,75.00,75.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001,25,trabajador,Carmen,Carmen,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,codigo,CTS_TRUNCA_001,CTS_TRUNCA_001,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,concepto,Carmen CTS trunca 4/12 (sexto SIN bono),Carmen CTS trunca 4/12 (sexto SIN bono),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,dni,45896327,45896327,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,estructura,liquidacion,liquidacion,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,importe,972.22,972.22,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001,26,trabajador,Carmen,Carmen,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,codigo,NET,NET,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,concepto,Carmen NETO liquidación,Carmen NETO liquidación,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,dni,45896327,45896327,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,estructura,liquidacion,liquidacion,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,importe,3547.22,3547.22,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,periodo,01/08/2026 a 31/08/2026,01/08/2026 a 31/08/2026,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Boletas,45896327|liquidacion|01/08/2026 a 31/08/2026|NET,27,trabajador,Carmen,Carmen,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Estructuras salariales pobladas,1,chequeo,Estructuras salariales pobladas,Estructuras salariales pobladas,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Estructuras salariales pobladas,1,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,"Parámetros PE vigentes (UIT 2026 = 5,500)",2,chequeo,"Parámetros PE vigentes (UIT 2026 = 5,500)","Parámetros PE vigentes (UIT 2026 = 5,500)",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,"Parámetros PE vigentes (UIT 2026 = 5,500)",2,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Diario de salarios y cuenta predeterminada,3,chequeo,Diario de salarios y cuenta predeterminada,Diario de salarios y cuenta predeterminada,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Diario de salarios y cuenta predeterminada,3,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Cuentas contables asignadas a reglas clave,4,chequeo,Cuentas contables asignadas a reglas clave,Cuentas contables asignadas a reglas clave,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Cuentas contables asignadas a reglas clave,4,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Vacaciones PE como no-pagado en la mensual,5,chequeo,Vacaciones PE como no-pagado en la mensual,Vacaciones PE como no-pagado en la mensual,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Vacaciones PE como no-pagado en la mensual,5,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Plan de acumulación de vacaciones,6,chequeo,Plan de acumulación de vacaciones,Plan de acumulación de vacaciones,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Plan de acumulación de vacaciones,6,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Cuentas de las reglas en la compañía del caso,7,chequeo,Cuentas de las reglas en la compañía del caso,Cuentas de las reglas en la compañía del caso,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,Cuentas de las reglas en la compañía del caso,7,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),8,chequeo,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Configuración,RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7),8,estado,SI,SI,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,1 · empleados de la matriz en la compañía,1,cantidad,13,13,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,1 · empleados de la matriz en la compañía,1,etapa,1 · empleados de la matriz en la compañía,1 · empleados de la matriz en la compañía,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,2 · con régimen laboral y sistema pensionario,2,cantidad,13,13,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,2 · con régimen laboral y sistema pensionario,2,etapa,2 · con régimen laboral y sistema pensionario,2 · con régimen laboral y sistema pensionario,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,3 · boletas creadas,3,cantidad,36,36,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,3 · boletas creadas,3,etapa,3 · boletas creadas,3 · boletas creadas,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,4 · boletas validadas (done),4,cantidad,35,35,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,4 · boletas validadas (done),4,etapa,4 · boletas validadas (done),4 · boletas validadas (done),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,5 · boletas validadas con asiento,5,cantidad,35,35,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,5 · boletas validadas con asiento,5,etapa,5 · boletas validadas con asiento,5 · boletas validadas con asiento,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,6 · boletas en otra compañía,6,cantidad,0,0,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,6 · boletas en otra compañía,6,etapa,6 · boletas en otra compañía,6 · boletas en otra compañía,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,7 · deducciones de Carlos (categoría DED),7,cantidad,463.91,463.91,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,7 · deducciones de Carlos (categoría DED),7,etapa,7 · deducciones de Carlos (categoría DED),7 · deducciones de Carlos (categoría DED),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,8 · ausencias de vacaciones aprobadas,8,cantidad,2,2,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,8 · ausencias de vacaciones aprobadas,8,etapa,8 · ausencias de vacaciones aprobadas,8 · ausencias de vacaciones aprobadas,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,9 · motivo del corte de la generación,9,cantidad,ninguno,ninguno,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Diagnóstico,9 · motivo del corte de la generación,9,etapa,9 · motivo del corte de la generación,9 · motivo del corte de la generación,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|VAC_001 (boleta de vacaciones),1,concepto,VAC_001 (boleta de vacaciones),VAC_001 (boleta de vacaciones),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|VAC_001 (boleta de vacaciones),1,dni,42736514,42736514,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|VAC_001 (boleta de vacaciones),1,importe,3000.00,3000.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|VAC_001 (boleta de vacaciones),1,origen,"30 días de goce × 100,00","30 días de goce × 100,00",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|VAC_001 (boleta de vacaciones),1,trabajador,Nilda,Nilda,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|RB_001 (mensual de julio),2,concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|RB_001 (mensual de julio),2,dni,42736514,42736514,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|RB_001 (mensual de julio),2,importe,0.00,0.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|RB_001 (mensual de julio),2,origen,30 − 30 días comerciales de goce,30 − 30 días comerciales de goce,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|RB_001 (mensual de julio),2,trabajador,Nilda,Nilda,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|suma de las dos boletas,3,concepto,suma de las dos boletas,suma de las dos boletas,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|suma de las dos boletas,3,dni,42736514,42736514,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|suma de las dos boletas,3,importe,3000.00,3000.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|suma de las dos boletas,3,origen,"C-7: goce y mensual suman UN sueldo, no dos","C-7: goce y mensual suman UN sueldo, no dos",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,42736514|suma de las dos boletas,3,trabajador,Nilda,Nilda,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|VAC_001 (boleta de vacaciones),4,concepto,VAC_001 (boleta de vacaciones),VAC_001 (boleta de vacaciones),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|VAC_001 (boleta de vacaciones),4,dni,43815927,43815927,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|VAC_001 (boleta de vacaciones),4,importe,1500.00,1500.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|VAC_001 (boleta de vacaciones),4,origen,"15 × 100,00","15 × 100,00",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|VAC_001 (boleta de vacaciones),4,trabajador,Óscar,Óscar,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|RB_001 (mensual de julio),5,concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|RB_001 (mensual de julio),5,dni,43815927,43815927,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|RB_001 (mensual de julio),5,importe,1500.00,1500.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|RB_001 (mensual de julio),5,origen,"(30 − 15) × 100,00","(30 − 15) × 100,00",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|RB_001 (mensual de julio),5,trabajador,Óscar,Óscar,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|suma de las dos boletas,6,concepto,suma de las dos boletas,suma de las dos boletas,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|suma de las dos boletas,6,dni,43815927,43815927,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|suma de las dos boletas,6,importe,3000.00,3000.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|suma de las dos boletas,6,origen,"C-7: goce y mensual suman UN sueldo, no dos","C-7: goce y mensual suman UN sueldo, no dos",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,43815927|suma de las dos boletas,6,trabajador,Óscar,Óscar,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),7,concepto,DESC_ADEL_001 (mensual de julio),DESC_ADEL_001 (mensual de julio),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),7,dni,44927358,44927358,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),7,importe,0.00,0.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),7,origen,el adelanto está en borrador: nada que recuperar,el adelanto está en borrador: nada que recuperar,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|DESC_ADEL_001 (mensual de julio),7,trabajador,Teresa,Teresa,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|RB_001 (mensual de julio),8,concepto,RB_001 (mensual de julio),RB_001 (mensual de julio),ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|RB_001 (mensual de julio),8,dni,44927358,44927358,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|RB_001 (mensual de julio),8,importe,4500.00,4500.00,ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|RB_001 (mensual de julio),8,origen,"mes completo, 4500/30 × 30","mes completo, 4500/30 × 30",ok
+NOMINA · 2026-10-13 15:00:05 · CONFORME,"NOMINA — Nómina peruana — planilla, aportes y asiento",Vacaciones,44927358|RB_001 (mensual de julio),8,trabajador,Teresa,Teresa,ok

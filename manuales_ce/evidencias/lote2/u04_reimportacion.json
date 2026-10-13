@@ -1,0 +1,68 @@
+{
+ "csv": "id,Motivo de baja\n__export__.hr_version_11_25943bb3,[01] RENUNCIA\n__export__.hr_version_76_2ce5dbce,[01] RENUNCIA\n__export__.hr_version_27_13d5bf50,\n",
+ "resultado": {
+  "dryrun": {
+   "ids": [
+    11,
+    76,
+    27
+   ],
+   "messages": [],
+   "nextrow": 0,
+   "name": []
+  },
+  "import": {
+   "ids": [
+    11,
+    76,
+    27
+   ],
+   "messages": [],
+   "nextrow": 0,
+   "name": []
+  }
+ },
+ "antes": [
+  {
+   "id": 11,
+   "reason_low_id": [
+    1,
+    "[01] RENUNCIA"
+   ],
+   "write_date": "2026-08-31 23:18:20"
+  },
+  {
+   "id": 76,
+   "reason_low_id": [
+    1,
+    "[01] RENUNCIA"
+   ],
+   "write_date": "2026-10-13 14:59:51"
+  },
+  {
+   "id": 27,
+   "reason_low_id": false,
+   "write_date": "2026-10-12 23:17:53"
+  }
+ ],
+ "despues": [
+  {
+   "id": 11,
+   "reason_low_id": [
+    1,
+    "[01] RENUNCIA"
+   ]
+  },
+  {
+   "id": 76,
+   "reason_low_id": [
+    1,
+    "[01] RENUNCIA"
+   ]
+  },
+  {
+   "id": 27,
+   "reason_low_id": false
+  }
+ ]
+}

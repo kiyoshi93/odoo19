@@ -1,0 +1,330 @@
+{
+ "u01_eps": {
+  "columnas": [
+   "Entidad",
+   "N° de póliza",
+   "Fecha de inicio",
+   "Fecha de finalización",
+   "Tasa empleador",
+   "Tasa trabajador",
+   "N.° de empleados"
+  ],
+  "filas": [
+   "\tPACIFICO EPS (DEMO)\t\t1 ene. 2025\t31 dic.\t0.05\t0.02\t0\t"
+  ]
+ },
+ "u01_vida_ley": {
+  "columnas": [
+   "Entidad",
+   "N° Póliza",
+   "Fecha inicio vigencia",
+   "Fecha fin vigencia",
+   "Tasa",
+   "N.° de empleados"
+  ],
+  "vacia": true
+ },
+ "u01_ficha": {
+  "pestana": "Nómina PE",
+  "valor": "PACIFICO EPS (DEMO)"
+ },
+ "u02": {
+  "facetas": [
+   "Empleado"
+  ],
+  "grupos": 15,
+  "columnas": [
+   "Empleado",
+   "Fecha efectiva",
+   "Inicio",
+   "Fin",
+   "Estructura salarial",
+   "Régimen Laboral",
+   "Nota",
+   "Salario",
+   "Tipo de contrato",
+   "Puesto",
+   "Departamento",
+   "Horas laborables"
+  ],
+  "columnas_abierto": [
+   "Empleado",
+   "Fecha efectiva",
+   "Inicio",
+   "Fin",
+   "Estructura salarial",
+   "Régimen Laboral",
+   "Nota",
+   "Salario",
+   "Tipo de contrato",
+   "Puesto",
+   "Departamento",
+   "Horas laborables"
+  ],
+  "opcionales": [
+   "Estructura salarial",
+   "Estructura salarial",
+   "Régimen Laboral",
+   "Régimen Laboral",
+   "Nota",
+   "Nota",
+   "Salario",
+   "Salario",
+   "Tipo de contrato",
+   "Tipo de contrato",
+   "Tipo de estructura salarial",
+   "Tipo de estructura salarial",
+   "Puesto",
+   "Puesto",
+   "Departamento",
+   "Departamento",
+   "Responsable de RR. HH.",
+   "Responsable de RR. HH.",
+   "Horas laborables",
+   "Horas laborables",
+   "Empresa",
+   "Empresa",
+   "Creado por",
+   "Creado por",
+   "Creado el",
+   "Creado el",
+   "Última modificación de",
+   "Última modificación de",
+   "Última modificación el",
+   "Última modificación el"
+  ]
+ },
+ "u03": {
+  "facetas": [
+   "Estructuras peruanas",
+   "Estructura"
+  ],
+  "grupos": 8,
+  "reglas": 127,
+  "detalle": [
+   "Reglas Básicas (30)\n\t\t",
+   "Nómina Mensual Empleados (29)\n\t\t",
+   "Nómina Semanal Obreros (29)\n\t\t",
+   "Nómina Quincenal / Adelanto (3)\n\t\t",
+   "Gratificaciones (5)\n\t\t",
+   "CTS (3)\n\t\t",
+   "Vacaciones (21)\n\t\t",
+   "Liquidación (7)\n\t\t"
+  ],
+  "sin_filtro": {
+   "grupos": 9,
+   "reglas": 130,
+   "detalle": [
+    "Reglas Básicas (30)\n\t\t",
+    "Nómina Mensual Empleados (29)\n\t\t",
+    "Nómina Semanal Obreros (29)\n\t\t",
+    "Nómina Quincenal / Adelanto (3)\n\t\t",
+    "Gratificaciones (5)\n\t\t",
+    "CTS (3)\n\t\t",
+    "Vacaciones (21)\n\t\t",
+    "Liquidación (7)\n\t\t",
+    "Ninguno (3)\n\t\t"
+   ]
+  }
+ },
+ "u07": {
+  "beneficios_india": false
+ },
+ "u06_contrato": {
+  "etiquetas": [
+   "Empresa",
+   "Puesto",
+   "Estructura salarial",
+   "Categoría de empleado?",
+   "Departamento",
+   "Responsable de RR. HH.?",
+   "Cuenta analítica",
+   "Diario de planillas",
+   "Salario?",
+   "Tipo de contrato",
+   "Categoría del pago",
+   "Horas laborables?",
+   "Periodicidad de pago?",
+   "Régimen Laboral?",
+   "Condición laboral",
+   "Ocupación de trabajo",
+   "Tipo de contrato (MINTRA)",
+   "Situación especial",
+   "Motivo de baja",
+   "Tipo de pago",
+   "Remuneración variable",
+   "Porcentaje de adelanto?",
+   "Jornada de trabajo máxima",
+   "Jornada atípica o acumulativa",
+   "Trabajo en horario nocturno?",
+   "Sindicalizado",
+   "¿Es practicante??",
+   "Remuneración en especie",
+   "No mostrar horas extras en boleta"
+  ],
+  "ingles": []
+ },
+ "u05": {
+  "miga": "Mapeo contable PCGE\nRB_001 → 6211 / 4111",
+  "t12": {
+   "columnas": [
+    "Código",
+    "Descripción"
+   ],
+   "filas": 0
+  }
+ },
+ "u06_boleta": {
+  "botones": [
+   "Rectificar",
+   "Cancelar nómina",
+   "Enviar por correo"
+  ],
+  "rectificativa_visible": "Días trabajados y entradas"
+ },
+ "u06_lote": {
+  "botones": []
+ },
+ "u09": {
+  "nomina_pe": [
+   "Parámetros de Nómina PE",
+   "Maestros SUNAT",
+   "Sistemas pensionarios (T11)",
+   "Regímenes laborales (T33)",
+   "Tipos de trabajador (T8)",
+   "Contratos MINTRA (T12)",
+   "Ocupaciones (T30)",
+   "Motivos de baja (T17)",
+   "Situación educativa (T9)",
+   "Situaciones especiales (T35)",
+   "Vínculos familiares (T19)",
+   "Conceptos PLAME (T22)",
+   "Seguros y EPS",
+   "Planes EPS",
+   "Vida Ley",
+   "Planilla de sueldos",
+   "Pago masivo a bancos",
+   "PLAME (archivos PDT)",
+   "AFPnet (planilla previsional)",
+   "Reparto de utilidades",
+   "Contabilidad de nómina",
+   "Mapeo contable PCGE",
+   "Asignar cuentas contables",
+   "Datos de prueba (demo)"
+  ],
+  "configuracion": [
+   "Configuración",
+   "Estructuras salariales",
+   "Reglas salariales",
+   "Registros de contribución",
+   "Plantillas de ventaja de contrato"
+  ]
+ },
+ "u04": {
+  "pestana": null,
+  "valor": "[01] RENUNCIA",
+  "sugerencias_01": [
+   "[01] RENUNCIA",
+   "[01] RENUNCIA",
+   "Crear \"01\"",
+   "Crear \"01\"",
+   "Crear y editar...",
+   "Crear y editar...",
+   "Buscar más…",
+   "Buscar más…"
+  ],
+  "maestros": {
+   "T8": {
+    "columnas": [
+     "Código",
+     "Abreviatura",
+     "Tipo de Contrato"
+    ],
+    "primeras": [
+     "\t01\tA PLAZO INDET - D.LEG. 728\tA PLAZO INDETERMINADO - D.LEG. 728",
+     "\t02\tA TIEMPO PARCIAL\tA TIEMPO PARCIAL",
+     "\t03\tPOR INICIO O INCREM DE ACTIV\tPOR INICIO O INCREMENTO DE ACTIVIDAD"
+    ]
+   },
+   "T9": {
+    "columnas": [
+     "Código",
+     "Abreviatura",
+     "Descripción"
+    ],
+    "primeras": [
+     "\t01\tSIN EDUCACIÓN FORMAL\tSIN EDUCACIÓN FORMAL",
+     "\t02\tESPECIAL INCOMPLETA\tEDUCACIÓN ESPECIAL INCOMPLETA",
+     "\t03\tESPECIAL COMPLETA\tEDUCACIÓN ESPECIAL COMPLETA"
+    ]
+   },
+   "T17": {
+    "columnas": [
+     "Código",
+     "Abreviatura",
+     "Descripción"
+    ],
+    "primeras": [
+     "\t01\tRENUNCIA\tRENUNCIA",
+     "\t02\tRENUNCIA CON INCENTIVOS\tRENUNCIA CON INCENTIVOS",
+     "\t03\tDESPIDO O DESTITUCIÓN\tDESPIDO O DESTITUCIÓN"
+    ]
+   },
+   "T35": {
+    "columnas": [
+     "Código",
+     "Abreviatura",
+     "Descripción"
+    ],
+    "primeras": [
+     "\t0\tNINGUNA\tNINGUNA",
+     "\t1\tDIRECCIÓN - PRESENCIAL\tTRABAJADOR DE DIRECCIÓN – PRESENCIAL",
+     "\t2\tCONFIANZA - PRESENCIAL\tTRABAJADOR DE CONFIANZA - PRESENCIAL"
+    ]
+   },
+   "T19": {
+    "columnas": [
+     "Parentesco"
+    ],
+    "primeras": [
+     "\tCónyuge",
+     "\tPareja",
+     "\tHijo(a)"
+    ]
+   }
+  }
+ },
+ "u06_nueva": {
+  "mensual": {
+   "nombre": "Boleta de Lucía Fernanda Ramos Ticona – octubre 2026",
+   "estructura": "Nómina Mensual Empleados",
+   "dias": [
+    "Días laborados (100 %) WORK100 22.00 176.00 1 ene. 2025",
+    "Feriados GLOBAL -1.00 -8.00 1 ene. 2025"
+   ]
+  },
+  "gratificacion": {
+   "nombre": "Boleta de Gratificación de Lucía Fernanda Ramos Ticona – octubre 2026",
+   "dias": [
+    "Días laborados (100 %) WORK100 22.00 176.00 1 ene. 2025",
+    "Feriados GLOBAL -1.00 -8.00 1 ene. 2025"
+   ]
+  },
+  "url_final": "https://51.222.13.59.sslip.io/odoo/action-1005"
+ },
+ "u06_lote_nuevo": {
+  "botones": [
+   "Generar nóminas",
+   "Marcar como hecho",
+   "Cerrar"
+  ],
+  "estados": [
+   " ... ",
+   "Cerrar",
+   "Hecho",
+   "Borrador",
+   " ... ",
+   "Borrador"
+  ]
+ }
+}
