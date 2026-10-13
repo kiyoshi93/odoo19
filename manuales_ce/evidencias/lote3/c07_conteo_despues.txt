@@ -1,0 +1,7 @@
+{'estructura': 'Nómina Mensual Empleados', 'diario': 'Planillas'}
+boletas 100
+sin estructura DESPUES: 75 total 94
+[{'id': 27, 'journal_id': [13, 'Planillas']}]
+{'c07_alta': {'empleado_id': 95, 'url': 'https://51.222.13.59.sslip.io/odoo/employees/95', 'tipo': 'Régimen General', 'estructura': 'Nómina Mensual Empleados'}, 'c07_fecha_contrato': {'inicio': '1 oct.', 'tipo': 'Régimen General', 'estructura': 'Nómina Mensual Empleados'}, 'c06_boleta_sin_diario': {'estructura': 'Nómina Mensual Empleados', 'diario': 'Planillas'}} []
+[{'id': 95, 'structure_type_id': [6, 'Régimen General'], 'struct_id': [3, 'Nómina Mensual Empleados'], 'journal_id': False, 'contract_date_start': '2026-10-01'}]
+boletas 100 sin estructura 75 total 95

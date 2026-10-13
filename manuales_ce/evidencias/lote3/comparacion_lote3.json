@@ -1,0 +1,239 @@
+{
+ "lucia": [
+  {
+   "mes": "2025-01",
+   "id": 84,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-02",
+   "id": 85,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-03",
+   "id": 86,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-04",
+   "id": 88,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-05",
+   "id": 91,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-06",
+   "id": 94,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-07",
+   "id": 97,
+   "r5ta_esperado": 192.48,
+   "r5ta_medido": 192.48,
+   "net_esperado": 3824.52,
+   "net_medido": 3824.52,
+   "ok": true
+  },
+  {
+   "mes": "2025-08",
+   "id": 100,
+   "r5ta_esperado": 192.47,
+   "r5ta_medido": 192.47,
+   "net_esperado": 3824.53,
+   "net_medido": 3824.53,
+   "ok": true
+  },
+  {
+   "mes": "2025-09",
+   "id": 102,
+   "r5ta_esperado": 192.47,
+   "r5ta_medido": 192.47,
+   "net_esperado": 3824.53,
+   "net_medido": 3824.53,
+   "ok": true
+  },
+  {
+   "mes": "2025-10",
+   "id": 104,
+   "r5ta_esperado": 192.47,
+   "r5ta_medido": 192.47,
+   "net_esperado": 3824.53,
+   "net_medido": 3824.53,
+   "ok": true
+  },
+  {
+   "mes": "2025-11",
+   "id": 107,
+   "r5ta_esperado": 192.47,
+   "r5ta_medido": 192.47,
+   "net_esperado": 3824.53,
+   "net_medido": 3824.53,
+   "ok": true
+  },
+  {
+   "mes": "2025-12",
+   "id": 111,
+   "r5ta_esperado": 192.49,
+   "r5ta_medido": 192.49,
+   "net_esperado": 3824.51,
+   "net_medido": 3824.51,
+   "ok": true
+  },
+  {
+   "mes": "2026-01",
+   "id": 114,
+   "r5ta_esperado": 179.42,
+   "r5ta_medido": 179.42,
+   "net_esperado": 3837.58,
+   "net_medido": 3837.58,
+   "ok": true
+  },
+  {
+   "mes": "2026-02",
+   "id": 117,
+   "r5ta_esperado": 183.73,
+   "r5ta_medido": 183.73,
+   "net_esperado": 1873.97,
+   "net_medido": 1873.97,
+   "ok": true
+  },
+  {
+   "mes": "2026-03",
+   "id": 119,
+   "r5ta_esperado": 179.79,
+   "r5ta_medido": 179.79,
+   "net_esperado": 3837.21,
+   "net_medido": 3837.21,
+   "ok": true
+  },
+  {
+   "mes": "2026-04",
+   "id": 121,
+   "r5ta_esperado": 179.4,
+   "r5ta_medido": 179.4,
+   "net_esperado": 3837.6,
+   "net_medido": 3837.6,
+   "ok": true
+  },
+  {
+   "mes": "2026-05",
+   "id": 124,
+   "r5ta_esperado": 179.4,
+   "r5ta_medido": 179.4,
+   "net_esperado": 3837.6,
+   "net_medido": 3837.6,
+   "ok": true
+  },
+  {
+   "mes": "2026-06",
+   "id": 127,
+   "r5ta_esperado": 179.4,
+   "r5ta_medido": 179.4,
+   "net_esperado": 3837.6,
+   "net_medido": 3837.6,
+   "ok": true
+  },
+  {
+   "mes": "2026-07",
+   "id": 130,
+   "r5ta_esperado": 179.4,
+   "r5ta_medido": 179.4,
+   "net_esperado": 3837.6,
+   "net_medido": 3837.6,
+   "ok": true
+  },
+  {
+   "mes": "2026-08",
+   "id": 133,
+   "r5ta_esperado": 179.39,
+   "r5ta_medido": 179.39,
+   "net_esperado": 3837.61,
+   "net_medido": 3837.61,
+   "ok": true
+  },
+  {
+   "mes": "2026-09",
+   "id": 135,
+   "r5ta_esperado": 179.39,
+   "r5ta_medido": 179.39,
+   "net_esperado": 3837.61,
+   "net_medido": 3837.61,
+   "ok": true
+  },
+  {
+   "mes": "2026-10",
+   "id": 138,
+   "r5ta_esperado": 180.21,
+   "r5ta_medido": 180.21,
+   "net_esperado": 3845.49,
+   "net_medido": 3845.49,
+   "ok": true
+  },
+  {
+   "mes": "2026-11",
+   "id": 141,
+   "r5ta_esperado": 180.21,
+   "r5ta_medido": 180.21,
+   "net_esperado": 3845.49,
+   "net_medido": 3845.49,
+   "ok": true
+  },
+  {
+   "mes": "2026-12",
+   "id": 148,
+   "r5ta_esperado": 181.04,
+   "r5ta_medido": 181.04,
+   "net_esperado": 3844.66,
+   "net_medido": 3844.66,
+   "ok": true
+  }
+ ],
+ "hector_r5ta_no_cero": [],
+ "otras_diferencias": [
+  {
+   "boleta": 116,
+   "emp": 27,
+   "periodo": "2026-02",
+   "estructura": "VAC",
+   "linea": "ESSALUD_001",
+   "linea_base": 207.58499999999995,
+   "medido": 207.59,
+   "esperado(redondeo)": 207.58
+  }
+ ],
+ "solo_redondeo": 116,
+ "faltantes": [],
+ "lucia_sumas": {
+  "2025": 2309.73,
+  "2026": 2160.78
+ }
+}

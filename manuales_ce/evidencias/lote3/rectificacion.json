@@ -1,0 +1,267 @@
+{
+ "accion": {
+  "name": "Boleta rectificativa",
+  "domain": [
+   [
+    "id",
+    "in",
+    [
+     481
+    ]
+   ]
+  ]
+ },
+ "boleta": {
+  "id": 480,
+  "name": "Boleta de Prueba C07 Sintético Dos – octubre 2026",
+  "number": "SLIP/239",
+  "state": "done",
+  "credit_note": false,
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "journal_id": [
+   13,
+   "Planillas"
+  ],
+  "move_id": [
+   986,
+   "PLLA/2026/10/0001 (SLIP/239)"
+  ],
+  "company_id": [
+   1,
+   "FM SYSTEMS SOLUTIONS EIRL"
+  ]
+ },
+ "nota": {
+  "id": 481,
+  "name": "Rectificación: Boleta de Prueba C07 Sintético Dos – octubre 2026",
+  "number": "SLIP/240",
+  "state": "done",
+  "credit_note": true,
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "journal_id": [
+   13,
+   "Planillas"
+  ],
+  "move_id": [
+   987,
+   "PLLA/2026/10/0002 (SLIP/240)"
+  ],
+  "company_id": [
+   1,
+   "FM SYSTEMS SOLUTIONS EIRL"
+  ]
+ },
+ "lineas_boleta": [
+  [
+   "BASIC",
+   0.0
+  ],
+  [
+   "SD_001",
+   100.0
+  ],
+  [
+   "ISM_001",
+   1.0
+  ],
+  [
+   "RB_001",
+   3000.0
+  ],
+  [
+   "ASF_001",
+   0.0
+  ],
+  [
+   "HE25_001",
+   0.0
+  ],
+  [
+   "HE35_001",
+   0.0
+  ],
+  [
+   "MOV_001",
+   0.0
+  ],
+  [
+   "GROSS",
+   3000.0
+  ],
+  [
+   "BAR5_001",
+   3000.0
+  ],
+  [
+   "R5TA_001",
+   0.0
+  ],
+  [
+   "ESSALUD_001",
+   270.0
+  ],
+  [
+   "SENATI_001",
+   22.5
+  ],
+  [
+   "NET",
+   3000.0
+  ]
+ ],
+ "lineas_nota": [
+  [
+   "BASIC",
+   0.0
+  ],
+  [
+   "SD_001",
+   100.0
+  ],
+  [
+   "ISM_001",
+   1.0
+  ],
+  [
+   "RB_001",
+   3000.0
+  ],
+  [
+   "ASF_001",
+   0.0
+  ],
+  [
+   "HE25_001",
+   0.0
+  ],
+  [
+   "HE35_001",
+   0.0
+  ],
+  [
+   "MOV_001",
+   0.0
+  ],
+  [
+   "GROSS",
+   3000.0
+  ],
+  [
+   "BAR5_001",
+   3000.0
+  ],
+  [
+   "R5TA_001",
+   0.0
+  ],
+  [
+   "ESSALUD_001",
+   270.0
+  ],
+  [
+   "SENATI_001",
+   22.5
+  ],
+  [
+   "NET",
+   3000.0
+  ]
+ ],
+ "asiento_boleta": {
+  "id": 986,
+  "name": "PLLA/2026/10/0001",
+  "state": "posted",
+  "journal_id": [
+   13,
+   "Planillas"
+  ],
+  "date": "2026-10-31",
+  "lineas": [
+   [
+    "4031000 Instituciones públicas - ESSALUD",
+    0.0,
+    270.0
+   ],
+   [
+    "4033000 Instituciones públicas - Contribución al SENATI",
+    0.0,
+    22.5
+   ],
+   [
+    "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar",
+    0.0,
+    3000.0
+   ],
+   [
+    "6211000 Remuneraciones - Sueldos y salarios",
+    3000.0,
+    0.0
+   ],
+   [
+    "6271000 Seguridad, previsión social y otras contribuciones - Régimen de prestaciones de salud",
+    270.0,
+    0.0
+   ],
+   [
+    "6277000 Seguridad, previsión social y otras contribuciones - Contribuciones al SENATI",
+    22.5,
+    0.0
+   ]
+  ]
+ },
+ "asiento_nota": {
+  "id": 987,
+  "name": "PLLA/2026/10/0002",
+  "state": "posted",
+  "journal_id": [
+   13,
+   "Planillas"
+  ],
+  "date": "2026-10-31",
+  "lineas": [
+   [
+    "4031000 Instituciones públicas - ESSALUD",
+    270.0,
+    0.0
+   ],
+   [
+    "4033000 Instituciones públicas - Contribución al SENATI",
+    22.5,
+    0.0
+   ],
+   [
+    "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar",
+    3000.0,
+    0.0
+   ],
+   [
+    "6211000 Remuneraciones - Sueldos y salarios",
+    0.0,
+    3000.0
+   ],
+   [
+    "6271000 Seguridad, previsión social y otras contribuciones - Régimen de prestaciones de salud",
+    0.0,
+    270.0
+   ],
+   [
+    "6277000 Seguridad, previsión social y otras contribuciones - Contribuciones al SENATI",
+    0.0,
+    22.5
+   ]
+  ]
+ },
+ "mismas_lineas": true,
+ "asiento_espejo": true,
+ "tras_cancelar": [
+  "cancel",
+  "cancel",
+  0
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "c07_alta": {
+  "empleado_id": 95,
+  "url": "https://51.222.13.59.sslip.io/odoo/employees/95",
+  "tipo": "Régimen General",
+  "estructura": "Nómina Mensual Empleados"
+ },
+ "c07_fecha_contrato": {
+  "inicio": "1 oct.",
+  "tipo": "Régimen General",
+  "estructura": "Nómina Mensual Empleados"
+ },
+ "c06_boleta_sin_diario": {
+  "estructura": "Nómina Mensual Empleados",
+  "diario": "Planillas"
+ }
+}

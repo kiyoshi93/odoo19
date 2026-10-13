@@ -1,0 +1,71 @@
+{
+ "c07_alta": {
+  "empleado_id": 94,
+  "url": "https://51.222.13.59.sslip.io/odoo/employees/94",
+  "tipo": "Régimen General",
+  "estructura": "Nómina Mensual Empleados",
+  "version_id": 94
+ },
+ "c07_semanal": {
+  "en_pantalla": "Nómina Semanal Obreros",
+  "tras_guardar": "Nómina Semanal Obreros"
+ },
+ "c07_quincenal": {
+  "en_pantalla": "Nómina Mensual Empleados",
+  "tras_guardar": "Nómina Mensual Empleados"
+ },
+ "c07_boleta": {
+  "nombre": "Boleta de Prueba C07 Sintético Uno – octubre 2026",
+  "estructura": "Nómina Mensual Empleados",
+  "dias": [
+   "Días laborados (100 %) WORK100 22.00 176.00 1 oct. 2026",
+   "Feriados GLOBAL -1.00 -8.00 1 oct. 2026"
+  ]
+ },
+ "c06_boleta": {
+  "diario": "Operaciones misceláneas"
+ },
+ "c07_vac": {
+  "antes_fechas": {
+   "estructura": "Vacaciones",
+   "nombre": "Boleta de Vacaciones de Prueba C07 Sintético Uno – octubre 2026"
+  },
+  "tras_fechas": {
+   "estructura": "Vacaciones",
+   "nombre": "Boleta de Vacaciones de Prueba C07 Sintético Uno – octubre 2026",
+   "dias": [
+    "Días laborados (100 %) WORK100 11.00 88.00 1 oct. 2026"
+   ]
+  },
+  "diario": "Operaciones misceláneas"
+ },
+ "c06_lote": {
+  "diario": "Planillas"
+ },
+ "c06_contrato": {
+  "diario_contrato": "Operaciones misceláneas",
+  "diario_boleta": "Operaciones misceláneas"
+ },
+ "o1_t8": [
+  "Código",
+  "Abreviatura",
+  "Descripción"
+ ],
+ "o2_lote": "Cerrado\nHecho\nBorrador",
+ "o3_menu": [
+  "Configuración",
+  "Estructuras salariales",
+  "Reglas salariales",
+  "Registros de contribución",
+  "Plantillas de beneficios del contrato"
+ ],
+ "c07_fecha_contrato": {
+  "inicio": "1 oct.",
+  "tipo": "Quincenal - Adelanto",
+  "estructura": "Nómina Mensual Empleados"
+ },
+ "c06_boleta_sin_diario": {
+  "estructura": "Nómina Mensual Empleados",
+  "diario": "Planillas"
+ }
+}
