@@ -1,6 +1,6 @@
 # Re-medición del lote 4 de nómina CE — contable19
 
-- **Fecha:** 2026-10-14, de 16:33 a 17:10 (hora del servidor, UTC).
+- **Fecha:** 2026-10-14, de 16:33 a 16:47 (hora del servidor, UTC).
 - **Alcance:** solo medición. No se instaló nada ni se cambió código ni la biblia.
 - **Despliegue medido:** el de Gabriel (`-u` 16:29–16:30).
 - **Pruebas:** solo con trabajadores de prueba sintéticos, nunca con Lucía ni Héctor. Todo se deshizo al terminar (ver «Limpieza»).
