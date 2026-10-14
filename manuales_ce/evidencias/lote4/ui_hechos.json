@@ -1,0 +1,131 @@
+{
+ "v03_lista_boletas": [],
+ "v03_lista_lotes": [],
+ "v03_boleta": [
+  "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE."
+ ],
+ "o7_emergente": "Prueba L4 O7 Sintético no tiene contrato vigente entre el 01/10/2026 y el 31/10/2026: la boleta no tendrá contrato, estructura ni días trabajados. Registre la fecha de inicio del contrato en su ficha (pestaña Nómina) o revise las fechas de la boleta.",
+ "o7_banda_nueva": [
+  "Prueba L4 O7 Sintético no tiene contrato vigente entre el 01/10/2026 y el 31/10/2026: la boleta no tendrá contrato, estructura ni días trabajados. Registre la fecha de inicio del contrato en su ficha (pestaña Nómina) o revise las fechas de la boleta."
+ ],
+ "o7_banda_guardada": [
+  "Prueba L4 O7 Sintético no tiene contrato vigente entre el 01/10/2026 y el 31/10/2026: la boleta no tendrá contrato, estructura ni días trabajados. Registre la fecha de inicio del contrato en su ficha (pestaña Nómina) o revise las fechas de la boleta."
+ ],
+ "o8_banda": [
+  "El trabajador Prueba C07 Sintético Dos no tiene sistema pensionario (ONP o AFP): la boleta no calculará aportes de pensión. Regístrelo en su ficha (Nómina PE › Sistema pensionario) o marque «No aporta pensión» si corresponde."
+ ],
+ "o8_validada_historial": [
+  "Administrator 11:36 a. m. Validada con avisos: El trabajador Prueba C07 Sintético Dos no tiene sistema pensionario (ONP o AFP): la boleta no calculará aportes de pensión. Regístrelo en su ficha (Nómina PE › Sistema pensionario) o marque «No aporta pensión» si corresponde.",
+  "Administrator 11:36 a. m. Nómina creado"
+ ],
+ "dic_banda": [
+  "La boleta de Gratificaciones del 01/12/2026 al 31/12/2026 (Boleta de Prueba L4 Dic Sintético – diciembre 2026) está en borrador: valídela ANTES que esta boleta. En diciembre la renta de 5.ª ya no se corrige en otro mes."
+ ],
+ "controles": "CONTROLES AL VALIDAR LA BOLETA Gratificación y vacaciones de diciembre antes que la mensual? Trabajador sin sistema pensionario?",
+ "senati_visible": false,
+ "dic_banda_tras_validar_grat": [],
+ "u10_desplegable": [
+  "Régimen General",
+  "Obreros - Semanal",
+  "Quincenal - Adelanto",
+  "Beneficios Sociales",
+  "General",
+  "Empleado (genérico, sin planilla PE)",
+  "Obrero (genérico, sin planilla PE)",
+  "Buscar más…"
+ ],
+ "u10_buscar_mas": [
+  "Régimen General",
+  "Obreros - Semanal",
+  "Quincenal - Adelanto",
+  "Beneficios Sociales",
+  "General",
+  "Empleado (genérico, sin planilla PE)",
+  "Obrero (genérico, sin planilla PE)"
+ ],
+ "q01": {
+  "resultados": {
+   "Generar empleados": "Los datos de prueba de nómina solo se cargan en compañías del laboratorio (marca «Compañía de demostración») o en una compañía sin RUC y sin asientos. «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: cambie a una compañía del laboratorio.",
+   "Escenario": "Los datos de prueba de nómina solo se cargan en compañías del laboratorio (marca «Compañía de demostración») o en una compañía sin RUC y sin asientos. «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: cambie a una compañía del laboratorio.",
+   "Liquidación": "Los datos de prueba de nómina solo se cargan en compañías del laboratorio (marca «Compañía de demostración») o en una compañía sin RUC y sin asientos. «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: cambie a una compañía del laboratorio.",
+   "Reiniciar boletas": "Los datos de prueba de nómina solo se cargan en compañías del laboratorio (marca «Compañía de demostración») o en una compañía sin RUC y sin asientos. «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: cambie a una compañía del laboratorio. (tras aceptar la confirmación «Se cancelarán y eliminarán TODAS las boletas…»)",
+   "Devengar vacaciones": "Los datos de prueba de nómina solo se cargan en compañías del laboratorio (marca «Compañía de demostración») o en una compañía sin RUC y sin asientos. «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: cambie a una compañía del laboratorio.",
+   "Validar": "sin error: ⛔ HAY FALLAS — RESULTADO: 5 correctas · 1 con falla · 41 sin datos == CONFIGURACIÓN == ✔ Estructuras salariales pobladas ✔ Parámetros PE vigentes (UIT 2026 = 5,500) ✔ Diario de salarios y cuenta predeterminada ✔ Cuentas contables asignadas a reglas clave ✔ Vacaciones PE como no-pagado en la mensual ✘ Plan de acumulación de vacaciones — plan sin asignaciones == CÁLCULOS (matriz de esperados) == • Carlos RB mensual — SIN BOLETA (generar con botones 2/3) • Carlos Asig. Familiar — SIN BOLETA (generar con botones 2/3) • Carlos AFP aporte — SIN BOLETA (generar con botones 2/3) • Carlos AFP comisión "
+  },
+  "botones": [
+   "1. Sembrar empleados",
+   "2. Escenario demo (accrual + boletas julio)",
+   "3. Escenario de cese (liquidación)",
+   "4. Validación interna (banderas)",
+   "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+   "6. Devengar vacaciones a hoy (saldos en Balance)"
+  ]
+ },
+ "q02_menus": [
+  "Payroll/Nómina PE/Maestros SUNAT/Tipos de contrato (T12) | ir.actions.act_window,1027"
+ ],
+ "q02_lista": {
+  "columnas": [
+   "Código",
+   "Abreviatura",
+   "Descripción"
+  ],
+  "filas": 25,
+  "pie": "1-25 / 25"
+ },
+ "q02_filtro": "Desactivados",
+ "q02_desactivados": [
+  "20 AGRARIO - LEY 27360 AGRARIO - LEY 27360"
+ ],
+ "q02_contrato_etiqueta": [
+  "Tipo de contrato",
+  "Tipo de contrato (T12)?"
+ ],
+ "u08": {
+  "url": "https://51.222.13.59.sslip.io/odoo/action-1016/8",
+  "nueva": {
+   "filas": [
+    "Habitat 1.4700",
+    "Integra 1.5500",
+    "Prima 1.6000",
+    "Profuturo 1.6900"
+   ],
+   "texto": "{'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169}",
+   "cuerpo": "Nueva vigencia de AFP - Comisión sobre flujo por administradora Parámetro AFP - Comisión sobre flujo por administradora Tipo de valor? Comisión por AFP (diccionario) Vigente desde 14 oct. Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Se crea una vigencia nueva; las anteriores se conservan y los recálculos de periodos pasados siguen usándolas. Concepto Tasa (%) Habitat 1.4700 Integra 1.5500 Prima 1.6000 Profuturo 1.6900 Texto que se guardará {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169} Guardar vigencia Cancelar"
+  },
+  "tras_137": {
+   "filas": [
+    "Habitat 1.3700",
+    "Integra",
+    "Prima 1.6000",
+    "Profuturo 1.6900"
+   ],
+   "texto": "{'habitat': 0.0137, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169}",
+   "cuerpo": "Nueva vigencia de AFP - Comisión sobre flujo por administradora Parámetro AFP - Comisión sobre flujo por administradora Tipo de valor? Comisión por AFP (diccionario) Vigente desde 14 oct. Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Se crea una vigencia nueva; las anteriores se conservan y los recálculos de periodos pasados siguen usándolas. Concepto Tasa (%) Habitat 1.3700 Integra Prima 1.6000 Profuturo 1.6900 Texto que se guardará {'habitat': 0.0137, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169} Guardar vigencia Cancelar"
+  },
+  "vigencias_tras_cancelar": [
+   "1 ene. {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla",
+   "1 ene. 2025 {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla"
+  ],
+  "botones_editar": 2,
+  "editar": "Corregir vigencia de AFP - Comisión sobre flujo por administradora Parámetro AFP - Comisión sobre flujo por administradora Tipo de valor? Comisión por AFP (diccionario) Vigente desde 1 ene. 2025 Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Concepto Tasa (%) Habitat 1.4700 Integra 1.5500 Prima 1.6000 Profuturo 1.6900 Texto que se guardará {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169} Guardar vigencia Cancelar",
+  "vigencias_final": [
+   "1 ene. {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla",
+   "1 ene. 2025 {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla"
+  ],
+  "tramos": {
+   "columnas": [
+    "Hasta (UIT)",
+    "Tasa (%)"
+   ],
+   "filas": [
+    "5.00 8.0000",
+    "20.00 14.0000",
+    "35.00 17.0000",
+    "45.00 20.0000",
+    "0.00 30.0000"
+   ],
+   "agregar": 1
+  }
+ }
+}

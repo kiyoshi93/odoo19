@@ -1,0 +1,66 @@
+{
+ "Prueba L4 V02 Sintético": {
+  "empleado": 109,
+  "version": 109,
+  "contract_date_start": "2024-01-01",
+  "structure_type_id": [
+   6,
+   "Régimen General"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "journal_id": false,
+  "wage": 2000.0
+ },
+ "Prueba L4 Dic Sintético": {
+  "empleado": 110,
+  "version": 110,
+  "contract_date_start": "2026-01-01",
+  "structure_type_id": [
+   6,
+   "Régimen General"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "journal_id": false,
+  "wage": 2000.0
+ },
+ "Prueba L4 O7 Sintético": {
+  "empleado": 111,
+  "version": 111,
+  "contract_date_start": false,
+  "structure_type_id": [
+   6,
+   "Régimen General"
+  ],
+  "struct_id": [
+   3,
+   "Nómina Mensual Empleados"
+  ],
+  "journal_id": false,
+  "wage": 0.0
+ },
+ "Prueba C07 Sintético Dos": {
+  "empleado": 95,
+  "version": 95,
+  "nota": "del lote 3, sin sistema pensionario"
+ },
+ "boletas": [
+  522,
+  523,
+  524,
+  525,
+  526,
+  527,
+  528,
+  529,
+  530
+ ],
+ "lotes": [
+  2
+ ]
+}

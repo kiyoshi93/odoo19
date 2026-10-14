@@ -1,0 +1,16 @@
+{
+ "v03_alertas_hoy": [],
+ "v03_boleta_ene2027": {
+  "id": 522,
+  "avisos": "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE."
+ },
+ "v02": {
+  "id": 523,
+  "mensaje": "Falta registrar «AFP - Aporte obligatorio al fondo» (pe_afp_aporte) vigente al 31/07/2024 (la primera vigencia registrada es desde el 01/01/2025). Regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Boleta: Prueba L4 V02 Sintético (Boleta de Prueba L4 V02 Sintético – julio 2024), regla AFP - Aporte obligatorio (AFP_APO_001)."
+ },
+ "o7": {
+  "id": 524,
+  "warning_onchange": null,
+  "avisos": "Prueba L4 O7 Sintético no tiene contrato vigente entre el 01/10/2026 y el 31/10/2026: la boleta no tendrá contrato, estructura ni días trabajados. Registre la fecha de inicio del contrato en su ficha (pestaña Nómina) o revise las fechas de la boleta."
+ }
+}

@@ -1,0 +1,24 @@
+== PLAME-RXH
+limpiar OK
+sembrar OK
+generar OK
+comparar OK
+{"id": 4, "estado": "comparado", "conforme": true, "porcentaje": 100.0, "ultima_comparacion_id": [23, "PLAME-RXH · 2026-10-14 16:34:03 · CONFORME"]}
+== PLAME
+limpiar OK
+sembrar OK
+generar OK
+comparar OK
+{"id": 3, "estado": "comparado", "conforme": true, "porcentaje": 100.0, "ultima_comparacion_id": [24, "PLAME · 2026-10-14 16:34:07 · CONFORME"]}
+== ASISTENCIA
+limpiar OK
+sembrar OK
+generar OK
+comparar OK
+{"id": 1, "estado": "comparado", "conforme": true, "porcentaje": 100.0, "ultima_comparacion_id": [25, "ASISTENCIA · 2026-10-14 16:34:12 · CONFORME"]}
+== NOMINA
+limpiar OK
+sembrar OK
+generar OK
+comparar OK
+{"id": 2, "estado": "comparado", "conforme": true, "porcentaje": 100.0, "ultima_comparacion_id": [26, "NOMINA · 2026-10-14 16:34:32 · CONFORME"]}

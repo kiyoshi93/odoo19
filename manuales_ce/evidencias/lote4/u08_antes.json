@@ -1,0 +1,57 @@
+{
+ "parametros": [
+  {
+   "id": 8,
+   "name": "AFP - Comisión sobre flujo por administradora",
+   "code": "pe_afp_comision_flujo",
+   "parameter_version_ids": [
+    9,
+    27
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Renta 5ta - Tramos progresivos (límite en UIT, tasa)",
+   "code": "pe_renta5_tramos",
+   "parameter_version_ids": [
+    13
+   ]
+  }
+ ],
+ "menu": [
+  {
+   "id": 655,
+   "complete_name": "Nómina/Nómina PE/Datos de prueba (demo)",
+   "action": "ir.actions.act_window,1044"
+  }
+ ],
+ "vigencias_antes": [
+  {
+   "id": 9,
+   "rule_parameter_id": [
+    8,
+    "AFP - Comisión sobre flujo por administradora"
+   ],
+   "date_from": "2026-01-01",
+   "parameter_value": "{'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169}"
+  },
+  {
+   "id": 27,
+   "rule_parameter_id": [
+    8,
+    "AFP - Comisión sobre flujo por administradora"
+   ],
+   "date_from": "2025-01-01",
+   "parameter_value": "{'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169}"
+  },
+  {
+   "id": 13,
+   "rule_parameter_id": [
+    12,
+    "Renta 5ta - Tramos progresivos (límite en UIT, tasa)"
+   ],
+   "date_from": "2025-01-01",
+   "parameter_value": "[(5, 0.08), (20, 0.14), (35, 0.17), (45, 0.20), (None, 0.30)]"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+antes [(522, 'Prueba L4 Dic Sintétic', 'draft', False), (523, 'Prueba L4 V02 Sintétic', 'draft', False), (524, 'Prueba L4 O7 Sintético', 'draft', False), (525, 'Prueba C07 Sintético D', 'done', True), (526, 'Prueba C07 Sintético D', 'draft', False), (527, 'Prueba L4 Dic Sintétic', 'done', True), (528, 'Prueba L4 Dic Sintétic', 'draft', False), (529, 'Prueba L4 V02 Sintétic', 'done', True), (530, 'Prueba L4 Dic Sintétic', 'done', True)]
+asientos que quedan 0
+lote borrado 2
+boletas restantes de prueba 0
+empleados archivados [{'id': 109, 'name': 'Prueba L4 V02 Sintético', 'active': False}, {'id': 110, 'name': 'Prueba L4 Dic Sintético', 'active': False}, {'id': 111, 'name': 'Prueba L4 O7 Sintético', 'active': False}]
+controles [{'id': 1, 'pe_control_orden_diciembre': 'aviso', 'pe_control_sistema_pensionario': 'aviso'}]
+sueldo T1 [{'id': 109, 'wage': 2000.0}]
+total boletas 102 lotes 1
