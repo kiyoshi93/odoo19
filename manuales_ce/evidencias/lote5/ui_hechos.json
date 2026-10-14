@@ -1,0 +1,53 @@
+{
+ "v05_antes": [
+  "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Faltan los días festivos de 2027: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE."
+ ],
+ "v05_despues": [
+  "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE."
+ ],
+ "o14_fm": {
+  "botones": [
+   "4. Validación interna (banderas)",
+   "Cerrar"
+  ],
+  "bandas": [
+   "«FM SYSTEMS SOLUTIONS EIRL» es una compañía real: los datos de prueba solo se cargan en compañías del laboratorio (o en la de una base nueva). «4. Validación interna» revisa aquí solo la configuración de la nómina."
+  ]
+ },
+ "o16_fm": "Datos de prueba - Nómina PE «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: los datos de prueba solo se cargan en compañías del laboratorio (o en la de una base nueva). «4. Validación interna» revisa aquí solo la configuración de la nómina. ℹ «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: la matriz de prueba y el asiento de referencia de la demo NO APLICAN aquí. Configuración de la nómina: 5 correctas · 0 con falla. == CONFIGURACIÓN == ✔ Estructuras salariales pobladas ✔ Parámetros PE vigentes (UIT 2026 = 5,500) ✔ Diario de salarios y cuenta predeterminada ✔ Cuentas contables asignadas a reglas clave ✔ Vacaciones PE como no-pagado en la mensual 4. Validación interna (banderas) Cerrar",
+ "o14_demo": {
+  "botones": [
+   "1. Sembrar empleados",
+   "2. Escenario demo (accrual + boletas julio)",
+   "3. Escenario de cese (liquidación)",
+   "4. Validación interna (banderas)",
+   "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+   "6. Devengar vacaciones a hoy (saldos en Balance)",
+   "Cerrar"
+  ],
+  "bandas": []
+ },
+ "o15": [
+  "Régimen General",
+  "Obreros - Semanal",
+  "Quincenal - Adelanto",
+  "Beneficios Sociales",
+  "General (reglas base, sin planilla PE)",
+  "Empleado (genérico, sin planilla PE)",
+  "Obrero (genérico, sin planilla PE)",
+  "Buscar más…"
+ ],
+ "q01_rev": {
+  "botones_con_4_y_1": [
+   "1. Sembrar empleados",
+   "2. Escenario demo (accrual + boletas julio)",
+   "3. Escenario de cese (liquidación)",
+   "4. Validación interna (banderas)",
+   "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+   "6. Devengar vacaciones a hoy (saldos en Balance)",
+   "Cerrar"
+  ],
+  "resultado": "Datos de prueba - Nómina PE Boletas demo eliminadas: 36 Boletas regeneradas y validadas: 33 Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar"
+ },
+ "q01_rev_selector": "3\n3\nFM SYSTEMS SOLUTIONS EIRL"
+}

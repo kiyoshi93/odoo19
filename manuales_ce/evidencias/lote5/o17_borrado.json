@@ -1,0 +1,186 @@
+{
+ "empleados": [
+  {
+   "id": 94,
+   "name": "Prueba C07 Sintético Uno",
+   "active": true,
+   "identification_id": false,
+   "company_id": [
+    1,
+    "FM SYSTEMS SOLUTIONS EIRL"
+   ],
+   "version_ids": [
+    94
+   ],
+   "work_contact_id": [
+    211,
+    "Prueba C07 Sintético Uno"
+   ]
+  },
+  {
+   "id": 95,
+   "name": "Prueba C07 Sintético Dos",
+   "active": true,
+   "identification_id": false,
+   "company_id": [
+    1,
+    "FM SYSTEMS SOLUTIONS EIRL"
+   ],
+   "version_ids": [
+    95
+   ],
+   "work_contact_id": [
+    212,
+    "Prueba C07 Sintético Dos"
+   ]
+  },
+  {
+   "id": 109,
+   "name": "Prueba L4 V02 Sintético",
+   "active": false,
+   "identification_id": "99999911",
+   "company_id": [
+    1,
+    "FM SYSTEMS SOLUTIONS EIRL"
+   ],
+   "version_ids": [
+    109
+   ],
+   "work_contact_id": [
+    234,
+    "Prueba L4 V02 Sintético"
+   ]
+  },
+  {
+   "id": 110,
+   "name": "Prueba L4 Dic Sintético",
+   "active": false,
+   "identification_id": "99999912",
+   "company_id": [
+    1,
+    "FM SYSTEMS SOLUTIONS EIRL"
+   ],
+   "version_ids": [
+    110
+   ],
+   "work_contact_id": [
+    235,
+    "Prueba L4 Dic Sintético"
+   ]
+  },
+  {
+   "id": 111,
+   "name": "Prueba L4 O7 Sintético",
+   "active": false,
+   "identification_id": "99999913",
+   "company_id": [
+    1,
+    "FM SYSTEMS SOLUTIONS EIRL"
+   ],
+   "version_ids": [
+    111
+   ],
+   "work_contact_id": [
+    236,
+    "Prueba L4 O7 Sintético"
+   ]
+  }
+ ],
+ "boletas": [
+  {
+   "id": 481,
+   "name": "Rectificación: Boleta de Prueba C07 Sintético Dos – octubre 2026",
+   "state": "cancel",
+   "move_id": false,
+   "credit_note": true
+  },
+  {
+   "id": 480,
+   "name": "Boleta de Prueba C07 Sintético Dos – octubre 2026",
+   "state": "cancel",
+   "move_id": false,
+   "credit_note": false
+  }
+ ],
+ "resultado": {
+  "boletas_restantes": 0,
+  "94": "NO SE BORRÓ: No se puede completar la operación: Another model is using the record you are trying to delete.\n\nThe troublemaker is: 'Entrada de trabajo de RR. HH.' (hr.work.entry)\nThanks to the following constraint: 'Empleado' (employee_id)\nHow about archiving the record instead?",
+  "95": "NO SE BORRÓ: No se puede completar la operación: Another model is using the record you are trying to delete.\n\nThe troublemaker is: 'Entrada de trabajo de RR. HH.' (hr.work.entry)\nThanks to the following constraint: 'Empleado' (employee_id)\nHow about archiving the record instead?",
+  "109": "borrado",
+  "110": "borrado",
+  "111": "borrado",
+  "quedan": [
+   {
+    "id": 95,
+    "name": "Prueba C07 Sintético Dos",
+    "active": true
+   },
+   {
+    "id": 94,
+    "name": "Prueba C07 Sintético Uno",
+    "active": true
+   }
+  ],
+  "versiones_restantes": 2,
+  "archivados": [
+   {
+    "id": 94,
+    "name": "Prueba C07 Sintético Uno",
+    "active": false
+   },
+   {
+    "id": 95,
+    "name": "Prueba C07 Sintético Dos",
+    "active": false
+   }
+  ],
+  "entradas_trabajo": 86,
+  "contactos_que_quedan": [
+   {
+    "id": 212,
+    "name": "Prueba C07 Sintético Dos",
+    "active": true,
+    "company_id": [
+     1,
+     "FM SYSTEMS SOLUTIONS EIRL"
+    ]
+   },
+   {
+    "id": 211,
+    "name": "Prueba C07 Sintético Uno",
+    "active": true,
+    "company_id": [
+     1,
+     "FM SYSTEMS SOLUTIONS EIRL"
+    ]
+   },
+   {
+    "id": 235,
+    "name": "Prueba L4 Dic Sintético",
+    "active": true,
+    "company_id": [
+     1,
+     "FM SYSTEMS SOLUTIONS EIRL"
+    ]
+   },
+   {
+    "id": 236,
+    "name": "Prueba L4 O7 Sintético",
+    "active": true,
+    "company_id": [
+     1,
+     "FM SYSTEMS SOLUTIONS EIRL"
+    ]
+   },
+   {
+    "id": 234,
+    "name": "Prueba L4 V02 Sintético",
+    "active": true,
+    "company_id": [
+     1,
+     "FM SYSTEMS SOLUTIONS EIRL"
+    ]
+   }
+  ]
+ }
+}

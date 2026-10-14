@@ -1,0 +1,13 @@
+{
+ "boleta": 683,
+ "sin_feriado": "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Faltan los días festivos de 2027: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE.",
+ "dias_sin": [
+  {
+   "id": 857,
+   "code": "WORK100",
+   "number_of_days": 21.0
+  }
+ ],
+ "feriado": 61,
+ "con_feriado": "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE."
+}

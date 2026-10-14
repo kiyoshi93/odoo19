@@ -1,0 +1,32 @@
+{
+ "c19_10_ABONO_BCP_SUELDO_202610.txt": {
+  "cabecera_42_58": "00000000005759.49",
+  "cabecera": 5759.49,
+  "detalle": [
+   1914.0,
+   3845.49
+  ],
+  "suma": 5759.49,
+  "igual": true
+ },
+ "c19_11_ABONO_BCP_SUELDO_202611.txt": {
+  "cabecera_42_58": "00000000005759.49",
+  "cabecera": 5759.49,
+  "detalle": [
+   1914.0,
+   3845.49
+  ],
+  "suma": 5759.49,
+  "igual": true
+ },
+ "c19_12_ABONO_BCP_SUELDO_202612.txt": {
+  "cabecera_42_58": "00000000005758.66",
+  "cabecera": 5758.66,
+  "detalle": [
+   1914.0,
+   3844.66
+  ],
+  "suma": 5758.66,
+  "igual": true
+ }
+}

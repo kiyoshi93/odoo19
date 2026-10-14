@@ -1,0 +1,122 @@
+[
+ {
+  "id": 4,
+  "codigo": "PLAME-RXH",
+  "name": "PLAME 4ta sin nómina — .ps4 y .4ta",
+  "estado": "comparado",
+  "porcentaje": 100.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "2",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 2,
+  "codigo": "NOMINA",
+  "name": "Nómina peruana — planilla, aportes y asiento",
+  "estado": "comparado",
+  "porcentaje": 100.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 6,
+  "codigo": "BOLETA",
+  "name": "Nómina — la boleta impresa cuadra (ingresos − descuentos = neto)",
+  "estado": "pendiente",
+  "porcentaje": 0.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 5,
+  "codigo": "BANCOS",
+  "name": "Nómina — TXT de haberes y CTS (BCP, Interbank, Scotiabank)",
+  "estado": "pendiente",
+  "porcentaje": 0.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 3,
+  "codigo": "PLAME",
+  "name": "PLAME completo — el ZIP del PDT con la 4ta dentro",
+  "estado": "comparado",
+  "porcentaje": 100.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "2",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 7,
+  "codigo": "MICRO",
+  "name": "Nómina — microempresa: sin gratificación ni CTS, vacaciones de 15 días",
+  "estado": "pendiente",
+  "porcentaje": 0.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 1,
+  "codigo": "ASISTENCIA",
+  "name": "Asistencias — tardanzas, faltas y medias jornadas",
+  "estado": "comparado",
+  "porcentaje": 100.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ },
+ {
+  "id": 8,
+  "codigo": "UTILIDADES",
+  "name": "Nómina — reparto de utilidades (D.Leg. 892): 50 % días, 50 % remuneraciones",
+  "estado": "pendiente",
+  "porcentaje": 0.0,
+  "laboratorio_id": [
+   1,
+   "Laboratorio SOLSE Perú"
+  ],
+  "categoria": "3",
+  "rama": "nomina",
+  "multiempresa": false,
+  "company_clave": "servicios"
+ }
+]

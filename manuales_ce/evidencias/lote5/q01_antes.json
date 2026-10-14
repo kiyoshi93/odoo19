@@ -1,0 +1,82 @@
+{
+ "dnis_matriz": [
+  "40125836",
+  "41236547",
+  "41785296",
+  "42589631",
+  "42736514",
+  "43698521",
+  "43815927",
+  "44567123",
+  "44927358",
+  "45781236",
+  "45896327",
+  "46321478",
+  "47852169"
+ ],
+ "boletas_fm": 66,
+ "boletas_fm_matriz": 0,
+ "empleados_fm_matriz": [
+  {
+   "id": 9,
+   "name": "Ana Cecilia Gonzales Ruiz",
+   "identification_id": "40125836",
+   "active": false
+  },
+  {
+   "id": 3,
+   "name": "Carlos Alberto Quispe Mamani",
+   "identification_id": "45781236",
+   "active": false
+  },
+  {
+   "id": 11,
+   "name": "Carmen Rosa Vásquez León",
+   "identification_id": "45896327",
+   "active": false
+  },
+  {
+   "id": 5,
+   "name": "Jorge Luis Fernández Rojas",
+   "identification_id": "47852169",
+   "active": false
+  },
+  {
+   "id": 10,
+   "name": "José Antonio Ramírez Flores",
+   "identification_id": "44567123",
+   "active": false
+  },
+  {
+   "id": 8,
+   "name": "Luis Miguel Sánchez Díaz",
+   "identification_id": "43698521",
+   "active": false
+  },
+  {
+   "id": 4,
+   "name": "María Elena Torres Vega",
+   "identification_id": "41236547",
+   "active": false
+  },
+  {
+   "id": 12,
+   "name": "Miguel Ángel Castro Núñez",
+   "identification_id": "41785296",
+   "active": false
+  },
+  {
+   "id": 6,
+   "name": "Pedro Pablo Huamán Ccopa",
+   "identification_id": "42589631",
+   "active": false
+  },
+  {
+   "id": 7,
+   "name": "Rosa Isabel Chávez Paredes",
+   "identification_id": "46321478",
+   "active": false
+  }
+ ],
+ "boletas_demo": 74
+}
