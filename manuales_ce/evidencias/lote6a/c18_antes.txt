@@ -1,0 +1,1 @@
+boletas demo 74 MICRO trabajador [{'id': 200, 'name': 'Trabajador MICRO (microempresa)', 'company_id': [4, 'SOLSE Demo Servicios S.A.C.']}]

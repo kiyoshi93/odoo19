@@ -1,0 +1,219 @@
+{
+ "PLAME-RXH": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "PLAME-RXH · 2026-10-15 21:33:04 · CONFORME",
+  "celdas": 202,
+  "por_estructura": {
+   "4TA": 108,
+   "Archivos": 12,
+   "Diagnóstico": 18,
+   "PS4": 64
+  },
+  "resultados": {
+   "ok": 202
+  },
+  "excel": "COMPARACION_PLAME-RXH.xlsx"
+ },
+ "PLAME": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "PLAME · 2026-10-15 21:33:06 · CONFORME",
+  "celdas": 95,
+  "por_estructura": {
+   "Anexo4ta": 6,
+   "Diagnóstico": 8,
+   "JOR": 6,
+   "REM": 60,
+   "ZIP": 15
+  },
+  "resultados": {
+   "ok": 95
+  },
+  "excel": "COMPARACION_PLAME.xlsx"
+ },
+ "ASISTENCIA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "ASISTENCIA · 2026-10-15 21:33:11 · CONFORME",
+  "celdas": 73,
+  "por_estructura": {
+   "Combinado": 20,
+   "Diagnóstico": 8,
+   "Faltas": 35,
+   "Tardanzas": 10
+  },
+  "resultados": {
+   "ok": 73
+  },
+  "excel": "COMPARACION_ASISTENCIA.xlsx"
+ },
+ "NOMINA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "NOMINA · 2026-10-15 21:33:30 · CONFORME",
+  "celdas": 450,
+  "por_estructura": {
+   "AFPnet": 78,
+   "Aportes": 91,
+   "Asiento": 12,
+   "Boletas": 189,
+   "Configuración": 16,
+   "Diagnóstico": 18,
+   "Parámetros": 6,
+   "Vacaciones": 40
+  },
+  "resultados": {
+   "ok": 450
+  },
+  "excel": "COMPARACION_NOMINA.xlsx"
+ },
+ "BOLETA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "BOLETA · 2026-10-15 21:33:35 · CONFORME",
+  "celdas": 154,
+  "por_estructura": {
+   "Boleta impresa": 36,
+   "Conceptos": 114,
+   "Diagnóstico": 4
+  },
+  "resultados": {
+   "ok": 154
+  },
+  "excel": "COMPARACION_BOLETA.xlsx"
+ },
+ "BANCOS": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "BANCOS · 2026-10-15 21:33:41 · CONFORME",
+  "celdas": 407,
+  "por_estructura": {
+   "Archivos": 36,
+   "BCP CTS": 48,
+   "BCP haberes": 87,
+   "Boletas": 30,
+   "Diagnóstico": 4,
+   "Interbank CTS": 30,
+   "Interbank haberes": 66,
+   "Omitidos": 64,
+   "Scotiabank CTS": 6,
+   "Scotiabank haberes": 36
+  },
+  "resultados": {
+   "ok": 407
+  },
+  "excel": "COMPARACION_BANCOS.xlsx"
+ },
+ "MICRO": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "MICRO · 2026-10-15 21:33:44 · CONFORME",
+  "celdas": 45,
+  "por_estructura": {
+   "Conceptos": 33,
+   "Diagnóstico": 8,
+   "Régimen": 4
+  },
+  "resultados": {
+   "ok": 45
+  },
+  "excel": "COMPARACION_MICRO.xlsx"
+ },
+ "UTILIDADES": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "UTILIDADES · 2026-10-15 21:33:53 · CONFORME",
+  "celdas": 33,
+  "por_estructura": {
+   "Reparto": 15,
+   "Resumen": 10,
+   "Tope": 8
+  },
+  "resultados": {
+   "ok": 33
+  },
+  "excel": "COMPARACION_UTILIDADES.xlsx"
+ },
+ "_contactos": {
+  "Ana Cecilia Gonzales Ruiz": 8,
+  "Carlos Alberto Quispe Mamani": 8,
+  "Carmen Rosa Vásquez León": 8,
+  "Jorge Luis Fernández Rojas": 8,
+  "José Antonio Ramírez Flores": 8,
+  "José Luis Rojas Díaz": 1,
+  "Luis Miguel Sánchez Díaz": 8,
+  "Martín Chávez Ríos": 1,
+  "María Elena Torres Vega": 8,
+  "María José Quispe Huamán": 1,
+  "Miguel Ángel Castro Núñez": 8,
+  "Nilda Beatriz Apaza Condori": 7,
+  "Pedro Pablo Huamán Ccopa": 8,
+  "Rosa Elena Torres Gómez": 1,
+  "Rosa Isabel Chávez Paredes": 8,
+  "Teresa Isabel Meza Palomino": 7,
+  "Trabajador MICRO (microempresa)": 1,
+  "Trabajador UTILIDADES Dos": 1,
+  "Trabajador UTILIDADES Tres": 1,
+  "Trabajador UTILIDADES Uno": 1,
+  "Trabajadora BOLETA (perfil C-05)": 1,
+  "Ángel Ñañez Peña": 1,
+  "Óscar Eduardo Salazar Ibáñez": 7
+ }
+}

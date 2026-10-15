@@ -1,0 +1,28 @@
+{
+ "o21_botones": [
+  "1. Sembrar empleados",
+  "2. Escenario demo (accrual + boletas julio)",
+  "3. Escenario de cese (liquidación)",
+  "4. Validación interna (banderas)",
+  "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+  "6. Devengar vacaciones a hoy (saldos en Balance)",
+  "Cerrar"
+ ],
+ "o21_resultado": "Datos de prueba - Nómina PE Boletas demo eliminadas: 36 Boletas regeneradas y validadas: 36 (con el escenario de cese) Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar",
+ "c18_boleta": {
+  "nombre": "Liquidación CTS de Trabajador MICRO (microempresa) – noviembre 2026",
+  "estructura": "CTS",
+  "url": "https://51.222.13.59.sslip.io/odoo/action-1005/909",
+  "lineas": []
+ },
+ "c18_aviso": "Advertencia de Odoo La boleta no tiene importes: todas sus líneas salen en 0,00 (por ejemplo, la CTS o la gratificación de un trabajador de microempresa). No hay nada que pagar ni que contabilizar, así que no se valida: - Liquidación CTS de Trabajador MICRO (microempresa) – noviembre 2026 Eliminar la boleta sin importes Cerrar",
+ "c18_botones_aviso": [
+  "Eliminar la boleta sin importes",
+  "Cerrar"
+ ],
+ "c18_notificacion": [
+  "Se eliminó la boleta sin importes."
+ ],
+ "c18_url_final": "https://51.222.13.59.sslip.io/odoo/909/action-1005",
+ "c23": "CONTROLES AL VALIDAR LA BOLETA Gratificación y vacaciones de diciembre antes que la mensual? Trabajador sin sistema pensionario? PAGO A BANCOS Interbank: CTS en cuenta de otro banco?"
+}
