@@ -1,0 +1,51 @@
+[
+ {
+  "id": 1,
+  "name": "Tiempo personal pagado",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": false
+ },
+ {
+  "id": 2,
+  "name": "Tiempo personal por enfermedad",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": "20"
+ },
+ {
+  "id": 4,
+  "name": "Sin pagar",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": "05"
+ },
+ {
+  "id": 3,
+  "name": "Días compensatorios",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": "27"
+ },
+ {
+  "id": 5,
+  "name": "Tiempo personal adicional",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": false
+ },
+ {
+  "id": 6,
+  "name": "Horas extra",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": false
+ },
+ {
+  "id": 74,
+  "name": "Vacaciones PE (D.Leg. 713)",
+  "company_id": false,
+  "active": true,
+  "pe_tipo_suspension": "23"
+ }
+]

@@ -1,0 +1,1143 @@
+{
+"ana": [
+[
+"Recibo de salario - Ana Cecilia Gonzales Ruiz - Nómina Mensu",
+[
+[
+"AFP_PRI_001",
+173.62
+],
+[
+"R5TA_001",
+1267.25
+],
+[
+"NET",
+11838.63
+]
+]
+],
+[
+"Recibo de salario - Ana Cecilia Gonzales Ruiz - Gratificacio",
+[
+[
+"NET",
+16350.0
+]
+]
+]
+],
+"detalle": {
+"PLAME": [
+{
+"id": 10969,
+"estructura": "Diagnóstico",
+"clave": "1 · boletas validadas del periodo en la compañía",
+"campo": "cantidad",
+"valor_esperado": "31",
+"valor_obtenido": "31",
+"resultado": "ok"
+},
+{
+"id": 10968,
+"estructura": "Diagnóstico",
+"clave": "1 · boletas validadas del periodo en la compañía",
+"campo": "etapa",
+"valor_esperado": "1 · boletas validadas del periodo en la compañía",
+"valor_obtenido": "1 · boletas validadas del periodo en la compañía",
+"resultado": "ok"
+},
+{
+"id": 10971,
+"estructura": "Diagnóstico",
+"clave": "2 · boletas que recoge el asistente",
+"campo": "cantidad",
+"valor_esperado": "30",
+"valor_obtenido": "30",
+"resultado": "ok"
+},
+{
+"id": 10970,
+"estructura": "Diagnóstico",
+"clave": "2 · boletas que recoge el asistente",
+"campo": "etapa",
+"valor_esperado": "2 · boletas que recoge el asistente",
+"valor_obtenido": "2 · boletas que recoge el asistente",
+"resultado": "ok"
+},
+{
+"id": 10973,
+"estructura": "Diagnóstico",
+"clave": "3 · trabajadores en el .rem",
+"campo": "cantidad",
+"valor_esperado": "13",
+"valor_obtenido": "13",
+"resultado": "ok"
+},
+{
+"id": 10972,
+"estructura": "Diagnóstico",
+"clave": "3 · trabajadores en el .rem",
+"campo": "etapa",
+"valor_esperado": "3 · trabajadores en el .rem",
+"valor_obtenido": "3 · trabajadores en el .rem",
+"resultado": "ok"
+},
+{
+"id": 10975,
+"estructura": "Diagnóstico",
+"clave": "4 · trabajadores en el .jor",
+"campo": "cantidad",
+"valor_esperado": "13",
+"valor_obtenido": "13",
+"resultado": "ok"
+},
+{
+"id": 10974,
+"estructura": "Diagnóstico",
+"clave": "4 · trabajadores en el .jor",
+"campo": "etapa",
+"valor_esperado": "4 · trabajadores en el .jor",
+"valor_obtenido": "4 · trabajadores en el .jor",
+"resultado": "ok"
+},
+{
+"id": 10977,
+"estructura": "Diagnóstico",
+"clave": "5 · líneas del .snl",
+"campo": "cantidad",
+"valor_esperado": "2",
+"valor_obtenido": "2",
+"resultado": "ok"
+},
+{
+"id": 10976,
+"estructura": "Diagnóstico",
+"clave": "5 · líneas del .snl",
+"campo": "etapa",
+"valor_esperado": "5 · líneas del .snl",
+"valor_obtenido": "5 · líneas del .snl",
+"resultado": "ok"
+},
+{
+"id": 10936,
+"estructura": "JOR",
+"clave": "42589631",
+"campo": "campos",
+"valor_esperado": "6",
+"valor_obtenido": "6",
+"resultado": "ok"
+},
+{
+"id": 10932,
+"estructura": "JOR",
+"clave": "42589631",
+"campo": "dni",
+"valor_esperado": "42589631",
+"valor_obtenido": "42589631",
+"resultado": "ok"
+},
+{
+"id": 10934,
+"estructura": "JOR",
+"clave": "42589631",
+"campo": "horas",
+"valor_esperado": "160",
+"valor_obtenido": "160",
+"resultado": "ok"
+},
+{
+"id": 10935,
+"estructura": "JOR",
+"clave": "42589631",
+"campo": "minutos",
+"valor_esperado": "0",
+"valor_obtenido": "0",
+"resultado": "ok"
+},
+{
+"id": 10933,
+"estructura": "JOR",
+"clave": "42589631",
+"campo": "trabajador",
+"valor_esperado": "Pedro",
+"valor_obtenido": "Pedro",
+"resultado": "ok"
+},
+{
+"id": 10946,
+"estructura": "JOR",
+"clave": "42736514",
+"campo": "campos",
+"valor_esperado": "6",
+"valor_obtenido": "6",
+"resultado": "ok"
+},
+{
+"id": 10942,
+"estructura": "JOR",
+"clave": "42736514",
+"campo": "dni",
+"valor_esperado": "42736514",
+"valor_obtenido": "42736514",
+"resultado": "ok"
+},
+{
+"id": 10944,
+"estructura": "JOR",
+"clave": "42736514",
+"campo": "horas",
+"valor_esperado": "8",
+"valor_obtenido": "8",
+"resultado": "ok"
+},
+{
+"id": 10945,
+"estructura": "JOR",
+"clave": "42736514",
+"campo": "minutos",
+"valor_esperado": "0",
+"valor_obtenido": "0",
+"resultado": "ok"
+},
+{
+"id": 10943,
+"estructura": "JOR",
+"clave": "42736514",
+"campo": "trabajador",
+"valor_esperado": "Nilda",
+"valor_obtenido": "Nilda",
+"resultado": "ok"
+},
+{
+"id": 10951,
+"estructura": "JOR",
+"clave": "43815927",
+"campo": "campos",
+"valor_esperado": "6",
+"valor_obtenido": "6",
+"resultado": "ok"
+},
+{
+"id": 10947,
+"estructura": "JOR",
+"clave": "43815927",
+"campo": "dni",
+"valor_esperado": "43815927",
+"valor_obtenido": "43815927",
+"resultado": "ok"
+},
+{
+"id": 10949,
+"estructura": "JOR",
+"clave": "43815927",
+"campo": "horas",
+"valor_esperado": "96",
+"valor_obtenido": "96",
+"resultado": "ok"
+},
+{
+"id": 10950,
+"estructura": "JOR",
+"clave": "43815927",
+"campo": "minutos",
+"valor_esperado": "0",
+"valor_obtenido": "0",
+"resultado": "ok"
+},
+{
+"id": 10948,
+"estructura": "JOR",
+"clave": "43815927",
+"campo": "trabajador",
+"valor_esperado": "Óscar",
+"valor_obtenido": "Óscar",
+"resultado": "ok"
+},
+{
+"id": 10941,
+"estructura": "JOR",
+"clave": "46321478",
+"campo": "campos",
+"valor_esperado": "6",
+"valor_obtenido": "6",
+"resultado": "ok"
+},
+{
+"id": 10937,
+"estructura": "JOR",
+"clave": "46321478",
+"campo": "dni",
+"valor_esperado": "46321478",
+"valor_obtenido": "46321478",
+"resultado": "ok"
+},
+{
+"id": 10939,
+"estructura": "JOR",
+"clave": "46321478",
+"campo": "horas",
+"valor_esperado": "160",
+"valor_obtenido": "160",
+"resultado": "ok"
+},
+{
+"id": 10940,
+"estructura": "JOR",
+"clave": "46321478",
+"campo": "minutos",
+"valor_esperado": "0",
+"valor_obtenido": "0",
+"resultado": "ok"
+},
+{
+"id": 10938,
+"estructura": "JOR",
+"clave": "46321478",
+"campo": "trabajador",
+"valor_esperado": "Rosa",
+"valor_obtenido": "Rosa",
+"resultado": "ok"
+},
+{
+"id": 10956,
+"estructura": "SNL",
+"clave": "42736514|23",
+"campo": "campos",
+"valor_esperado": "4",
+"valor_obtenido": "4",
+"resultado": "ok"
+},
+{
+"id": 10955,
+"estructura": "SNL",
+"clave": "42736514|23",
+"campo": "dias",
+"valor_esperado": "30",
+"valor_obtenido": "30",
+"resultado": "ok"
+},
+{
+"id": 10952,
+"estructura": "SNL",
+"clave": "42736514|23",
+"campo": "dni",
+"valor_esperado": "42736514",
+"valor_obtenido": "42736514",
+"resultado": "ok"
+},
+{
+"id": 10954,
+"estructura": "SNL",
+"clave": "42736514|23",
+"campo": "tipo_suspension",
+"valor_esperado": "23",
+"valor_obtenido": "23",
+"resultado": "ok"
+},
+{
+"id": 10953,
+"estructura": "SNL",
+"clave": "42736514|23",
+"campo": "trabajador",
+"valor_esperado": "Nilda",
+"valor_obtenido": "Nilda",
+"resultado": "ok"
+},
+{
+"id": 10961,
+"estructura": "SNL",
+"clave": "43815927|23",
+"campo": "campos",
+"valor_esperado": "4",
+"valor_obtenido": "4",
+"resultado": "ok"
+},
+{
+"id": 10960,
+"estructura": "SNL",
+"clave": "43815927|23",
+"campo": "dias",
+"valor_esperado": "15",
+"valor_obtenido": "15",
+"resultado": "ok"
+},
+{
+"id": 10957,
+"estructura": "SNL",
+"clave": "43815927|23",
+"campo": "dni",
+"valor_esperado": "43815927",
+"valor_obtenido": "43815927",
+"resultado": "ok"
+},
+{
+"id": 10959,
+"estructura": "SNL",
+"clave": "43815927|23",
+"campo": "tipo_suspension",
+"valor_esperado": "23",
+"valor_obtenido": "23",
+"resultado": "ok"
+},
+{
+"id": 10958,
+"estructura": "SNL",
+"clave": "43815927|23",
+"campo": "trabajador",
+"valor_esperado": "Óscar",
+"valor_obtenido": "Óscar",
+"resultado": "ok"
+}
+],
+"MICRO": [
+{
+"id": 11650,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ASF_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME con hijo",
+"valor_obtenido": "2026-06 NME con hijo",
+"resultado": "ok"
+},
+{
+"id": 11651,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ASF_001",
+"campo": "codigo",
+"valor_esperado": "ASF_001",
+"valor_obtenido": "ASF_001",
+"resultado": "ok"
+},
+{
+"id": 11652,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ASF_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11656,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|NET",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME con hijo",
+"valor_obtenido": "2026-06 NME con hijo",
+"resultado": "ok"
+},
+{
+"id": 11657,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|NET",
+"campo": "codigo",
+"valor_esperado": "NET",
+"valor_obtenido": "NET",
+"resultado": "ok"
+},
+{
+"id": 11658,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|NET",
+"campo": "importe",
+"valor_esperado": "1305.00",
+"valor_obtenido": "1305.00",
+"resultado": "ok"
+},
+{
+"id": 11653,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ONP_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME con hijo",
+"valor_obtenido": "2026-06 NME con hijo",
+"resultado": "ok"
+},
+{
+"id": 11654,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ONP_001",
+"campo": "codigo",
+"valor_esperado": "ONP_001",
+"valor_obtenido": "ONP_001",
+"resultado": "ok"
+},
+{
+"id": 11655,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|ONP_001",
+"campo": "importe",
+"valor_esperado": "195.00",
+"valor_obtenido": "195.00",
+"resultado": "ok"
+},
+{
+"id": 11647,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|RB_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME con hijo",
+"valor_obtenido": "2026-06 NME con hijo",
+"resultado": "ok"
+},
+{
+"id": 11648,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|RB_001",
+"campo": "codigo",
+"valor_esperado": "RB_001",
+"valor_obtenido": "RB_001",
+"resultado": "ok"
+},
+{
+"id": 11649,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|RB_001",
+"campo": "importe",
+"valor_esperado": "1500.00",
+"valor_obtenido": "1500.00",
+"resultado": "ok"
+},
+{
+"id": 11659,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|SIS_MICRO_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME con hijo",
+"valor_obtenido": "2026-06 NME con hijo",
+"resultado": "ok"
+},
+{
+"id": 11660,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|SIS_MICRO_001",
+"campo": "codigo",
+"valor_esperado": "SIS_MICRO_001",
+"valor_obtenido": "SIS_MICRO_001",
+"resultado": "ok"
+},
+{
+"id": 11661,
+"estructura": "Conceptos",
+"clave": "2026-06 NME con hijo|SIS_MICRO_001",
+"campo": "importe",
+"valor_esperado": "15.00",
+"valor_obtenido": "15.00",
+"resultado": "ok"
+},
+{
+"id": 11641,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ESSALUD_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME",
+"valor_obtenido": "2026-06 NME",
+"resultado": "ok"
+},
+{
+"id": 11642,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ESSALUD_001",
+"campo": "codigo",
+"valor_esperado": "ESSALUD_001",
+"valor_obtenido": "ESSALUD_001",
+"resultado": "ok"
+},
+{
+"id": 11643,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ESSALUD_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11638,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|NET",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME",
+"valor_obtenido": "2026-06 NME",
+"resultado": "ok"
+},
+{
+"id": 11639,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|NET",
+"campo": "codigo",
+"valor_esperado": "NET",
+"valor_obtenido": "NET",
+"resultado": "ok"
+},
+{
+"id": 11640,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|NET",
+"campo": "importe",
+"valor_esperado": "1305.00",
+"valor_obtenido": "1305.00",
+"resultado": "ok"
+},
+{
+"id": 11635,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ONP_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME",
+"valor_obtenido": "2026-06 NME",
+"resultado": "ok"
+},
+{
+"id": 11636,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ONP_001",
+"campo": "codigo",
+"valor_esperado": "ONP_001",
+"valor_obtenido": "ONP_001",
+"resultado": "ok"
+},
+{
+"id": 11637,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|ONP_001",
+"campo": "importe",
+"valor_esperado": "195.00",
+"valor_obtenido": "195.00",
+"resultado": "ok"
+},
+{
+"id": 11632,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|RB_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME",
+"valor_obtenido": "2026-06 NME",
+"resultado": "ok"
+},
+{
+"id": 11633,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|RB_001",
+"campo": "codigo",
+"valor_esperado": "RB_001",
+"valor_obtenido": "RB_001",
+"resultado": "ok"
+},
+{
+"id": 11634,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|RB_001",
+"campo": "importe",
+"valor_esperado": "1500.00",
+"valor_obtenido": "1500.00",
+"resultado": "ok"
+},
+{
+"id": 11644,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|SIS_MICRO_001",
+"campo": "boleta",
+"valor_esperado": "2026-06 NME",
+"valor_obtenido": "2026-06 NME",
+"resultado": "ok"
+},
+{
+"id": 11645,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|SIS_MICRO_001",
+"campo": "codigo",
+"valor_esperado": "SIS_MICRO_001",
+"valor_obtenido": "SIS_MICRO_001",
+"resultado": "ok"
+},
+{
+"id": 11646,
+"estructura": "Conceptos",
+"clave": "2026-06 NME|SIS_MICRO_001",
+"campo": "importe",
+"valor_esperado": "15.00",
+"valor_obtenido": "15.00",
+"resultado": "ok"
+},
+{
+"id": 11662,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|CTS_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 CTS",
+"valor_obtenido": "2026-11 CTS",
+"resultado": "ok"
+},
+{
+"id": 11663,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|CTS_001",
+"campo": "codigo",
+"valor_esperado": "CTS_001",
+"valor_obtenido": "CTS_001",
+"resultado": "ok"
+},
+{
+"id": 11664,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|CTS_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11665,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|NET",
+"campo": "boleta",
+"valor_esperado": "2026-11 CTS",
+"valor_obtenido": "2026-11 CTS",
+"resultado": "ok"
+},
+{
+"id": 11666,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|NET",
+"campo": "codigo",
+"valor_esperado": "NET",
+"valor_obtenido": "NET",
+"resultado": "ok"
+},
+{
+"id": 11667,
+"estructura": "Conceptos",
+"clave": "2026-11 CTS|NET",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11683,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|CTS_TRUNCA_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11684,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|CTS_TRUNCA_001",
+"campo": "codigo",
+"valor_esperado": "CTS_TRUNCA_001",
+"valor_obtenido": "CTS_TRUNCA_001",
+"resultado": "ok"
+},
+{
+"id": 11685,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|CTS_TRUNCA_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11689,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ESSALUD_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11690,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ESSALUD_001",
+"campo": "codigo",
+"valor_esperado": "ESSALUD_001",
+"valor_obtenido": "ESSALUD_001",
+"resultado": "ok"
+},
+{
+"id": 11691,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ESSALUD_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11680,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|GRATI_TRUNCA_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11681,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|GRATI_TRUNCA_001",
+"campo": "codigo",
+"valor_esperado": "GRATI_TRUNCA_001",
+"valor_obtenido": "GRATI_TRUNCA_001",
+"resultado": "ok"
+},
+{
+"id": 11682,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|GRATI_TRUNCA_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11692,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|NET",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11693,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|NET",
+"campo": "codigo",
+"valor_esperado": "NET",
+"valor_obtenido": "NET",
+"resultado": "ok"
+},
+{
+"id": 11694,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|NET",
+"campo": "importe",
+"valor_esperado": "598.12",
+"valor_obtenido": "598.12",
+"resultado": "ok"
+},
+{
+"id": 11686,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ONP_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11687,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ONP_001",
+"campo": "codigo",
+"valor_esperado": "ONP_001",
+"valor_obtenido": "ONP_001",
+"resultado": "ok"
+},
+{
+"id": 11688,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|ONP_001",
+"campo": "importe",
+"valor_esperado": "89.38",
+"valor_obtenido": "89.38",
+"resultado": "ok"
+},
+{
+"id": 11677,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|VAC_TRUNCA_001",
+"campo": "boleta",
+"valor_esperado": "2026-11 LIQ",
+"valor_obtenido": "2026-11 LIQ",
+"resultado": "ok"
+},
+{
+"id": 11678,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|VAC_TRUNCA_001",
+"campo": "codigo",
+"valor_esperado": "VAC_TRUNCA_001",
+"valor_obtenido": "VAC_TRUNCA_001",
+"resultado": "ok"
+},
+{
+"id": 11679,
+"estructura": "Conceptos",
+"clave": "2026-11 LIQ|VAC_TRUNCA_001",
+"campo": "importe",
+"valor_esperado": "687.50",
+"valor_obtenido": "687.50",
+"resultado": "ok"
+},
+{
+"id": 11671,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|BONO_GRATI_001",
+"campo": "boleta",
+"valor_esperado": "2026-12 GRAT",
+"valor_obtenido": "2026-12 GRAT",
+"resultado": "ok"
+},
+{
+"id": 11672,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|BONO_GRATI_001",
+"campo": "codigo",
+"valor_esperado": "BONO_GRATI_001",
+"valor_obtenido": "BONO_GRATI_001",
+"resultado": "ok"
+},
+{
+"id": 11673,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|BONO_GRATI_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11668,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|GRATI_001",
+"campo": "boleta",
+"valor_esperado": "2026-12 GRAT",
+"valor_obtenido": "2026-12 GRAT",
+"resultado": "ok"
+},
+{
+"id": 11669,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|GRATI_001",
+"campo": "codigo",
+"valor_esperado": "GRATI_001",
+"valor_obtenido": "GRATI_001",
+"resultado": "ok"
+},
+{
+"id": 11670,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|GRATI_001",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11674,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|NET",
+"campo": "boleta",
+"valor_esperado": "2026-12 GRAT",
+"valor_obtenido": "2026-12 GRAT",
+"resultado": "ok"
+},
+{
+"id": 11675,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|NET",
+"campo": "codigo",
+"valor_esperado": "NET",
+"valor_obtenido": "NET",
+"resultado": "ok"
+},
+{
+"id": 11676,
+"estructura": "Conceptos",
+"clave": "2026-12 GRAT|NET",
+"campo": "importe",
+"valor_esperado": "0.00",
+"valor_obtenido": "0.00",
+"resultado": "ok"
+},
+{
+"id": 11696,
+"estructura": "Diagnóstico",
+"clave": "1 · boletas del caso",
+"campo": "cantidad",
+"valor_esperado": "5",
+"valor_obtenido": "5",
+"resultado": "ok"
+},
+{
+"id": 11695,
+"estructura": "Diagnóstico",
+"clave": "1 · boletas del caso",
+"campo": "etapa",
+"valor_esperado": "1 · boletas del caso",
+"valor_obtenido": "1 · boletas del caso",
+"resultado": "ok"
+},
+{
+"id": 11698,
+"estructura": "Diagnóstico",
+"clave": "2 · validadas (mensuales y liquidación)",
+"campo": "cantidad",
+"valor_esperado": "3",
+"valor_obtenido": "3",
+"resultado": "ok"
+},
+{
+"id": 11697,
+"estructura": "Diagnóstico",
+"clave": "2 · validadas (mensuales y liquidación)",
+"campo": "etapa",
+"valor_esperado": "2 · validadas (mensuales y liquidación)",
+"valor_obtenido": "2 · validadas (mensuales y liquidación)",
+"resultado": "ok"
+},
+{
+"id": 11700,
+"estructura": "Diagnóstico",
+"clave": "3 · validar la CTS sin importes (C-18)",
+"campo": "cantidad",
+"valor_esperado": "aviso: no tiene importes",
+"valor_obtenido": "aviso: no tiene importes",
+"resultado": "ok"
+},
+{
+"id": 11699,
+"estructura": "Diagnóstico",
+"clave": "3 · validar la CTS sin importes (C-18)",
+"campo": "etapa",
+"valor_esperado": "3 · validar la CTS sin importes (C-18)",
+"valor_obtenido": "3 · validar la CTS sin importes (C-18)",
+"resultado": "ok"
+},
+{
+"id": 11702,
+"estructura": "Diagnóstico",
+"clave": "4 · el botón del aviso la elimina (C-18)",
+"campo": "cantidad",
+"valor_esperado": "eliminada",
+"valor_obtenido": "eliminada",
+"resultado": "ok"
+},
+{
+"id": 11701,
+"estructura": "Diagnóstico",
+"clave": "4 · el botón del aviso la elimina (C-18)",
+"campo": "etapa",
+"valor_esperado": "4 · el botón del aviso la elimina (C-18)",
+"valor_obtenido": "4 · el botón del aviso la elimina (C-18)",
+"resultado": "ok"
+},
+{
+"id": 11704,
+"estructura": "Diagnóstico",
+"clave": "5 · con «EsSalud 9 %»: EsSalud de junio (C-25)",
+"campo": "cantidad",
+"valor_esperado": "135.00",
+"valor_obtenido": "135.00",
+"resultado": "ok"
+},
+{
+"id": 11703,
+"estructura": "Diagnóstico",
+"clave": "5 · con «EsSalud 9 %»: EsSalud de junio (C-25)",
+"campo": "etapa",
+"valor_esperado": "5 · con «EsSalud 9 %»: EsSalud de junio (C-25)",
+"valor_obtenido": "5 · con «EsSalud 9 %»: EsSalud de junio (C-25)",
+"resultado": "ok"
+},
+{
+"id": 11706,
+"estructura": "Diagnóstico",
+"clave": "6 · con «Pagar»: asignación familiar de junio (C-25)",
+"campo": "cantidad",
+"valor_esperado": "113.00",
+"valor_obtenido": "113.00",
+"resultado": "ok"
+},
+{
+"id": 11705,
+"estructura": "Diagnóstico",
+"clave": "6 · con «Pagar»: asignación familiar de junio (C-25)",
+"campo": "etapa",
+"valor_esperado": "6 · con «Pagar»: asignación familiar de junio (C-25)",
+"valor_obtenido": "6 · con «Pagar»: asignación familiar de junio (C-25)",
+"resultado": "ok"
+},
+{
+"id": 11630,
+"estructura": "Régimen",
+"clave": "asignación familiar por defecto de la compañía (C-25)",
+"campo": "dato",
+"valor_esperado": "asignación familiar por defecto de la compañía (C-25)",
+"valor_obtenido": "asignación familiar por defecto de la compañía (C-25)",
+"resultado": "ok"
+},
+{
+"id": 11631,
+"estructura": "Régimen",
+"clave": "asignación familiar por defecto de la compañía (C-25)",
+"campo": "valor",
+"valor_esperado": "no_pagar",
+"valor_obtenido": "no_pagar",
+"resultado": "ok"
+},
+{
+"id": 11626,
+"estructura": "Régimen",
+"clave": "factores (gratificación, días CTS, días vacaciones)",
+"campo": "dato",
+"valor_esperado": "factores (gratificación, días CTS, días vacaciones)",
+"valor_obtenido": "factores (gratificación, días CTS, días vacaciones)",
+"resultado": "ok"
+},
+{
+"id": 11627,
+"estructura": "Régimen",
+"clave": "factores (gratificación, días CTS, días vacaciones)",
+"campo": "valor",
+"valor_esperado": "0.0 / 0 / 15",
+"valor_obtenido": "0.0 / 0 / 15",
+"resultado": "ok"
+},
+{
+"id": 11628,
+"estructura": "Régimen",
+"clave": "régimen de salud por defecto de la compañía (C-25)",
+"campo": "dato",
+"valor_esperado": "régimen de salud por defecto de la compañía (C-25)",
+"valor_obtenido": "régimen de salud por defecto de la compañía (C-25)",
+"resultado": "ok"
+},
+{
+"id": 11629,
+"estructura": "Régimen",
+"clave": "régimen de salud por defecto de la compañía (C-25)",
+"campo": "valor",
+"valor_esperado": "sis",
+"valor_obtenido": "sis",
+"resultado": "ok"
+},
+{
+"id": 11624,
+"estructura": "Régimen",
+"clave": "régimen laboral",
+"campo": "dato",
+"valor_esperado": "régimen laboral",
+"valor_obtenido": "régimen laboral",
+"resultado": "ok"
+},
+{
+"id": 11625,
+"estructura": "Régimen",
+"clave": "régimen laboral",
+"campo": "valor",
+"valor_esperado": "MICROEMPRESA",
+"valor_obtenido": "MICROEMPRESA",
+"resultado": "ok"
+}
+]
+}
+}

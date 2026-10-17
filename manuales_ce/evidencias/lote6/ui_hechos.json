@@ -1,0 +1,55 @@
+{
+ "o21_botones": [
+  "1. Sembrar empleados",
+  "2. Escenario demo (accrual + boletas julio)",
+  "3. Escenario de cese (liquidación)",
+  "4. Validación interna (banderas)",
+  "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+  "6. Devengar vacaciones a hoy (saldos en Balance)",
+  "Cerrar"
+ ],
+ "o21_resultado_vuelta1": "Datos de prueba - Nómina PE Boletas demo eliminadas: 36 Boletas regeneradas y validadas: 35 (con el escenario de cese) Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar",
+ "o21_resultado": "Datos de prueba - Nómina PE Boletas demo eliminadas: 35 Boletas regeneradas y validadas: 35 (con el escenario de cese) Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar",
+ "p6_columnas": [
+  "Nombre a mostrar",
+  "Código",
+  "Tipo de suspensión (Tabla 21)",
+  "Aprobación de asignación",
+  "Tipo de entrada de trabajo",
+  "Empresa",
+  "País"
+ ],
+ "p6_filas": [
+  "Tiempo personal pagado Del encargado de tiempo personal Tiempo personal pagado",
+  "Tiempo personal por enfermedad 20 · S.I. Enfermedad o accidente (primeros veinte días) Del encargado de tiempo personal Tiempo personal por enfermedad",
+  "Sin pagar 05 · S.P. Permiso, licencia u otros motivos sin goce de haber Del encargado de tiempo personal Sin pagar",
+  "Días compensatorios 27 · S.I. Días compensados por horas de sobretiempo Del encargado de tiempo personal Tiempo personal compensatorio",
+  "Tiempo personal adicional Del encargado de tiempo personal",
+  "Horas extra Del encargado de tiempo personal",
+  "Vacaciones PE (D.Leg. 713) VACPE100 23 · S.I. Descanso vacacional Del encargado de tiempo personal Vacaciones PE Perú"
+ ],
+ "p7_texto": "BOLETA DE PAGO DE REMUNERACIONES D.S. N° 001-98-TR y modificatorias — Planilla Electrónica EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 Periodo: 01/07/2026 — 31/07/2026 TRABAJADOR: Óscar Eduardo Salazar Ibáñez Documento (DNI): 43815927 Ocupación: — Situación: D LEG N.° 728 Fecha de ingreso: 2025-01-01 Rég. pensionario: DL 19990 - SIST NAC DE PENS - ONP Remuneración básica: 3000.00 Días laborados: 16 Días no laborados: 15 Horas: 96.0 Moneda: PEN INGRESOS DESCUENTOS APORTES DEL EMPLEADOR Remuneración básica 1500.00 ONP - Sistema Nacional de Pensiones 195.00 ESSALUD - Aporte del empleador 135.00 SENATI - Contribución 11.25 Total ingresos: 1500.00 Total descuentos: 195.00 Total aportes: 146.25 NETO A PAGAR: S/ 1305.00 SON: MIL TRESCIENTOS CINCO Y 00/100 SOLES EMPLEADOR TRABAJADOR DNI: 43815927 La entrega de la presente boleta puede realizarse por medios físicos o electrónicos conforme al D.S. 009-2011-TR. El duplicado queda en poder del empleador.",
+ "p8_columnas": [
+  "Descripción",
+  "Código",
+  "Número de días",
+  "Número de horas",
+  "¿Pagado?",
+  "Contrato",
+  "Secuencia"
+ ],
+ "p8_filas": [
+  {
+   "texto": "Días laborados (100 %) WORK100 23.00 184.00 1 ene. 2025",
+   "casillas": [
+    true
+   ]
+  },
+  {
+   "texto": "Vacaciones PE (D.Leg. 713) VACPE100 -11.00 -88.00 1 ene. 2025",
+   "casillas": [
+    false
+   ]
+  }
+ ]
+}
