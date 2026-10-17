@@ -1,0 +1,800 @@
+ /home/ubuntu/.pyenv/versions/odoo19/bin/python3 /opt/odoo19/odoo/odoo-bin -c /etc/odoo19.conf -d contable19 -u solse_pe_payroll_base,solse_pe_payroll_ce,solse_pe_payroll_ce_demo,solse_pe_plame_demo,solse_pe_payroll_asistencia --stop-after-init
+2026-10-17 16:28:55,580 1785971 WARNING ? odoo.tools.config: unknown option 'longpolling_port' in the config file at /etc/odoo19.conf, option stored as-is, without parsing 
+2026-10-17 16:28:55,580 1785971 WARNING ? odoo.tools.config: option default_productivity_apps reads 'False' in the config file at /etc/odoo19.conf but isn't a boolean option, skip 
+2026-10-17 16:28:55,580 1785971 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-10-17 16:28:55,581 1785971 INFO ? odoo: Odoo version 19.0 
+2026-10-17 16:28:55,581 1785971 INFO ? odoo: Using configuration file at /etc/odoo19.conf 
+2026-10-17 16:28:55,581 1785971 INFO ? odoo: addons paths: _NamespacePath(['/opt/odoo19/odoo/odoo/addons', '/opt/odoo19/data_dir/addons/19.0', '/opt/odoo19/odoo/addons', '/opt/odoo19/solse_peru_cpe', '/opt/odoo19/solse_addons', '/opt/odoo19/solse_peru_contabilidad', '/opt/odoo19/solse_erp_dependencias', '/opt/odoo19/solse_farmacia']) 
+2026-10-17 16:28:55,581 1785971 INFO ? odoo: database: odoo19@localhost:5432 
+2026-10-17 16:28:56,060 1785971 INFO ? odoo.addons.queue_job.post_load: Apply Request._get_session_and_dbname monkey patch to capture db from request with multiple databases 
+2026-10-17 16:28:56,079 1785971 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069 
+2026-10-17 16:28:56,110 1785971 INFO contable19 odoo.modules.loading: loading 1 modules... 
+2026-10-17 16:28:56,116 1785971 INFO contable19 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-10-17 16:28:56,145 1785971 INFO contable19 odoo.modules.loading: updating modules list 
+2026-10-17 16:28:56,148 1785971 INFO contable19 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2026-10-17 16:28:57,346 1785971 WARNING contable19 odoo.modules.module: Missing `license` key in manifest for 'solse_farmacia_base', defaulting to LGPL-3 
+2026-10-17 16:28:57,346 1785971 WARNING contable19 odoo.modules.module: Missing `license` key in manifest for 'solse_farmacia_base', defaulting to LGPL-3 
+2026-10-17 16:28:57,480 1785971 WARNING contable19 odoo.modules.module: Missing `author` key in manifest for 'solse_pos_internal_transfer', defaulting to '' 
+2026-10-17 16:28:57,481 1785971 WARNING contable19 odoo.modules.module: Missing `author` key in manifest for 'solse_pos_internal_transfer', defaulting to '' 
+2026-10-17 16:28:57,678 1785971 INFO contable19 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Nómina Peruana - Núcleo (Community)', 'Nómina Peruana - Integración de Asistencias (Community)', 'SOLSE - Nómina PE Base (Community)', 'Nómina Peruana - Datos de prueba (Community)', 'PLAME completo - Caso de demostración'] to user __system__ #1 via n/a 
+2026-10-17 16:28:57,679 1785971 INFO contable19 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Nómina Peruana - Núcleo (Community)', 'Nómina Peruana - Integración de Asistencias (Community)', 'SOLSE - Nómina PE Base (Community)', 'Nómina Peruana - Datos de prueba (Community)', 'PLAME completo - Caso de demostración'] to user __system__ #1 via n/a 
+
+
+2026-10-17 16:28:58,436 1785971 WARNING contable19 odoo.modules.module: Missing `license` key in manifest for 'solse_farmacia_base', defaulting to LGPL-3 
+2026-10-17 16:28:58,519 1785971 WARNING contable19 odoo.modules.module: Missing `author` key in manifest for 'solse_pos_internal_transfer', defaulting to '' 
+2026-10-17 16:28:58,663 1785971 INFO contable19 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+
+
+2026-10-17 16:28:59,387 1785971 INFO contable19 odoo.modules.loading: loading 201 modules... 
+2026-10-17 16:29:00,599 1785971 WARNING contable19 odoo.registry: The model account.account.type has no _description 
+2026-10-17 16:29:00,669 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_payroll_base (150/201) 
+2026-10-17 16:29:00,859 1785971 WARNING contable19 odoo.registry: Patching hr.salary.rule.account_debit with company_dependent=True 
+2026-10-17 16:29:00,861 1785971 WARNING contable19 odoo.registry: Patching hr.salary.rule.account_credit with company_dependent=True 
+2026-10-17 16:29:00,969 1785971 WARNING contable19 odoo.fields: Field account.asset.category.currency_id: unknown parameter 'hide', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-17 16:29:01,091 1785971 INFO contable19 odoo.registry: module solse_pe_payroll_base: creating or updating database tables 
+2026-10-17 16:29:01,276 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/security/ir.model.access.csv 
+2026-10-17 16:29:01,292 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/hr_contract_type_data.xml 
+2026-10-17 16:29:01,295 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/xmlid_alias_data.xml 
+2026-10-17 16:29:01,300 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/hr_rule_parameter_data.xml 
+2026-10-17 16:29:01,352 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/ir_cron_data.xml 
+2026-10-17 16:29:01,355 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/base_config_function.xml 
+2026-10-17 16:29:01,360 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/data/accion_boletas_sin_importes.xml 
+2026-10-17 16:29:01,370 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/views/rule_parameter_views.xml 
+2026-10-17 16:29:01,423 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/wizard/editor_parametro_views.xml 
+2026-10-17 16:29:01,435 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/views/hr_payroll_structure_views.xml 
+2026-10-17 16:29:01,453 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_base/views/hr_payslip_views.xml 
+2026-10-17 16:29:01,479 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_payroll_base: no translation for language es_PE 
+2026-10-17 16:29:01,499 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_payroll_base loaded in 0.83s, 467 queries (+467 other) 
+2026-10-17 16:29:01,519 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/osv/__init__.py:4: DeprecationWarning: Since 19.0, odoo.osv is deprecated use odoo.fields.Domain
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 170, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo19/odoo/odoo/modules/module.py", line 505, in load_openerp_module
+    __import__(qualname)
+  File "/opt/odoo19/solse_farmacia/solse_multi_barcodes/__init__.py", line 1, in <module>
+    from . import models
+  File "/opt/odoo19/solse_farmacia/solse_multi_barcodes/models/__init__.py", line 1, in <module>
+    from . import product, pos_order, pos_session, sale_order_line, stock_picking
+  File "/opt/odoo19/solse_farmacia/solse_multi_barcodes/models/product.py", line 4, in <module>
+    from odoo.osv import expression
+  File "/opt/odoo19/odoo/odoo/osv/__init__.py", line 4, in <module>
+    warnings.warn("Since 19.0, odoo.osv is deprecated use odoo.fields.Domain", DeprecationWarning)
+ 
+2026-10-17 16:29:01,521 1785971 WARNING contable19 odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define model.Constraint on the model. 
+2026-10-17 16:29:01,528 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_payroll_ce (158/201) 
+2026-10-17 16:29:01,636 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:01,815 1785971 INFO contable19 odoo.registry: module solse_pe_payroll_ce: creating or updating database tables 
+2026-10-17 16:29:02,121 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/security/ir.model.access.csv 
+2026-10-17 16:29:02,157 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/data.xml 
+2026-10-17 16:29:02,165 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/academic_degree_data.xml 
+2026-10-17 16:29:02,175 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/employee_regime_data.xml 
+2026-10-17 16:29:02,191 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/type_contract_data.xml 
+2026-10-17 16:29:02,204 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/low_reason_data.xml 
+2026-10-17 16:29:02,214 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/data_relative_relation.xml 
+2026-10-17 16:29:02,219 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/pension_system_data.xml 
+2026-10-17 16:29:02,227 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_employee_category_data.xml 
+2026-10-17 16:29:02,230 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/work.occupation.csv 
+2026-10-17 16:29:02,921 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/plame.lines.csv 
+2026-10-17 16:29:02,998 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_category_data.xml 
+2026-10-17 16:29:03,005 1785971 WARNING contable19 py.warnings: /opt/odoo19/solse_erp_dependencias/om_hr_payroll/models/hr_salary_rule.py:89: DeprecationWarning: Deprecated since 18.0, use _has_cycle() instead
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 216, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 59, in load_data
+    convert_file(env, package.name, filename, idref, mode, noupdate=kind == 'demo')
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 693, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 792, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 663, in parse
+    self._tag_root(de)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 605, in _tag_root
+    f(rec)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 605, in _tag_root
+    f(rec)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 460, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 5172, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 5093, in _load_records_write
+    self.write(values)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 4492, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 1268, in _validate_fields
+    check(records)
+  File "/opt/odoo19/solse_erp_dependencias/om_hr_payroll/models/hr_salary_rule.py", line 89, in _check_parent_id
+    if not self._check_recursion():
+ 
+2026-10-17 16:29:03,031 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_payroll_structure_data.xml 
+2026-10-17 16:29:03,039 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_payroll_structure_adicionales_data.xml 
+2026-10-17 16:29:03,044 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque1_data.xml 
+2026-10-17 16:29:03,068 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque2_data.xml 
+2026-10-17 16:29:03,079 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque3_data.xml 
+2026-10-17 16:29:03,340 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque4_data.xml 
+2026-10-17 16:29:03,346 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque5_data.xml 
+2026-10-17 16:29:03,357 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque6_data.xml 
+2026-10-17 16:29:03,365 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque7_data.xml 
+2026-10-17 16:29:03,382 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque8_data.xml 
+2026-10-17 16:29:03,390 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque9_data.xml 
+2026-10-17 16:29:03,431 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_bloque10_data.xml 
+2026-10-17 16:29:03,444 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/maestros_views.xml 
+2026-10-17 16:29:03,616 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/hr_version_views.xml 
+2026-10-17 16:29:03,679 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/hr_salary_rule_views.xml 
+2026-10-17 16:29:03,703 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/hr_employee_views.xml 
+2026-10-17 16:29:03,799 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/mapeo_contable_views.xml 
+2026-10-17 16:29:03,809 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/res_company_views.xml 
+2026-10-17 16:29:03,830 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/hr_payslip_views.xml 
+2026-10-17 16:29:03,890 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/hr_leave_type_views.xml 
+2026-10-17 16:29:03,910 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/asignar_cuentas_views.xml 
+2026-10-17 16:29:03,921 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/views/menu_views.xml 
+2026-10-17 16:29:03,975 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/report/boleta_pago_report.xml 
+2026-10-17 16:29:03,994 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/report/planilla_report.xml 
+2026-10-17 16:29:04,003 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/planilla_views.xml 
+2026-10-17 16:29:04,016 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/plame_views.xml 
+2026-10-17 16:29:04,030 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/bancos_views.xml 
+2026-10-17 16:29:04,043 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/afpnet_views.xml 
+2026-10-17 16:29:04,056 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/wizard/utilidades_views.xml 
+2026-10-17 16:29:04,067 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/hr_salary_rule_plame_extra_data.xml 
+2026-10-17 16:29:04,086 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce/data/inicializar_function.xml 
+2026-10-17 16:29:04,114 1785971 WARNING contable19 py.warnings: /opt/odoo19/solse_erp_dependencias/om_hr_payroll/models/hr_salary_rule.py:175: DeprecationWarning: Deprecated since 18.0, use _has_cycle() instead
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 216, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 59, in load_data
+    convert_file(env, package.name, filename, idref, mode, noupdate=kind == 'demo')
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 693, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 792, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 663, in parse
+    self._tag_root(de)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 605, in _tag_root
+    f(rec)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 605, in _tag_root
+    f(rec)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 273, in _tag_function
+    _eval_xml(self, rec, env)
+  File "/opt/odoo19/odoo/odoo/tools/convert.py", line 197, in _eval_xml
+    result = method(*args, **kwargs)
+  File "/opt/odoo19/solse_peru_contabilidad/solse_pe_payroll_ce/models/inicializar_estructuras.py", line 622, in inicializar_todo
+    self.replicar_reglas_base()
+  File "/opt/odoo19/solse_peru_contabilidad/solse_pe_payroll_ce/models/inicializar_estructuras.py", line 101, in replicar_reglas_base
+    regla_id.copy(default={
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 5535, in copy
+    new_records = self.create(vals_list)
+  File "/opt/odoo19/odoo/odoo/orm/decorators.py", line 365, in create
+    return method(self, vals_list)
+  File "/opt/odoo19/solse_peru_contabilidad/solse_pe_payroll_base/models/hr_salary_rule.py", line 361, in create
+    reglas = super().create(vals_list)
+  File "/opt/odoo19/odoo/odoo/orm/decorators.py", line 365, in create
+    return method(self, vals_list)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 4710, in create
+    records = self._create(data_list)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 4948, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 1268, in _validate_fields
+    check(records)
+  File "/opt/odoo19/solse_erp_dependencias/om_hr_payroll/models/hr_salary_rule.py", line 175, in _check_parent_rule_id
+    if not self._check_recursion(parent='parent_rule_id'):
+ 
+2026-10-17 16:29:04,117 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Nómina Mensual Empleados": 1 reglas nuevas, 13 sincronizadas. 
+2026-10-17 16:29:04,123 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Nómina Semanal Obreros": 1 reglas nuevas, 13 sincronizadas. 
+2026-10-17 16:29:04,126 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Vacaciones": 0 reglas nuevas, 11 sincronizadas. 
+2026-10-17 16:29:04,150 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:04,201 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,204 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_credit = 4032000 
+2026-10-17 16:29:04,210 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,213 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,218 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,220 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,225 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,227 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,246 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,248 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,255 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_debit = 6275000 
+2026-10-17 16:29:04,258 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,262 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,265 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,271 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,273 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,278 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,280 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,287 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_debit = 6277000 
+2026-10-17 16:29:04,290 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_credit = 4033000 
+2026-10-17 16:29:04,293 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_debit = 6271000 
+2026-10-17 16:29:04,296 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_credit = 4039000 
+2026-10-17 16:29:04,299 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_debit = 6271000 
+2026-10-17 16:29:04,301 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_credit = 4039000 
+2026-10-17 16:29:04,304 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_debit = 6271000 
+2026-10-17 16:29:04,306 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_credit = 4039000 
+2026-10-17 16:29:04,312 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 26 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:04,319 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:04,362 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,365 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_credit = 4032000 
+2026-10-17 16:29:04,370 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,373 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,378 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,380 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,385 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,387 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,404 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,407 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,412 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_debit = 6275000 
+2026-10-17 16:29:04,415 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,419 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,422 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,428 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,431 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,435 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,438 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,444 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_debit = 6277000 
+2026-10-17 16:29:04,446 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_credit = 4033000 
+2026-10-17 16:29:04,450 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_debit = 6271000 
+2026-10-17 16:29:04,453 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_credit = 4039000 
+2026-10-17 16:29:04,456 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_debit = 6271000 
+2026-10-17 16:29:04,458 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_credit = 4039000 
+2026-10-17 16:29:04,461 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_debit = 6271000 
+2026-10-17 16:29:04,463 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_credit = 4039000 
+2026-10-17 16:29:04,470 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 26 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:04,476 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:04,516 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,519 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_credit = 4032000 
+2026-10-17 16:29:04,524 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,527 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,531 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,535 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,541 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,543 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,560 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,563 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,568 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_debit = 6275000 
+2026-10-17 16:29:04,571 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,576 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,579 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,586 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,589 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,594 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,597 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,604 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_debit = 6277000 
+2026-10-17 16:29:04,607 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_credit = 4033000 
+2026-10-17 16:29:04,610 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_debit = 6271000 
+2026-10-17 16:29:04,613 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_credit = 4039000 
+2026-10-17 16:29:04,616 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_debit = 6271000 
+2026-10-17 16:29:04,618 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_credit = 4039000 
+2026-10-17 16:29:04,621 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_debit = 6271000 
+2026-10-17 16:29:04,623 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_credit = 4039000 
+2026-10-17 16:29:04,629 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 26 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:04,636 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:04,677 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,680 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ONP_001 (id 137, struct LIQ) account_credit = 4032000 
+2026-10-17 16:29:04,685 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,688 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_APO_001 (id 138, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,692 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,695 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_COM_001 (id 139, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,699 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_debit = 4111000 
+2026-10-17 16:29:04,702 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: AFP_PRI_001 (id 140, struct LIQ) account_credit = 4170000 
+2026-10-17 16:29:04,720 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,723 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: ESSALUD_001 (id 141, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,729 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_debit = 6275000 
+2026-10-17 16:29:04,732 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_APO_001 (id 142, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,737 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_debit = 6271000 
+2026-10-17 16:29:04,740 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: EPS_CRED_001 (id 143, struct LIQ) account_credit = 4031000 
+2026-10-17 16:29:04,745 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,748 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_SAL_001 (id 144, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,752 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_debit = 6273000 
+2026-10-17 16:29:04,755 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SCTR_PEN_001 (id 145, struct LIQ) account_credit = 4699000 
+2026-10-17 16:29:04,761 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_debit = 6277000 
+2026-10-17 16:29:04,764 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SENATI_001 (id 146, struct LIQ) account_credit = 4033000 
+2026-10-17 16:29:04,767 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_debit = 6271000 
+2026-10-17 16:29:04,770 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 136, struct 0001) account_credit = 4039000 
+2026-10-17 16:29:04,773 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_debit = 6271000 
+2026-10-17 16:29:04,776 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 147, struct NME) account_credit = 4039000 
+2026-10-17 16:29:04,779 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_debit = 6271000 
+2026-10-17 16:29:04,782 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: SIS_MICRO_001 (id 148, struct NSO) account_credit = 4039000 
+2026-10-17 16:29:04,788 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 26 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:04,799 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.hr_leave_type: Nómina PE: «Vacaciones PE (D.Leg. 713)» declara sus días como suspensión 23 (Tabla 21). 
+2026-10-17 16:29:04,801 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.hr_leave_type: Nómina PE: «Unpaid» declara sus días como suspensión 05 (Tabla 21). 
+2026-10-17 16:29:04,802 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.hr_leave_type: Nómina PE: «Sick Time Off» declara sus días como suspensión 20 (Tabla 21). 
+2026-10-17 16:29:04,803 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.hr_leave_type: Nómina PE: «Compensatory Days» declara sus días como suspensión 27 (Tabla 21). 
+2026-10-17 16:29:04,803 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: inicialización de estructuras completada. 
+2026-10-17 16:29:04,874 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.traducciones_om: U-06: términos de om_hr_payroll traducidos (es_PE, solo los que faltan). 
+2026-10-17 16:29:04,876 1785971 INFO contable19 odoo.modules.migration: module solse_pe_payroll_ce: Running migration [19.0.1.15.2>] post-migrate 
+2026-10-17 16:29:04,881 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_payroll_ce: loading translation file /opt/odoo19/solse_peru_contabilidad/solse_pe_payroll_ce/i18n/es.po for language es_PE 
+2026-10-17 16:29:05,014 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_payroll_ce loaded in 3.49s, 2899 queries (+2899 other) 
+2026-10-17 16:29:05,054 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_payroll_asistencia (167/201) 
+2026-10-17 16:29:05,116 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:05,211 1785971 INFO contable19 odoo.registry: module solse_pe_payroll_asistencia: creating or updating database tables 
+2026-10-17 16:29:05,256 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:534: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 534, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:05,257 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:551: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 551, in field_computed
+    warnings.warn(
+ 
+<string>:4: (ERROR/3) Unexpected indentation.
+<string>:5: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
+<string>:10: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
+2026-10-17 16:29:05,324 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_asistencia/data/asistencia_data.xml 
+2026-10-17 16:29:05,350 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Nómina Mensual Empleados": 0 reglas nuevas, 1 sincronizadas. 
+2026-10-17 16:29:05,352 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Nómina Semanal Obreros": 0 reglas nuevas, 1 sincronizadas. 
+2026-10-17 16:29:05,355 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: estructura "Vacaciones": 0 reglas nuevas, 1 sincronizadas. 
+2026-10-17 16:29:05,378 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:05,455 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 0 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:05,462 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:05,535 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 0 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:05,542 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:05,616 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 0 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:05,622 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 140 reglas en la unión struct_id∪rule_ids (8 estructuras) 
+2026-10-17 16:29:05,694 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Cuentas CE: 0 asignaciones. Estado RB: [(11, '0001', '6211000', '4111000'), (59, 'NME', '6211000', '4111000')] 
+2026-10-17 16:29:05,706 1785971 INFO contable19 odoo.addons.solse_pe_payroll_ce.models.inicializar_estructuras: Nómina PE: inicialización de estructuras completada. 
+2026-10-17 16:29:05,706 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_asistencia/views/hr_payslip_views.xml 
+2026-10-17 16:29:05,746 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_asistencia/views/res_company_views.xml 
+2026-10-17 16:29:05,768 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_payroll_asistencia: no translation for language es_PE 
+2026-10-17 16:29:05,774 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_payroll_asistencia loaded in 0.72s, 661 queries (+661 other) 
+2026-10-17 16:29:05,775 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_payroll_ce_demo (168/201) 
+2026-10-17 16:29:05,836 1785971 INFO contable19 odoo.registry: module solse_pe_payroll_ce_demo: creating or updating database tables 
+2026-10-17 16:29:05,860 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:534: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 534, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:05,861 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:551: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 551, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:05,921 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce_demo/security/ir.model.access.csv 
+2026-10-17 16:29:05,927 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce_demo/wizard/regenerar_views.xml 
+2026-10-17 16:29:05,952 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_payroll_ce_demo/views/res_company_views.xml 
+2026-10-17 16:29:05,978 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_payroll_ce_demo: no translation for language es_PE 
+2026-10-17 16:29:05,985 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_payroll_ce_demo loaded in 0.21s, 133 queries (+133 other) 
+2026-10-17 16:29:06,164 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_payroll_asistencia_demo (175/201) 
+2026-10-17 16:29:06,236 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:06,307 1785971 INFO contable19 odoo.registry: module solse_pe_payroll_asistencia_demo: creating or updating database tables 
+2026-10-17 16:29:06,319 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:534: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 534, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:06,320 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:551: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 551, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:06,381 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_payroll_asistencia_demo: no translation for language es_PE 
+2026-10-17 16:29:06,386 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_payroll_asistencia_demo loaded in 0.22s, 28 queries (+28 other) 
+2026-10-17 16:29:06,427 1785971 WARNING contable19 py.warnings: /opt/odoo19/solse_peru_cpe/solse_pos_sunat_gre/controllers/pos_sunat_controller.py:9: DeprecationWarning: Since 19.0, @route(type='json') is a deprecated alias to @route(type='jsonrpc')
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 170, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo19/odoo/odoo/modules/module.py", line 505, in load_openerp_module
+    __import__(qualname)
+  File "/opt/odoo19/solse_peru_cpe/solse_pos_sunat_gre/__init__.py", line 7, in <module>
+    from . import controllers
+  File "/opt/odoo19/solse_peru_cpe/solse_pos_sunat_gre/controllers/__init__.py", line 6, in <module>
+    from . import pos_sunat_controller
+  File "/opt/odoo19/solse_peru_cpe/solse_pos_sunat_gre/controllers/pos_sunat_controller.py", line 9, in <module>
+    class PosSunatController(http.Controller):
+ 
+2026-10-17 16:29:06,436 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_plame_4ta (190/201) 
+2026-10-17 16:29:06,459 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_cierre: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:06,459 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_actual: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:06,488 1785971 WARNING contable19 odoo.fields: pos.order.line.state: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:06,518 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:06,534 1785971 WARNING contable19 odoo.fields: Field solse.pe.cierre.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-17 16:29:06,649 1785971 INFO contable19 odoo.registry: module solse_pe_plame_4ta: creating or updating database tables 
+2026-10-17 16:29:06,679 1785971 WARNING contable19 odoo.addons.base.models.ir_model: Two fields (state_sunat, state) of res.partner() have the same label: Estado. [Modules: solse_pe_vat and solse_pe_edi] 
+2026-10-17 16:29:06,741 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:534: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 534, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:06,741 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:551: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 551, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:06,802 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_plame_4ta/views/plame_wizard_views.xml 
+2026-10-17 16:29:06,825 1785971 INFO contable19 odoo.modules.loading: loading solse_pe_plame_4ta/views/res_config_views.xml 
+2026-10-17 16:29:06,930 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_plame_4ta: no translation for language es_PE 
+2026-10-17 16:29:06,936 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_plame_4ta loaded in 0.50s, 201 queries (+201 other) 
+2026-10-17 16:29:06,951 1785971 INFO contable19 odoo.modules.loading: Loading module solse_pe_plame_demo (197/201) 
+2026-10-17 16:29:06,972 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_cierre: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:06,972 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_actual: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:07,018 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:07,097 1785971 INFO contable19 odoo.registry: module solse_pe_plame_demo: creating or updating database tables 
+2026-10-17 16:29:07,108 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:534: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 534, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:07,109 1785971 WARNING contable19 py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:551: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1596, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1151, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1510, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 199, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 456, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 891, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1746, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1904, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.11.9/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 551, in field_computed
+    warnings.warn(
+ 
+2026-10-17 16:29:07,173 1785971 INFO contable19 odoo.addons.base.models.ir_module: module solse_pe_plame_demo: no translation for language es_PE 
+2026-10-17 16:29:07,177 1785971 INFO contable19 odoo.modules.loading: Module solse_pe_plame_demo loaded in 0.23s, 28 queries (+28 other) 
+2026-10-17 16:29:07,188 1785971 INFO contable19 odoo.modules.loading: 201 modules loaded in 7.80s, 4417 queries (+4417 extra) 
+2026-10-17 16:29:07,222 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:07,284 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_cierre: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:07,284 1785971 WARNING contable19 odoo.fields: res.config.settings.tipo_rep_actual: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:07,395 1785971 WARNING contable19 odoo.fields: pos.order.line.state: selection attribute will be ignored as the field is related 
+2026-10-17 16:29:07,481 1785971 WARNING contable19 odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-17 16:29:07,520 1785971 WARNING contable19 odoo.fields: Field account.asset.category.currency_id: unknown parameter 'hide', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-17 16:29:07,529 1785971 WARNING contable19 odoo.fields: Field solse.pe.cierre.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-17 16:29:08,044 1785971 INFO contable19 odoo.registry: verifying fields for every extended model 
+2026-10-17 16:29:08,076 1785971 WARNING contable19 odoo.addons.base.models.ir_model: Two fields (state_sunat, state) of res.partner() have the same label: Estado. [Modules: solse_pe_vat and solse_pe_edi] 
+2026-10-17 16:29:08,963 1785971 INFO contable19 odoo.modules.loading: Modules loaded. 
+2026-10-17 16:29:08,996 1785971 INFO contable19 odoo.registry: Registry changed, signaling through the database 
+2026-10-17 16:29:08,997 1785971 INFO contable19 odoo.registry: Registry loaded in 12.918s 
+2026-10-17 16:29:08,997 1785971 INFO contable19 odoo.service.server: Stopping workers gracefully 

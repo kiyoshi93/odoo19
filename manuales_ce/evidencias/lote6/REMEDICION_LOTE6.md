@@ -20,7 +20,7 @@ No hay indicios de que la línea principal las haya cambiado entre esas fechas y
 | # | Qué | Esperado | Medido | |
 |---|---|---|---|---|
 | 1 | Versiones | base 19.0.1.14.0 · ce 19.0.1.15.5 · ce_demo 19.0.2.17.1 · asistencia 19.0.1.2.1 · plame_demo 19.0.1.4.1 | Iguales en disco y en base. Sin cambio: asistencia_demo 19.0.1.1.1, demo_libros 19.0.1.38 y plame_rxh_demo 19.0.2.3.1 | OK |
-| 2 | Log del `-u` (C-21, Tabla 21, C-25) | — | **No verificable**: no hay acceso al log | Pendiente |
+| 2 | Log del `-u` (C-21, Tabla 21, C-25) | Sin ERROR; «Cuentas CE: … account_credit = …» solo de reglas nuevas (LIQ y SIS_MICRO_001), ninguna de RB_001, RBS_002, ASF_001, HE25_001, HE35_001 ni MOV_001; hasta 4 líneas «… suspensión 23 / 05 / 20 / 27 (Tabla 21)»; anotar C-25 si aparece | `log_u_2026-10-17.txt` (16:28:55–16:29:08, `--stop-after-init`): **0 ERROR**; termina en «Modules loaded» y «Registry loaded». C-21: «Cuentas CE: 26 asignaciones» por compañía (4 compañías) en la primera pasada y **0** en la segunda. Todas son de reglas nuevas: las 10 de la LIQ (AFP_APO/COM/PRI, ONP, ESSALUD, EPS_APO, EPS_CRED, SCTR_SAL, SCTR_PEN, SENATI) y SIS_MICRO_001 en 0001/NME/NSO (10×2 + 3×2 = 26). **Ninguna** de RB_001, RBS_002, ASF_001, HE25_001, HE35_001 ni MOV_001; 0 líneas «account_credit = 4111…». Estado RB sin cambio (6211000/4111000). Tabla 21: las **4** líneas (Vacaciones PE 23, «Unpaid» 05, «Sick Time Off» 20, «Compensatory Days» 27; en el log salen con su nombre en inglés). C-25: **no aparece** ninguna línea «tiene boletas validadas de microempresa». Solo hay WARNING de configuración y depreciación del núcleo y de otros módulos (O-35) | OK |
 | 3 | Sin recalcular | FM idéntica al lote 6a; Lucía 2 309,73 / 2 160,78 | Las 64 boletas son idénticas al lote 6a (líneas, días, estado y asiento). Sumas: 2 309,73 / 2 160,78 | OK |
 | 4 | «Sincronizar» y los 8 casos (NOMINA antes que PLAME) | NOMINA 525 · BOLETA 166 · BANCOS 407 · MICRO 83 · UTILIDADES 33 · ASISTENCIA 73 · PLAME 121 · PLAME-RXH como siempre | NOMINA **525** (Aportes 126, Vacaciones 80) · BOLETA **166** (Boleta impresa 48) · BANCOS **407** · MICRO **83** · UTILIDADES **33** · ASISTENCIA **73** · PLAME **121** (JOR 20, SNL 10, Diagnóstico 10) · PLAME-RXH **202**. Todas las celdas «ok». Ana: 173,62 · 1 267,25 · 11 838,63 | OK |
 | 4a | Detalle de PLAME | `.jor` de 6 campos con Nilda 8 h y Óscar 96 h; SNL 23\|30 y 23\|15; diagnóstico 31 y 30 | `.jor`: 6 campos en todas las filas; Nilda 8 h, Óscar 96 h. SNL: Nilda 23\|30 y Óscar 23\|15. Diagnóstico: 31 validadas en el periodo y 30 recogidas | OK |
@@ -31,7 +31,7 @@ No hay indicios de que la línea principal las haya cambiado entre esas fechas y
 | 8 | Días trabajados de esa boleta | Una sola columna «¿Pagado?»; VACPE100 sin marcar | Columnas: Descripción · Código · Número de días · Número de horas · **¿Pagado?** (una) · Contrato · Secuencia. WORK100 23/184 marcado; **VACPE100 −11/−88 sin marcar** | OK |
 | 9 | C-28 (solo medir) | Trabajadores de compañías reales con más de una versión activa y, para cada uno, si sus boletas validadas tienen la versión vigente | Compañías reales: solo FM SYSTEMS (las otras tres tienen la marca de laboratorio). FM tiene 17 versiones (ninguna archivada) de 17 trabajadores distintos: **ningún trabajador con más de una versión**, así que no hay boletas que revisar. Las 64 boletas de FM tienen versión | OK (O-31) |
 
-**Resultado: 9 OK y 1 pendiente que no se puede medir desde la sesión (log del `-u`). Ninguna FALLA.**
+**Resultado: los 10 puntos OK. Ninguna FALLA.**
 
 Orden de la medición: versiones → foto de FM → botón 5 (dos veces) → «Sincronizar» y los 8 casos → detalle → tipos de ausencia → boleta impresa → días trabajados → C-28.
 
@@ -45,11 +45,16 @@ Orden de la medición: versiones → foto de FM → botón 5 (dos veces) → «S
 - **O-33 · Feriados de 2026 en SOLSE Demo** (sigue O-24). La compañía del laboratorio no tiene feriados de 2026, así que julio cuenta 23 días hábiles sin la línea «Feriados» (28 y 29/07).
 - **O-34 · Textos en inglés.** El historial de las boletas del laboratorio dice «Pay Slip creado».
 
+- **O-35 · Log del `-u`.**
+  - Sin ERROR. Solo WARNING ajenos al lote: opciones de `/etc/odoo19.conf`, manifiestos sin `license`/`author` en otros módulos, campos de account.move y del POS, y un `DeprecationWarning` de om_hr_payroll (`_check_recursion`, con su pila completa, que **no** es un error).
+  - El log va de 16:28 a 16:29, pero en la base los módulos figuran actualizados a las **16:40** (`write_date`, UTC). Si hubo un segundo `-u` a esa hora, su log debería verse igual. El estado medido corresponde a las versiones del lote.
+
 ## Evidencia (esta carpeta)
 
 - **Casos:** `casos_tras_sincronizar.json`, `vuelta1/resultado.json` y los Excel de comparación `vuelta1/COMPARACION_*.xlsx` (los 8, incluidos NOMINA, BOLETA, MICRO y PLAME).
 - **Detalle de PLAME, MICRO y Ana:** `detalle_casos.json`.
 - **Importes sin cambio:** `fm_lote6_sin_recalcular.json`.
+- **Log del `-u`:** `log_u_2026-10-17.txt` (copia del que pasó Gabriel).
 - **Botón 5:** `o21_antes.txt` y `o21_despues.txt` (1.ª vez), y `demo_boletas_vuelta2_antes.json` y `demo_boletas_vuelta2_despues.json` (2.ª vez).
 - **Tipos de ausencia:** `tipos_ausencia.json`.
 - **Boleta de Óscar:** `boleta_1005_oscar_jul2026.pdf`.
