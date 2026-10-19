@@ -1,0 +1,27 @@
+{
+ "ficha_grupos": [
+  [
+   "IDENTIFICACIÓN T-REGISTRO",
+   true
+  ],
+  [
+   "DOMICILIO PARA EL T-REGISTRO",
+   true
+  ],
+  [
+   "ESTUDIOS SUPERIORES (T-REGISTRO)",
+   true
+  ]
+ ],
+ "ficha_tipo_documento": true,
+ "contrato": {
+  "t8": 1,
+  "t24": 1,
+  "etiquetas": [
+   "Tipo de trabajador (T8)?",
+   "Categoría ocupacional (T24)?"
+  ]
+ },
+ "maestro_T28": "1-80 / 1892",
+ "maestro_T34": "1-80 / 5925"
+}

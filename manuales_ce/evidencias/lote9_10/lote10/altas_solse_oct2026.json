@@ -1,0 +1,71 @@
+{
+ "propuestos": 6,
+ "archivo_nombre": "T-Registro_20603456786_altas_20261031.zip",
+ "resumen": "4 trabajador(es) exportado(s), 2 sin exportar. ide: 4, tra: 4, per: 17, est: 4, cta: 2, edu: 3. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": "70000805 · Trabajador SUBSIDIOS sin derecho · NO SE EXPORTA: falta el tipo de trabajador (Tabla 8) en el contrato; faltan los apellidos y los nombres separados (pestaña Nómina PE; EPE1.4 a EPE1.6); falta la fecha de nacimiento (EPE1.3); falta el sexo (masculino o femenino; EPE1.8); falta el celular (teléfono personal de 9 dígitos que empiece en 9; EPR1.65); falta un correo personal válido (usuario@servidor.dominio; EPR1.64, EPE1.19); falta el domicilio: distrito (ubigeo) y vía o zona (EDR1.3, EDR1.4); falta la situación educativa (Tabla 9; ETR5.1); falta la categoría ocupacional (Tabla 24): la exige el tipo de trabajador ; falta el tipo de contrato (Tabla 12; ETR7.5); falta el tipo de pago (Tabla 16; ETR8.1); falta el régimen de salud (Tabla 32)\n70001507 · Trabajador TREGISTRO sin celular · NO SE EXPORTA: falta el celular (teléfono personal de 9 dígitos que empiece en 9; EPR1.65)",
+ "archivos": {
+  "RP_20603456786.ide": 4,
+  "RP_20603456786.tra": 4,
+  "RP_20603456786.per": 17,
+  "RP_20603456786.est": 4,
+  "RP_20603456786.cta": 2,
+  "RP_20603456786.edu": 3
+ },
+ "zip": "altas_solse_oct2026_T-Registro_20603456786_altas_20261031.zip",
+ "contenido": {
+  "RP_20603456786.ide": [
+   "04|001234567||10/05/1992|RAMÍREZ|TORRES|CARLOS EDUARDO|1|9850||923456789|carlos.ramirez@correo.com|02|HUALLAGA|456|301||||||||||140101|||||||||||||||1|",
+   "01|70001502||20/07/1985|QUISPE|MAMANI|JUAN|1|||912345678|juan.quispe@correo.pe||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1|",
+   "01|70001501||15/03/1990|PEÑA|GÓMEZ|MARÍA JOSÉ|2|||987654321|maria.pena@correo.com.pe|01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1|",
+   "07|AB1234567|862|20/01/1995|TORRES||ANA|2|9850||934567890|ana.torres@correo.com|03|LAS FLORES|78|||||||||||140137|||||||||||||||1|"
+  ],
+  "RP_20603456786.tra": [
+   "04|001234567||01|13||0|||01|0|0|0|0|1|2800.00|1|0||1||||",
+   "01|70001502||01|07||0|||01|0|0|0|0|3|1500.00|1|0||1||||",
+   "01|70001501||01|15|121001|0|123456MPGEA0||01|0|0|0|0|1|4500.00|1|0|0|2||||",
+   "07|AB1234567|862|01|11||0|654321ATARE5|2|01|0|0|0|0|1|3200.00|1|0||2||||"
+  ],
+  "RP_20603456786.per": [
+   "04|001234567||1|1|01/10/2026||||",
+   "04|001234567||1|2|01/10/2026||21||",
+   "04|001234567||1|3|01/10/2026||00||",
+   "04|001234567||1|4|01/10/2026||02||",
+   "01|70001502||1|1|01/10/2026||||",
+   "01|70001502||1|2|01/10/2026||20||",
+   "01|70001502||1|3|01/10/2026||00||",
+   "01|70001502||1|4|01/10/2026||02||",
+   "01|70001501||1|1|01/10/2026||||",
+   "01|70001501||1|2|01/10/2026||21||",
+   "01|70001501||1|3|01/10/2026||01|2|",
+   "01|70001501||1|4|01/10/2026||21||",
+   "07|AB1234567|862|1|1|01/10/2026||||",
+   "07|AB1234567|862|1|2|01/10/2026||21||",
+   "07|AB1234567|862|1|3|01/10/2026||00||",
+   "07|AB1234567|862|1|4|01/10/2026||24||",
+   "07|AB1234567|862|1|5|01/10/2026||1||"
+  ],
+  "RP_20603456786.est": [
+   "04|001234567||20603456786|0000|",
+   "01|70001502||20603456786|0000|",
+   "01|70001501||20603456786|0000|",
+   "07|AB1234567|862|20603456786|0001|"
+  ],
+  "RP_20603456786.cta": [
+   "01|70001501||002|19112345678012|",
+   "07|AB1234567|862|003|8983001234567|"
+  ],
+  "RP_20603456786.edu": [
+   "04|001234567||13|0||||",
+   "01|70001501||13|1|160000001|342056|2012|",
+   "07|AB1234567|862|11|1|241123041|526225|2016|"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.ide": "CRLF",
+  "RP_20603456786.tra": "CRLF",
+  "RP_20603456786.per": "CRLF",
+  "RP_20603456786.est": "CRLF",
+  "RP_20603456786.cta": "CRLF",
+  "RP_20603456786.edu": "CRLF"
+ }
+}

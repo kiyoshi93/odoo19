@@ -1,0 +1,18 @@
+{
+ "propuestos": 1,
+ "archivo_nombre": "T-Registro_20603456786_bajas_20261031.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. per: 1. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "archivos": {
+  "RP_20603456786.per": 1
+ },
+ "zip": "bajas_solse_oct2026_T-Registro_20603456786_bajas_20261031.zip",
+ "contenido": {
+  "RP_20603456786.per": [
+   "01|70001505||1|1||15/10/2026|01||"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.per": "CRLF"
+ }
+}
