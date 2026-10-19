@@ -1,0 +1,13 @@
+{
+ "o21_botones": [
+  "1. Sembrar empleados",
+  "2. Escenario demo (accrual + boletas julio)",
+  "3. Escenario de cese (liquidación)",
+  "4. Validación interna (banderas)",
+  "5. Reiniciar boletas demo (recalcular con reglas vigentes)",
+  "6. Devengar vacaciones a hoy (saldos en Balance)",
+  "Cerrar"
+ ],
+ "boton5_vuelta1": "Datos de prueba - Nómina PE Boletas demo eliminadas: 39 Boletas regeneradas y validadas: 35 (con el escenario de cese) Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar",
+ "o21_resultado": "Datos de prueba - Nómina PE Boletas demo eliminadas: 35 Boletas regeneradas y validadas: 35 (con el escenario de cese) Errores: - 4. Validación interna (banderas) 5. Reiniciar boletas demo (recalcular con reglas vigentes) 6. Devengar vacaciones a hoy (saldos en Balance) Cerrar"
+}

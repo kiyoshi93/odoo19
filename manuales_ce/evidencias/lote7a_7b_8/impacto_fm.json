@@ -1,0 +1,111 @@
+{
+ "ausencias_aprobadas_2026": [
+  {
+   "id": 5,
+   "employee_id": [
+    28,
+    "Héctor Manuel Salas Quispe"
+   ],
+   "holiday_status_id": [
+    74,
+    "Vacaciones PE (D.Leg. 713)"
+   ],
+   "request_date_from": "2026-09-14",
+   "request_date_to": "2026-09-23",
+   "number_of_days": 8.0,
+   "number_of_hours": 64.0
+  },
+  {
+   "id": 4,
+   "employee_id": [
+    27,
+    "Lucía Fernanda Ramos Ticona"
+   ],
+   "holiday_status_id": [
+    74,
+    "Vacaciones PE (D.Leg. 713)"
+   ],
+   "request_date_from": "2026-02-02",
+   "request_date_to": "2026-02-16",
+   "number_of_days": 11.0,
+   "number_of_hours": 88.0
+  }
+ ],
+ "sin_pagar_2026": [],
+ "enfermedad_maternidad_2026": [],
+ "borradores_fm": [],
+ "versiones_fm": 17,
+ "trabajadores_mas_de_una_version": {},
+ "contratos_fin_2026": [
+  {
+   "id": 11,
+   "employee_id": [
+    11,
+    "Carmen Rosa Vásquez León"
+   ],
+   "date_version": "2025-01-01",
+   "contract_date_start": "2025-01-01",
+   "contract_date_end": "2026-08-31",
+   "active": true
+  }
+ ],
+ "liquidaciones_borrador_fm": [],
+ "estructuras": [
+  [
+   "BASE",
+   "Base for new structures"
+  ],
+  [
+   "0001",
+   "Reglas Básicas"
+  ],
+  [
+   "NME",
+   "Nómina Mensual Empleados"
+  ],
+  [
+   "NSO",
+   "Nómina Semanal Obreros"
+  ],
+  [
+   "NQA",
+   "Nómina Quincenal / Adelanto"
+  ],
+  [
+   "GRAT",
+   "Gratificaciones"
+  ],
+  [
+   "CTS",
+   "CTS"
+  ],
+  [
+   "VAC",
+   "Vacaciones"
+  ],
+  [
+   "LIQ",
+   "Liquidación"
+  ]
+ ],
+ "estructuras_liquidacion_propias": [],
+ "campo_plame_regla": [
+  "plame_ids"
+ ],
+ "reglas_0501_0503": [],
+ "vida_ley_fm": [],
+ "campo_empleador": {
+  "is_employer": "Firma como empleador"
+ },
+ "empleador_is_employer": {},
+ "empleador_is_employer_lista": [],
+ "lotes_fm": [
+  {
+   "id": 1,
+   "name": "Planilla diciembre 2026",
+   "state": "done",
+   "date_start": "2026-12-01",
+   "date_end": "2026-12-31"
+  }
+ ]
+}

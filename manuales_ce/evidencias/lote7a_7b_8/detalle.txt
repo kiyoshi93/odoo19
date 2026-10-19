@@ -1,0 +1,35 @@
+## aumento_mitad Trabajador AUMENTO a mitad de mes 70000901
+   1212 2026-10-01 2026-10-31 Nómina Mensual Empleados done v= 3000.0 {'RB_001': 2533.33, 'GROSS': 2533.33, 'ONP_001': 329.33, 'ESSALUD_001': 228.0, 'NET': 2204.0}
+## aumento_dos_contratos Trabajadora AUMENTO dos contratos 70000902
+   1213 2026-10-01 2026-10-31 Nómina Mensual Empleados done v= 3000.0 {'RB_001': 2500.0, 'GROSS': 2500.0, 'ONP_001': 325.0, 'ESSALUD_001': 225.0, 'NET': 2175.0}
+## aumento_sin_goce_semana Trabajador AUMENTO sin goce una semana 70000903
+   1214 2026-11-01 2026-11-30 Nómina Mensual Empleados done v= 2400.0 {'RB_001': 1980.0, 'GROSS': 1980.0, 'ONP_001': 257.4, 'ESSALUD_001': 178.2, 'NET': 1722.6}
+## aumento_sin_goce_mes Trabajadora AUMENTO sin goce todo el mes 70000904
+## cese_devolucion Trabajador CESE devolución 70004501
+   1262 2026-04-01 2026-04-30 Nómina Mensual Empleados done v= 8000.0 {'RB_001': 8000.0, 'GROSS': 8000.0, 'ONP_001': 1040.0, 'ESSALUD_001': 720.0, 'NET': 6960.0}
+   1264 2026-04-01 2026-04-30 Liquidación done v= 8000.0 {'GROSS': 11146.66, 'ONP_001': 173.33, 'DEV5_001': 2158.67, 'ESSALUD_001': 120.0, 'NET': 13132.0}
+## cese_reingreso Trabajador CESE reingreso 70004504
+   1263 2026-04-01 2026-04-30 Nómina Mensual Empleados done v= 8000.0 {'RB_001': 8000.0, 'GROSS': 8000.0, 'ONP_001': 1040.0, 'R5TA_001': 856.09, 'ESSALUD_001': 720.0, 'NET': 6103.91}
+## cese_orden_invertido Trabajadora CESE orden invertido 70004505
+   1259 2026-03-01 2026-03-31 Liquidación done v= 20000.0 {'GROSS': 20900.0, 'ONP_001': 216.67, 'DEV5_001': 5257.17, 'ESSALUD_001': 150.0, 'NET': 25940.5}
+   1261 2026-03-01 2026-03-31 Nómina Mensual Empleados done v= 20000.0 {'RB_001': 20000.0, 'GROSS': 20000.0, 'ONP_001': 2600.0, 'R5TA_001': 1994.0, 'ESSALUD_001': 1800.0, 'NET': 15406.0}
+## indem_351 Trabajador INDEMNIZACION indeterminado 70000351
+   1265 2026-04-01 2026-04-30 Liquidación done v= 3000.0 {'IND_001': 18575.0, 'GROSS': 22646.67, 'ONP_001': 50.92, 'ESSALUD_001': 101.7, 'NET': 22595.75}
+## indem_352 Trabajadora INDEMNIZACION modal 70000352
+   1266 2026-04-01 2026-04-30 Liquidación done v= 3000.0 {'IND_MOD_001': 18000.0, 'GROSS': 22180.0, 'ONP_001': 130.0, 'ESSALUD_001': 101.7, 'NET': 22050.0}
+## indem_355 Trabajador INDEMNIZACION modal renovado 70000355
+   1269 2026-04-01 2026-04-30 Liquidación done v= 3000.0 {'IND_MOD_001': 18000.0, 'GROSS': 20090.0, 'ONP_001': 65.0, 'ESSALUD_001': 101.7, 'NET': 20025.0}
+## indem_357 Trabajador INDEMNIZACION indeterminado tras un modal 70000357
+   1271 2026-04-01 2026-04-30 Liquidación done v= 3000.0 {'IND_001': 18750.0, 'GROSS': 22930.0, 'ONP_001': 65.0, 'ESSALUD_001': 101.7, 'NET': 22865.0}
+## indem_354 Trabajadora INDEMNIZACION periodo de prueba 70000354
+   1268 2026-04-01 2026-04-30 Liquidación done v= 3000.0 {'GROSS': 2090.0, 'ONP_001': 65.0, 'ESSALUD_001': 101.7, 'NET': 2025.0}
+## vida_561 Trabajador VIDALEY tasa 70000561
+   1273 2026-06-01 2026-06-30 Nómina Mensual Empleados done v= 3000.0 {'RB_001': 3000.0, 'GROSS': 3000.0, 'ONP_001': 390.0, 'ESSALUD_001': 270.0, 'VIDA_001': 15.9, 'NET': 2610.0}
+## vida_562 Trabajadora VIDALEY tope 70000562
+   1274 2026-06-01 2026-06-30 Nómina Mensual Empleados done v= 15000.0 {'RB_001': 15000.0, 'GROSS': 15000.0, 'ONP_001': 1950.0, 'R5TA_001': 1529.75, 'ESSALUD_001': 1350.0, 'VIDA_001': 66.77, 'NET': 11520.25}
+## vida_568 Trabajadora VIDALEY vacaciones sobre el tope 70000568
+   1283 2026-06-01 2026-06-15 Vacaciones done v= 15000.0 {'GROSS': 7500.0, 'ONP_001': 975.0, 'ESSALUD_001': 675.0, 'VIDA_001': 39.75, 'NET': 6525.0}
+   1284 2026-06-01 2026-06-30 Nómina Mensual Empleados done v= 15000.0 {'RB_001': 15000.0, 'GROSS': 15000.0, 'ONP_001': 1950.0, 'R5TA_001': 2604.88, 'ESSALUD_001': 1350.0, 'VIDA_001': 27.02, 'NET': 10445.12}
+## vida_565 Trabajador VIDALEY póliza vencida 70000565
+   1277 2026-06-01 2026-06-30 Nómina Mensual Empleados done v= 3000.0 {'RB_001': 3000.0, 'GROSS': 3000.0, 'ONP_001': 390.0, 'ESSALUD_001': 270.0, 'NET': 2610.0}
+O-31 después: sin versión 0 de 136

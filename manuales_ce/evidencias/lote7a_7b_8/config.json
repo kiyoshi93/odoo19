@@ -1,0 +1,325 @@
+{
+ "tipos_ausencia": [
+  {
+   "id": 1,
+   "name": "Tiempo personal pagado",
+   "code": false,
+   "pe_tipo_suspension": false
+  },
+  {
+   "id": 2,
+   "name": "Tiempo personal por enfermedad",
+   "code": false,
+   "pe_tipo_suspension": "20"
+  },
+  {
+   "id": 4,
+   "name": "Sin pagar",
+   "code": "SINGOCE100",
+   "pe_tipo_suspension": "05"
+  },
+  {
+   "id": 3,
+   "name": "Días compensatorios",
+   "code": false,
+   "pe_tipo_suspension": "27"
+  },
+  {
+   "id": 5,
+   "name": "Tiempo personal adicional",
+   "code": false,
+   "pe_tipo_suspension": false
+  },
+  {
+   "id": 6,
+   "name": "Horas extra",
+   "code": false,
+   "pe_tipo_suspension": false
+  },
+  {
+   "id": 75,
+   "name": "Descanso por maternidad (pre y postnatal)",
+   "code": "MATPE100",
+   "pe_tipo_suspension": "22"
+  },
+  {
+   "id": 74,
+   "name": "Vacaciones PE (D.Leg. 713)",
+   "code": "VACPE100",
+   "pe_tipo_suspension": "23"
+  }
+ ],
+ "campo_estructura": {
+  "pe_tipos_ausencia_no_pagada_ids": "Ausencias no pagadas"
+ },
+ "estructuras": [
+  {
+   "id": 3,
+   "name": "Nómina Mensual Empleados",
+   "code": "NME",
+   "pe_tipos_ausencia_no_pagada_ids": [
+    4,
+    74
+   ],
+   "pe_tipos_ausencia_no_pagada_ids_nombres": [
+    "Sin pagar",
+    "Vacaciones PE (D.Leg. 713)"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Nómina Semanal Obreros",
+   "code": "NSO",
+   "pe_tipos_ausencia_no_pagada_ids": [
+    4,
+    74
+   ],
+   "pe_tipos_ausencia_no_pagada_ids_nombres": [
+    "Sin pagar",
+    "Vacaciones PE (D.Leg. 713)"
+   ]
+  }
+ ],
+ "parametro_c31": [
+  {
+   "id": 38,
+   "value": "3,4"
+  }
+ ],
+ "controles": [
+  {
+   "id": 1,
+   "name": "FM SYSTEMS SOLUTIONS EIRL",
+   "pe_control_orden_diciembre": "aviso",
+   "pe_control_sistema_pensionario": "aviso",
+   "pe_control_derecho_subsidio": "aviso",
+   "pe_control_vida_ley": "ninguno",
+   "pe_control_orden_cese": "aviso"
+  },
+  {
+   "id": 4,
+   "name": "SOLSE Demo Servicios S.A.C.",
+   "pe_control_orden_diciembre": "aviso",
+   "pe_control_sistema_pensionario": "aviso",
+   "pe_control_derecho_subsidio": "aviso",
+   "pe_control_vida_ley": "ninguno",
+   "pe_control_orden_cese": "aviso"
+  }
+ ],
+ "controles_etiquetas": {
+  "pe_control_orden_diciembre": "Gratificación y vacaciones de diciembre antes que la mensual",
+  "pe_control_sistema_pensionario": "Trabajador sin sistema pensionario",
+  "pe_control_derecho_subsidio": "Subsidio sin los aportes que dan derecho",
+  "pe_control_vida_ley": "Trabajador sin póliza Vida Ley",
+  "pe_control_orden_cese": "Boletas del año antes que la liquidación del cese"
+ },
+ "vida_ley_campos": {
+  "id": "ID",
+  "display_name": "Display Name",
+  "name": "Entidad",
+  "nro": "N° Póliza",
+  "start_date": "Fecha inicio vigencia",
+  "end_date": "Fecha fin vigencia",
+  "hiring_term": "Plazo de contratación",
+  "rate": "Tasa (%)",
+  "amount": "Importe por trabajador",
+  "pe_calcular_en_planilla": "Calcular la prima en la planilla",
+  "company_id": "Compañía",
+  "employees_ids": "Empleados",
+  "cantidad_empleados": "N.° de empleados"
+ },
+ "vida_ley": [
+  {
+   "id": 1,
+   "name": "Aseguradora VIDALEY (tasa)",
+   "nro": "VL-TASA",
+   "start_date": "2026-01-01",
+   "end_date": "2026-12-31",
+   "hiring_term": false,
+   "rate": 0.53,
+   "amount": 0.0,
+   "pe_calcular_en_planilla": true,
+   "company_id": [
+    4,
+    "SOLSE Demo Servicios S.A.C."
+   ],
+   "employees_ids": [
+    282,
+    284,
+    276,
+    278,
+    277,
+    283
+   ],
+   "cantidad_empleados": 6
+  },
+  {
+   "id": 2,
+   "name": "Aseguradora VIDALEY (importe fijo)",
+   "nro": "VL-FIJA",
+   "start_date": "2026-01-01",
+   "end_date": "2026-12-31",
+   "hiring_term": false,
+   "rate": 0.0,
+   "amount": 25.0,
+   "pe_calcular_en_planilla": true,
+   "company_id": [
+    4,
+    "SOLSE Demo Servicios S.A.C."
+   ],
+   "employees_ids": [
+    279
+   ],
+   "cantidad_empleados": 1
+  },
+  {
+   "id": 3,
+   "name": "Aseguradora VIDALEY (vencida)",
+   "nro": "VL-VENCIDA",
+   "start_date": "2025-06-01",
+   "end_date": "2026-05-31",
+   "hiring_term": false,
+   "rate": 0.53,
+   "amount": 0.0,
+   "pe_calcular_en_planilla": true,
+   "company_id": [
+    4,
+    "SOLSE Demo Servicios S.A.C."
+   ],
+   "employees_ids": [
+    280
+   ],
+   "cantidad_empleados": 1
+  }
+ ],
+ "boleta_561": [
+  {
+   "id": 1273,
+   "name": "Recibo de salario - Trabajador VIDALEY tasa - Nómina Mensual Empleados (01/06/2026 al 30/06/2026)",
+   "move_id": [
+    1830,
+    "PLLA/2026/06/0003"
+   ],
+   "number": false,
+   "pe_por_pagar": 2610.0
+  }
+ ],
+ "asiento_561": [
+  {
+   "id": 12247,
+   "account_id": [
+    4563,
+    "Remuneraciones - Sueldos y salarios"
+   ],
+   "partner_id": false,
+   "debit": 3000.0,
+   "credit": 0.0,
+   "name": "Remuneración básica"
+  },
+  {
+   "id": 12248,
+   "account_id": [
+    4393,
+    "Remuneraciones por pagar - Sueldos y salarios por pagar"
+   ],
+   "partner_id": [
+    441,
+    "Trabajador VIDALEY tasa"
+   ],
+   "debit": 0.0,
+   "credit": 3000.0,
+   "name": "Remuneración básica"
+  },
+  {
+   "id": 12249,
+   "account_id": [
+    4393,
+    "Remuneraciones por pagar - Sueldos y salarios por pagar"
+   ],
+   "partner_id": [
+    441,
+    "Trabajador VIDALEY tasa"
+   ],
+   "debit": 390.0,
+   "credit": 0.0,
+   "name": "ONP - Sistema Nacional de Pensiones"
+  },
+  {
+   "id": 12250,
+   "account_id": [
+    4375,
+    "Instituciones públicas - ONP"
+   ],
+   "partner_id": false,
+   "debit": 0.0,
+   "credit": 390.0,
+   "name": "ONP - Sistema Nacional de Pensiones"
+  },
+  {
+   "id": 12251,
+   "account_id": [
+    4572,
+    "Seguridad, previsión social y otras contribuciones - Régimen de prestaciones de salud"
+   ],
+   "partner_id": false,
+   "debit": 270.0,
+   "credit": 0.0,
+   "name": "ESSALUD - Aporte del empleador"
+  },
+  {
+   "id": 12252,
+   "account_id": [
+    4374,
+    "Instituciones públicas - ESSALUD"
+   ],
+   "partner_id": false,
+   "debit": 0.0,
+   "credit": 270.0,
+   "name": "ESSALUD - Aporte del empleador"
+  },
+  {
+   "id": 12253,
+   "account_id": [
+    4578,
+    "Seguridad, previsión social y otras contribuciones - Contribuciones al SENATI"
+   ],
+   "partner_id": false,
+   "debit": 22.5,
+   "credit": 0.0,
+   "name": "SENATI - Contribución"
+  },
+  {
+   "id": 12254,
+   "account_id": [
+    4376,
+    "Instituciones públicas - Contribución al SENATI"
+   ],
+   "partner_id": false,
+   "debit": 0.0,
+   "credit": 22.5,
+   "name": "SENATI - Contribución"
+  },
+  {
+   "id": 12255,
+   "account_id": [
+    4575,
+    "Seguridad, previsión social y otras contribuciones - Seguro de vida"
+   ],
+   "partner_id": false,
+   "debit": 15.9,
+   "credit": 0.0,
+   "name": "Seguro Vida Ley (aporte del empleador)"
+  },
+  {
+   "id": 12256,
+   "account_id": [
+    4460,
+    "Otras cuentas por pagar diversas - Other accounts payable"
+   ],
+   "partner_id": false,
+   "debit": 0.0,
+   "credit": 15.9,
+   "name": "Seguro Vida Ley (aporte del empleador)"
+  }
+ ]
+}

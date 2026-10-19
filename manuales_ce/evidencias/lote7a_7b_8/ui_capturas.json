@@ -1,0 +1,62 @@
+{
+ "l7a_p5_boleta_impresa_aumento_oct2026": "BOLETA DE PAGO DE REMUNERACIONES D.S. N° 001-98-TR y modificatorias — Planilla Electrónica EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 Periodo: 01/10/2026 — 31/10/2026 TRABAJADOR: Trabajador AUMENTO a mitad de mes Documento (DNI): 70000901 Ocupación: — Situación: D LEG N.° 728 Fecha de ingreso: 2026-09-01 Rég. pensionario: DL 19990 - SIST NAC DE PENS - ONP Remuneración básica: 3000.00 Días laborados: 31 Días no laborados: 0 Horas: 96.0 Moneda: PEN INGRESOS DESCUENTOS APORTES DEL EMPLEADOR Remuneración básica 2533.33 ONP - Sistema Nacional de Pensiones 329.33 ESSALUD - Aporte del empleador 228.00 SENATI - Contribución 19.00 Total ingresos: 2533.33 Total descuentos: 329.33 Total aportes: 247.00 NETO A PAGAR: S/ 2204.00 SON: DOS MIL DOSCIENTOS CUATRO Y 00/100 SOLES EMPLEADOR TRABAJADOR DNI: 70000901 La entrega de la presente boleta puede realizarse por medios físicos o electrónicos conforme al D.S. 009-2011-TR. El duplicado queda en poder del empleador.",
+ "l7a_tipos": [
+  "Tiempo personal pagado Del encargado de tiempo personal Tiempo personal pagado",
+  "Tiempo personal por enfermedad 20 · S.I. Enfermedad o accidente (primeros veinte días) Del encargado de tiempo personal Tiempo personal por enfermedad",
+  "Sin pagar SINGOCE100 05 · S.P. Permiso, licencia u otros motivos sin goce de haber Del encargado de tiempo personal Sin pagar",
+  "Días compensatorios 27 · S.I. Días compensados por horas de sobretiempo Del encargado de tiempo personal Tiempo personal compensatorio",
+  "Tiempo personal adicional Del encargado de tiempo personal",
+  "Horas extra Del encargado de tiempo personal",
+  "Vacaciones PE (D.Leg. 713) VACPE100 23 · S.I. Descanso vacacional Del encargado de tiempo personal Vacaciones PE Perú",
+  "Descanso por maternidad (pre y postnatal) MATPE100 22 · S.I. Maternidad - pre y post natal (subsidiado) Del encargado de tiempo personal Perú"
+ ],
+ "l7a_estructura_nme": "Nuevo Estructuras salariales Nómina Mensual Empleados 1 / 1 Nombre Referencia Padre Compañía Reglas salariales Ausencias no pagadas Nombre Código Categoría Secuencia Registro de contribución Salario base BASIC Básico Salario diario SD_001 Base de cálculo Indicador de semanas del mes ISM_001 Base de cálculo Remuneración básica RB_001 Ingreso Afecto Asignación familiar ASF_001 Ingreso Afecto Subsidio por incapacidad temporal SUB_INC_001 Ingreso afecto AFP Subsidio por maternidad SUB_MAT_001 Ingreso afecto AFP Horas extras 25% HE25_001 Ingreso Afecto Horas extras 35% HE35_001 Ingreso Afecto Sobre",
+ "l7b_p5_liquidacion_abril_70004501": "BOLETA DE PAGO DE REMUNERACIONES D.S. N° 001-98-TR y modificatorias — Planilla Electrónica EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 Periodo: 01/04/2026 — 30/04/2026 TRABAJADOR: Trabajador CESE devolución Documento (DNI): 70004501 Ocupación: — Situación: D LEG N.° 728 Fecha de ingreso: 2020-03-01 Rég. pensionario: DL 19990 - SIST NAC DE PENS - ONP Remuneración básica: 8000.00 Días laborados: 30 Días no laborados: 0 Horas: 176.0 Moneda: PEN INGRESOS DESCUENTOS APORTES DEL EMPLEADOR Vacaciones truncas 1333.33 Gratificación trunca 5333.33 Bonificación extraordinaria s/ gratificación trunca 480.00 CTS trunca 4000.00 Devolución de retención en exceso de 5ta categoría 2158.67 ONP - Sistema Nacional de Pensiones 173.33 ESSALUD - Aporte del empleador 120.00 SENATI - Contribución 10.00 Total ingresos: 13305.33 Total descuentos: 173.33 Total aportes: 130.00 NETO A PAGAR: S/ 13132.00 SON: TRECE MIL CIENTO TREINTA Y DOS Y 00/100 SOLES EMPLEADOR TRABAJADOR DNI: 70004501 La entrega de la presente boleta puede realizarse por medios físicos o electrónicos conforme al D.S. 009-2011-TR. El duplicado queda en poder del empleador.",
+ "l7b_contrato_campos": {
+  "despido": 1,
+  "fin_pactado": 1,
+  "etiquetas": [
+   "Despido arbitrario (se indemniza)?",
+   "Fin pactado del contrato modal?"
+  ]
+ },
+ "l7b_controles": "CONTROLES AL VALIDAR LA BOLETA Gratificación y vacaciones de diciembre antes que la mensual? Trabajador sin sistema pensionario? Subsidio sin los aportes que dan derecho? Boletas del año antes que la liquidación del cese? Trabajador sin póliza Vida Ley? PAGO A BANCOS Interbank: CTS en cuenta de otro banco? MICROEMPRESA (REMYPE) Microempresa: régimen de salud? Microempresa: asignación familiar?",
+ "l8_p5_boleta_impresa_vidaley_70000561": "BOLETA DE PAGO DE REMUNERACIONES D.S. N° 001-98-TR y modificatorias — Planilla Electrónica EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 Periodo: 01/06/2026 — 30/06/2026 TRABAJADOR: Trabajador VIDALEY tasa Documento (DNI): 70000561 Ocupación: — Situación: D LEG N.° 728 Fecha de ingreso: 2025-01-01 Rég. pensionario: DL 19990 - SIST NAC DE PENS - ONP Remuneración básica: 3000.00 Días laborados: 30 Días no laborados: 0 Horas: 176.0 Moneda: PEN INGRESOS DESCUENTOS APORTES DEL EMPLEADOR Remuneración básica 3000.00 ONP - Sistema Nacional de Pensiones 390.00 ESSALUD - Aporte del empleador 270.00 SENATI - Contribución 22.50 Seguro Vida Ley (aporte del empleador) 15.90 Total ingresos: 3000.00 Total descuentos: 390.00 Total aportes: 308.40 NETO A PAGAR: S/ 2610.00 SON: DOS MIL SEISCIENTOS DIEZ Y 00/100 SOLES EMPLEADOR TRABAJADOR DNI: 70000561 La entrega de la presente boleta puede realizarse por medios físicos o electrónicos conforme al D.S. 009-2011-TR. El duplicado queda en poder del empleador.",
+ "l8_asiento": [
+  "6211000 Remuneraciones - Sueldos y salarios Remuneración básica S/ 3,000.00 S/ 0.00",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajador VIDALEY tasa Remuneración básica S/ 0.00 S/ 3,000.00",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajador VIDALEY tasa ONP - Sistema Nacional de Pensiones S/ 390.00 S/ 0.00",
+  "4032000 Instituciones públicas - ONP ONP - Sistema Nacional de Pensiones S/ 0.00 S/ 390.00",
+  "6271000 Seguridad, previsión social y otras contribuciones - Régimen de prestaciones de salud ESSALUD - Aporte del empleador S/ 270.00 S/ 0.00",
+  "4031000 Instituciones públicas - ESSALUD ESSALUD - Aporte del empleador S/ 0.00 S/ 270.00",
+  "6277000 Seguridad, previsión social y otras contribuciones - Contribuciones al SENATI SENATI - Contribución S/ 22.50 S/ 0.00",
+  "4033000 Instituciones públicas - Contribución al SENATI SENATI - Contribución S/ 0.00 S/ 22.50",
+  "6274000 Seguridad, previsión social y otras contribuciones - Seguro de vida Seguro Vida Ley (aporte del empleador) S/ 15.90 S/ 0.00",
+  "4699000 Otras cuentas por pagar diversas - Other accounts payable Seguro Vida Ley (aporte del empleador) S/ 0.00 S/ 15.90"
+ ],
+ "l8_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "l8_por_pagar": "2,610.00",
+ "l8_ficha": [
+  "ENTREGA DE LA BOLETA Boleta por correo? DERECHOHABIENTES Parentesco Nombre Género Fecha de nacimiento Agregar una línea ​ ​ ​"
+ ],
+ "l8_p7_liquidacion_deposito_cts": "LIQUIDACIÓN DE DEPÓSITO DE LA COMPENSACIÓN POR TIEMPO DE SERVICIOS TUO del D.Leg. 650 (D.S. 001-97-TR) EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 TRABAJADOR: Martín Chávez Ríos Documento de identidad: 70000605 Fecha de ingreso: 2026-01-01 Remuneración computable Remuneración básica 2200.14 Asignación familiar 0.00 1/6 de la gratificación percibida en el periodo 0.00 Total remuneración computable 2200.14 Periodo y tiempo computable Periodo que se deposita del 01/11/2025 al 30/04/2026 Tiempo computable del 01/01/2026 al 30/04/2026: 4 meses y 0 días Depósito Entidad depositaria Banco De Credito Del Peru N.° de cuenta CTS 19166666666602 Moneda de la cuenta PEN Fecha del depósito — N.° de operación — MONTO DEPOSITADO S/ 733.38 SON: SETECIENTOS TREINTA Y TRES Y 38/100 SOLES EMPLEADOR TRABAJADOR Doc.: 70000605",
+ "l8_vidaley_columnas": [
+  "Entidad",
+  "N° Póliza",
+  "Fecha inicio vigencia",
+  "Fecha fin vigencia",
+  "Tasa (%)",
+  "Calcular la prima en la planilla",
+  "N.° de empleados"
+ ],
+ "l8_vidaley_filas": [
+  "Aseguradora VIDALEY (tasa) VL-TASA 1 ene. 31 dic. 0.5300 6",
+  "Aseguradora VIDALEY (importe fijo) VL-FIJA 1 ene. 31 dic. 0.0000 1",
+  "Aseguradora VIDALEY (vencida) VL-VENCIDA 1 jun. 2025 31 may. 0.5300 1"
+ ]
+}
