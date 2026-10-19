@@ -1,6 +1,6 @@
 # Re-medición de los lotes 9 y 10 de nómina CE — contable19
 
-- **Fecha:** 2026-10-19, de 21:25 a 21:35 (hora del servidor, UTC).
+- **Fecha:** 2026-10-19, de 21:25 a 21:43 (hora del servidor, UTC).
 - **Alcance:** solo medición.
 - **Escrituras:** solo las corridas de los 13 casos. El PLAME de octubre y noviembre se generó con el asistente transitorio, que no guarda datos.
 
