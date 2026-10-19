@@ -1,0 +1,54 @@
+{
+ "lineas_grat_fm": 8,
+ "por_semestre": {
+  "('Lucía Fernanda Ramos Ticona', 27, '2025-S2')": {
+   "GRATI_001": [
+    [
+     96,
+     4613.0
+    ],
+    [
+     110,
+     4613.0
+    ]
+   ]
+  },
+  "('Lucía Fernanda Ramos Ticona', 27, '2026-S2')": {
+   "GRATI_001": [
+    [
+     129,
+     4613.0
+    ],
+    [
+     144,
+     4623.0
+    ]
+   ]
+  },
+  "('Héctor Manuel Salas Quispe', 28, '2025-S2')": {
+   "GRATI_001": [
+    [
+     112,
+     2200.0
+    ],
+    [
+     98,
+     1466.67
+    ]
+   ]
+  },
+  "('Héctor Manuel Salas Quispe', 28, '2026-S2')": {
+   "GRATI_001": [
+    [
+     146,
+     2200.0
+    ],
+    [
+     131,
+     2200.0
+    ]
+   ]
+  }
+ },
+ "doble": []
+}

@@ -1,0 +1,362 @@
+{
+ "PLAME-RXH": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "PLAME-RXH · 2026-10-19 21:39:28 · CONFORME",
+  "celdas": 202,
+  "por_estructura": {
+   "4TA": 108,
+   "Archivos": 12,
+   "Diagnóstico": 18,
+   "PS4": 64
+  },
+  "resultados": {
+   "ok": 202
+  },
+  "excel": "COMPARACION_PLAME-RXH.xlsx"
+ },
+ "NOMINA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "NOMINA · 2026-10-19 21:39:48 · CONFORME",
+  "celdas": 525,
+  "por_estructura": {
+   "AFPnet": 78,
+   "Aportes": 126,
+   "Asiento": 12,
+   "Boletas": 189,
+   "Configuración": 16,
+   "Diagnóstico": 18,
+   "Parámetros": 6,
+   "Vacaciones": 80
+  },
+  "resultados": {
+   "ok": 525
+  },
+  "excel": "COMPARACION_NOMINA.xlsx"
+ },
+ "PLAME": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "PLAME · 2026-10-19 21:39:50 · CONFORME",
+  "celdas": 121,
+  "por_estructura": {
+   "Anexo4ta": 6,
+   "Diagnóstico": 10,
+   "JOR": 20,
+   "REM": 60,
+   "SNL": 10,
+   "ZIP": 15
+  },
+  "resultados": {
+   "ok": 121
+  },
+  "excel": "COMPARACION_PLAME.xlsx"
+ },
+ "BOLETA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "BOLETA · 2026-10-19 21:39:56 · CONFORME",
+  "celdas": 166,
+  "por_estructura": {
+   "Boleta impresa": 48,
+   "Conceptos": 114,
+   "Diagnóstico": 4
+  },
+  "resultados": {
+   "ok": 166
+  },
+  "excel": "COMPARACION_BOLETA.xlsx"
+ },
+ "BANCOS": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "BANCOS · 2026-10-19 21:40:02 · CONFORME",
+  "celdas": 407,
+  "por_estructura": {
+   "Archivos": 36,
+   "BCP CTS": 48,
+   "BCP haberes": 87,
+   "Boletas": 30,
+   "Diagnóstico": 4,
+   "Interbank CTS": 30,
+   "Interbank haberes": 66,
+   "Omitidos": 64,
+   "Scotiabank CTS": 6,
+   "Scotiabank haberes": 36
+  },
+  "resultados": {
+   "ok": 407
+  },
+  "excel": "COMPARACION_BANCOS.xlsx"
+ },
+ "MICRO": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "MICRO · 2026-10-19 21:40:07 · CONFORME",
+  "celdas": 83,
+  "por_estructura": {
+   "Conceptos": 63,
+   "Diagnóstico": 12,
+   "Régimen": 8
+  },
+  "resultados": {
+   "ok": 83
+  },
+  "excel": "COMPARACION_MICRO.xlsx"
+ },
+ "UTILIDADES": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "UTILIDADES · 2026-10-19 21:40:16 · CONFORME",
+  "celdas": 33,
+  "por_estructura": {
+   "Reparto": 15,
+   "Resumen": 10,
+   "Tope": 8
+  },
+  "resultados": {
+   "ok": 33
+  },
+  "excel": "COMPARACION_UTILIDADES.xlsx"
+ },
+ "AUMENTO": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "AUMENTO · 2026-10-19 21:40:21 · CONFORME",
+  "celdas": 66,
+  "por_estructura": {
+   "Conceptos": 36,
+   "Diagnóstico": 12,
+   "PLAME": 18
+  },
+  "resultados": {
+   "ok": 66
+  },
+  "excel": "COMPARACION_AUMENTO.xlsx"
+ },
+ "SUBSIDIOS": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "SUBSIDIOS · 2026-10-19 21:40:38 · CONFORME",
+  "celdas": 344,
+  "por_estructura": {
+   "Conceptos": 192,
+   "Diagnóstico": 16,
+   "Días": 48,
+   "PLAME": 88
+  },
+  "resultados": {
+   "ok": 344
+  },
+  "excel": "COMPARACION_SUBSIDIOS.xlsx"
+ },
+ "CESE": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "CESE · 2026-10-19 21:40:50 · CONFORME",
+  "celdas": 149,
+  "por_estructura": {
+   "Conceptos": 111,
+   "Diagnóstico": 20,
+   "PLAME": 18
+  },
+  "resultados": {
+   "ok": 149
+  },
+  "excel": "COMPARACION_CESE.xlsx"
+ },
+ "INDEMNIZACION": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "INDEMNIZACION · 2026-10-19 21:40:57 · CONFORME",
+  "celdas": 63,
+  "por_estructura": {
+   "Conceptos": 33,
+   "Diagnóstico": 14,
+   "PLAME": 16
+  },
+  "resultados": {
+   "ok": 63
+  },
+  "excel": "COMPARACION_INDEMNIZACION.xlsx"
+ },
+ "VIDALEY": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "VIDALEY · 2026-10-19 21:41:06 · CONFORME",
+  "celdas": 58,
+  "por_estructura": {
+   "Conceptos": 30,
+   "Diagnóstico": 10,
+   "PLAME": 18
+  },
+  "resultados": {
+   "ok": 58
+  },
+  "excel": "COMPARACION_VIDALEY.xlsx"
+ },
+ "ASISTENCIA": {
+  "pasos": {
+   "limpiar": "OK",
+   "sembrar": "OK",
+   "generar": "OK",
+   "comparar": "OK"
+  },
+  "estado": "comparado",
+  "conforme": true,
+  "porcentaje": 100.0,
+  "comparacion": "ASISTENCIA · 2026-10-19 21:41:10 · CONFORME",
+  "celdas": 73,
+  "por_estructura": {
+   "Combinado": 20,
+   "Diagnóstico": 8,
+   "Faltas": 35,
+   "Tardanzas": 10
+  },
+  "resultados": {
+   "ok": 73
+  },
+  "excel": "COMPARACION_ASISTENCIA.xlsx"
+ },
+ "_contactos": {
+  "Ana Cecilia Gonzales Ruiz": 8,
+  "Carlos Alberto Quispe Mamani": 8,
+  "Carmen Rosa Vásquez León": 8,
+  "Jorge Luis Fernández Rojas": 8,
+  "José Antonio Ramírez Flores": 8,
+  "José Luis Rojas Díaz": 1,
+  "Luis Miguel Sánchez Díaz": 8,
+  "Martín Chávez Ríos": 1,
+  "María Elena Torres Vega": 8,
+  "María José Quispe Huamán": 1,
+  "Miguel Ángel Castro Núñez": 8,
+  "Nilda Beatriz Apaza Condori": 7,
+  "Obrero VIDALEY semanal": 1,
+  "Obrero VIDALEY semanal sobre el tope": 1,
+  "Pedro Pablo Huamán Ccopa": 8,
+  "Rosa Elena Torres Gómez": 1,
+  "Rosa Isabel Chávez Paredes": 8,
+  "Teresa Isabel Meza Palomino": 7,
+  "Trabajador AUMENTO a mitad de mes": 1,
+  "Trabajador AUMENTO sin goce una semana": 1,
+  "Trabajador CESE devolución": 1,
+  "Trabajador CESE reingreso": 1,
+  "Trabajador CESE renovación": 1,
+  "Trabajador INDEMNIZACION indeterminado": 1,
+  "Trabajador INDEMNIZACION indeterminado tras un modal": 1,
+  "Trabajador INDEMNIZACION modal renovado": 1,
+  "Trabajador INDEMNIZACION pequeña empresa": 1,
+  "Trabajador MICRO (microempresa)": 1,
+  "Trabajador SUBSIDIOS AFP": 1,
+  "Trabajador SUBSIDIOS descanso": 1,
+  "Trabajador SUBSIDIOS fin de año": 1,
+  "Trabajador SUBSIDIOS sin derecho": 1,
+  "Trabajador VIDALEY póliza vencida": 1,
+  "Trabajador VIDALEY tasa": 1,
+  "Trabajador VIDALEY utilidades": 1,
+  "Trabajadora AUMENTO dos contratos": 1,
+  "Trabajadora AUMENTO sin goce todo el mes": 1,
+  "Trabajadora BOLETA (perfil C-05)": 1,
+  "Trabajadora CESE orden invertido": 1,
+  "Trabajadora CESE utilidades": 1,
+  "Trabajadora INDEMNIZACION de temporada": 1,
+  "Trabajadora INDEMNIZACION modal": 1,
+  "Trabajadora INDEMNIZACION periodo de prueba": 1,
+  "Trabajadora INDEMNIZACION tope con un hijo": 1,
+  "Trabajadora MICRO con hijo": 1,
+  "Trabajadora SUBSIDIOS días previos": 1,
+  "Trabajadora SUBSIDIOS febrero": 1,
+  "Trabajadora SUBSIDIOS maternidad": 1,
+  "Trabajadora VIDALEY importe fijo": 1,
+  "Trabajadora VIDALEY sin póliza": 1,
+  "Trabajadora VIDALEY tope": 1,
+  "Trabajadora VIDALEY vacaciones sobre el tope": 1,
+  "Ángel Ñañez Peña": 1,
+  "Óscar Eduardo Salazar Ibáñez": 7
+ }
+}
