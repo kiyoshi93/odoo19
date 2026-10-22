@@ -96,8 +96,21 @@ def sin_tildes(s):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').lower()
 
 
+SIN_VOZ = VOZ == 'ninguna'
+if SIN_VOZ:
+    SALIDA = os.path.join(BASE, 'salida_sin_voz')
+
+
 def voz_cacheada(texto):
     """La voz se guarda por contenido: regenerar un episodio no vuelve a gastar caracteres."""
+    if SIN_VOZ:
+        # duración estimada de la narración (~15 caracteres por segundo) y pista muda
+        dur = round(max(2.5, len(texto) / 15.0), 2)
+        wav = os.path.join(TRABAJO, 'voz', f'silencio_{dur:.2f}.wav')
+        if not os.path.exists(wav):
+            os.makedirs(os.path.dirname(wav), exist_ok=True)
+            correr(['-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono', '-t', f'{dur:.2f}', wav])
+        return wav, dur
     from voz_elevenlabs import sintetizar
     clave = hashlib.sha1((VOZ + '|' + texto).encode()).hexdigest()[:16]
     wav = os.path.join(TRABAJO, 'voz', clave + '.wav')
@@ -318,6 +331,13 @@ def montar(ep):
     unido = os.path.join(carpeta, 'unido.mp4')
     correr(['-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', unido])
     final = os.path.join(SALIDA, nombre + '.mp4')
+    if SIN_VOZ:
+        # sin voz, los subtítulos van incrustados en la imagen
+        incrustado = os.path.join(carpeta, 'incrustado.mp4')
+        estilo = 'FontName=DM Sans,FontSize=13,PrimaryColour=&H00FFFFFF,BackColour=&H10402620,BorderStyle=4,Outline=6,Shadow=0,MarginV=60'
+        correr(['-i', unido, '-vf', f"subtitles={srt}:fontsdir={FUENTES}:force_style='{estilo}'", '-c:v', 'libx264', '-preset', 'medium',
+                '-crf', '21', '-c:a', 'copy', incrustado])
+        unido = incrustado
     correr(['-i', unido, '-i', srt, '-map', '0', '-map', '1', '-c', 'copy', '-c:s', 'mov_text',
             '-metadata:s:s:0', 'language=spa', '-metadata', f'title={ep["id"]} {ep["titulo"]}', '-movflags', '+faststart', final])
     print(f'{ep["id"]}: {t / 60:.1f} min -> {final}', flush=True)
