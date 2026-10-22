@@ -52,7 +52,7 @@ module.exports = (h) => {
     h2('10.6 Una boleta sin importes no se valida'),
     p('Una boleta en la que todas las líneas salen en 0,00 no tiene nada que pagar ni que contabilizar: por ejemplo, la CTS o la gratificación de un trabajador de microempresa. Al confirmarla, la localización lo explica y ofrece **Eliminar la boleta sin importes** (C-18). Desde un lote, el aviso lista todas las vacías y el botón las elimina y valida el resto.'),
     ...figura('c10_05_boleta_sin_importes', 'CTS de noviembre de 2026 del trabajador del caso MICRO: «La boleta no tiene importes… no se valida», con el botón para eliminarla. (Se cerró sin eliminar.)'),
-    nota('Las 64 boletas del recorrido de FM SYSTEMS se validaron antes de la versión 2, y una boleta validada no se recalcula. Sus **importes** coinciden con los del código actual (la renta de 5.ª de Lucía da 2 309,73 en 2025 y 2 160,78 en 2026), pero su pestaña de días conserva los textos y las líneas del v1: «Normal Working Days paid at 100%» y «Global Leaves» (la línea negativa de feriados que se usaba antes de C-09). Por eso las pantallas de días de este manual son del laboratorio (observación O-63, Anexo A).', 'implementador'),
+    nota('Las 64 boletas del recorrido de FM SYSTEMS (enero de 2025 a diciembre de 2026) se regeneraron el 22/10/2026 con las versiones finales: se cancelaron, se recalcularon con los días, el nombre y el diario que pone hoy el formulario y se volvieron a validar, mes por mes. Ningún importe cambió (la renta de 5.ª de Lucía sigue en 2 309,73 en 2025 y 2 160,78 en 2026). Cambiaron los nombres (U-06), el diario (Planillas, C-06) y la marca «¿Pagado?» de las vacaciones en la mensual (C-16). Detalle en el Anexo C.', 'implementador'),
     pieCapitulo(['base', 'ce', 'ce_demo'], 'C-05, C-07, C-09, C-16, C-18, U-06, N-07, N-08'),
   );
 
@@ -247,6 +247,7 @@ module.exports = (h) => {
     p('En el recorrido de FM, Lucía goza 15 días en febrero de 2026: vacacional **2 306,50** ((4 500 + 113) / 30 × 15) y mensual con remuneración 2 250,00 y asignación familiar 113,00 completa. La asignación familiar del mes de goce parcial va completa en la mensual y proporcional en la vacacional: según la contadora es correcto (C-04, P-19). Total del mes: 4 669,50.'),
     ...figura('c17_01_lucia_vac_feb2026_calculo', 'Lucía, vacacional de febrero de 2026: 2 306,50 con AFP, EsSalud y SENATI; neto 2 008,50.'),
     ...figura('c17_02_lucia_nme_feb2026_calculo', 'Lucía, mensual de febrero de 2026: remuneración 2 250,00, asignación familiar 113,00 y renta de 5.ª del mes de vacaciones 183,73 (C-11).'),
+    ...figura('c17_02_lucia_nme_feb2026_dias', 'Mensual de Lucía, febrero de 2026: «Vacaciones PE (D.Leg. 713)» −11 días sin «¿Pagado?» (C-16), igual que la de Óscar.'),
     nota('Un mes **entero** de goce deja la mensual sin importes, porque EsSalud y la prima ya se pagaron en la vacacional (C-26). Esa mensual no se valida: elimínela (C-18). Caso NOMINA: Nilda, 1 al 30 de julio.', 'nota'),
     pieCapitulo(['base', 'ce'], 'C-04, C-09, C-11, C-16, C-26'),
   );

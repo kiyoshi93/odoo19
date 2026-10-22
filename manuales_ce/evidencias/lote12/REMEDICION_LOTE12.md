@@ -8,7 +8,7 @@
 | # | Qué | Esperado | Medido | |
 |---|---|---|---|---|
 | 1 | Versiones | asistencia 19.0.1.4.1 · asistencia_demo 19.0.1.2.1; el resto sin cambio | asistencia **19.0.1.4.1** y asistencia_demo **19.0.1.2.1** (`write_date` 18:00). base 19.0.1.20.1 · ce 19.0.1.27.1 · ce_demo 19.0.2.25.1 · plame_demo 19.0.1.4.1 sin cambio (`write_date` 11:49). La versión en disco coincide con la de la base | OK |
-| 2 | Log del `-u` | Sin ERROR | **No recibí el log.** Lo que vale es la base (punto 1): las versiones nuevas están instaladas y los 14 casos corren | Pendiente (falta el log) |
+| 2 | Log del `-u` | Sin ERROR | `log_u_lote12_2109.txt` (22/10 21:09, `-u` de asistencia y asistencia_demo): `addons_path` con una sola copia de la nómina (`/opt/odoo19/solse_peru_contabilidad`); los dos módulos cargan (1,15 s y 0,26 s), «203 modules loaded» y «Registry loaded in 8.421s». Sin líneas `ERROR` de Odoo. «Cuentas CE: 0 asignaciones»: el `-u` no tocó cuentas (C-21). Solo advertencias ajenas a la nómina (farmacia, CPE, POS) y una línea `(ERROR/3) Unexpected indentation` de docutils: es el texto `description` del manifiesto de asistencia (una lista sin línea en blanco antes), que solo afecta cómo se ve la descripción en Aplicaciones (O-66) | OK |
 | 3 | Sin recalcular | FM idéntica al lote 11; Lucía 2 309,73 / 2 160,78 | Las 64 boletas son idénticas al lote 11: 0 distintas, 0 faltantes, 0 nuevas. Sumas: **2 309,73 / 2 160,78** | OK |
 | 4 | 14 casos | Todos al 100 %; los 13 de siempre con las mismas celdas; ASISTENCIA 94 con el nombre nuevo | «Asistencias — tardanzas, faltas, medias jornadas y feriados»: **94** celdas (Combinado 20, Diagnóstico 14, Faltas 35, **Feriado 15**, Tardanzas 10). Los otros 13 tienen el mismo desglose que el lote 11. Todos al 100 % | OK |
 | 4a | Hoja «Feriado» (Jorge, 47852169) | RB_001 1130.00 · FALTA 0.00 · feriados 1.00 | Esperado y generado iguales: **1130.00 · 0.00 · 1.00** | OK |
@@ -20,7 +20,7 @@
 | 7 | Impacto en FM | Conteos | Ver la salida debajo de la tabla. **0 boletas de FM con conciliación de asistencias**, así que ninguna cambia | OK (por RPC) |
 | — | O-31 | Sin versión | Antes **0 de 136**; después **0 de 137**. La boleta nueva es la de octubre de Jorge | OK |
 
-**Resultado del lote 12: todo OK con los datos de la base. Falta el log del `-u` (punto 2) para cerrarlo.**
+**Resultado del lote 12: todo OK, incluido el log del `-u` (punto 2). Lote cerrado.**
 
 ## Punto 7 · salida (FM SYSTEMS, solo lectura)
 

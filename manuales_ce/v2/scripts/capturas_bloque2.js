@@ -106,6 +106,10 @@ const pasos = {
     await boleta(p, c, 1, 84, 'c13_01_lucia_ene2025', ['Cálculo de la nómina']);
     await boleta(p, c, 4, 1896, 'c13_02_cese_devolucion', ['Cálculo de la nómina']);
   },
+  async c13_lucia(p, c) {
+    // Solo la boleta de FM (recaptura tras regenerar las 64 boletas de FM, 22/10/2026)
+    await boleta(p, c, 1, 84, 'c13_01_lucia_ene2025', ['Cálculo de la nómina']);
+  },
   async c13_certificado(p, c) {
     await cia(c, 1); await u.irA(p, '/odoo/action-1093');
     const m = p.locator('.modal').last();

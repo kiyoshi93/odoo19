@@ -101,7 +101,7 @@ module.exports = (h) => {
       ['O-57', 'Calendario de dos semanas con evaluación por horas: las horas esperadas de un día normal suman las dos semanas', 'No usar «Evaluar horas» con calendarios de dos semanas'],
       ['O-58', 'Turno de noche que cruza la medianoche: la conciliación es por día calendario', 'Revisar a mano las faltas y tardanzas de esos turnos'],
       ['O-62', 'Calendario en UTC: las tardanzas salen desplazadas 5 horas', 'Calendario y usuarios en America/Lima (capítulos 2 y 19)'],
-      ['O-63', 'Las 64 boletas validadas de FM SYSTEMS conservan las líneas de días del v1 (textos en inglés, GLOBAL); sus importes son los del código actual', 'Ver el Anexo C'],
+      ['O-63', 'Las 64 boletas validadas de FM SYSTEMS conservaban las líneas de días y los nombres del v1 y el diario «Operaciones varias»', 'Resuelta el 22/10/2026: se regeneraron con las versiones finales, sin cambio de importes (Anexo C)'],
       ['O-64', 'En el navegador, la vigencia faltante (V-02) se muestra como «¡Vaya! Ocurrió un error»; el mensaje funcional queda en «Ver detalles técnicos»', 'Leer la última línea de los detalles técnicos (capítulo 26). Reportado para corrección'],
       ['O-65', 'Boletas con descanso médico: la línea de días se llama «Sick Time Off» (código GLOBAL)', 'Solo de presentación'],
     ], [800, 5000, 3838]),
@@ -146,8 +146,8 @@ module.exports = (h) => {
   });
   a(
     h1('Anexo C. Planilla medida de enero de 2025 a diciembre de 2026'),
-    p('Las 64 boletas validadas de los dos trabajadores del recorrido, leídas en `contable19` el 22/10/2026 sin recalcular nada (las mismas antes y después de los lotes 11 y 12). Fuente: `manuales_ce/v2/medidas/fm_64_boletas.json`.'),
-    nota('**Importes**: son los del código actual. La renta de 5.ª de Lucía suma 2 309,73 (2025) y 2 160,78 (2026), con la proyección de gratificaciones con asignación familiar (C-03) y la 5.ª del mes de vacaciones (C-11). La asignación familiar sube a 123,00 desde octubre de 2026 (RMV 1 230). **Días**: estas boletas se validaron antes de C-09 y C-16, y una boleta validada no se recalcula. Conservan las líneas de días del v1 («Global Leaves» por los feriados, textos en inglés). Para que el anexo muestre también los días por norma hay que regenerar las 64 boletas (cancelar, recalcular y revalidar con sus asientos), lo que requiere la autorización de la empresa (O-63).', 'importante'),
+    p('Las 64 boletas validadas de los dos trabajadores del recorrido, leídas en `contable19` el 22/10/2026, después de regenerarlas. Fuente: `manuales_ce/v2/medidas/fm_64_boletas.json`.'),
+    nota('**Regeneradas el 22/10/2026** con las versiones finales, con autorización de la empresa: cada boleta se canceló (su asiento se eliminó), tomó los días, el nombre y el diario que pone hoy el formulario, se recalculó y se volvió a validar, mes por mes y, dentro del mes, gratificación, vacaciones y CTS antes que la mensual. **Ningún importe cambió**: 0 diferencias en las 64 boletas. La renta de 5.ª de Lucía suma 2 309,73 (2025) y 2 160,78 (2026), con la proyección de gratificaciones con asignación familiar (C-03) y la 5.ª del mes de vacaciones (C-11). La asignación familiar sube a 123,00 desde octubre de 2026 (RMV 1 230). Cambiaron: los nombres («Boleta de…», «Boleta de Gratificación de…», «Liquidación CTS de…», U-06), las líneas de días en español, «¿Pagado?» sin marcar en las vacaciones de las mensuales de febrero (Lucía) y setiembre de 2026 (Héctor) (C-16), y el diario: los 64 asientos nuevos están en Planillas (PLLA/2025/01/0001 a PLLA/2026/12/0005; debe = haber = 242 485,34). Los días por feriado siguen en la línea «Feriados» de la boleta, como los pone hoy el formulario.', 'importante'),
     tabla(['Trab.', 'Mes', 'Estr.', 'Básica', 'AF', 'Vac./Grati/CTS', 'Pensión', '5.ª', 'Neto'], filas, [900, 900, 800, 1100, 800, 1500, 1200, 1000, 1438]),
   );
 
