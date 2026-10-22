@@ -1,0 +1,116 @@
+1
+00:00:00,500 --> 00:00:05,860
+Este episodio muestra cómo se registran y se pagan las vacaciones, y cómo se cargan
+
+2
+00:00:05,860 --> 00:00:07,216
+los feriados del año.
+
+3
+00:00:08,680 --> 00:00:12,082
+Los días ganados se registran como asignaciones.
+
+4
+00:00:12,082 --> 00:00:18,036
+Lucía tiene cincuenta y dos coma cinco días por veintiún meses, y Héctor, cuarenta y
+
+5
+00:00:18,036 --> 00:00:20,730
+siete coma cinco por diecinueve meses.
+
+6
+00:00:22,200 --> 00:00:26,601
+El goce se registra como una ausencia aprobada:
+
+7
+00:00:26,601 --> 00:00:33,624
+Lucía, del 2 al 16 de febrero de 2026, y Héctor, del 14 al 23 de setiembre.
+
+8
+00:00:35,020 --> 00:00:40,576
+Cada tipo de ausencia tiene su código de suspensión de la Tabla veintiuno:
+
+9
+00:00:40,576 --> 00:00:46,132
+vacaciones veintitrés, sin goce cero cinco, enfermedad veinte y maternidad
+
+10
+00:00:46,132 --> 00:00:46,883
+veintidós.
+
+11
+00:00:46,883 --> 00:00:51,988
+Con ese código, la boleta descuenta los días y el PLAME los declara.
+
+12
+00:00:53,460 --> 00:00:56,249
+En el mes de goce se calculan dos boletas.
+
+13
+00:00:56,249 --> 00:00:59,636
+La vacacional de Óscar paga los días de vacaciones.
+
+14
+00:01:01,040 --> 00:01:07,001
+La mensual lleva la misma línea de vacaciones, pero sin marcar en Pagado:
+
+15
+00:01:07,001 --> 00:01:09,941
+esos días ya los pagó la vacacional.
+
+16
+00:01:09,941 --> 00:01:15,576
+Óscar recibe S/ 1 500 en cada boleta y sus aportes se reparten igual.
+
+17
+00:01:16,980 --> 00:01:24,070
+En el recorrido, la vacacional de Lucía paga S/ 2 306,50:
+
+18
+00:01:24,070 --> 00:01:31,906
+sueldo más asignación familiar, entre treinta, por quince días.
+
+19
+00:01:31,906 --> 00:01:34,766
+El neto es S/ 2 008,50.
+
+20
+00:01:36,170 --> 00:01:41,046
+Y la mensual de febrero muestra las vacaciones sin pagar, igual que la de Óscar.
+
+21
+00:01:42,450 --> 00:01:54,158
+La mensual paga S/ 2 250 de remuneración y la asignación familiar completa, S/ 113.
+
+22
+00:01:54,158 --> 00:01:57,543
+El mes suma S/ 4 669,50.
+
+23
+00:01:58,940 --> 00:02:04,599
+Los feriados nacionales se registran cada año en Días festivos, sin recurso, para
+
+24
+00:02:04,599 --> 00:02:06,904
+que valgan para toda la compañía.
+
+25
+00:02:08,370 --> 00:02:14,048
+Si faltan los feriados del año, la lista de boletas lo avisa en una banda, antes de
+
+26
+00:02:14,048 --> 00:02:14,664
+calcular.
+
+27
+00:02:16,130 --> 00:02:22,390
+Vacacional por los días de goce, mensual por el resto, y feriados cargados antes de
+
+28
+00:02:22,390 --> 00:02:23,069
+calcular.
+
+29
+00:02:23,069 --> 00:02:27,293
+Está en los capítulos diecisiete y dieciocho del manual.
+

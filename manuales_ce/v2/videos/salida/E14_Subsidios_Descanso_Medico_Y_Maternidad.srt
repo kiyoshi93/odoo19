@@ -1,0 +1,88 @@
+1
+00:00:00,500 --> 00:00:03,677
+Los subsidios son nuevos en la versión dos.
+
+2
+00:00:03,677 --> 00:00:09,587
+Este episodio muestra el descanso médico, la maternidad y qué pasa cuando no hay
+
+3
+00:00:09,587 --> 00:00:10,178
+derecho.
+
+4
+00:00:11,650 --> 00:00:18,141
+El descanso médico se registra como una ausencia con el tipo de suspensión veinte.
+
+5
+00:00:18,141 --> 00:00:22,099
+En el caso SUBSIDIOS, va del 1 al 30 de noviembre.
+
+6
+00:00:23,500 --> 00:00:29,476
+Los primeros veinte días los paga el empleador como remuneración:
+
+7
+00:00:29,476 --> 00:00:30,303
+S/ 2 000.
+
+8
+00:00:30,303 --> 00:00:37,933
+Los diez siguientes son subsidio por incapacidad, con un promedio diario de S/ 100:
+
+9
+00:00:37,933 --> 00:00:38,761
+S/ 1 000.
+
+10
+00:00:38,761 --> 00:00:46,023
+La ONP y EsSalud se calculan solo sobre la remuneración, y el neto es S/ 2 740.
+
+11
+00:00:47,420 --> 00:00:51,665
+En maternidad, la boleta no tiene remuneración:
+
+12
+00:00:51,665 --> 00:00:57,265
+paga el subsidio por maternidad, S/ 3 000, sin ONP ni EsSalud.
+
+13
+00:00:58,670 --> 00:01:04,565
+Si el trabajador no cumple los aportes previos, por ejemplo con un solo mes antes
+
+14
+00:01:04,565 --> 00:01:10,534
+del descanso, los días van como descanso, pero no se calcula subsidio, y la boleta
+
+15
+00:01:10,534 --> 00:01:10,970
+avisa.
+
+16
+00:01:12,520 --> 00:01:17,708
+En el PLAME, el archivo de suspensiones declara los días por tipo, y el de
+
+17
+00:01:17,708 --> 00:01:21,003
+remuneraciones lleva los conceptos de subsidio.
+
+18
+00:01:21,003 --> 00:01:26,401
+El caso SUBSIDIOS compara trescientas cuarenta y cuatro celdas en veintinueve
+
+19
+00:01:26,401 --> 00:01:26,962
+boletas.
+
+20
+00:01:28,500 --> 00:01:34,061
+El promedio y el contador de días tienen preguntas pendientes con la contadora,
+
+21
+00:01:34,061 --> 00:01:35,680
+anotadas en el anexo A.
+
+22
+00:01:35,680 --> 00:01:39,622
+Todo lo demás está en el capítulo veintitrés del manual.
+

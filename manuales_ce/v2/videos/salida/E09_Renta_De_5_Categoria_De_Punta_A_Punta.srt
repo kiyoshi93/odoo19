@@ -1,0 +1,88 @@
+1
+00:00:00,500 --> 00:00:04,060
+Este episodio sigue la renta de quinta categoría:
+
+2
+00:00:04,060 --> 00:00:09,509
+la retención mensual, el mes de vacaciones, el cese y el certificado anual.
+
+3
+00:00:10,910 --> 00:00:16,384
+En enero de 2025, la base afecta de Lucía es S/ 4 613:
+
+4
+00:00:16,384 --> 00:00:19,526
+sueldo más asignación familiar.
+
+5
+00:00:19,526 --> 00:00:27,635
+La proyección anual incluye las gratificaciones con su asignación familiar, y la
+
+6
+00:00:27,635 --> 00:00:30,778
+retención del mes es S/ 192,48.
+
+7
+00:00:32,280 --> 00:00:40,006
+En el mes de vacaciones, la renta de quinta se calcula en la mensual, sumando lo
+
+8
+00:00:40,006 --> 00:00:42,323
+pagado en la vacacional.
+
+9
+00:00:42,323 --> 00:00:46,766
+En febrero de 2026, la retención es S/ 183,73.
+
+10
+00:00:48,260 --> 00:00:55,240
+Al cese se recalcula el impuesto del año con lo realmente ganado.
+
+11
+00:00:55,240 --> 00:01:04,047
+En el caso CESE, la liquidación de abril de 2026 devuelve S/ 2 158,67 retenidos de
+
+12
+00:01:04,047 --> 00:01:07,054
+más, y el neto es S/ 13 132.
+
+13
+00:01:08,560 --> 00:01:12,384
+El certificado anual se emite desde su asistente:
+
+14
+00:01:12,384 --> 00:01:15,116
+compañía, ejercicio y trabajadores.
+
+15
+00:01:15,116 --> 00:01:19,798
+Lo firma el representante del empleador marcado en su ficha.
+
+16
+00:01:21,200 --> 00:01:26,834
+El certificado de Lucía de 2025:
+
+17
+00:01:26,834 --> 00:01:41,624
+renta bruta S/ 65 412,34, deducción de siete UIT S/ 37 450, renta neta S/ 27 962,34,
+
+18
+00:01:41,624 --> 00:01:47,611
+y un impuesto igual a lo retenido:
+
+19
+00:01:47,611 --> 00:01:49,724
+S/ 2 309,73.
+
+20
+00:01:51,300 --> 00:01:56,820
+La retención de cada mes, la devolución al cese y el certificado salen del mismo
+
+21
+00:01:56,820 --> 00:01:57,372
+cálculo.
+
+22
+00:01:57,372 --> 00:02:00,891
+Está en los capítulos trece y dieciséis del manual.
+
