@@ -1,0 +1,68 @@
+1
+00:00:00,500 --> 00:00:04,471
+La exportación del T-Registro es nueva en la versión dos.
+
+2
+00:00:04,471 --> 00:00:08,023
+Este primer episodio muestra las altas y las bajas.
+
+3
+00:00:09,420 --> 00:00:13,534
+El asistente del T-Registro tiene cinco operaciones:
+
+4
+00:00:13,534 --> 00:00:18,755
+altas, bajas, modificaciones, y altas y bajas de derechohabientes.
+
+5
+00:00:18,755 --> 00:00:25,163
+Cada una es un envío aparte, con la estructura del manual del validador de SUNAT.
+
+6
+00:00:26,560 --> 00:00:31,932
+Antes de exportar, el asistente valida los datos que exige el validador.
+
+7
+00:00:31,932 --> 00:00:37,975
+En las altas de octubre del caso TREGISTRO, cuatro trabajadores se exportan y dos
+
+8
+00:00:37,975 --> 00:00:42,600
+no, y el resumen dice qué le falta a cada uno y con qué regla.
+
+9
+00:00:44,070 --> 00:00:47,649
+Las altas generan un archivo por tipo de dato:
+
+10
+00:00:47,649 --> 00:00:53,872
+identificación, datos laborales, periodos, establecimientos, cuentas y estudios.
+
+11
+00:00:53,872 --> 00:00:56,284
+Se suben al validador de SUNAT.
+
+12
+00:00:57,680 --> 00:01:02,912
+Las bajas generan un solo archivo de periodos, con la fecha de fin y el motivo de
+
+13
+00:01:02,912 --> 00:01:03,235
+baja.
+
+14
+00:01:04,700 --> 00:01:10,459
+En la compañía se configuran los controles del T-Registro, por ejemplo el plazo para
+
+15
+00:01:10,459 --> 00:01:13,269
+el alta, que es el mismo día del ingreso.
+
+16
+00:01:14,740 --> 00:01:20,379
+La prueba en el validador la hace el implementador con su versión del PVS.
+
+17
+00:01:20,379 --> 00:01:23,656
+Está en el capítulo veintinueve del manual.
+
