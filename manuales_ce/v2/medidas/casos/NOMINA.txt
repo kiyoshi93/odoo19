@@ -1,0 +1,124 @@
+== Indice
+Comparacion — NOMINA — Nómina peruana — planilla, aportes y asiento
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Boletas, Aportes, Vacaciones, Asiento, Configuración, Diagnóstico, AFPnet, Parámetros
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.011 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Boletas | 27 | 27 | 189 | 0 | 0 | 0 | OK
+Aportes | 18 | 18 | 126 | 0 | 0 | 0 | OK
+Vacaciones | 16 | 16 | 80 | 0 | 0 | 0 | OK
+Asiento | 6 | 6 | 12 | 0 | 0 | 0 | OK
+Configuración | 8 | 8 | 16 | 0 | 0 | 0 | OK
+Diagnóstico | 9 | 9 | 18 | 0 | 0 | 0 | OK
+AFPnet | 6 | 6 | 78 | 0 | 0 | 0 | OK
+Parámetros | 3 | 3 | 6 | 0 | 0 | 0 | OK
+== Boletas
+Fila | Origen | dni | trabajador | estructura | periodo | codigo | concepto | importe
+45781236|mensual|01/07/2026 a 31/07/2026|RB_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | RB_001 | Carlos RB mensual | 3500.00
+45781236|mensual|01/07/2026 a 31/07/2026|ASF_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | ASF_001 | Carlos Asig. Familiar | 113.00
+45781236|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | NET | Carlos NETO mensual | 3149.09
+45781236|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001 | ESPERADO | 45781236 | Carlos | gratis | 01/07/2026 a 31/07/2026 | BONO_GRATI_001 | Carlos gratificación (bono EPS 6.75%) | 243.88
+47852169|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 47852169 | Jorge | mensual | 01/07/2026 a 31/07/2026 | NET | Jorge NETO | 983.10
+41236547|mensual|01/07/2026 a 31/07/2026|R5TA_001 | ESPERADO | 41236547 | María | mensual | 01/07/2026 a 31/07/2026 | R5TA_001 | María Renta 5ta julio | 269.40
+41236547|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 41236547 | María | mensual | 01/07/2026 a 31/07/2026 | NET | María NETO julio | 6821.00
+41236547|gratis|01/07/2026 a 31/07/2026|GRATI_001 | ESPERADO | 41236547 | María | gratis | 01/07/2026 a 31/07/2026 | GRATI_001 | María gratificación | 8000.00
+41236547|gratis|01/07/2026 a 31/07/2026|BONO_GRATI_001 | ESPERADO | 41236547 | María | gratis | 01/07/2026 a 31/07/2026 | BONO_GRATI_001 | María bono gratificación 9% | 720.00
+41236547|mensual|01/08/2026 a 31/08/2026|R5TA_001 | ESPERADO | 41236547 | María | mensual | 01/08/2026 a 31/08/2026 | R5TA_001 | María Renta 5ta agosto (con grati en acumulado) | 377.16
+40125836|mensual|01/07/2026 a 31/07/2026|R5TA_001 | ESPERADO | 40125836 | Ana | mensual | 01/07/2026 a 31/07/2026 | R5TA_001 | Ana Renta 5ta (2 tramos) | 1267.25
+40125836|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 40125836 | Ana | mensual | 01/07/2026 a 31/07/2026 | NET | Ana NETO | 11838.63
+44567123|gratis|01/07/2026 a 31/07/2026|GRATI_001 | ESPERADO | 44567123 | José | gratis | 01/07/2026 a 31/07/2026 | GRATI_001 | José gratificación MYPE (factor 0.5) | 750.00
+43698521|quincena|01/07/2026 a 15/07/2026|ADEL_001 | ESPERADO | 43698521 | Luis | quincena | 01/07/2026 a 15/07/2026 | ADEL_001 | Luis adelanto quincenal 40% | 1800.00
+43698521|mensual|01/07/2026 a 31/07/2026|DESC_ADEL_001 | ESPERADO | 43698521 | Luis | mensual | 01/07/2026 a 31/07/2026 | DESC_ADEL_001 | Luis descuento de adelanto en mensual | 1800.00
+43698521|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 43698521 | Luis | mensual | 01/07/2026 a 31/07/2026 | NET | Luis NETO mensual | 2112.30
+41785296|mensual|01/07/2026 a 31/07/2026|DJ_001 | ESPERADO | 41785296 | Miguel | mensual | 01/07/2026 a 31/07/2026 | DJ_001 | Miguel descuento judicial (20% del disponible) | 522.00
+41785296|mensual|01/07/2026 a 31/07/2026|NET | ESPERADO | 41785296 | Miguel | mensual | 01/07/2026 a 31/07/2026 | NET | Miguel NETO | 2088.00
+46321478|semanal|01/07/2026 a 07/07/2026|RBS_002 | ESPERADO | 46321478 | Rosa | semanal | 01/07/2026 a 07/07/2026 | RBS_002 | Rosa RBS semana comercial | 420.00
+46321478|semanal|01/07/2026 a 07/07/2026|SIND_001 | ESPERADO | 46321478 | Rosa | semanal | 01/07/2026 a 07/07/2026 | SIND_001 | Rosa cuota sindical | 4.20
+46321478|semanal|01/07/2026 a 07/07/2026|NET | ESPERADO | 46321478 | Rosa | semanal | 01/07/2026 a 07/07/2026 | NET | Rosa NETO semanal | 361.33
+42589631|semanal|01/07/2026 a 07/07/2026|NET | ESPERADO | 42589631 | Pedro | semanal | 01/07/2026 a 07/07/2026 | NET | Pedro NETO semanal | 304.50
+45896327|liquidacion|01/08/2026 a 31/08/2026|VAC_TRUNCA_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | VAC_TRUNCA_001 | Carmen vacaciones truncas 8/12 | 1666.67
+45896327|liquidacion|01/08/2026 a 31/08/2026|GRATI_TRUNCA_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | GRATI_TRUNCA_001 | Carmen gratificación trunca 2/6 | 833.33
+45896327|liquidacion|01/08/2026 a 31/08/2026|BONO_GRATI_TRUNCA_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | BONO_GRATI_TRUNCA_001 | Carmen bono s/ trunca 9% | 75.00
+45896327|liquidacion|01/08/2026 a 31/08/2026|CTS_TRUNCA_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | CTS_TRUNCA_001 | Carmen CTS trunca 4/12 (sexto SIN bono) | 972.22
+45896327|liquidacion|01/08/2026 a 31/08/2026|NET | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | NET | Carmen NETO liquidación | 3331.89
+== Aportes
+Fila | Origen | dni | trabajador | estructura | periodo | codigo | concepto | importe
+45781236|mensual|01/07/2026 a 31/07/2026|AFP_APO_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | AFP_APO_001 | Carlos AFP aporte | 361.30
+45781236|mensual|01/07/2026 a 31/07/2026|AFP_COM_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | AFP_COM_001 | Carlos AFP comisión Habitat | 53.11
+45781236|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | AFP_PRI_001 | Carlos AFP prima | 49.50
+45781236|mensual|01/07/2026 a 31/07/2026|ESSALUD_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | ESSALUD_001 | Carlos ESSALUD | 325.17
+45781236|mensual|01/07/2026 a 31/07/2026|EPS_APO_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | EPS_APO_001 | Carlos EPS aporte | 162.59
+45781236|mensual|01/07/2026 a 31/07/2026|EPS_CRED_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | EPS_CRED_001 | Carlos EPS crédito (negativo) | -81.29
+45781236|mensual|01/07/2026 a 31/07/2026|SENATI_001 | ESPERADO | 45781236 | Carlos | mensual | 01/07/2026 a 31/07/2026 | SENATI_001 | Carlos SENATI | 27.10
+47852169|mensual|01/07/2026 a 31/07/2026|ONP_001 | ESPERADO | 47852169 | Jorge | mensual | 01/07/2026 a 31/07/2026 | ONP_001 | Jorge ONP | 146.90
+41236547|mensual|01/07/2026 a 31/07/2026|AFP_COM_001 | ESPERADO | 41236547 | María | mensual | 01/07/2026 a 31/07/2026 | AFP_COM_001 | María AFP comisión mixta = 0 | 0.00
+40125836|mensual|01/07/2026 a 31/07/2026|AFP_PRI_001 | ESPERADO | 40125836 | Ana | mensual | 01/07/2026 a 31/07/2026 | AFP_PRI_001 | Ana AFP prima TOPEADA por RMA | 173.62
+41785296|mensual|01/07/2026 a 31/07/2026|ONP_001 | ESPERADO | 41785296 | Miguel | mensual | 01/07/2026 a 31/07/2026 | ONP_001 | Miguel ONP | 390.00
+46321478|semanal|01/07/2026 a 07/07/2026|SCTR_SAL_001 | ESPERADO | 46321478 | Rosa | semanal | 01/07/2026 a 07/07/2026 | SCTR_SAL_001 | Rosa SCTR Salud | 5.46
+42589631|semanal|01/07/2026 a 07/07/2026|ONP_001 | ESPERADO | 42589631 | Pedro | semanal | 01/07/2026 a 07/07/2026 | ONP_001 | Pedro ONP semanal | 45.50
+45896327|liquidacion|01/08/2026 a 31/08/2026|AFP_APO_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | AFP_APO_001 | Carmen AFP aporte en la liquidación | 166.67
+45896327|liquidacion|01/08/2026 a 31/08/2026|AFP_COM_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | AFP_COM_001 | Carmen AFP comisión en la liquidación | 25.83
+45896327|liquidacion|01/08/2026 a 31/08/2026|AFP_PRI_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | AFP_PRI_001 | Carmen AFP prima en la liquidación | 22.83
+45896327|liquidacion|01/08/2026 a 31/08/2026|ESSALUD_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | ESSALUD_001 | Carmen EsSalud de la liquidación | 150.00
+45896327|liquidacion|01/08/2026 a 31/08/2026|SENATI_001 | ESPERADO | 45896327 | Carmen | liquidacion | 01/08/2026 a 31/08/2026 | SENATI_001 | Carmen SENATI de la liquidación | 12.50
+== Vacaciones
+Fila | Origen | dni | trabajador | concepto | origen | importe
+42736514|VAC_001 (boleta de vacaciones) | ESPERADO | 42736514 | Nilda | VAC_001 (boleta de vacaciones) | 30 días de goce × 100,00 | 3000.00
+42736514|mensual de julio | ESPERADO | 42736514 | Nilda | mensual de julio | sin importes (30 − 30 días de goce): C-18 la elimina | no existe
+42736514|suma de las dos boletas | ESPERADO | 42736514 | Nilda | suma de las dos boletas | C-7: goce y mensual suman UN sueldo, no dos | 3000.00
+43815927|VAC_001 (boleta de vacaciones) | ESPERADO | 43815927 | Óscar | VAC_001 (boleta de vacaciones) | 15 × 100,00 | 1500.00
+43815927|RB_001 (mensual de julio) | ESPERADO | 43815927 | Óscar | RB_001 (mensual de julio) | (30 − 15) × 100,00 | 1500.00
+43815927|suma de las dos boletas | ESPERADO | 43815927 | Óscar | suma de las dos boletas | C-7: goce y mensual suman UN sueldo, no dos | 3000.00
+42736514|ESSALUD_001 del mes (vacacional + mensual) | ESPERADO | 42736514 | Nilda | ESSALUD_001 del mes (vacacional + mensual) | 9 % × 3 000; la base mínima es del mes | 270.00
+43815927|ESSALUD_001 del mes (vacacional + mensual) | ESPERADO | 43815927 | Óscar | ESSALUD_001 del mes (vacacional + mensual) | 9 % × (1 500 + 1 500) | 270.00
+44927358|DESC_ADEL_001 (mensual de julio) | ESPERADO | 44927358 | Teresa | DESC_ADEL_001 (mensual de julio) | el adelanto está en borrador: nada que recuperar | 0.00
+44927358|RB_001 (mensual de julio) | ESPERADO | 44927358 | Teresa | RB_001 (mensual de julio) | mes completo, 4500/30 × 30 | 4500.00
+40125836|Días laborados (mensual de julio) | ESPERADO | 40125836 | Ana | Días laborados (mensual de julio) | mes completo: 31 días calendario | 31
+40125836|Días no laborados (mensual de julio) | ESPERADO | 40125836 | Ana | Días no laborados (mensual de julio) | sin suspensiones | 0
+42736514|Días laborados (vacacional de julio) | ESPERADO | 42736514 | Nilda | Días laborados (vacacional de julio) | 30 − 30 días de vacaciones | 0
+42736514|Días no laborados (vacacional de julio) | ESPERADO | 42736514 | Nilda | Días no laborados (vacacional de julio) | vacaciones del 1 al 30 (tipo 23) | 30
+43815927|Días laborados (mensual de julio) | ESPERADO | 43815927 | Óscar | Días laborados (mensual de julio) | 31 − 15 días de vacaciones | 16
+43815927|Días no laborados (mensual de julio) | ESPERADO | 43815927 | Óscar | Días no laborados (mensual de julio) | vacaciones del 1 al 15 (tipo 23) | 15
+== Asiento
+Fila | Origen | chequeo | valor
+asiento de la mensual de julio de Carlos | ESPERADO | asiento de la mensual de julio de Carlos | existe
+descuadre (debe − haber) | ESPERADO | descuadre (debe − haber) | 0.00
+total del debe | ESPERADO | total del debe | 4673.06
+líneas sin cuenta contable | ESPERADO | líneas sin cuenta contable | 0
+cuentas ajenas a la compañía del caso | ESPERADO | cuentas ajenas a la compañía del caso | 0
+boletas validadas sin asiento | ESPERADO | boletas validadas sin asiento | 0
+== Configuración
+Fila | Origen | chequeo | estado
+Estructuras salariales pobladas | ESPERADO | Estructuras salariales pobladas | SI
+Parámetros PE vigentes (UIT 2026 = 5,500) | ESPERADO | Parámetros PE vigentes (UIT 2026 = 5,500) | SI
+Diario de salarios y cuenta predeterminada | ESPERADO | Diario de salarios y cuenta predeterminada | SI
+Cuentas contables asignadas a reglas clave | ESPERADO | Cuentas contables asignadas a reglas clave | SI
+Vacaciones PE como no-pagado en la mensual | ESPERADO | Vacaciones PE como no-pagado en la mensual | SI
+Plan de acumulación de vacaciones | ESPERADO | Plan de acumulación de vacaciones | SI
+Cuentas de las reglas en la compañía del caso | ESPERADO | Cuentas de las reglas en la compañía del caso | SI
+RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7) | ESPERADO | RB_001 y RBS_002 cuentan los días no pagados en calendario (N-7) | SI
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · empleados de la matriz en la compañía | ESPERADO | 1 · empleados de la matriz en la compañía | 13
+2 · con régimen laboral y sistema pensionario | ESPERADO | 2 · con régimen laboral y sistema pensionario | 13
+3 · boletas creadas | ESPERADO | 3 · boletas creadas | 35
+4 · boletas validadas (done) | ESPERADO | 4 · boletas validadas (done) | 34
+5 · boletas validadas con asiento | ESPERADO | 5 · boletas validadas con asiento | 34
+6 · boletas en otra compañía | ESPERADO | 6 · boletas en otra compañía | 0
+7 · deducciones de Carlos (categoría DED) | ESPERADO | 7 · deducciones de Carlos (categoría DED) | 463.91
+8 · ausencias de vacaciones aprobadas | ESPERADO | 8 · ausencias de vacaciones aprobadas | 2
+9 · motivo del corte de la generación | ESPERADO | 9 · motivo del corte de la generación | ninguno
+== AFPnet
+Fila | Origen | dni | cuspp | tipo_doc | paterno | materno | nombres | relacion | inicio | cese | excepcion | asegurable | voluntarios | rubro
+40125836 | ESPERADO | 40125836 | 401258AGRC1 | 0 | Gonzales | Ruiz | Ana Cecilia | S | N | N | 15000.00 | 0 / 0 / 0 | N
+45781236 | ESPERADO | 45781236 | 578412CAQM5 | 0 | Quispe | Mamani | Carlos Alberto | S | N | N | 3613.00 | 0 / 0 / 0 | N
+45896327 | ESPERADO | 45896327 | 458963CVLR4 | 0 | Vásquez | León | Carmen Rosa | S | N | N | 2500.00 | 0 / 0 / 0 | N
+43698521 | ESPERADO | 43698521 | 436985LSDM7 | 0 | Sánchez | Díaz | Luis Miguel | S | N | N | 4500.00 | 0 / 0 / 0 | N
+41236547 | ESPERADO | 41236547 | 412365MTVE8 | 0 | Torres | Vega | María Elena | S | N | N | 8000.00 | 0 / 0 / 0 | N
+46321478 | ESPERADO | 46321478 | 463214RCPP2 | 0 | Chávez | Paredes | Rosa Isabel | S | N | N | 1680.00 | 0 / 0 / 0 | N
+== Parámetros
+Fila | Origen | chequeo | valor
+aviso de RMA al 31/07/2026 (RMA del 01/07/2026) | ESPERADO | aviso de RMA al 31/07/2026 (RMA del 01/07/2026) | NO
+aviso de RMA a los 95 días de la última RMA registrada | ESPERADO | aviso de RMA a los 95 días de la última RMA registrada | NO
+aviso de RMA a los 96 días de la última RMA registrada | ESPERADO | aviso de RMA a los 96 días de la última RMA registrada | SI

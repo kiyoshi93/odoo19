@@ -1,0 +1,55 @@
+== Indice
+Comparacion — PLAME — PLAME completo — el ZIP del PDT con la 4ta dentro
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: ZIP, REM, JOR, SNL, Anexo4ta, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+ZIP | 5 | 5 | 15 | 0 | 0 | 0 | OK
+REM | 12 | 12 | 60 | 0 | 0 | 0 | OK
+JOR | 4 | 4 | 20 | 0 | 0 | 0 | OK
+SNL | 2 | 2 | 10 | 0 | 0 | 0 | OK
+Anexo4ta | 2 | 2 | 6 | 0 | 0 | 0 | OK
+Diagnóstico | 5 | 5 | 10 | 0 | 0 | 0 | OK
+== ZIP
+Fila | Origen | archivo | presente | nombre
+rem | ESPERADO | rem | SI | 060120260720603456786.rem
+jor | ESPERADO | jor | SI | 060120260720603456786.jor
+snl | ESPERADO | snl | SI | 060120260720603456786.snl
+ps4 | ESPERADO | ps4 | SI | 060120260720603456786.ps4
+4ta | ESPERADO | 4ta | SI | 060120260720603456786.4ta
+== REM
+Fila | Origen | dni | trabajador | concepto | origen | monto
+45781236|0121 | ESPERADO | 45781236 | Carlos | 0121 | RB_001 | 3500.00
+45781236|0201 | ESPERADO | 45781236 | Carlos | 0201 | ASF_001 | 113.00
+45781236|0312 | ESPERADO | 45781236 | Carlos | 0312 | BONO_GRATI_001 | 243.88
+41236547|0406 | ESPERADO | 41236547 | María | 0406 | GRATI_001 | 8000.00
+41236547|0312 | ESPERADO | 41236547 | María | 0312 | BONO_GRATI_001 | 720.00
+41236547|0605 | ESPERADO | 41236547 | María | 0605 | R5TA_001 | 269.40
+40125836|0605 | ESPERADO | 40125836 | Ana | 0605 | R5TA_001 | 1267.25
+44567123|0406 | ESPERADO | 44567123 | José | 0406 | GRATI_001 | 750.00
+43698521|0701 | ESPERADO | 43698521 | Luis | 0701 | DESC_ADEL_001 | 1800.00
+41785296|0703 | ESPERADO | 41785296 | Miguel | 0703 | DJ_001 | 522.00
+46321478|0121 | ESPERADO | 46321478 | Rosa | 0121 | RBS_002 × 4 semanas | 1680.00
+46321478|0702 | ESPERADO | 46321478 | Rosa | 0702 | SIND_001 × 4 semanas | 16.80
+== JOR
+Fila | Origen | dni | trabajador | horas | minutos | campos
+42589631 | ESPERADO | 42589631 | Pedro | 160 | 0 | 6
+46321478 | ESPERADO | 46321478 | Rosa | 160 | 0 | 6
+42736514 | ESPERADO | 42736514 | Nilda | 8 | 0 | 6
+43815927 | ESPERADO | 43815927 | Óscar | 96 | 0 | 6
+== SNL
+Fila | Origen | dni | trabajador | tipo_suspension | dias | campos
+42736514|23 | ESPERADO | 42736514 | Nilda | 23 | 30 | 4
+43815927|23 | ESPERADO | 43815927 | Óscar | 23 | 15 | 4
+== Anexo4ta
+Fila | Origen | archivo | lineas | igual_al_caso_rxh
+ps4 | ESPERADO | ps4 | 8 | SI
+4ta | ESPERADO | 4ta | 9 | SI
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas validadas del periodo en la compañía | ESPERADO | 1 · boletas validadas del periodo en la compañía | 31
+2 · boletas que recoge el asistente | ESPERADO | 2 · boletas que recoge el asistente | 30
+3 · trabajadores en el .rem | ESPERADO | 3 · trabajadores en el .rem | 13
+4 · trabajadores en el .jor | ESPERADO | 4 · trabajadores en el .jor | 13
+5 · líneas del .snl | ESPERADO | 5 · líneas del .snl | 2

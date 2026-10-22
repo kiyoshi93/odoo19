@@ -1,0 +1,129 @@
+== Indice
+Comparacion — SUBSIDIOS — Nómina — subsidios: descanso médico (20 + 21), maternidad (22) y derecho
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Días, Conceptos, PLAME, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Días | 16 | 16 | 48 | 0 | 0 | 0 | OK
+Conceptos | 64 | 64 | 192 | 0 | 0 | 0 | OK
+PLAME | 22 | 22 | 88 | 0 | 0 | 0 | OK
+Diagnóstico | 8 | 8 | 16 | 0 | 0 | 0 | OK
+== Días
+Fila | Origen | boleta | suspension | dias
+2026-11 descanso|20 | ESPERADO | 2026-11 descanso | 20 | 20
+2026-11 descanso|21 | ESPERADO | 2026-11 descanso | 21 | 10
+2026-10 días previos|20 | ESPERADO | 2026-10 días previos | 20 | 15
+2026-11 días previos|20 | ESPERADO | 2026-11 días previos | 20 | 5
+2026-11 días previos|21 | ESPERADO | 2026-11 días previos | 21 | 25
+2026-11 maternidad|22 | ESPERADO | 2026-11 maternidad | 22 | 30
+2026-12 maternidad|22 | ESPERADO | 2026-12 maternidad | 22 | 31
+2026-11 AFP|20 | ESPERADO | 2026-11 AFP | 20 | 20
+2026-11 AFP|21 | ESPERADO | 2026-11 AFP | 21 | 10
+2026-11 sin derecho|20 | ESPERADO | 2026-11 sin derecho | 20 | 20
+2026-11 sin derecho|21 | ESPERADO | 2026-11 sin derecho | 21 | 10
+2027-01 febrero|22 | ESPERADO | 2027-01 febrero | 22 | 17
+2027-02 febrero|22 | ESPERADO | 2027-02 febrero | 22 | 28
+2026-12 fin de año|20 | ESPERADO | 2026-12 fin de año | 20 | 17
+2027-01 fin de año|20 | ESPERADO | 2027-01 fin de año | 20 | 20
+2027-01 fin de año|21 | ESPERADO | 2027-01 fin de año | 21 | 5
+== Conceptos
+Fila | Origen | boleta | codigo | importe
+2026-08 descanso|RB_001 | ESPERADO | 2026-08 descanso | RB_001 | 3000.00
+2026-09 descanso|RB_001 | ESPERADO | 2026-09 descanso | RB_001 | 3000.00
+2026-10 descanso|RB_001 | ESPERADO | 2026-10 descanso | RB_001 | 3000.00
+2026-10 descanso|ONP_001 | ESPERADO | 2026-10 descanso | ONP_001 | 390.00
+2026-10 descanso|ESSALUD_001 | ESPERADO | 2026-10 descanso | ESSALUD_001 | 270.00
+2026-10 descanso|NET | ESPERADO | 2026-10 descanso | NET | 2610.00
+2026-11 descanso|RB_001 | ESPERADO | 2026-11 descanso | RB_001 | 2000.00
+2026-11 descanso|SUB_INC_001 | ESPERADO | 2026-11 descanso | SUB_INC_001 | 1000.00
+2026-11 descanso|ONP_001 | ESPERADO | 2026-11 descanso | ONP_001 | 260.00
+2026-11 descanso|ESSALUD_001 | ESPERADO | 2026-11 descanso | ESSALUD_001 | 180.00
+2026-11 descanso|NET | ESPERADO | 2026-11 descanso | NET | 2740.00
+2026-08 días previos|RB_001 | ESPERADO | 2026-08 días previos | RB_001 | 3000.00
+2026-09 días previos|RB_001 | ESPERADO | 2026-09 días previos | RB_001 | 3000.00
+2026-10 días previos|RB_001 | ESPERADO | 2026-10 días previos | RB_001 | 3000.00
+2026-10 días previos|ESSALUD_001 | ESPERADO | 2026-10 días previos | ESSALUD_001 | 270.00
+2026-11 días previos|RB_001 | ESPERADO | 2026-11 días previos | RB_001 | 500.00
+2026-11 días previos|SUB_INC_001 | ESPERADO | 2026-11 días previos | SUB_INC_001 | 2500.00
+2026-11 días previos|ONP_001 | ESPERADO | 2026-11 días previos | ONP_001 | 65.00
+2026-11 días previos|ESSALUD_001 | ESPERADO | 2026-11 días previos | ESSALUD_001 | 45.00
+2026-11 días previos|NET | ESPERADO | 2026-11 días previos | NET | 2935.00
+2026-08 maternidad|RB_001 | ESPERADO | 2026-08 maternidad | RB_001 | 3000.00
+2026-09 maternidad|RB_001 | ESPERADO | 2026-09 maternidad | RB_001 | 3000.00
+2026-10 maternidad|RB_001 | ESPERADO | 2026-10 maternidad | RB_001 | 3000.00
+2026-11 maternidad|RB_001 | ESPERADO | 2026-11 maternidad | RB_001 | 0.00
+2026-11 maternidad|SUB_MAT_001 | ESPERADO | 2026-11 maternidad | SUB_MAT_001 | 3000.00
+2026-11 maternidad|ONP_001 | ESPERADO | 2026-11 maternidad | ONP_001 | 0.00
+2026-11 maternidad|ESSALUD_001 | ESPERADO | 2026-11 maternidad | ESSALUD_001 | 0.00
+2026-11 maternidad|NET | ESPERADO | 2026-11 maternidad | NET | 3000.00
+2026-12 maternidad|RB_001 | ESPERADO | 2026-12 maternidad | RB_001 | 0.00
+2026-12 maternidad|SUB_MAT_001 | ESPERADO | 2026-12 maternidad | SUB_MAT_001 | 3100.00
+2026-12 maternidad|ESSALUD_001 | ESPERADO | 2026-12 maternidad | ESSALUD_001 | 0.00
+2026-12 maternidad|NET | ESPERADO | 2026-12 maternidad | NET | 3100.00
+2026-08 AFP|RB_001 | ESPERADO | 2026-08 AFP | RB_001 | 3000.00
+2026-09 AFP|RB_001 | ESPERADO | 2026-09 AFP | RB_001 | 3000.00
+2026-10 AFP|RB_001 | ESPERADO | 2026-10 AFP | RB_001 | 3000.00
+2026-11 AFP|RB_001 | ESPERADO | 2026-11 AFP | RB_001 | 2000.00
+2026-11 AFP|SUB_INC_001 | ESPERADO | 2026-11 AFP | SUB_INC_001 | 1000.00
+2026-11 AFP|AFP_APO_001 | ESPERADO | 2026-11 AFP | AFP_APO_001 | 300.00
+2026-11 AFP|AFP_PRI_001 | ESPERADO | 2026-11 AFP | AFP_PRI_001 | 41.10
+2026-11 AFP|ESSALUD_001 | ESPERADO | 2026-11 AFP | ESSALUD_001 | 180.00
+2026-10 sin derecho|RB_001 | ESPERADO | 2026-10 sin derecho | RB_001 | 3000.00
+2026-11 sin derecho|RB_001 | ESPERADO | 2026-11 sin derecho | RB_001 | 2000.00
+2026-10 febrero|RB_001 | ESPERADO | 2026-10 febrero | RB_001 | 3000.00
+2026-11 febrero|RB_001 | ESPERADO | 2026-11 febrero | RB_001 | 3000.00
+2026-12 febrero|RB_001 | ESPERADO | 2026-12 febrero | RB_001 | 3000.00
+2027-01 febrero|RB_001 | ESPERADO | 2027-01 febrero | RB_001 | 1300.00
+2027-01 febrero|SUB_MAT_001 | ESPERADO | 2027-01 febrero | SUB_MAT_001 | 1700.00
+2027-01 febrero|ONP_001 | ESPERADO | 2027-01 febrero | ONP_001 | 169.00
+2027-01 febrero|ESSALUD_001 | ESPERADO | 2027-01 febrero | ESSALUD_001 | 117.00
+2027-02 febrero|RB_001 | ESPERADO | 2027-02 febrero | RB_001 | 0.00
+2027-02 febrero|SUB_MAT_001 | ESPERADO | 2027-02 febrero | SUB_MAT_001 | 2800.00
+2027-02 febrero|ONP_001 | ESPERADO | 2027-02 febrero | ONP_001 | 0.00
+2027-02 febrero|ESSALUD_001 | ESPERADO | 2027-02 febrero | ESSALUD_001 | 0.00
+2026-09 fin de año|RB_001 | ESPERADO | 2026-09 fin de año | RB_001 | 3000.00
+2026-10 fin de año|RB_001 | ESPERADO | 2026-10 fin de año | RB_001 | 3000.00
+2026-11 fin de año|RB_001 | ESPERADO | 2026-11 fin de año | RB_001 | 3000.00
+2026-12 fin de año|RB_001 | ESPERADO | 2026-12 fin de año | RB_001 | 3000.00
+2026-12 fin de año|SUB_INC_001 | ESPERADO | 2026-12 fin de año | SUB_INC_001 | 0.00
+2026-12 fin de año|ONP_001 | ESPERADO | 2026-12 fin de año | ONP_001 | 390.00
+2026-12 fin de año|ESSALUD_001 | ESPERADO | 2026-12 fin de año | ESSALUD_001 | 270.00
+2027-01 fin de año|RB_001 | ESPERADO | 2027-01 fin de año | RB_001 | 2500.00
+2027-01 fin de año|SUB_INC_001 | ESPERADO | 2027-01 fin de año | SUB_INC_001 | 500.00
+2027-01 fin de año|ONP_001 | ESPERADO | 2027-01 fin de año | ONP_001 | 325.00
+2027-01 fin de año|ESSALUD_001 | ESPERADO | 2027-01 fin de año | ESSALUD_001 | 225.00
+== PLAME
+Fila | Origen | periodo | archivo | dni | lineas
+2026-11|snl|70000801 | ESPERADO | 2026-11 | snl | 70000801 | 01|70000801|20|20| ; 01|70000801|21|10|
+2026-11|snl|70000802 | ESPERADO | 2026-11 | snl | 70000802 | 01|70000802|20|5| ; 01|70000802|21|25|
+2026-11|snl|70000803 | ESPERADO | 2026-11 | snl | 70000803 | 01|70000803|22|30|
+2026-11|snl|70000804 | ESPERADO | 2026-11 | snl | 70000804 | 01|70000804|20|20| ; 01|70000804|21|10|
+2026-11|snl|70000805 | ESPERADO | 2026-11 | snl | 70000805 | 01|70000805|20|20| ; 01|70000805|21|10|
+2026-11|snl|70000806 | ESPERADO | 2026-11 | snl | 70000806 | (ninguna)
+2026-11|snl|70000807 | ESPERADO | 2026-11 | snl | 70000807 | (ninguna)
+2026-11|rem|70000801 | ESPERADO | 2026-11 | rem | 70000801 | 01|70000801|0121|2000.00|2000.00| ; 01|70000801|0916|1000.00|1000.00|
+2026-11|rem|70000802 | ESPERADO | 2026-11 | rem | 70000802 | 01|70000802|0121|500.00|500.00| ; 01|70000802|0916|2500.00|2500.00|
+2026-11|rem|70000803 | ESPERADO | 2026-11 | rem | 70000803 | 01|70000803|0915|3000.00|3000.00|
+2026-11|rem|70000804 | ESPERADO | 2026-11 | rem | 70000804 | 01|70000804|0121|2000.00|2000.00| ; 01|70000804|0916|1000.00|1000.00|
+2026-11|rem|70000805 | ESPERADO | 2026-11 | rem | 70000805 | 01|70000805|0121|2000.00|2000.00|
+2026-11|rem|70000806 | ESPERADO | 2026-11 | rem | 70000806 | 01|70000806|0121|3000.00|3000.00|
+2026-11|rem|70000807 | ESPERADO | 2026-11 | rem | 70000807 | 01|70000807|0121|3000.00|3000.00|
+2026-11|jor|70000803 | ESPERADO | 2026-11 | jor | 70000803 | 01|70000803|0|0|0|0|
+2027-01|snl|70000806 | ESPERADO | 2027-01 | snl | 70000806 | 01|70000806|22|17|
+2027-01|snl|70000807 | ESPERADO | 2027-01 | snl | 70000807 | 01|70000807|20|20| ; 01|70000807|21|5|
+2027-01|rem|70000806 | ESPERADO | 2027-01 | rem | 70000806 | 01|70000806|0121|1300.00|1300.00| ; 01|70000806|0915|1700.00|1700.00|
+2027-01|rem|70000807 | ESPERADO | 2027-01 | rem | 70000807 | 01|70000807|0121|2500.00|2500.00| ; 01|70000807|0916|500.00|500.00|
+2027-02|snl|70000806 | ESPERADO | 2027-02 | snl | 70000806 | 01|70000806|22|28|
+2027-02|rem|70000806 | ESPERADO | 2027-02 | rem | 70000806 | 01|70000806|0915|2800.00|2800.00|
+2027-02|jor|70000806 | ESPERADO | 2027-02 | jor | 70000806 | 01|70000806|0|0|0|0|
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas del caso | ESPERADO | 1 · boletas del caso | 29
+2 · validadas | ESPERADO | 2 · validadas | 29
+3 · promedio diario del subsidio (70000801, noviembre) | ESPERADO | 3 · promedio diario del subsidio (70000801, noviembre) | 100.00
+4 · AFPnet de noviembre: remuneración asegurable de 70000804 | ESPERADO | 4 · AFPnet de noviembre: remuneración asegurable de 70000804 | 3000.00
+5 · la vacacional no paga subsidios | ESPERADO | 5 · la vacacional no paga subsidios | SI
+6 · aviso de derecho al subsidio (70000805, noviembre: un mes de aportes) | ESPERADO | 6 · aviso de derecho al subsidio (70000805, noviembre: un mes de aportes) | SI
+7 · aviso de derecho al subsidio (70000801, noviembre: agosto a octubre) | ESPERADO | 7 · aviso de derecho al subsidio (70000801, noviembre: agosto a octubre) | NO
+8 · promedio diario del subsidio (70000807, contingencia del 15/12/2026) | ESPERADO | 8 · promedio diario del subsidio (70000807, contingencia del 15/12/2026) | 100.00

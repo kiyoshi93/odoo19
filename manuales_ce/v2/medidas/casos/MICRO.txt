@@ -1,0 +1,47 @@
+== Indice
+Comparacion — MICRO — Nómina — microempresa: sin gratificación ni CTS, vacaciones de 15 días
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Régimen, Conceptos, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Régimen | 4 | 4 | 8 | 0 | 0 | 0 | OK
+Conceptos | 21 | 21 | 63 | 0 | 0 | 0 | OK
+Diagnóstico | 6 | 6 | 12 | 0 | 0 | 0 | OK
+== Régimen
+Fila | Origen | dato | valor
+régimen laboral | ESPERADO | régimen laboral | MICROEMPRESA
+factores (gratificación, días CTS, días vacaciones) | ESPERADO | factores (gratificación, días CTS, días vacaciones) | 0.0 / 0 / 15
+régimen de salud por defecto de la compañía (C-25) | ESPERADO | régimen de salud por defecto de la compañía (C-25) | sis
+asignación familiar por defecto de la compañía (C-25) | ESPERADO | asignación familiar por defecto de la compañía (C-25) | no_pagar
+== Conceptos
+Fila | Origen | boleta | codigo | importe
+2026-06 NME|RB_001 | ESPERADO | 2026-06 NME | RB_001 | 1500.00
+2026-06 NME|ONP_001 | ESPERADO | 2026-06 NME | ONP_001 | 195.00
+2026-06 NME|NET | ESPERADO | 2026-06 NME | NET | 1305.00
+2026-06 NME|ESSALUD_001 | ESPERADO | 2026-06 NME | ESSALUD_001 | 0.00
+2026-06 NME|SIS_MICRO_001 | ESPERADO | 2026-06 NME | SIS_MICRO_001 | 15.00
+2026-06 NME con hijo|RB_001 | ESPERADO | 2026-06 NME con hijo | RB_001 | 1500.00
+2026-06 NME con hijo|ASF_001 | ESPERADO | 2026-06 NME con hijo | ASF_001 | 0.00
+2026-06 NME con hijo|ONP_001 | ESPERADO | 2026-06 NME con hijo | ONP_001 | 195.00
+2026-06 NME con hijo|NET | ESPERADO | 2026-06 NME con hijo | NET | 1305.00
+2026-06 NME con hijo|SIS_MICRO_001 | ESPERADO | 2026-06 NME con hijo | SIS_MICRO_001 | 15.00
+2026-11 CTS|CTS_001 | ESPERADO | 2026-11 CTS | CTS_001 | 0.00
+2026-11 CTS|NET | ESPERADO | 2026-11 CTS | NET | 0.00
+2026-12 GRAT|GRATI_001 | ESPERADO | 2026-12 GRAT | GRATI_001 | 0.00
+2026-12 GRAT|BONO_GRATI_001 | ESPERADO | 2026-12 GRAT | BONO_GRATI_001 | 0.00
+2026-12 GRAT|NET | ESPERADO | 2026-12 GRAT | NET | 0.00
+2026-11 LIQ|VAC_TRUNCA_001 | ESPERADO | 2026-11 LIQ | VAC_TRUNCA_001 | 687.50
+2026-11 LIQ|GRATI_TRUNCA_001 | ESPERADO | 2026-11 LIQ | GRATI_TRUNCA_001 | 0.00
+2026-11 LIQ|CTS_TRUNCA_001 | ESPERADO | 2026-11 LIQ | CTS_TRUNCA_001 | 0.00
+2026-11 LIQ|ONP_001 | ESPERADO | 2026-11 LIQ | ONP_001 | 89.38
+2026-11 LIQ|ESSALUD_001 | ESPERADO | 2026-11 LIQ | ESSALUD_001 | 0.00
+2026-11 LIQ|NET | ESPERADO | 2026-11 LIQ | NET | 598.12
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas del caso | ESPERADO | 1 · boletas del caso | 5
+2 · validadas (mensuales y liquidación) | ESPERADO | 2 · validadas (mensuales y liquidación) | 3
+3 · validar la CTS sin importes (C-18) | ESPERADO | 3 · validar la CTS sin importes (C-18) | aviso: no tiene importes
+4 · el botón del aviso la elimina (C-18) | ESPERADO | 4 · el botón del aviso la elimina (C-18) | eliminada
+5 · con «EsSalud 9 %»: EsSalud de junio (C-25) | ESPERADO | 5 · con «EsSalud 9 %»: EsSalud de junio (C-25) | 135.00
+6 · con «Pagar»: asignación familiar de junio (C-25) | ESPERADO | 6 · con «Pagar»: asignación familiar de junio (C-25) | 113.00

@@ -1,0 +1,28 @@
+== Indice
+Comparacion — UTILIDADES — Nómina — reparto de utilidades (D.Leg. 892): 50 % días, 50 % remuneraciones
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Reparto, Resumen, Tope
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Reparto | 3 | 3 | 15 | 0 | 0 | 0 | OK
+Resumen | 5 | 5 | 10 | 0 | 0 | 0 | OK
+Tope | 4 | 4 | 8 | 0 | 0 | 0 | OK
+== Reparto
+Fila | Origen | dni | remuneraciones | por_dias | por_remuneraciones | a_pagar
+70000801 | ESPERADO | 70000801 | 12000.00 | 833.33 | 500.00 | 1333.33
+70000802 | ESPERADO | 70000802 | 18000.00 | 833.33 | 750.00 | 1583.33
+70000803 | ESPERADO | 70000803 | 30000.00 | 833.33 | 1250.00 | 2083.33
+== Resumen
+Fila | Origen | dato | valor
+monto a repartir | ESPERADO | monto a repartir | 5000.00
+trabajadores | ESPERADO | trabajadores | 3
+remanente por topes | ESPERADO | remanente por topes | 0.00
+mismos días para los tres | ESPERADO | mismos días para los tres | SI
+boletas validadas del ejercicio | ESPERADO | boletas validadas del ejercicio | 18
+== Tope
+Fila | Origen | dato | valor
+a pagar 70000801 | ESPERADO | a pagar 70000801 | 36000.00
+a pagar 70000802 | ESPERADO | a pagar 70000802 | 54000.00
+a pagar 70000803 | ESPERADO | a pagar 70000803 | 90000.00
+remanente por topes | ESPERADO | remanente por topes | 320000.00

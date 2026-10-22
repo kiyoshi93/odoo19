@@ -1,0 +1,1212 @@
+{
+ "BOLETA dic NME": {
+  "id": 1808,
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    4500.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    123.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    4623.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    4623.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    462.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    71.66
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    63.34
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    416.07
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    34.67
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    4025.7
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ "Carlos jul": {
+  "id": 1781,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    116.67
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    3500.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    113.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3613.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3613.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    361.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    53.11
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    49.5
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    325.17
+   ],
+   [
+    "EPS_APO_001",
+    "EPS - Aporte del empleador",
+    162.59
+   ],
+   [
+    "EPS_CRED_001",
+    "EPS - Crédito contra ESSALUD",
+    -81.29
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    27.1
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3149.09
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ "Ana jul": {
+  "id": 1785,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    500.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    15000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    15000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    15000.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    1500.0
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    220.5
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    173.62
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    1267.25
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    1350.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    112.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    11838.63
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ "Nilda VAC jul": {
+  "id": 1779,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "VAC_001",
+    "Remuneración vacacional",
+    3000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3000.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    390.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    270.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    22.5
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2610.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    22.0,
+    176.0,
+    true
+   ],
+   [
+    "VACPE100",
+    "Vacaciones PE (D.Leg. 713)",
+    -22.0,
+    -176.0,
+    true
+   ]
+  ]
+ },
+ "Óscar NME jul": {
+  "id": 1790,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    1500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    195.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    135.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    11.25
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1305.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    23.0,
+    184.0,
+    true
+   ],
+   [
+    "VACPE100",
+    "Vacaciones PE (D.Leg. 713)",
+    -11.0,
+    -88.0,
+    false
+   ]
+  ]
+ },
+ "Óscar VAC jul": {
+  "id": 1780,
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "VAC_001",
+    "Remuneración vacacional",
+    1500.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    1500.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    1500.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    195.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    135.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    11.25
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1305.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    11.0,
+    88.0,
+    true
+   ],
+   [
+    "VACPE100",
+    "Vacaciones PE (D.Leg. 713)",
+    -11.0,
+    -88.0,
+    true
+   ]
+  ]
+ },
+ "VIDALEY tasa jun": {
+  "id": 1905,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    100.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    3000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    3000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    3000.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    390.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    270.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    22.5
+   ],
+   [
+    "VIDA_001",
+    "Seguro Vida Ley (aporte del empleador)",
+    15.9
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2610.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    22.0,
+    176.0,
+    true
+   ]
+  ]
+ },
+ "Lucía ene2025": {
+  "id": 84,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    4500.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    113.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    4613.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    4613.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    461.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    71.5
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    63.2
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    192.48
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    415.17
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    34.6
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    3824.52
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Normal Working Days paid at 100%",
+    23.0,
+    184.0,
+    true
+   ],
+   [
+    "GLOBAL",
+    "Global Leaves",
+    -1.0,
+    -8.0,
+    true
+   ]
+  ]
+ },
+ "CESE liq abr": {
+  "id": 1896,
+  "lineas": [
+   [
+    "VAC_TRUNCA_001",
+    "Vacaciones truncas",
+    1333.33
+   ],
+   [
+    "GRATI_TRUNCA_001",
+    "Gratificación trunca",
+    5333.33
+   ],
+   [
+    "BONO_GRATI_TRUNCA_001",
+    "Bonificación extraordinaria s/ gratificación trunca",
+    480.0
+   ],
+   [
+    "CTS_TRUNCA_001",
+    "CTS trunca",
+    4000.0
+   ],
+   [
+    "GROSS",
+    "Total liquidación",
+    11146.66
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (liquidación)",
+    7146.66
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    173.33
+   ],
+   [
+    "DEV5_001",
+    "Devolución de retención en exceso de 5ta categoría",
+    2158.67
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    120.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    10.0
+   ],
+   [
+    "NET",
+    "Neto de liquidación",
+    13132.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    22.0,
+    176.0,
+    true
+   ]
+  ]
+ },
+ "CESE NME abr": {
+  "id": 1894,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    266.67
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    8000.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    8000.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    8000.0
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    1040.0
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    720.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    60.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    6960.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    22.0,
+    176.0,
+    true
+   ]
+  ]
+ },
+ "Lucía GRAT jul26": {
+  "id": 129,
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    4613.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    415.17
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    5028.17
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    5028.17
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    5028.17
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Normal Working Days paid at 100%",
+    23.0,
+    184.0,
+    true
+   ],
+   [
+    "GLOBAL",
+    "Global Leaves",
+    -3.0,
+    -24.0,
+    true
+   ]
+  ]
+ },
+ "Lucía CTS nov26": {
+  "id": 140,
+  "lineas": [
+   [
+    "CTS_001",
+    "CTS del periodo",
+    2695.92
+   ],
+   [
+    "GROSS",
+    "Total CTS",
+    2695.92
+   ],
+   [
+    "NET",
+    "Neto a depositar",
+    2695.92
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Normal Working Days paid at 100%",
+    21.0,
+    168.0,
+    true
+   ]
+  ]
+ },
+ "Carmen LIQ": {
+  "id": 1800,
+  "lineas": [
+   [
+    "VAC_TRUNCA_001",
+    "Vacaciones truncas",
+    1666.67
+   ],
+   [
+    "GRATI_TRUNCA_001",
+    "Gratificación trunca",
+    833.33
+   ],
+   [
+    "BONO_GRATI_TRUNCA_001",
+    "Bonificación extraordinaria s/ gratificación trunca",
+    75.0
+   ],
+   [
+    "CTS_TRUNCA_001",
+    "CTS trunca",
+    972.22
+   ],
+   [
+    "GROSS",
+    "Total liquidación",
+    3547.22
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (liquidación)",
+    2575.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    166.67
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    25.83
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    22.83
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    150.0
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    12.5
+   ],
+   [
+    "NET",
+    "Neto de liquidación",
+    3331.89
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    21.0,
+    168.0,
+    true
+   ]
+  ]
+ },
+ "Carmen GRAT jul": {
+  "id": 1776,
+  "lineas": [
+   [
+    "GRATI_001",
+    "Gratificación",
+    2500.0
+   ],
+   [
+    "BONO_GRATI_001",
+    "Bonificación extraordinaria (Ley 30334)",
+    225.0
+   ],
+   [
+    "GROSS",
+    "Total gratificación",
+    2725.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (gratificación)",
+    2725.0
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2725.0
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    23.0,
+    184.0,
+    true
+   ]
+  ]
+ },
+ "IND liq": {
+  "id": 1897,
+  "lineas": [
+   [
+    "VAC_TRUNCA_001",
+    "Vacaciones truncas",
+    391.67
+   ],
+   [
+    "GRATI_TRUNCA_001",
+    "Gratificación trunca",
+    2000.0
+   ],
+   [
+    "BONO_GRATI_TRUNCA_001",
+    "Bonificación extraordinaria s/ gratificación trunca",
+    180.0
+   ],
+   [
+    "CTS_TRUNCA_001",
+    "CTS trunca",
+    1500.0
+   ],
+   [
+    "IND_001",
+    "Indemnización por despido arbitrario",
+    18575.0
+   ],
+   [
+    "GROSS",
+    "Total liquidación",
+    22646.67
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (liquidación)",
+    2571.67
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    50.92
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    101.7
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    2.94
+   ],
+   [
+    "NET",
+    "Neto de liquidación",
+    22595.75
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Días laborados (100 %)",
+    22.0,
+    176.0,
+    true
+   ]
+  ]
+ },
+ "Lucía VAC feb26": {
+  "id": 116,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "VAC_001",
+    "Remuneración vacacional",
+    2306.5
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2306.5
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2306.5
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    230.65
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    35.75
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    31.6
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    207.59
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    17.3
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2008.5
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Normal Working Days paid at 100%",
+    11.0,
+    88.0,
+    true
+   ],
+   [
+    "VACPE100",
+    "Vacaciones PE (D.Leg. 713)",
+    -11.0,
+    -88.0,
+    true
+   ]
+  ]
+ },
+ "Lucía NME feb26": {
+  "id": 117,
+  "lineas": [
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "SD_001",
+    "Salario diario",
+    150.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    2250.0
+   ],
+   [
+    "ASF_001",
+    "Asignación familiar",
+    113.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2363.0
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2363.0
+   ],
+   [
+    "AFP_APO_001",
+    "AFP - Aporte obligatorio",
+    236.3
+   ],
+   [
+    "AFP_COM_001",
+    "AFP - Comisión",
+    36.63
+   ],
+   [
+    "AFP_PRI_001",
+    "AFP - Prima de seguro",
+    32.37
+   ],
+   [
+    "R5TA_001",
+    "Renta de 5ta categoría",
+    183.73
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    212.67
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    17.72
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    1873.97
+   ]
+  ],
+  "dias": [
+   [
+    "WORK100",
+    "Normal Working Days paid at 100%",
+    20.0,
+    160.0,
+    true
+   ],
+   [
+    "VACPE100",
+    "Vacaciones PE (D.Leg. 713)",
+    -11.0,
+    -88.0,
+    true
+   ]
+  ]
+ },
+ "HE oct26": {
+  "id": 1927,
+  "lineas": [
+   [
+    "SD_001",
+    "Salario diario",
+    80.0
+   ],
+   [
+    "ISM_001",
+    "Indicador de semanas del mes",
+    1.0
+   ],
+   [
+    "RB_001",
+    "Remuneración básica",
+    2400.0
+   ],
+   [
+    "HE25_001",
+    "Horas extras 25%",
+    75.0
+   ],
+   [
+    "HE35_001",
+    "Horas extras 35%",
+    27.0
+   ],
+   [
+    "BNOC_001",
+    "Sobretasa por trabajo nocturno",
+    35.0
+   ],
+   [
+    "MOV_001",
+    "Movilidad de libre disposición",
+    200.0
+   ],
+   [
+    "GROSS",
+    "Total ingresos",
+    2737.0
+   ],
+   [
+    "TARD_001",
+    "Descuento por tardanzas",
+    7.5
+   ],
+   [
+    "BAR5_001",
+    "Base afecta a renta de 5ta (auxiliar)",
+    2529.5
+   ],
+   [
+    "ONP_001",
+    "ONP - Sistema Nacional de Pensiones",
+    328.84
+   ],
+   [
+    "ESSALUD_001",
+    "ESSALUD - Aporte del empleador",
+    227.66
+   ],
+   [
+    "SENATI_001",
+    "SENATI - Contribución",
+    18.97
+   ],
+   [
+    "NET",
+    "Neto a pagar",
+    2400.66
+   ]
+  ],
+  "dias": []
+ },
+ "lote4": [
+  {
+   "id": 1928,
+   "name": "Boleta de Trabajador HORAS EXTRA (manual v2) – noviembre 2026",
+   "state": "draft"
+  }
+ ]
+}

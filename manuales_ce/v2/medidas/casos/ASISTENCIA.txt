@@ -1,0 +1,45 @@
+== Indice
+Comparacion — ASISTENCIA — Asistencias — tardanzas, faltas, medias jornadas y feriados
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Tardanzas, Faltas, Combinado, Feriado, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.011 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Tardanzas | 2 | 2 | 10 | 0 | 0 | 0 | OK
+Faltas | 7 | 7 | 35 | 0 | 0 | 0 | OK
+Combinado | 4 | 4 | 20 | 0 | 0 | 0 | OK
+Feriado | 3 | 3 | 15 | 0 | 0 | 0 | OK
+Diagnóstico | 7 | 7 | 14 | 0 | 0 | 0 | OK
+== Tardanzas
+Fila | Origen | dni | trabajador | concepto | origen | valor
+45781236|TAR_001 | ESPERADO | 45781236 | Carlos | TAR_001 | 3 × 25 min − 10 de tolerancia = 45 min | 10.94
+45781236|NET = ingresos − |deducciones| | ESPERADO | 45781236 | Carlos | NET = ingresos − |deducciones| | definición del neto | SI
+== Faltas
+Fila | Origen | dni | trabajador | concepto | origen | valor
+47852169|RB_001 | ESPERADO | 47852169 | Jorge | RB_001 | 1.130 − 2 × 1.130/30 | 1054.67
+47852169|FALTA · días | ESPERADO | 47852169 | Jorge | FALTA · días | 2 faltas | 2.00
+47852169|FALTA · pagada | ESPERADO | 47852169 | Jorge | FALTA · pagada | no se paga | NO
+45781236|FALTA · días | ESPERADO | 45781236 | Carlos | FALTA · días | sin faltas: no hay línea | 0.00
+41236547|RB_001 | ESPERADO | 41236547 | María | RB_001 | 8.000 − 0,5 × 8.000/30 (fase 2) | 7866.67
+41236547|FALTA_PARCIAL · horas | ESPERADO | 41236547 | María | FALTA_PARCIAL · horas | medio día | 4.00
+41236547|FALTA_PARCIAL · pagada | ESPERADO | 41236547 | María | FALTA_PARCIAL · pagada | no se paga | NO
+== Combinado
+Fila | Origen | dni | trabajador | concepto | origen | valor
+43815927|RB_001 | ESPERADO | 43815927 | Óscar | RB_001 | 3.000/30 × (30 − 2 faltas − 3 vacaciones) | 2500.00
+43815927|días no pagados | ESPERADO | 43815927 | Óscar | días no pagados | 2 faltas + 3 días de vacaciones | 5.00
+43815927|FALTA · días | ESPERADO | 43815927 | Óscar | FALTA · días | 2 faltas | 2.00
+43815927|vacaciones aprobadas · días | ESPERADO | 43815927 | Óscar | vacaciones aprobadas · días | del 21 al 23 | 3.00
+== Feriado
+Fila | Origen | dni | trabajador | concepto | origen | valor
+47852169|RB_001 | ESPERADO | 47852169 | Jorge | RB_001 | 1.130 completo: el 8 de octubre es feriado | 1130.00
+47852169|FALTA · días | ESPERADO | 47852169 | Jorge | FALTA · días | el feriado no es falta | 0.00
+47852169|feriados en el resumen · días | ESPERADO | 47852169 | Jorge | feriados en el resumen · días | el 8 de octubre | 1.00
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · empleados del caso NOMINA encontrados | ESPERADO | 1 · empleados del caso NOMINA encontrados | 4
+2 · boletas de septiembre | ESPERADO | 2 · boletas de septiembre | 4
+3 · vacación de Óscar validada | ESPERADO | 3 · vacación de Óscar validada | SI
+4 · motivo del corte | ESPERADO | 4 · motivo del corte | ninguno
+5 · día no laborable de Jorge (08/10) | ESPERADO | 5 · día no laborable de Jorge (08/10) | SI
+6 · boleta de octubre de Jorge | ESPERADO | 6 · boleta de octubre de Jorge | 1
+7 · checadas de octubre de Jorge | ESPERADO | 7 · checadas de octubre de Jorge | 21

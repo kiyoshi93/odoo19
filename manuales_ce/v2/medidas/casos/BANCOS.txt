@@ -1,0 +1,162 @@
+== Indice
+Comparacion — BANCOS — Nómina — TXT de haberes y CTS (BCP, Interbank, Scotiabank)
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: BCP haberes, BCP CTS, Interbank haberes, Interbank CTS, Scotiabank haberes, Scotiabank CTS, Omitidos, Archivos, Boletas, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+BCP haberes | 29 | 29 | 87 | 0 | 0 | 0 | OK
+BCP CTS | 16 | 16 | 48 | 0 | 0 | 0 | OK
+Interbank haberes | 22 | 22 | 66 | 0 | 0 | 0 | OK
+Interbank CTS | 10 | 10 | 30 | 0 | 0 | 0 | OK
+Scotiabank haberes | 12 | 12 | 36 | 0 | 0 | 0 | OK
+Scotiabank CTS | 2 | 2 | 6 | 0 | 0 | 0 | OK
+Omitidos | 16 | 16 | 64 | 0 | 0 | 0 | OK
+Archivos | 6 | 6 | 36 | 0 | 0 | 0 | OK
+Boletas | 10 | 10 | 30 | 0 | 0 | 0 | OK
+Diagnóstico | 2 | 2 | 4 | 0 | 0 | 0 | OK
+== BCP haberes
+Fila | Origen | fila | campo | valor
+cabecera|cantidad | ESPERADO | cabecera | cantidad | 000004
+cabecera|fecha | ESPERADO | cabecera | fecha | 20260529
+cabecera|cuenta_cargo | ESPERADO | cabecera | cuenta_cargo | 19100000000011
+cabecera|total | ESPERADO | cabecera | total | 00000000007918.00
+cabecera|control | ESPERADO | cabecera | control | 000068148147857
+70000601|registro | ESPERADO | 70000601 | registro | 2A
+70000601|cuenta | ESPERADO | 70000601 | cuenta | 19112345678901
+70000601|documento | ESPERADO | 70000601 | documento | 70000601
+70000601|nombre | ESPERADO | 70000601 | nombre | ANGEL NANEZ PENA
+70000601|monto | ESPERADO | 70000601 | monto | 00000000001740.86
+70000601|mismo_banco | ESPERADO | 70000601 | mismo_banco | S
+70000602|registro | ESPERADO | 70000602 | registro | 2B
+70000602|cuenta | ESPERADO | 70000602 | cuenta | 00389800300123456711
+70000602|documento | ESPERADO | 70000602 | documento | 70000602
+70000602|nombre | ESPERADO | 70000602 | nombre | MARIA JOSE QUISPE HUAMAN
+70000602|monto | ESPERADO | 70000602 | monto | 00000000002175.00
+70000602|mismo_banco | ESPERADO | 70000602 | mismo_banco | N
+70000603|registro | ESPERADO | 70000603 | registro | 2B
+70000603|cuenta | ESPERADO | 70000603 | cuenta | 00900000000123456733
+70000603|documento | ESPERADO | 70000603 | documento | 70000603
+70000603|nombre | ESPERADO | 70000603 | nombre | JOSE LUIS ROJAS DIAZ
+70000603|monto | ESPERADO | 70000603 | monto | 00000000002088.02
+70000603|mismo_banco | ESPERADO | 70000603 | mismo_banco | N
+70000605|registro | ESPERADO | 70000605 | registro | 2A
+70000605|cuenta | ESPERADO | 70000605 | cuenta | 19155555555501
+70000605|documento | ESPERADO | 70000605 | documento | 70000605
+70000605|nombre | ESPERADO | 70000605 | nombre | MARTIN CHAVEZ RIOS
+70000605|monto | ESPERADO | 70000605 | monto | 00000000001914.12
+70000605|mismo_banco | ESPERADO | 70000605 | mismo_banco | S
+== BCP CTS
+Fila | Origen | fila | campo | valor
+cabecera|cantidad | ESPERADO | cabecera | cantidad | 000002
+cabecera|fecha | ESPERADO | cabecera | fecha | 20260529
+cabecera|cuenta_cargo | ESPERADO | cabecera | cuenta_cargo | 19100000000011
+cabecera|total | ESPERADO | cabecera | total | 00000000001400.38
+cabecera|control | ESPERADO | cabecera | control | 000154320987615
+cabecera|ruc | ESPERADO | cabecera | ruc | 20603456786
+70000601|registro | ESPERADO | 70000601 | registro | 2
+70000601|cuenta | ESPERADO | 70000601 | cuenta | 19187654321002
+70000601|documento | ESPERADO | 70000601 | documento | 70000601
+70000601|nombre | ESPERADO | 70000601 | nombre | ANGEL NANEZ PENA
+70000601|monto | ESPERADO | 70000601 | monto | 00000000000667.00
+70000605|registro | ESPERADO | 70000605 | registro | 2
+70000605|cuenta | ESPERADO | 70000605 | cuenta | 19166666666602
+70000605|documento | ESPERADO | 70000605 | documento | 70000605
+70000605|nombre | ESPERADO | 70000605 | nombre | MARTIN CHAVEZ RIOS
+70000605|monto | ESPERADO | 70000605 | monto | 00000000000733.38
+== Interbank haberes
+Fila | Origen | fila | campo | valor
+cabecera|proceso | ESPERADO | cabecera | proceso | 0104
+cabecera|fecha | ESPERADO | cabecera | fecha | 20260529
+cabecera|cantidad | ESPERADO | cabecera | cantidad | 000003
+cabecera|total | ESPERADO | cabecera | total | 000000000600388
+70000601|medio | ESPERADO | 70000601 | medio | 99
+70000601|cuenta | ESPERADO | 70000601 | cuenta | 00219111234567890155
+70000601|monto | ESPERADO | 70000601 | monto | 000000000174086
+70000601|apellido_paterno | ESPERADO | 70000601 | apellido_paterno | NANEZ
+70000601|apellido_materno | ESPERADO | 70000601 | apellido_materno | PENA
+70000601|nombres | ESPERADO | 70000601 | nombres | ANGEL
+70000602|medio | ESPERADO | 70000602 | medio | 09
+70000602|cuenta | ESPERADO | 70000602 | cuenta | 8983001234567
+70000602|monto | ESPERADO | 70000602 | monto | 000000000217500
+70000602|apellido_paterno | ESPERADO | 70000602 | apellido_paterno | QUISPE
+70000602|apellido_materno | ESPERADO | 70000602 | apellido_materno | HUAMAN
+70000602|nombres | ESPERADO | 70000602 | nombres | MARIA JOSE
+70000603|medio | ESPERADO | 70000603 | medio | 99
+70000603|cuenta | ESPERADO | 70000603 | cuenta | 00900000000123456733
+70000603|monto | ESPERADO | 70000603 | monto | 000000000208802
+70000603|apellido_paterno | ESPERADO | 70000603 | apellido_paterno | ROJAS
+70000603|apellido_materno | ESPERADO | 70000603 | apellido_materno | DIAZ
+70000603|nombres | ESPERADO | 70000603 | nombres | JOSE LUIS
+== Interbank CTS
+Fila | Origen | fila | campo | valor
+cabecera|proceso | ESPERADO | cabecera | proceso | 0106
+cabecera|fecha | ESPERADO | cabecera | fecha | 20260529
+cabecera|cantidad | ESPERADO | cabecera | cantidad | 000001
+cabecera|total | ESPERADO | cabecera | total | 000000000083333
+70000602|medio | ESPERADO | 70000602 | medio | 09
+70000602|cuenta | ESPERADO | 70000602 | cuenta | 8983009876543
+70000602|monto | ESPERADO | 70000602 | monto | 000000000083333
+70000602|apellido_paterno | ESPERADO | 70000602 | apellido_paterno | QUISPE
+70000602|apellido_materno | ESPERADO | 70000602 | apellido_materno | HUAMAN
+70000602|nombres | ESPERADO | 70000602 | nombres | MARIA JOSE
+== Scotiabank haberes
+Fila | Origen | fila | campo | valor
+70000601|nombre | ESPERADO | 70000601 | nombre | ANGEL NANEZ PENA
+70000601|monto | ESPERADO | 70000601 | monto | 0.00000001740.860000000
+70000601|cuenta | ESPERADO | 70000601 | cuenta
+70000601|cci | ESPERADO | 70000601 | cci | 00219111234567890155
+70000602|nombre | ESPERADO | 70000602 | nombre | MARIA JOSE QUISPE HUAMAN
+70000602|monto | ESPERADO | 70000602 | monto | 0.00000002175.000000000
+70000602|cuenta | ESPERADO | 70000602 | cuenta
+70000602|cci | ESPERADO | 70000602 | cci | 00389800300123456711
+70000603|nombre | ESPERADO | 70000603 | nombre | JOSE LUIS ROJAS DIAZ
+70000603|monto | ESPERADO | 70000603 | monto | 0.00000002088.020000000
+70000603|cuenta | ESPERADO | 70000603 | cuenta | 0001234567
+70000603|cci | ESPERADO | 70000603 | cci
+== Scotiabank CTS
+Fila | Origen | fila | campo | valor
+cabecera|total | ESPERADO | cabecera | total | 000000000080001
+0007654321|monto | ESPERADO | 0007654321 | monto | 000000000080001
+== Omitidos
+Fila | Origen | archivo | dni | motivo | monto
+BCP haberes|70000604 | ESPERADO | BCP haberes | 70000604 | sin cuenta | 1566.00
+BCP CTS|70000602 | ESPERADO | BCP CTS | 70000602 | CTS en otro banco | 833.33
+BCP CTS|70000603 | ESPERADO | BCP CTS | 70000603 | CTS en otro banco | 800.01
+BCP CTS|70000604 | ESPERADO | BCP CTS | 70000604 | sin cuenta | 600.00
+Interbank haberes|70000604 | ESPERADO | Interbank haberes | 70000604 | sin cuenta | 1566.00
+Interbank haberes|70000605 | ESPERADO | Interbank haberes | 70000605 | sin CCI | 1914.12
+Interbank CTS|70000601 | ESPERADO | Interbank CTS | 70000601 | CTS en otro banco | 667.00
+Interbank CTS|70000603 | ESPERADO | Interbank CTS | 70000603 | CTS en otro banco | 800.01
+Interbank CTS|70000604 | ESPERADO | Interbank CTS | 70000604 | sin cuenta | 600.00
+Interbank CTS|70000605 | ESPERADO | Interbank CTS | 70000605 | CTS en otro banco | 733.38
+Scotiabank haberes|70000604 | ESPERADO | Scotiabank haberes | 70000604 | sin cuenta | 1566.00
+Scotiabank haberes|70000605 | ESPERADO | Scotiabank haberes | 70000605 | sin CCI | 1914.12
+Scotiabank CTS|70000601 | ESPERADO | Scotiabank CTS | 70000601 | CTS en otro banco | 667.00
+Scotiabank CTS|70000602 | ESPERADO | Scotiabank CTS | 70000602 | CTS en otro banco | 833.33
+Scotiabank CTS|70000604 | ESPERADO | Scotiabank CTS | 70000604 | sin cuenta | 600.00
+Scotiabank CTS|70000605 | ESPERADO | Scotiabank CTS | 70000605 | CTS en otro banco | 733.38
+== Archivos
+Fila | Origen | archivo | nombre | lineas | crlf | ascii | aviso_sin_validar
+BCP haberes | ESPERADO | BCP haberes | ABONO_BCP_SUELDO_202605.txt | 5 | SI | SI | NO
+BCP CTS | ESPERADO | BCP CTS | ABONO_BCP_CTS_202605.txt | 3 | SI | SI | NO
+Interbank haberes | ESPERADO | Interbank haberes | ABONO_INTERBANK_SUELDO_202605.txt | 4 | SI | SI | NO
+Interbank CTS | ESPERADO | Interbank CTS | ABONO_INTERBANK_CTS_202605.txt | 2 | SI | SI | NO
+Scotiabank haberes | ESPERADO | Scotiabank haberes | ABONO_SCOTIABANK_SUELDO_202605.txt | 3 | SI | SI | SI
+Scotiabank CTS | ESPERADO | Scotiabank CTS | ABONO_SCOTIABANK_CTS_202605.txt | 2 | SI | SI | SI
+== Boletas
+Fila | Origen | dni | concepto | importe
+70000601|neto mensual mayo | ESPERADO | 70000601 | neto mensual mayo | 1740.86
+70000601|CTS mayo | ESPERADO | 70000601 | CTS mayo | 667.00
+70000602|neto mensual mayo | ESPERADO | 70000602 | neto mensual mayo | 2175.00
+70000602|CTS mayo | ESPERADO | 70000602 | CTS mayo | 833.33
+70000603|neto mensual mayo | ESPERADO | 70000603 | neto mensual mayo | 2088.02
+70000603|CTS mayo | ESPERADO | 70000603 | CTS mayo | 800.01
+70000604|neto mensual mayo | ESPERADO | 70000604 | neto mensual mayo | 1566.00
+70000604|CTS mayo | ESPERADO | 70000604 | CTS mayo | 600.00
+70000605|neto mensual mayo | ESPERADO | 70000605 | neto mensual mayo | 1914.12
+70000605|CTS mayo | ESPERADO | 70000605 | CTS mayo | 733.38
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · trabajadores del caso | ESPERADO | 1 · trabajadores del caso | 5
+2 · boletas validadas (mensual y CTS de mayo) | ESPERADO | 2 · boletas validadas (mensual y CTS de mayo) | 10

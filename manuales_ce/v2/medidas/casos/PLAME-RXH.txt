@@ -1,0 +1,47 @@
+== Indice
+Comparacion — PLAME-RXH — PLAME 4ta sin nómina — .ps4 y .4ta
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: PS4, 4TA, Archivos, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+PS4 | 8 | 8 | 64 | 0 | 0 | 0 | OK
+4TA | 9 | 9 | 108 | 0 | 0 | 0 | OK
+Archivos | 2 | 2 | 12 | 0 | 0 | 0 | OK
+Diagnóstico | 9 | 9 | 18 | 0 | 0 | 0 | OK
+== PS4
+Fila | Origen | numero_documento | tipo_documento | apellido_paterno | apellido_materno | nombres | domiciliado | convenio | campos
+10400000013 | ESPERADO | 10400000013 | 06 | QUISPE | HUAMAN | ANA LUCIA | 1 | 0 | 7
+10400000021 | ESPERADO | 10400000021 | 06 | MAMANI | CONDORI | JUAN CARLOS | 1 | 0 | 7
+10400000030 | ESPERADO | 10400000030 | 06 | FLORES | PAREDES | ROSA ELENA | 1 | 0 | 7
+10400000048 | ESPERADO | 10400000048 | 06 | ROJAS | VARGAS | PEDRO PABLO | 1 | 0 | 7
+10400000056 | ESPERADO | 10400000056 | 06 | CASTILLO | MENDOZA | CARMEN ROSA | 1 | 0 | 7
+10400000064 | ESPERADO | 10400000064 | 06 | TORRES | SALAZAR | LUIS FERNANDO | 1 | 0 | 7
+10400000072 | ESPERADO | 10400000072 | 06 | RAMOS | CHAVEZ | MARIA ISABEL | 1 | 0 | 7
+PA1234567 | ESPERADO | PA1234567 | 07 | ROSSI | BIANCHI | MARCO ANTONIO | 0 | 2 | 7
+== 4TA
+Fila | Origen | numero_documento | serie | numero | tipo_documento | tipo_comprobante | monto | fecha_emision | fecha_pago | retencion | campo_10 | campo_11 | campos
+10400000013|E001|101 | ESPERADO | 10400000013 | E001 | 101 | 06 | R | 800 | 03/07/2026 | 10/07/2026 | 0 | 11
+10400000021|E001|102 | ESPERADO | 10400000021 | E001 | 102 | 06 | R | 1200 | 20/06/2026 | 05/07/2026 | 0 | 11
+10400000030|E001|103 | ESPERADO | 10400000030 | E001 | 103 | 06 | R | 3000 | 05/07/2026 | 12/07/2026 | 1 | 11
+10400000048|E001|104 | ESPERADO | 10400000048 | E001 | 104 | 06 | R | 4500 | 06/07/2026 | 13/07/2026 | 0 | 11
+10400000056|E001|105 | ESPERADO | 10400000056 | E001 | 105 | 06 | R | 2000 | 07/07/2026 | 14/07/2026 | 0 | 11
+10400000064|E001|106 | ESPERADO | 10400000064 | E001 | 106 | 06 | R | 1200 | 14/06/2026 | 10/07/2026 | 0 | 11
+10400000072|E001|107 | ESPERADO | 10400000072 | E001 | 107 | 06 | R | 1122.60 | 03/07/2026 | 11/07/2026 | 0 | 11
+10400000013|E001|109 | ESPERADO | 10400000013 | E001 | 109 | 06 | N | 200 | 15/07/2026 | 15/07/2026 | 0 | 11
+PA1234567|E001|110 | ESPERADO | PA1234567 | E001 | 110 | 07 | R | 1000 | 08/07/2026 | 16/07/2026 | 0 | 11
+== Archivos
+Fila | Origen | archivo | nombre | crlf | ascii | errores | advertencia_e001_105
+ps4 | ESPERADO | ps4 | 060120260720603456786.ps4 | SI | SI | 0 | SI
+4ta | ESPERADO | 4ta | 060120260720603456786.4ta | SI | SI | 0 | SI
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · documentos sembrados y posteados | ESPERADO | 1 · documentos sembrados y posteados | 10
+1b · sembrados dentro del periodo | ESPERADO | 1b · sembrados dentro del periodo | 8
+2 · marcados como recibo de honorarios | ESPERADO | 2 · marcados como recibo de honorarios | 10
+3 · con algún pago registrado | ESPERADO | 3 · con algún pago registrado | 8
+3a · search: es_recibo_honorarios | ESPERADO | 3a · search: es_recibo_honorarios | 10
+3b · search: + fecha de emisión | ESPERADO | 3b · search: + fecha de emisión | 10
+3c · search: + payment_state | ESPERADO | 3c · search: + payment_state | 8
+4 · candidatos del exportador | ESPERADO | 4 · candidatos del exportador | 10
+5 · con datos del periodo | ESPERADO | 5 · con datos del periodo | 9

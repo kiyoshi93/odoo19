@@ -1,0 +1,205 @@
+{
+ "c10_01_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c10_01_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Días laborados (100 %) WORK100 23.00 184.00 1 ago. 2026 ​ ​ ​ 23.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia ​ ​ ​ ​",
+ "c10_01_1": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 150.00 150.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 4,500.00 4,500.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 123.00 123.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 4,623.00 4,623.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 4,623.00 4,623.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 462.30 462.30 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 71.66 71.66 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 63.34 63.34 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 416.07 416.07 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 34.67 34.67 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 4,025.70 4,025.70",
+ "c10_01_2": "MISCELÁNEA Compañía SOLSE Demo Servicios S.A.C. Procesamientos de nóminas CONTABILIDAD ¿Realizar orden de pago? Fecha de la Cuenta? 31 dic. Diario de planillas Planillas Asiento contable PLLA/2026/12/0022",
+ "c10_02_boleta_impresa": "BOLETA DE PAGO DE REMUNERACIONES D.S. N° 001-98-TR y modificatorias — Planilla Electrónica EMPLEADOR: SOLSE Demo Servicios S.A.C. Domicilio: Calle Los Robles 445 Lima Lima RUC: 20603456786 Periodo: 01/12/2026 — 31/12/2026 TRABAJADOR: Trabajadora BOLETA (perfil C-05) Documento (DNI): 70000501 Ocupación: — Situación: D LEG N.° 728 Fecha de ingreso: 2026-08-01 Rég. pensionario: SPP INTEGRA CUSPP: CUSPP70000501 Remuneración básica: 4500.00 Días laborados: 31 Días no laborados: 0 Horas: 184.0 Moneda: PEN INGRESOS DESCUENTOS APORTES DEL EMPLEADOR Remuneración básica 4500.00 Asignación familiar 123.00 AFP - Aporte obligatorio 462.30 AFP - Comisión 71.66 AFP - Prima de seguro 63.34 ESSALUD - Aporte del empleador 416.07 SENATI - Contribución 34.67 Total ingresos: 4623.00 Total descuentos: 597.30 Total aportes: 450.74 NETO A PAGAR: S/ 4025.70 SON: CUATRO MIL VEINTICINCO Y 70/100 SOLES EMPLEADOR TRABAJADOR DNI: 70000501 La entrega de la presente boleta puede realizarse por medios físicos o electrónicos conforme al D.S. 009-2011-TR. El duplicado queda en poder del empleador.",
+ "c10_asiento": [
+  "6211000 Remuneraciones - Sueldos y salarios Remuneración básica S/ 4,500.00 S/ 0.00",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajadora BOLETA (perfil C-05) Remuneración básica S/ 0.00 S/ 4,500.00",
+  "6211000 Remuneraciones - Sueldos y salarios Asignación familiar S/ 123.00 S/ 0.00",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajadora BOLETA (perfil C-05) Asignación familiar S/ 0.00 S/ 123.00",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajadora BOLETA (perfil C-05) AFP - Aporte obligatorio S/ 462.30 S/ 0.00",
+  "4170000 Administradoras de fondos de pensiones AFP - Aporte obligatorio S/ 0.00 S/ 462.30",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajadora BOLETA (perfil C-05) AFP - Comisión S/ 71.66 S/ 0.00",
+  "4170000 Administradoras de fondos de pensiones AFP - Comisión S/ 0.00 S/ 71.66",
+  "4111000 Remuneraciones por pagar - Sueldos y salarios por pagar Trabajadora BOLETA (perfil C-05) AFP - Prima de seguro S/ 63.34 S/ 0.00",
+  "4170000 Administradoras de fondos de pensiones AFP - Prima de seguro S/ 0.00 S/ 63.34",
+  "6271000 Seguridad, previsión social y otras contribuciones - Régimen de prestaciones de salud ESSALUD - Aporte del empleador S/ 416.07 S/ 0.00",
+  "4031000 Instituciones públicas - ESSALUD ESSALUD - Aporte del empleador S/ 0.00 S/ 416.07",
+  "6277000 Seguridad, previsión social y otras contribuciones - Contribuciones al SENATI SENATI - Contribución S/ 34.67 S/ 0.00",
+  "4033000 Instituciones públicas - Contribución al SENATI SENATI - Contribución S/ 0.00 S/ 34.67"
+ ],
+ "c10_nueva": "Nuevo Nóminas del empleado Boleta de Trabajadora BOLETA (perfil C-05) – diciembre 2026 0 Nómina Confirmar Calcular hoja Cargar asistencias Cancelar nómina Borrador Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Empleado Período 1 dic. - 31 dic. Contrato Referencia Estructura? Nombre de nómina Boleta rectificativa? Días trabajados y entradas Cálculo de la nómina Detalles por categoría de regla salarial Información contable Asistencias DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Días laborados (100 %) WORK100 23.00 184.00 1 ago. 2026 Agregar una línea ​ ​ 23.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia Agregar una línea ​ ​ ​ Enviar mensaje Registrar una nota Actividad 0 Hoy Administrator 2:11 p. m. Creando un nuevo registro...",
+ "c10_sin_importes": "Advertencia de Odoo La boleta no tiene importes: todas sus líneas salen en 0,00 (por ejemplo, la CTS o la gratificación de un trabajador de microempresa). No hay nada que pagar ni que contabilizar, así que no se valida: - Recibo de salario - Trabajador MICRO (microempresa) - CTS (01/11/2026 al 30/11/2026) Eliminar la boleta sin importes Cerrar",
+ "c10_sin_importes_botones": [
+  "",
+  "Eliminar la boleta sin importes",
+  "Cerrar"
+ ],
+ "c11_lote_botones": [
+  "Registrar pago",
+  "Enviar boletas por correo"
+ ],
+ "c11_lote": "Nuevo Procesamientos de nóminas Planilla diciembre 2026 1 / 1 Registrar pago Enviar boletas por correo Cerrado Hecho Borrador Nombre Planilla diciembre 2026 Período 1 dic. - 31 dic. Diario de planillas Boleta rectificativa? NÓMINAS Referencia Empleado Nombre de nómina Fecha desde Fecha hasta Estado Compañía Procesamientos de nóminas SLIP/109 Héctor Manuel Salas Quispe Salary Slip of Héctor Manuel Salas Quispe for diciembre-2026 1 dic. 31 dic. Hecho FM SYSTEMS SOLUTIONS EIRL ​ ​ ​",
+ "c12_01_carlos_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c12_01_carlos_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 116.67 116.67 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 3,500.00 3,500.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 113.00 113.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 3,613.00 3,613.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 3,613.00 3,613.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 361.30 361.30 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 53.11 53.11 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 49.50 49.50 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 325.17 325.17 EPS - Aporte del empleador EPS_APO_001 Contribución compañía 1.00 100.00 EPS - Aporte del empleador 162.59 162.59 EPS - Crédito contra ESSALUD EPS_CRED_001 Contribución compañía 1.00 100.00 EPS - Crédito contra ESSALUD -81.29 -81.29 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 27.10 27.10 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 3,149.09 3,149.09",
+ "c12_02_ana_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c12_02_ana_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 500.00 500.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 15,000.00 15,000.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 0.00 0.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 15,000.00 15,000.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 15,000.00 15,000.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 1,500.00 1,500.00 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 220.50 220.50 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 173.62 173.62 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 1,267.25 1,267.25 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 1,350.00 1,350.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 112.50 112.50 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 11,838.63 11,838.63",
+ "c12_03_nilda_vac_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c12_03_nilda_vac_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 100.00 100.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración vacacional VAC_001 Ingreso Afecto 1.00 100.00 Remuneración vacacional 3,000.00 3,000.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 3,000.00 3,000.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 3,000.00 3,000.00 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 390.00 390.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 270.00 270.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 22.50 22.50 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 2,610.00 2,610.00",
+ "c12_04_vidaley_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c12_04_vidaley_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 100.00 100.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 3,000.00 3,000.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 0.00 0.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 3,000.00 3,000.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 3,000.00 3,000.00 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 390.00 390.00 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 270.00 270.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 22.50 22.50 Seguro Vida Ley (aporte del empleador) VIDA_001 Contribución compañía 1.00 100.00 Seguro Vida Ley (aporte del empleador) 15.90 15.90 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 2,610.00 2,610.00",
+ "c13_01_lucia_ene2025_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c13_01_lucia_ene2025_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 150.00 150.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 4,500.00 4,500.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 113.00 113.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 4,613.00 4,613.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 4,613.00 4,613.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 461.30 461.30 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 71.50 71.50 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 63.20 63.20 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 192.48 192.48 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 415.17 415.17 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 34.60 34.60 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 3,824.52 3,824.52",
+ "c13_02_cese_devolucion_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c13_02_cese_devolucion_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Vacaciones truncas VAC_TRUNCA_001 Ingreso Afecto 1.00 100.00 Vacaciones truncas 1,333.33 1,333.33 Gratificación trunca GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Gratificación trunca 5,333.33 5,333.33 Bonificación extraordinaria s/ gratificación trunca BONO_GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Bonificación extraordinaria s/ gratificación trunca 480.00 480.00 CTS trunca CTS_TRUNCA_001 Ingreso no Afecto 1.00 100.00 CTS trunca 4,000.00 4,000.00 Total liquidación GROSS Bruto 1.00 100.00 Total liquidación 11,146.66 11,146.66 Base afecta a renta de 5ta (liquidación) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (liquidación) 7,146.66 7,146.66 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 173.33 173.33 Renta de 5ta categoría (ajuste del cese) R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría (ajuste del cese) 0.00 0.00 Devolución de retención en exceso de 5ta categoría DEV5_001 Ingreso no Afecto 1.00 100.00 Devolución de retención en exceso de 5ta categoría 2,158.67 2,158.67 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 120.00 120.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 10.00 10.00 Neto de liquidación NET Neto 1.00 100.00 Neto de liquidación 13,132.00 13,132.00",
+ "c13_cert": "Certificado de 5.ª categoría Compañía Ejercicio Trabajadores? Por duplicado? Imprimir certificados Cancelar",
+ "c14_01_lucia_grati_jul2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c14_01_lucia_grati_jul2026_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Gratificación GRATI_001 Ingreso no Afecto 1.00 100.00 Gratificación 4,613.00 4,613.00 Bonificación extraordinaria (Ley 30334) BONO_GRATI_001 Ingreso no Afecto 1.00 100.00 Bonificación extraordinaria (Ley 30334) 415.17 415.17 Total gratificación GROSS Bruto 1.00 100.00 Total gratificación 5,028.17 5,028.17 Base afecta a renta de 5ta (gratificación) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (gratificación) 5,028.17 5,028.17 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 5,028.17 5,028.17",
+ "c15_01_lucia_cts_nov2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c15_01_lucia_cts_nov2026_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total CTS del periodo CTS_001 Ingreso no Afecto 1.00 100.00 CTS del periodo 2,695.92 2,695.92 Total CTS GROSS Bruto 1.00 100.00 Total CTS 2,695.92 2,695.92 Neto a depositar NET Neto 1.00 100.00 Neto a depositar 2,695.92 2,695.92 ​",
+ "c15_02_liquidacion_deposito_cts": "LIQUIDACIÓN DE DEPÓSITO DE LA COMPENSACIÓN POR TIEMPO DE SERVICIOS TUO del D.Leg. 650 (D.S. 001-97-TR) EMPLEADOR: FM SYSTEMS SOLUTIONS EIRL Domicilio: MZ. 11 LT. 4 CAS. RINCONAZO Chiclayo Lambayeque RUC: 20614285525 TRABAJADOR: Lucía Fernanda Ramos Ticona Documento de identidad: 99999901 Fecha de ingreso: 2025-01-01 Remuneración computable Remuneración básica 4500.00 Asignación familiar 123.00 1/6 de la gratificación percibida en el periodo 768.83 Total remuneración computable 5391.83 Periodo y tiempo computable Periodo que se deposita del 01/05/2026 al 31/10/2026 Tiempo computable del 01/05/2026 al 31/10/2026: 6 meses y 0 días Depósito Entidad depositaria Banco De Credito Del Peru N.° de cuenta CTS 19199999901002 Moneda de la cuenta PEN Fecha del depósito — N.° de operación — MONTO DEPOSITADO S/ 2695.92 SON: DOS MIL SEISCIENTOS NOVENTA Y CINCO Y 92/100 SOLES EMPLEADOR TRABAJADOR Doc.: 99999901",
+ "c16_01_carmen_liquidacion_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c16_01_carmen_liquidacion_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Vacaciones truncas VAC_TRUNCA_001 Ingreso Afecto 1.00 100.00 Vacaciones truncas 1,666.67 1,666.67 Gratificación trunca GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Gratificación trunca 833.33 833.33 Bonificación extraordinaria s/ gratificación trunca BONO_GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Bonificación extraordinaria s/ gratificación trunca 75.00 75.00 CTS trunca CTS_TRUNCA_001 Ingreso no Afecto 1.00 100.00 CTS trunca 972.22 972.22 Total liquidación GROSS Bruto 1.00 100.00 Total liquidación 3,547.22 3,547.22 Base afecta a renta de 5ta (liquidación) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (liquidación) 2,575.00 2,575.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 166.67 166.67 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 25.83 25.83 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 22.83 22.83 Renta de 5ta categoría (ajuste del cese) R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría (ajuste del cese) 0.00 0.00 Devolución de retención en exceso de 5ta categoría DEV5_001 Ingreso no Afecto 1.00 100.00 Devolución de retención en exceso de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 150.00 150.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 12.50 12.50 Neto de liquidación NET Neto 1.00 100.00 Neto de liquidación 3,331.89 3,331.89",
+ "c16_02_indemnizacion_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c16_02_indemnizacion_0": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Vacaciones truncas VAC_TRUNCA_001 Ingreso Afecto 1.00 100.00 Vacaciones truncas 391.67 391.67 Gratificación trunca GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Gratificación trunca 2,000.00 2,000.00 Bonificación extraordinaria s/ gratificación trunca BONO_GRATI_TRUNCA_001 Ingreso no Afecto 1.00 100.00 Bonificación extraordinaria s/ gratificación trunca 180.00 180.00 CTS trunca CTS_TRUNCA_001 Ingreso no Afecto 1.00 100.00 CTS trunca 1,500.00 1,500.00 Indemnización por despido arbitrario IND_001 Ingreso no Afecto 1.00 100.00 Indemnización por despido arbitrario 18,575.00 18,575.00 Total liquidación GROSS Bruto 1.00 100.00 Total liquidación 22,646.67 22,646.67 Base afecta a renta de 5ta (liquidación) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (liquidación) 2,571.67 2,571.67 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 50.92 50.92 Renta de 5ta categoría (ajuste del cese) R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría (ajuste del cese) 0.00 0.00 Devolución de retención en exceso de 5ta categoría DEV5_001 Ingreso no Afecto 1.00 100.00 Devolución de retención en exceso de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 101.70 101.70 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 2.94 2.94 Neto de liquidación NET Neto 1.00 100.00 Neto de liquidación 22,595.75 22,595.75",
+ "c16_contrato": "RESUMEN DEL CONTRATO Salario? S/ 3,000.00 S/ / mes Tipo de contrato Categoría del pago HORARIO Horas laborables? Periodicidad de pago? PERÚ - DATOS LABORALES (T-REGISTRO / PLAME) Régimen Laboral? Tipo de trabajador (T8)? Categoría ocupacional (T24)? Tipo de contrato (T12)? Ocupación de trabajo Situación especial Motivo de baja Despido arbitrario (se indemniza)? Fin pactado del contrato modal? 31 ago. Tipo de pago Remuneración variable Porcentaje de adelanto? Jornada de trabajo máxima Jornada atípica o acumulativa Trabajo en horario nocturno? Sindicalizado ¿Es practicante?? Remuneración en especie No mostrar horas extras en boleta",
+ "c17_01_lucia_vac_feb2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c17_01_lucia_vac_feb2026_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Normal Working Days paid at 100% WORK100 11.00 88.00 1 ene. 2025 Vacaciones PE (D.Leg. 713) VACPE100 -11.00 -88.00 1 ene. 2025 ​ ​ 0.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia ​ ​ ​ ​",
+ "c17_01_lucia_vac_feb2026_1": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 150.00 150.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración vacacional VAC_001 Ingreso Afecto 1.00 100.00 Remuneración vacacional 2,306.50 2,306.50 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 2,306.50 2,306.50 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 2,306.50 2,306.50 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 230.65 230.65 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 35.75 35.75 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 31.60 31.60 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 207.59 207.59 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 17.30 17.30 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 2,008.50 2,008.50",
+ "c17_02_lucia_nme_feb2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c17_02_lucia_nme_feb2026_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Normal Working Days paid at 100% WORK100 20.00 160.00 1 ene. 2025 Vacaciones PE (D.Leg. 713) VACPE100 -11.00 -88.00 1 ene. 2025 ​ ​ 9.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia ​ ​ ​ ​",
+ "c17_02_lucia_nme_feb2026_1": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 150.00 150.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 2,250.00 2,250.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 113.00 113.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 2,363.00 2,363.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 2,363.00 2,363.00 AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Aporte obligatorio 236.30 236.30 AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Comisión 36.63 36.63 AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador 1.00 100.00 AFP - Prima de seguro 32.37 32.37 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 183.73 183.73 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 212.67 212.67 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 17.72 17.72 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 1,873.97 1,873.97",
+ "c17_asignaciones": [
+  "Héctor Manuel Salas Quispe Vacaciones PE (D.Leg. 713) 47.5 días Asignación acumulada Aprobado Rechazar",
+  "Lucía Fernanda Ramos Ticona Vacaciones PE (D.Leg. 713) 52.5 días Asignación acumulada Aprobado Rechazar",
+  "Carlos Alberto Quispe Mamani Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "Carmen Rosa Vásquez León Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "Jorge Luis Fernández Rojas Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "José Antonio Ramírez Flores Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "Luis Miguel Sánchez Díaz Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "María Elena Torres Vega Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "Miguel Ángel Castro Núñez Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar",
+  "Pedro Pablo Huamán Ccopa Vacaciones PE (D.Leg. 713) 25 días Asignación acumulada Aprobado Rechazar"
+ ],
+ "c17_ausencias": [
+  "Héctor Manuel Salas Quispe Vacaciones PE (D.Leg. 713) 14 set., 8:00 a. m. 23 set., 5:00 p. m. 8 días Aprobado Rechazar",
+  "Lucía Fernanda Ramos Ticona Vacaciones PE (D.Leg. 713) 2 feb., 8:00 a. m. 16 feb., 5:00 p. m. 11 días Aprobado Rechazar"
+ ],
+ "c17_tipos": [
+  "Tiempo personal pagado Del encargado de tiempo personal Tiempo personal pagado",
+  "Tiempo personal por enfermedad 20 · S.I. Enfermedad o accidente (primeros veinte días) Del encargado de tiempo personal Tiempo personal por enfermedad",
+  "Sin pagar SINGOCE100 05 · S.P. Permiso, licencia u otros motivos sin goce de haber Del encargado de tiempo personal Sin pagar",
+  "Días compensatorios 27 · S.I. Días compensados por horas de sobretiempo Del encargado de tiempo personal Tiempo personal compensatorio",
+  "Tiempo personal adicional Del encargado de tiempo personal",
+  "Horas extra Del encargado de tiempo personal",
+  "Vacaciones PE (D.Leg. 713) VACPE100 23 · S.I. Descanso vacacional Del encargado de tiempo personal Vacaciones PE Perú",
+  "Descanso por maternidad (pre y postnatal) MATPE100 22 · S.I. Maternidad - pre y post natal (subsidiado) Del encargado de tiempo personal Perú"
+ ],
+ "c18_feriados": [
+  "Año Nuevo 2026 1 ene., 12:00 a. m. 1 ene., 11:59 p. m.",
+  "Jueves Santo 2026 2 abr., 12:00 a. m. 2 abr., 11:59 p. m.",
+  "Viernes Santo 2026 3 abr., 12:00 a. m. 3 abr., 11:59 p. m.",
+  "Día del Trabajo 2026 1 may., 12:00 a. m. 1 may., 11:59 p. m.",
+  "Batalla de Arica y Día de la Bandera 2026 7 jun., 12:00 a. m. 7 jun., 11:59 p. m.",
+  "San Pedro y San Pablo 2026 29 jun., 12:00 a. m. 29 jun., 11:59 p. m.",
+  "Día de la Fuerza Aérea 2026 23 jul., 12:00 a. m. 23 jul., 11:59 p. m.",
+  "Fiestas Patrias 2026 28 jul., 12:00 a. m. 28 jul., 11:59 p. m.",
+  "Fiestas Patrias 2026 29 jul., 12:00 a. m. 29 jul., 11:59 p. m.",
+  "Batalla de Junín 2026 6 ago., 12:00 a. m. 6 ago., 11:59 p. m.",
+  "Santa Rosa de Lima 2026 30 ago., 12:00 a. m. 30 ago., 11:59 p. m.",
+  "Combate de Angamos 2026 8 oct., 12:00 a. m. 8 oct., 11:59 p. m.",
+  "Todos los Santos 2026 1 nov., 12:00 a. m. 1 nov., 11:59 p. m.",
+  "Inmaculada Concepción 2026 8 dic., 12:00 a. m. 8 dic., 11:59 p. m.",
+  "Batalla de Ayacucho 2026 9 dic., 12:00 a. m. 9 dic., 11:59 p. m.",
+  "Navidad 2026 25 dic., 12:00 a. m. 25 dic., 11:59 p. m."
+ ],
+ "c18_banda_solse": "Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.",
+ "c20_util": "Reparto de utilidades Reparto D.Leg. 892: 50% por días laborados + 50% por remuneraciones del ejercicio, con tope individual de 18 sueldos. Los días y remuneraciones salen de las boletas validadas del año. Ejercicio (año) Renta neta anual (base del reparto)? Porcentaje según actividad (CIIU) Calcular reparto Cerrar",
+ "c20_02_entradas_botones": [
+  "Confirmar",
+  "Calcular hoja",
+  "Cargar asistencias",
+  "Cancelar nómina"
+ ],
+ "c20_02_entradas_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Días laborados (100 %) WORK100 22.00 176.00 1 oct. 2026 Agregar una línea ​ ​ 22.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia Horas extras 25% (cantidad de horas) HE25_001 6.00 1 oct. 2026 Horas extras 35% (cantidad de horas) HE35_001 2.00 1 oct. 2026 Horas nocturnas (cantidad) BNOC_001 10.00 1 oct. 2026 Movilidad de libre disposición MOV_001 200.00 1 oct. 2026 Tardanzas (minutos) TARD_001 45.00 1 oct. 2026 Agregar una línea",
+ "c20_02_entradas_1": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 80.00 80.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 2,400.00 2,400.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 0.00 0.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 75.00 75.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 27.00 27.00 Sobretasa por trabajo nocturno BNOC_001 Ingreso Afecto 1.00 100.00 Sobretasa por trabajo nocturno 35.00 35.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 200.00 200.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 2,737.00 2,737.00 Descuento por tardanzas TARD_001 Descuento que reduce la base afecta 1.00 100.00 Descuento por tardanzas 7.50 7.50 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 2,529.50 2,529.50 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 328.84 328.84 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 227.66 227.66 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 18.97 18.97 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 2,400.66 2,400.66 Agregar una línea",
+ "c11_nuevo": "Nuevo Procesamientos de nóminas Nuevo Generar nóminas Marcar como hecho Cerrar Cerrado Hecho Borrador Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Nombre Período 1 nov. - 30 nov. Diario de planillas Boleta rectificativa? NÓMINAS Referencia Empleado Nombre de nómina Fecha desde Fecha hasta Estado Compañía Procesamientos de nóminas Agregar una línea ​ ​ ​",
+ "c11_url": "https://51.222.13.59.sslip.io/odoo/action-1007/4",
+ "c11_asistente": "Generar nóminas Generar Este asistente generará las boletas de todos los trabajadores seleccionados según las fechas y la rectificación indicadas en el lote de boletas. EMPLEADOS Nombre del empleado Teléfono laboral Departamento Puesto Gerente Agregar una línea ​ ​ ​ Guardar Descartar",
+ "error_c11_lote_nuevo": "locator.click: Timeout 30000ms exceeded.",
+ "c11_generado": "Nuevo Procesamientos de nóminas Planilla noviembre 2026 (manual v2) 1 / 1 Generar nóminas Marcar como hecho Cerrar Cerrado Hecho Borrador Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Nombre Período 1 nov. - 30 nov. Diario de planillas Boleta rectificativa? NÓMINAS Referencia Empleado Nombre de nómina Fecha desde Fecha hasta Estado Compañía Procesamientos de nóminas Trabajador HORAS EXTRA (manual v2) Boleta de Trabajador HORAS EXTRA (manual v2) – noviembre 2026 1 nov. 30 nov. Borrador SOLSE Demo Servicios S.A.C. Agregar una línea ​ ​",
+ "c17_06_oscar_vac_jul2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c17_06_oscar_vac_jul2026_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Días laborados (100 %) WORK100 11.00 88.00 1 ene. 2025 Vacaciones PE (D.Leg. 713) VACPE100 -11.00 -88.00 1 ene. 2025 ​ ​ 0.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia ​ ​ ​ ​",
+ "c17_07_oscar_nme_jul2026_botones": [
+  "Rectificar",
+  "Cancelar nómina",
+  "Enviar por correo",
+  "Confirmar recepción"
+ ],
+ "c17_07_oscar_nme_jul2026_0": "DÍAS TRABAJADOS Descripción Código Número de días Número de horas ¿Pagado? Contrato Secuencia Días laborados (100 %) WORK100 23.00 184.00 1 ene. 2025 Vacaciones PE (D.Leg. 713) VACPE100 -11.00 -88.00 1 ene. 2025 ​ ​ 12.00 OTRAS ENTRADAS Descripción Código Importe Contrato Secuencia ​ ​ ​ ​",
+ "c17_07_oscar_nme_jul2026_1": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 100.00 100.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 1,500.00 1,500.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 0.00 0.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad de libre disposición MOV_001 Ingreso no Afecto 1.00 100.00 Movilidad de libre disposición 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 1,500.00 1,500.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 1,500.00 1,500.00 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 195.00 195.00 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 135.00 135.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 11.25 11.25 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 1,305.00 1,305.00",
+ "c13_04_certificado_renta5_lucia_2025": "CERTIFICADO DE RENTAS Y RETENCIONES POR RENTAS DE QUINTA CATEGORÍA Ejercicio 2025 · R.S. 010-2006/SUNAT, art. 2 FM SYSTEMS SOLUTIONS EIRL, con RUC 20614285525 y domicilio en MZ. 11 LT. 4 CAS. RINCONAZO Chiclayo Lambayeque, representada por (registre al representante: «Empleador» en su ficha), certifica que a Lucía Fernanda Ramos Ticona, con documento de identidad 99999901, domiciliado(a) en —, que ocupa el cargo de Analista Contable, se le pagaron en el ejercicio 2025 las rentas de quinta categoría y se le retuvo el impuesto que se detallan: Mes Renta bruta Retención Devolución Enero 4613.00 192.48 0.00 Febrero 4613.00 192.48 0.00 Marzo 4613.00 192.48 0.00 Abril 4613.00 192.48 0.00 Mayo 4613.00 192.48 0.00 Junio 4613.00 192.48 0.00 Julio 9641.17 192.48 0.00 Agosto 4613.00 192.47 0.00 Setiembre 4613.00 192.47 0.00 Octubre 4613.00 192.47 0.00 Noviembre 4613.00 192.47 0.00 Diciembre 9641.17 192.49 0.00 Renta bruta del ejercicio 65412.34 Deducción de 7 UIT (UIT 5350) (37450.00) Renta neta 27962.34 Impuesto calculado 2309.73 Impuesto retenido (neto de devoluciones) 2309.73 Solo comprende las rentas pagadas y las retenciones efectuadas por este empleador. Las deducciones adicionales (3 UIT por gastos) las aplica el trabajador en su declaración. Chiclayo, 22 de octubre de 2026 REPRESENTANTE LEGAL",
+ "c20_url": "https://51.222.13.59.sslip.io/odoo/action-1005/1929"
+}

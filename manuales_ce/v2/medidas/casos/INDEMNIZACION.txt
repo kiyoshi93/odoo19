@@ -1,0 +1,42 @@
+== Indice
+Comparacion — INDEMNIZACION — Nómina — indemnización por despido arbitrario (plazo indeterminado, modal y pequeña empresa)
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Conceptos, PLAME, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Conceptos | 11 | 11 | 33 | 0 | 0 | 0 | OK
+PLAME | 8 | 8 | 16 | 0 | 0 | 0 | OK
+Diagnóstico | 7 | 7 | 14 | 0 | 0 | 0 | OK
+== Conceptos
+Fila | Origen | dni | codigo | importe
+70000351|IND_001 | ESPERADO | 70000351 | IND_001 | 18575.00
+70000352|IND_MOD_001 | ESPERADO | 70000352 | IND_MOD_001 | 18000.00
+70000353|IND_001 | ESPERADO | 70000353 | IND_001 | 4083.33
+70000355|IND_MOD_001 | ESPERADO | 70000355 | IND_MOD_001 | 18000.00
+70000356|IND_MOD_001 | ESPERADO | 70000356 | IND_MOD_001 | 18000.00
+70000357|IND_001 | ESPERADO | 70000357 | IND_001 | 18750.00
+70000358|IND_001 | ESPERADO | 70000358 | IND_001 | 37356.00
+70000351|IND_MOD_001 | ESPERADO | 70000351 | IND_MOD_001 | (sin línea)
+70000352|IND_001 | ESPERADO | 70000352 | IND_001 | (sin línea)
+70000354|IND_001 | ESPERADO | 70000354 | IND_001 | (sin línea)
+70000356|IND_001 | ESPERADO | 70000356 | IND_001 | (sin línea)
+== PLAME
+Fila | Origen | dni | lineas
+70000351 | ESPERADO | 70000351 | 01|70000351|0501|18575.00|18575.00|
+70000352 | ESPERADO | 70000352 | 01|70000352|0503|18000.00|18000.00|
+70000353 | ESPERADO | 70000353 | 01|70000353|0501|4083.33|4083.33|
+70000354 | ESPERADO | 70000354 | (ninguna)
+70000355 | ESPERADO | 70000355 | 01|70000355|0503|18000.00|18000.00|
+70000356 | ESPERADO | 70000356 | 01|70000356|0503|18000.00|18000.00|
+70000357 | ESPERADO | 70000357 | 01|70000357|0501|18750.00|18750.00|
+70000358 | ESPERADO | 70000358 | 01|70000358|0501|37356.00|37356.00|
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · liquidaciones del caso | ESPERADO | 1 · liquidaciones del caso | 8
+2 · validadas | ESPERADO | 2 · validadas | 8
+3 · aviso del periodo de prueba (70000354) | ESPERADO | 3 · aviso del periodo de prueba (70000354) | SI
+4 · la indemnización no entra a la base de 5.ª (BAR5 de 70000351 = truncas) | ESPERADO | 4 · la indemnización no entra a la base de 5.ª (BAR5 de 70000351 = truncas) | SI
+5 · ONP de 70000351 = 13 % de las vacaciones truncas y NET − GROSS = −ONP | ESPERADO | 5 · ONP de 70000351 = 13 % de las vacaciones truncas y NET − GROSS = −ONP | SI
+6 · GROSS de 70000351 menos las truncas y la CTS (la indemnización) | ESPERADO | 6 · GROSS de 70000351 menos las truncas y la CTS (la indemnización) | 18575.00
+7 · asiento de 70000351: debe 623 | ESPERADO | 7 · asiento de 70000351: debe 623 | 18575.00
