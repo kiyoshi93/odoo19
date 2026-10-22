@@ -1,0 +1,51 @@
+{
+ "p5": {
+  "nombre": "Asistencias octubre 2026 - Jorge Luis Fernández Rojas",
+  "estado": "draft",
+  "totales": [
+   "Días laborables evaluados: 21 · Faltas: 0 · Tardanza acumulada: 0 min · Feriados: 1"
+  ],
+  "feriado": [
+   "2026-10-08  ◇ feriado"
+  ],
+  "dias_check": 21,
+  "otros_dias": [],
+  "RB_001": [
+   1130.0
+  ],
+  "lineas_falta": []
+ },
+ "p5_resumen": "Conciliación de asistencias — 2026-10-01 al 2026-10-31\nDías laborables evaluados: 21 · Faltas: 0 · Tardanza acumulada: 0 min · Feriados: 1\n\n2026-10-01  ✔\n2026-10-02  ✔\n2026-10-05  ✔\n2026-10-06  ✔\n2026-10-07  ✔\n2026-10-08  ◇ feriado\n2026-10-09  ✔\n2026-10-12  ✔\n2026-10-13  ✔\n2026-10-14  ✔\n2026-10-15  ✔\n2026-10-16  ✔\n2026-10-19  ✔\n2026-10-20  ✔\n2026-10-21  ✔\n2026-10-22  ✔\n2026-10-23  ✔\n2026-10-26  ✔\n2026-10-27  ✔\n2026-10-28  ✔\n2026-10-29  ✔\n2026-10-30  ✔",
+ "p6_angamos": [
+  {
+   "id": 141,
+   "resource_id": [
+    466,
+    "Jorge Luis Fernández Rojas"
+   ],
+   "date_from": "2026-10-08 05:00:00",
+   "date_to": "2026-10-09 04:59:00",
+   "calendar_id": [
+    6,
+    "Caso ASISTENCIA · día no laborable de Jorge (sin uso)"
+   ],
+   "company_id": [
+    4,
+    "SOLSE Demo Servicios S.A.C."
+   ],
+   "time_type": "leave",
+   "holiday_id": false
+  }
+ ],
+ "p6_sin_recurso_oct": [],
+ "p6_tz_4": {
+  "id": 5,
+  "name": "Estándar de 40 horas a la semana",
+  "tz": "America/Lima"
+ },
+ "p6_tz_1": {
+  "id": 1,
+  "name": "Standard 40 hours/week",
+  "tz": "America/Lima"
+ }
+}

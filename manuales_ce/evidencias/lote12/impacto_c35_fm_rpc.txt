@@ -1,0 +1,9 @@
+== FM SYSTEMS (id 1)
+  versión de solse_pe_payroll_asistencia: 19.0.1.4.1
+  ajustes: cargar al calcular False · evaluar por horas False · descontar tardanzas True · tolerancia 10 min
+  checadas (hr.attendance) de 2025-2026: 65
+  días no laborables sin solicitud 2025-2026: 32 sin recurso (feriados) · 0 de trabajadores
+  fechas de los feriados: 2025-01-01, 2025-04-17, 2025-04-18, 2025-05-01, 2025-06-07, 2025-06-29, 2025-07-23, 2025-07-28, 2025-07-29, 2025-08-06, 2025-08-30, 2025-10-08, 2025-11-01, 2025-12-08, 2025-12-09, 2025-12-25, 2026-01-01, 2026-04-02, 2026-04-03, 2026-05-01, 2026-06-07, 2026-06-29, 2026-07-23, 2026-07-28, 2026-07-29, 2026-08-06, 2026-08-30, 2026-10-08, 2026-11-01, 2026-12-08, 2026-12-09, 2026-12-25
+  boletas con conciliación de asistencias: 0 {}
+  boletas con un feriado que su resumen trae como falta, tardanza o parcial: {} · días: {}
+== fin (solo lectura)
