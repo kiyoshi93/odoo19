@@ -137,3 +137,46 @@ module.exports.c28 = async (p, c) => {
   await cap(p, 'c28_05_enviar_boletas_sin_acuerdo');
   await p.keyboard.press('Escape');
 };
+Object.assign(module.exports, {
+  async c19(p, c) {
+    await cia(c, 1); await u.irA(p, '/odoo/action-base.action_res_company_form/1');
+    await tab(p, 'Nómina PE - Asistencias');
+    hechos.c19_ajustes = limpio(await p.locator('.o_notebook .tab-pane.active').innerText());
+    await cap(p, 'c19_01_ajustes_asistencias');
+    await boleta(p, c, 4, 1925, 'c19_02_jorge_oct_feriado', ['Asistencias', 'Días trabajados y entradas', 'Cálculo de la nómina']);
+    await cap(p, 'c19_02_jorge_oct_boton', { resaltar: ['.o_statusbar_buttons button:has-text("Cargar asistencias")'] });
+    await boleta(p, c, 4, 1921, 'c19_03_carlos_tardanzas', ['Asistencias', 'Cálculo de la nómina']);
+    await boleta(p, c, 4, 1922, 'c19_04_jorge_set_faltas', ['Asistencias', 'Días trabajados y entradas']);
+    await boleta(p, c, 4, 1923, 'c19_05_maria_parcial', ['Asistencias']);
+    await boleta(p, c, 4, 1924, 'c19_06_oscar_combinado', ['Asistencias']);
+    await cia(c, 4); await u.irA(p, '/odoo/action-1050?view_type=list');
+    for (let i = 0; i < 4 && await p.locator('.o_searchview_facet').count(); i++) { await p.locator('.o_searchview_facet .o_facet_remove').first().click(); await u.esperarCarga(p, 700); }
+    await p.locator('.o_searchview_input').fill('Jorge Luis'); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1000);
+    hechos.c19_checadas = (await p.locator('.o_data_row').allInnerTexts()).map(limpio).slice(0, 8);
+    await cap(p, 'c19_07_checadas_jorge');
+    await u.irA(p, '/odoo/action-resource.action_resource_calendar_form/6');
+    hechos.c19_calendario = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1200);
+    await cap(p, 'c19_08_calendario_zona_horaria', { resaltar: ['.o_field_widget[name="tz"]'] });
+    for (const t of ['Tiempo personal', 'Días festivos', 'Ausencias globales', 'Tiempo libre']) { if (await tab(p, t)) { await cap(p, 'c19_09_calendario_dia_no_laborable'); break; } }
+  },
+  async c30(p, c) {
+    await cia(c, 4); await u.irA(p, '/odoo/action-1078');
+    const m = () => p.locator('.modal').last();
+    const raiz = (await p.locator('.modal').count()) ? m() : p.locator('.o_form_view').first();
+    const ej = raiz.locator('.o_field_widget[name="ejercicio"] input'); if (await ej.count()) { await ej.fill('2026'); await ej.press('Tab'); }
+    const mes = raiz.locator('.o_field_widget[name="mes"]');
+    if (await mes.locator('select').count()) await mes.locator('select').selectOption({ label: 'Julio' });
+    else { await mes.locator('input').first().click(); await p.locator('.o_select_menu_item, .dropdown-item').filter({ hasText: /^\s*Julio\s*$/ }).first().click(); }
+    await p.waitForTimeout(800);
+    hechos.c30_antes = limpio(await raiz.innerText()).slice(0, 1500);
+    hechos.c30_botones = (await raiz.locator('button:visible').allInnerTexts()).map(limpio);
+    await cap(p, 'c30_01_rxh_periodo');
+    await raiz.locator('button:visible').filter({ hasText: /Revisar|Generar|Validar|Siguiente/ }).first().click(); await p.waitForTimeout(4000); await u.esperarCarga(p, 1500);
+    const r = (await p.locator('.modal').count()) ? m() : p.locator('.o_form_view').first();
+    hechos.c30_resultado = limpio(await r.innerText()).slice(0, 2500);
+    await cap(p, 'c30_02_rxh_revision');
+    await cia(c, 1); await u.irA(p, '/odoo/action-base.action_res_company_form/1'); await tab(p, 'Nómina PE - 4ta Categoría');
+    hechos.c30_ajustes = limpio(await p.locator('.o_notebook .tab-pane.active').innerText());
+    await cap(p, 'c30_03_ajustes_4ta');
+  },
+});

@@ -270,6 +270,9 @@ module.exports = (h) => {
     pieCapitulo(['base', 'ce'], 'C-09, C-24, V-05'),
   );
 
+  // ------------------------------------------------------------------ 19 (bloque 4, si ya está escrito)
+  if (require('fs').existsSync(require('path').join(__dirname, 'cap19.js')) && process.env.SIN_CAP19 !== '1') a(require('./cap19.js')(h));
+
   // ------------------------------------------------------------------ 20
   a(
     h1('20. Horas extra, nocturnidad, movilidad, adelantos y utilidades'),
