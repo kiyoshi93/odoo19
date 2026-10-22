@@ -1,0 +1,96 @@
+1
+00:00:00,500 --> 00:00:05,897
+Este episodio repasa los aportes y retenciones de la boleta con tres trabajadores
+
+2
+00:00:05,897 --> 00:00:06,963
+del caso NOMINA.
+
+3
+00:00:08,430 --> 00:00:11,968
+Carlos está en la AFP Habitat y tiene EPS:
+
+4
+00:00:11,968 --> 00:00:18,875
+la boleta calcula el aporte obligatorio, la comisión y la prima de seguro, EsSalud
+
+5
+00:00:18,875 --> 00:00:21,738
+con el crédito de la EPS y SENATI.
+
+6
+00:00:21,738 --> 00:00:23,676
+Su neto es S/ 3 149,09.
+
+7
+00:00:25,160 --> 00:00:27,512
+Ana gana S/ 15 000.
+
+8
+00:00:27,512 --> 00:00:37,417
+La prima de seguro de la AFP se calcula hasta la remuneración máxima asegurable:
+
+9
+00:00:37,417 --> 00:00:39,274
+sale S/ 173,62.
+
+10
+00:00:39,274 --> 00:00:48,560
+Su renta de quinta, en dos tramos, es S/ 1 267,25, y su neto, S/ 11 838,63.
+
+11
+00:00:49,960 --> 00:00:52,509
+Nilda goza vacaciones todo julio.
+
+12
+00:00:52,509 --> 00:00:58,767
+La vacacional de S/ 3 000 paga EsSalud por S/ 270, que es el nueve por ciento del
+
+13
+00:00:58,767 --> 00:00:59,076
+mes.
+
+14
+00:00:59,076 --> 00:01:02,553
+La mensual queda sin importes y no se valida.
+
+15
+00:01:04,030 --> 00:01:10,909
+La base mínima de EsSalud y el tope de la prima se miran por mes, no por boleta.
+
+16
+00:01:10,909 --> 00:01:15,036
+Antes de la versión dos, Nilda pagaba S/ 371,70.
+
+17
+00:01:15,036 --> 00:01:21,742
+Ahora paga S/ 270, igual que Óscar, que reparte ciento treinta y cinco en cada
+
+18
+00:01:21,742 --> 00:01:22,344
+boleta.
+
+19
+00:01:23,830 --> 00:01:26,794
+La tardanza reduce la base afecta.
+
+20
+00:01:26,794 --> 00:01:30,280
+En este ejemplo, la base es S/ 2 529,50:
+
+21
+00:01:30,280 --> 00:01:34,813
+los ingresos, menos la movilidad, menos la tardanza.
+
+22
+00:01:34,813 --> 00:01:38,300
+Sobre ella se calculan la ONP y EsSalud.
+
+23
+00:01:39,700 --> 00:01:44,948
+Los aportes se calculan sobre la base afecta del mes, con sus mínimos y topes.
+
+24
+00:01:44,948 --> 00:01:47,370
+Está en el capítulo doce del manual.
+

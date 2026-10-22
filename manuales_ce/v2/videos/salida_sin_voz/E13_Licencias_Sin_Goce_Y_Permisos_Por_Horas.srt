@@ -1,0 +1,72 @@
+1
+00:00:00,500 --> 00:00:03,598
+Este episodio muestra tres ausencias sin goce:
+
+2
+00:00:03,598 --> 00:00:07,100
+una semana, un permiso de dos horas y un mes entero.
+
+3
+00:00:08,500 --> 00:00:12,056
+Las tres son ausencias del tipo Sin pagar, aprobadas:
+
+4
+00:00:12,056 --> 00:00:17,692
+un permiso de dos horas el 17 de noviembre, una semana del 9 al 13, y todo el mes de
+
+5
+00:00:17,692 --> 00:00:18,363
+noviembre.
+
+6
+00:00:19,830 --> 00:00:27,027
+La semana sin goce resta cinco días y cuarenta horas, sin marcar en Pagado.
+
+7
+00:00:27,027 --> 00:00:33,360
+Con un sueldo de S/ 2 500, la remuneración del mes es S/ 2 083,33.
+
+8
+00:00:34,760 --> 00:00:40,440
+El permiso de dos horas se descuenta al valor hora:
+
+9
+00:00:40,440 --> 00:00:46,455
+dos mil quinientos entre treinta, entre ocho, por dos.
+
+10
+00:00:46,455 --> 00:00:53,360
+La remuneración queda en S/ 2 479,17 y el neto en S/ 2 156,88.
+
+11
+00:00:54,760 --> 00:01:00,084
+Con todo noviembre sin goce, la boleta resta veintiún días y no tiene importes:
+
+12
+00:01:00,084 --> 00:01:00,960
+no se valida.
+
+13
+00:01:02,360 --> 00:01:07,787
+En el PLAME, la semana sin goce va como suspensión cero cinco por cinco días, con
+
+14
+00:01:07,787 --> 00:01:10,333
+ciento veintiséis horas en la jornada.
+
+15
+00:01:10,333 --> 00:01:15,023
+El mes entero va como cero cinco por treinta días, sin boleta mensual.
+
+16
+00:01:16,490 --> 00:01:21,985
+El divisor del valor hora y la asignación familiar en un mes entero sin goce están
+
+17
+00:01:21,985 --> 00:01:24,933
+pendientes de confirmación por la contadora.
+
+18
+00:01:24,933 --> 00:01:28,753
+Está en el capítulo veintidós y en el anexo A del manual.
+

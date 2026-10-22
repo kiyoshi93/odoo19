@@ -1,0 +1,76 @@
+1
+00:00:00,500 --> 00:00:03,596
+El seguro Vida Ley es nuevo en la versión dos.
+
+2
+00:00:03,596 --> 00:00:07,500
+Este episodio muestra las pólizas y la prima en la boleta.
+
+3
+00:00:08,900 --> 00:00:11,326
+Las pólizas se registran en Seguros.
+
+4
+00:00:11,326 --> 00:00:16,987
+El caso VIDALEY tiene una póliza por tasa, de cero coma cincuenta y tres por ciento,
+
+5
+00:00:16,987 --> 00:00:18,469
+con seis trabajadores;
+
+6
+00:00:18,469 --> 00:00:20,963
+otra por importe fijo, y una vencida.
+
+7
+00:00:22,430 --> 00:00:27,966
+Con la opción Calcular la prima en la planilla, la prima de cada trabajador sale en
+
+8
+00:00:27,966 --> 00:00:28,633
+su boleta.
+
+9
+00:00:30,100 --> 00:00:37,647
+Con sueldo de S/ 3 000 y la tasa de cero coma cincuenta y tres por ciento, la prima
+
+10
+00:00:37,647 --> 00:00:38,738
+es S/ 15,90.
+
+11
+00:00:38,738 --> 00:00:41,193
+Es un aporte del empleador:
+
+12
+00:00:41,193 --> 00:00:43,739
+el neto no cambia, S/ 2 610.
+
+13
+00:00:45,230 --> 00:00:51,428
+La base de la prima se topa en la remuneración máxima asegurable.
+
+14
+00:00:51,428 --> 00:00:56,100
+Con un sueldo de S/ 15 000, la prima es S/ 66,77.
+
+15
+00:00:57,500 --> 00:01:03,140
+Vida Ley tiene su propio control en la compañía, con las opciones avisar, bloquear o
+
+16
+00:01:03,140 --> 00:01:04,013
+no controlar.
+
+17
+00:01:04,013 --> 00:01:06,363
+En FM SYSTEMS está en No controlar.
+
+18
+00:01:07,830 --> 00:01:10,865
+Hoy se admite una sola póliza por trabajador.
+
+19
+00:01:10,865 --> 00:01:13,900
+Está en los capítulos seis y doce del manual.
+
