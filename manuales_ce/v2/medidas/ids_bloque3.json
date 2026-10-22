@@ -1,0 +1,292 @@
+{
+ "70000901": {
+  "emp": 485,
+  "nombre": "Trabajador AUMENTO a mitad de mes",
+  "versiones": [
+   520,
+   524
+  ],
+  "boletas": [
+   [
+    1844,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": []
+ },
+ "70000902": {
+  "emp": 486,
+  "nombre": "Trabajadora AUMENTO dos contratos",
+  "versiones": [
+   521,
+   525
+  ],
+  "boletas": [
+   [
+    1845,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": []
+ },
+ "70000903": {
+  "emp": 487,
+  "nombre": "Trabajador AUMENTO sin goce una semana",
+  "versiones": [
+   522
+  ],
+  "boletas": [
+   [
+    1846,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    97,
+    "Sin pagar",
+    "2026-11-17",
+    "2026-11-17"
+   ],
+   [
+    96,
+    "Sin pagar",
+    "2026-11-09",
+    "2026-11-13"
+   ]
+  ]
+ },
+ "70000904": {
+  "emp": 488,
+  "nombre": "Trabajadora AUMENTO sin goce todo el mes",
+  "versiones": [
+   523
+  ],
+  "boletas": [],
+  "ausencias": [
+   [
+    98,
+    "Sin pagar",
+    "2026-11-01",
+    "2026-11-30"
+   ]
+  ]
+ },
+ "70000801": {
+  "emp": 489,
+  "nombre": "Trabajador SUBSIDIOS descanso",
+  "versiones": [
+   526
+  ],
+  "boletas": [
+   [
+    1848,
+    "2026-08-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1852,
+    "2026-09-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1857,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1864,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    99,
+    "Tiempo personal por enfermedad",
+    "2026-11-01",
+    "2026-11-30"
+   ]
+  ]
+ },
+ "70000802": {
+  "emp": 490,
+  "nombre": "Trabajadora SUBSIDIOS días previos",
+  "versiones": [
+   527
+  ],
+  "boletas": [
+   [
+    1849,
+    "2026-08-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1853,
+    "2026-09-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1858,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1865,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    101,
+    "Tiempo personal por enfermedad",
+    "2026-11-01",
+    "2026-11-30"
+   ],
+   [
+    100,
+    "Tiempo personal por enfermedad",
+    "2026-10-12",
+    "2026-10-26"
+   ]
+  ]
+ },
+ "70000803": {
+  "emp": 491,
+  "nombre": "Trabajadora SUBSIDIOS maternidad",
+  "versiones": [
+   528
+  ],
+  "boletas": [
+   [
+    1850,
+    "2026-08-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1854,
+    "2026-09-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1859,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1866,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1871,
+    "2026-12-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    102,
+    "Descanso por maternidad (pre y",
+    "2026-11-01",
+    "2026-12-31"
+   ]
+  ]
+ },
+ "70000805": {
+  "emp": 493,
+  "nombre": "Trabajador SUBSIDIOS sin derecho",
+  "versiones": [
+   530
+  ],
+  "boletas": [
+   [
+    1861,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1868,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    104,
+    "Tiempo personal por enfermedad",
+    "2026-11-01",
+    "2026-11-30"
+   ]
+  ]
+ },
+ "70000806": {
+  "emp": 494,
+  "nombre": "Trabajadora SUBSIDIOS febrero",
+  "versiones": [
+   531
+  ],
+  "boletas": [
+   [
+    1862,
+    "2026-10-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1869,
+    "2026-11-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1872,
+    "2026-12-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1874,
+    "2027-01-01",
+    "Nómina Men",
+    "done"
+   ],
+   [
+    1876,
+    "2027-02-01",
+    "Nómina Men",
+    "done"
+   ]
+  ],
+  "ausencias": [
+   [
+    105,
+    "Descanso por maternidad (pre y",
+    "2027-01-15",
+    "2027-04-22"
+   ]
+  ]
+ }
+}

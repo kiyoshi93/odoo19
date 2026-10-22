@@ -1,0 +1,215 @@
+{
+ "semana": {
+  "id": 1930,
+  "error": null,
+  "lineas": {
+   "SD_001": 83.33,
+   "ISM_001": 1.0,
+   "RB_001": 2083.33,
+   "GROSS": 2083.33,
+   "BAR5_001": 2083.33,
+   "ONP_001": 270.83,
+   "ESSALUD_001": 187.5,
+   "SENATI_001": 15.62,
+   "NET": 1812.5
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ],
+   [
+    "SINGOCE100",
+    -5.0,
+    -40.0,
+    false
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "horas": {
+  "id": 1931,
+  "error": null,
+  "lineas": {
+   "SD_001": 83.33,
+   "ISM_001": 1.0,
+   "RB_001": 2479.17,
+   "GROSS": 2479.17,
+   "BAR5_001": 2479.17,
+   "ONP_001": 322.29,
+   "ESSALUD_001": 223.13,
+   "SENATI_001": 18.59,
+   "NET": 2156.88
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ],
+   [
+    "SINGOCE100",
+    -0.25,
+    -2.0,
+    false
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "mes": {
+  "id": 1932,
+  "error": null,
+  "lineas": {
+   "SD_001": 83.33,
+   "ISM_001": 1.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ],
+   [
+    "SINGOCE100",
+    -21.0,
+    -168.0,
+    false
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "rectificativa": {
+  "id": 1933,
+  "error": null,
+  "lineas": {
+   "ISM_001": 1.0,
+   "SD_001": 83.33,
+   "RB_001": 2500.0,
+   "GROSS": 2500.0,
+   "BAR5_001": 2500.0,
+   "ONP_001": 325.0,
+   "ESSALUD_001": 225.0,
+   "SENATI_001": 18.75,
+   "NET": 2175.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "pago_uno": {
+  "id": 1934,
+  "error": null,
+  "lineas": {
+   "SD_001": 100.0,
+   "ISM_001": 1.0,
+   "RB_001": 3000.0,
+   "GROSS": 3000.0,
+   "BAR5_001": 3000.0,
+   "ONP_001": 390.0,
+   "ESSALUD_001": 270.0,
+   "SENATI_001": 22.5,
+   "NET": 2610.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "pago_dos": {
+  "id": 1935,
+  "error": null,
+  "lineas": {
+   "SD_001": 83.33,
+   "ISM_001": 1.0,
+   "RB_001": 2500.0,
+   "GROSS": 2500.0,
+   "BAR5_001": 2500.0,
+   "ONP_001": 325.0,
+   "ESSALUD_001": 225.0,
+   "SENATI_001": 18.75,
+   "NET": 2175.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    21.0,
+    168.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "dic_grat": {
+  "id": 1936,
+  "error": null,
+  "lineas": {
+   "GRATI_001": 3000.0,
+   "BONO_GRATI_001": 270.0,
+   "GROSS": 3270.0,
+   "BAR5_001": 3270.0,
+   "NET": 3270.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ },
+ "dic_nme": {
+  "id": 1937,
+  "error": null,
+  "lineas": {
+   "ISM_001": 1.0,
+   "SD_001": 100.0,
+   "RB_001": 3000.0,
+   "GROSS": 3000.0,
+   "BAR5_001": 3000.0,
+   "ONP_001": 390.0,
+   "ESSALUD_001": 270.0,
+   "SENATI_001": 22.5,
+   "NET": 2610.0
+  },
+  "dias": [
+   [
+    "WORK100",
+    23.0,
+    184.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li><li>La boleta de Gratificaciones del 01/12/2026 al 31/12/2026 (Boleta de Gratificación de Trabajador PAGO uno (manual v2) – diciembre 2026) está en borrador: valídela ANTES que esta boleta. En diciembre la renta de 5.ª ya no se corrige en otro mes.</li></ul>"
+ },
+ "vigencia": {
+  "id": 1938,
+  "error": "Falta registrar «ONP - Tasa de aporte (D.L. 19990)» (pe_onp_tasa) vigente al 31/12/2024 (la primera vigencia registrada es desde el 01/01/2025). Regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Boleta: Trabajador VIGENCIA 2024 (manual v2) (Boleta de Trabajador VIGENCIA 2024 (manual v2) – diciembre 2024), regla ONP - Sistema Nacional de Pensiones (ONP_001).",
+  "lineas": {},
+  "dias": [
+   [
+    "WORK100",
+    22.0,
+    176.0,
+    true
+   ]
+  ],
+  "avisos": "<ul class=\"mb-0 ps-3\"><li>Falta la RMA de AFP (tope de la prima de seguro) vigente al 31/12/2024. Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE.</li><li>Faltan los días festivos de 2024: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.</li></ul>"
+ }
+}
