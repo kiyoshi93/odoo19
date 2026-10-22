@@ -1,0 +1,373 @@
+{
+ "c02_aplicaciones": [
+  "Odoo 19 HR Payroll Odoo Mates, Odoo SA https://www.odoomates.tech 19.0.1.0 Instalado",
+  "Odoo 19 HR Payroll Accounting Odoo Mates, Odoo SA https://www.odoomates.tech 19.0.0.0 Instalado",
+  "Nómina Peruana - Núcleo (Community) FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.27.1 Instalado",
+  "Nómina Peruana - Integración de Asistencias (Community) FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.4.1 Instalado",
+  "Asistencias - Caso de demostración FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.2.1 Instalado",
+  "SOLSE - Nómina PE Base (Community) FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.20.1 Instalado",
+  "Nómina Peruana - Datos de prueba (Community) FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.2.25.1 Instalado",
+  "Nómina Peruana - PLAME 4ta Categoría (Community) FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.0.0 Instalado",
+  "PLAME completo - Caso de demostración FM SYSTEMS SOLUTIONS E.I.R.L. https://empresa.solse.pe 19.0.1.4.1 Instalado",
+  "Perú - PLAME Recibos por Honorarios F & M Solutions Service S.A.C https://www.solse.pe 19.0.1.2.0 Instalado",
+  "Perú - PLAME RxH: datos de demostración F & M Solutions Service S.A.C https://www.solse.pe 19.0.2.3.1 Instalado"
+ ],
+ "c02_lab_botones": [
+  "Nuevo",
+  "① Construir laboratorio",
+  "② Sincronizar casos",
+  "Diagnosticar",
+  "Limpiar todo",
+  "Listo",
+  "Sin construir",
+  "14Casos",
+  "14Conformes"
+ ],
+ "c02_casos": [
+  "PLAME-RXH PLAME 4ta sin nómina — .ps4 y .4ta Nómina SOLSE Demo Servicios (retenciones y exterior) 2 · PLE y SIRE (cotejo contra plantilla) PS4, 4TA, Archivos, Diagnóstico Comparado 100.00",
+  "NOMINA Nómina peruana — planilla, aportes y asiento Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Boletas, Aportes, Vacaciones, Asiento, Configuración, Diagnóstico, AFPnet, Parámetros Comparado 100.00",
+  "BOLETA Nómina — la boleta impresa cuadra (ingresos − descuentos = neto) Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Boleta impresa, Conceptos, Diagnóstico Comparado 100.00",
+  "PLAME PLAME completo — el ZIP del PDT con la 4ta dentro Nómina SOLSE Demo Servicios (retenciones y exterior) 2 · PLE y SIRE (cotejo contra plantilla) ZIP, REM, JOR, SNL, Anexo4ta, Diagnóstico Comparado 100.00",
+  "BANCOS Nómina — TXT de haberes y CTS (BCP, Interbank, Scotiabank) Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados BCP haberes, BCP CTS, Interbank haberes, Interbank CTS, Scotiabank haberes, Scotiabank CTS, Omitidos, Archivos, Boletas, Diagnóstico Comparado 100.00",
+  "MICRO Nómina — microempresa: sin gratificación ni CTS, vacaciones de 15 días Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Régimen, Conceptos, Diagnóstico Comparado 100.00",
+  "ASISTENCIA Asistencias — tardanzas, faltas, medias jornadas y feriados Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Tardanzas, Faltas, Combinado, Feriado, Diagnóstico Comparado 100.00",
+  "UTILIDADES Nómina — reparto de utilidades (D.Leg. 892): 50 % días, 50 % remuneraciones Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Reparto, Resumen, Tope Comparado 100.00",
+  "SUBSIDIOS Nómina — subsidios: descanso médico (20 + 21), maternidad (22) y derecho Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Días, Conceptos, PLAME, Diagnóstico Comparado 100.00",
+  "AUMENTO Nómina — aumento a mitad de mes, dos contratos y licencia sin goce Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Conceptos, PLAME, Diagnóstico Comparado 100.00",
+  "CESE Nómina — renta de 5.ª en el mes del cese: ajuste final y devolución Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Conceptos, PLAME, Diagnóstico Comparado 100.00",
+  "INDEMNIZACION Nómina — indemnización por despido arbitrario (plazo indeterminado, modal y pequeña empresa) Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Conceptos, PLAME, Diagnóstico Comparado 100.00",
+  "VIDALEY Nómina — prima del seguro Vida Ley (tasa, tope, importe fijo, póliza vencida y semanal) Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Conceptos, PLAME, Diagnóstico Comparado 100.00",
+  "TREGISTRO Nómina — archivos de la carga masiva del T-Registro (altas, bajas, modificaciones y derechohabientes) Nómina SOLSE Demo Servicios (retenciones y exterior) 3 · Reportería de datos calculados Archivos, Diagnóstico Comparado 100.00"
+ ],
+ "error_c02_casos": "locator.click: Timeout 30000ms exceeded.",
+ "c02_datos_prueba_fm": "Datos de prueba - Nómina PE «FM SYSTEMS SOLUTIONS EIRL» es una compañía real: los datos de prueba solo se cargan en compañías del laboratorio (o en la de una base nueva). «4. Validación interna» revisa aquí solo la configuración de la nómina. 4. Validación interna (banderas) Cerrar",
+ "c03_nomina_pe": [
+  "Parámetros de Nómina PE",
+  "Maestros SUNAT",
+  "Sistemas pensionarios (T11)",
+  "Regímenes laborales (T33)",
+  "Tipos de contrato (T12)",
+  "Ocupaciones (T30)",
+  "Motivos de baja (T17)",
+  "Situación educativa (T9)",
+  "Instituciones y carreras (T34)",
+  "Ubigeo RENIEC (T28)",
+  "Situaciones especiales (T35)",
+  "Vínculos familiares (T19)",
+  "Conceptos PLAME (T22)",
+  "Seguros y EPS",
+  "Planes EPS",
+  "Vida Ley",
+  "Planilla de sueldos",
+  "Pago masivo a bancos",
+  "PLAME (archivos PDT)",
+  "T-Registro (carga masiva)",
+  "AFPnet (planilla previsional)",
+  "Reparto de utilidades",
+  "Certificado de 5.ª categoría",
+  "Contabilidad de nómina",
+  "Mapeo contable PCGE",
+  "Asignar cuentas contables",
+  "Datos de prueba (demo)"
+ ],
+ "c03_configuracion": [
+  "Configuración",
+  "Estructuras salariales",
+  "Reglas salariales",
+  "Registros de contribución",
+  "Plantillas de beneficios del contrato"
+ ],
+ "c04_lista": [
+  "Beneficios sociales (5)",
+  "Factores por régimen laboral (gratificación, días CTS, días vacaciones) pe_regimen_factores Beneficios sociales {'general': (1.0, 30, 30), 'pequena': (0.5, 15, 15), 'micro': (0.0, 0, 15), 'agrario': (1.0, 30, 30), 'otro': (1.0, 30, 30)}",
+  "Gratificación - Bonificación extraordinaria (afiliados EPS) pe_grati_bono_eps Beneficios sociales 0.0675",
+  "Gratificación - Bonificación extraordinaria (afiliados ESSALUD) pe_grati_bono_essalud Beneficios sociales 0.09",
+  "Participación en utilidades - Porcentaje según actividad (D.Leg. 892) pe_utilidades_pct Beneficios sociales",
+  "SENATI - Tasa de contribución pe_senati_tasa Beneficios sociales 0.0075",
+  "Generales (UIT, RMV, Asig. Familiar) (3)",
+  "Asignación familiar (10% RMV) pe_asig_familiar Generales (UIT, RMV, Asig. Familiar) 123.0",
+  "RMV - Remuneración Mínima Vital pe_rmv Generales (UIT, RMV, Asig. Familiar) 1230",
+  "UIT - Unidad Impositiva Tributaria pe_uit Generales (UIT, RMV, Asig. Familiar) 5500",
+  "Jornada (HHEE / nocturna) (3)",
+  "Horas extras - Recargo horas siguientes pe_hhee_recargo_2 Jornada (HHEE / nocturna) 0.35",
+  "Horas extras - Recargo primeras 2 horas pe_hhee_recargo_1 Jornada (HHEE / nocturna) 0.25",
+  "Jornada nocturna - Sobretasa sobre la RMV pe_nocturna_sobretasa Jornada (HHEE / nocturna) 0.35",
+  "Otros (1)",
+  "Cuota sindical - Tasa (según estatuto, ajustar por cliente) pe_cuota_sindical Otros 0.01",
+  "Pensiones (ONP / AFP) (6)",
+  "AFP - Aporte obligatorio al fondo pe_afp_aporte Pensiones (ONP / AFP) 0.10",
+  "AFP - Comisión sobre flujo por administradora pe_afp_comision_flujo Pensiones (ONP / AFP) {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169}",
+  "AFP - Componente de flujo de la comisión mixta pe_afp_comision_mixta_flujo Pensiones (ONP / AFP) 0.0",
+  "AFP - Prima de seguro (invalidez y sobrevivencia) pe_afp_prima_seguro Pensiones (ONP / AFP) 0.0137",
+  "AFP - Remuneración Máxima Asegurable (tope prima, trimestral SBS) pe_afp_rma Pensiones (ONP / AFP) 12732.70",
+  "ONP - Tasa de aporte (D.L. 19990) pe_onp_tasa Pensiones (ONP / AFP) 0.13",
+  "Renta de 5ta Categoría (2)",
+  "Renta 5ta - Deducción fija (en UIT) pe_renta5_deduccion_uit Renta de 5ta Categoría 7",
+  "Renta 5ta - Tramos progresivos (límite en UIT, tasa) pe_renta5_tramos Renta de 5ta Categoría [(5, 0.08), (20, 0.14), (35, 0.17), (45, 0.20), (None, 0.30)]",
+  "Salud (ESSALUD / EPS) (5)",
+  "EPS - Crédito máximo contra ESSALUD (proporción del aporte) pe_eps_credito_max Salud (ESSALUD / EPS) 0.25",
+  "ESSALUD - Tasa de aporte del empleador pe_essalud_tasa Salud (ESSALUD / EPS) 0.09",
+  "SCTR Pensión - Tasa de la póliza (referencial, ajustar por cliente) pe_sctr_pension_tasa Salud (ESSALUD / EPS) 0.0170",
+  "SCTR Salud - Tasa de la póliza (referencial, ajustar por cliente) pe_sctr_salud_tasa Salud (ESSALUD / EPS) 0.0130",
+  "SIS microempresa - Aporte mensual del empleador por trabajador pe_sis_microempresa Salud (ESSALUD / EPS) 15"
+ ],
+ "error_c04_parametros": "locator.click: Timeout 30000ms exceeded.",
+ "error_c04_rma": "locator.click: Timeout 30000ms exceeded.",
+ "error_c04_editor_afp": "locator.click: Timeout 30000ms exceeded.",
+ "error_c04_editor_tramos": "locator.click: Timeout 30000ms exceeded.",
+ "c04_banda": "",
+ "c02_caso_botones": [
+  "① Sembrar datos",
+  "Siembra incremental",
+  "② Generar",
+  "③ Excel de referencia",
+  "④ Comparar",
+  "Reiniciar maestros",
+  "Asegurar maestros",
+  "Exportar evidencias",
+  "⑤ Limpiar",
+  "Ejecutar todo"
+ ],
+ "c04_rmv": "Nuevo Parámetros de Nómina PE RMV - Remuneración Mínima Vital 1 / 1 Nueva vigencia Nombre Código? Categoría PE? Tipo de valor? País Para registrar o corregir una vigencia sin escribir el texto, use «Nueva vigencia» o «Editar en tabla» (tasas en porcentaje). El valor de cada vigencia se comprueba al guardar según el «Tipo de valor»: números con punto decimal y sin separador de miles (1230, no 1,230), tasas en fracción (0.13 = 13 %) y, en diccionarios y tramos, todas las claves que leen las reglas. Vigencias Descripción Vigente desde Valor 1 oct. 1230 Editar en tabla 1 ene. 2025 1130 Editar en tabla Agregar una línea ​ Enviar mensaje Registrar una nota Actividad 0 10 ago. 2026 OdooBot 10 ago., 6:17 p. m. Parámetro de nómina (con vigencias) creado",
+ "c04_rma": "Nuevo Parámetros de Nómina PE AFP - Remuneración Máxima Asegurable (tope prima, trimestral SBS) 1 / 1 Nueva vigencia Nombre Código? Categoría PE? Tipo de valor? País Para registrar o corregir una vigencia sin escribir el texto, use «Nueva vigencia» o «Editar en tabla» (tasas en porcentaje). El valor de cada vigencia se comprueba al guardar según el «Tipo de valor»: números con punto decimal y sin separador de miles (1230, no 1,230), tasas en fracción (0.13 = 13 %) y, en diccionarios y tramos, todas las claves que leen las reglas. Vigencias Descripción Vigente desde Valor 1 oct. 12732.70 Editar en tabla 1 jul. 12672.65 Editar en tabla 1 abr. 12598.91 Editar en tabla 1 ene. 12209.11 Editar en tabla 1 oct. 2025 12178.56 Editar en tabla 1 jul. 2025 12184.88 Editar en tabla 1 abr. 2025 12137.47 Editar en tabla 1 ene. 2025 12184.88 Editar en tabla Agregar una línea Enviar mensaje Registrar una nota Actividad 0 10 ago. 2026 OdooBot 10 ago., 6:17 p. m. Parámetro de nómina (con vigencias) creado",
+ "c04_comision": "Nuevo Parámetros de Nómina PE AFP - Comisión sobre flujo por administradora 1 / 1 Nueva vigencia Nombre Código? Categoría PE? Tipo de valor? País Para registrar o corregir una vigencia sin escribir el texto, use «Nueva vigencia» o «Editar en tabla» (tasas en porcentaje). El valor de cada vigencia se comprueba al guardar según el «Tipo de valor»: números con punto decimal y sin separador de miles (1230, no 1,230), tasas en fracción (0.13 = 13 %) y, en diccionarios y tramos, todas las claves que leen las reglas. Vigencias Descripción Vigente desde Valor 1 ene. {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla 1 ene. 2025 {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.0160, 'profuturo': 0.0169} Editar en tabla Agregar una línea ​ Enviar mensaje Registrar una nota Actividad 0 10 ago. 2026 OdooBot 10 ago., 6:17 p. m. Parámetro de nómina (con vigencias) creado",
+ "c04_dialogo_afp": "Nueva vigencia de AFP - Comisión sobre flujo por administradora Parámetro AFP - Comisión sobre flujo por administradora Tipo de valor? Comisión por AFP (diccionario) Vigente desde 22 oct. Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Se crea una vigencia nueva; las anteriores se conservan y los recálculos de periodos pasados siguen usándolas. Concepto Tasa (%) Habitat 1.4700 Integra 1.5500 Prima 1.6000 Profuturo 1.6900 Texto que se guardará {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169} Guardar vigencia Cancelar",
+ "c04_dialogo_tramos": "Corregir vigencia de Renta 5ta - Tramos progresivos (límite en UIT, tasa) Parámetro Renta 5ta - Tramos progresivos (límite en UIT, tasa) Tipo de valor? Tramos de renta 5.ª (lista de límite en UIT y tasa) Vigente desde 1 ene. 2025 Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Los tramos van de menor a mayor; el último no tiene tope (deje «Hasta (UIT)» en 0). Hasta (UIT) Tasa (%) 5.00 8.0000 20.00 14.0000 35.00 17.0000 45.00 20.0000 0.00 30.0000 Agregar una línea Texto que se guardará [(5, 0.08), (20, 0.14), (35, 0.17), (45, 0.2), (None, 0.3)] Guardar vigencia Cancelar",
+ "c04_banda_fm_hoy": "",
+ "c04_banda_2027": "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Faltan los días festivos de 2027: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE.",
+ "c05_01_t22_conceptos_plame": {
+  "total": "1-80 / 293",
+  "filas": [
+   "0100 INGRESOS",
+   "0101 ALIMENTACIÓN PRINCIPAL EN DINERO",
+   "0102 ALIMENTACIÓN PRINCIPAL EN ESPECIE",
+   "0103 COMISIONES O DESTAJO",
+   "0104 COMISIONES EVENTUALES A TRABAJADORES",
+   "0105 TRABAJO EN SOBRETIEMPO (HORAS EXTRAS) 25%"
+  ]
+ },
+ "c05_02_t11_sistemas_pensionarios": {
+  "total": "1-17 / 17",
+  "filas": [
+   "02 DL 19990 - SIST NAC DE PENS - ONP DECRETO LEY 19990 - SISTEMA NACIONAL DE PENSIONES - ONP",
+   "03 DECRETO LEY 20530 DECRETO LEY 20530",
+   "09 CBSSP CAJA DE BENEFICIOS DE SEGURIDAD SOCIAL DEL PESCADOR",
+   "10 CAJA DE PENSIONES MILITAR CAJA DE PENSIONES MILITAR",
+   "11 CAJA DE PENSIONES POLICIAL CAJA DE PENSIONES POLICIAL",
+   "12 OTROS REGIMENES PENSIONARIOS OTROS REGIMENES PENSIONARIOS (1)"
+  ]
+ },
+ "c05_04_t12_tipos_contrato": {
+  "total": "1-25 / 25",
+  "filas": [
+   "01 A PLAZO INDET - D.LEG. 728 A PLAZO INDETERMINADO - D.LEG. 728",
+   "02 A TIEMPO PARCIAL A TIEMPO PARCIAL",
+   "03 POR INICIO O INCREM DE ACTIV POR INICIO O INCREMENTO DE ACTIVIDAD",
+   "04 POR NECES DEL MERCADO POR NECESIDADES DEL MERCADO",
+   "05 POR RECONV EMPRESARIAL POR RECONVERSIÓN EMPRESARIAL",
+   "06 OCASIONAL OCASIONAL"
+  ]
+ },
+ "c05_05_t19_vinculos": {
+  "total": "1-9 / 9",
+  "filas": [
+   "Cónyuge 02 · Cónyuge",
+   "Pareja 03 · Concubina(o)",
+   "Hijo(a) 05 · Hijo menor de edad",
+   "Padre",
+   "Hermano(a)",
+   "Primo(a)"
+  ]
+ },
+ "c05_06_t28_ubigeo": {
+  "total": "1-80 / 1892",
+  "filas": [
+   "010101 AMAZONAS CHACHAPOYAS CHACHAPOYAS",
+   "010102 AMAZONAS CHACHAPOYAS ASUNCIÓN",
+   "010103 AMAZONAS CHACHAPOYAS BALSAS",
+   "010104 AMAZONAS CHACHAPOYAS CHETO",
+   "010105 AMAZONAS CHACHAPOYAS CHILIQUIN",
+   "010106 AMAZONAS CHACHAPOYAS CHUQUIBAMBA"
+  ]
+ },
+ "c05_07_t34_carreras": {
+  "total": "1-80 / 5925",
+  "filas": [
+   "150653592 13 DE JULIO DE 1882 121015 EDUCACIÓN EN COMPUTACIÓN E INFORMÁTICA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 112015 EDUCACIÓN PRIMARIA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121095 EDUCACIÓN SECUNDARIA TÉCNICA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121055 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: CIENCIA, TECNOLOGÍA Y AMBIENTE Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121065 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: CIENCIAS SOCIALES Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121075 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: COMUNICACIÓN Instituto superior pedagógico"
+  ]
+ },
+ "c05_08_t33_regimenes": {
+  "total": "1-27 / 27",
+  "filas": [
+   "01 D LEG N.° 728 PRIVADO GENERAL -DECRETO LEGISLATIVO N.° 728 Régimen General",
+   "02 D.LEG N.° 276 PÚBLICO GENERAL - DECRETO LEGISLATIVO N.° 276 Régimen General",
+   "03 PROFESORADO LEY 24029 PROFESORADO - LEY N.° 24029 Régimen General",
+   "04 MAGISTERIO LEY 29062 MAGISTERIO - LEY N.° 29062 Régimen General",
+   "05 DOC UNIVERS LEY 23733 DOCENTES UNIVERSITARIOS - LEY N.° 23733 Régimen General",
+   "06 PROFES SALUD LEY 23536 PROFESIONALES DE LA SALUD LEY N.° 23536 Régimen General"
+  ]
+ },
+ "c05_busqueda_opciones": [],
+ "c05_busqueda": [
+  "0121 REMUNERACIÓN O JORNAL BÁSICO"
+ ],
+ "c06_eps": [
+  "PACIFICO EPS (DEMO) 1 ene. 2025 31 dic. 0.05 0.02 0",
+  "PACÍFICO S.A. EPS (laboratorio TREGISTRO) 2 · Pacífico S.A. EPS 1 ene. 31 dic. 2027 0.00 0.00 0"
+ ],
+ "c06_vidaley": {
+  "columnas": [
+   "Entidad",
+   "N° Póliza",
+   "Fecha inicio vigencia",
+   "Fecha fin vigencia",
+   "Tasa (%)",
+   "Calcular la prima en la planilla",
+   "N.° de empleados"
+  ],
+  "filas": [
+   "Aseguradora VIDALEY (tasa) VL-TASA 1 ene. 31 dic. 0.5300 6",
+   "Aseguradora VIDALEY (importe fijo) VL-FIJA 1 ene. 31 dic. 0.0000 1",
+   "Aseguradora VIDALEY (vencida) VL-VENCIDA 1 jun. 2025 31 may. 0.5300 1"
+  ]
+ },
+ "c06_vidaley_form": "Nuevo Vida Ley Aseguradora VIDALEY (tasa) 1 / 3 Entidad N° Póliza Plazo de contratación Fecha inicio vigencia 1 ene. Fecha fin vigencia 31 dic. Tasa (%)? Importe por trabajador? Calcular la prima en la planilla? Compañía? Empleados Nombre del empleado Departamento Puesto Obrero VIDALEY semanal Obrero VIDALEY semanal sobre el tope Trabajador VIDALEY tasa Trabajador VIDALEY utilidades Trabajadora VIDALEY tope Trabajadora VIDALEY vacaciones sobre el tope",
+ "c07_mapeo": {
+  "total": "1-45 / 45",
+  "filas": [
+   "Remuneración básica RB_001 6211 4111",
+   "Remuneración básica semanal RBS_002 6211 4111",
+   "Remuneración vacacional VAC_001 Vacaciones 6215 4115",
+   "Asignación familiar ASF_001 6211 4111",
+   "Subsidio por incapacidad temporal SUB_INC_001 1629 4111 Subsidio por cobrar a EsSalud (reembolso)",
+   "Subsidio por maternidad SUB_MAT_001 1629 4111 Subsidio por cobrar a EsSalud (reembolso)",
+   "Horas extras 25% HE25_001 6211 4111",
+   "Horas extras 35% HE35_001 6211 4111",
+   "Gratificación GRATI_001 Gratificaciones 6214 4114",
+   "CTS del periodo CTS_001 CTS 6291 4151",
+   "Adelanto de remuneración ADEL_001 Nómina Quincenal / Adelanto 1411 4111 Adelanto: activo por cobrar al personal",
+   "Vacaciones truncas VAC_TRUNCA_001 Liquidación 6215 4111",
+   "Sobretasa por trabajo nocturno BNOC_001 6211 4111",
+   "Bonificación extraordinaria (Ley 30334) BONO_GRATI_001 Gratificaciones 6214 4114",
+   "Gratificación trunca GRATI_TRUNCA_001 Liquidación 6214 4111",
+   "Bonificación extraordinaria s/ gratificación trunca BONO_GRATI_TRUNCA_001 Liquidación 6214 4111",
+   "CTS trunca CTS_TRUNCA_001 Liquidación 6291 4111",
+   "Movilidad de libre disposición MOV_001 6220 4111 Movilidad: gasto en Otras remuneraciones",
+   "Participación en las utilidades UTIL_001 6221 4111",
+   "Indemnización por despido arbitrario IND_001 Liquidación 623 4111 Indemnizaciones al personal",
+   "Indemnización por resolución de contrato modal IND_MOD_001 Liquidación 623 4111 Indemnizaciones al personal",
+   "Descuento por tardanzas TAR_001 4111 6211 Tardanzas: menor gasto de remuneraciones.",
+   "ONP - Sistema Nacional de Pensiones ONP_001 4111 4032 ONP por pagar",
+   "AFP - Aporte obligatorio AFP_APO_001 4111 4170 AFP por pagar",
+   "AFP - Comisión AFP_COM_001 4111 4170",
+   "AFP - Prima de seguro AFP_PRI_001 4111 4170",
+   "Renta de 5ta categoría R5TA_001 4111 40173 Renta de 5ta por pagar (retención)",
+   "Devolución de retención en exceso de 5ta categoría DEV5_001 40173 4111 Devolución del exceso de 5.ª: se compensa con la renta por pagar",
+   "Descuento de adelanto DESC_ADEL_001 4111 1411 Recupera el activo del adelanto",
+   "Descuento judicial DJ_001 4111 4610 Por pagar a la persona beneficiaria del mandato",
+   "Cuota sindical SIND_001 4111 4699 Por pagar al sindicato",
+   "ESSALUD - Aporte del empleador ESSALUD_001 6271 4031",
+   "EPS - Aporte del empleador EPS_APO_001 6275 4699 Pasivo con la EPS privada",
+   "EPS - Crédito contra ESSALUD EPS_CRED_001 6271 4031 Importe negativo: revierte gasto y pasivo ESSALUD",
+   "SCTR Salud SCTR_SAL_001 6273 4699",
+   "SCTR Pensión SCTR_PEN_001 6273 4699",
+   "SENATI - Contribución SENATI_001 6277 4033",
+   "SIS microempresa - Aporte del empleador SIS_MICRO_001 6271 4039 C-25: SIS microempresa (régimen de prestaciones de salud; pasivo con otra institución pública)",
+   "Seguro Vida Ley (aporte del empleador) VIDA_001 6274 4699 Seguro Vida Ley: gasto del empleador por pagar a la aseguradora",
+   "Neto a pagar NET Neto por pagar al trabajador",
+   "Neto a pagar NET Vacaciones Vacaciones por pagar",
+   "Neto a pagar NET Gratificaciones Gratificaciones por pagar",
+   "Neto a depositar NET CTS CTS por depositar",
+   "Neto a pagar NET Nómina Quincenal / Adelanto",
+   "Neto de liquidación NET Liquidación Liquidación por pagar al trabajador"
+  ]
+ },
+ "c07_asignar": "Compañía",
+ "c07_diario": "Nuevo Diarios Planillas Asientos contables 1 / 1 Nombre del diario Tipo? Prefijo de secuencia? Empresa? FM SYSTEMS SOLUTIONS EIRL Asientos contables Ajustes avanzados Cuenta predeterminada Moneda? Enviar mensaje Registrar una nota Actividad 0 😶 La conversación está vacía.",
+ "error_c07_contabilidad": "locator.click: Timeout 30000ms exceeded.",
+ "c08_personal": "CONTACTO PRIVADO Correo electrónico Teléfono Cuentas bancarias? INFORMACIÓN PERSONAL Nombre legal Cumpleaños 14 ago. 1991 Mostrar a todos los empleados Lugar de nacimiento ─ Género? CONTACTO DE EMERGENCIA Contacto Teléfono VISA Y PERMISO DE TRABAJO Número de visa Número de permiso de trabajo Documento Sube tu archivo CIUDADANÍA Nacionalidad (país) Número de identificación? Número de seguridad social? Número de pasaporte UBICACIÓN Dirección particular Distancia de la casa al trabajo FAMILIA Estado civil Hijos dependientes EDUCACIÓN Nivel de certificado Campo de estudio DOCUMENTOS Copia de la identificación Sube tu archivo Licencia para conducir Sube tu archivo",
+ "c08_nomina_pe": "IDENTIFICACIÓN T-REGISTRO Tipo de documento (T3)? Nombres Apellido paterno Apellido materno Situación educativa Discapacidad? Rentas de 5.ª exoneradas? Edad 35 SISTEMA PENSIONARIO Sistema pensionario CUSPP Tipo de comisión AFP No aplica prima de seguro AFP? No aporta pensión? SALUD Régimen de salud Plan EPS SCTR Pensión? Vida Ley CUENTAS BANCARIAS Cuenta sueldo Banco sueldo Cuenta CTS Banco CTS DESCUENTO JUDICIAL ¿Tiene beneficiario? FIRMA DE BOLETAS Firma como empleador? ENTREGA DE LA BOLETA Boleta por correo? DOMICILIO PARA EL T-REGISTRO Tipo de vía Nombre de la vía Número? Departamento (dpto.) Interior Manzana Lote Kilómetro Block Etapa Tipo de zona Nombre de la zona Referencia Distrito (ubigeo RENIEC, T28) ESTUDIOS SUPERIORES (T-REGISTRO) Estudios superiores concluidos en el Perú Institución y carrera (T34) Año de egreso DERECHOHABIENTES Parentesco Nombre Género Fecha de nacimiento Tipo de documento N.° de documento Apellido paterno Apellido materno Nombres Alta como derechohabiente Hijo(a) Mateo Quispe Ramos 20 jun. 2019 01 · DNI Agregar una línea ​ ​",
+ "c08_contratos": {
+  "columnas": [
+   "Empleado",
+   "Fecha efectiva",
+   "Inicio",
+   "Fin",
+   "Estructura salarial",
+   "Régimen Laboral",
+   "Nota",
+   "Salario",
+   "Tipo de contrato",
+   "Puesto",
+   "Departamento",
+   "Horas laborables"
+  ],
+  "filas": [
+   "Administrator 3 oct. 3 oct. Nómina Mensual Empleados S/ 1,130.00 Tiempo completo Administración Standard 40 hours/week",
+   "Prueba C07 Sintético Dos 1 oct. 1 oct. Nómina Mensual Empleados S/ 3,000.00 Standard 40 hours/week",
+   "Prueba C07 Sintético Uno 1 oct. 1 oct. Nómina Mensual Empleados S/ 0.00 Standard 40 hours/week",
+   "Vigilante Demo 12H 1 set. 1 set. Nómina Mensual Empleados S/ 1,130.00 Vigilancia 12H - 6x1 (72 h/sem)",
+   "demo 5 feb. S/ 0.00 Standard 40 hours/week"
+  ]
+ },
+ "c08_contrato_tabs": [
+  "Información salarial"
+ ],
+ "c08_contrato": "Nuevo Contratos 1 ene. 2025 1 / 1 Lucía Fernanda Ramos Ticona 1 ene. 2025 al Empresa Puesto Estructura salarial Categoría de empleado? Departamento Responsable de RR. HH.? CONTABILIDAD Cuenta analítica Diario de planillas Información salarial RESUMEN DEL CONTRATO Salario? S/ 4,500.00 S/ / mes Tipo de contrato Categoría del pago HORARIO Horas laborables? Periodicidad de pago? PERÚ - DATOS LABORALES (T-REGISTRO / PLAME) Régimen Laboral? Tipo de trabajador (T8)? Categoría ocupacional (T24)? Tipo de contrato (T12)? Ocupación de trabajo Situación especial Motivo de baja Despido arbitrario (se indemniza)? Fin pactado del contrato modal? Tipo de pago Remuneración variable Porcentaje de adelanto? Jornada de trabajo máxima Jornada atípica o acumulativa Trabajo en horario nocturno? Sindicalizado ¿Es practicante?? Remuneración en especie No mostrar horas extras en boleta Enviar mensaje Registrar una nota Actividad 1 7 oct. 2026 Administrator 7 oct., 7:25 p. m. NingunoD LEG N.° 728(Régimen Laboral) Administrator 7 oct., 6:52 p. m. Contrato del empleado creado",
+ "c08_contrato_tab_Información salarial": "RESUMEN DEL CONTRATO Salario? S/ 4,500.00 S/ / mes Tipo de contrato Categoría del pago HORARIO Horas laborables? Periodicidad de pago? PERÚ - DATOS LABORALES (T-REGISTRO / PLAME) Régimen Laboral? Tipo de trabajador (T8)? Categoría ocupacional (T24)? Tipo de contrato (T12)? Ocupación de trabajo Situación especial Motivo de baja Despido arbitrario (se indemniza)? Fin pactado del contrato modal? Tipo de pago Remuneración variable Porcentaje de adelanto? Jornada de trabajo máxima Jornada atípica o acumulativa Trabajo en horario nocturno? Sindicalizado ¿Es practicante?? Remuneración en especie No mostrar horas extras en boleta",
+ "c08_categoria_pago": [
+  "Régimen General",
+  "Obreros - Semanal",
+  "Quincenal - Adelanto",
+  "Beneficios Sociales",
+  "General (reglas base, sin planilla PE)",
+  "Empleado (genérico, sin planilla PE)",
+  "Obrero (genérico, sin planilla PE)",
+  "Buscar más…"
+ ],
+ "c09_estructuras": [
+  "Base for new structures BASE 3 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Reglas Básicas 0001 35 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Nómina Mensual Empleados NME 34 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Nómina Semanal Obreros NSO 34 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Nómina Quincenal / Adelanto NQA 3 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Gratificaciones GRAT 5 registros FM SYSTEMS SOLUTIONS EIRL",
+  "CTS CTS 3 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Vacaciones VAC 23 registros FM SYSTEMS SOLUTIONS EIRL",
+  "Liquidación LIQ 21 registros FM SYSTEMS SOLUTIONS EIRL"
+ ],
+ "c09_nme": "Nuevo Estructuras salariales Nómina Mensual Empleados 3 / 9 Nombre Referencia Padre Compañía Reglas salariales Ausencias no pagadas Nombre Código Categoría Secuencia Registro de contribución Salario base BASIC Básico Salario diario SD_001 Base de cálculo Indicador de semanas del mes ISM_001 Base de cálculo Remuneración básica RB_001 Ingreso Afecto Asignación familiar ASF_001 Ingreso Afecto Subsidio por incapacidad temporal SUB_INC_001 Ingreso afecto AFP Subsidio por maternidad SUB_MAT_001 Ingreso afecto AFP Horas extras 25% HE25_001 Ingreso Afecto Horas extras 35% HE35_001 Ingreso Afecto Sobretasa por trabajo nocturno BNOC_001 Ingreso Afecto Movilidad de libre disposición MOV_001 Ingreso no Afecto Participación en las utilidades UTIL_001 Ingreso no Afecto Total ingresos GROSS Bruto Descuento por tardanzas TARD_001 Descuento que reduce la base afecta Descuento por tardanzas TAR_001 Descuento que reduce la base afecta Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador AFP - Aporte obligatorio AFP_APO_001 Deducción aportaciones del trabajador AFP - Comisión AFP_COM_001 Deducción aportaciones del trabajador AFP - Prima de seguro AFP_PRI_001 Deducción aportaciones del trabajador Renta de 5ta categoría R5TA_001 Deducción Devolución de retención en exceso de 5ta categoría DEV5_001 Ingreso no Afecto Descuento de adelanto DESC_ADEL_001 Deducción Descuento judicial DJ_001 Deducción Cuota sindical SIND_001 Deducción ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía EPS - Aporte del empleador EPS_APO_001 Contribución compañía EPS - Crédito contra ESSALUD EPS_CRED_001 Contribución compañía SCTR Salud SCTR_SAL_001 Contribución compañía SCTR Pensión SCTR_PEN_001 Contribución compañía SENATI - Contribución SENATI_001 Contribución compañía SIS microempresa - Aporte del empleador SIS_MICRO_001 Contribución compañía Seguro Vida Ley (aporte del empleador) VIDA_001 Contribución compañía Neto a pagar NET Neto Agregar una línea",
+ "c09_reglas": [
+  "Reglas Básicas (35)",
+  "Nómina Mensual Empleados (34)",
+  "Nómina Semanal Obreros (34)",
+  "Nómina Quincenal / Adelanto (3)",
+  "Gratificaciones (5)",
+  "CTS (3)",
+  "Vacaciones (23)",
+  "Liquidación (21)"
+ ],
+ "c04_rechazo": "Error de validación Parámetro «RMV - Remuneración Mínima Vital» (pe_rmv), vigencia desde 2027-01-01: Use punto decimal y sin separador de miles: «1,230» se leería como (1, 230). Ejemplo: 1230 · 5500 · 12672.65 Cerrar",
+ "c04_rechazo_descartado": true,
+ "c08_tr": "IDENTIFICACIÓN T-REGISTRO Tipo de documento (T3)? Nombres Apellido paterno Apellido materno Situación educativa Discapacidad? Rentas de 5.ª exoneradas? Edad 36 SISTEMA PENSIONARIO Sistema pensionario CUSPP Tipo de comisión AFP No aplica prima de seguro AFP? No aporta pensión? SALUD Régimen de salud Plan EPS SCTR Pensión? Vida Ley CUENTAS BANCARIAS Cuenta sueldo Banco sueldo Cuenta CTS Banco CTS DESCUENTO JUDICIAL ¿Tiene beneficiario? FIRMA DE BOLETAS Firma como empleador? ENTREGA DE LA BOLETA Boleta por correo? DOMICILIO PARA EL T-REGISTRO Tipo de vía Nombre de la vía Número? Departamento (dpto.) Interior Manzana Lote Kilómetro Block Etapa Tipo de zona Nombre de la zona Referencia Distrito (ubigeo RENIEC, T28) ESTUDIOS SUPERIORES (T-REGISTRO) Estudios superiores concluidos en el Perú Institución y carrera (T34) Año de egreso DERECHOHABIENTES Parentesco Nombre Género Fecha de nacimiento Tipo de documento N.° de documento Apellido paterno Apellido materno Nombres Alta como derechohabiente Hijo(a) LUCÍA TORRES PEÑA Femenino 20 ago. 2020 01 · DNI 78001501 TORRES PEÑA LUCÍA 16 oct. Agregar una línea ​ ​",
+ "c08_tr_contrato_tabs": [
+  "Información salarial"
+ ],
+ "c08_tr_contrato": "RESUMEN DEL CONTRATO Salario? S/ 4,500.00 S/ / mes Tipo de contrato Categoría del pago HORARIO Horas laborables? Periodicidad de pago? PERÚ - DATOS LABORALES (T-REGISTRO / PLAME) Régimen Laboral? Tipo de trabajador (T8)? Categoría ocupacional (T24)? Tipo de contrato (T12)? Ocupación de trabajo Situación especial Motivo de baja Despido arbitrario (se indemniza)? Fin pactado del contrato modal? Tipo de pago Remuneración variable Porcentaje de adelanto? Jornada de trabajo máxima Jornada atípica o acumulativa Trabajo en horario nocturno? Sindicalizado ¿Es practicante?? Remuneración en especie No mostrar horas extras en boleta",
+ "c07_regla": "Nuevo Reglas salariales Remuneración básica 1 / 1 Nombre Categoría Código? Secuencia? Activo? Aparece en la nómina? Compañía General Reglas hijas Contabilidad Entradas Descripción Cuenta deudora Cuenta acreedora Cuenta analítica Impuesto",
+ "c09_tabs_compania": [
+  "Información general",
+  "Servicio busqueda",
+  "Sucursales",
+  "Nómina PE - Controles",
+  "Nómina PE - Asistencias",
+  "Nómina PE - 4ta Categoría",
+  "SIRE ventas"
+ ],
+ "c09_controles": "CONTROLES AL VALIDAR LA BOLETA Gratificación y vacaciones de diciembre antes que la mensual? Trabajador sin sistema pensionario? Subsidio sin los aportes que dan derecho? Boletas del año antes que la liquidación del cese? Trabajador sin póliza Vida Ley? T-REGISTRO Código de establecimiento (T-Registro)? PAGO A BANCOS Interbank: CTS en cuenta de otro banco? MICROEMPRESA (REMYPE) Microempresa: régimen de salud? Microempresa: asignación familiar?"
+}

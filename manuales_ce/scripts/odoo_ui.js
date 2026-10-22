@@ -5,7 +5,7 @@ const { chromium } = require(path.join(process.env.NPM_G || '', 'playwright'));
 
 const URL_BASE = process.env.ODOO_URL || 'https://mkb.com.pe';
 const BD = process.env.ODOO_DB || 'base19';
-const CARPETA_CAPTURAS = path.join(__dirname, '..', 'capturas');
+const CARPETA_CAPTURAS = process.env.CAPTURAS_DIR || path.join(__dirname, '..', 'capturas');
 const ARCHIVO_SESION = process.env.SESION_FILE || path.join(__dirname, '.sesion.json');
 
 async function abrir({ ancho = 1600, alto = 900 } = {}) {

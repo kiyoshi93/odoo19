@@ -1,0 +1,196 @@
+{
+ "campos": {
+  "pe_control_orden_diciembre": {
+   "help": "La renta de 5.ª de la mensual cuenta la gratificación y las vacaciones del mes ya validadas. En diciembre no queda mes para corregirla si se validan después. Avisar: banda en la boleta y nota al validar. Bloquear: no deja validar la mensual de diciembre mientras estén en borrador.",
+   "selection": [
+    [
+     "aviso",
+     "Avisar"
+    ],
+    [
+     "bloqueo",
+     "Bloquear la validación"
+    ],
+    [
+     "ninguno",
+     "No controlar"
+    ]
+   ],
+   "string": "Gratificación y vacaciones de diciembre antes que la mensual"
+  },
+  "pe_control_sistema_pensionario": {
+   "help": "Trabajador sin ONP ni AFP y sin la marca «No aporta pensión»: la boleta no calcula aportes de pensión. Avisar: banda en la boleta y nota al validar. Bloquear: no deja validar la boleta.",
+   "selection": [
+    [
+     "aviso",
+     "Avisar"
+    ],
+    [
+     "bloqueo",
+     "Bloquear la validación"
+    ],
+    [
+     "ninguno",
+     "No controlar"
+    ]
+   ],
+   "string": "Trabajador sin sistema pensionario"
+  },
+  "pe_control_derecho_subsidio": {
+   "help": "El subsidio por incapacidad temporal o maternidad exige 3 meses de aportes consecutivos o 4 no consecutivos en los 6 meses calendario anteriores al mes de la contingencia (en accidente basta la afiliación). La boleta lo mira en las boletas validadas. Avisar: banda en la boleta y nota al validar. Bloquear: no deja validar la boleta. En los dos casos, la entrada SUBI_001 o SUBM_001 (importe del subsidio) levanta el control.",
+   "selection": [
+    [
+     "aviso",
+     "Avisar"
+    ],
+    [
+     "bloqueo",
+     "Bloquear la validación"
+    ],
+    [
+     "ninguno",
+     "No controlar"
+    ]
+   ],
+   "string": "Subsidio sin los aportes que dan derecho"
+  },
+  "pe_control_vida_ley": {
+   "help": "El seguro Vida Ley es obligatorio desde el inicio de la relación laboral (D.Leg. 688, art. 1; en la microempresa no). Avisar: banda en la boleta. Bloquear: no deja validar la boleta. No controlar: por defecto, hasta registrar las pólizas.",
+   "selection": [
+    [
+     "aviso",
+     "Avisar"
+    ],
+    [
+     "bloqueo",
+     "Bloquear la validación"
+    ],
+    [
+     "ninguno",
+     "No controlar"
+    ]
+   ],
+   "string": "Trabajador sin póliza Vida Ley"
+  },
+  "pe_control_orden_cese": {
+   "help": "La liquidación del cese ajusta la renta de 5.ª de todo el ejercicio con las boletas validadas. Avisar: banda en la boleta y nota al validar, en la liquidación (boletas del año en borrador) y en la boleta validada después de la liquidación. Bloquear: no deja validar ninguna de las dos.",
+   "selection": [
+    [
+     "aviso",
+     "Avisar"
+    ],
+    [
+     "bloqueo",
+     "Bloquear la validación"
+    ],
+    [
+     "ninguno",
+     "No controlar"
+    ]
+   ],
+   "string": "Boletas del año antes que la liquidación del cese"
+  },
+  "pe_interbank_cts_otro_banco": {
+   "help": "El BCP y Scotiabank solo abonan CTS a cuentas CTS de su propio banco. Omitir (recomendado): el trabajador va a «Omitidos» con el motivo y su CTS se deposita con el archivo del banco de su cuenta. Abonar por CCI: el archivo de CTS de Interbank la incluye como abono interbancario (código 99); confírmelo antes con el banco.",
+   "selection": [
+    [
+     "omitir",
+     "Omitir: se deposita con el archivo del banco de la cuenta"
+    ],
+    [
+     "cci",
+     "Abonar por CCI en el archivo de Interbank"
+    ]
+   ],
+   "string": "Interbank: CTS en cuenta de otro banco"
+  },
+  "pe_micro_salud": {
+   "help": "Trabajadores con régimen laboral de microempresa cuyo régimen de salud (ficha del empleado, T32) no está indicado. SIS: el empleador aporta S/ 15 al mes por trabajador (se paga en el Banco de la Nación) y no paga EsSalud. EsSalud: 9 % como en el régimen general. Si el trabajador tiene régimen de salud, manda ese (21 = SIS microempresa).",
+   "selection": [
+    [
+     "sis",
+     "SIS semicontributivo (S/ 15 al mes por trabajador)"
+    ],
+    [
+     "essalud",
+     "EsSalud 9 %"
+    ]
+   ],
+   "string": "Microempresa: régimen de salud"
+  },
+  "pe_micro_asignacion_familiar": {
+   "help": "La asignación familiar (Ley 25129) no es obligatoria para la microempresa inscrita en el REMYPE; el empleador puede pagarla voluntariamente. Con «Pagar» entra en la boleta y en la base de vacaciones como en el régimen general.",
+   "selection": [
+    [
+     "no_pagar",
+     "No pagar (no es obligatoria en la microempresa)"
+    ],
+    [
+     "pagar",
+     "Pagar (voluntario)"
+    ]
+   ],
+   "string": "Microempresa: asignación familiar"
+  },
+  "pe_codigo_establecimiento": {
+   "help": "Código del establecimiento donde labora el trabajador (E17): 0000 es el domicilio fiscal; los anexos del RUC tienen su propio código. El lugar de trabajo puede tener otro.",
+   "string": "Código de establecimiento (T-Registro)"
+  },
+  "asistencia_tolerancia_minutos": {
+   "help": "Minutos de gracia sobre la hora de entrada del calendario antes de contar tardanza.",
+   "string": "Tolerancia de tardanza (minutos)"
+  },
+  "asistencia_descontar_tardanzas": {
+   "help": "Si está apagado, la conciliación reporta las tardanzas en el resumen pero no genera el descuento.",
+   "string": "Descontar tardanzas en la boleta"
+  },
+  "asistencia_autocargar": {
+   "help": "Si está activo, \"Calcular hoja\" ejecuta la conciliación de asistencias automáticamente en boletas en borrador.",
+   "string": "Conciliar asistencias al calcular la boleta"
+  },
+  "asistencia_evaluar_horas": {
+   "help": "Fase 2: además de faltas de día completo, descuenta las horas no trabajadas del día (salidas tempranas, medias jornadas) como fracción de día no pagada.",
+   "string": "Evaluar horas trabajadas por día"
+  },
+  "asistencia_margen_horas": {
+   "help": "Horas faltantes iguales o menores a este margen se ignoran (ruido de marcación). 0.25 = 15 minutos.",
+   "string": "Margen de horas por día"
+  }
+ },
+ "valores": [
+  {
+   "id": 1,
+   "pe_control_orden_diciembre": "aviso",
+   "pe_control_sistema_pensionario": "aviso",
+   "pe_control_derecho_subsidio": "aviso",
+   "pe_control_vida_ley": "ninguno",
+   "pe_control_orden_cese": "aviso",
+   "pe_interbank_cts_otro_banco": "omitir",
+   "pe_micro_salud": "sis",
+   "pe_micro_asignacion_familiar": "no_pagar",
+   "pe_codigo_establecimiento": "0000",
+   "asistencia_tolerancia_minutos": 10,
+   "asistencia_descontar_tardanzas": true,
+   "asistencia_autocargar": false,
+   "asistencia_evaluar_horas": false,
+   "asistencia_margen_horas": 0.25
+  },
+  {
+   "id": 4,
+   "pe_control_orden_diciembre": "aviso",
+   "pe_control_sistema_pensionario": "aviso",
+   "pe_control_derecho_subsidio": "aviso",
+   "pe_control_vida_ley": "ninguno",
+   "pe_control_orden_cese": "aviso",
+   "pe_interbank_cts_otro_banco": "omitir",
+   "pe_micro_salud": "sis",
+   "pe_micro_asignacion_familiar": "no_pagar",
+   "pe_codigo_establecimiento": "0000",
+   "asistencia_tolerancia_minutos": 10,
+   "asistencia_descontar_tardanzas": true,
+   "asistencia_autocargar": false,
+   "asistencia_evaluar_horas": false,
+   "asistencia_margen_horas": 0.25
+  }
+ ]
+}
