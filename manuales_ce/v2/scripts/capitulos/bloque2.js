@@ -72,7 +72,7 @@ module.exports = (h) => {
     ...figura('c11_04_generar_nominas', 'Asistente «Generar nóminas» con el trabajador elegido.'),
     ...figura('c11_05_lote_generado', 'Lote con la boleta generada: «Boleta de Trabajador HORAS EXTRA (manual v2) – noviembre 2026», en borrador.'),
     nota('El lote **no vuelve a calcular ni a contabilizar las boletas ya validadas** (C-17). Antes, generar o marcar como hecho un lote con boletas validadas las recalculaba y duplicaba su asiento. Las boletas que el lote nunca calculó se calculan antes de validar.', 'importante'),
-    ...figura('c11_02_lote_diciembre_fm', 'Lote «Planilla diciembre 2026» de FM SYSTEMS, en estado Hecho, con los botones «Registrar pago» y «Enviar boletas por correo» (capítulo 28). La boleta conserva el nombre en inglés del v1 porque se validó antes de U-06.'),
+    ...figura('c11_02_lote_diciembre_fm', 'Lote «Planilla diciembre 2026» de FM SYSTEMS, en estado Hecho, con los botones «Registrar pago» y «Enviar boletas por correo» (capítulo 28). La boleta lleva el nombre en español de U-06 («Boleta de … – diciembre 2026»).'),
     h2('11.2 Orden del mes'),
     p('Los acumulados leen boletas **validadas** (1.2). El orden es:'),
     pasos([
