@@ -1,0 +1,31 @@
+{
+ "propuestos": [
+  "70001509"
+ ],
+ "derechohabientes_propuestos": 0,
+ "archivo_nombre": "T-Registro_20603456786_modificacion_contrato_20261016.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. tra: 1, per: 1, cta: 1. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "guardado": "m2_contrato_T-Registro_20603456786_modificacion_contrato_20261016.zip",
+ "archivos": {
+  "RP_20603456786.tra": 1,
+  "RP_20603456786.per": 1,
+  "RP_20603456786.cta": 1
+ },
+ "contenido": {
+  "RP_20603456786.tra": [
+   "01|70001509||||||||01||||||||||2||||"
+  ],
+  "RP_20603456786.per": [
+   "01|70001509||1|2|||21||"
+  ],
+  "RP_20603456786.cta": [
+   "01|70001509||002|19187654321098|"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.tra": "CRLF",
+  "RP_20603456786.per": "CRLF",
+  "RP_20603456786.cta": "CRLF"
+ }
+}

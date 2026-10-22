@@ -1,0 +1,19 @@
+{
+ "propuestos": [],
+ "derechohabientes_propuestos": 1,
+ "archivo_nombre": "RD_20603456786_22102026_BAJA.TXT",
+ "resumen": "1 derechohabiente(s) exportado(s), 0 sin exportar. Subir el TXT en SOL: Mi RUC y Otros Registros › T-Registro › Registro de Derechohabientes › Carga masiva (no pasa por el PVS).",
+ "observaciones": false,
+ "guardado": "dh_baja_RD_20603456786_22102026_BAJA.TXT",
+ "archivos": {
+  "RD_20603456786_22102026_BAJA.TXT": 1
+ },
+ "contenido": {
+  "RD_20603456786_22102026_BAJA.TXT": [
+   "01|70001510|01|40001510||04/04/1990|MENDOZA|SILVA|CARMEN|02|15/10/2026|04"
+  ]
+ },
+ "codificacion": {
+  "RD_20603456786_22102026_BAJA.TXT": "CRLF"
+ }
+}

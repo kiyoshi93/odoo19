@@ -1,0 +1,22 @@
+{
+ "propuestos": [],
+ "derechohabientes_propuestos": 9,
+ "archivo_nombre": "RD_20603456786_22102026_ALTA.TXT",
+ "resumen": "4 derechohabiente(s) exportado(s), 5 sin exportar. Subir el TXT en SOL: Mi RUC y Otros Registros › T-Registro › Registro de Derechohabientes › Carga masiva (no pasa por el PVS).",
+ "observaciones": "(sin documento) · Valentina Quispe Soto (titular 45781236) · NO SE EXPORTA: el número de documento «» no corresponde al tipo 01 (8 dígitos; E004) · faltan los apellidos paterno y materno y los nombres separados (E007 a E009) · el apellido del hijo () no coincide con el del titular (QUISPE): solo se registra de forma individual en SOL (V4.2, V4.5) · falta el domicilio: distrito (ubigeo) y vía o zona (EDR1.3, EDR1.4)\n(sin documento) · Hijo de Trabajadora BOLETA (perfil C-05) (titular 70000501) · NO SE EXPORTA: el número de documento «» no corresponde al tipo 01 (8 dígitos; E004) · faltan los apellidos paterno y materno y los nombres separados (E007 a E009) · falta el sexo (masculino o femenino; E010) · falta el domicilio: distrito (ubigeo) y vía o zona (EDR1.3, EDR1.4)\n(sin documento) · Hijo de Trabajadora MICRO con hijo (titular 70000702) · NO SE EXPORTA: el número de documento «» no corresponde al tipo 01 (8 dígitos; E004) · faltan los apellidos paterno y materno y los nombres separados (E007 a E009) · falta el sexo (masculino o femenino; E010) · falta el domicilio: distrito (ubigeo) y vía o zona (EDR1.3, EDR1.4)\n(sin documento) · Hijo de Trabajadora INDEMNIZACION tope con un hijo (titular 70000358) · NO SE EXPORTA: el número de documento «» no corresponde al tipo 01 (8 dígitos; E004) · faltan los apellidos paterno y materno y los nombres separados (E007 a E009) · el titular no tiene un vínculo laboral vigente hoy (V1.2) · falta el sexo (masculino o femenino; E010) · falta el domicilio: distrito (ubigeo) y vía o zona (EDR1.3, EDR1.4)\n71001502 · DIEGO QUISPE ROJAS (titular 70001502) · NO SE EXPORTA: hijo mayor de edad sin incapacidad permanente: no es derechohabiente (Tabla 19)",
+ "guardado": "dh_alta_RD_20603456786_22102026_ALTA.TXT",
+ "archivos": {
+  "RD_20603456786_22102026_ALTA.TXT": 4
+ },
+ "contenido": {
+  "RD_20603456786_22102026_ALTA.TXT": [
+   "01|70001502|01|78001502||10/05/2018|QUISPE|ROJAS|MATEO|1|05|||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1|||",
+   "01|70001502|01|40001502||03/03/1988|ROJAS|CCAMA|ELENA|2|02|05||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1|||",
+   "04|001234567|07|CD7654321|862|15/09/2019|RAMÍREZ|LÓPEZ|SOFÍA|2|05|10|||02|HUALLAGA|456|301||||||||||140101|||||||||||||||1|||",
+   "01|70001501|01|78001501||20/08/2020|TORRES|PEÑA|LUCÍA|2|05||||01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1|||"
+  ]
+ },
+ "codificacion": {
+  "RD_20603456786_22102026_ALTA.TXT": "CRLF"
+ }
+}

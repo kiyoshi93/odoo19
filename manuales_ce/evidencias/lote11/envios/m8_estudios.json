@@ -1,0 +1,30 @@
+{
+ "propuestos": [],
+ "derechohabientes_propuestos": 0,
+ "añadido": "70001510",
+ "archivo_nombre": "T-Registro_20603456786_modificacion_estudios_20261016.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. tra: 1, per: 1, edu: 1. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "guardado": "m8_estudios_T-Registro_20603456786_modificacion_estudios_20261016.zip",
+ "archivos": {
+  "RP_20603456786.tra": 1,
+  "RP_20603456786.per": 1,
+  "RP_20603456786.edu": 1
+ },
+ "contenido": {
+  "RP_20603456786.tra": [
+   "01|70001510|||13|||||||||||||||||||"
+  ],
+  "RP_20603456786.per": [
+   "01|70001510||1|2|||21||"
+  ],
+  "RP_20603456786.edu": [
+   "01|70001510||13|1|160000001|342056|2011|"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.tra": "CRLF",
+  "RP_20603456786.per": "CRLF",
+  "RP_20603456786.edu": "CRLF"
+ }
+}

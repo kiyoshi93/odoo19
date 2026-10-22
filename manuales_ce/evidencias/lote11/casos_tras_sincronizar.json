@@ -1,0 +1,86 @@
+[
+ {
+  "id": 4,
+  "codigo": "PLAME-RXH",
+  "name": "PLAME 4ta sin nómina — .ps4 y .4ta",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 2,
+  "codigo": "NOMINA",
+  "name": "Nómina peruana — planilla, aportes y asiento",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 6,
+  "codigo": "BOLETA",
+  "name": "Nómina — la boleta impresa cuadra (ingresos − descuentos = neto)",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 5,
+  "codigo": "BANCOS",
+  "name": "Nómina — TXT de haberes y CTS (BCP, Interbank, Scotiabank)",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 3,
+  "codigo": "PLAME",
+  "name": "PLAME completo — el ZIP del PDT con la 4ta dentro",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 7,
+  "codigo": "MICRO",
+  "name": "Nómina — microempresa: sin gratificación ni CTS, vacaciones de 15 días",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 1,
+  "codigo": "ASISTENCIA",
+  "name": "Asistencias — tardanzas, faltas y medias jornadas",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 8,
+  "codigo": "UTILIDADES",
+  "name": "Nómina — reparto de utilidades (D.Leg. 892): 50 % días, 50 % remuneraciones",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 12,
+  "codigo": "SUBSIDIOS",
+  "name": "Nómina — subsidios: descanso médico (20 + 21), maternidad (22) y derecho",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 9,
+  "codigo": "AUMENTO",
+  "name": "Nómina — aumento a mitad de mes, dos contratos y licencia sin goce",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 10,
+  "codigo": "CESE",
+  "name": "Nómina — renta de 5.ª en el mes del cese: ajuste final y devolución",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 11,
+  "codigo": "INDEMNIZACION",
+  "name": "Nómina — indemnización por despido arbitrario (plazo indeterminado, modal y pequeña empresa)",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 13,
+  "codigo": "VIDALEY",
+  "name": "Nómina — prima del seguro Vida Ley (tasa, tope, importe fijo, póliza vencida y semanal)",
+  "porcentaje": 100.0
+ },
+ {
+  "id": 14,
+  "codigo": "TREGISTRO",
+  "name": "Nómina — archivos de la carga masiva del T-Registro (altas, bajas, modificaciones y derechohabientes)",
+  "porcentaje": 100.0
+ }
+]

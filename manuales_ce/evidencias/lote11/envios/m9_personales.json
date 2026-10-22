@@ -1,0 +1,20 @@
+{
+ "propuestos": [],
+ "derechohabientes_propuestos": 0,
+ "añadido": "70001510",
+ "archivo_nombre": "T-Registro_20603456786_modificacion_personales_20261016.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. ide: 1. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "guardado": "m9_personales_T-Registro_20603456786_modificacion_personales_20261016.zip",
+ "archivos": {
+  "RP_20603456786.ide": 1
+ },
+ "contenido": {
+  "RP_20603456786.ide": [
+   "01|70001510||12/12/1989|||||||989012345|jose.huaman@correo.pe|02|JUNÍN|250||||||||01|EL ROSAL||140137|||||||||||||||1|"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.ide": "CRLF"
+ }
+}

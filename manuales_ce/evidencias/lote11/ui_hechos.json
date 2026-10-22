@@ -1,0 +1,34 @@
+{
+ "error_ficha": "locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",
+ "p8_t19": [
+  "Cónyuge 02 · Cónyuge",
+  "Pareja 03 · Concubina(o)",
+  "Hijo(a) 05 · Hijo menor de edad",
+  "Padre",
+  "Hermano(a)",
+  "Primo(a)",
+  "Abuelo(a)",
+  "Nieto(a)",
+  "Gestante 04 · Gestante"
+ ],
+ "p8_edad": "36",
+ "p8_columnas": [
+  "Parentesco",
+  "Nombre",
+  "Género",
+  "Fecha de nacimiento",
+  "Tipo de documento",
+  "N.° de documento",
+  "Apellido paterno",
+  "Apellido materno",
+  "Nombres",
+  "Alta como derechohabiente"
+ ],
+ "p8_filas": [
+  "Hijo(a) MATEO QUISPE ROJAS Masculino 10 may. 2018 01 · DNI 78001502 QUISPE ROJAS MATEO 16 oct.",
+  "Cónyuge ELENA ROJAS CCAMA Femenino 3 mar. 1988 01 · DNI 40001502 ROJAS CCAMA ELENA 16 oct.",
+  "Hijo(a) DIEGO QUISPE ROJAS Masculino 1 feb. 2007 01 · DNI 71001502 QUISPE ROJAS DIEGO 16 oct."
+ ],
+ "p8_alta_nueva": "",
+ "p8_descartado": true
+}

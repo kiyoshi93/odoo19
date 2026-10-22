@@ -1,0 +1,27 @@
+{
+ "propuestos": [],
+ "derechohabientes_propuestos": 0,
+ "añadido": "70001510",
+ "archivo_nombre": "T-Registro_20603456786_modificacion_pension_20261016.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. tra: 1, per: 3. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "guardado": "m4_pension_T-Registro_20603456786_modificacion_pension_20261016.zip",
+ "archivos": {
+  "RP_20603456786.tra": 1,
+  "RP_20603456786.per": 3
+ },
+ "contenido": {
+  "RP_20603456786.tra": [
+   "01|70001510||||||765432HCCZU8||||||||||||||||"
+  ],
+  "RP_20603456786.per": [
+   "01|70001510||1|2|||21||",
+   "01|70001510||1|4||15/10/2026|||",
+   "01|70001510||1|4|16/10/2026||25||"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.tra": "CRLF",
+  "RP_20603456786.per": "CRLF"
+ }
+}

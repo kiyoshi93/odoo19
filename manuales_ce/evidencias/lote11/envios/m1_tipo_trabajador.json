@@ -1,0 +1,22 @@
+{
+ "propuestos": [
+  "70001508"
+ ],
+ "derechohabientes_propuestos": 0,
+ "archivo_nombre": "T-Registro_20603456786_modificacion_tipo_trabajador_20261016.zip",
+ "resumen": "1 trabajador(es) exportado(s), 0 sin exportar. per: 2. Validar con el PVS T-Registro antes de subir a SOL.",
+ "observaciones": false,
+ "guardado": "m1_tipo_trabajador_T-Registro_20603456786_modificacion_tipo_trabajador_20261016.zip",
+ "archivos": {
+  "RP_20603456786.per": 2
+ },
+ "contenido": {
+  "RP_20603456786.per": [
+   "01|70001508||1|2||15/10/2026|||",
+   "01|70001508||1|2|16/10/2026||21||"
+  ]
+ },
+ "codificacion": {
+  "RP_20603456786.per": "CRLF"
+ }
+}
