@@ -1,0 +1,84 @@
+1
+00:00:00,500 --> 00:00:06,059
+El último episodio reúne la lista de verificación del cierre de cada mes y de cada
+
+2
+00:00:06,059 --> 00:00:06,330
+año.
+
+3
+00:00:07,800 --> 00:00:09,866
+Cada mes, antes de calcular:
+
+4
+00:00:09,866 --> 00:00:15,621
+revise los parámetros, registre las novedades del mes y presente el T-Registro
+
+5
+00:00:15,621 --> 00:00:16,875
+dentro del plazo.
+
+6
+00:00:18,350 --> 00:00:19,667
+Valide en orden:
+
+7
+00:00:19,667 --> 00:00:26,498
+adelanto, gratificación, CTS y vacaciones, mensuales, y al final las liquidaciones.
+
+8
+00:00:26,498 --> 00:00:31,353
+Revise los avisos de cada boleta y el asiento de cada lote.
+
+9
+00:00:32,750 --> 00:00:33,324
+Después:
+
+10
+00:00:33,324 --> 00:00:39,068
+genere y abra cada archivo, revise los omitidos, registre el pago y entregue las
+
+11
+00:00:39,068 --> 00:00:41,150
+boletas en tres días hábiles.
+
+12
+00:00:41,150 --> 00:00:45,960
+Por último, importe el PLAME y compare sus totales con la planilla.
+
+13
+00:00:47,430 --> 00:00:48,068
+Cada año:
+
+14
+00:00:48,068 --> 00:00:53,456
+registre los feriados y la UIT del año siguiente, valide la gratificación de
+
+15
+00:00:53,456 --> 00:00:58,915
+diciembre antes que la mensual, emita los certificados de quinta, calcule las
+
+16
+00:00:58,915 --> 00:01:01,963
+utilidades y revise las pólizas que vencen.
+
+17
+00:01:03,500 --> 00:01:09,139
+Y después de cada actualización de los módulos, corra los catorce casos del
+
+18
+00:01:09,139 --> 00:01:10,041
+laboratorio:
+
+19
+00:01:10,041 --> 00:01:12,899
+todos deben quedar en cien por ciento.
+
+20
+00:01:14,370 --> 00:01:16,891
+Gracias por acompañarnos en esta serie.
+
+21
+00:01:16,891 --> 00:01:20,964
+La lista completa está en el capítulo treinta y dos del manual.
+
