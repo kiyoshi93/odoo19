@@ -101,6 +101,34 @@ if SIN_VOZ:
     SALIDA = os.path.join(BASE, 'salida_sin_voz')
 
 
+def ajustes_voz():
+    """Ajustes de ElevenLabs por variables de entorno (MODELO, ESTABILIDAD, SIMILITUD, ESTILO, VELOCIDAD, SEMILLA)."""
+    if not os.environ.get('MODELO'):
+        return None
+    ajustes = {'model_id': os.environ['MODELO'],
+               'voice_settings': {'stability': float(os.environ.get('ESTABILIDAD', 0.5)),
+                                  'similarity_boost': float(os.environ.get('SIMILITUD', 0.75)),
+                                  'style': float(os.environ.get('ESTILO', 0)),
+                                  'speed': float(os.environ.get('VELOCIDAD', 1.0)),
+                                  'use_speaker_boost': os.environ.get('REFUERZO', '1') == '1'},
+               'language_code': 'es'}
+    if os.environ.get('SEMILLA'):
+        ajustes['seed'] = int(os.environ['SEMILLA'])
+    return ajustes
+
+
+def sintetizar_con_ajustes(texto, archivo, ajustes):
+    import urllib.request, wave
+    datos = dict(ajustes, text=texto)
+    peticion = urllib.request.Request(
+        f'https://api.elevenlabs.io/v1/text-to-speech/{VOZ.split(":", 1)[-1]}?output_format=pcm_24000',
+        data=json.dumps(datos).encode(), headers={'xi-api-key': os.environ['ELEVENLABS_API_KEY'], 'Content-Type': 'application/json'})
+    with urllib.request.urlopen(peticion, timeout=180) as r:
+        pcm = r.read()
+    with wave.open(archivo, 'wb') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
+
+
 def voz_cacheada(texto):
     """La voz se guarda por contenido: regenerar un episodio no vuelve a gastar caracteres."""
     if SIN_VOZ:
@@ -112,14 +140,16 @@ def voz_cacheada(texto):
             correr(['-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono', '-t', f'{dur:.2f}', wav])
         return wav, dur
     from voz_elevenlabs import sintetizar
-    clave = hashlib.sha1((VOZ + '|' + texto).encode()).hexdigest()[:16]
+    ajustes = ajustes_voz()
+    # sin ajustes propios se conserva la clave de la serie con Sarah (su voz ya generada sigue valiendo)
+    clave = hashlib.sha1((VOZ + '|' + (json.dumps(ajustes, sort_keys=True) + '|' if ajustes else '') + texto).encode()).hexdigest()[:16]
     wav = os.path.join(TRABAJO, 'voz', clave + '.wav')
     if not os.path.exists(wav):
         os.makedirs(os.path.dirname(wav), exist_ok=True)
         import time, urllib.error
         for intento in range(5):
             try:
-                sintetizar(texto, wav, VOZ); break
+                (sintetizar_con_ajustes(texto, wav, ajustes) if ajustes else sintetizar(texto, wav, VOZ)); break
             except urllib.error.HTTPError as e:
                 cuerpo = e.read()[:300]
                 print('  ElevenLabs', e.code, cuerpo, flush=True)
