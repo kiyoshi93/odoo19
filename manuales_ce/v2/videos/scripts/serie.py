@@ -9,7 +9,7 @@ import imageio_ffmpeg
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))           # v2/videos
 CAPTURAS = os.path.join(BASE, '..', 'capturas')
 FUENTES = os.path.join(BASE, '..', '..', 'promo', 'fuentes')
-TRABAJO = os.path.join(BASE, 'trabajo'); SALIDA = os.path.join(BASE, 'salida')
+TRABAJO = os.path.join(BASE, 'trabajo'); SALIDA = os.path.join(BASE, os.environ.get('SALIDA_VIDEOS', 'salida'))
 sys.path.insert(0, os.path.join(BASE, '..', '..', 'promo', 'scripts'))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from guiones import EPISODIOS, VERSIONES  # noqa: E402

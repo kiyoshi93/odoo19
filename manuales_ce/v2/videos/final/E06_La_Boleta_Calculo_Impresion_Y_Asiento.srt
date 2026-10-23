@@ -1,0 +1,116 @@
+1
+00:00:05,580 --> 00:00:07,909
+Este episodio sigue una boleta de punta a punta:
+
+2
+00:00:07,909 --> 00:00:11,013
+cómo se crea, qué calcula, cómo se imprime y qué asiento genera.
+
+3
+00:00:12,410 --> 00:00:14,170
+En Nóminas del empleado, Nuevo:
+
+4
+00:00:14,170 --> 00:00:16,215
+se elige el trabajador y el periodo.
+
+5
+00:00:16,215 --> 00:00:20,757
+La boleta toma el contrato y la estructura, y propone el nombre en español y los
+
+6
+00:00:20,757 --> 00:00:21,609
+días laborados:
+
+7
+00:00:21,609 --> 00:00:24,335
+veintitrés días y ciento ochenta y cuatro horas.
+
+8
+00:00:25,790 --> 00:00:29,509
+La pestaña de días trabajados muestra los días hábiles y sus horas.
+
+9
+00:00:29,509 --> 00:00:32,617
+La columna Pagado dice qué días se pagan en esta boleta.
+
+10
+00:00:34,020 --> 00:00:37,134
+Al calcular aparecen las líneas:
+
+11
+00:00:37,134 --> 00:00:44,725
+remuneración de S/ 4 500, asignación familiar de S/ 123, los aportes a la AFP,
+
+12
+00:00:44,725 --> 00:00:48,034
+EsSalud, SENATI y el neto a pagar:
+
+13
+00:00:48,034 --> 00:00:49,201
+S/ 4 025,70.
+
+14
+00:00:50,700 --> 00:00:57,437
+La boleta impresa muestra treinta y un días laborados, ingresos por S/ 4 623,00,
+
+15
+00:00:57,437 --> 00:01:02,743
+descuentos por S/ 597,30 y aportes del empleador por S/ 450,74.
+
+16
+00:01:02,743 --> 00:01:06,870
+Ingresos menos descuentos da exactamente el neto.
+
+17
+00:01:08,350 --> 00:01:12,019
+Al confirmar, la boleta queda en el diario Planillas, con su asiento.
+
+18
+00:01:13,420 --> 00:01:16,768
+El asiento suma S/ 5 671,04 al debe y al haber.
+
+19
+00:01:16,768 --> 00:01:22,324
+El saldo de la cuenta cuatro uno uno uno del trabajador es igual al neto de la
+
+20
+00:01:22,324 --> 00:01:22,823
+boleta.
+
+21
+00:01:24,290 --> 00:01:28,197
+Si una boleta sale toda en cero, por ejemplo la CTS de un trabajador de
+
+22
+00:01:28,197 --> 00:01:29,683
+microempresa, no se valida:
+
+23
+00:01:29,683 --> 00:01:32,269
+la localización lo explica y ofrece eliminarla.
+
+24
+00:01:33,720 --> 00:01:37,440
+Y si falta un dato, la boleta avisa antes de validar.
+
+25
+00:01:37,440 --> 00:01:39,897
+Aquí, un trabajador sin ONP ni AFP:
+
+26
+00:01:39,897 --> 00:01:42,915
+la boleta no calcularía aportes de pensión.
+
+27
+00:01:44,320 --> 00:01:48,082
+El caso BOLETA comprueba ciento sesenta y seis celdas:
+
+28
+00:01:48,082 --> 00:01:50,589
+seis boletas que cuadran al centavo.
+
+29
+00:01:50,589 --> 00:01:53,097
+Está en el capítulo diez del manual.
+
