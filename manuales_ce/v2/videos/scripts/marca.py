@@ -6,9 +6,23 @@ import imageio_ffmpeg
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))           # v2/videos
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 INTRO = os.path.join(BASE, 'marca', 'intro_systion.mp4')
-LOGO = os.path.join(BASE, 'marca', 'logo_systion.png')
+LOGO_FUENTE = os.path.join(BASE, 'marca', 'logo_systion_blanco.png')
+LOGO = os.path.join(BASE, 'marca', 'logo_systion_blanco_sombra.png')
+
+
+def logo_con_sombra():
+    """Logo de letras blancas con una sombra suave: se lee también sobre las pantallas blancas de Odoo."""
+    from PIL import Image, ImageFilter
+    logo = Image.open(LOGO_FUENTE).convert('RGBA'); m = 24
+    lienzo = Image.new('RGBA', (logo.width + 2 * m, logo.height + 2 * m), (0, 0, 0, 0))
+    sombra = Image.new('RGBA', lienzo.size, (0, 0, 0, 0))
+    sombra.paste((10, 14, 28, 255), (m, m), logo.getchannel('A'))
+    sombra = sombra.filter(ImageFilter.GaussianBlur(9))
+    sombra.putalpha(sombra.getchannel('A').point(lambda v: int(v * 0.75)))
+    lienzo.alpha_composite(sombra); lienzo.alpha_composite(logo, (m, m))
+    lienzo.save(LOGO)
 TRANSICION = 1.0          # disolvencia del logo de la intro a la portada del episodio
-LOGO_ALTO, LOGO_OPACIDAD, LOGO_MARGEN = 104, 0.6, 30
+LOGO_ALTO, LOGO_OPACIDAD, LOGO_MARGEN = 120, 0.8, 24
 
 
 def duracion(archivo):
@@ -58,6 +72,7 @@ def procesar(video, carpeta_final):
 
 
 if __name__ == '__main__':
+    logo_con_sombra()
     origen, destino = sys.argv[1], sys.argv[2]
     os.makedirs(destino, exist_ok=True)
     ids = sys.argv[3].split(',') if len(sys.argv) > 3 else None

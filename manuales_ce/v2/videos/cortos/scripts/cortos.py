@@ -18,7 +18,7 @@ from guiones_cortos import CORTOS, CIERRE_VOZ  # noqa: E402
 W, H, FPS = 1080, 1920, 30
 TRABAJO = os.path.join(BASE, 'trabajo'); SALIDA = os.path.join(BASE, 'salida')
 INTRO = os.path.join(VIDEOS, 'marca', 'intro_systion.mp4')
-LOGO = os.path.join(VIDEOS, 'marca', 'logo_systion.png')
+LOGO = os.path.join(VIDEOS, 'marca', 'logo_systion_blanco.png')
 WHATSAPP = os.environ.get('WHATSAPP', '+51 996 122 890')
 WEB, CORREO = 'solse.pe', 'sistemas@solse.pe'
 CONTACTO = f'WhatsApp {WHATSAPP}'
