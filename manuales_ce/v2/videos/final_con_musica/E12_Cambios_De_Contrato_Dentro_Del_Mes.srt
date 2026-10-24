@@ -1,0 +1,72 @@
+1
+00:00:05,580 --> 00:00:10,056
+Un aumento a mitad de mes o un contrato nuevo cambian cómo se paga el mes.
+
+2
+00:00:10,056 --> 00:00:13,020
+Este episodio muestra cómo lo resuelve la boleta.
+
+3
+00:00:14,420 --> 00:00:19,408
+En Odoo diecinueve, un aumento se registra como una nueva versión del contrato.
+
+4
+00:00:19,408 --> 00:00:24,585
+En el caso AUMENTO, el sueldo es de S/ 2 000 desde el 1 de setiembre y de S/ 3 000
+
+5
+00:00:24,585 --> 00:00:26,037
+desde el 15 de octubre.
+
+6
+00:00:27,500 --> 00:00:31,037
+La boleta de octubre lleva una línea de días por versión:
+
+7
+00:00:31,037 --> 00:00:34,327
+diez días con el sueldo anterior y doce con el nuevo.
+
+8
+00:00:34,327 --> 00:00:37,740
+En total, veintidós días y ciento setenta y seis horas.
+
+9
+00:00:39,140 --> 00:00:42,448
+Cada sueldo paga sus días:
+
+10
+00:00:42,448 --> 00:00:53,010
+la remuneración básica es S/ 2 533,33, con ONP de S/ 329,33, EsSalud de S/ 228 y un
+
+11
+00:00:53,010 --> 00:00:55,173
+neto de S/ 2 204.
+
+12
+00:00:56,700 --> 00:01:01,407
+Si el trabajador tiene dos contratos en el mes, la boleta lleva una línea de días
+
+13
+00:01:01,407 --> 00:01:02,162
+por contrato.
+
+14
+00:01:03,620 --> 00:01:08,619
+En el PLAME de octubre, el archivo de jornada declara ciento setenta y seis horas a
+
+15
+00:01:08,619 --> 00:01:10,004
+cada uno, una sola vez.
+
+16
+00:01:10,004 --> 00:01:14,040
+En la versión uno, los días se repetían cuando había dos versiones.
+
+17
+00:01:15,500 --> 00:01:20,313
+Cada versión del contrato paga sus días, y el PLAME declara el mes una sola vez.
+
+18
+00:01:20,313 --> 00:01:22,780
+Está en el capítulo veintiuno del manual.
+

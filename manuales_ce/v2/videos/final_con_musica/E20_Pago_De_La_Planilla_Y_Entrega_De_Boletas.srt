@@ -1,0 +1,80 @@
+1
+00:00:05,580 --> 00:00:07,011
+Nuevo en la versión dos:
+
+2
+00:00:07,011 --> 00:00:11,424
+registrar el pago de la planilla y entregar las boletas, con su plazo y su
+
+3
+00:00:11,424 --> 00:00:12,080
+constancia.
+
+4
+00:00:13,540 --> 00:00:21,607
+Desde el lote validado, Registrar pago muestra lo que se paga a cada trabajador:
+
+5
+00:00:21,607 --> 00:00:25,540
+S/ 2 175 y S/ 2 610, en total S/ 4 785.
+
+6
+00:00:26,940 --> 00:00:29,248
+El pago genera su asiento en el banco:
+
+7
+00:00:29,248 --> 00:00:33,500
+debe la cuenta cuatro uno uno uno de cada trabajador y haber el banco.
+
+8
+00:00:33,500 --> 00:00:36,780
+Los apuntes quedan conciliados con los de la planilla.
+
+9
+00:00:38,180 --> 00:00:43,107
+Cada boleta queda pagada, con la fecha, el asiento, el número de operación y el
+
+10
+00:00:43,107 --> 00:00:44,168
+plazo de entrega:
+
+11
+00:00:44,168 --> 00:00:45,291
+tres días hábiles.
+
+12
+00:00:45,291 --> 00:00:49,158
+Pagada el 30 de noviembre, se entrega hasta el 3 de diciembre.
+
+13
+00:00:50,620 --> 00:00:55,375
+La entrega por correo requiere el acuerdo del trabajador, registrado en su ficha con
+
+14
+00:00:55,375 --> 00:00:56,563
+la fecha y el correo.
+
+15
+00:00:58,020 --> 00:01:03,133
+Enviar boletas por correo manda a cada trabajador con acuerdo su boleta validada que
+
+16
+00:01:03,133 --> 00:01:05,568
+aún no se envió, y guarda la constancia.
+
+17
+00:01:05,568 --> 00:01:09,159
+Quien no tiene acuerdo recibe la boleta impresa, con firma.
+
+18
+00:01:10,620 --> 00:01:15,004
+Registrar el pago y entregar la boleta dentro de los tres días hábiles cierra el
+
+19
+00:01:15,004 --> 00:01:15,223
+mes.
+
+20
+00:01:15,223 --> 00:01:17,525
+Está en el capítulo veintiocho del manual.
+

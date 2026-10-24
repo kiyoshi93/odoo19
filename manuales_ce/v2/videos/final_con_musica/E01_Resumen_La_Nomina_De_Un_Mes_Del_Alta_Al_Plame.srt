@@ -1,0 +1,268 @@
+1
+00:00:05,580 --> 00:00:10,411
+En este resumen recorremos un mes completo de planilla en Odoo diecinueve Community,
+
+2
+00:00:10,411 --> 00:00:12,654
+del alta del trabajador hasta el PLAME.
+
+3
+00:00:12,654 --> 00:00:17,370
+Las cifras son las del manual versión dos, medidas en una base de prueba con datos
+
+4
+00:00:17,370 --> 00:00:17,945
+ficticios.
+
+5
+00:00:19,460 --> 00:00:21,639
+Todo vive en la aplicación Nómina.
+
+6
+00:00:21,639 --> 00:00:26,959
+El menú Nómina PE reúne los parámetros legales, los maestros de SUNAT, los seguros,
+
+7
+00:00:26,959 --> 00:00:30,036
+las salidas legales y la contabilidad de nómina.
+
+8
+00:00:31,500 --> 00:00:35,496
+Los valores legales no están escritos en las reglas.
+
+9
+00:00:35,496 --> 00:00:37,878
+Cada parámetro tiene vigencias:
+
+10
+00:00:37,878 --> 00:00:44,102
+la remuneración mínima vale S/ 1 130 desde enero de 2025 y S/ 1 230 desde el 1 de
+
+11
+00:00:44,102 --> 00:00:45,332
+octubre de 2026.
+
+12
+00:00:45,332 --> 00:00:48,943
+Cada boleta usa el valor vigente en su periodo.
+
+13
+00:00:50,420 --> 00:00:54,550
+En la ficha del trabajador se registran los datos del T-Registro:
+
+14
+00:00:54,550 --> 00:00:59,633
+documento, nombres y apellidos por separado, situación educativa y el sistema de
+
+15
+00:00:59,633 --> 00:01:00,269
+pensiones.
+
+16
+00:01:00,269 --> 00:01:03,636
+Lucía está en la AFP Integra, con comisión por flujo.
+
+17
+00:01:05,100 --> 00:01:11,010
+En el contrato van la estructura Nómina Mensual Empleados, el diario Planillas y el
+
+18
+00:01:11,010 --> 00:01:11,508
+sueldo:
+
+19
+00:01:11,508 --> 00:01:12,149
+S/ 4 500.
+
+20
+00:01:13,620 --> 00:01:20,514
+La boleta calcula la remuneración, la asignación familiar de S/ 123, los aportes y
+
+21
+00:01:20,514 --> 00:01:22,112
+la renta de quinta.
+
+22
+00:01:22,112 --> 00:01:26,736
+En el caso BOLETA, el neto de diciembre es S/ 4 025,70.
+
+23
+00:01:28,220 --> 00:01:31,631
+La boleta impresa cuadra al centavo:
+
+24
+00:01:31,631 --> 00:01:37,980
+S/ 4 623,00 de ingresos, menos S/ 597,30 de descuentos, da el neto.
+
+25
+00:01:39,380 --> 00:01:45,741
+Al validar, se genera el asiento en el diario Planillas, con el trabajador como
+
+26
+00:01:45,741 --> 00:01:48,801
+socio en la cuenta cuatro uno uno uno.
+
+27
+00:01:48,801 --> 00:01:51,699
+Suma S/ 5 671,04 al debe y al haber.
+
+28
+00:01:53,180 --> 00:01:57,247
+Con un lote se generan las boletas de todos los trabajadores del mes.
+
+29
+00:01:57,247 --> 00:02:01,020
+El lote no vuelve a calcular las boletas que ya están validadas.
+
+30
+00:02:02,420 --> 00:02:04,114
+Una regla evita errores:
+
+31
+00:02:04,114 --> 00:02:07,148
+los acumulados solo leen boletas validadas.
+
+32
+00:02:07,148 --> 00:02:08,559
+Primero el adelanto;
+
+33
+00:02:08,559 --> 00:02:11,946
+luego la gratificación, la CTS y las vacaciones;
+
+34
+00:02:11,946 --> 00:02:13,287
+después la mensual;
+
+35
+00:02:13,287 --> 00:02:16,180
+y al final, la liquidación de quien cesa.
+
+36
+00:02:17,580 --> 00:02:20,211
+Los aportes respetan los topes.
+
+37
+00:02:20,211 --> 00:02:21,824
+Ana gana S/ 15 000:
+
+38
+00:02:21,824 --> 00:02:28,700
+su prima de seguro se topa en la remuneración máxima asegurable y sale S/ 173,62.
+
+39
+00:02:30,100 --> 00:02:36,093
+La renta de quinta se proyecta con las gratificaciones y la asignación familiar.
+
+40
+00:02:36,093 --> 00:02:42,386
+En 2025, a Lucía se le retuvieron S/ 2 309,73, y el certificado anual sale del mismo
+
+41
+00:02:42,386 --> 00:02:42,985
+cálculo.
+
+42
+00:02:44,460 --> 00:02:51,366
+La gratificación de julio paga el sueldo más la asignación familiar, S/ 4 613, y la
+
+43
+00:02:51,366 --> 00:02:54,777
+bonificación extraordinaria de S/ 415,17.
+
+44
+00:02:56,260 --> 00:03:01,935
+La CTS de noviembre suma un sexto de la gratificación validada.
+
+45
+00:03:01,935 --> 00:03:06,980
+Lucía recibe S/ 2 695,92, con su constancia de depósito.
+
+46
+00:03:08,380 --> 00:03:12,409
+Las vacaciones se registran como una ausencia aprobada.
+
+47
+00:03:12,409 --> 00:03:18,343
+En febrero, la boleta vacacional de Lucía paga S/ 2 306,50 por los quince días de
+
+48
+00:03:18,343 --> 00:03:21,347
+goce, y la mensual paga el resto del mes.
+
+49
+00:03:22,820 --> 00:03:29,544
+Cuando alguien cesa, la liquidación paga las vacaciones truncas con sus aportes, la
+
+50
+00:03:29,544 --> 00:03:32,542
+gratificación trunca y la CTS trunca.
+
+51
+00:03:32,542 --> 00:03:35,539
+Carmen recibe un neto de S/ 3 331,89.
+
+52
+00:03:37,020 --> 00:03:42,070
+Con las boletas validadas se genera el PLAME en un solo archivo comprimido, listo
+
+53
+00:03:42,070 --> 00:03:43,566
+para importar en el PDT:
+
+54
+00:03:43,566 --> 00:03:45,998
+remuneraciones, jornada y suspensiones.
+
+55
+00:03:47,460 --> 00:03:50,231
+Y los archivos de pago para el banco:
+
+56
+00:03:50,231 --> 00:03:56,447
+en el caso BANCOS, el BCP abona a cuatro trabajadores, S/ 7 918, y avisa del que no
+
+57
+00:03:56,447 --> 00:03:57,945
+tiene cuenta sueldo.
+
+58
+00:03:59,420 --> 00:04:04,393
+Las altas y bajas del T-Registro salen con la estructura del validador de SUNAT.
+
+59
+00:04:04,393 --> 00:04:08,620
+Antes de exportar, el asistente dice qué le falta a cada trabajador.
+
+60
+00:04:10,020 --> 00:04:15,630
+Y los recibos por honorarios pagados en el mes se declaran en el PLAME de cuarta
+
+61
+00:04:15,630 --> 00:04:16,332
+categoría:
+
+62
+00:04:16,332 --> 00:04:20,750
+en el caso de laboratorio, nueve comprobantes por S/ 15 022,60.
+
+63
+00:04:22,220 --> 00:04:23,433
+Para tener en cuenta:
+
+64
+00:04:23,433 --> 00:04:28,226
+aún no se cubren el archivo del Banco de la Nación, la sobretasa por trabajar en un
+
+65
+00:04:28,226 --> 00:04:32,962
+feriado, la firma digital certificada de la boleta y algunos casos del T-Registro.
+
+66
+00:04:34,420 --> 00:04:39,118
+Cada uno de estos pasos tiene su capítulo en el manual y su episodio en esta serie,
+
+67
+00:04:39,118 --> 00:04:40,363
+con las mismas cifras.
+

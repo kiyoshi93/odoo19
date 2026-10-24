@@ -1,0 +1,88 @@
+1
+00:00:05,580 --> 00:00:10,365
+Este episodio muestra la liquidación de beneficios sociales, la indemnización por
+
+2
+00:00:10,365 --> 00:00:13,201
+despido arbitrario y la renta de quinta al cese.
+
+3
+00:00:14,660 --> 00:00:18,870
+Carmen cesa el 31 de agosto de 2026.
+
+4
+00:00:18,870 --> 00:00:28,577
+Su liquidación paga vacaciones truncas por S/ 1 666,67, ahora con AFP y EsSalud, la
+
+5
+00:00:28,577 --> 00:00:38,167
+gratificación trunca de S/ 833,33 con su bonificación de S/ 75, y la CTS trunca de
+
+6
+00:00:38,167 --> 00:00:39,336
+S/ 972,22.
+
+7
+00:00:39,336 --> 00:00:42,026
+El neto es S/ 3 331,89.
+
+8
+00:00:43,660 --> 00:00:48,712
+Para la indemnización, en el contrato se indica el motivo de baja y se marca Despido
+
+9
+00:00:48,712 --> 00:00:49,373
+arbitrario.
+
+10
+00:00:49,373 --> 00:00:52,080
+En un contrato modal, también el fin pactado.
+
+11
+00:00:53,540 --> 00:01:02,691
+En el caso INDEMNIZACION, plazo indeterminado, la indemnización es S/ 18 575, sumada
+
+12
+00:01:02,691 --> 00:01:04,217
+a las truncas.
+
+13
+00:01:04,217 --> 00:01:06,831
+No paga renta de quinta:
+
+14
+00:01:06,831 --> 00:01:12,496
+la base de quinta son solo las truncas, S/ 2 571,67.
+
+15
+00:01:12,496 --> 00:01:15,111
+El neto es S/ 22 595,75.
+
+16
+00:01:16,620 --> 00:01:21,288
+Y al cese se regulariza la renta de quinta del año.
+
+17
+00:01:21,288 --> 00:01:26,140
+En el caso CESE, la liquidación devuelve S/ 2 158,67.
+
+18
+00:01:27,540 --> 00:01:30,418
+La liquidación lee todo el año del trabajador.
+
+19
+00:01:30,418 --> 00:01:32,107
+Por eso se valida al final;
+
+20
+00:01:32,107 --> 00:01:35,860
+desde un lote, la localización la deja para el último lugar.
+
+21
+00:01:37,260 --> 00:01:41,283
+Truncas con sus aportes, indemnización y renta de quinta al cese.
+
+22
+00:01:41,283 --> 00:01:43,820
+Está en el capítulo dieciséis del manual.
+

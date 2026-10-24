@@ -1,0 +1,128 @@
+1
+00:00:05,580 --> 00:00:10,050
+Con el módulo de asistencias, las marcaciones se concilian con el horario y se
+
+2
+00:00:10,050 --> 00:00:12,515
+llevan a la boleta como faltas y tardanzas.
+
+3
+00:00:12,515 --> 00:00:13,203
+Veamos cómo.
+
+4
+00:00:14,660 --> 00:00:19,477
+En los ajustes de la compañía se define la tolerancia de tardanza, diez minutos en
+
+5
+00:00:19,477 --> 00:00:23,001
+este ejemplo, y si las tardanzas se descuentan en la boleta.
+
+6
+00:00:24,460 --> 00:00:28,463
+El horario de trabajo debe estar en la zona horaria America Lima.
+
+7
+00:00:28,463 --> 00:00:32,220
+Si queda en UTC, las tardanzas salen desplazadas cinco horas.
+
+8
+00:00:33,620 --> 00:00:38,450
+En la boleta en borrador, el botón Cargar asistencias concilia las marcaciones del
+
+9
+00:00:38,450 --> 00:00:38,921
+periodo.
+
+10
+00:00:40,380 --> 00:00:43,404
+Carlos llegó tres veces veinticinco minutos tarde.
+
+11
+00:00:43,404 --> 00:00:46,308
+Con diez de tolerancia, cuentan quince cada una:
+
+12
+00:00:46,308 --> 00:00:47,820
+cuarenta y cinco minutos.
+
+13
+00:00:49,220 --> 00:00:51,723
+Se descuentan al valor minuto:
+
+14
+00:00:51,723 --> 00:00:54,809
+S/ 10,94 sobre un sueldo de S/ 3 500.
+
+15
+00:00:54,809 --> 00:00:58,980
+La tardanza también reduce la base de los aportes.
+
+16
+00:01:00,380 --> 00:01:05,545
+Un día laborable sin marcaciones ni ausencia aprobada es falta.
+
+17
+00:01:05,545 --> 00:01:07,922
+Jorge tiene dos en setiembre:
+
+18
+00:01:07,922 --> 00:01:10,300
+su básica baja a S/ 1 054,67.
+
+19
+00:01:11,700 --> 00:01:17,660
+Con la evaluación por horas, una media jornada se descuenta en proporción:
+
+20
+00:01:17,660 --> 00:01:23,620
+a María le faltan cuatro horas el día 4, y su básica queda en S/ 7 866,67.
+
+21
+00:01:25,020 --> 00:01:29,697
+Los días cubiertos por una ausencia aprobada, como las vacaciones de Óscar, salen
+
+22
+00:01:29,697 --> 00:01:31,602
+como justificados y no son falta.
+
+23
+00:01:33,060 --> 00:01:38,261
+Desde el lote doce, el día no laborable del calendario sin ausencia cuenta como
+
+24
+00:01:38,261 --> 00:01:38,788
+feriado:
+
+25
+00:01:38,788 --> 00:01:40,368
+no es falta ni tardanza.
+
+26
+00:01:40,368 --> 00:01:45,437
+En octubre, Jorge tiene veintiún días evaluados, cero faltas y un feriado, el
+
+27
+00:01:45,437 --> 00:01:46,688
+Combate de Angamos.
+
+28
+00:01:48,220 --> 00:01:51,834
+Su remuneración básica de octubre sale completa:
+
+29
+00:01:51,834 --> 00:01:54,620
+S/ 1 130, sin ninguna línea de falta.
+
+30
+00:01:56,020 --> 00:02:00,651
+Las horas trabajadas en un feriado se muestran, pero la sobretasa no se calcula.
+
+31
+00:02:00,651 --> 00:02:05,109
+Los turnos de noche que cruzan la medianoche se concilian por día calendario.
+
+32
+00:02:05,109 --> 00:02:07,540
+Está en el capítulo diecinueve del manual.
+

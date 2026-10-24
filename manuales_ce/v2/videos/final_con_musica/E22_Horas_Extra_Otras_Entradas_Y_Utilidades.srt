@@ -1,0 +1,72 @@
+1
+00:00:05,580 --> 00:00:10,605
+Este episodio muestra las entradas variables del mes, como horas extra y movilidad,
+
+2
+00:00:10,605 --> 00:00:12,239
+y el reparto de utilidades.
+
+3
+00:00:13,700 --> 00:00:16,709
+Las entradas variables se registran en la boleta:
+
+4
+00:00:16,709 --> 00:00:21,500
+seis horas extra al veinticinco por ciento, dos al treinta y cinco, diez horas
+
+5
+00:00:21,500 --> 00:00:25,799
+nocturnas, movilidad de S/ 200 y cuarenta y cinco minutos de tardanza.
+
+6
+00:00:27,260 --> 00:00:33,707
+Las horas extra suman S/ 75 y S/ 27, y las nocturnas S/ 35.
+
+7
+00:00:33,707 --> 00:00:39,389
+La movilidad no es remunerativa y la tardanza resta:
+
+8
+00:00:39,389 --> 00:00:45,180
+la base afecta es S/ 2 529,50 y el neto, S/ 2 400,66.
+
+9
+00:00:46,580 --> 00:00:49,863
+El reparto de utilidades se calcula con su asistente:
+
+10
+00:00:49,863 --> 00:00:53,207
+ejercicio, renta neta y porcentaje según la actividad.
+
+11
+00:00:53,207 --> 00:00:58,348
+Reparte cincuenta por ciento por días laborados y cincuenta por remuneraciones, con
+
+12
+00:00:58,348 --> 00:00:59,958
+tope de dieciocho sueldos.
+
+13
+00:01:01,420 --> 00:01:07,797
+En el caso UTILIDADES, cinco mil soles entre tres trabajadores con los mismos días:
+
+14
+00:01:07,797 --> 00:01:12,791
+cada uno recibe S/ 833,33 por días y su parte por remuneraciones.
+
+15
+00:01:12,791 --> 00:01:16,940
+El tope usa el sueldo vigente al cierre del ejercicio.
+
+16
+00:01:18,340 --> 00:01:23,028
+Qué días y qué remuneraciones cuentan para el reparto está pendiente de confirmación
+
+17
+00:01:23,028 --> 00:01:25,261
+por la contadora, anotado en el anexo A.
+
+18
+00:01:25,261 --> 00:01:27,884
+Lo demás está en el capítulo veinte del manual.
+
