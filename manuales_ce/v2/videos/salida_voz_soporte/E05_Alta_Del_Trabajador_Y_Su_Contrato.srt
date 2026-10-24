@@ -1,0 +1,124 @@
+1
+00:00:00,500 --> 00:00:05,443
+Este episodio muestra cómo dar de alta a un trabajador con todos los datos que piden
+
+2
+00:00:05,443 --> 00:00:07,561
+la boleta, el PLAME y el T-Registro.
+
+3
+00:00:09,020 --> 00:00:11,420
+Empezamos por la ficha del empleado.
+
+4
+00:00:11,420 --> 00:00:16,620
+Lucía es una trabajadora ficticia del recorrido del manual, con DNI sintético.
+
+5
+00:00:18,020 --> 00:00:22,200
+La pestaña Nómina PE tiene la identificación para el T-Registro:
+
+6
+00:00:22,200 --> 00:00:27,620
+tipo de documento, nombres y apellidos por separado, situación educativa y la edad,
+
+7
+00:00:27,620 --> 00:00:28,926
+que se calcula sola.
+
+8
+00:00:28,926 --> 00:00:30,951
+Debajo, el sistema pensionario:
+
+9
+00:00:30,951 --> 00:00:33,955
+Lucía está en Integra, con comisión por flujo.
+
+10
+00:00:35,420 --> 00:00:41,883
+Más abajo, el régimen de salud, la EPS, el SCTR, las cuentas bancarias de sueldo y
+
+11
+00:00:41,883 --> 00:00:45,981
+de CTS, el descuento judicial y la firma de boletas.
+
+12
+00:00:47,460 --> 00:00:51,007
+En el caso TREGISTRO se ven todos los grupos completos.
+
+13
+00:00:51,007 --> 00:00:52,813
+La edad es un número entero:
+
+14
+00:00:52,813 --> 00:00:53,780
+treinta y seis.
+
+15
+00:00:55,180 --> 00:01:00,300
+El domicilio usa el distrito del ubigeo de RENIEC, el mismo que pide el T-Registro.
+
+16
+00:01:01,700 --> 00:01:05,903
+Los estudios superiores se eligen de la tabla treinta y cuatro, con su año de
+
+17
+00:01:05,903 --> 00:01:06,285
+egreso.
+
+18
+00:01:07,740 --> 00:01:10,709
+Los derechohabientes se registran en la ficha.
+
+19
+00:01:10,709 --> 00:01:15,420
+El hijo de Lucía, nacido en 2019, le da derecho a la asignación familiar.
+
+20
+00:01:16,820 --> 00:01:21,527
+Si el trabajador aceptó recibir su boleta por correo, se marca aquí, con la fecha
+
+21
+00:01:21,527 --> 00:01:22,922
+del acuerdo y el correo.
+
+22
+00:01:24,380 --> 00:01:29,631
+El contrato lleva la estructura, el diario Planillas, el sueldo de S/ 4 500 y la
+
+23
+00:01:29,631 --> 00:01:31,994
+categoría del pago, Régimen General.
+
+24
+00:01:33,460 --> 00:01:35,889
+Y los datos laborales del T-Registro:
+
+25
+00:01:35,889 --> 00:01:40,420
+régimen laboral, tipo de trabajador, tipo de contrato y tipo de pago.
+
+26
+00:01:41,820 --> 00:01:45,151
+Un contrato nuevo nace con la estructura mensual.
+
+27
+00:01:45,151 --> 00:01:50,793
+Las nueve estructuras cubren la mensual, la semanal, el adelanto, la gratificación,
+
+28
+00:01:50,793 --> 00:01:53,512
+la CTS, las vacaciones y la liquidación.
+
+29
+00:01:54,980 --> 00:02:00,062
+Con la ficha completa desde el alta, la boleta, el PLAME y el T-Registro salen sin
+
+30
+00:02:00,062 --> 00:02:00,867
+correcciones.
+
+31
+00:02:00,867 --> 00:02:03,718
+Está en los capítulos ocho y nueve del manual.
+

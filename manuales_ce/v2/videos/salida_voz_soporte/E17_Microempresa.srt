@@ -1,0 +1,60 @@
+1
+00:00:00,500 --> 00:00:03,700
+El régimen de microempresa tiene reglas propias:
+
+2
+00:00:03,700 --> 00:00:08,900
+SIS en lugar de EsSalud, sin gratificación ni CTS y vacaciones de quince días.
+
+3
+00:00:10,300 --> 00:00:16,030
+Un trabajador de microempresa con S/ 1 500 paga ONP por S/ 195.
+
+4
+00:00:16,030 --> 00:00:21,761
+El empleador aporta al SIS S/ 15 en lugar de EsSalud, y SENATI.
+
+5
+00:00:21,761 --> 00:00:23,580
+El neto es S/ 1 305.
+
+6
+00:00:24,980 --> 00:00:28,149
+La asignación familiar no es obligatoria:
+
+7
+00:00:28,149 --> 00:00:31,859
+sale en cero, y con la opción Pagar sale S/ 113.
+
+8
+00:00:31,859 --> 00:00:36,420
+Y si la empresa elige EsSalud en lugar de SIS, paga S/ 135.
+
+9
+00:00:37,820 --> 00:00:44,741
+En la liquidación, las vacaciones truncas son de quince días por año:
+
+10
+00:00:44,741 --> 00:00:49,154
+S/ 687,50, sin gratificación ni CTS truncas.
+
+11
+00:00:49,154 --> 00:00:51,260
+El neto es S/ 598,12.
+
+12
+00:00:52,660 --> 00:00:55,308
+Y una CTS de microempresa sale en cero:
+
+13
+00:00:55,308 --> 00:00:58,500
+la localización lo explica y ofrece eliminarla.
+
+14
+00:00:59,900 --> 00:01:01,920
+El régimen se elige en el contrato.
+
+15
+00:01:01,920 --> 00:01:04,460
+Está en el capítulo veinticuatro del manual.
+

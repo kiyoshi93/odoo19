@@ -1,0 +1,108 @@
+1
+00:00:00,500 --> 00:00:05,469
+En este episodio vemos cómo comprobar la instalación después de cada actualización y
+
+2
+00:00:05,469 --> 00:00:07,481
+cómo usar el laboratorio de casos.
+
+3
+00:00:08,940 --> 00:00:14,250
+Después de actualizar, filtre Aplicaciones por Nómina Peruana, Payroll y PLAME, solo
+
+4
+00:00:14,250 --> 00:00:15,198
+las instaladas.
+
+5
+00:00:15,198 --> 00:00:17,157
+Cada módulo muestra su versión:
+
+6
+00:00:17,157 --> 00:00:19,117
+compárela con la de la entrega.
+
+7
+00:00:20,580 --> 00:00:21,886
+Un cuidado importante:
+
+8
+00:00:21,886 --> 00:00:26,815
+cada módulo de nómina debe estar una sola vez en las rutas de módulos del servidor.
+
+9
+00:00:26,815 --> 00:00:30,496
+Con dos copias, Odoo puede cargar la versión vieja sin avisar.
+
+10
+00:00:30,496 --> 00:00:33,940
+Por eso, después de actualizar, se comparan las versiones.
+
+11
+00:00:35,340 --> 00:00:37,947
+La nómina está en la aplicación Nómina.
+
+12
+00:00:37,947 --> 00:00:40,220
+El laboratorio está en SOLSE Demo.
+
+13
+00:00:41,620 --> 00:00:46,060
+En el laboratorio, pulse Sincronizar casos después de cada actualización:
+
+14
+00:00:46,060 --> 00:00:48,980
+así la lista de casos toma las versiones nuevas.
+
+15
+00:00:50,380 --> 00:00:55,419
+Cada caso siembra trabajadores sintéticos, genera boletas y archivos, y los compara
+
+16
+00:00:55,419 --> 00:00:58,029
+celda por celda con un Excel de referencia.
+
+17
+00:00:58,029 --> 00:01:00,639
+Los catorce casos están en cien por ciento.
+
+18
+00:01:02,100 --> 00:01:06,559
+Por ejemplo, el caso TREGISTRO compara 262 celdas sin diferencias.
+
+19
+00:01:06,559 --> 00:01:11,220
+En Comparaciones se descarga el Excel, con lo esperado y lo generado.
+
+20
+00:01:12,620 --> 00:01:15,804
+El laboratorio solo escribe en sus compañías de prueba.
+
+21
+00:01:15,804 --> 00:01:19,740
+En una compañía real, el asistente de datos de prueba no carga nada.
+
+22
+00:01:21,140 --> 00:01:26,543
+El menú Configuración tiene las estructuras, las reglas salariales y las plantillas.
+
+23
+00:01:26,543 --> 00:01:29,438
+Los parámetros legales ya no se repiten aquí:
+
+24
+00:01:29,438 --> 00:01:30,660
+están en Nómina PE.
+
+25
+00:01:32,060 --> 00:01:33,894
+Después de cada actualización:
+
+26
+00:01:33,894 --> 00:01:37,927
+versiones en Aplicaciones, sincronizar casos y correr los catorce.
+
+27
+00:01:37,927 --> 00:01:41,900
+Los detalles están en el capítulo dos y en el anexo E del manual.
+

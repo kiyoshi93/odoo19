@@ -1,0 +1,76 @@
+1
+00:00:00,500 --> 00:00:04,410
+El segundo episodio del T-Registro muestra las modificaciones y los
+
+2
+00:00:04,410 --> 00:00:05,402
+derechohabientes.
+
+3
+00:00:06,860 --> 00:00:11,448
+Cada modificación es un envío, con un concepto y su fecha de cambio.
+
+4
+00:00:11,448 --> 00:00:15,497
+Aquí, el tipo de trabajador cambia el 16 de octubre de 2026:
+
+5
+00:00:15,497 --> 00:00:20,220
+el archivo de periodos lleva dos líneas, el cierre y el nuevo periodo.
+
+6
+00:00:21,620 --> 00:00:23,031
+Hay nueve conceptos:
+
+7
+00:00:23,031 --> 00:00:28,956
+tipo de trabajador, datos del contrato, cuenta de abono, régimen pensionario, salud,
+
+8
+00:00:28,956 --> 00:00:32,625
+SCTR, establecimiento, estudios y datos de contacto.
+
+9
+00:00:32,625 --> 00:00:35,869
+Cada uno genera solo los archivos que cambian.
+
+10
+00:00:37,340 --> 00:00:40,866
+Las altas de derechohabientes generan un archivo de texto:
+
+11
+00:00:40,866 --> 00:00:45,913
+en octubre, cuatro exportados y cinco sin exportar, por ejemplo hijos sin documento
+
+12
+00:00:45,913 --> 00:00:47,494
+o sin apellidos separados.
+
+13
+00:00:47,494 --> 00:00:50,959
+Un hijo mayor de edad sin incapacidad tampoco se exporta.
+
+14
+00:00:52,420 --> 00:00:55,931
+Los archivos de derechohabientes no pasan por el validador:
+
+15
+00:00:55,931 --> 00:00:57,657
+se suben directamente en SOL.
+
+16
+00:00:57,657 --> 00:01:02,180
+Nunca suba los del laboratorio, porque una carga en SOL es un registro real.
+
+17
+00:01:03,580 --> 00:01:08,088
+No cubre pensionistas, personal en formación ni de terceros, ni la modificación
+
+18
+00:01:08,088 --> 00:01:09,629
+masiva de derechohabientes.
+
+19
+00:01:09,629 --> 00:01:12,083
+Está en el capítulo veintinueve del manual.
+

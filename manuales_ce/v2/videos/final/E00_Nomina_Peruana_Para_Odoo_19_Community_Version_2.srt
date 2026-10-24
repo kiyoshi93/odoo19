@@ -1,0 +1,56 @@
+1
+00:00:05,580 --> 00:00:09,997
+La nómina peruana para Odoo diecinueve Community tiene una versión nueva.
+
+2
+00:00:09,997 --> 00:00:12,780
+Lo que antes quedaba fuera, ahora está dentro.
+
+3
+00:00:14,180 --> 00:00:16,888
+Subsidios por descanso médico y maternidad.
+
+4
+00:00:16,888 --> 00:00:21,108
+El T-Registro, con altas, bajas, modificaciones y derechohabientes.
+
+5
+00:00:21,108 --> 00:00:24,760
+La indemnización por despido y la renta de quinta al cese.
+
+6
+00:00:24,760 --> 00:00:28,980
+El seguro Vida Ley, el pago de la planilla y la entrega de boletas.
+
+7
+00:00:30,380 --> 00:00:33,740
+Cada boleta cuadra al centavo con su asiento contable.
+
+8
+00:00:35,140 --> 00:00:39,780
+Los subsidios salen en la boleta y en el PLAME, con sus días de la Tabla veintiuno.
+
+9
+00:00:41,180 --> 00:00:45,980
+El T-Registro se valida antes de exportar y sale listo para el validador de SUNAT.
+
+10
+00:00:47,380 --> 00:00:52,723
+Y el PLAME, AFPnet y los archivos para el BCP, Interbank y Scotiabank se generan
+
+11
+00:00:52,723 --> 00:00:54,593
+desde las boletas validadas.
+
+12
+00:00:56,060 --> 00:01:00,515
+Catorce casos de laboratorio, dos mil quinientas setenta y tres celdas comparadas
+
+13
+00:01:00,515 --> 00:01:02,330
+contra la norma, todas conformes.
+
+14
+00:01:02,330 --> 00:01:05,685
+Todo está en el manual versión dos y en esta serie de videos.
+

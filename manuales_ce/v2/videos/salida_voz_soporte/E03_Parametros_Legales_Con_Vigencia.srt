@@ -1,0 +1,116 @@
+1
+00:00:00,500 --> 00:00:05,861
+Los valores legales de la planilla, como la UIT, la remuneración mínima o las tasas
+
+2
+00:00:05,861 --> 00:00:09,220
+de las AFP, se guardan como parámetros con vigencia.
+
+3
+00:00:09,220 --> 00:00:10,835
+Veamos cómo se mantienen.
+
+4
+00:00:12,300 --> 00:00:17,667
+En Nómina PE, Parámetros, están los veinticinco parámetros agrupados por categoría,
+
+5
+00:00:17,667 --> 00:00:19,995
+cada uno con su valor vigente a hoy.
+
+6
+00:00:21,460 --> 00:00:25,035
+La remuneración mínima tiene dos vigencias:
+
+7
+00:00:25,035 --> 00:00:31,519
+S/ 1 130 desde el 1 de enero de 2025 y S/ 1 230 desde el 1 de octubre de 2026.
+
+8
+00:00:31,519 --> 00:00:34,345
+Cuando cambia, se agrega una fila;
+
+9
+00:00:34,345 --> 00:00:36,340
+no se edita la anterior.
+
+10
+00:00:37,740 --> 00:00:42,686
+La remuneración máxima asegurable cambia cada trimestre, así que tiene una vigencia
+
+11
+00:00:42,686 --> 00:00:43,520
+por trimestre.
+
+12
+00:00:44,980 --> 00:00:49,822
+Los parámetros con varias filas, como las comisiones de las AFP o los tramos de la
+
+13
+00:00:49,822 --> 00:00:52,361
+renta de quinta, tienen un editor en tabla.
+
+14
+00:00:53,820 --> 00:00:59,024
+La nueva vigencia de comisiones muestra una fila por AFP con su tasa en porcentaje,
+
+15
+00:00:59,024 --> 00:01:00,717
+y el texto que se guardará.
+
+16
+00:01:02,180 --> 00:01:04,526
+Y los tramos de la renta de quinta:
+
+17
+00:01:04,526 --> 00:01:09,620
+cinco, veinte, treinta y cinco y cuarenta y cinco UIT, y el último sin tope.
+
+18
+00:01:11,020 --> 00:01:15,040
+Los valores se escriben con punto decimal y sin separador de miles.
+
+19
+00:01:15,040 --> 00:01:19,840
+Si se escribe uno coma doscientos treinta, el parámetro lo rechaza y explica por
+
+20
+00:01:19,840 --> 00:01:20,080
+qué.
+
+21
+00:01:21,540 --> 00:01:26,219
+Si falta una vigencia, la boleta avisa antes de calcular.
+
+22
+00:01:26,219 --> 00:01:32,950
+En una boleta de enero de 2027, la banda dice que la RMA es de octubre, que faltan
+
+23
+00:01:32,950 --> 00:01:39,599
+los feriados de 2027 y que falta la UIT de 2027, con lo que se usaría la de 2026:
+
+24
+00:01:39,599 --> 00:01:40,338
+S/ 5 500.
+
+25
+00:01:41,820 --> 00:01:46,539
+Si aun así se calcula sin la vigencia, el navegador muestra un error genérico.
+
+26
+00:01:46,539 --> 00:01:51,500
+El mensaje que explica qué parámetro falta está al final de Ver detalles técnicos.
+
+27
+00:01:52,900 --> 00:01:58,245
+Cada mes, antes de calcular, revise la RMA del trimestre, la remuneración mínima y
+
+28
+00:01:58,245 --> 00:01:59,940
+las comisiones de las AFP.
+
+29
+00:01:59,940 --> 00:02:03,395
+Está en los capítulos cuatro y veintiséis del manual.
+

@@ -1,0 +1,84 @@
+1
+00:00:00,500 --> 00:00:05,530
+Este episodio muestra los archivos de pago de haberes y de CTS para el BCP,
+
+2
+00:00:05,530 --> 00:00:07,073
+Interbank y Scotiabank.
+
+3
+00:00:08,540 --> 00:00:15,367
+En Nómina PE, Pago a bancos, se elige el banco, el tipo, haberes o CTS, y el mes.
+
+4
+00:00:15,367 --> 00:00:22,279
+En el caso BANCOS, el archivo de haberes del BCP abona a cuatro trabajadores, S/ 7
+
+5
+00:00:22,279 --> 00:00:22,616
+918.
+
+6
+00:00:24,100 --> 00:00:27,740
+Un trabajador sin cuenta ya no bloquea el archivo.
+
+7
+00:00:27,740 --> 00:00:31,889
+Se omite, y el resumen dice a quién no se pagó y por qué:
+
+8
+00:00:31,889 --> 00:00:34,947
+aquí, uno sin cuenta sueldo, por S/ 1 566.
+
+9
+00:00:34,947 --> 00:00:39,460
+Si la empresa prefiere, el modo estricto no genera el archivo.
+
+10
+00:00:40,860 --> 00:00:48,960
+El archivo de CTS de Interbank abona S/ 833,33 y omite a los cuatro que tienen la
+
+11
+00:00:48,960 --> 00:00:54,760
+CTS en otro banco o no tienen cuenta CTS, por S/ 2 800,39.
+
+12
+00:00:56,260 --> 00:01:00,064
+Scotiabank abona a tres trabajadores, S/ 6 003,88.
+
+13
+00:01:00,064 --> 00:01:03,108
+Su formato es propio de la localización:
+
+14
+00:01:03,108 --> 00:01:07,140
+el asistente avisa que no está validado con el banco.
+
+15
+00:01:08,540 --> 00:01:13,978
+Los archivos salen sin tildes y con fin de línea de Windows, con el total exacto al
+
+16
+00:01:13,978 --> 00:01:14,503
+centavo.
+
+17
+00:01:14,503 --> 00:01:18,041
+El banco de cada cuenta se reconoce por su código SBS.
+
+18
+00:01:18,041 --> 00:01:20,596
+El Banco de la Nación no está cubierto:
+
+19
+00:01:20,596 --> 00:01:22,234
+su formato no es público.
+
+20
+00:01:23,700 --> 00:01:27,633
+Antes de subir un archivo al banco, ábralo y revise los omitidos.
+
+21
+00:01:27,633 --> 00:01:30,900
+Está en los capítulos veintisiete y quince del manual.
+

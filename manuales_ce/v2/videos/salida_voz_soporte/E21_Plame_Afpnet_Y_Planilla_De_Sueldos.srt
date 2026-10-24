@@ -1,0 +1,56 @@
+1
+00:00:00,500 --> 00:00:04,010
+Este episodio muestra los archivos legales del mes:
+
+2
+00:00:04,010 --> 00:00:06,900
+la planilla de sueldos, el PLAME y AFPnet.
+
+3
+00:00:08,300 --> 00:00:12,780
+La planilla de sueldos del mes sale en Excel, con una fila por trabajador.
+
+4
+00:00:14,180 --> 00:00:17,209
+El PLAME genera el archivo comprimido para el PDT.
+
+5
+00:00:17,209 --> 00:00:21,571
+En noviembre, quince boletas de trece trabajadores, con los conceptos de
+
+6
+00:00:21,571 --> 00:00:24,599
+remuneración, asignación familiar y los subsidios.
+
+7
+00:00:26,060 --> 00:00:30,550
+El archivo de remuneraciones lleva un concepto por línea con su código.
+
+8
+00:00:30,550 --> 00:00:35,166
+El de jornada tiene seis campos y declara las horas del mes una sola vez.
+
+9
+00:00:35,166 --> 00:00:37,569
+El de suspensiones, los días por tipo.
+
+10
+00:00:37,569 --> 00:00:39,340
+Y las rectificativas restan.
+
+11
+00:00:40,740 --> 00:00:44,991
+AFPnet sale en Excel con los trabajadores del sistema privado:
+
+12
+00:00:44,991 --> 00:00:46,020
+en julio, seis.
+
+13
+00:00:47,420 --> 00:00:51,224
+Importe el PLAME en el PDT y compare sus totales con la planilla.
+
+14
+00:00:51,224 --> 00:00:53,740
+Está en el capítulo veintisiete del manual.
+

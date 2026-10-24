@@ -1,0 +1,104 @@
+1
+00:00:05,580 --> 00:00:10,363
+Este episodio recorre las tablas de SUNAT, los seguros y la configuración contable
+
+2
+00:00:10,363 --> 00:00:11,122
+de la nómina.
+
+3
+00:00:12,580 --> 00:00:16,953
+La tabla veintidós tiene los conceptos del PLAME, con su código y los tributos y
+
+4
+00:00:16,953 --> 00:00:19,085
+aportes a los que está afecto cada uno.
+
+5
+00:00:20,540 --> 00:00:23,968
+Los maestros se buscan por código o por descripción:
+
+6
+00:00:23,968 --> 00:00:27,660
+cero uno dos uno encuentra Remuneración o jornal básico.
+
+7
+00:00:29,060 --> 00:00:32,411
+La tabla once tiene los sistemas pensionarios:
+
+8
+00:00:32,411 --> 00:00:37,220
+el cero dos es la ONP, y cada AFP lleva su clave para la comisión.
+
+9
+00:00:38,620 --> 00:00:43,217
+La tabla diecinueve tiene los vínculos de los derechohabientes de EsSalud:
+
+10
+00:00:43,217 --> 00:00:45,454
+cónyuge, concubina, hijo y gestante.
+
+11
+00:00:45,454 --> 00:00:49,740
+Los demás parientes no tienen código, porque no son derechohabientes.
+
+12
+00:00:51,140 --> 00:00:57,060
+Para el domicilio del T-Registro están los 1 892 distritos del ubigeo de RENIEC.
+
+13
+00:00:58,460 --> 00:01:04,380
+Y para los estudios superiores, 5 925 combinaciones de institución y carrera.
+
+14
+00:01:05,780 --> 00:01:08,953
+En Seguros se registran los planes EPS.
+
+15
+00:01:08,953 --> 00:01:15,380
+El plan de demostración tiene 4,5 % para el empleador y 2 % para el trabajador.
+
+16
+00:01:16,780 --> 00:01:21,644
+El SCTR se marca en la ficha del trabajador, con la entidad de salud y la de
+
+17
+00:01:21,644 --> 00:01:22,156
+pensión.
+
+18
+00:01:23,620 --> 00:01:28,062
+El mapeo contable asigna a cada una de las cuarenta y cinco reglas su cuenta de
+
+19
+00:01:28,062 --> 00:01:31,324
+débito y de crédito del plan contable general empresarial.
+
+20
+00:01:32,780 --> 00:01:37,681
+Las boletas se contabilizan en el diario Planillas, con la cuenta cuatro uno uno
+
+21
+00:01:37,681 --> 00:01:39,519
+uno, remuneraciones por pagar.
+
+22
+00:01:40,980 --> 00:01:43,033
+Cada regla queda con sus cuentas.
+
+23
+00:01:43,033 --> 00:01:48,260
+La remuneración básica va al debe de la seis dos uno uno y al haber de la cuatro uno
+
+24
+00:01:48,260 --> 00:01:48,758
+uno uno.
+
+25
+00:01:50,220 --> 00:01:53,158
+Esta configuración se hace una vez por compañía.
+
+26
+00:01:53,158 --> 00:01:57,260
+Los detalles están en los capítulos cinco, seis y siete del manual.
+

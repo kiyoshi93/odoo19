@@ -1,0 +1,72 @@
+1
+00:00:00,500 --> 00:00:04,702
+Los recibos por honorarios se declaran en el PLAME de cuarta categoría.
+
+2
+00:00:04,702 --> 00:00:07,780
+Hay dos formas de generarlo, con el mismo contenido.
+
+3
+00:00:09,180 --> 00:00:11,741
+Sin nómina, desde Contabilidad, Reportes.
+
+4
+00:00:11,741 --> 00:00:15,364
+Con nómina, marcando Incluir cuarta categoría en el PLAME.
+
+5
+00:00:15,364 --> 00:00:20,298
+En los dos casos entran los recibos pagados en el mes, sin importar su fecha de
+
+6
+00:00:20,298 --> 00:00:20,798
+emisión.
+
+7
+00:00:22,260 --> 00:00:25,860
+Se elige el ejercicio y el mes, o un rango de fechas.
+
+8
+00:00:27,260 --> 00:00:33,476
+Revisar periodo lista cada comprobante con su prestador, serie, número, fechas,
+
+9
+00:00:33,476 --> 00:00:34,892
+retención y monto.
+
+10
+00:00:34,892 --> 00:00:41,343
+En julio de 2026, ocho prestadores y nueve comprobantes, con una nota de crédito y
+
+11
+00:00:41,343 --> 00:00:43,861
+un no domiciliado con pasaporte.
+
+12
+00:00:43,861 --> 00:00:45,120
+Total declarado:
+
+13
+00:00:45,120 --> 00:00:46,143
+S/ 15 022,60.
+
+14
+00:00:47,700 --> 00:00:52,985
+En los ajustes de la compañía se indica el impuesto de retención y el umbral de S/ 1
+
+15
+00:00:52,985 --> 00:00:53,237
+500.
+
+16
+00:00:54,700 --> 00:00:57,876
+El formato se comparó con archivos aceptados por el PDT.
+
+17
+00:00:57,876 --> 00:01:00,088
+Verifíquelo con su primera declaración.
+
+18
+00:01:00,088 --> 00:01:02,300
+Está en el capítulo treinta del manual.
+

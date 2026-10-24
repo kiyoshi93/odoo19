@@ -1,0 +1,80 @@
+1
+00:00:00,500 --> 00:00:05,876
+Este episodio muestra la gratificación de julio, la trunca al cese, y el depósito de
+
+2
+00:00:05,876 --> 00:00:08,116
+CTS de noviembre con su constancia.
+
+3
+00:00:09,580 --> 00:00:17,152
+La gratificación de julio de Lucía paga el sueldo más la asignación familiar, S/ 4
+
+4
+00:00:17,152 --> 00:00:23,616
+613, y la bonificación extraordinaria del nueve por ciento, S/ 415,17.
+
+5
+00:00:23,616 --> 00:00:25,648
+En total, S/ 5 028,17.
+
+6
+00:00:27,140 --> 00:00:32,930
+Carmen cobra la gratificación ordinaria de julio y cesa el 31 de agosto.
+
+7
+00:00:32,930 --> 00:00:37,112
+Su liquidación paga solo dos sextos, julio y agosto:
+
+8
+00:00:37,112 --> 00:00:39,525
+S/ 833,33 más la bonificación.
+
+9
+00:00:39,525 --> 00:00:42,340
+El semestre ya pagado no se repite.
+
+10
+00:00:43,740 --> 00:00:48,983
+La CTS de noviembre se calcula con la remuneración computable:
+
+11
+00:00:48,983 --> 00:00:54,986
+sueldo, asignación familiar y un sexto de la gratificación ya validada.
+
+12
+00:00:54,986 --> 00:00:57,100
+Lucía recibe S/ 2 695,92.
+
+13
+00:00:58,500 --> 00:01:04,914
+La liquidación del depósito detalla la remuneración computable, S/ 5 391,83, el
+
+14
+00:01:04,914 --> 00:01:09,299
+periodo de seis meses, el banco y el monto depositado.
+
+15
+00:01:10,780 --> 00:01:14,842
+El depósito se paga con el archivo de CTS del banco.
+
+16
+00:01:14,842 --> 00:01:21,324
+En el caso BANCOS, Interbank abona S/ 833,33 y lista a los cuatro que tienen la CTS
+
+17
+00:01:21,324 --> 00:01:23,902
+en otro banco o no tienen cuenta.
+
+18
+00:01:25,380 --> 00:01:27,867
+La CTS lee la gratificación validada:
+
+19
+00:01:27,867 --> 00:01:30,019
+valide primero la gratificación.
+
+20
+00:01:30,019 --> 00:01:33,380
+Está en los capítulos catorce y quince del manual.
+

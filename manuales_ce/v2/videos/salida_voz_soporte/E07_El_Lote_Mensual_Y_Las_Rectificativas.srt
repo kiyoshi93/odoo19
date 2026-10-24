@@ -1,0 +1,112 @@
+1
+00:00:00,500 --> 00:00:05,537
+Este episodio muestra cómo procesar el mes con un lote, en qué orden validar y cómo
+
+2
+00:00:05,537 --> 00:00:07,479
+corregir una boleta ya validada.
+
+3
+00:00:08,940 --> 00:00:11,663
+Los lotes están en Procesamientos de nóminas.
+
+4
+00:00:11,663 --> 00:00:16,140
+Cada lote agrupa las boletas de un periodo y nace con el diario Planillas.
+
+5
+00:00:17,540 --> 00:00:19,540
+Se crea el lote con su periodo.
+
+6
+00:00:20,940 --> 00:00:23,820
+Con Generar nóminas se eligen los trabajadores.
+
+7
+00:00:25,220 --> 00:00:29,060
+Y el lote crea sus boletas en borrador, con el nombre en español.
+
+8
+00:00:30,460 --> 00:00:33,721
+Los acumulados solo leen boletas validadas.
+
+9
+00:00:33,721 --> 00:00:35,238
+Por eso el orden es:
+
+10
+00:00:35,238 --> 00:00:35,921
+adelanto;
+
+11
+00:00:35,921 --> 00:00:38,348
+gratificación, CTS y vacaciones;
+
+12
+00:00:38,348 --> 00:00:39,865
+mensual y semanales;
+
+13
+00:00:39,865 --> 00:00:42,140
+y al final, las liquidaciones.
+
+14
+00:00:43,540 --> 00:00:47,021
+En diciembre no queda mes para corregir la renta de quinta.
+
+15
+00:00:47,021 --> 00:00:50,975
+Si la gratificación del mes sigue en borrador, la mensual lo avisa:
+
+16
+00:00:50,975 --> 00:00:51,860
+valídela antes.
+
+17
+00:00:53,260 --> 00:00:58,102
+Un lote con boletas ya validadas no las vuelve a calcular ni duplica su asiento.
+
+18
+00:00:58,102 --> 00:01:00,220
+Solo calcula las que nunca calculó.
+
+19
+00:01:01,620 --> 00:01:05,507
+Si una boleta validada tiene un error, no se edita:
+
+20
+00:01:05,507 --> 00:01:06,498
+se rectifica.
+
+21
+00:01:06,498 --> 00:01:12,900
+Esta mensual de noviembre se validó con S/ 2 500, y el sueldo correcto era S/ 2 700.
+
+22
+00:01:14,300 --> 00:01:19,100
+La rectificativa copia las líneas de la original y resta en todos los reportes.
+
+23
+00:01:20,500 --> 00:01:23,205
+Luego se calcula la boleta correcta.
+
+24
+00:01:23,205 --> 00:01:29,441
+El PLAME declara la remuneración de S/ 2 700 una sola vez, y la planilla de sueldos
+
+25
+00:01:29,441 --> 00:01:31,545
+muestra un neto de S/ 2 349.
+
+26
+00:01:33,020 --> 00:01:37,554
+Validar en orden y rectificar en lugar de editar mantiene los acumulados y los
+
+27
+00:01:37,554 --> 00:01:38,659
+reportes correctos.
+
+28
+00:01:38,659 --> 00:01:41,682
+Está en los capítulos once y veinticinco del manual.
+
