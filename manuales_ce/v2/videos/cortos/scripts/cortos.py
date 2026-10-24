@@ -187,11 +187,11 @@ def montar(corto):
         filtros = (f'[1:a]aloop=loop=-1:size=2e9,atrim=0:{t_cierre + 0.6:.2f},volume=0.22,afade=t=in:d=0.6,'
                    f'afade=t=out:st={t_cierre - 0.6:.2f}:d=1.2,aresample=44100,aformat=channel_layouts=stereo[m];'
                    f'[0:a]asplit[voz][guia];[m][guia]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=350[md];'
-                   f'[voz][md]amix=inputs=2:duration=first:normalize=0[a]')
+                   f'[voz][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]')
         serie.correr(['-i', unido, '-i', MUSICA, '-filter_complex', filtros, '-map', '0:v', '-map', '[a]'] + video
                      + ['-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', final])
     else:
-        serie.correr(['-i', unido] + video + ['-c:a', 'copy', '-movflags', '+faststart', final])
+        serie.correr(['-i', unido] + video + ['-af', 'loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', final])
     print(f'{corto["id"]}: {t:.1f} s -> {final}', flush=True)
     return t
 
