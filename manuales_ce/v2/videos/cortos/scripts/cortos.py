@@ -23,6 +23,7 @@ WHATSAPP = os.environ.get('WHATSAPP', '+51 996 122 890')
 WEB, CORREO = 'solse.pe', 'sistemas@solse.pe'
 CONTACTO = f'WhatsApp {WHATSAPP}'
 MUSICA = os.environ.get('MUSICA')            # pista de fondo opcional (otra carpeta de salida)
+VOLUMEN_MUSICA = os.environ.get('VOLUMEN_MUSICA', '0.12')   # 0.22 en la primera versión: tapaba la voz
 if MUSICA:
     SALIDA = os.path.join(BASE, 'salida_con_musica')
 NARANJA, CREMA, AZUL, AZUL2 = (243, 146, 38), (246, 244, 239), (30, 38, 64), (14, 19, 36)
@@ -184,7 +185,7 @@ def montar(corto):
     video = ['-vf', f'ass={ass}:fontsdir={serie.FUENTES}', '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-pix_fmt', 'yuv420p', '-profile:v', 'high']
     if MUSICA:
         # música bajo la voz (se agacha cuando hay voz) y se va antes del cierre, que trae la música de la intro
-        filtros = (f'[1:a]aloop=loop=-1:size=2e9,atrim=0:{t_cierre + 0.6:.2f},volume=0.22,afade=t=in:d=0.6,'
+        filtros = (f'[1:a]aloop=loop=-1:size=2e9,atrim=0:{t_cierre + 0.6:.2f},volume={VOLUMEN_MUSICA},afade=t=in:d=0.6,'
                    f'afade=t=out:st={t_cierre - 0.6:.2f}:d=1.2,aresample=44100,aformat=channel_layouts=stereo[m];'
                    f'[0:a]asplit[voz][guia];[m][guia]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=350[md];'
                    f'[voz][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]')
