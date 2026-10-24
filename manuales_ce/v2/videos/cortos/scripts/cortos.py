@@ -19,7 +19,12 @@ W, H, FPS = 1080, 1920, 30
 TRABAJO = os.path.join(BASE, 'trabajo'); SALIDA = os.path.join(BASE, 'salida')
 INTRO = os.path.join(VIDEOS, 'marca', 'intro_systion.mp4')
 LOGO = os.path.join(VIDEOS, 'marca', 'logo_systion.png')
-CONTACTO = os.environ.get('CONTACTO', 'SYSTION · FM Systems Solutions')
+WHATSAPP = os.environ.get('WHATSAPP', '+51 996 122 890')
+WEB, CORREO = 'solse.pe', 'sistemas@solse.pe'
+CONTACTO = f'WhatsApp {WHATSAPP}'
+MUSICA = os.environ.get('MUSICA')            # pista de fondo opcional (otra carpeta de salida)
+if MUSICA:
+    SALIDA = os.path.join(BASE, 'salida_con_musica')
 NARANJA, CREMA, AZUL, AZUL2 = (243, 146, 38), (246, 244, 239), (30, 38, 64), (14, 19, 36)
 ZONA_TEXTO = (1430, 1640)          # subtítulos: por encima de los botones y textos de TikTok / Reels
 
@@ -93,12 +98,14 @@ def cuadro(esc, destino):
 
 def cierre_png(destino):
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    y = titular(d, 'Nómina peruana', 1110, 64)
-    y = titular(d, 'para **Odoo 19 Community**', y, 64)
-    y = titular(d, 'Agenda una demostración', y + 20, 54)
-    f = serie.fuente(40, True); tw = d.textlength(CONTACTO, font=f)
-    d.rounded_rectangle([(W - tw) / 2 - 36, y + 36, (W + tw) / 2 + 36, y + 36 + 84], 42, fill=NARANJA)
-    d.text(((W - tw) / 2, y + 54), CONTACTO, font=f, fill=AZUL2)
+    y = titular(d, 'Nómina peruana', 985, 62)
+    y = titular(d, 'para **Odoo 19 Community**', y, 62)
+    y = titular(d, 'Agenda una demostración', y + 12, 50)
+    f = serie.fuente(46, True); tw = d.textlength(CONTACTO, font=f)
+    d.rounded_rectangle([(W - tw) / 2 - 40, y + 28, (W + tw) / 2 + 40, y + 28 + 92], 46, fill=NARANJA)
+    d.text(((W - tw) / 2, y + 46), CONTACTO, font=f, fill=AZUL2)
+    f = serie.fuente(40, True); linea = f'{WEB}  ·  {CORREO}'; tw = d.textlength(linea, font=f)
+    d.text(((W - tw) / 2, y + 150), linea, font=f, fill=CREMA)
     im.save(destino)
 
 
@@ -126,6 +133,7 @@ def montar(corto):
         wav, dvoz = serie.voz_cacheada(voz)
         salida = os.path.join(carpeta, f'{n:02d}.mp4')
         if esc['t'] == 'cierre':
+            t_cierre = t
             entrada, dur = 0.3, round(max(3.3, 0.3 + dvoz + 0.8), 2)
             png = os.path.join(carpeta, 'cierre.png'); cierre_png(png)
             # la aparición del logo de la intro (de 2,9 s al final), al frente y desenfocada de fondo
@@ -173,8 +181,17 @@ def montar(corto):
             f.write(f'Dialogue: 0,{marca_ass(a)},{marca_ass(b)},Corto,,0,0,0,,{p}\n')
     nombre = f'{corto["id"]}_{re.sub(r"[^A-Za-z0-9]+", "_", serie.sin_tildes(corto["titulo"]).title()).strip("_")}'
     final = os.path.join(SALIDA, nombre + '.mp4')
-    serie.correr(['-i', unido, '-vf', f'ass={ass}:fontsdir={serie.FUENTES}', '-c:v', 'libx264', '-preset', 'slow', '-crf', '20',
-                  '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-c:a', 'copy', '-movflags', '+faststart', final])
+    video = ['-vf', f'ass={ass}:fontsdir={serie.FUENTES}', '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-pix_fmt', 'yuv420p', '-profile:v', 'high']
+    if MUSICA:
+        # música bajo la voz (se agacha cuando hay voz) y se va antes del cierre, que trae la música de la intro
+        filtros = (f'[1:a]aloop=loop=-1:size=2e9,atrim=0:{t_cierre + 0.6:.2f},volume=0.22,afade=t=in:d=0.6,'
+                   f'afade=t=out:st={t_cierre - 0.6:.2f}:d=1.2,aresample=44100,aformat=channel_layouts=stereo[m];'
+                   f'[0:a]asplit[voz][guia];[m][guia]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=350[md];'
+                   f'[voz][md]amix=inputs=2:duration=first:normalize=0[a]')
+        serie.correr(['-i', unido, '-i', MUSICA, '-filter_complex', filtros, '-map', '0:v', '-map', '[a]'] + video
+                     + ['-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', final])
+    else:
+        serie.correr(['-i', unido] + video + ['-c:a', 'copy', '-movflags', '+faststart', final])
     print(f'{corto["id"]}: {t:.1f} s -> {final}', flush=True)
     return t
 
