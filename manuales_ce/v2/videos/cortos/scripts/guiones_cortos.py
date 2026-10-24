@@ -1,0 +1,106 @@
+# Guiones de los cortos publicitarios (9:16, 20 a 30 s): TikTok, Reels y estados de WhatsApp.
+# Escenas: 'gancho' (titular grande), 'cap' (titular + captura del manual con foco), 'cifra' (número grande).
+# Al final va siempre el cierre de marca (logo de la intro + invitación). Cifras: manual v2 (22/10/2026).
+# En 'titular', **texto** se pinta en naranja. En 'voz', las fichas [[S x]] y [[N x]] como en la serie.
+CIERRE_VOZ = 'Nómina peruana para Odoo diecinueve. Escríbenos y agenda una demostración con tus propios datos.'
+
+CORTOS = [
+    {'id': 'S01', 'titulo': '¿Tu planilla sigue en Excel?', 'escenas': [
+        {'t': 'gancho', 'titular': '¿Tu planilla **sigue en Excel?**',
+         'voz': '¿Todavía calculas la planilla en Excel?'},
+        {'t': 'cap', 'img': 'c10_01_calculo', 'focos': ['Neto a pagar'], 'titular': 'Boletas **calculadas** en Odoo',
+         'voz': 'Con nuestra nómina para Odoo, cada boleta calcula aportes, renta de quinta y neto en segundos.'},
+        {'t': 'cap', 'img': 'c27_02_plame_resultado', 'titular': 'PLAME **listo** para el PDT',
+         'voz': 'Y al cerrar el mes, el PLAME sale listo para importar.'},
+    ]},
+    {'id': 'S02', 'titulo': 'La boleta cuadra al centavo', 'escenas': [
+        {'t': 'gancho', 'titular': '¿Tu boleta **cuadra al centavo?**',
+         'voz': '¿Tu boleta cuadra al centavo con el asiento contable?'},
+        {'t': 'cap', 'img': 'c10_02_boleta_impresa', 'focos': [{'texto': 'NETO', 'modo': 'caja'}], 'titular': 'Boleta impresa',
+         'voz': 'En la nuestra, sí: ingresos menos descuentos, igual al neto.'},
+        {'t': 'cap', 'img': 'c10_03_asiento', 'focos': [{'texto': 'PLLA/2026', 'modo': 'caja'}], 'titular': 'Asiento en **Planillas**',
+         'voz': 'Y el asiento se genera solo, en el diario Planillas, con el plan contable peruano.'},
+        {'t': 'cifra', 'cifra': 'S/ 4 025,70', 'titular': 'Neto = boleta = asiento',
+         'voz': 'Mismo neto en la boleta, en la impresión y en el asiento.'},
+    ]},
+    {'id': 'S03', 'titulo': 'El PLAME en un clic', 'escenas': [
+        {'t': 'gancho', 'titular': 'El PLAME **sin digitar**',
+         'voz': '¿Cuántas horas pierdes digitando el PLAME?'},
+        {'t': 'cap', 'img': 'c27_02_plame_resultado', 'titular': 'Un clic, un ZIP',
+         'voz': 'Con nuestra nómina para Odoo, el PLAME se genera desde las boletas validadas: remuneraciones, jornada y suspensiones.'},
+        {'t': 'gancho', 'titular': 'Listo para **importar en el PDT**',
+         'voz': 'Un archivo listo para importar en el PDT.'},
+    ]},
+    {'id': 'S04', 'titulo': 'Renta de quinta automática', 'escenas': [
+        {'t': 'gancho', 'titular': 'Renta de quinta **sin calculadora**',
+         'voz': 'La renta de quinta, sin calculadora.'},
+        {'t': 'cap', 'img': 'c13_01_lucia_ene2025_calculo', 'focos': ['Renta de 5ta'], 'titular': 'Retención **mes a mes**',
+         'voz': 'Cada mes se proyecta con gratificaciones y asignación familiar, y se retiene lo justo.'},
+        {'t': 'cap', 'img': 'c13_04_certificado_renta5_lucia_2025', 'titular': 'Certificado **anual**',
+         'voz': 'A fin de año, el certificado sale del mismo cálculo: en el ejemplo, [[S 2309.73]] retenidos y declarados.'},
+    ]},
+    {'id': 'S05', 'titulo': 'Gratificación y CTS sin errores', 'escenas': [
+        {'t': 'gancho', 'titular': 'Julio y noviembre **sin estrés**',
+         'voz': 'Julio y noviembre, sin estrés.'},
+        {'t': 'cap', 'img': 'c14_01_lucia_grati_jul2026_calculo', 'titular': 'Gratificación + **9 %**',
+         'voz': 'La gratificación se calcula con la bonificación extraordinaria del nueve por ciento.'},
+        {'t': 'cap', 'img': 'c15_02_liquidacion_deposito_cts', 'titular': 'CTS con su **constancia**',
+         'voz': 'Y la CTS, con un sexto de la gratificación y su constancia de depósito lista para entregar.'},
+    ]},
+    {'id': 'S06', 'titulo': 'Vacaciones sin pagar doble', 'escenas': [
+        {'t': 'gancho', 'titular': '¿Vacaciones **pagadas dos veces?**',
+         'voz': '¿Te ha pasado que las vacaciones se pagan dos veces?'},
+        {'t': 'cap', 'img': 'c17_01_lucia_vac_feb2026_calculo', 'titular': 'Boleta **vacacional**',
+         'voz': 'Aquí no: la boleta vacacional paga los días de goce.'},
+        {'t': 'cap', 'img': 'c17_02_lucia_nme_feb2026_dias', 'titular': 'La mensual **no los repite**',
+         'voz': 'Y la mensual los muestra sin pagar. Cada día se paga una sola vez.'},
+    ]},
+    {'id': 'S07', 'titulo': 'Asistencias que llegan a la boleta', 'escenas': [
+        {'t': 'gancho', 'titular': 'Tardanzas y faltas **directo a la boleta**',
+         'voz': 'Las tardanzas y faltas, directo a la boleta.'},
+        {'t': 'cap', 'img': 'c19_03_carlos_tardanzas_asistencias', 'titular': 'Con **tolerancia**',
+         'voz': 'Las marcaciones se concilian con el horario, respetando la tolerancia.'},
+        {'t': 'cap', 'img': 'c19_02_jorge_oct_feriado_asistencias', 'titular': 'El feriado **no es falta**',
+         'voz': 'Y el feriado no se cuenta como falta.'},
+    ]},
+    {'id': 'S08', 'titulo': 'Subsidios en la planilla', 'escenas': [
+        {'t': 'gancho', 'titular': 'Descanso médico y maternidad **en la planilla**',
+         'voz': 'Descanso médico y maternidad, en la planilla.'},
+        {'t': 'cap', 'img': 'c23_01_descanso_nov_calculo', 'focos': ['Subsidio por inc'], 'titular': 'Remuneración + **subsidio**',
+         'voz': 'Los primeros veinte días como remuneración; desde el veintiuno, subsidio por incapacidad.'},
+        {'t': 'gancho', 'titular': 'Y en el PLAME, con su **código**',
+         'voz': 'Y el PLAME declara los días de suspensión con su código.'},
+    ]},
+    {'id': 'S09', 'titulo': 'T-Registro sin digitar', 'escenas': [
+        {'t': 'gancho', 'titular': 'Altas del T-Registro **en minutos**',
+         'voz': 'Las altas del T-Registro, en minutos.'},
+        {'t': 'cap', 'img': 'c29_01_altas_resultado', 'titular': 'Validado **antes** de exportar',
+         'voz': 'Antes de exportar se valida cada dato, y te dice qué le falta a cada trabajador.'},
+        {'t': 'gancho', 'titular': 'Altas, bajas, modificaciones y **derechohabientes**',
+         'voz': 'Altas, bajas, modificaciones y derechohabientes.'},
+    ]},
+    {'id': 'S10', 'titulo': 'Pago a bancos en un archivo', 'escenas': [
+        {'t': 'gancho', 'titular': 'Paga la planilla **en un archivo**',
+         'voz': 'Paga toda la planilla con un solo archivo.'},
+        {'t': 'cap', 'img': 'c27_04_bcp_haberes_resultado', 'titular': 'BCP, Interbank y Scotiabank',
+         'voz': 'Haberes y CTS para BCP, Interbank y Scotiabank.'},
+        {'t': 'gancho', 'titular': '¿Alguien sin cuenta? **Te avisa**',
+         'voz': 'Y si alguien no tiene cuenta, el archivo igual sale y te avisa a quién falta pagar.'},
+    ]},
+    {'id': 'S11', 'titulo': 'Liquidación por cese completa', 'escenas': [
+        {'t': 'gancho', 'titular': 'Liquidaciones **completas**',
+         'voz': '¿Se va un trabajador?'},
+        {'t': 'cap', 'img': 'c16_01_carmen_liquidacion_calculo', 'focos': ['Neto a pagar'], 'titular': 'Truncas **con sus aportes**',
+         'voz': 'La liquidación calcula vacaciones, gratificación y CTS truncas, con sus aportes.'},
+        {'t': 'cap', 'img': 'c16_02_indemnizacion_calculo', 'titular': 'Indemnización y **renta de quinta**',
+         'voz': 'Y si corresponde, la indemnización por despido arbitrario y la renta de quinta al cese.'},
+    ]},
+    {'id': 'S12', 'titulo': 'Probado con 14 casos', 'escenas': [
+        {'t': 'gancho', 'titular': '¿Cómo saber si **calcula bien?**',
+         'voz': '¿Cómo saber si una nómina calcula bien?'},
+        {'t': 'cap', 'img': 'c02_03_casos_100', 'titular': '**14 casos** de prueba',
+         'voz': 'La nuestra se prueba con catorce casos de laboratorio, comparados contra la norma.'},
+        {'t': 'cifra', 'cifra': '2 573', 'titular': 'celdas comparadas: **100 %**',
+         'voz': 'Dos mil quinientas setenta y tres celdas, todas conformes.'},
+    ]},
+]
