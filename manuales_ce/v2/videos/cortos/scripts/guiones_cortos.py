@@ -90,7 +90,7 @@ CORTOS = [
     {'id': 'S11', 'titulo': 'Liquidación por cese completa', 'escenas': [
         {'t': 'gancho', 'titular': 'Liquidaciones **completas**',
          'voz': '¿Se va un trabajador?'},
-        {'t': 'cap', 'img': 'c16_01_carmen_liquidacion_calculo', 'focos': ['Neto a pagar'], 'titular': 'Truncas **con sus aportes**',
+        {'t': 'cap', 'img': 'c16_01_carmen_liquidacion_calculo', 'focos': ['Neto de liquidacion'], 'titular': 'Truncas **con sus aportes**',
          'voz': 'La liquidación calcula vacaciones, gratificación y CTS truncas, con sus aportes.'},
         {'t': 'cap', 'img': 'c16_02_indemnizacion_calculo', 'titular': 'Indemnización y **renta de quinta**',
          'voz': 'Y si corresponde, la indemnización por despido arbitrario y la renta de quinta al cese.'},
