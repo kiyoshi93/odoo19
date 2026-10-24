@@ -33,7 +33,26 @@ contenido.push(
   new Paragraph({ children: [new TextRun({ text: 'Contenido', bold: true, size: 32, color: h.COLOR })], spacing: { after: 200 } }),
   'INDICE',
 );
+// Referencias a la serie de videos: un recuadro bajo el título de cada capítulo que tiene episodio
+const EPISODIOS = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'videos', 'episodios.json'), 'utf8'));
+const tituloOriginal = h.h1;
+h.h1 = (texto) => {
+  const m = texto.match(/^(\d+)\.|^(Anexo [A-Z])\./);
+  const clave = m && (m[1] || m[2]);
+  const eps = clave ? EPISODIOS.filter((e) => e.capitulos.includes(clave)) : [];
+  if (!eps.length) return tituloOriginal(texto);
+  return [tituloOriginal(texto), h.nota(eps.map((e) => `**${e.id} · ${e.titulo}** (${e.duracion} min)`).join(' · ') + '. Ver el Anexo F.', 'video')];
+};
 for (const b of bloques) contenido.push(...require(`./capitulos/bloque${b}.js`)(h));
+if (bloques.includes('4')) {
+  contenido.push(
+    h.h1('Anexo F. Serie de videos'),
+    h.p('La serie acompaña al manual con las **mismas cifras y capturas**. Cada episodio abre con la versión de los módulos y el capítulo que cubre, y cierra con la cifra clave. Narración en español con subtítulos; voz del equipo de soporte de SYSTION.'),
+    h.tabla(['Ep.', 'Título', 'Cap.', 'Caso', 'Dur.', 'Archivo'],
+      EPISODIOS.map((e) => [e.id, e.titulo, e.capitulos.join(', '), e.caso || '—', e.duracion, e.archivo]), [620, 2500, 900, 1500, 680, 3438]),
+    h.nota('Los archivos se entregan en la carpeta «Videos_Nomina_PE_v2_SYSTION», cada uno con su archivo de subtítulos (.srt) del mismo nombre.', 'nota'),
+  );
+}
 
 const entradas = h.indice.map(({ nivel, texto, id }) => new Paragraph({
   spacing: { before: nivel === 1 ? 120 : 0, after: nivel === 1 ? 40 : 20 }, indent: { left: nivel === 1 ? 0 : 400 },

@@ -1,0 +1,290 @@
+[
+ {
+  "id": "E00",
+  "titulo": "Nómina peruana para Odoo 19 Community: versión 2",
+  "capitulos": [
+   "1",
+   "31"
+  ],
+  "caso": null,
+  "archivo": "E00_Nomina_Peruana_Para_Odoo_19_Community_Version_2.mp4",
+  "duracion": "1:07"
+ },
+ {
+  "id": "E01",
+  "titulo": "Resumen: la nómina de un mes, del alta al PLAME",
+  "capitulos": [
+   "1",
+   "11",
+   "27"
+  ],
+  "caso": "NOMINA",
+  "archivo": "E01_Resumen_La_Nomina_De_Un_Mes_Del_Alta_Al_Plame.mp4",
+  "duracion": "4:42"
+ },
+ {
+  "id": "E02",
+  "titulo": "Instalación, actualización y laboratorio",
+  "capitulos": [
+   "2",
+   "3",
+   "Anexo E"
+  ],
+  "caso": "los 14 casos",
+  "archivo": "E02_Instalacion_Actualizacion_Y_Laboratorio.mp4",
+  "duracion": "1:48"
+ },
+ {
+  "id": "E03",
+  "titulo": "Parámetros legales con vigencia",
+  "capitulos": [
+   "4",
+   "26"
+  ],
+  "caso": "NOMINA (hoja Parámetros)",
+  "archivo": "E03_Parametros_Legales_Con_Vigencia.mp4",
+  "duracion": "2:10"
+ },
+ {
+  "id": "E04",
+  "titulo": "Maestros SUNAT, seguros y mapeo contable",
+  "capitulos": [
+   "5",
+   "6",
+   "7"
+  ],
+  "caso": null,
+  "archivo": "E04_Maestros_Sunat_Seguros_Y_Mapeo_Contable.mp4",
+  "duracion": "1:59"
+ },
+ {
+  "id": "E05",
+  "titulo": "Alta del trabajador y su contrato",
+  "capitulos": [
+   "8",
+   "9"
+  ],
+  "caso": "TREGISTRO (fichas)",
+  "archivo": "E05_Alta_Del_Trabajador_Y_Su_Contrato.mp4",
+  "duracion": "2:10"
+ },
+ {
+  "id": "E06",
+  "titulo": "La boleta: cálculo, impresión y asiento",
+  "capitulos": [
+   "10",
+   "7",
+   "26"
+  ],
+  "caso": "BOLETA",
+  "archivo": "E06_La_Boleta_Calculo_Impresion_Y_Asiento.mp4",
+  "duracion": "2:04"
+ },
+ {
+  "id": "E07",
+  "titulo": "El lote mensual y las rectificativas",
+  "capitulos": [
+   "11",
+   "25"
+  ],
+  "caso": "NOMINA",
+  "archivo": "E07_El_Lote_Mensual_Y_Las_Rectificativas.mp4",
+  "duracion": "1:48"
+ },
+ {
+  "id": "E08",
+  "titulo": "Aportes: ONP, AFP, EsSalud y EPS",
+  "capitulos": [
+   "12"
+  ],
+  "caso": "NOMINA",
+  "archivo": "E08_Aportes_Onp_Afp_Essalud_Y_Eps.mp4",
+  "duracion": "1:46"
+ },
+ {
+  "id": "E09",
+  "titulo": "Renta de 5.ª categoría de punta a punta",
+  "capitulos": [
+   "13",
+   "16"
+  ],
+  "caso": "Lucía (recorrido) y CESE",
+  "archivo": "E09_Renta_De_5_Categoria_De_Punta_A_Punta.mp4",
+  "duracion": "1:47"
+ },
+ {
+  "id": "E10",
+  "titulo": "Vacaciones y feriados",
+  "capitulos": [
+   "17",
+   "18"
+  ],
+  "caso": "NOMINA",
+  "archivo": "E10_Vacaciones_Y_Feriados.mp4",
+  "duracion": "2:11"
+ },
+ {
+  "id": "E11",
+  "titulo": "Asistencias: tardanzas, faltas y feriados",
+  "capitulos": [
+   "19"
+  ],
+  "caso": "ASISTENCIA",
+  "archivo": "E11_Asistencias_Tardanzas_Faltas_Y_Feriados.mp4",
+  "duracion": "2:09"
+ },
+ {
+  "id": "E12",
+  "titulo": "Cambios de contrato dentro del mes",
+  "capitulos": [
+   "21"
+  ],
+  "caso": "AUMENTO",
+  "archivo": "E12_Cambios_De_Contrato_Dentro_Del_Mes.mp4",
+  "duracion": "1:24"
+ },
+ {
+  "id": "E13",
+  "titulo": "Licencias sin goce y permisos por horas",
+  "capitulos": [
+   "22"
+  ],
+  "caso": "AUMENTO y escenario del manual",
+  "archivo": "E13_Licencias_Sin_Goce_Y_Permisos_Por_Horas.mp4",
+  "duracion": "1:28"
+ },
+ {
+  "id": "E14",
+  "titulo": "Subsidios: descanso médico y maternidad",
+  "capitulos": [
+   "23"
+  ],
+  "caso": "SUBSIDIOS",
+  "archivo": "E14_Subsidios_Descanso_Medico_Y_Maternidad.mp4",
+  "duracion": "1:30"
+ },
+ {
+  "id": "E15",
+  "titulo": "Gratificaciones y CTS",
+  "capitulos": [
+   "14",
+   "15"
+  ],
+  "caso": "NOMINA y BANCOS",
+  "archivo": "E15_Gratificaciones_Y_Cts.mp4",
+  "duracion": "1:40"
+ },
+ {
+  "id": "E16",
+  "titulo": "Liquidación por cese e indemnización",
+  "capitulos": [
+   "16"
+  ],
+  "caso": "NOMINA, CESE e INDEMNIZACION",
+  "archivo": "E16_Liquidacion_Por_Cese_E_Indemnizacion.mp4",
+  "duracion": "1:45"
+ },
+ {
+  "id": "E17",
+  "titulo": "Microempresa",
+  "capitulos": [
+   "24"
+  ],
+  "caso": "MICRO",
+  "archivo": "E17_Microempresa.mp4",
+  "duracion": "1:11"
+ },
+ {
+  "id": "E18",
+  "titulo": "Seguro Vida Ley",
+  "capitulos": [
+   "6",
+   "12"
+  ],
+  "caso": "VIDALEY",
+  "archivo": "E18_Seguro_Vida_Ley.mp4",
+  "duracion": "1:15"
+ },
+ {
+  "id": "E19",
+  "titulo": "Pago a bancos: BCP, Interbank y Scotiabank",
+  "capitulos": [
+   "27",
+   "15"
+  ],
+  "caso": "BANCOS",
+  "archivo": "E19_Pago_A_Bancos_Bcp_Interbank_Y_Scotiabank.mp4",
+  "duracion": "1:37"
+ },
+ {
+  "id": "E20",
+  "titulo": "Pago de la planilla y entrega de boletas",
+  "capitulos": [
+   "28"
+  ],
+  "caso": "escenario del manual (lote de noviembre)",
+  "archivo": "E20_Pago_De_La_Planilla_Y_Entrega_De_Boletas.mp4",
+  "duracion": "1:19"
+ },
+ {
+  "id": "E21",
+  "titulo": "PLAME, AFPnet y planilla de sueldos",
+  "capitulos": [
+   "27"
+  ],
+  "caso": "PLAME",
+  "archivo": "E21_Plame_Afpnet_Y_Planilla_De_Sueldos.mp4",
+  "duracion": "1:00"
+ },
+ {
+  "id": "E22",
+  "titulo": "Horas extra, otras entradas y utilidades",
+  "capitulos": [
+   "20"
+  ],
+  "caso": "UTILIDADES",
+  "archivo": "E22_Horas_Extra_Otras_Entradas_Y_Utilidades.mp4",
+  "duracion": "1:29"
+ },
+ {
+  "id": "E23",
+  "titulo": "T-Registro I: altas y bajas",
+  "capitulos": [
+   "29"
+  ],
+  "caso": "TREGISTRO",
+  "archivo": "E23_T_Registro_I_Altas_Y_Bajas.mp4",
+  "duracion": "1:17"
+ },
+ {
+  "id": "E24",
+  "titulo": "T-Registro II: modificaciones y derechohabientes",
+  "capitulos": [
+   "29"
+  ],
+  "caso": "TREGISTRO",
+  "archivo": "E24_T_Registro_Ii_Modificaciones_Y_Derechohabientes.mp4",
+  "duracion": "1:18"
+ },
+ {
+  "id": "E25",
+  "titulo": "Recibos por honorarios y PLAME de 4.ª",
+  "capitulos": [
+   "30"
+  ],
+  "caso": "PLAME-RXH",
+  "archivo": "E25_Recibos_Por_Honorarios_Y_Plame_De_4.mp4",
+  "duracion": "1:08"
+ },
+ {
+  "id": "E26",
+  "titulo": "Cierre mensual y anual",
+  "capitulos": [
+   "32",
+   "Anexo E"
+  ],
+  "caso": null,
+  "archivo": "E26_Cierre_Mensual_Y_Anual.mp4",
+  "duracion": "1:18"
+ }
+]

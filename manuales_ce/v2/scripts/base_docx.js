@@ -46,6 +46,7 @@ function nota(texto, tipo = 'nota') {
     implementador: { relleno: 'F3EEF2', borde: COLOR, etiqueta: 'Para implementadores: ' },
     caso: { relleno: 'EEF7EE', borde: '3C8D40', etiqueta: 'Compruébelo con el laboratorio: ' },
     limite: { relleno: 'F7EEEE', borde: 'B23B3B', etiqueta: 'Límite: ' },
+    video: { relleno: 'FFF6E5', borde: 'D9861C', etiqueta: '▶ Video: ' },
   }[tipo];
   return new Paragraph({
     children: [new TextRun({ text: e.etiqueta, bold: true, color: e.borde }), ...corridas(texto)],
