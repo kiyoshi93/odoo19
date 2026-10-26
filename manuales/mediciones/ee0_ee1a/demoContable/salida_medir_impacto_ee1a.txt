@@ -1,0 +1,49 @@
+/home/ubuntu/.pyenv/versions/odoo19/bin/python3 /opt/odoo19/odoo/odoo-bin shell -c /etc/odoo19.conf -d demoContable --logfile=/dev/null < medir_impacto_ee1a.py
+== módulos
+  hr_payroll                             installed   19.0.1.0
+  solse_pe_payroll                       installed   19.0.1.1.4
+  solse_pe_payroll_asistencia_ee         installed   19.0.1.0.0
+  solse_pe_payroll_asistencia_ee_demo    installed   19.0.1.2.0
+  solse_pe_payroll_demo                  installed   19.0.1.5.2
+  solse_pe_payroll_renta5                installed   19.0.1.0.0
+  solse_pe_plame_ee_demo                 installed   19.0.1.1.0
+== V-01 · parámetros PE: 24
+  por tipo de valor: {'monto': 5, 'tasa': 16, 'comision_afp': 1, 'tramos_renta': 1, 'factores_regimen': 1}
+  vigencias que no cumplen su tipo (aviso del tablero): 0
+  aviso del tablero: Vigencias de parámetros de Nómina PE con un valor mal escrito
+== C-02 · vigencias
+  pe_rmv                 2025-01-01  1130           solse_pe_payroll.param_pe_rmv_2025 (noupdate)
+  pe_rmv                 2026-10-01  1230           solse_pe_payroll.param_pe_rmv_2026_10 (noupdate)
+  pe_asig_familiar       2025-01-01  113.0          solse_pe_payroll.param_pe_asig_familiar_2025 (noupdate)
+  pe_asig_familiar       2026-10-01  123.0          solse_pe_payroll.param_pe_asig_familiar_2026_10 (noupdate)
+  pe_afp_rma             2025-01-01  12027.91       solse_pe_payroll.param_pe_afp_rma_2025t1 (noupdate)
+  pe_afp_rma             2025-04-01  12137.47       solse_pe_payroll.param_pe_afp_rma_2025t2 (noupdate)
+  pe_afp_rma             2025-07-01  12184.88       solse_pe_payroll.param_pe_afp_rma_2025t3 (noupdate)
+  pe_afp_rma             2025-10-01  12178.56       solse_pe_payroll.param_pe_afp_rma_2025t4 (noupdate)
+  pe_afp_rma             2026-01-01  12209.11       solse_pe_payroll.param_pe_afp_rma_2026t1 (noupdate)
+  pe_afp_rma             2026-04-01  12598.91       solse_pe_payroll.param_pe_afp_rma_2026t2 (noupdate)
+  pe_afp_rma             2026-07-01  12672.65       solse_pe_payroll.param_pe_afp_rma_2026t3 (noupdate)
+  pe_afp_rma             2026-10-01  12732.70       solse_pe_payroll.param_pe_afp_rma_2026t4 (noupdate)
+  pe_afp_comision_flujo  2025-01-01  (76 caracteres) solse_pe_payroll.param_pe_afp_comision_flujo_2025 (noupdate)
+  pe_afp_comision_flujo  2026-01-01  (76 caracteres) solse_pe_payroll.param_pe_afp_comision_flujo_v (noupdate)
+  pe_rmv al 2026-10-31 = 1230
+  pe_asig_familiar al 2026-10-31 = 123.0
+  pe_afp_rma al 2026-03-31 = 12209.11
+  pe_afp_rma al 2026-10-26 = 12732.7
+== compañías: 5 de Perú
+-- Empresa 01 SAC (id 2) · boletas 0 {}
+   desde octubre de 2026: 0 {} · con ASF_001 = 113,00 (AF de la RMV 1 130): 0 {}
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Comercial E.I.R.L. (id 4) · compañía de laboratorio · boletas 0 {}
+   desde octubre de 2026: 0 {} · con ASF_001 = 113,00 (AF de la RMV 1 130): 0 {}
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Principal S.A.C. (id 3) · compañía de laboratorio · boletas 0 {}
+   desde octubre de 2026: 0 {} · con ASF_001 = 113,00 (AF de la RMV 1 130): 0 {}
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Servicios S.A.C. (id 5) · compañía de laboratorio · boletas 40 {'draft': 5, 'validated': 35}
+   desde octubre de 2026: 0 {} · con ASF_001 = 113,00 (AF de la RMV 1 130): 0 {}
+   borradores desde 2025 recalculados en un savepoint: 5 · cambiarían, por mes: ninguno · sin cambio 5 · nunca calculados 0 · fallan: ninguno
+-- Empresa 02 SAC (id 1) · boletas 0 {}
+   desde octubre de 2026: 0 {} · con ASF_001 = 113,00 (AF de la RMV 1 130): 0 {}
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+== fin (solo lectura)
