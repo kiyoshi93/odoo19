@@ -1,0 +1,69 @@
+== módulos
+  hr_payroll                   installed   19.0.1.0
+  hr_payroll_holidays          installed   19.0.1.0
+  solse_pe_payroll             installed   19.0.1.5.3
+  solse_pe_payroll_demo        installed   19.0.1.5.3
+  solse_pe_payroll_renta5      installed   19.0.1.0.0
+== C-31 · «Sin pagar» → tipo de entrada LEAVE90
+  Nómina Mensual Empleados     no pagados: FALTA, FALTA_PARCIAL, LEAVE90, VACPE100
+  Nómina Semanal Obreros       no pagados: FALTA, FALTA_PARCIAL, LEAVE90, VACPE100
+  parámetro solse_pe_payroll.c31_sin_goce_no_pagado = '5,6'
+== C-07 · tipos de estructura PE
+  Régimen General          secuencia 10  estructura por defecto: NME
+  Obreros - Semanal        secuencia 20  estructura por defecto: NSO
+  Quincenal - Adelanto     secuencia 30  estructura por defecto: NME
+  Beneficios Sociales      secuencia 40  estructura por defecto: —
+  General                  secuencia 90  estructura por defecto: —
+  parámetro solse_pe_payroll.c07_estructura_por_defecto = '5,6,7,8'
+== compañías: 5 de Perú
+-- Empresa 01 SAC (id 2) · C-23 «Interbank: CTS en cuenta de otro banco»: omitir
+   versiones por tipo de estructura: {'Employee': 3, 'General': 1}
+   boletas: 0 {} · sin estructura 0 · regulares 0
+   entradas de trabajo por estado: {}
+   ausencias «Sin pagar» aprobadas desde 2025: 0 (por horas o medio día 0)
+   cuentas de trabajadores por uso y banco: {}
+   H-2 · trabajadores activos con cuentas vinculadas en la ficha: 0 de 4 · el TXT cambia de cuenta: ninguno
+   H-5 · boletas regulares validadas: 0 · con entradas en borrador (validadas antes del -u): 0
+   H-4 · ausencias aprobadas «por diferir» (payslip_state blocked): 0 · responsable de diferidas: sin configurar (va a admin)
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Comercial E.I.R.L. (id 4) · laboratorio · C-23 «Interbank: CTS en cuenta de otro banco»: omitir
+   versiones por tipo de estructura: {}
+   boletas: 0 {} · sin estructura 0 · regulares 0
+   entradas de trabajo por estado: {}
+   ausencias «Sin pagar» aprobadas desde 2025: 0 (por horas o medio día 0)
+   cuentas de trabajadores por uso y banco: {}
+   H-2 · trabajadores activos con cuentas vinculadas en la ficha: 0 de 0 · el TXT cambia de cuenta: ninguno
+   H-5 · boletas regulares validadas: 0 · con entradas en borrador (validadas antes del -u): 0
+   H-4 · ausencias aprobadas «por diferir» (payslip_state blocked): 0 · responsable de diferidas: sin configurar (va a admin)
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Principal S.A.C. (id 3) · laboratorio · C-23 «Interbank: CTS en cuenta de otro banco»: omitir
+   versiones por tipo de estructura: {}
+   boletas: 0 {} · sin estructura 0 · regulares 0
+   entradas de trabajo por estado: {}
+   ausencias «Sin pagar» aprobadas desde 2025: 0 (por horas o medio día 0)
+   cuentas de trabajadores por uso y banco: {}
+   H-2 · trabajadores activos con cuentas vinculadas en la ficha: 0 de 0 · el TXT cambia de cuenta: ninguno
+   H-5 · boletas regulares validadas: 0 · con entradas en borrador (validadas antes del -u): 0
+   H-4 · ausencias aprobadas «por diferir» (payslip_state blocked): 0 · responsable de diferidas: sin configurar (va a admin)
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+-- SOLSE Demo Servicios S.A.C. (id 5) · laboratorio · C-23 «Interbank: CTS en cuenta de otro banco»: omitir
+   versiones por tipo de estructura: {'Régimen General': 9, 'Quincenal - Adelanto': 2, 'Obreros - Semanal': 2}
+   boletas: 40 {'draft': 5, 'validated': 35} · sin estructura 0 · regulares 25
+   entradas de trabajo por estado: {'draft': 507}
+   ausencias «Sin pagar» aprobadas desde 2025: 0 (por horas o medio día 0)
+   cuentas de trabajadores por uso y banco: {('sueldo', 'Banco De Credito Del Peru'): 13, ('cts', 'INTERBANK'): 13}
+   H-2 · trabajadores activos con cuentas vinculadas en la ficha: 0 de 13 · el TXT cambia de cuenta: ninguno
+   H-5 · boletas regulares validadas: 21 · con entradas en borrador (validadas antes del -u): 21
+   H-4 · ausencias aprobadas «por diferir» (payslip_state blocked): 0 · responsable de diferidas: sin configurar (va a admin)
+   borradores desde 2025 recalculados en un savepoint: 5 · cambiarían, por mes: ninguno · sin cambio 5 · nunca calculados 0 · fallan: ninguno
+-- Empresa 02 SAC (id 1) · C-23 «Interbank: CTS en cuenta de otro banco»: omitir
+   versiones por tipo de estructura: {'Employee': 3}
+   boletas: 0 {} · sin estructura 0 · regulares 0
+   entradas de trabajo por estado: {}
+   ausencias «Sin pagar» aprobadas desde 2025: 0 (por horas o medio día 0)
+   cuentas de trabajadores por uso y banco: {}
+   H-2 · trabajadores activos con cuentas vinculadas en la ficha: 0 de 3 · el TXT cambia de cuenta: ninguno
+   H-5 · boletas regulares validadas: 0 · con entradas en borrador (validadas antes del -u): 0
+   H-4 · ausencias aprobadas «por diferir» (payslip_state blocked): 0 · responsable de diferidas: sin configurar (va a admin)
+   borradores desde 2025 recalculados en un savepoint: 0 · cambiarían, por mes: ninguno · sin cambio 0 · nunca calculados 0 · fallan: ninguno
+== fin (solo lectura)

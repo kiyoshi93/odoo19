@@ -1,0 +1,1474 @@
+2026-10-27 16:03:41,106 126435 WARNING ? odoo.tools.config: option default_productivity_apps reads 'False' in the config file at /etc/odoo19.conf but isn't a boolean option, skip 
+2026-10-27 16:03:41,106 126435 WARNING ? odoo.tools.config: unknown option 'longpolling_port' in the config file at /etc/odoo19.conf, option stored as-is, without parsing 
+2026-10-27 16:03:41,106 126435 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-10-27 16:03:41,107 126435 INFO ? odoo: Odoo version 19.0 
+2026-10-27 16:03:41,107 126435 INFO ? odoo: Using configuration file at /etc/odoo19.conf 
+2026-10-27 16:03:41,107 126435 INFO ? odoo: addons paths: _NamespacePath(['/opt/odoo19/odoo/odoo/addons', '/opt/odoo19/data_dir/addons/19.0', '/opt/odoo19/odoo/addons', '/opt/odoo19/solse_peru_cpe', '/opt/odoo19/solse_addons', '/opt/odoo19/solse_peru_contabilidad', '/opt/odoo19/solse_erp_dependencias']) 
+2026-10-27 16:03:41,107 126435 INFO ? odoo: database: odoo19@localhost:5432 
+2026-10-27 16:03:41,876 126435 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069 
+2026-10-27 16:03:41,934 126435 INFO demoContable odoo.modules.loading: loading 1 modules... 
+2026-10-27 16:03:41,948 126435 INFO demoContable odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-10-27 16:03:42,004 126435 INFO demoContable odoo.modules.loading: updating modules list 
+2026-10-27 16:03:42,012 126435 INFO demoContable odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2026-10-27 16:03:46,565 126435 INFO demoContable odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Nómina Peruana - Núcleo (Enterprise)', 'Nómina Peruana - Datos de prueba (Enterprise)'] to user __system__ #1 via n/a 
+2026-10-27 16:03:46,565 126435 INFO demoContable odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Nómina Peruana - Núcleo (Enterprise)', 'Nómina Peruana - Datos de prueba (Enterprise)'] to user __system__ #1 via n/a 
+2026-10-27 16:03:50,499 126435 INFO demoContable odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2026-10-27 16:03:51,824 126435 WARNING demoContable odoo.modules.module_graph: module solse_multi_barcodes: not installable, skipped 
+2026-10-27 16:03:51,828 126435 WARNING demoContable odoo.modules.module_graph: module solse_multi_barcodes_pricelist: some depends are not loaded (solse_multi_barcodes), skipped 
+2026-10-27 16:03:51,828 126435 WARNING demoContable odoo.modules.module_graph: module solse_pricelist_item_search: some depends are not loaded (solse_multi_barcodes_pricelist), skipped 
+2026-10-27 16:03:51,839 126435 INFO demoContable odoo.modules.loading: loading 433 modules... 
+2026-10-27 16:03:51,857 126435 WARNING demoContable odoo.addons.attachment_indexation.models.ir_attachment: Attachment indexation of PDF documents is unavailable because the 'pdfminer.six' Python library cannot be found on the system. You may install it from https://pypi.org/project/pdfminer.six/ (e.g. `pip3 install pdfminer.six`) 
+2026-10-27 16:03:52,418 126435 INFO demoContable odoo.addons.queue_job.post_load: Apply Request._get_session_and_dbname monkey patch to capture db from request with multiple databases 
+2026-10-27 16:03:53,445 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:53,456 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:53,766 126435 WARNING demoContable py.warnings: /opt/odoo19/solse_addons/solse_ubicacion_dashboard/controllers/dashboard.py:467: DeprecationWarning: Since 19.0, @route(type='json') is a deprecated alias to @route(type='jsonrpc')
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo19/odoo/odoo/modules/module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "/opt/odoo19/solse_addons/solse_ubicacion_dashboard/__init__.py", line 1, in <module>
+    from . import controllers
+  File "/opt/odoo19/solse_addons/solse_ubicacion_dashboard/controllers/__init__.py", line 1, in <module>
+    from . import dashboard
+  File "/opt/odoo19/solse_addons/solse_ubicacion_dashboard/controllers/dashboard.py", line 467, in <module>
+    class UbicacionDashboard(http.Controller):
+ 
+2026-10-27 16:03:54,116 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,117 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,375 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,375 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,375 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,412 126435 WARNING demoContable py.warnings: /opt/odoo19/solse_addons/solse_migracion_data/controllers/leer_registro.py:12: DeprecationWarning: Since 19.0, @route(type='json') is a deprecated alias to @route(type='jsonrpc')
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo19/odoo/odoo/modules/module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "/opt/odoo19/solse_addons/solse_migracion_data/__init__.py", line 6, in <module>
+    from . import controllers
+  File "/opt/odoo19/solse_addons/solse_migracion_data/controllers/__init__.py", line 6, in <module>
+    from . import leer_registro
+  File "/opt/odoo19/solse_addons/solse_migracion_data/controllers/leer_registro.py", line 12, in <module>
+    class MainController(http.Controller):
+ 
+2026-10-27 16:03:54,680 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,712 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,712 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,713 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,713 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:54,713 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:55,213 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:55,213 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:03:55,238 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/osv/__init__.py:4: DeprecationWarning: Since 19.0, odoo.osv is deprecated use odoo.fields.Domain
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo19/odoo/odoo/modules/module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "/opt/odoo19/solse_peru_cpe/solse_pe_edi/__init__.py", line 6, in <module>
+    from . import models
+  File "/opt/odoo19/solse_peru_cpe/solse_pe_edi/models/__init__.py", line 13, in <module>
+    from . import res_partner
+  File "/opt/odoo19/solse_peru_cpe/solse_pe_edi/models/res_partner.py", line 7, in <module>
+    from odoo.osv import expression
+  File "/opt/odoo19/odoo/odoo/osv/__init__.py", line 4, in <module>
+    warnings.warn("Since 19.0, odoo.osv is deprecated use odoo.fields.Domain", DeprecationWarning)
+ 
+2026-10-27 16:03:55,250 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll (366/433) 
+2026-10-27 16:03:56,158 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:03:56,195 126435 WARNING demoContable odoo.fields: Field stock.location.solse_marcado_vacio: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:03:56,244 126435 WARNING demoContable odoo.fields: Translated stored related field (solse.carga.precios.linea.valor_talla_nombre) will not be computed correctly in all languages 
+2026-10-27 16:03:56,268 126435 WARNING demoContable odoo.fields: Field solse.lista.compra.line.estado: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:03:56,302 126435 WARNING demoContable odoo.fields: Field lost.sale.entry.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:03:56,526 126435 INFO demoContable odoo.modules.migration: module solse_pe_payroll: Running upgrade [>0.0.0] pre-migrate 
+2026-10-27 16:03:56,547 126435 INFO demoContable odoo.upgrade.solse_pe_payroll.0.0.0.pre-migrate: C-02: 0 vigencia(s) del cliente adoptada(s). 
+2026-10-27 16:03:56,808 126435 INFO demoContable odoo.registry: module solse_pe_payroll: creating or updating database tables 
+2026-10-27 16:03:56,963 126435 WARNING demoContable odoo.addons.base.models.ir_model: Two fields (solse_vso_largo_modelo, solse_traslado_largo_modelo) of res.company() have the same label: Largo del código de modelo. [Modules: solse_pos_picking_asistido and solse_traslado_ubicacion] 
+2026-10-27 16:03:57,295 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 194, in load_module_graph
+    registry.init_models(env.cr, model_names, {'module': package.name}, update_operation == 'install')
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 797, in init_models
+    env.flush_all()
+  File "/opt/odoo19/odoo/odoo/orm/environments.py", line 383, in flush_all
+    self._recompute_all()
+  File "/opt/odoo19/odoo/odoo/orm/environments.py", line 376, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 6979, in _recompute_field
+    field.recompute(records)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1892, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1862, in apply_except_missing
+    func(records)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:03:57,296 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 194, in load_module_graph
+    registry.init_models(env.cr, model_names, {'module': package.name}, update_operation == 'install')
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 797, in init_models
+    env.flush_all()
+  File "/opt/odoo19/odoo/odoo/orm/environments.py", line 383, in flush_all
+    self._recompute_all()
+  File "/opt/odoo19/odoo/odoo/orm/environments.py", line 376, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "/opt/odoo19/odoo/odoo/orm/models.py", line 6979, in _recompute_field
+    field.recompute(records)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1892, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1862, in apply_except_missing
+    func(records)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:03:57,321 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:03:57,326 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+<string>:6: (ERROR/3) Unexpected indentation.
+<string>:9: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
+2026-10-27 16:03:57,367 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/security/ir.model.access.csv 
+2026-10-27 16:03:57,433 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/data.xml 
+2026-10-27 16:03:57,448 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/academic_degree_data.xml 
+2026-10-27 16:03:57,466 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/employee_regime_data.xml 
+2026-10-27 16:03:57,494 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/type_contract_data.xml 
+2026-10-27 16:03:57,517 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/low_reason_data.xml 
+2026-10-27 16:03:57,535 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/data_relative_relation.xml 
+2026-10-27 16:03:57,543 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/pension_system_data.xml 
+2026-10-27 16:03:57,558 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_employee_category_data.xml 
+2026-10-27 16:03:57,564 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/work.occupation.csv 
+2026-10-27 16:03:58,820 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/plame.lines.csv 
+2026-10-27 16:03:58,957 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_rule_parameter_data.xml 
+2026-10-27 16:03:59,040 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_payroll_dashboard_warning_pe_data.xml 
+2026-10-27 16:03:59,045 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_category_data.xml 
+2026-10-27 16:03:59,099 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_payroll_structure_data.xml 
+2026-10-27 16:03:59,113 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_payroll_structure_adicionales_data.xml 
+2026-10-27 16:03:59,124 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque1_data.xml 
+2026-10-27 16:03:59,229 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque2_data.xml 
+2026-10-27 16:03:59,269 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque3_data.xml 
+2026-10-27 16:03:59,323 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque4_data.xml 
+2026-10-27 16:03:59,344 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque5_data.xml 
+2026-10-27 16:03:59,385 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque6_data.xml 
+2026-10-27 16:03:59,407 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque7_data.xml 
+2026-10-27 16:03:59,459 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque8_data.xml 
+2026-10-27 16:03:59,476 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque9_data.xml 
+2026-10-27 16:03:59,533 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_bloque10_data.xml 
+2026-10-27 16:03:59,568 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/maestros_views.xml 
+2026-10-27 16:03:59,724 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/rule_parameter_views.xml 
+2026-10-27 16:03:59,801 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/hr_version_views.xml 
+2026-10-27 16:03:59,846 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/hr_employee_views.xml 
+2026-10-27 16:04:00,090 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/mapeo_contable_views.xml 
+2026-10-27 16:04:00,110 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/res_company_views.xml 
+2026-10-27 16:04:00,162 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/asignar_cuentas_views.xml 
+2026-10-27 16:04:00,185 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/views/menu_views.xml 
+2026-10-27 16:04:00,284 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/report/boleta_pago_report.xml 
+2026-10-27 16:04:00,309 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/report/planilla_report.xml 
+2026-10-27 16:04:00,326 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/planilla_views.xml 
+2026-10-27 16:04:00,349 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/plame_views.xml 
+2026-10-27 16:04:00,378 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/bancos_views.xml 
+2026-10-27 16:04:00,412 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/afpnet_views.xml 
+2026-10-27 16:04:00,439 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/wizard/utilidades_views.xml 
+2026-10-27 16:04:00,463 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/hr_salary_rule_plame_extra_data.xml 
+2026-10-27 16:04:00,496 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll/data/inicializar_function.xml 
+2026-10-27 16:04:00,572 126435 INFO demoContable odoo.addons.solse_pe_payroll.models.inicializar_estructuras: Nómina PE (C-31): «Unpaid» (LEAVE90) no se paga en «Nómina Mensual Empleados» ni en «Nómina Semanal Obreros». 
+2026-10-27 16:04:00,587 126435 INFO demoContable odoo.addons.solse_pe_payroll.models.inicializar_estructuras: Nómina PE (C-07): estructura por defecto en «Régimen General» → NME, «Quincenal - Adelanto» → NME, «Obreros - Semanal» → NSO, «General» → ninguna. 
+2026-10-27 16:04:01,179 126435 INFO demoContable odoo.addons.solse_pe_payroll.models.inicializar_estructuras: Nómina PE: inicialización de estructuras completada. 
+2026-10-27 16:04:01,310 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll: no translation for language es_PE 
+2026-10-27 16:04:01,747 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll loaded in 6.50s, 2897 queries (+2897 other) 
+2026-10-27 16:04:01,822 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:04:01,823 126435 WARNING demoContable odoo.registry: Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model. 
+2026-10-27 16:04:01,901 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll_asistencia_ee (392/433) 
+2026-10-27 16:04:02,250 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:02,605 126435 INFO demoContable odoo.registry: module solse_pe_payroll_asistencia_ee: creating or updating database tables 
+2026-10-27 16:04:02,635 126435 WARNING demoContable odoo.addons.base.models.ir_model: Two fields (solse_vso_largo_modelo, solse_traslado_largo_modelo) of res.company() have the same label: Largo del código de modelo. [Modules: solse_pos_picking_asistido and solse_traslado_ubicacion] 
+2026-10-27 16:04:02,733 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:02,733 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:02,733 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:02,734 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:02,734 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:02,734 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:02,734 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:02,740 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:02,752 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:02,752 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:02,754 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:02,755 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+<string>:16: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
+<string>:18: (ERROR/3) Unexpected indentation.
+2026-10-27 16:04:02,932 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_asistencia_ee/data/asistencia_data.xml 
+2026-10-27 16:04:03,569 126435 INFO demoContable odoo.addons.solse_pe_payroll.models.inicializar_estructuras: Nómina PE: inicialización de estructuras completada. 
+2026-10-27 16:04:03,570 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_asistencia_ee/views/hr_payslip_views.xml 
+2026-10-27 16:04:03,683 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_asistencia_ee/views/res_company_views.xml 
+2026-10-27 16:04:03,756 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll_asistencia_ee: no translation for language es_PE 
+2026-10-27 16:04:03,884 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll_asistencia_ee loaded in 1.98s, 756 queries (+756 other) 
+2026-10-27 16:04:03,884 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll_catalogo (393/433) 
+2026-10-27 16:04:03,976 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:03,976 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:03,978 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:03,978 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:04,194 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_catalogo/views/menu_views.xml 
+2026-10-27 16:04:04,215 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll_catalogo: no translation for language es_PE 
+2026-10-27 16:04:04,336 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll_catalogo loaded in 0.45s, 35 queries (+35 other) 
+2026-10-27 16:04:04,337 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll_demo (394/433) 
+2026-10-27 16:04:04,467 126435 INFO demoContable odoo.registry: module solse_pe_payroll_demo: creating or updating database tables 
+2026-10-27 16:04:04,503 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:04,503 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:04,503 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:04,503 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:04,503 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:04,504 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:04,504 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:04,508 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:04,508 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:04,509 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:04,509 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:04,509 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:04,509 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:04,517 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:04,518 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:04,519 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:04,520 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:04,690 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_demo/security/ir.model.access.csv 
+2026-10-27 16:04:04,700 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_demo/wizard/regenerar_views.xml 
+2026-10-27 16:04:04,771 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_demo/views/res_company_views.xml 
+2026-10-27 16:04:04,854 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll_demo: no translation for language es_PE 
+2026-10-27 16:04:05,008 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll_demo loaded in 0.67s, 131 queries (+131 other) 
+2026-10-27 16:04:05,009 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll_renta5 (395/433) 
+2026-10-27 16:04:05,133 126435 INFO demoContable odoo.registry: module solse_pe_payroll_renta5: creating or updating database tables 
+2026-10-27 16:04:05,187 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:05,187 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:05,187 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:05,188 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:05,188 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:05,188 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:05,188 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:05,195 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:05,195 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:05,195 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:05,196 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:05,196 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:05,196 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:05,209 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:05,210 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:05,212 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:05,214 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:05,446 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_renta5/security/ir.model.access.csv 
+2026-10-27 16:04:05,456 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_renta5/report/detalle_renta5_report.xml 
+2026-10-27 16:04:05,475 126435 INFO demoContable odoo.modules.loading: loading solse_pe_payroll_renta5/views/hr_payslip_views.xml 
+2026-10-27 16:04:05,632 126435 INFO demoContable odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [1176] 
+2026-10-27 16:04:05,680 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll_renta5: no translation for language es_PE 
+2026-10-27 16:04:05,843 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll_renta5 loaded in 0.83s, 189 queries (+189 other) 
+2026-10-27 16:04:05,891 126435 INFO demoContable odoo.addons.solse_pe_cpe_anticipos.models.cpe_xml_anticipos: solse_pe_cpe_anticipos: generador CPE extendido para anticipos sueltos 
+2026-10-27 16:04:06,280 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_payroll_asistencia_ee_demo (407/433) 
+2026-10-27 16:04:06,517 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:06,753 126435 INFO demoContable odoo.registry: module solse_pe_payroll_asistencia_ee_demo: creating or updating database tables 
+2026-10-27 16:04:06,769 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:06,769 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:06,769 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:06,770 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:06,770 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:06,770 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:06,770 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:06,775 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:06,775 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:06,775 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:06,775 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:06,776 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:06,776 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:06,784 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:06,785 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:06,786 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:06,787 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:06,978 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_payroll_asistencia_ee_demo: no translation for language es_PE 
+2026-10-27 16:04:07,089 126435 INFO demoContable odoo.modules.loading: Module solse_pe_payroll_asistencia_ee_demo loaded in 0.81s, 37 queries (+37 other) 
+2026-10-27 16:04:07,151 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_plame_4ta_ee (420/433) 
+2026-10-27 16:04:07,355 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:07,402 126435 WARNING demoContable odoo.fields: Field solse.pe.cierre.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:07,581 126435 INFO demoContable odoo.registry: module solse_pe_plame_4ta_ee: creating or updating database tables 
+2026-10-27 16:04:07,609 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:07,609 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:07,610 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:07,610 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:07,610 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:07,610 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:07,610 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:07,614 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:07,615 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:07,615 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:07,615 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:07,615 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:07,615 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:07,624 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:07,624 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:07,626 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:07,626 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:07,791 126435 INFO demoContable odoo.modules.loading: loading solse_pe_plame_4ta_ee/views/plame_wizard_views.xml 
+2026-10-27 16:04:07,849 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_plame_4ta_ee: no translation for language es_PE 
+2026-10-27 16:04:07,964 126435 INFO demoContable odoo.modules.loading: Module solse_pe_plame_4ta_ee loaded in 0.81s, 67 queries (+67 other) 
+2026-10-27 16:04:07,996 126435 INFO demoContable odoo.modules.loading: Loading module solse_pe_plame_ee_demo (428/433) 
+2026-10-27 16:04:08,191 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:08,427 126435 INFO demoContable odoo.registry: module solse_pe_plame_ee_demo: creating or updating database tables 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:08,443 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:08,444 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:08,448 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:08,458 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move: inconsistent 'compute_sudo' for computed fields origin_doc_code, origin_doc_number, origin_doc_id. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:08,459 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move: inconsistent 'store' for computed fields, accessing origin_doc_id may recompute and update origin_doc_code, origin_doc_number. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:08,460 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:557: UserWarning: account.move.line: inconsistent 'compute_sudo' for computed fields monto_distribuido, monto_pendiente, distribucion_cuadrada. Either set 'compute_sudo' to the same value on all those fields, or use distinct compute methods for sudoed and non-sudoed fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 557, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:08,461 126435 WARNING demoContable py.warnings: /opt/odoo19/odoo/odoo/orm/registry.py:574: UserWarning: account.move.line: inconsistent 'store' for computed fields, accessing monto_distribuido, monto_pendiente may recompute and update distribucion_cuadrada. Use distinct compute methods for stored and non-stored fields.
+  File "/opt/odoo19/odoo/odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "/opt/odoo19/odoo/odoo/cli/command.py", line 133, in main
+    command().run(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 127, in run
+    main(args)
+  File "/opt/odoo19/odoo/odoo/cli/server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1677, in start
+    rc = server.run(preload, stop)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1205, in run
+    rc = preload_registries(preload)
+  File "/opt/odoo19/odoo/odoo/service/server.py", line 1591, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "/opt/odoo19/odoo/odoo/tools/func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 189, in new
+    load_modules(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 464, in load_modules
+    load_module_graph(
+  File "/opt/odoo19/odoo/odoo/modules/loading.py", line 212, in load_module_graph
+    module._check()
+  File "/opt/odoo19/odoo/addons/website/models/ir_module_module.py", line 486, in _check
+    super()._check()
+  File "/opt/odoo19/odoo/odoo/addons/base/models/ir_module.py", line 908, in _check
+    if not module.description_html:
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "/opt/odoo19/odoo/odoo/orm/fields.py", line 1903, in compute_value
+    fields = records.pool.field_computed[self]
+  File "/home/ubuntu/.pyenv/versions/3.12.13/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+  File "/opt/odoo19/odoo/odoo/orm/registry.py", line 574, in field_computed
+    warnings.warn(
+ 
+2026-10-27 16:04:08,677 126435 INFO demoContable odoo.addons.base.models.ir_module: module solse_pe_plame_ee_demo: no translation for language es_PE 
+2026-10-27 16:04:08,794 126435 INFO demoContable odoo.modules.loading: Module solse_pe_plame_ee_demo loaded in 0.80s, 37 queries (+37 other) 
+2026-10-27 16:04:08,822 126435 INFO demoContable odoo.modules.loading: 433 modules loaded in 16.98s, 4149 queries (+4149 extra) 
+2026-10-27 16:04:08,826 126435 WARNING demoContable odoo.modules.module_graph: module solse_multi_barcodes: not installable, skipped 
+2026-10-27 16:04:08,827 126435 WARNING demoContable odoo.modules.module_graph: module solse_multi_barcodes_pricelist: some depends are not loaded (solse_multi_barcodes), skipped 
+2026-10-27 16:04:08,827 126435 WARNING demoContable odoo.modules.module_graph: module solse_pricelist_item_search: some depends are not loaded (solse_multi_barcodes_pricelist), skipped 
+2026-10-27 16:04:08,833 126435 INFO demoContable odoo.modules.loading: loading 433 modules... 
+2026-10-27 16:04:08,834 126435 INFO demoContable odoo.modules.loading: 433 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-10-27 16:04:08,931 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:08,948 126435 WARNING demoContable odoo.fields: Field stock.location.solse_marcado_vacio: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:09,677 126435 WARNING demoContable odoo.fields: Translated stored related field (account.move.line.nombre_producto) will not be computed correctly in all languages 
+2026-10-27 16:04:09,711 126435 WARNING demoContable odoo.fields: Field stock.location.solse_marcado_vacio: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:09,752 126435 WARNING demoContable odoo.fields: Translated stored related field (solse.carga.precios.linea.valor_talla_nombre) will not be computed correctly in all languages 
+2026-10-27 16:04:09,770 126435 WARNING demoContable odoo.fields: Field solse.lista.compra.line.estado: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:09,796 126435 WARNING demoContable odoo.fields: Field lost.sale.entry.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:09,810 126435 WARNING demoContable odoo.fields: Field solse.pe.cierre.state: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2026-10-27 16:04:10,040 126435 ERROR demoContable odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['solse_multi_barcodes', 'solse_multi_barcodes_pricelist', 'solse_pricelist_item_search'] 
+2026-10-27 16:04:10,122 126435 INFO demoContable odoo.modules.loading: Model multi.barcode.products is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2026-10-27 16:04:10,992 126435 INFO demoContable odoo.registry: verifying fields for every extended model 
+2026-10-27 16:04:11,029 126435 WARNING demoContable odoo.addons.base.models.ir_model: Two fields (solse_vso_largo_modelo, solse_traslado_largo_modelo) of res.company() have the same label: Largo del código de modelo. [Modules: solse_pos_picking_asistido and solse_traslado_ubicacion] 
+2026-10-27 16:04:11,123 126435 INFO demoContable odoo.registry: Models have no table: mkb.duplicado.codigo, mkb.completa.codigo, ai.embedding, smigracion.wizard.mapeo.plantillas, mkb.consolida.plantilla, smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model mkb.duplicado.codigo. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model mkb.completa.codigo. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model ai.embedding. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model mkb.consolida.plantilla. 
+2026-10-27 16:04:11,124 126435 INFO demoContable odoo.registry: Recreate table of model smigracion.wizard.mapeo.plantillas.linea. 
+2026-10-27 16:04:11,129 126435 ERROR demoContable odoo.registry: Model mkb.completa.codigo has no table. 
+2026-10-27 16:04:11,129 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas.linea has no table. 
+2026-10-27 16:04:11,129 126435 ERROR demoContable odoo.registry: Model mkb.consolida.plantilla has no table. 
+2026-10-27 16:04:11,129 126435 ERROR demoContable odoo.registry: Model ai.embedding has no table. 
+2026-10-27 16:04:11,129 126435 ERROR demoContable odoo.registry: Model smigracion.wizard.mapeo.plantillas has no table. 
+2026-10-27 16:04:11,130 126435 ERROR demoContable odoo.registry: Model mkb.duplicado.codigo has no table. 
+2026-10-27 16:04:13,732 126435 INFO demoContable odoo.modules.loading: Modules loaded. 
+2026-10-27 16:04:13,768 126435 WARNING demoContable odoo.schema: Missing not-null constraint on ai.embedding.attachment_id 
+2026-10-27 16:04:13,769 126435 WARNING demoContable odoo.schema: Missing not-null constraint on ai.embedding.content 
+2026-10-27 16:04:13,769 126435 WARNING demoContable odoo.schema: Missing not-null constraint on ai.embedding.embedding_model 
+2026-10-27 16:04:13,784 126435 WARNING demoContable odoo.schema: Missing not-null constraint on account_followup.manual_reminder.res_ids 
+2026-10-27 16:04:13,784 126435 WARNING demoContable odoo.schema: Missing not-null constraint on account_followup.manual_reminder.res_model 
+2026-10-27 16:04:13,786 126435 WARNING demoContable odoo.schema: Missing not-null constraint on smigracion.wizard.mapeo.plantillas.proyecto_id 
+2026-10-27 16:04:13,787 126435 WARNING demoContable odoo.schema: Missing not-null constraint on smigracion.wizard.mapeo.plantillas.modo_generacion 
+2026-10-27 16:04:13,787 126435 WARNING demoContable odoo.schema: Missing not-null constraint on solse.picking.asistido.pos_config_id 
+2026-10-27 16:04:13,787 126435 WARNING demoContable odoo.schema: Missing not-null constraint on solse.picking.asistido.ubicacion_destino_id 
+2026-10-27 16:04:13,795 126435 INFO demoContable odoo.registry: Registry changed, signaling through the database 
+2026-10-27 16:04:13,797 126435 INFO demoContable odoo.registry: Registry loaded in 31.921s 
+2026-10-27 16:04:13,797 126435 INFO demoContable odoo.service.server: Stopping workers gracefully 
+ubuntu@vps-bc50f8e0:~$ 
+
