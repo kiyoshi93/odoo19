@@ -1,0 +1,68 @@
+== módulos
+  hr_payroll                           installed   19.0.1.0
+  solse_pe_payroll                     installed   19.0.1.16.4
+  solse_pe_payroll_asistencia_ee_demo  installed   19.0.1.2.1
+  solse_pe_payroll_catalogo            installed   19.0.0.3
+  solse_pe_payroll_demo                installed   19.0.1.6.4
+  solse_pe_payroll_renta5              installed   19.0.1.0.1
+  solse_pe_plame_ee_demo               installed   19.0.1.1.1
+== U-01 · U-04 · U-05 · Q-02 · nombre de los registros (ninguno debería verse «modelo,id»)
+  eps.management                   1 registros · «modelo,id»: 0 · con «[código]»: 0 · ejemplo: ['PACIFICO EPS (DEMO)']
+  life.insurance                   0 registros · «modelo,id»: 0 · con «[código]»: 0 · ejemplo: []
+  health.regime                    8 registros · «modelo,id»: 0 · con «[código]»: 8 · ejemplo: ['[00] ESSALUD REGULAR (Exclusivamente)']
+  academic.degree                 21 registros · «modelo,id»: 0 · con «[código]»: 21 · ejemplo: ['[01] SIN EDUCACIÓN FORMAL']
+  low.reason                      21 registros · «modelo,id»: 0 · con «[código]»: 21 · ejemplo: ['[01] RENUNCIA']
+  special.situation                9 registros · «modelo,id»: 0 · con «[código]»: 9 · ejemplo: ['[0] NINGUNA']
+  type.contract                   26 registros · «modelo,id»: 0 · con «[código]»: 26 · ejemplo: ['[01] A PLAZO INDETERMINADO - D.LEG. 728']
+  payment.type                     3 registros · «modelo,id»: 0 · con «[código]»: 3 · ejemplo: ['[1] EFECTIVO']
+  mintra.contract                  0 registros · «modelo,id»: 0 · con «[código]»: 0 · ejemplo: []
+  solse.payroll.mapeo.contable    38 registros · «modelo,id»: 0 · con «[código]»: 0 · ejemplo: ['RB_001 → 6211 / —']
+  pe.renta5.tramo                  5 registros · «modelo,id»: 0 · con «[código]»: 0 · ejemplo: ['Tramo 1 · 8 %']
+  EPS con « – póliza »: 0 de 1
+  parentescos: ['Abuelo(a)', 'Cónyuge', 'Hermano(a)', 'Hijo(a)', 'Nieto(a)', 'Padre', 'Pareja', 'Primo(a)'] · «Cónyugue» (errata): 0
+  T12 código 20: 1 registro(s), activos 0 · versiones que lo usan: 0
+== U-02 · U-03 · contexto de las acciones
+  hr.action_hr_version                   {'search_default_group_by_employee': 1}
+  hr_payroll.action_salary_rule_form     {'search_default_group_by_struct_id': 1, 'search_default_estructuras_peruanas': 1}
+== U-06 · nombre de la boleta (es_PE)
+  NME   Nómina Mensual Empleados           payslip_name: 'Boleta de Pago'
+  NSO   Nómina Semanal Obreros             payslip_name: 'Boleta de Pago'
+  NQA   Nómina Quincenal / Adelanto        payslip_name: 'Adelanto Quincenal'
+  GRAT  Gratificaciones                    payslip_name: 'Boleta de Gratificación'
+  VAC   Vacaciones                         payslip_name: 'Boleta de Vacaciones'
+  CTS   CTS                                payslip_name: 'Liquidación CTS'
+  LIQ   Liquidación                        payslip_name: 'Liquidación de Beneficios'
+  botones de hr.payslip form con «Validate»: 0 · con «Validar»: 1
+  botones de hr.payslip.run kanban con «Validate»: 0 · con «Validar»: 1
+== U-09 · menús que abren los parámetros de nómina PE
+  solse_pe_payroll.menu_pe_parametros            Parámetros de Nómina PE      grupos: ['Nómina / Administrador']
+  solse_pe_payroll_catalogo.menu_solse_pe_payroll_en_catalogo Parámetros de Nómina PE      grupos: ['Nómina / Administrador']
+== U-10 · tipos de estructura por secuencia
+   10  Régimen General                              país PE  estructura por defecto: NME
+   20  Obreros - Semanal                            país PE  estructura por defecto: NSO
+   30  Quincenal - Adelanto                         país PE  estructura por defecto: NME
+   40  Beneficios Sociales                          país PE  estructura por defecto: —
+   94  General (reglas base, sin planilla PE)       país PE  estructura por defecto: —
+   95  Empleado (genérico, sin planilla PE)         país —   estructura por defecto: Pago regular
+   96  Obrero (genérico, sin planilla PE)           país —   estructura por defecto: Pago de trabajadores
+   97  CP200 PFI BE                                 país BE  estructura por defecto: —
+   98  CP200 BE                                     país BE  estructura por defecto: —
+== U-11 · edad de la ficha: integer
+== H-6 · aviso del tablero: 'Contratos con un tipo de estructura sin planilla peruana: el lote no les calcula ONP, AFP ni EsSalud'
+== compañías de Perú: 5
+-- Empresa 01 SAC (id 2)
+   H-6/R-6 · contratos vigentes con un tipo sin planilla PE: 0
+   D-6 · versiones con DNI de la demo: anteriores 0 · sintéticos 0 (trabajadores 0) · cuentas de esos trabajadores 0, con un DNI anterior 0
+-- SOLSE Demo Comercial E.I.R.L. (id 4) · laboratorio
+   H-6/R-6 · contratos vigentes con un tipo sin planilla PE: 0
+   D-6 · versiones con DNI de la demo: anteriores 0 · sintéticos 0 (trabajadores 0) · cuentas de esos trabajadores 0, con un DNI anterior 0
+-- SOLSE Demo Principal S.A.C. (id 3) · laboratorio
+   H-6/R-6 · contratos vigentes con un tipo sin planilla PE: 0
+   D-6 · versiones con DNI de la demo: anteriores 0 · sintéticos 0 (trabajadores 0) · cuentas de esos trabajadores 0, con un DNI anterior 0
+-- SOLSE Demo Servicios S.A.C. (id 5) · laboratorio
+   H-6/R-6 · contratos vigentes con un tipo sin planilla PE: 0
+   D-6 · versiones con DNI de la demo: anteriores 0 · sintéticos 13 (trabajadores 13) · cuentas de esos trabajadores 26, con un DNI anterior 0
+-- Empresa 02 SAC (id 1)
+   H-6/R-6 · contratos vigentes con un tipo sin planilla PE: 0
+   D-6 · versiones con DNI de la demo: anteriores 0 · sintéticos 0 (trabajadores 0) · cuentas de esos trabajadores 0, con un DNI anterior 0
+== D-6 · valores de seguimiento (chatter) con un DNI anterior, en toda la base: 0
