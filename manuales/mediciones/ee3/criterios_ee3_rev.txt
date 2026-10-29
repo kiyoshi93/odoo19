@@ -1,0 +1,16 @@
+OK     H3-1       advertencias guardadas vacías (como antes del -u): gratificación en cero draft (ValidationError:  • La boleta no tiene importes: todas sus líneas sale) · sin pensión con Bloquear draft (ValidationError:  • El trabajador no tiene sistema pensionario (ONP o )
+OK     H3-1       cuentas puestas después de calcular: draft (ValidationError:  • La boleta no tiene importes: todas sus líneas salen en 0,00 )
+OK     H3-1       post-migrate: error_count de la gratificación en cero 0 → 1 (1)
+OK     H3-2       vacacional validada después de calcular la mensual de diciembre: R5TA 1035.34 → 3585.34 (art. 40: 3585.34)
+OK     H3-2       gratificación de diciembre validada después de calcular la mensual: R5TA 405.94 → 863.74 (art. 40: 863.74)
+OK     H3-2       gratificación cancelada: R5TA de la mensual 494.1 → 269.4 (calculada de nuevo: 269.4)
+OK     H3-2       gratificación de julio validada con la mensual de agosto calculada: R5TA de agosto 163.52 → 566.56 (calculada de nuevo: 566.56)
+OK     H3-2       mensual editada y mensual de otro trabajador: líneas sin tocar True
+OK     H3-4       semanal 21-27/12 con la gratificación en borrador y Bloquear: R5TA_001 False · avisos ninguno · validated 
+OK     H3-4       mensual del 1 al 21/12: vacacional del 25/12 sin aviso · del 14/12 [('warning', 'La boleta de Vacaciones del 14/12/2026 al 20/12/2026 está en')]
+OK     H3-5       mensual de diciembre (avisos, errores, estado de la lista): sola (0, 0, 'draft') · con la gratificación (0, 1, 'error'), filtro «error» 1 · eliminada (0, 0, 'draft')
+OK     H3-6       lote con la gratificación eliminado: mensual antes (0, 1, 'error') · después (0, 0, 'draft') · «Validar»: sin error · validated
+OK     H3-8       boletas marcadas al cambiar el control: 1 (borradores de la compañía 1, no borrador 0)
+OK     H3-8       borrador sin pensión (avisos, errores, estado) según el control: [('aviso', (1, 0, 'warning')), ('bloqueo', (0, 1, 'error')), ('ninguno', (0, 0, 'draft'))]
+OK     H3-9       lote con 3 en cero y 1 con importe: «Eliminar las boletas sin importes del lote» · «Se eliminaron 3 boletas sin importes del lote.» · quedan 0 de 3 · «Validar» del lote: sin error · la de importe validated
+== 15 criterios, 0 fallas

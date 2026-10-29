@@ -1,0 +1,22 @@
+== módulos
+  hr_payroll                             installed   19.0.1.0
+  solse_pe_payroll                       installed   19.0.1.22.7
+  solse_pe_payroll_asistencia_ee         installed   19.0.1.1.0
+  solse_pe_payroll_asistencia_ee_demo    installed   19.0.1.3.0
+  solse_pe_payroll_catalogo              installed   19.0.0.3
+  solse_pe_payroll_demo                  installed   19.0.1.6.6
+  solse_pe_payroll_renta5                installed   19.0.1.3.0
+  solse_pe_plame_ee_demo                 installed   19.0.1.1.1
+== reglas de las 8 estructuras peruanas (la base y sus copias)
+  R5TA_001: 3 reglas · C-03 (sextos) en 3 · C-11 (vacaciones) en 3 · C-10 (tardanza) en 3
+  C-10 · bases (ONP, AFP, EsSalud, EPS, SCTR, SENATI, BAR5): 42 reglas · sin restar DA_001: ninguna
+  C-10 · TARD_001: 4 reglas · categorías ['DA_001'] · secuencias [101] · conceptos PLAME ['0704']
+  C-10 · TAR_001: 4 reglas · categorías ['DA_001'] · secuencias [102] · conceptos PLAME ['0704']
+  C-05 · RB_001 con «wage / 30.0»: 2 de 2
+== boletas por compañía (estado · con advertencias de C-18 y V-04 en borrador)
+  SOLSE Demo Servicios S.A.C.        {'validated': 35, 'draft': 1} · {'C-18 sin importes': 1}
+                                     V-04 · sin sistema pensionario: aviso · diciembre: aviso
+== C-18 · acción «Eliminar la boleta sin importes»: existe
+== renta5 · estado del detalle por compañía
+  SOLSE Demo Servicios S.A.C.        {'coincide': 13, 'no_aplica': 23}
+  campos nuevos del detalle: ['pe_r5_base_grati', 'pe_r5_vacaciones_devengadas', 'pe_r5_tardanzas']

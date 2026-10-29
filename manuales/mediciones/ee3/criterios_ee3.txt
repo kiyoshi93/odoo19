@@ -1,0 +1,48 @@
+OK     C-05       3 boletas con céntimos; descuadradas: ninguna
+OK     C-05       10 boletas de la grilla; descuadradas: ninguna
+OK     C-05       RB_001 de un mes completo con sueldo 3 333,33: 3333.33 (3 333,33)
+OK     C-05       RBS_002 de una semana completa con sueldo 1 777,77: 414.81 (414,81)
+OK     C-05       35 boletas validadas de «servicios»; descuadradas: ninguna
+OK     C-03       UIT 5500 · renta real 2026 86723.24 · impuesto anual 5101.25 · retenido en el año 5101.25 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-03 el año con asignación familiar: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-03       marzo (ingreso el 1): remuneración 7113.00 × 10 + gratificaciones 12921.95 (julio 4/6, diciembre 6/6) → R5TA 393.94 (art. 40: 393.94)
+OK     RENTA5     C-03 ingreso el 1 de marzo: 1 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-11       dentro de febrero: goce 10-02-2026 → 24-02-2026 · remuneración del mes (mensual + días de goce): [15000.0] · renta real 2026 212700.00 · impuesto anual 24664.00 · retenido en el año 24664.00 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-11 dentro de febrero: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-11       cruza de mes: goce 20-08-2026 → 18-09-2026 · remuneración del mes (mensual + días de goce): [15000.0] · renta real 2026 212700.00 · impuesto anual 24664.00 · retenido en el año 24664.00 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-11 cruza de mes: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-11       60 días: goce 20-08-2026 → 18-10-2026 (VAC_001 30000.00) · remuneración del mes (mensual + días de goce): [15000.0] · renta real 2026 212700.00 · impuesto anual 24664.00 · retenido en el año 24664.00 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-11 60 días: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-11       cruza de año: goce 20-12-2026 → 18-01-2027 · remuneración del mes (mensual + días de goce): [15000.0] · renta real 2026 221700.00 · impuesto anual 26194.00 · retenido en el año 26194.00 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-11 cruza de año: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-11       vacacional futura ya validada: goce 01-10-2026 → 15-10-2026 (validada en el mes 9) · remuneración del mes (mensual + días de goce): [15000.0] · renta real 2026 212700.00 · impuesto anual 24664.00 · retenido en el año 24664.00 · meses distintos del art. 40 (mes, obtenido, esperado): ninguno
+OK     RENTA5     C-11 vacacional futura ya validada: 12 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-10       TARD_001 30 min = 5.21 · base esperada 2494.79 · ONP 324.32 · EsSalud 224.53 · BAR5 2494.79 · distintas (obtenido (esperado)): ninguna
+OK     C-10       TARD_001 con AFP = 5.21 · base esperada 2494.79 · aporte 249.48 · comisión 36.67 · prima 34.18 · distintas: ninguna
+OK     C-10       TARD_001 con SCTR y EPS = 5.21 · base esperada 2494.79 · SCTR salud 32.43 · SCTR pensión 42.41 · EPS 56.13 · sin línea: ninguna · distintas: ninguna
+OK     C-10       TAR_001 0,5 h = 5.21 · base esperada 2494.79 · ONP 324.32 · conceptos PLAME ['0704'] · distintas: ninguna
+OK     C-10       AFPnet julio · remuneración asegurable 2494.79 (base menos la tardanza: 2494.79)
+OK     C-10       enero con 333.33 de tardanza: R5TA 732.91 (art. 40: 732.91) · sin tardanza 736.80
+OK     RENTA5     C-10 enero con tardanza: 1 mensuales · detalle de 5.ª distinto de la R5TA (mes, estado, reconstruida, boleta): ninguno
+OK     C-18       gratificación en cero: advertencias danger [('La boleta no tiene importes: todas sus líneas salen en 0,00 (por ejemp', 'Eliminar la boleta sin importes')] · «Validar»: ValidationError:  • La boleta no tiene importes: todas sus líneas salen en 0,00 (por ejemplo, la gratificación de quien ingresó en el último mes del semestre). No hay nada que pagar ni que contabilizar, así que no se  · estado draft · tras la acción: eliminada
+OK     C-18       mensual de un mes entero de goce: RB_001 0.0 · EsSalud 101.7 · advertencias danger 0 · estado validated 
+OK     C-18       gratificación en cero sin cuentas en la estructura: advertencias danger ninguna (ninguna)
+OK     C-18       mensual sin calcular y «Validar»: estado validated · 15 líneas · NET 2610.0 
+OK     C-18       lote con una en cero: «Validar»: ValidationError:  • Criterio · Criterio C-18 lote cero · Gratificaciones · 2026-07-01: La boleta no tiene importes: toda · mensual draft · tras la acción la de cero eliminada · segundo «Validar»: sin error · mensual validated
+OK     C-18       la acción sobre una mensual con importes: sigue · aviso La boleta ya tiene importes: no se eliminó.
+OK     C-18       gratificación en cero con el ingreso corregido después: sigue · GRATI_001 3000.0
+OK     E-15       lote con una sin calcular: calculada validated · sin calcular validated (15 líneas) 
+OK     V-04       controles de «servicios»: ['aviso', 'aviso'] · en la ficha de la compañía: ['pe_control_sistema_pensionario', 'pe_control_orden_diciembre']
+OK     V-04       sin sistema pensionario, Avisar: [('warning', 'El trabajador no tiene sistema pensionario (ONP o AFP): la boleta no calcula aportes de pe')] · validated · notas «Validada con avisos» 1 
+OK     V-04       sin sistema pensionario, Bloquear: [('danger', 'El trabajador no tiene sistema pensionario (ONP o AFP): la boleta no calcula aportes de pe')] · «Validar»: ValidationError:  • El trabajador no tiene sistema pensionario (ONP o AFP): la boleta no c · draft
+OK     V-04       sin advertencia: No controlar [] · «No aporta pensión» [] · gratificación []
+OK     V-04       reintegro con Bloquear: advertencias [] · validated 
+OK     V-04       diciembre, Avisar: con la gratificación en borrador [('warning', 'La boleta de Gratificaciones del 01/12/2026 al 31/12/2026 está en borrador: valídela ANTES')] · validada ninguna
+OK     V-04       diciembre, Bloquear: «Validar» con la gratificación en borrador: ValidationError:  • La boleta de Gratificaciones del 01/12/2026 al 31/12/2026 es · después: sin error · validated
+OK     V-04       mensual de diciembre: antes de la gratificación ninguna · creada [('warning', 'La boleta de Gratificaciones del 01/12/2026 al 31/12/2026 está en borrador: valídela ANTES')] · eliminada ninguna
+OK     V-04       diciembre, No controlar: advertencias ninguna · validated 
+OK     V-04       gratificación de diciembre con una vacacional en borrador: ninguna
+OK     V-04       vacacional 20/11-19/12 en borrador: diciembre [('warning', 'La boleta de Vacaciones del 20/11/2026 al 19/12/2026 está en borrador: valídela ANTES que ')] · noviembre ninguna
+OK     V-04       semanal 7-13/12: ninguna · semanal 21-27/12: ninguna
+OK     V-04       lote con una ya validada con aviso y Bloquear: sin error · segunda validated · notas de la primera 1
+== 47 criterios, 0 fallas
