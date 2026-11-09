@@ -1,0 +1,128 @@
+1
+00:00:00,500 --> 00:00:05,306
+Con el módulo de asistencias, las marcaciones se concilian con el horario y llegan a
+
+2
+00:00:05,306 --> 00:00:08,396
+la boleta como faltas, tardanzas y trabajo en feriado.
+
+3
+00:00:08,396 --> 00:00:09,083
+Veamos cómo.
+
+4
+00:00:10,540 --> 00:00:15,456
+En la compañía se define la tolerancia de tardanza, diez minutos en este ejemplo, si
+
+5
+00:00:15,456 --> 00:00:20,372
+las tardanzas se descuentan, si se concilia al calcular y, desde esta versión, si el
+
+6
+00:00:20,372 --> 00:00:23,239
+trabajo en feriado se paga desde las asistencias.
+
+7
+00:00:23,239 --> 00:00:25,463
+Por defecto, esa casilla está apagada.
+
+8
+00:00:26,980 --> 00:00:31,036
+El horario de trabajo debe estar en la zona horaria America Lima:
+
+9
+00:00:31,036 --> 00:00:34,843
+si queda en UTC, las tardanzas salen desplazadas cinco horas.
+
+10
+00:00:34,843 --> 00:00:38,962
+Su promedio de horas por día es también el divisor del valor hora:
+
+11
+00:00:38,962 --> 00:00:42,020
+con ocho horas, sueldo entre treinta, entre ocho.
+
+12
+00:00:43,420 --> 00:00:48,737
+Con Cargar asistencias, la boleta concilia las marcaciones del mes.
+
+13
+00:00:48,737 --> 00:00:52,705
+Carlos llegó tres veces veinticinco minutos tarde:
+
+14
+00:00:52,705 --> 00:00:59,213
+con diez de tolerancia, cuentan cuarenta y cinco minutos, S/ 10,94 sobre S/ 3 500.
+
+15
+00:00:59,213 --> 00:01:03,498
+Jorge tiene dos faltas y su básica baja a S/ 1 054,67.
+
+16
+00:01:03,498 --> 00:01:09,212
+Con la evaluación por horas, la media jornada de María deja S/ 7 866,67.
+
+17
+00:01:09,212 --> 00:01:13,180
+Y las vacaciones de Óscar salen como justificadas.
+
+18
+00:01:14,580 --> 00:01:18,461
+El día no laborable del calendario cuenta como feriado:
+
+19
+00:01:18,461 --> 00:01:20,155
+no es falta ni tardanza.
+
+20
+00:01:20,155 --> 00:01:25,729
+En octubre, Jorge tiene veintiún días evaluados, cero faltas y un feriado, y su
+
+21
+00:01:25,729 --> 00:01:27,634
+remuneración sale completa:
+
+22
+00:01:27,634 --> 00:01:28,269
+S/ 1 130.
+
+23
+00:01:29,740 --> 00:01:35,194
+Si el trabajador marcó en un feriado y no tuvo descanso sustitutorio, se paga con el
+
+24
+00:01:35,194 --> 00:01:36,233
+cien por ciento:
+
+25
+00:01:36,233 --> 00:01:39,349
+con la casilla encendida, desde las asistencias;
+
+26
+00:01:39,349 --> 00:01:42,206
+si no, con la entrada de trabajo en feriado.
+
+27
+00:01:42,206 --> 00:01:45,452
+Ocho horas con un sueldo de tres mil pagan S/ 200:
+
+28
+00:01:45,452 --> 00:01:47,595
+doce cincuenta por ocho, por dos.
+
+29
+00:01:49,060 --> 00:01:53,842
+El descanso semanal trabajado y un feriado en un día libre del horario no salen de
+
+30
+00:01:53,842 --> 00:01:54,484
+las marcas:
+
+31
+00:01:54,484 --> 00:01:55,592
+se ingresan a mano.
+
+32
+00:01:55,592 --> 00:01:58,042
+Está en el capítulo diecinueve del manual.
+

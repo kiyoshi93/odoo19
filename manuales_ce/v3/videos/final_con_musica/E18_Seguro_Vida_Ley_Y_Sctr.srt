@@ -1,0 +1,164 @@
+1
+00:00:05,580 --> 00:00:10,908
+La Vida Ley y el SCTR son seguros a cargo del empleador, y la planilla los calcula.
+
+2
+00:00:10,908 --> 00:00:16,300
+Este episodio muestra las pólizas, la prima en la boleta y lo nuevo de esta versión.
+
+3
+00:00:17,700 --> 00:00:21,734
+Las pólizas de Vida Ley se registran en Seguros y EPS.
+
+4
+00:00:21,734 --> 00:00:27,410
+El caso VIDALEY tiene una póliza por tasa, de 0,53 %, con seis trabajadores;
+
+5
+00:00:27,410 --> 00:00:31,220
+otra por importe fijo, y una vencida, que no cobra.
+
+6
+00:00:32,620 --> 00:00:37,297
+Con la casilla Calcular la prima en la planilla, la prima de cada trabajador de la
+
+7
+00:00:37,297 --> 00:00:38,723
+póliza sale en su boleta.
+
+8
+00:00:40,180 --> 00:00:45,999
+Con sueldo de S/ 3 000 y la tasa de 0,53 %, la prima es S/ 15,90.
+
+9
+00:00:45,999 --> 00:00:48,415
+Es un aporte del empleador:
+
+10
+00:00:48,415 --> 00:00:51,369
+el neto del trabajador no cambia.
+
+11
+00:00:51,369 --> 00:00:56,114
+La base se topa en la remuneración máxima asegurable:
+
+12
+00:00:56,114 --> 00:01:00,500
+con un sueldo de S/ 15 000, la prima es S/ 66,77.
+
+13
+00:01:01,900 --> 00:01:05,444
+La prima va ahora sobre la remuneración mensual habitual.
+
+14
+00:01:05,444 --> 00:01:10,604
+En un mes de suspensión, como una licencia sin goce, la empresa sigue pagando sobre
+
+15
+00:01:10,604 --> 00:01:12,033
+la última remuneración:
+
+16
+00:01:12,033 --> 00:01:17,193
+con tasa de cero coma cincuenta por ciento y sueldo de S/ 3 000, S/ 15, donde antes
+
+17
+00:01:17,193 --> 00:01:17,753
+era cero.
+
+18
+00:01:17,753 --> 00:01:22,416
+Los bonos periódicos quedan fuera, y las comisiones entran con su promedio.
+
+19
+00:01:23,940 --> 00:01:28,693
+Si la póliza de la empresa calcula distinto, la compañía puede volver a lo de antes
+
+20
+00:01:28,693 --> 00:01:30,297
+en el grupo Seguro Vida Ley:
+
+21
+00:01:30,297 --> 00:01:34,363
+solo lo percibido en el mes, todas las variables o la comisión del mes.
+
+22
+00:01:35,820 --> 00:01:38,894
+El SCTR tiene su propio menú, Pólizas SCTR:
+
+23
+00:01:38,894 --> 00:01:43,182
+una póliza por entidad y vigencia, con la tasa del contrato.
+
+24
+00:01:43,182 --> 00:01:47,900
+Una fracción se rechaza, y por encima del cinco por ciento, avisa.
+
+25
+00:01:49,300 --> 00:01:56,660
+En la ficha se marca Cubierto por SCTR y se eligen la entidad de salud, EsSalud o
+
+26
+00:01:56,660 --> 00:02:01,021
+EPS, y la de pensión, ONP o compañía de seguros.
+
+27
+00:02:01,021 --> 00:02:04,837
+Este trabajador está con EsSalud y la ONP:
+
+28
+00:02:04,837 --> 00:02:09,289
+su boleta de noviembre lleva S/ 15,90 y S/ 27,60.
+
+29
+00:02:10,780 --> 00:02:18,207
+Con la EPS al 1,20 % y la compañía de seguros al 1,05 %, una trabajadora de S/ 3 000
+
+30
+00:02:18,207 --> 00:02:20,241
+lleva S/ 36 y S/ 31,50.
+
+31
+00:02:20,241 --> 00:02:26,607
+La columna Póliza SCTR dice con qué póliza y tasa se calculó cada línea.
+
+32
+00:02:26,607 --> 00:02:33,593
+Sin entidad en la ficha, la boleta usa la tasa referencial de los parámetros, y
+
+33
+00:02:33,593 --> 00:02:34,123
+avisa.
+
+34
+00:02:35,700 --> 00:02:38,707
+Por defecto, la gratificación no paga SCTR.
+
+35
+00:02:38,707 --> 00:02:44,581
+Si el contrato de la póliza lo exige, se marca Cobra la prima sobre la gratificación
+
+36
+00:02:44,581 --> 00:02:45,280
+ordinaria:
+
+37
+00:02:45,280 --> 00:02:51,084
+con una EPS al uno por ciento, la gratificación de S/ 3 000 lleva S/ 30, con aviso.
+
+38
+00:02:51,084 --> 00:02:55,070
+Es un criterio pendiente de confirmación de la contadora.
+
+39
+00:02:56,540 --> 00:03:02,065
+Hoy se admite una póliza de Vida Ley por trabajador y una póliza SCTR por entidad y
+
+40
+00:03:02,065 --> 00:03:02,598
+periodo.
+
+41
+00:03:02,598 --> 00:03:05,593
+Está en los capítulos seis y doce del manual.
+

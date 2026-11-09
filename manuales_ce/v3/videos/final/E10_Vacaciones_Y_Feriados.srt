@@ -1,0 +1,180 @@
+1
+00:00:05,580 --> 00:00:10,498
+Este episodio muestra cómo se registran y se pagan las vacaciones, qué cambia con el
+
+2
+00:00:10,498 --> 00:00:13,601
+adelanto y con el cese, y cómo se pagan los feriados.
+
+3
+00:00:15,060 --> 00:00:20,405
+Los días ganados se registran como asignaciones, con el plan de devengo mensual:
+
+4
+00:00:20,405 --> 00:00:22,075
+dos días y medio por mes.
+
+5
+00:00:22,075 --> 00:00:27,220
+En noviembre de 2026, Lucía tiene cincuenta y cinco días y Héctor, cincuenta.
+
+6
+00:00:28,620 --> 00:00:32,671
+El goce se registra como una ausencia aprobada del mismo tipo:
+
+7
+00:00:32,671 --> 00:00:38,094
+Lucía, del dos al dieciséis de febrero de 2026, y Héctor, del catorce al veintitrés
+
+8
+00:00:38,094 --> 00:00:38,944
+de setiembre.
+
+9
+00:00:38,944 --> 00:00:44,236
+Al validar la boleta, las suspensiones del mes quedan guardadas para el punto snl
+
+10
+00:00:44,236 --> 00:00:44,889
+del PLAME.
+
+11
+00:00:46,420 --> 00:00:49,053
+En el mes de goce se calculan dos boletas.
+
+12
+00:00:49,053 --> 00:00:54,193
+La vacacional de Óscar paga los once días hábiles de vacaciones, del uno al quince
+
+13
+00:00:54,193 --> 00:00:54,757
+de julio.
+
+14
+00:00:56,220 --> 00:00:59,996
+La mensual lleva la misma línea, sin marcar en Pagado:
+
+15
+00:00:59,996 --> 00:01:02,513
+esos días ya los pagó la vacacional.
+
+16
+00:01:02,513 --> 00:01:05,100
+Óscar recibe S/ 1 500 en cada boleta.
+
+17
+00:01:06,500 --> 00:01:09,970
+La vacacional de Lucía paga S/ 2 306,50:
+
+18
+00:01:09,970 --> 00:01:15,435
+sueldo más asignación familiar, entre treinta, por quince días.
+
+19
+00:01:15,435 --> 00:01:22,201
+Con la mensual de S/ 2 250 y la asignación familiar completa, el mes suma S/ 4
+
+20
+00:01:22,201 --> 00:01:22,808
+669,50.
+
+21
+00:01:22,808 --> 00:01:26,365
+La vacacional no retiene renta de quinta:
+
+22
+00:01:26,365 --> 00:01:28,013
+lo hace la mensual.
+
+23
+00:01:29,500 --> 00:01:35,236
+La remuneración vacacional suma el promedio de las variables regulares de los seis
+
+24
+00:01:35,236 --> 00:01:36,985
+meses anteriores al goce:
+
+25
+00:01:36,985 --> 00:01:42,862
+con una movilidad de doscientos soles en cinco meses, quince días pagan S/ 1 583,33.
+
+26
+00:01:42,862 --> 00:01:47,409
+Si el trabajador goza antes de cumplir su récord, es un adelanto:
+
+27
+00:01:47,409 --> 00:01:52,935
+la vacacional lo avisa, porque requiere acuerdo escrito, y al cese esos días se
+
+28
+00:01:52,935 --> 00:01:57,133
+restan de las truncas, de S/ 2 250 a S/ 1 250 en el ejemplo.
+
+29
+00:01:57,133 --> 00:02:01,680
+Y si se valida una vacacional fuera de orden, la boleta lo avisa.
+
+30
+00:02:03,220 --> 00:02:07,331
+Al cese, el año que se completa ese mismo día es un récord cumplido:
+
+31
+00:02:07,331 --> 00:02:10,837
+va como vacaciones no gozadas, S/ 3 000, y no como trunca.
+
+32
+00:02:10,837 --> 00:02:14,524
+Las truncas se cuentan de fecha a fecha desde el aniversario.
+
+33
+00:02:14,524 --> 00:02:19,542
+Al trabajador a tiempo parcial se le calculan como a cualquiera, y la boleta avisa:
+
+34
+00:02:19,542 --> 00:02:22,020
+es un criterio pendiente de confirmación.
+
+35
+00:02:23,420 --> 00:02:26,707
+Los feriados se cargan cada año en Días festivos.
+
+36
+00:02:26,707 --> 00:02:32,342
+Con la opción de declararlos aparte, la mensual paga la remuneración de feriados por
+
+37
+00:02:32,342 --> 00:02:32,946
+separado:
+
+38
+00:02:32,946 --> 00:02:38,380
+en el caso FERIADOS, en diciembre de 2026, S/ 300 por tres feriados y S/ 2 700 de
+
+39
+00:02:38,380 --> 00:02:38,849
+básica;
+
+40
+00:02:38,849 --> 00:02:40,124
+el total no cambia.
+
+41
+00:02:40,124 --> 00:02:45,356
+Quien trabajó ocho horas un feriado cobra además, con la entrada de trabajo en
+
+42
+00:02:45,356 --> 00:02:48,979
+feriado, S/ 200, con la sobretasa del cien por ciento.
+
+43
+00:02:50,580 --> 00:02:55,634
+Vacacional por los días de goce, mensual por el resto, las vacacionales en orden, y
+
+44
+00:02:55,634 --> 00:02:58,069
+los feriados cargados antes de calcular.
+
+45
+00:02:58,069 --> 00:03:01,479
+Está en los capítulos diecisiete y dieciocho del manual.
+

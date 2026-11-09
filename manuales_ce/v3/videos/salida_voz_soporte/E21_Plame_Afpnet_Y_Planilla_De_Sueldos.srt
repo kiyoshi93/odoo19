@@ -1,0 +1,176 @@
+1
+00:00:00,500 --> 00:00:03,791
+Este episodio muestra los archivos legales del mes:
+
+2
+00:00:03,791 --> 00:00:08,180
+la planilla de sueldos, el PLAME, con sus archivos nuevos, y AFPnet.
+
+3
+00:00:09,580 --> 00:00:13,463
+Todas las salidas leen las boletas validadas de la compañía activa:
+
+4
+00:00:13,463 --> 00:00:16,418
+con varias compañías, elíjala antes en el selector.
+
+5
+00:00:16,418 --> 00:00:20,069
+Las boletas se eligen por el tipo de planilla de su estructura;
+
+6
+00:00:20,069 --> 00:00:24,300
+una estructura sin tipo no entra en ninguna salida, y la boleta lo avisa.
+
+7
+00:00:25,700 --> 00:00:30,909
+La planilla de sueldos sale en Excel o en PDF, con una fila por trabajador.
+
+8
+00:00:30,909 --> 00:00:36,674
+Con Incluir planillas adicionales, quien tuvo mensual y comisiones sale en una sola
+
+9
+00:00:36,674 --> 00:00:37,022
+fila:
+
+10
+00:00:37,022 --> 00:00:41,050
+en el caso ADICIONALES, ingresos S/ 3 500 y neto S/ 3 045.
+
+11
+00:00:41,050 --> 00:00:43,551
+El practicante no va en la planilla.
+
+12
+00:00:45,020 --> 00:00:48,315
+El PLAME genera el archivo comprimido para el PDT.
+
+13
+00:00:48,315 --> 00:00:50,424
+En la consultora, junio de 2026:
+
+14
+00:00:50,424 --> 00:00:55,761
+cuatro boletas, los conceptos cero ciento veintiuno y cero seiscientos cinco, dos
+
+15
+00:00:55,761 --> 00:01:01,297
+líneas del punto toc para los dos no domiciliados, y una practicante con S/ 1 695 en
+
+16
+00:01:01,297 --> 00:01:05,448
+el archivo del personal en formación, para digitarlo en el PDT.
+
+17
+00:01:06,980 --> 00:01:11,809
+El ZIP lleva siempre el punto rem, el punto jor y el punto snl, que declara las
+
+18
+00:01:11,809 --> 00:01:14,499
+suspensiones guardadas al validar la boleta.
+
+19
+00:01:14,499 --> 00:01:16,883
+Y tres archivos más cuando hacen falta:
+
+20
+00:01:16,883 --> 00:01:20,612
+el punto or cinco, si la compañía retiene por otro empleador;
+
+21
+00:01:20,612 --> 00:01:22,935
+el punto toc, con los no domiciliados;
+
+22
+00:01:22,935 --> 00:01:25,319
+y el archivo del personal en formación.
+
+23
+00:01:26,780 --> 00:01:29,052
+El punto rem tiene conceptos nuevos.
+
+24
+00:01:29,052 --> 00:01:32,965
+El dominical de la semanal va aparte en el cero ciento quince:
+
+25
+00:01:32,965 --> 00:01:37,446
+S/ 240, y el resto de la básica, S/ 1 440, en el cero ciento veintiuno.
+
+26
+00:01:37,446 --> 00:01:42,242
+La gratificación trunca de la liquidación va en el cero cuatrocientos siete.
+
+27
+00:01:42,242 --> 00:01:47,228
+Y con la opción de feriados, los feriados, la licencia con goce y el trabajo en
+
+28
+00:01:47,228 --> 00:01:49,437
+feriado van en sus propios códigos.
+
+29
+00:01:50,900 --> 00:01:55,818
+Los aportes que el PDT no calcula pueden ir al punto rem como informativos.
+
+30
+00:01:55,818 --> 00:01:59,491
+Por defecto van la Vida Ley y el SIS de la microempresa;
+
+31
+00:01:59,491 --> 00:02:02,704
+los del SCTR y los voluntarios quedan sin marcar.
+
+32
+00:02:02,704 --> 00:02:06,180
+Antes de marcar uno, pruebe la importación en su PDT.
+
+33
+00:02:07,580 --> 00:02:11,419
+AFPnet sale en Excel con los afiliados al sistema privado:
+
+34
+00:02:11,419 --> 00:02:12,412
+en julio, seis.
+
+35
+00:02:12,412 --> 00:02:17,508
+El régimen es el del cálculo de la boleta, no el de hoy, y suma las planillas
+
+36
+00:02:17,508 --> 00:02:18,832
+adicionales del mes.
+
+37
+00:02:18,832 --> 00:02:21,744
+Los aportes voluntarios van en sus columnas.
+
+38
+00:02:21,744 --> 00:02:25,914
+Y el pago a cada AFP se registra con AFPnet, registrar el pago.
+
+39
+00:02:27,380 --> 00:02:32,080
+Falta probar en el PDT la importación del punto toc, del punto or cinco y de los
+
+40
+00:02:32,080 --> 00:02:33,313
+aportes informativos.
+
+41
+00:02:33,313 --> 00:02:37,660
+El personal en formación se digita, y su monto es un criterio pendiente de
+
+42
+00:02:37,660 --> 00:02:39,423
+confirmación por la contadora.
+
+43
+00:02:40,940 --> 00:02:44,696
+Importe el PLAME en el PDT y compare sus totales con la planilla.
+
+44
+00:02:44,696 --> 00:02:47,180
+Está en el capítulo veintisiete del manual.
+

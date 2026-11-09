@@ -1,0 +1,180 @@
+1
+00:00:05,580 --> 00:00:10,427
+Este episodio recorre las tablas de SUNAT, los seguros y la configuración contable
+
+2
+00:00:10,427 --> 00:00:11,195
+de la nómina:
+
+3
+00:00:11,195 --> 00:00:13,441
+lo que se revisa una vez por compañía.
+
+4
+00:00:14,900 --> 00:00:20,011
+La tabla veintidós tiene los 293 conceptos del PLAME, con su código y los tributos y
+
+5
+00:00:20,011 --> 00:00:22,384
+aportes a los que está afecto cada uno.
+
+6
+00:00:22,384 --> 00:00:27,313
+Los códigos que empezaron a usar las reglas de esta versión, como el cero uno uno
+
+7
+00:00:27,313 --> 00:00:30,538
+seis o el cero cuatro cero siete, ya estaban en ella.
+
+8
+00:00:32,060 --> 00:00:37,317
+Cada maestro se muestra como código y descripción, y se busca por cualquiera de los
+
+9
+00:00:37,317 --> 00:00:37,570
+dos:
+
+10
+00:00:37,570 --> 00:00:41,117
+cero uno dos uno encuentra Remuneración o jornal básico.
+
+11
+00:00:42,580 --> 00:00:48,185
+Para el T-Registro están los vínculos de la tabla diecinueve, los 1 892 distritos
+
+12
+00:00:48,185 --> 00:00:53,167
+del ubigeo de RENIEC y las 5 925 combinaciones de institución y carrera.
+
+13
+00:00:53,167 --> 00:00:58,911
+Un parentesco sin código de la tabla diecinueve no se exporta como derechohabiente.
+
+14
+00:01:00,380 --> 00:01:03,326
+Dos tablas nuevas son listas dentro del contrato:
+
+15
+00:01:03,326 --> 00:01:08,317
+la dieciocho, la modalidad formativa del practicante, y la veinticinco, el convenio
+
+16
+00:01:08,317 --> 00:01:11,444
+para evitar la doble tributación del no domiciliado.
+
+17
+00:01:11,444 --> 00:01:16,314
+El convenio con Japón está vigente, pero la tabla veinticinco todavía no tiene su
+
+18
+00:01:16,314 --> 00:01:16,735
+código:
+
+19
+00:01:16,735 --> 00:01:18,900
+ese trabajador va con cero, ninguno.
+
+20
+00:01:20,420 --> 00:01:25,638
+En Seguros y EPS se registran los planes EPS, con su entidad de la tabla catorce, su
+
+21
+00:01:25,638 --> 00:01:29,552
+vigencia y la tasa o el importe del empleador y del trabajador.
+
+22
+00:01:29,552 --> 00:01:34,770
+Desde esta versión, el plan cuenta solo mientras está vigente, y un plan por importe
+
+23
+00:01:34,770 --> 00:01:36,696
+fijo también genera su crédito.
+
+24
+00:01:38,220 --> 00:01:41,790
+Y la entrada nueva, Pólizas SCTR:
+
+25
+00:01:41,790 --> 00:01:48,282
+una póliza por entidad y vigencia, con la tasa del contrato.
+
+26
+00:01:48,282 --> 00:01:50,013
+En el caso SCTR:
+
+27
+00:01:50,013 --> 00:01:57,370
+EsSalud 0,53 %, EPS 1,20 %, ONP 0,92 % y compañía de seguros 1,05 %.
+
+28
+00:01:57,370 --> 00:02:02,780
+El detalle del SCTR está en el episodio dieciocho.
+
+29
+00:02:04,180 --> 00:02:09,234
+El mapeo contable asigna a cada regla su prefijo de débito y de crédito del plan
+
+30
+00:02:09,234 --> 00:02:11,066
+contable general empresarial.
+
+31
+00:02:11,066 --> 00:02:13,024
+En esta versión tiene 79 filas;
+
+32
+00:02:13,024 --> 00:02:15,362
+en la anterior eran cuarenta y cinco.
+
+33
+00:02:15,362 --> 00:02:20,668
+La remuneración básica va al debe de la seis dos uno uno y al haber de la cuatro uno
+
+34
+00:02:20,668 --> 00:02:21,174
+uno uno.
+
+35
+00:02:22,700 --> 00:02:24,521
+Algunas cuentas son nuevas.
+
+36
+00:02:24,521 --> 00:02:28,162
+El descuento deducible y la tardanza rebajan el gasto:
+
+37
+00:02:28,162 --> 00:02:31,399
+debe cuatro uno uno uno, haber seis dos uno uno.
+
+38
+00:02:31,399 --> 00:02:35,917
+Los vales de alimentos entregados van a la cuatro seis nueve nueve.
+
+39
+00:02:35,917 --> 00:02:41,447
+El SCTR va a la cuatro cero tres uno con EsSalud, a la cuatro cero tres dos con la
+
+40
+00:02:41,447 --> 00:02:45,695
+ONP, y a la cuatro seis nueve nueve con una EPS o una compañía.
+
+41
+00:02:45,695 --> 00:02:50,483
+Algunas cuentas son criterio pendiente de confirmación de la contadora;
+
+42
+00:02:50,483 --> 00:02:53,113
+el mapeo se puede cambiar por compañía.
+
+43
+00:02:54,580 --> 00:02:59,198
+Esta configuración se hace una vez por compañía, y se revisa después de cada
+
+44
+00:02:59,198 --> 00:03:00,048
+actualización.
+
+45
+00:03:00,048 --> 00:03:04,119
+Los detalles están en los capítulos cinco, seis y siete del manual.
+

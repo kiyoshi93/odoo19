@@ -271,10 +271,11 @@ Object.assign(pasos, {
       await nuevaBoleta(p, c, 4, e1.name, '01/12/2026', '31/12/2026');
       hechos.c26_01 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
       await cap(p, 'c26_01_diciembre_grati_borrador_dias', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
-      await nuevaBoleta(p, c, 4, 'Gerardo Luis Salazar Prado', '01/11/2026', '30/11/2026');
+      await nuevaBoleta(p, c, 4, 'Gerardo Luis Salazar Prado', '01/11/2026', '30/11/2026', 'Nómina Mensual Empleados');
       hechos.c26_02 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
       await cap(p, 'c26_02_sin_sistema_pensionario', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
-      await nuevaBoleta(p, c, 4, e1.name, '01/08/2026', '31/08/2026');
+      const e3 = await empleado(p, 4, '70000903');
+      await nuevaBoleta(p, c, 4, e3.name, '01/08/2026', '31/08/2026');
       hechos.c26_04 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
       await cap(p, 'c26_04_sin_contrato_vigente', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
       await nuevaBoleta(p, c, 4, 'Trabajadora INDEMNIZACION tope con un hijo', '01/12/2024', '31/12/2024'); await guardarCreada(p);
@@ -282,6 +283,7 @@ Object.assign(pasos, {
       const m = p.locator('.modal').last();
       hechos.c26_03 = limpio(await m.innerText().catch(() => '')); await cap(p, 'c26_03_vigencia_faltante');
       await m.locator('button, a').filter({ hasText: /Ver detalles/ }).first().click().catch(() => {}); await p.waitForTimeout(1000);
+      await p.evaluate(() => document.querySelectorAll('.modal pre, .modal .o_error_detail, .modal code').forEach((e) => { e.scrollTop = e.scrollHeight; let q = e.parentElement; while (q) { q.scrollTop = q.scrollHeight; q = q.parentElement; } })); await p.waitForTimeout(500);
       hechos.c26_03b = limpio(await m.innerText().catch(() => '')).slice(0, 2000); await cap(p, 'c26_03b_vigencia_detalle');
       await p.keyboard.press('Escape'); await p.waitForTimeout(600);
       await p.locator('.modal button').filter({ hasText: /Cerrar|De acuerdo|Aceptar/ }).first().click().catch(() => {});

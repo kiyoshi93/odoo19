@@ -1,0 +1,112 @@
+1
+00:00:00,500 --> 00:00:03,683
+El T-Registro se carga con archivos de carga masiva.
+
+2
+00:00:03,683 --> 00:00:08,580
+Este primer episodio muestra las altas y las bajas, también las del practicante.
+
+3
+00:00:09,980 --> 00:00:13,241
+El asistente del T-Registro tiene cinco operaciones:
+
+4
+00:00:13,241 --> 00:00:17,380
+altas, bajas, modificaciones, y altas y bajas de derechohabientes.
+
+5
+00:00:17,380 --> 00:00:22,460
+Cada una es un envío aparte, con la estructura del manual del validador de SUNAT.
+
+6
+00:00:23,860 --> 00:00:28,241
+Antes de exportar, el asistente valida los datos que exige el validador.
+
+7
+00:00:28,241 --> 00:00:31,770
+Del uno al veintidós de octubre propone ocho trabajadores:
+
+8
+00:00:31,770 --> 00:00:36,821
+cuatro se exportan y cuatro no, y el resumen dice qué le falta a cada uno y con qué
+
+9
+00:00:36,821 --> 00:00:37,186
+regla.
+
+10
+00:00:37,186 --> 00:00:39,559
+Por ejemplo, a uno le falta el celular.
+
+11
+00:00:41,020 --> 00:00:44,043
+Las altas generan un archivo por tipo de dato:
+
+12
+00:00:44,043 --> 00:00:49,300
+identificación, datos laborales, periodos, establecimientos, cuentas y estudios.
+
+13
+00:00:49,300 --> 00:00:52,389
+Se validan en el PVS, que arma el ZIP para SOL.
+
+14
+00:00:52,389 --> 00:00:57,580
+Las bajas generan un solo archivo de periodos, con la fecha de fin y el motivo.
+
+15
+00:00:58,980 --> 00:01:03,391
+El practicante se exporta como personal en formación, categoría cinco:
+
+16
+00:01:03,391 --> 00:01:08,621
+su alta lleva el punto pfl, con la modalidad y el seguro, y el punto lug, sin datos
+
+17
+00:01:08,621 --> 00:01:09,251
+laborales.
+
+18
+00:01:09,251 --> 00:01:13,410
+Si su convenio termina sin motivo, la baja sale con el cero siete.
+
+19
+00:01:13,410 --> 00:01:17,317
+Y el paso de practicante a trabajador va en un contrato nuevo.
+
+20
+00:01:18,780 --> 00:01:21,996
+Una renovación sin interrupción no es alta ni baja.
+
+21
+00:01:21,996 --> 00:01:26,978
+Pero si entre los dos contratos hay una liquidación validada, son dos periodos:
+
+22
+00:01:26,978 --> 00:01:32,212
+con cese el treinta de junio y contrato nuevo el primero de julio, salen una baja y
+
+23
+00:01:32,212 --> 00:01:32,717
+un alta.
+
+24
+00:01:34,180 --> 00:01:38,584
+El alta del practicante todavía no tiene un caso medido en el laboratorio:
+
+25
+00:01:38,584 --> 00:01:40,250
+pruebe la primera en el PVS.
+
+26
+00:01:40,250 --> 00:01:43,940
+La localización no cubre pensionistas ni personal de terceros.
+
+27
+00:01:45,340 --> 00:01:49,540
+La prueba en el validador la hace el implementador con su versión del PVS.
+
+28
+00:01:49,540 --> 00:01:51,980
+Está en el capítulo veintinueve del manual.
+
