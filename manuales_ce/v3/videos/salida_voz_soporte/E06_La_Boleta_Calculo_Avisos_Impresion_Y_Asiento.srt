@@ -1,0 +1,148 @@
+1
+00:00:00,500 --> 00:00:03,809
+Este episodio sigue una boleta de punta a punta:
+
+2
+00:00:03,809 --> 00:00:08,980
+cómo se crea, qué calcula, qué avisa, cómo se imprime y qué asiento genera.
+
+3
+00:00:10,380 --> 00:00:12,302
+En Nóminas del empleado, Nuevo:
+
+4
+00:00:12,302 --> 00:00:14,535
+se elige el trabajador y el periodo.
+
+5
+00:00:14,535 --> 00:00:19,681
+La boleta toma el contrato y la estructura, propone el nombre en español y los días
+
+6
+00:00:19,681 --> 00:00:20,302
+laborados:
+
+7
+00:00:20,302 --> 00:00:23,278
+veintitrés días y ciento ochenta y cuatro horas.
+
+8
+00:00:24,740 --> 00:00:27,332
+Al calcular aparecen las líneas:
+
+9
+00:00:27,332 --> 00:00:33,651
+remuneración de S/ 4 500, asignación familiar de S/ 123, los aportes a la AFP,
+
+10
+00:00:33,651 --> 00:00:36,405
+EsSalud, SENATI y el neto a pagar:
+
+11
+00:00:36,405 --> 00:00:37,377
+S/ 4 025,70.
+
+12
+00:00:37,377 --> 00:00:43,939
+La asignación familiar mira la edad del hijo en el mes que se paga, no la de hoy.
+
+13
+00:00:45,420 --> 00:00:49,101
+Los conceptos del mes se ingresan como entradas:
+
+14
+00:00:49,101 --> 00:00:53,319
+alimentación, comisiones, bonificaciones, bonos, vales.
+
+15
+00:00:53,319 --> 00:00:56,770
+Los vales de alimentos no se pagan por banco:
+
+16
+00:00:56,770 --> 00:01:00,912
+la línea de prestaciones entregadas los saca del neto.
+
+17
+00:01:00,912 --> 00:01:05,820
+En el caso CONCEPTOS, S/ 150 de vales, y un neto de S/ 5 097,50.
+
+18
+00:01:07,220 --> 00:01:11,694
+Antes de validar, la banda amarilla avisa lo que conviene revisar.
+
+19
+00:01:11,694 --> 00:01:17,118
+Aquí, un sueldo de S/ 1 200 en octubre, cuando la remuneración mínima ya es S/ 1
+
+20
+00:01:17,118 --> 00:01:17,389
+230.
+
+21
+00:01:17,389 --> 00:01:18,744
+El aviso no bloquea.
+
+22
+00:01:18,744 --> 00:01:24,032
+Con trabajo nocturno, compara con la mínima más el treinta y cinco por ciento.
+
+23
+00:01:25,500 --> 00:01:27,032
+Cada aviso tiene un código.
+
+24
+00:01:27,032 --> 00:01:28,110
+Los más frecuentes:
+
+25
+00:01:28,110 --> 00:01:32,422
+la remuneración mínima, la estructura sin tipo de planilla, el detalle de la
+
+26
+00:01:32,422 --> 00:01:36,337
+remuneración computable y el horario de más de cuarenta y ocho horas.
+
+27
+00:01:36,337 --> 00:01:38,663
+Varios quedan en el historial al validar.
+
+28
+00:01:38,663 --> 00:01:41,443
+La lista completa está en el capítulo veintiséis.
+
+29
+00:01:42,900 --> 00:01:50,050
+La boleta impresa muestra treinta y un días laborados, ingresos por S/ 4 623,00,
+
+30
+00:01:50,050 --> 00:01:55,680
+descuentos por S/ 597,30 y aportes del empleador por S/ 450,74.
+
+31
+00:01:55,680 --> 00:02:02,651
+Los importes llevan coma de miles, y el monto en letras dice soles, en plural.
+
+32
+00:02:04,140 --> 00:02:09,012
+Al confirmar, la boleta genera su asiento en el diario Planillas.
+
+33
+00:02:09,012 --> 00:02:15,232
+Suma S/ 5 671,04 al debe y al haber, y el saldo de la cuenta cuatro uno uno uno del
+
+34
+00:02:15,232 --> 00:02:18,305
+trabajador es igual al neto de la boleta.
+
+35
+00:02:19,780 --> 00:02:22,997
+El caso BOLETA comprueba ciento sesenta y seis celdas:
+
+36
+00:02:22,997 --> 00:02:25,142
+seis boletas que cuadran al centavo.
+
+37
+00:02:25,142 --> 00:02:28,180
+Está en los capítulos diez y veintiséis del manual.
+

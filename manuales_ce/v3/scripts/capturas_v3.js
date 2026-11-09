@@ -168,6 +168,10 @@ Object.assign(pasos, {
     if (await s.count()) { await s.scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -80)); await p.waitForTimeout(500); }
     await cap(p, 'c23_05_promedios_fijados', { resaltar: (await s.count()) ? [s] : [] });
   },
+  async c24b(p, c) {
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000701', '2026-06-01', 'Mensual'), 'c24_01_micro_jun_calculo', { resaltar: ['SIS_MICRO_001'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000701', '2026-11-01', 'Liquidaci'), 'c24_02_micro_liquidacion_calculo', { resaltar: ['VAC_TRUNCA_001'] });
+  },
   // ---------------------------------------------------------------- 7 · contabilidad y provisiones (g2)
   async c07(p, c) {
     await cia(c, 1); await u.irA(p, `/odoo/action-${ACCX('mapeo_contable_action')}`);

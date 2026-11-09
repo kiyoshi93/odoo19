@@ -42,6 +42,16 @@ const pasos = {
     await cap(p, 'c28_04_boleta_pagada', { resaltar: ['.o_field_widget[name="pe_fecha_pago"]', '.o_field_widget[name="pe_operacion_pago"]', '.o_field_widget[name="pe_fecha_limite_entrega"]'] });
     await recortarForm('c28_04_boleta_pagada');
   },
+  // «Enviar boletas por correo» del lote de FM: solo se abre el diálogo de confirmación y se cancela (no se envía nada)
+  async c28_05(p, c) {
+    await cia(c, 1); await u.irA(p, '/odoo/action-1007/1');
+    await p.locator('button[name="action_pe_enviar_boletas"]').first().click(); await p.waitForTimeout(1200);
+    const m = p.locator('.modal:visible').last();
+    if (!(await m.count())) throw new Error('no apareció la confirmación');
+    await cap(p, 'c28_05_enviar_boletas_sin_acuerdo');
+    await m.locator('button').filter({ hasText: /^\s*Cancelar\s*$/ }).first().click(); await p.waitForTimeout(800);
+    if (await p.locator('.modal:visible').count()) throw new Error('el diálogo sigue abierto');
+  },
 };
 
 if (require.main === module) {

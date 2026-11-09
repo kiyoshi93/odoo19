@@ -13,3 +13,6 @@ Cap. 33: dominical proporcional (O-112); 1 de mayo del destajero; descanso seman
 ## E13 Licencias: semana sin goce 2 083,33; permiso 2 h 2 479,17; febrero sin goce básica 0 y AF 0 (grupo «Suspensiones»); piso 25b 100,00; .snl guardado al validar.
 ## E14 (semanal/.snl): .snl guardado (195 boletas); dominical guardado; ausencia aprobada después no cambia el PLAME; rectificar.
 ## E18 Vida Ley/seguros: VIDALEY 15,90 al 0803; póliza SCTR y columnas; casilla grati 30,00 (póliza al 15); plan EPS vigente (eps_no_vigente); nota de crédito revierte la prima.
+## Corrección (g3, después de las capturas)
+- E06: la boleta impresa dice «SON: CUATRO MIL VEINTICINCO Y 70/100 SOLES» (medido en c10_02), no «… SOLES Y SETENTA CÉNTIMOS». Hallazgo 5.
+- E13: el guion usa el caso AUMENTO (70000903, sueldo 2 400: semana sin goce + permiso de 2 h = 1 980,00), que existe en contable19; el escenario 2 083,33 / 2 479,17 del v2 se borró y no se puede capturar de nuevo.

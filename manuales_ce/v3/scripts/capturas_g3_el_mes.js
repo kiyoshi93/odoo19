@@ -169,6 +169,138 @@ Object.assign(pasos, {
   },
 });
 
+// ---------------------------------------------------------------- rehacer las capturas del v2 (permiso del coordinador del 09/11:
+// en la compañía 4 se pueden crear boletas o lotes en borrador para la captura y borrarlos después; «Rectificar» en un caso y
+// restablecerlo con correr_casos.py). En FM y las demás compañías, solo lectura.
+const CREADOS = [];
+async function nuevaBoleta(p, c, compania, empleadoNombre, desde, hasta, estructura = null) {
+  await cia(c, compania); await u.irA(p, `/odoo/action-${ACC.boletas}/new`); const f = p.locator('.o_form_view').first();
+  await u.muchosAUno(p, f, 'employee_id', empleadoNombre); await p.waitForTimeout(2000); await u.esperarCarga(p, 800);
+  if (await p.locator('.modal:visible').count()) { await p.locator('.modal:visible button').filter({ hasText: /^\s*(Cerrar|Ok|Aceptar)\s*$/ }).last().click().catch(() => p.keyboard.press('Escape')); await p.waitForTimeout(800); }
+  await u.rangoFechas(p, f, 'date_from', 'date_to', desde, hasta); await p.waitForTimeout(2500);
+  if (estructura) { await u.muchosAUno(p, f, 'struct_id', estructura); await p.waitForTimeout(1800); }
+  return f;
+}
+async function guardarCreada(p) { await u.guardar(p); await p.waitForTimeout(1200); const id = Number(p.url().split('/').pop()); CREADOS.push(['hr.payslip', id]); return id; }
+async function borrarCreados(p) {
+  while (CREADOS.length) {
+    const [m, id] = CREADOS.pop();
+    try {
+      if (m === 'hr.payslip.run') { const r = await rpc(p, m, 'read', [[id]], { fields: ['slip_ids'], context: { allowed_company_ids: [4] } }); if (r[0].slip_ids.length) await rpc(p, 'hr.payslip', 'unlink', [r[0].slip_ids], { context: { allowed_company_ids: [4] } }); }
+      await rpc(p, m, 'unlink', [[id]], { context: { allowed_company_ids: [4] } }); console.log('borrado', m, id);
+    } catch (e) { console.log('NO SE BORRÓ', m, id, e.message.slice(0, 200)); }
+  }
+}
+async function botonEstado(p, texto) { await p.locator('.o_statusbar_buttons button').filter({ hasText: texto }).first().click(); await p.waitForTimeout(3500); await u.esperarCarga(p, 1000).catch(() => {}); }
+Object.assign(pasos, {
+  async r_lectura(p, c) {
+    const bol = await idBoleta(p, 4, '70000501', '2026-12-01', 'Mensual');
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${bol}`); await tab(p, 'Información contable');
+    hechos.c10_01_contable = limpio(await p.locator('.o_notebook .tab-pane.active').innerText().catch(() => '')); await cap(p, 'c10_01_contable');
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000561', '2026-06-01', 'Mensual'), 'c12_04_vidaley_calculo', { resaltar: ['VIDA_001'] });
+    await cia(c, 1); await u.irA(p, '/odoo/action-975'); hechos.c18_01 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio); await cap(p, 'c18_01_dias_festivos');
+    await cia(c, 13); await u.irA(p, `/odoo/action-${ACC.boletas}`); await p.waitForTimeout(1500);
+    hechos.c18_02 = limpio(await p.locator('.o_pe_alertas_nomina').first().innerText().catch(() => ''));
+    await cap(p, 'c18_02_banda_sin_feriados', { resaltar: ['.o_pe_alertas_nomina'] });
+    await cia(c, 1); await u.irA(p, '/odoo/action-base.action_res_company_form/1'); await u.pestana(p, 'Nómina PE - Controles');
+    hechos.c09_04 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 1500); await cap(p, 'c09_04_compania_controles');
+    await cia(c, 4); await u.irA(p, '/odoo/action-1009'); const s = p.locator('.o_searchview_input'); await s.fill('AUMENTO'); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1200);
+    for (const g of await p.locator('.o_group_header').all()) { await g.click(); await p.waitForTimeout(500); }
+    hechos.c21_03 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio); await cap(p, 'c21_03_versiones_del_contrato');
+  },
+  async r_asistencias(p, c) {
+    const jo = await idBoleta(p, 4, '47852169', '2026-10-01', 'Mensual');
+    await boleta(p, c, 4, jo, 'c19_02_jorge_oct_feriado', ['Asistencias', 'Días trabajados y entradas', 'Cálculo de la nómina']);
+    await recortarForm('c19_02_jorge_oct_feriado_calculo');
+    await cap(p, 'c19_02_jorge_oct_boton', { resaltar: ['.o_statusbar_buttons button:has-text("Cargar asistencias")'] });
+    await boleta(p, c, 4, await idBoleta(p, 4, '45781236', '2026-09-01', 'Mensual'), 'c19_03_carlos_tardanzas', ['Asistencias', 'Cálculo de la nómina']);
+    await recortarForm('c19_03_carlos_tardanzas_calculo');
+    await boleta(p, c, 4, await idBoleta(p, 4, '47852169', '2026-09-01', 'Mensual'), 'c19_04_jorge_set_faltas', ['Asistencias', 'Días trabajados y entradas']);
+    await boleta(p, c, 4, await idBoleta(p, 4, '41236547', '2026-09-01', 'Mensual'), 'c19_05_maria_parcial', ['Asistencias']);
+    await boleta(p, c, 4, await idBoleta(p, 4, '43815927', '2026-09-01', 'Mensual'), 'c19_06_oscar_combinado', ['Asistencias']);
+    await cia(c, 4); await u.irA(p, '/odoo/action-1050?view_type=list');
+    for (let i = 0; i < 4 && await p.locator('.o_searchview_facet').count(); i++) { await p.locator('.o_searchview_facet .o_facet_remove').first().click(); await u.esperarCarga(p, 700); }
+    await p.locator('.o_searchview_input').fill('Jorge Luis'); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1000); await p.mouse.click(1300, 700);
+    hechos.c19_07 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio).slice(0, 8); await cap(p, 'c19_07_checadas_jorge');
+  },
+  async r_sin_importes(p, c) {
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${await idBoleta(p, 4, '70000701', '2026-11-01', 'CTS')}`);
+    await botonEstado(p, /^\s*Confirmar\s*$/);
+    hechos.c10_05 = limpio(await p.locator('.modal').last().innerText().catch(() => '')); await cap(p, 'c10_05_boleta_sin_importes');
+    await p.keyboard.press('Escape'); await p.waitForTimeout(800);
+  },
+  async r_lote(p, c) {
+    try {
+      await cia(c, 4); await u.irA(p, '/odoo/action-1007/new'); const f = p.locator('.o_form_view').first();
+      await u.escribir(f, 'name', 'Planilla enero 2027 (manual v3)');
+      await u.rangoFechas(p, f, 'date_start', 'date_end', '01/01/2027', '31/01/2027').catch(() => {});
+      hechos.c11_03 = limpio(await f.innerText()).slice(0, 800); await cap(p, 'c11_03_lote_nuevo');
+      await u.guardar(p); await p.waitForTimeout(1000); CREADOS.push(['hr.payslip.run', Number(p.url().split('/').pop())]);
+      await botonEstado(p, /Generar nóminas/);
+      let m = p.locator('.modal').last();
+      await m.locator('.o_field_x2many_list_row_add a').first().click(); await p.waitForTimeout(1500);
+      const sel = p.locator('.modal').last();
+      await sel.locator('.o_searchview_input').fill('Trabajadora BOLETA'); await p.keyboard.press('Enter'); await p.waitForTimeout(1500);
+      await sel.locator('.o_data_row').filter({ hasText: 'BOLETA' }).first().click(); await p.waitForTimeout(1500);
+      m = p.locator('.modal').last(); await cap(p, 'c11_04_generar_nominas');
+      await m.locator('button').filter({ hasText: /^\s*Generar\s*$/ }).first().click(); await p.waitForTimeout(6000); await u.esperarCarga(p, 1500);
+      hechos.c11_05 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500); await cap(p, 'c11_05_lote_generado');
+    } finally { await borrarCreados(p); }
+  },
+  async r_sin_goce(p, c) {
+    const id = await idBoleta(p, 4, '70000903', '2026-11-01', 'Mensual');
+    await boleta(p, c, 4, id, 'c22_01_semana_sin_goce', ['Días trabajados y entradas']);
+    await boletaCalculo(p, c, 4, id, 'c22_02_permiso_2_horas_calculo', { resaltar: ['RB_001', 'NET'] });
+    await lista(p, c, 4, '/odoo/action-hr_holidays.hr_leave_action_action_approve_department?view_type=list', 'AUMENTO', 'c22_04_ausencias_sin_goce');
+    try {
+      const e = await empleado(p, 4, '70000904');
+      await nuevaBoleta(p, c, 4, e.name, '01/11/2026', '30/11/2026'); await guardarCreada(p);
+      await botonEstado(p, /Calcular hoja/);
+      await tab(p, 'Días trabajados y entradas'); hechos.c22_03 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText().catch(() => ''));
+      await cap(p, 'c22_03_mes_sin_goce_dias');
+    } finally { await borrarCreados(p); }
+  },
+  async r_avisos(p, c) {
+    try {
+      const e1 = await empleado(p, 4, '70000901');
+      await nuevaBoleta(p, c, 4, e1.name, '01/12/2026', '31/12/2026', 'Gratificaciones'); await guardarCreada(p);
+      await nuevaBoleta(p, c, 4, e1.name, '01/12/2026', '31/12/2026');
+      hechos.c26_01 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
+      await cap(p, 'c26_01_diciembre_grati_borrador_dias', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
+      await nuevaBoleta(p, c, 4, 'Gerardo Luis Salazar Prado', '01/11/2026', '30/11/2026');
+      hechos.c26_02 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
+      await cap(p, 'c26_02_sin_sistema_pensionario', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
+      await nuevaBoleta(p, c, 4, e1.name, '01/08/2026', '31/08/2026');
+      hechos.c26_04 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
+      await cap(p, 'c26_04_sin_contrato_vigente', { resaltar: ['.o_form_view .alert-warning'] }); await descartar(p);
+      await nuevaBoleta(p, c, 4, 'Trabajadora INDEMNIZACION tope con un hijo', '01/12/2024', '31/12/2024'); await guardarCreada(p);
+      await botonEstado(p, /Calcular hoja/);
+      const m = p.locator('.modal').last();
+      hechos.c26_03 = limpio(await m.innerText().catch(() => '')); await cap(p, 'c26_03_vigencia_faltante');
+      await m.locator('button, a').filter({ hasText: /Ver detalles/ }).first().click().catch(() => {}); await p.waitForTimeout(1000);
+      hechos.c26_03b = limpio(await m.innerText().catch(() => '')).slice(0, 2000); await cap(p, 'c26_03b_vigencia_detalle');
+      await p.keyboard.press('Escape'); await p.waitForTimeout(600);
+      await p.locator('.modal button').filter({ hasText: /Cerrar|De acuerdo|Aceptar/ }).first().click().catch(() => {});
+    } finally { await borrarCreados(p); }
+  },
+  async r_rectificar(p, c) {
+    const id = await idBoleta(p, 4, '70001707', '2026-11-01', 'Mensual');
+    await boleta(p, c, 4, id, 'c25_01_original', []);
+    await cap(p, 'c25_01_original_rectificar', { resaltar: ['.o_statusbar_buttons button:has-text("Rectificar")'] });
+    await botonEstado(p, /^\s*Rectificar\s*$/);
+    const notas = await rpc(p, 'hr.payslip', 'search_read', [[['pe_boleta_origen_id', '=', id], ['credit_note', '=', true]]], { fields: ['id'], context: { allowed_company_ids: [4] } });
+    hechos.c25_nota = notas.map((x) => x.id);
+    await boletaCalculo(p, c, 4, notas[0].id, 'c25_02_rectificativa_calculo', { resaltar: ['RB_001', 'NET'] });
+    try {
+      const e = await empleado(p, 4, '70001707');
+      await nuevaBoleta(p, c, 4, e.name, '01/11/2026', '30/11/2026', 'copia del caso ADICIONALES'); const nueva = await guardarCreada(p);
+      await botonEstado(p, /Calcular hoja/);
+      await boletaCalculo(p, c, 4, nueva, 'c25_03_reemplazo_calculo', { resaltar: ['RB_001', 'NET'] });
+      await lista(p, c, 4, `/odoo/action-${ACC.boletas}?view_type=list`, e.name, 'c25_04_lista_boletas_rectificada');
+    } finally { await borrarCreados(p); }
+  },
+});
+
 pasos.todo = async (p, c) => { for (const n of Object.keys(pasos).filter((x) => x !== 'todo')) { try { await pasos[n](p, c); console.log('OK', n); } catch (e) { console.log('FALLÓ', n, e.message.split('\n')[0]); } } };
 
 module.exports = { pasos };

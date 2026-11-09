@@ -22,7 +22,7 @@ REEMPLAZOS['E06'] = {
          'voz': 'Los conceptos del mes se ingresan como entradas: alimentación, comisiones, bonificaciones, bonos, vales. Los vales de alimentos no se pagan por banco: '
                 'la línea de prestaciones entregadas los saca del neto. En el caso CONCEPTOS, [[S 150]] de vales, y un neto de [[S 5097.50]].'},
         {'t': 'cap', 'img': 'c10_07_aviso_rmv', 'rotulo': 'Aviso: sueldo menor que la remuneración mínima',
-         'focos': ['remuneracion minima'],
+         'focos': ['minima vital del periodo'],
          'voz': 'Antes de validar, la banda amarilla avisa lo que conviene revisar. Aquí, un sueldo de [[S 1200]] en octubre, cuando la remuneración mínima ya es [[S 1230]]. '
                 'El aviso no bloquea. Con trabajo nocturno, compara con la mínima más el treinta y cinco por ciento.'},
         {'t': 'tarjeta', 'ceja': 'Avisos con código', 'titulo': 'Lo que la boleta avisa',
@@ -50,7 +50,7 @@ REEMPLAZOS['E07'] = {
     'entrada': 'Este episodio muestra cómo procesar el mes con un lote, en qué orden se validan las boletas y cómo se corrige una boleta ya validada.',
     'escenas': [
         {'t': 'cap', 'img': 'c11_01_lotes', 'rotulo': 'Nómina › Procesamientos de nóminas',
-         'focos': ['Planilla diciembre 2026'],
+         'focos': ['Hecho'],
          'voz': 'Los lotes están en Procesamientos de nóminas. Cada lote agrupa las boletas de un periodo, nace con el diario Planillas y solo se ve en su compañía.'},
         {'t': 'cap', 'img': 'c11_02_lote_diciembre_fm', 'rotulo': 'Lote de diciembre de 2026, validado',
          'focos': ['Registrar pago', 'Compañía'],
@@ -85,11 +85,11 @@ REEMPLAZOS['E08'] = {
     'entrada': 'Este episodio repasa los aportes y retenciones de la boleta, con los casos del laboratorio.',
     'escenas': [
         {'t': 'cap', 'img': 'c12_01_carlos_calculo', 'rotulo': 'Carlos: AFP Habitat y EPS',
-         'focos': ['EPS_CRED_001', 'Neto a pagar'],
+         'focos': ['EPS_CRE', '-81.29'],
          'voz': 'Carlos está en la AFP Habitat y tiene EPS: la boleta calcula el aporte, la comisión y la prima de seguro, EsSalud de [[S 325.17]], el aporte a la EPS de [[S 162.59]] '
                 'con su crédito de [[S 81.29]], y SENATI. Su neto es [[S 3149.09]].'},
         {'t': 'cap', 'img': 'c12_02_ana_calculo', 'rotulo': 'Ana: la prima se topa en la RMA',
-         'focos': ['AFP_PRI'],
+         'focos': ['173.62'],
          'voz': 'Ana gana [[S 15000]]. La prima de seguro de la AFP se calcula hasta la remuneración máxima asegurable: sale [[S 173.62]].'},
         {'t': 'cap', 'img': 'c12_03_nilda_vac_calculo', 'rotulo': 'Nilda: EsSalud del mes 270,00',
          'focos': ['ESSALUD'],
@@ -104,7 +104,7 @@ REEMPLAZOS['E08'] = {
          'voz': 'Con Cubierto por SCTR, la boleta lleva una línea por cobertura, con la tasa de la póliza de su entidad. Con la EPS al uno coma dos por ciento '
                 'y una compañía al uno coma cero cinco, un sueldo de tres mil paga [[S 36]] y [[S 31.50]]. La gratificación no paga SCTR, salvo que la póliza lo exija.'},
         {'t': 'cap', 'img': 'c12_06_deducible_voluntarios', 'rotulo': 'Descuento deducible y aportes voluntarios',
-         'focos': ['DESC_D', 'AFPV_001'],
+         'focos': ['DESC_D', 'AFPVS_001'],
          'voz': 'El descuento deducible baja la base de los aportes: con treinta, la base es [[S 2970]] y la AFP, [[S 297]]. Los aportes voluntarios a la AFP '
                 'se descuentan del neto y van a AFPnet, sin reducir ninguna base.'},
         {'t': 'cap', 'img': 'c12_07_tiempo_parcial_s4', 'rotulo': 'Tiempo parcial: EsSalud con la base mínima',

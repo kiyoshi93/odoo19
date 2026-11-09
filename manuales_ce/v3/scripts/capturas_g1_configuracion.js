@@ -231,6 +231,96 @@ const pasos = {
     hechos.c08_13 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 2500);
     await cap(p, 'c08_13_contrato_lucia');
   },
+  // ---------------------------------------------------------------- manual al día: el resto de pantallas de los capítulos 3 a 9
+  async c03_resto(p, c) {
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACC.boletas}`);
+    await p.locator('.o_navbar_apps_menu button, .o_menu_toggle').first().click(); await p.waitForTimeout(1200);
+    hechos.c03_01 = limpio(await p.locator('.o-dropdown--menu, .o_home_menu, .dropdown-menu:visible').first().innerText().catch(() => '')).slice(0, 1500);
+    await cap(p, 'c03_01_menu_principal'); await p.keyboard.press('Escape');
+    for (const [m, n] of [['Configuración', 'c03_03_menu_configuracion'], ['Empleados', 'c03_04_menu_empleados']]) {
+      await u.irA(p, `/odoo/action-${ACC.boletas}`);
+      await p.locator('.o_main_navbar .o_menu_sections button, .o_main_navbar .o_menu_sections .dropdown-toggle').filter({ hasText: new RegExp('^\\s*' + m + '\\s*$') }).first().click();
+      await p.waitForTimeout(900);
+      hechos[n] = (await p.locator('.o-dropdown--menu .dropdown-item, .dropdown-menu:visible .dropdown-item').allInnerTexts()).map(limpio);
+      await cap(p, n); await p.keyboard.press('Escape');
+    }
+  },
+  async c04_07(p, c) {
+    // V-01: «1,230» se rechaza al guardar (la validación falla y no graba nada); después se descarta
+    const id = (await rpc(p, 'hr.rule.parameter', 'search_read', [[['code', '=', 'pe_rmv']]], { fields: ['id'], ...ctx(1) }))[0].id;
+    await cia(c, 1); await u.irA(p, `/odoo/action-solse_pe_payroll_base.rule_parameter_pe_action/${id}`);
+    await p.locator('.o_field_one2many .o_field_x2many_list_row_add a').first().click(); await p.waitForTimeout(800);
+    const fila = p.locator('.o_field_one2many .o_data_row.o_selected_row').first();
+    await fila.locator('[name="date_from"] input').fill('01/01/2027'); await p.keyboard.press('Escape').catch(() => {});
+    await fila.locator('[name="parameter_value"] input, [name="parameter_value"] textarea').first().fill('1,230');
+    await p.locator('.o_form_button_save').first().click(); await p.waitForTimeout(1800);
+    hechos.c04_07 = limpio(await p.locator('.modal, .o_notification').last().innerText().catch(() => ''));
+    await cap(p, 'c04_07_valor_rechazado');
+    await p.locator('.modal button').filter({ hasText: /Cerrar|Aceptar|De acuerdo|Ok/i }).first().click().catch(() => {});
+    const d = p.locator('.o_form_button_cancel').first(); if (await d.isVisible().catch(() => false)) { await d.click(); await p.waitForTimeout(800); }
+    await p.locator('.modal button').filter({ hasText: /Descartar/ }).first().click().catch(() => {});
+    const quedan = await rpc(p, 'hr.rule.parameter.value', 'search_count', [[['rule_parameter_id', '=', id]]], ctx(1));
+    hechos.c04_07_vigencias_despues = quedan; console.log('  vigencias de pe_rmv después:', quedan);
+  },
+  async c05_resto(p, c) {
+    await cia(c, 1);
+    for (const [acc, n] of [['type_contract_action', 'c05_04_t12_tipos_contrato'], ['employee_regime_action', 'c05_08_t33_regimenes']]) {
+      await u.irA(p, '/odoo/action-solse_pe_payroll_ce.' + acc);
+      hechos[n] = { total: limpio(await p.locator('.o_pager_counter').first().innerText().catch(() => '')), filas: (await p.locator('.o_data_row').allInnerTexts()).slice(0, 6).map(limpio) };
+      await cap(p, n);
+    }
+  },
+  async c07_resto(p, c) {
+    await cia(c, 1); await u.irA(p, '/odoo/action-solse_pe_payroll_ce.asignar_cuentas_wizard_action');
+    hechos.c07_02 = limpio(await p.locator('.modal, .o_form_view').last().innerText().catch(() => ''));
+    await cap(p, 'c07_02_asignar_cuentas');
+    const b = p.locator('.modal:visible .modal-footer button, .modal:visible footer button').filter({ hasText: /^\s*(Cancelar|Descartar|Cerrar)\s*$/ });
+    if (await b.count()) await b.last().click(); else await p.keyboard.press('Escape');
+    const dj = await rpc(p, 'account.journal', 'search_read', [[['code', '=', 'PLLA'], ['company_id', '=', 1]]], { fields: ['id'], ...ctx(1) });
+    await u.irA(p, `/odoo/action-account.action_account_journal_form/${dj[0].id}`);
+    hechos.c07_03 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 800);
+    await cap(p, 'c07_03_diario_planillas');
+    const r = await rpc(p, 'hr.salary.rule', 'search_read', [[['code', '=', 'RB_001'], ['struct_id.code', '=', 'NME']]], { fields: ['id'], ...ctx(1) });
+    await u.irA(p, `/odoo/action-1002/${r[0].id}`); await tab(p, 'Contabilidad');
+    hechos.c07_04 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500);
+    await cap(p, 'c07_04_regla_cuentas', { resaltar: ['.o_field_widget[name="account_debit"]', '.o_field_widget[name="account_credit"]'] });
+  },
+  async c08_resto(p, c) {
+    const lu = await empleado(p, 1, '99999901');
+    await cia(c, 1); await u.irA(p, `/odoo/employees/${lu.id}`); await u.pestana(p, 'Personal');
+    hechos.c08_02 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 1200);
+    await cap(p, 'c08_02_personal', { resaltar: ['.o_field_widget[name="identification_id"]', '.o_field_widget[name="birthday"]'] });
+    await ficha(p, c, 4, '70001501');
+    hechos.c08_07 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 3000);
+    await p.mouse.move(1300, 850);
+    await cap(p, 'c08_07_tregistro_identificacion');
+    for (const [sel, n] of [['[name="pe_ubigeo_t28_id"]', 'c08_08_tregistro_domicilio'], ['[name="pe_carrera_t34_id"], [name="pe_estudio_peru"]', 'c08_09_tregistro_estudios'], ['[name="pe_boleta_electronica"]', 'c08_10_entrega_electronica'], ['[name="relative_ids"]', 'c08_11_tregistro_derechohabientes']]) {
+      const l = p.locator(sel).first(); if (await l.count()) { await l.scrollIntoViewIfNeeded(); await p.waitForTimeout(400); await p.mouse.move(1300, 850); await p.waitForTimeout(400); await cap(p, n); }
+    }
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACC.contratos}`);
+    await p.locator('.o_searchview_facet .o_facet_remove').first().click().catch(() => {}); await u.esperarCarga(p, 1000);
+    hechos.c08_12 = { columnas: await p.locator('.o_list_view thead th').evaluateAll((t) => t.map((x) => x.innerText.trim()).filter(Boolean)), filas: (await p.locator('.o_data_row').allInnerTexts()).map(limpio).slice(0, 8) };
+    await cap(p, 'c08_12_lista_contratos');
+    await contrato(p, c, 1, '99999901');
+    const cat = p.locator('.o_field_widget[name="structure_type_id"] input').first();
+    if (await cat.count()) {
+      await cat.scrollIntoViewIfNeeded(); await cat.click(); await p.waitForTimeout(1000);
+      hechos.c08_15 = (await p.locator('.o-autocomplete--dropdown-menu .dropdown-item').allInnerTexts()).map(limpio);
+      await cap(p, 'c08_15_categoria_del_pago'); await p.keyboard.press('Escape');
+    }
+    const d = p.locator('.o_form_button_cancel').first(); if (await d.isVisible().catch(() => false)) { await d.click(); await p.waitForTimeout(800); }
+    await p.locator('.modal button').filter({ hasText: /Descartar/ }).first().click().catch(() => {});
+  },
+  async c09_resto(p, c) {
+    await cia(c, 1); await u.irA(p, '/odoo/action-999');
+    await p.locator('.o_data_row').filter({ hasText: /\bNME\b/ }).first().click(); await u.esperarCarga(p, 1000);
+    hechos.c09_02 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 3000);
+    await cap(p, 'c09_02_estructura_nme');
+    await u.irA(p, '/odoo/action-1002');
+    await p.locator('.o_group_header').filter({ hasText: 'Nómina Mensual Empleados' }).first().click(); await u.esperarCarga(p, 1000);
+    hechos.c09_03 = (await p.locator('.o_group_header, .o_data_row').allInnerTexts()).map(limpio).slice(0, 40);
+    await cap(p, 'c09_03_reglas_agrupadas');
+  },
 };
 
 module.exports = { pasos };

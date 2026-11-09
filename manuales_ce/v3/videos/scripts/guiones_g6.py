@@ -117,7 +117,7 @@ REEMPLAZOS['E21'] = {
          'voz': 'Los aportes que el PDT no calcula pueden ir al punto rem como informativos. Por defecto van la Vida Ley y el SIS de la microempresa; los del SCTR y los voluntarios quedan sin marcar. '
                 'Antes de marcar uno, pruebe la importación en su PDT.'},
         {'t': 'cap', 'img': 'c27_03_afpnet_resultado', 'rotulo': 'AFPnet de julio de 2026: 6 afiliados',
-         'focos': ['Trabajadores SPP incluidos'],
+         'focos': ['AFPNET_2026_07'],
          'voz': 'AFPnet sale en Excel con los afiliados al sistema privado: en julio, seis. El régimen es el del cálculo de la boleta, no el de hoy, y suma las planillas adicionales del mes. '
                 'Los aportes voluntarios van en sus columnas. Y el pago a cada AFP se registra con AFPnet, registrar el pago.'},
         {'t': 'limites', 'ceja': 'Pendiente', 'titulo': 'Lo que falta probar en el PDT',
@@ -168,7 +168,7 @@ REEMPLAZOS['E24'] = {
     'entrada': 'El segundo episodio del T-Registro muestra las modificaciones, el convenio del trabajador no domiciliado y los derechohabientes.',
     'escenas': [
         {'t': 'cap', 'img': 'c29_03_modificacion_resultado', 'rotulo': 'Modificación del tipo de trabajador',
-         'focos': ['Tipo de trabajador', 'per: 2'],
+         'focos': ['70001508', 'modificacion_tipo_trabajador'],
          'voz': 'Cada modificación es un envío, con un concepto y su fecha de cambio. Aquí, el tipo de trabajador cambia el dieciséis de octubre de 2026: el asistente propone al trabajador '
                 'y el archivo de periodos lleva dos líneas, el cierre y el nuevo periodo.'},
         {'t': 'tarjeta', 'ceja': 'Modificaciones', 'titulo': 'Nueve conceptos',
@@ -207,9 +207,9 @@ REEMPLAZOS['E25'] = {
         {'t': 'cap', 'img': 'c30_03_ajustes_4ta', 'rotulo': 'Retención y umbral de 1 500',
          'focos': ['Umbral de retencion'],
          'voz': 'En la compañía, pestaña Nómina PE cuarta categoría, se indica de dónde sale la retención, por defecto automático, y el umbral de [[S 1500]].'},
-        {'t': 'cap', 'img': 'c27_02_plame_resultado', 'rotulo': 'Sin recibos en el mes',
-         'focos': ['no hay recibos'],
-         'voz': 'Cuando no hay recibos pagados en el mes, el PLAME de la planilla lo dice en su resumen, y no agrega los archivos de cuarta.'},
+        {'t': 'cap', 'img': 'c27_02_plame_resultado', 'rotulo': 'Con nómina: la casilla del PLAME',
+         'focos': ['Incluir 4ta categoria'],
+         'voz': 'Con nómina, la casilla Incluir cuarta categoría agrega los dos archivos al ZIP del PLAME. Cuando no hay recibos pagados en el mes, como en junio en la consultora, el resumen lo dice y no los agrega.'},
         {'t': 'tarjeta', 'ceja': 'No confundir', 'titulo': 'El practicante no es un prestador',
          'items': ['La subvención de una modalidad formativa no es renta de 4.ª', 'Va en el «Personal en formación» del PLAME'],
          'voz': 'Un practicante no emite recibos por honorarios: su subvención no es renta de cuarta categoría y va en el personal en formación del PLAME.'},
