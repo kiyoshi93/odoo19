@@ -1,0 +1,108 @@
+1
+00:00:05,580 --> 00:00:10,910
+Un aumento a mitad de mes, un contrato nuevo, un ingreso o un cese cambian cómo se
+
+2
+00:00:10,910 --> 00:00:11,690
+paga el mes.
+
+3
+00:00:11,690 --> 00:00:14,875
+Este episodio muestra cómo lo resuelve la boleta.
+
+4
+00:00:16,340 --> 00:00:21,502
+En Odoo diecinueve, un aumento se registra como una nueva versión del contrato.
+
+5
+00:00:21,502 --> 00:00:26,925
+En el caso AUMENTO, el sueldo es de S/ 2 000 desde setiembre y de S/ 3 000 desde el
+
+6
+00:00:26,925 --> 00:00:27,839
+15 de octubre.
+
+7
+00:00:27,839 --> 00:00:31,564
+La boleta de octubre lleva una línea de días por versión:
+
+8
+00:00:31,564 --> 00:00:36,595
+diez días y doce días, en total veintidós días y ciento setenta y seis horas.
+
+9
+00:00:38,060 --> 00:00:41,915
+Cada sueldo paga sus días calendario:
+
+10
+00:00:41,915 --> 00:00:49,832
+dos mil entre treinta por catorce, más tres mil entre treinta por dieciséis.
+
+11
+00:00:49,832 --> 00:00:57,020
+La básica es S/ 2 533,33, con ONP de S/ 329,33 y un neto de S/ 2 204.
+
+12
+00:00:58,420 --> 00:01:04,032
+Con dos contratos en el mes, la boleta lleva una línea de días por contrato, y suma:
+
+13
+00:01:04,032 --> 00:01:05,703
+S/ 2 500 de remuneración.
+
+14
+00:01:05,703 --> 00:01:10,580
+En el PLAME, la jornada declara ciento setenta y seis horas una sola vez.
+
+15
+00:01:11,980 --> 00:01:17,344
+Una mensual que cubre solo una parte del mes paga los días calendario del periodo.
+
+16
+00:01:17,344 --> 00:01:22,643
+Con un sueldo de tres mil, un cese el diez de marzo paga S/ 1 000 y un ingreso el
+
+17
+00:01:22,643 --> 00:01:23,755
+veinte, S/ 1 200;
+
+18
+00:01:23,755 --> 00:01:27,746
+con un aumento dentro del periodo, cada sueldo paga sus días:
+
+19
+00:01:27,746 --> 00:01:28,334
+S/ 1 320.
+
+20
+00:01:28,334 --> 00:01:31,867
+Dos mensuales del mismo mes no ajustan a treinta días:
+
+21
+00:01:31,867 --> 00:01:34,026
+para cerrar el mes, use una sola.
+
+22
+00:01:34,026 --> 00:01:37,755
+Es un criterio pendiente de confirmación de la contadora.
+
+23
+00:01:39,220 --> 00:01:44,113
+Las horas del mes, como las horas extras o las tardanzas, se valoran con el horario
+
+24
+00:01:44,113 --> 00:01:46,529
+de la versión vigente al fin del periodo.
+
+25
+00:01:46,529 --> 00:01:50,361
+Si el cambio de contrato trae otro horario, revise el valor hora.
+
+26
+00:01:51,820 --> 00:01:56,633
+Cada versión del contrato paga sus días, y el PLAME declara el mes una sola vez.
+
+27
+00:01:56,633 --> 00:01:59,100
+Está en el capítulo veintiuno del manual.
+

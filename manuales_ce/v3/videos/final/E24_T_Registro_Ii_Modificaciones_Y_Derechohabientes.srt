@@ -1,0 +1,104 @@
+1
+00:00:05,580 --> 00:00:10,065
+El segundo episodio del T-Registro muestra las modificaciones, el convenio del
+
+2
+00:00:10,065 --> 00:00:12,882
+trabajador no domiciliado y los derechohabientes.
+
+3
+00:00:14,340 --> 00:00:18,656
+Cada modificación es un envío, con un concepto y su fecha de cambio.
+
+4
+00:00:18,656 --> 00:00:22,909
+Aquí, el tipo de trabajador cambia el dieciséis de octubre de 2026:
+
+5
+00:00:22,909 --> 00:00:27,986
+el asistente propone al trabajador y el archivo de periodos lleva dos líneas, el
+
+6
+00:00:27,986 --> 00:00:29,637
+cierre y el nuevo periodo.
+
+7
+00:00:31,100 --> 00:00:32,303
+Hay nueve conceptos.
+
+8
+00:00:32,303 --> 00:00:37,295
+Cada uno genera solo los archivos que cambian, y el valor anterior se cierra el día
+
+9
+00:00:37,295 --> 00:00:39,040
+previo a la fecha del cambio.
+
+10
+00:00:40,500 --> 00:00:45,415
+El campo veintidós del archivo de datos laborales lleva el convenio para evitar la
+
+11
+00:00:45,415 --> 00:00:48,293
+doble tributación del trabajador no domiciliado.
+
+12
+00:00:48,293 --> 00:00:53,268
+En la consultora, el consultor andino, con el convenio tres de la Comunidad Andina,
+
+13
+00:00:53,268 --> 00:00:54,287
+sale con un tres.
+
+14
+00:00:54,287 --> 00:00:56,865
+Sin convenio, el campo va vacío en el alta.
+
+15
+00:00:56,865 --> 00:01:01,720
+Si un contrato tiene convenio y no tiene la marca de no domiciliado, el asistente
+
+16
+00:01:01,720 --> 00:01:02,080
+avisa.
+
+17
+00:01:03,660 --> 00:01:07,112
+Las altas de derechohabientes generan un archivo de texto:
+
+18
+00:01:07,112 --> 00:01:10,147
+del uno al veintidós de octubre, cuatro exportados.
+
+19
+00:01:10,147 --> 00:01:14,551
+Un hijo mayor de edad sin incapacidad no se exporta, y el resumen lo dice.
+
+20
+00:01:14,551 --> 00:01:18,300
+La fecha del nombre del archivo es la del día en que se genera.
+
+21
+00:01:19,700 --> 00:01:23,269
+Los archivos de derechohabientes no pasan por el validador:
+
+22
+00:01:23,269 --> 00:01:25,023
+se suben directamente en SOL.
+
+23
+00:01:25,023 --> 00:01:29,620
+Nunca suba los del laboratorio, porque una carga en SOL es un registro real.
+
+24
+00:01:31,020 --> 00:01:35,255
+No cubre pensionistas ni personal de terceros, ni la modificación masiva de
+
+25
+00:01:35,255 --> 00:01:36,215
+derechohabientes.
+
+26
+00:01:36,215 --> 00:01:38,644
+Está en el capítulo veintinueve del manual.
+

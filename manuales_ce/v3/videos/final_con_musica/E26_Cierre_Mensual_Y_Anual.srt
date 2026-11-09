@@ -1,0 +1,124 @@
+1
+00:00:05,580 --> 00:00:10,481
+El último episodio reúne la lista de verificación del cierre de cada mes y de cada
+
+2
+00:00:10,481 --> 00:00:10,720
+año.
+
+3
+00:00:12,180 --> 00:00:13,932
+Cada mes, antes de calcular:
+
+4
+00:00:13,932 --> 00:00:16,873
+revise los parámetros y registre las novedades:
+
+5
+00:00:16,873 --> 00:00:20,877
+ingresos, ceses, cambios de sueldo, comisiones y bonificaciones.
+
+6
+00:00:20,877 --> 00:00:26,071
+Revise los convenios de los practicantes y su media subvención, los no domiciliados
+
+7
+00:00:26,071 --> 00:00:29,637
+y su convenio, y presente el T-Registro dentro del plazo.
+
+8
+00:00:31,100 --> 00:00:32,243
+Valide en orden:
+
+9
+00:00:32,243 --> 00:00:32,886
+adelanto;
+
+10
+00:00:32,886 --> 00:00:36,101
+gratificación, CTS, vacaciones y adicionales;
+
+11
+00:00:36,101 --> 00:00:36,815
+mensuales;
+
+12
+00:00:36,815 --> 00:00:38,958
+y al final, las liquidaciones.
+
+13
+00:00:38,958 --> 00:00:44,316
+Revise los avisos de cada boleta, el asiento de cada lote y, si la compañía
+
+14
+00:00:44,316 --> 00:00:48,389
+provisiona con un asiento mensual, el de las provisiones.
+
+15
+00:00:49,860 --> 00:00:50,396
+Después:
+
+16
+00:00:50,396 --> 00:00:53,679
+genere y abra cada archivo y revise los omitidos.
+
+17
+00:00:53,679 --> 00:00:59,239
+En el PLAME, mire también el punto toc, el punto or cinco y el archivo del personal
+
+18
+00:00:59,239 --> 00:01:00,110
+en formación.
+
+19
+00:01:00,110 --> 00:01:05,670
+Registre el pago de la planilla y el de AFPnet, y entregue las boletas en tres días
+
+20
+00:01:05,670 --> 00:01:06,206
+hábiles.
+
+21
+00:01:07,740 --> 00:01:08,312
+Cada año:
+
+22
+00:01:08,312 --> 00:01:13,143
+registre los feriados y la UIT del año siguiente, valide la gratificación de
+
+23
+00:01:13,143 --> 00:01:17,338
+diciembre antes que la mensual y emita los certificados de quinta.
+
+24
+00:01:17,338 --> 00:01:20,962
+Reparta las utilidades y entregue su hoja de liquidación;
+
+25
+00:01:20,962 --> 00:01:25,602
+si la compañía está afecta al SENATI, revise su promedio de trabajadores;
+
+26
+00:01:25,602 --> 00:01:28,716
+y, si provisiona, revise el pasivo de vacaciones.
+
+27
+00:01:30,180 --> 00:01:34,323
+Y después de cada actualización de los módulos, corra los treinta casos del
+
+28
+00:01:34,323 --> 00:01:34,986
+laboratorio:
+
+29
+00:01:34,986 --> 00:01:37,085
+todos deben quedar en cien por ciento.
+
+30
+00:01:38,540 --> 00:01:40,650
+Gracias por acompañarnos en esta serie.
+
+31
+00:01:40,650 --> 00:01:44,220
+La lista completa está en el capítulo treinta y cuatro del manual.
+
