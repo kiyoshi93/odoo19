@@ -14,8 +14,8 @@ todas son pantallas que se abren y se cancelan o se descartan. Ventana de 1600 �
 
 ### c07_05_opciones_provisiones (nueva)
 - **Qué debe verse:** Ajustes › Nómina PE › bloque «Provisiones de beneficios (N-13)» con todas sus opciones visibles.
-- **Compañía:** SOLSE Demo Servicios (4). Hoy está en «Sin provisión» (los casos devuelven las opciones al terminar):
-  elegir **«En la boleta mensual»** en «Provisión mensual de beneficios» y marcar «Provisionar el EsSalud de las
+- **Compañía:** SOLSE Demo Servicios (4). Hoy (09/11) está en «Asiento mensual de provisiones»: elegir **«En la boleta
+  mensual»** en «Provisión mensual de beneficios» y marcar «Provisionar el EsSalud de las
   vacaciones» **sin guardar**, para que se vean «Provisión en la semanal», «Aplicación de lo provisionado», «Adelanto de
   vacaciones en la provisión», «Pasivo de vacaciones», «Indemnización vacacional en la provisión», «Saldo inicial de
   ejercicios anteriores», «Corrección de un mes contabilizado», «Variables de una adicional validada después de la
@@ -26,11 +26,10 @@ todas son pantallas que se abren y se cancelan o se descartan. Ventana de 1600 �
 - **Qué debe verse:** Nómina › Nómina PE › Contabilidad de nómina › Provisiones del mes, con Mes «Enero», Año 2027,
   Diario «Planillas», «Solo estos trabajadores» vacío, «Con el saldo inicial» marcado y «También los meses posteriores
   ya registrados» desmarcado. **Cancelar** (no pulsar «Generar asiento»).
-- **Compañía:** SOLSE Demo Servicios (4). El asistente lee la opción **guardada** de la compañía, y hoy todas están en
-  «Sin provisión»: así la ventana muestra el aviso azul «La compañía no provisiona con un asiento mensual» y oculta las
-  dos casillas. Si quien captura puede guardar en la compañía 4 «Asiento mensual de provisiones», tomar la captura y
-  devolverla a «Sin provisión» enseguida (es lo que hace el caso PROVISIONES), hacerlo así. Si no, tomarla con el aviso
-  y avisar: el pie del capítulo se ajusta.
+- **Compañía:** SOLSE Demo Servicios (4). El asistente lee la opción **guardada** de la compañía; hoy (09/11) está en
+  «Asiento mensual de provisiones», así que se ven las dos casillas. Si al capturar estuviera en «Sin provisión», la
+  ventana muestra el aviso azul «La compañía no provisiona con un asiento mensual» y oculta las casillas: avisar y el pie
+  se ajusta.
 
 ### c07_07_asiento_provisiones_enero (nueva)
 - **Qué debe verse:** el asiento «Provisiones de nómina 01/2027» (account.move id 11242, borrador, diario Planillas,

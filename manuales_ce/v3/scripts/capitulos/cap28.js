@@ -68,7 +68,7 @@ module.exports = (h) => {
     vinetas([
       '**La fecha límite** de una liquidación con cese es **48 horas desde el cese** (la del pago y la del certificado de trabajo), no los días hábiles desde el pago. En DOCUMENTOS_CESE, las cinco liquidaciones del 31/08/2030 dicen **Entregar hasta 02/09/2030**.',
       '«Enviar boletas por correo» de un lote cuenta **50 documentos por pulsación**, no 50 boletas: una liquidación con cese vale 3 o 4, así que cada pulsación envía unas 12 liquidaciones y avisa cuántas quedan. En DOCUMENTOS_CESE se enviarían **19 documentos** de cinco liquidaciones (70002404 no tiene cuenta CTS y su constancia no se emite).',
-      'Sin representante del empleador (Empleados › «Es empleador»), los documentos salen sin su nombre. En contable19, ni FM SYSTEMS ni SOLSE Demo Servicios lo tienen: regístrelo antes de la primera liquidación.',
+      'Sin representante del empleador (la casilla **«Firma como empleador»** en la ficha del trabajador que firma, uno por compañía), los documentos salen sin su nombre y la hoja de utilidades no se envía al ex trabajador. En contable19, FM SYSTEMS todavía no lo tiene: regístrelo antes de la primera liquidación.',
       'Una boleta mensual sigue enviando solo la suya.',
     ]),
 
