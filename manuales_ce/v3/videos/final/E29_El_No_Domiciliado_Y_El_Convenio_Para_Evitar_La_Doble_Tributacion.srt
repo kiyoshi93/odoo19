@@ -1,0 +1,176 @@
+1
+00:00:05,580 --> 00:00:10,289
+Un trabajador extranjero que no es domiciliado retiene el treinta por ciento de lo
+
+2
+00:00:10,289 --> 00:00:10,978
+que percibe.
+
+3
+00:00:10,978 --> 00:00:14,481
+Si viene de la Comunidad Andina, retiene como un domiciliado.
+
+4
+00:00:14,481 --> 00:00:17,353
+Lo vemos con dos consultores con los mismos datos:
+
+5
+00:00:17,353 --> 00:00:19,363
+uno de Venezuela y uno de Colombia.
+
+6
+00:00:20,820 --> 00:00:25,672
+Es no domiciliado el extranjero que no pasó más de ciento ochenta y tres días en el
+
+7
+00:00:25,672 --> 00:00:29,063
+Perú en doce meses, y la condición cambia el uno de enero.
+
+8
+00:00:29,063 --> 00:00:33,915
+Su retención es el treinta por ciento de lo que percibe, sin las siete UIT y sin la
+
+9
+00:00:33,915 --> 00:00:34,325
+escala.
+
+10
+00:00:34,325 --> 00:00:38,651
+Pero si al contratarlo residía en Bolivia, Colombia o Ecuador, la Decisión
+
+11
+00:00:38,651 --> 00:00:43,445
+quinientos setenta y ocho de la Comunidad Andina le da el trato de un domiciliado.
+
+12
+00:00:45,020 --> 00:00:46,872
+En el contrato hay dos campos:
+
+13
+00:00:46,872 --> 00:00:51,318
+No domiciliado, y Convenio para evitar la doble tributación, de la Tabla
+
+14
+00:00:51,318 --> 00:00:52,059
+veinticinco.
+
+15
+00:00:52,059 --> 00:00:56,876
+Este consultor colombiano tiene la marca y el convenio tres, Comunidad Andina.
+
+16
+00:00:56,876 --> 00:00:59,408
+Decide la residencia, no la nacionalidad:
+
+17
+00:00:59,408 --> 00:01:01,198
+conviene guardar el sustento.
+
+18
+00:01:02,660 --> 00:01:08,097
+El consultor venezolano gana S/ 8 000 desde el cuatro de mayo.
+
+19
+00:01:08,097 --> 00:01:13,797
+En junio paga su ONP de S/ 1 040 y retiene el treinta por ciento:
+
+20
+00:01:13,797 --> 00:01:14,586
+S/ 2 400.
+
+21
+00:01:14,586 --> 00:01:16,340
+El neto es S/ 4 560.
+
+22
+00:01:17,740 --> 00:01:22,994
+Cada boleta retiene el treinta por ciento de lo percibido desde que rige la marca,
+
+23
+00:01:22,994 --> 00:01:24,339
+menos lo ya retenido.
+
+24
+00:01:24,339 --> 00:01:26,966
+Su gratificación de julio retiene S/ 436.
+
+25
+00:01:26,966 --> 00:01:32,155
+Así el orden de validación no cambia el total, y la liquidación no hace ajuste ni
+
+26
+00:01:32,155 --> 00:01:32,732
+devuelve.
+
+27
+00:01:34,260 --> 00:01:40,852
+El consultor colombiano, con los mismos datos, retiene como un domiciliado:
+
+28
+00:01:40,852 --> 00:01:43,577
+proyección, siete UIT y escala.
+
+29
+00:01:43,577 --> 00:01:50,785
+Su renta neta es S/ 27 673,33 y junio retiene S/ 278,03, no dos mil cuatrocientos.
+
+30
+00:01:50,785 --> 00:01:54,740
+Su gratificación de julio no lleva retención.
+
+31
+00:01:56,140 --> 00:02:00,370
+En el PLAME, la retención va al cero seis cero cinco, como siempre.
+
+32
+00:02:00,370 --> 00:02:05,106
+El ZIP lleva además el archivo punto toc, con una línea por no domiciliado:
+
+33
+00:02:05,106 --> 00:02:10,221
+dos en junio, el venezolano y el colombiano, los dos con Domiciliado igual a dos.
+
+34
+00:02:10,221 --> 00:02:12,620
+Sin no domiciliados, no hay punto toc.
+
+35
+00:02:14,020 --> 00:02:18,872
+En el T-Registro, el campo veintidós de los datos del trabajador lleva el convenio:
+
+36
+00:02:18,872 --> 00:02:20,275
+tres para el colombiano.
+
+37
+00:02:20,275 --> 00:02:23,958
+El certificado de quinta separa la renta al treinta por ciento.
+
+38
+00:02:23,958 --> 00:02:25,011
+Y la boleta avisa:
+
+39
+00:02:25,011 --> 00:02:29,863
+si por la fecha de ingreso pasaría los ciento ochenta y tres días, si un extranjero
+
+40
+00:02:29,863 --> 00:02:34,774
+no tiene la marca, o si un trabajador de un país andino está retenido al treinta por
+
+41
+00:02:34,774 --> 00:02:35,183
+ciento.
+
+42
+00:02:36,700 --> 00:02:41,204
+El trabajo en el exterior, la salida del país a mitad de año y la devolución al
+
+43
+00:02:41,204 --> 00:02:44,568
+andino en el cese son criterios pendientes de confirmación.
+
+44
+00:02:44,568 --> 00:02:46,963
+Todo está en el capítulo trece del manual.
+
