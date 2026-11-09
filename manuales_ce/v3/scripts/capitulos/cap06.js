@@ -46,7 +46,7 @@ module.exports = (h) => {
       ['Pensión, compañía de seguros', '`SCTR_PEN_001` «SCTR Pensión - Compañía de seguros»', '0814', '4699'],
     ], [2600, 4238, 1200, 1600]),
     p('El importe es la remuneración afecta (menos tardanzas, más subsidios: la columna «ESSALUD SCTR» de la Tabla 22, sin tope) × la tasa de la póliza de esa entidad vigente al fin del periodo. Va en la mensual, la semanal, la vacacional, la liquidación y las planillas de comisiones y bonificaciones; el gasto, a la 6273. Cada línea guarda la póliza y la tasa con que se calculó: columnas opcionales **Póliza SCTR** y **Tasa SCTR (%)** de las líneas de la boleta.'),
-    ...figura('c06_07_boleta_sctr', 'Boleta de noviembre de 2026 del caso SCTR (DNI 70002002, sueldo 3 000, EPS y compañía de seguros): SCTR Salud - EPS 36,00 y SCTR Pensión - Compañía de seguros 31,50, con las columnas «Póliza SCTR» y «Tasa SCTR (%)».'),
+    ...figura('c06_07_boleta_sctr', 'Boleta de noviembre de 2026 del caso SCTR (DNI 70002002, sueldo 3 000, EPS y compañía de seguros): SCTR Salud - EPS 36,00 y SCTR Pensión - Compañía de seguros 31,50; la columna opcional «Póliza SCTR» dice con qué póliza y tasa se calculó cada una (Salud - EPS · 1,2 %; Pensión - Compañía de seguros · 1,05 %).'),
     tabla(['Caso SCTR, noviembre de 2026, sueldo 3 000', 'SCTR salud', 'SCTR pensión'], [
       ['70002001, EsSalud y ONP', '15,90 (0,53 %; pasivo 4031)', '27,60 (0,92 %; pasivo 4032)'],
       ['70002002, EPS y compañía de seguros', '36,00 (1,20 %; 4699)', '31,50 (1,05 %; 4699)'],

@@ -4,7 +4,7 @@
 const fs = require('fs'); const path = require('path');
 const u = require('../../scripts/odoo_ui');
 const { cap, cia, tab, alta, limpio, informe } = require('./capturas_bloque3');
-const { rpc, idBoleta, hechos } = require('./capturas_v3');
+const { rpc, idBoleta, hechos, asistentePlame } = require('./capturas_v3');
 const HECHOS = path.join(__dirname, '..', 'medidas', 'ui_g4_beneficios.json');
 const ACC = { boletas: 1005 };
 const CAP = (n) => path.join(process.env.CAPTURAS_DIR, `${n}.png`);
@@ -63,10 +63,10 @@ const pasos = {
   },
   // ---------------------------------------------------------------- 15 · CTS
   async c15k9(p, c) {
-    await informeTapado(p, c, 14, 'solse_pe_payroll_ce.reporte_constancia_cts', await idBoleta(p, 14, '70006309', '2025-11-01', 'CTS'), 'c15_03_constancia_cts_k9_divisor', []);
+    await informeTapado(p, c, 14, 'solse_pe_payroll_ce.reporte_constancia_cts', await idBoleta(p, 14, '70006309', '2025-11-01', 'CTS'), 'c15_03_constancia_cts_k9_divisor', ['Av\\. Pardo 103[^,;)]*']);
   },
   async c15(p, c) {
-    await informeTapado(p, c, 14, 'solse_pe_payroll_ce.reporte_constancia_cts', await idBoleta(p, 14, '70006309', '2025-11-01', 'CTS'), 'c15_03_constancia_cts_k9_divisor', []);
+    await informeTapado(p, c, 14, 'solse_pe_payroll_ce.reporte_constancia_cts', await idBoleta(p, 14, '70006309', '2025-11-01', 'CTS'), 'c15_03_constancia_cts_k9_divisor', ['Av\\. Pardo 103[^,;)]*']);
     await informeTapado(p, c, 1, 'solse_pe_payroll_ce.reporte_constancia_cts', await idBoleta(p, 1, '99999901', '2026-11-01', 'CTS'), 'c15_02_liquidacion_deposito_cts', FM);
   },
   // ---------------------------------------------------------------- 20 · horas extra y utilidades
@@ -95,6 +95,45 @@ const pasos = {
     const cerrar = m.locator('.modal-footer button, footer button').filter({ hasText: /^\s*(Cerrar|Cancelar|Descartar)\s*$/ });
     if (await cerrar.count()) await cerrar.last().click(); else await p.keyboard.press('Escape');
     await p.waitForTimeout(800);
+  },
+  // ---------------------------------------------------------------- E29 · el no domiciliado y el convenio
+  async e29(p, c) {
+    await boletaPestana(p, c, 16, await idBoleta(p, 16, '000068005', '2026-06-01', 'Mensual'), 'Renta de 5ta', 'c13_07_renta5_andino_s5_jun2026',
+      { resaltar: ['.o_field_widget[name="pe_r5_renta_neta"]', '.o_field_widget[name="pe_r5_retencion_boleta"]'] });
+    await boletaPestana(p, c, 16, await idBoleta(p, 16, '000068002', '2026-06-01', 'Mensual'), 'Cálculo de la nómina', 'c13_08_s2_jun2026_calculo',
+      { resaltar: ['fila:R5TA_001', 'fila:NET'] });
+    await asistentePlame(p, c, 16, 'Junio', 2026, 'c13_09_plame_toc_consultora');
+  },
+  // ---------------------------------------------------------------- recaptura en el v3 de las del v2 que usan los episodios
+  async rehacer(p, c) {
+    const L = '99999901'; const O = '43815927';
+    await boletaPestana(p, c, 1, await idBoleta(p, 1, L, '2025-01-01', 'Mensual'), 'Cálculo de la nómina', 'c13_01_lucia_ene2025_calculo', { resaltar: ['fila:BAR5_001', 'fila:R5TA_001'] });
+    await boletaPestana(p, c, 4, await idBoleta(p, 4, '70004501', '2026-04-01', 'Liquidaci'), 'Cálculo de la nómina', 'c13_02_cese_devolucion_calculo', { resaltar: ['fila:DEV5_001'] });
+    await boletaPestana(p, c, 1, await idBoleta(p, 1, L, '2026-07-01', 'Gratific'), 'Cálculo de la nómina', 'c14_01_lucia_grati_jul2026_calculo', { resaltar: ['fila:GRATI_001', 'fila:BONO_GRATI_001'] });
+    await boletaPestana(p, c, 1, await idBoleta(p, 1, L, '2026-11-01', 'CTS'), 'Cálculo de la nómina', 'c15_01_lucia_cts_nov2026_calculo', { resaltar: ['fila:CTS_001'] });
+    await boletaPestana(p, c, 1, await idBoleta(p, 1, L, '2026-02-02', 'Vacaciones'), 'Cálculo de la nómina', 'c17_01_lucia_vac_feb2026_calculo', { resaltar: ['fila:VAC_001'] });
+    const nme = await idBoleta(p, 1, L, '2026-02-01', 'Mensual');
+    await boletaPestana(p, c, 1, nme, 'Cálculo de la nómina', 'c17_02_lucia_nme_feb2026_calculo', { resaltar: ['fila:RB_001', 'fila:ASF_001', 'fila:R5TA_001'] });
+    await boletaPestana(p, c, 1, nme, 'Días trabajados y entradas', 'c17_02_lucia_nme_feb2026_dias', { resaltar: ['fila:Vacaciones'] });
+    await boletaPestana(p, c, 4, await idBoleta(p, 4, O, '2026-07-01', 'Vacaciones'), 'Días trabajados y entradas', 'c17_06_oscar_vac_jul2026_dias', { resaltar: ['fila:Vacaciones'] });
+    await boletaPestana(p, c, 4, await idBoleta(p, 4, O, '2026-07-01', 'Mensual'), 'Días trabajados y entradas', 'c17_07_oscar_nme_jul2026_dias', { resaltar: ['fila:Vacaciones'] });
+    // listas de vacaciones de FM (solo lectura)
+    await cia(c, 1); await u.irA(p, '/odoo/action-986?view_type=list');
+    for (let i = 0; i < 4 && await p.locator('.o_searchview_facet').count(); i++) { await p.locator('.o_searchview_facet .o_facet_remove').first().click(); await u.esperarCarga(p, 800); }
+    await u.esperarCarga(p, 1000); hechos.c17_03 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio).slice(0, 10);
+    await cap(p, 'c17_03_asignaciones');
+    await u.irA(p, '/odoo/action-979?view_type=list');
+    for (let i = 0; i < 3; i++) await p.locator('.o_searchview_facet .o_facet_remove').first().click().catch(() => {});
+    await u.esperarCarga(p, 1000); hechos.c17_04 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio).slice(0, 10);
+    await cap(p, 'c17_04_ausencias');
+    await u.irA(p, '/odoo/action-982'); await u.esperarCarga(p, 1000);
+    hechos.c17_05 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio);
+    await cap(p, 'c17_05_tipos_ausencia_tabla21');
+    // el asistente del certificado de 5.ª: se abre y se cierra
+    await cia(c, 1); await u.irA(p, '/odoo/action-1093'); await p.waitForTimeout(1500);
+    hechos.c13_03 = limpio(await p.locator('.modal').last().innerText().catch(() => ''));
+    await cap(p, 'c13_03_certificado_asistente');
+    await p.keyboard.press('Escape'); await p.waitForTimeout(600);
   },
 };
 

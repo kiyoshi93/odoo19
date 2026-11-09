@@ -92,16 +92,22 @@ const pasos = {
     const tog = panel.locator('.o_optional_columns_dropdown_toggle, .o_optional_columns_dropdown button').first();
     if (await tog.count()) {
       await tog.click(); await p.waitForTimeout(700);
-      for (const t of ['Póliza SCTR', 'Tasa SCTR']) {
-        const it = p.locator('.o-dropdown--menu .dropdown-item, .dropdown-menu:visible .dropdown-item').filter({ hasText: t }).first();
-        if (await it.count()) { const cb = it.locator('input[type="checkbox"]'); if (!(await cb.isChecked().catch(() => false))) { await it.click(); await p.waitForTimeout(600); } }
+      hechos.c06_07_opcionales = (await p.locator('.o-dropdown--menu, .dropdown-menu:visible').allInnerTexts()).map(limpio);
+      for (const [t, ver] of [['Póliza SCTR', true], ['Tasa SCTR', true], ['Secuencia', false], ['Cantidad', false], ['Regla', false], ['Tasa (%)', false]]) {
+        const it = p.locator('.o-dropdown--menu .dropdown-item, .dropdown-menu:visible .dropdown-item').filter({ hasText: new RegExp('^\\s*' + t.replace(/[()]/g, '\\$&') + '\\s*$') }).first();
+        if (await it.count()) { const cb = it.locator('input[type="checkbox"]'); if ((await cb.isChecked().catch(() => false)) !== ver) { await it.click(); await p.waitForTimeout(600); } }
       }
       await p.keyboard.press('Escape'); await p.waitForTimeout(500);
     }
     hechos.c06_07 = limpio(await panel.innerText()).slice(0, 3000);
     const marcas = ['SCTR_SAL_001', 'SCTR_PEN_001'].map((cod) => panel.locator('.o_data_row').filter({ hasText: cod }).first());
-    await alta(p, () => cap(p, 'c06_07_boleta_sctr', { resaltar: marcas }));
-    await recortarForm('c06_07_boleta_sctr', 1040);
+    // más ancho para que entren las columnas «Póliza SCTR» y «Tasa SCTR (%)»; se recorta al formulario
+    await p.setViewportSize({ width: 2100, height: 2600 }); await p.waitForTimeout(900);
+    const ancho = Math.round(await p.locator('.o_form_sheet_bg, .o_form_renderer > .o_form_sheet_bg').first().evaluate((n) => n.getBoundingClientRect().right).catch(() => 1400));
+    hechos.c06_07_ancho = ancho;
+    await cap(p, 'c06_07_boleta_sctr', { resaltar: marcas });
+    await p.setViewportSize({ width: 1600, height: ALTO });
+    await recortarForm('c06_07_boleta_sctr', ancho + 4);
   },
   // ---------------------------------------------------------------- 8 · ficha y contrato
   async c08_16(p, c) {
@@ -148,6 +154,81 @@ const pasos = {
     hechos.c09_06 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 4000);
     await cap(p, 'c09_06_opciones_compania');
     await alto(p, ALTO);
+  },
+  // ---------------------------------------------------------------- retomas para los videos (mismas pantallas del v2, en noviembre de 2026)
+  async c04_retomar(p, c) {
+    const id = async (codigo) => (await rpc(p, 'hr.rule.parameter', 'search_read', [[['code', '=', codigo]]], { fields: ['id'], ...ctx(1) }))[0].id;
+    const acc = '/odoo/action-solse_pe_payroll_base.rule_parameter_pe_action/';
+    await cia(c, 1); await u.irA(p, acc + await id('pe_rmv'));
+    hechos.c04_02 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500);
+    await cap(p, 'c04_02_parametro_rmv');
+    await u.irA(p, acc + await id('pe_afp_rma'));
+    hechos.c04_03 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500);
+    await cap(p, 'c04_03_parametro_rma');
+    await u.irA(p, acc + await id('pe_afp_comision_flujo'));
+    await cap(p, 'c04_04_parametro_comision_afp', { resaltar: ['button[name="action_nueva_vigencia"]'] });
+    await p.locator('button[name="action_nueva_vigencia"]').first().click();
+    await p.locator('.modal .o_data_row').first().waitFor(); await p.waitForTimeout(800);
+    hechos.c04_05 = limpio(await p.locator('.modal').last().innerText());
+    await cap(p, 'c04_05_nueva_vigencia_comision_afp');
+    await p.locator('.modal button[special="cancel"], .modal .btn-close').first().click(); await p.waitForTimeout(600);
+    await u.irA(p, acc + await id('pe_renta5_tramos'));
+    await p.locator('.o_field_one2many .o_data_row button[name="action_editar_en_tabla"]').first().click();
+    await p.locator('.modal .o_data_row').first().waitFor(); await p.waitForTimeout(800);
+    hechos.c04_06 = limpio(await p.locator('.modal').last().innerText());
+    await cap(p, 'c04_06_editar_tramos_en_tabla');
+    await p.locator('.modal button[special="cancel"], .modal .btn-close').first().click(); await p.waitForTimeout(600);
+    // banda de avisos de una boleta de enero de 2027 SIN guardar (se descarta)
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACC.boletas}/new`); const f = p.locator('.o_form_view').first();
+    await u.muchosAUno(p, f, 'employee_id', 'Lucía'); await p.waitForTimeout(2000); await u.esperarCarga(p, 800);
+    await u.rangoFechas(p, f, 'date_from', 'date_to', '01/01/2027', '31/01/2027'); await p.waitForTimeout(2500);
+    hechos.c04_08 = limpio(await p.locator('.o_form_view .alert').allInnerTexts().then((x) => x.join(' || ')).catch(() => ''));
+    await cap(p, 'c04_08_boleta_2027_alertas_rma_uit', { resaltar: ['.o_form_view .alert-warning'] });
+    const d = p.locator('.o_form_button_cancel').first(); if (await d.isVisible().catch(() => false)) { await d.click(); await p.waitForTimeout(800); }
+    await p.locator('.modal button').filter({ hasText: /Descartar/ }).first().click().catch(() => {});
+  },
+  async c05_retomar(p, c) {
+    await cia(c, 1);
+    for (const [acc, n] of [['plame_lines_action', 'c05_01_t22_conceptos_plame'], ['pension_system_action', 'c05_02_t11_sistemas_pensionarios'], ['relative_relation_action', 'c05_05_t19_vinculos'], ['ubigeo_t28_action', 'c05_06_t28_ubigeo'], ['carrera_t34_action', 'c05_07_t34_carreras']]) {
+      await u.irA(p, '/odoo/action-solse_pe_payroll_ce.' + acc);
+      hechos[n] = { total: limpio(await p.locator('.o_pager_counter').first().innerText().catch(() => '')), filas: (await p.locator('.o_data_row').allInnerTexts()).slice(0, 6).map(limpio) };
+      await cap(p, n);
+    }
+    await u.irA(p, '/odoo/action-solse_pe_payroll_ce.plame_lines_action');
+    await p.locator('.o_searchview_input').fill('0121'); await p.waitForTimeout(800);
+    await p.keyboard.press('Enter'); await u.esperarCarga(p, 1000);
+    hechos.c05_03 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio);
+    await cap(p, 'c05_03_busqueda_por_codigo');
+  },
+  async c06_retomar(p, c) {
+    await cia(c, 4); await u.irA(p, '/odoo/action-solse_pe_payroll_ce.eps_management_action');
+    hechos.c06_01 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio);
+    await cap(p, 'c06_01_planes_eps');
+    await u.irA(p, '/odoo/action-solse_pe_payroll_ce.life_insurance_action');
+    hechos.c06_02 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio);
+    await cap(p, 'c06_02_polizas_vida_ley');
+    await p.locator('.o_data_row').filter({ hasText: 'VL-TASA' }).first().click(); await u.esperarCarga(p, 1000);
+    hechos.c06_03 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500);
+    await cap(p, 'c06_03_poliza_vida_ley', { resaltar: ['.o_field_widget[name="pe_calcular_en_planilla"]'] });
+    const id = await idBoleta(p, 4, '70000561', '2026-06-01', 'Mensual');
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${id}`); await tab(p, 'Cálculo de la nómina');
+    const panel = p.locator('.o_notebook .tab-pane.active');
+    hechos.c06_08 = limpio(await panel.innerText()).slice(0, 3000);
+    await alta(p, () => cap(p, 'c06_08_boleta_vida_ley', { resaltar: [panel.locator('.o_data_row').filter({ hasText: 'VIDA_001' }).first(), panel.locator('.o_data_row').filter({ hasText: /^\s*Neto/ }).first()] }));
+    await recortarForm('c06_08_boleta_vida_ley', 1040);
+  },
+  async c08_retomar(p, c) {
+    const e = await empleado(p, 1, '99999901');
+    await cia(c, 1); await u.irA(p, `/odoo/employees/${e.id}`);
+    await cap(p, 'c08_01_ficha_lucia');
+    await u.pestana(p, 'Nómina PE');
+    hechos.c08_03 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 2500);
+    await cap(p, 'c08_03_nomina_pe_1');
+    const l = p.locator('[name="relative_ids"]').first(); if (await l.count()) { await l.scrollIntoViewIfNeeded(); await p.waitForTimeout(400); }
+    await cap(p, 'c08_06_derechohabientes', { resaltar: ['[name="relative_ids"] .o_data_row'] });
+    await contrato(p, c, 1, '99999901');
+    hechos.c08_13 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 2500);
+    await cap(p, 'c08_13_contrato_lucia');
   },
 };
 

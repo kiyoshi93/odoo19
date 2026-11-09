@@ -102,7 +102,7 @@ module.exports = (h) => {
       ['Julio de 2026', 'R5TA 2 400,00', '—', '—'],
       ['Enero de 2027', 'R5TA 2 400,00 y aviso «no_domiciliado» (242 días en 2026)', '—', '—'],
     ], [2200, 2800, 2500, 2138]),
-    ...figura('c13_06_renta5_no_domiciliado_s2', 'Pestaña «Renta de 5ta» de la gratificación de julio de 2026 de S2 (EMPRESA_CONSULTORA): «No domiciliado (LIR, art. 54): 30 % de (8 000,00 percibido en el tramo + 1 453,33 de esta boleta) − retenido 2 400,00 = 436,00», rige la marca desde el 04/05/2026.'),
+    ...figura('c13_06_renta5_no_domiciliado_s2', 'Pestaña «Renta de 5ta» de la gratificación de julio de 2026 de S2 (EMPRESA_CONSULTORA): «No domiciliado (LIR, art. 54): 30 % de (8 000,00 percibido en el tramo + 1 453,33 de esta boleta) − retenido 2 400,00 = 436,00», tasa 30 %, rige la marca desde el 4 de mayo, retención en la boleta 436,00.'),
     p('La retención va al 0605 del PLAME, como siempre. El ZIP del PLAME lleva el archivo `.toc` con una línea por no domiciliado (el andino también, con «Domiciliado» = 2: `04|000068005|0|0||2|`), y el campo 22 del T-Registro lleva el convenio («3» para S5): capítulos 27 y 29. El certificado de 5.ª separa la renta al 30 % (sin deducción) de la que va con la escala.'),
     tabla(['Aviso', 'Cuándo'], [
       ['`no_domiciliado`', 'Por el inicio del contrato pasaría los 183 días al 31/12: desde el 1 de enero sería domiciliado'],
@@ -120,7 +120,7 @@ module.exports = (h) => {
     h2('13.7 Certificado de 5.ª categoría'),
     p('**Nómina PE › Certificado de 5.ª categoría** imprime el certificado anual de rentas y retenciones (R.S. 010-2006/SUNAT, art. 2) de los trabajadores elegidos. Si no se elige ninguno, se imprimen todos los que tuvieron renta de 5.ª en el ejercicio. Opción **Por duplicado** (N-08). Desde los lotes 26b y 69 muestra además las rentas y retenciones acreditadas de otros empleadores y separa la renta del no domiciliado al 30 %. Los importes llevan separador de miles y el ejercicio sale sin coma (lote 59).'),
     ...figura('c13_03_certificado_asistente', 'Asistente del certificado: compañía, ejercicio (por defecto, el año anterior), trabajadores y duplicado.'),
-    ...figura('c13_04_certificado_renta5_lucia_2025', 'Certificado de Lucía, ejercicio 2025: renta bruta 65 412,34; deducción de 7 UIT 37 450,00; renta neta 27 962,34; impuesto y retención 2 309,73.'),
+    ...figura('c13_04_certificado_renta5_lucia_2025', 'Certificado de Lucía, ejercicio 2025 (RUC y domicilio del empleador tapados): renta bruta 65 412,34; deducción de 7 UIT 37 450,00; renta neta 27 962,34; impuesto y retención 2 309,73.'),
     nota('El certificado lo firma el representante del empleador: el empleado marcado **Firma como empleador** (capítulo 8). Si la compañía no tiene ninguno, el asistente no imprime y lo dice («… no tiene representante del empleador: marque «Empleador» en la ficha de quien firma el certificado»). Márquelo antes de imprimir.', 'importante'),
 
     h2('13.8 El cese: ajuste final, devolución e incentivo'),

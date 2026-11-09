@@ -76,10 +76,14 @@ const pasos = {
     await p.locator('.o_filter_menu .o_menu_item, .o_dropdown_container .o-dropdown-item, .o-dropdown-item').filter({ hasText: /^\s*Instalad/ }).first().click(); await u.esperarCarga(p, 1200);
     await p.keyboard.press('Escape');
     hechos.c02_01 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio);
-    const fila = p.locator('.o_data_row').filter({ hasText: 'renta5_ce' }).first();
+    // sin la columna «Sitio web», para que la versión se lea entera
+    await p.addStyleTag({ content: 'th[data-name="website"], td[name="website"] { display: none !important; } th[data-name="latest_version"] { min-width: 160px !important; width: 160px !important; }' });
+    await p.waitForTimeout(800);
+    const fila = p.locator('.o_data_row').filter({ hasText: 'Detalle de Renta de 5ta' }).first();
     const marca = (await fila.count()) ? [fila] : [];
-    await alta(p, () => cap(p, 'c02_01_aplicaciones_versiones', { resaltar: marca }));
-    require('child_process').execSync(`python3 ${path.join(__dirname, 'recortar.py')} ${path.join(DIR, 'c02_01_aplicaciones_versiones')}.png`);
+    await p.setViewportSize({ width: 1600, height: 640 }); await p.mouse.move(800, 630); await p.waitForTimeout(900);
+    await cap(p, 'c02_01_aplicaciones_versiones', { resaltar: marca });
+    await p.setViewportSize({ width: 1600, height: Number(process.env.ALTO || 900) });
   },
   async c02_lab(p, c) {
     await cia(c, 4); await u.irA(p, ACC('solse_pe_demo_libros.action_demo_laboratorio/1'));

@@ -34,6 +34,7 @@ async function grupos(p, c, compania, grupo, nombre, resaltar = [], { alto = 0 }
   await sep.scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -70)); await p.waitForTimeout(500);
   if (alto) { await p.setViewportSize({ width: 1600, height: alto }); await p.waitForTimeout(500); await sep.scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -70)); }
   hechos[nombre] = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 4000);
+  await p.mouse.move(1300, 700); await p.waitForTimeout(600);
   await cap(p, nombre, { resaltar: resaltar.map((f) => `.o_field_widget[name="${f}"]`) });
   if (alto) await p.setViewportSize({ width: 1600, height: Number(process.env.ALTO || 900) });
 }
@@ -42,7 +43,8 @@ const pasos = {
   // ---------------------------------------------------------------- 10
   async c10_impresa(p, c) {
     const id = await idBoleta(p, 4, '70000501', '2026-12-01', 'Mensual');
-    await cia(c, 4); await p.goto(`${u.URL_BASE}/report/html/solse_pe_payroll_ce.reporte_boleta_pago/${id}`, { waitUntil: 'networkidle' });
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${id}`); await p.waitForTimeout(1000);
+    await p.goto(`${u.URL_BASE}/report/html/solse_pe_payroll_ce.reporte_boleta_pago/${id}?context=${encodeURIComponent(JSON.stringify({ allowed_company_ids: [4] }))}`, { waitUntil: 'networkidle' });
     hechos.c10_02_boleta_impresa = limpio(await p.locator('body').innerText()).slice(0, 3000);
     await cap(p, 'c10_02_boleta_impresa', { completa: true });
     sh(`python3 ${path.join(__dirname, 'recortar.py')} ${png('c10_02_boleta_impresa')}`);
@@ -53,7 +55,10 @@ const pasos = {
     await cia(c, 4); await u.irA(p, `/odoo/action-account.action_move_journal_line/${mv[0].move_id[0]}`);
     hechos.c10_03_asiento = (await p.locator('.o_field_widget[name="line_ids"] .o_data_row').allInnerTexts()).map(limpio);
     hechos.c10_03_nombre = limpio(await p.locator('.o_form_view .oe_title, .o_form_view h1').first().innerText().catch(() => ''));
+    await p.setViewportSize({ width: 1600, height: 1900 }); await p.waitForTimeout(800);
     await cap(p, 'c10_03_asiento');
+    await p.setViewportSize({ width: 1600, height: Number(process.env.ALTO || 900) });
+    await recortarForm('c10_03_asiento');
   },
   async c10_nueva(p, c) {
     await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/new`); const f = p.locator('.o_form_view').first();
