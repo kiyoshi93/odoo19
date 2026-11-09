@@ -1,0 +1,184 @@
+1
+00:00:00,500 --> 00:00:03,543
+Este episodio muestra cómo se cesa a un trabajador:
+
+2
+00:00:03,543 --> 00:00:08,375
+el orden, las truncas, la indemnización por despido arbitrario, las vacaciones no
+
+3
+00:00:08,375 --> 00:00:11,000
+gozadas y los documentos que se le entregan.
+
+4
+00:00:12,460 --> 00:00:17,149
+La liquidación ajusta la renta de quinta de todo el año con las boletas validadas.
+
+5
+00:00:17,149 --> 00:00:21,380
+Por eso se validan primero las boletas del año, y la liquidación al final.
+
+6
+00:00:21,380 --> 00:00:26,069
+Si el cese es desde el quince de julio, la gratificación de julio se valida antes.
+
+7
+00:00:26,069 --> 00:00:30,300
+Y los documentos se entregan dentro de las cuarenta y ocho horas del cese.
+
+8
+00:00:31,700 --> 00:00:35,283
+En el contrato se pone la fecha de fin y el motivo de baja.
+
+9
+00:00:35,283 --> 00:00:39,047
+Si es un despido sin causa justa, se marca Despido arbitrario;
+
+10
+00:00:39,047 --> 00:00:41,780
+en un contrato modal, también el fin pactado.
+
+11
+00:00:43,180 --> 00:00:47,857
+Carmen renuncia el treinta y uno de agosto.
+
+12
+00:00:47,857 --> 00:00:56,558
+Su liquidación paga vacaciones truncas por S/ 1 666,67, que pagan AFP y EsSalud;
+
+13
+00:00:56,558 --> 00:01:03,844
+la gratificación trunca de S/ 833,33, con su bonificación de S/ 75;
+
+14
+00:01:03,844 --> 00:01:06,999
+y la CTS trunca de S/ 972,22.
+
+15
+00:01:06,999 --> 00:01:09,500
+El neto es S/ 3 331,89.
+
+16
+00:01:10,900 --> 00:01:18,213
+Un trabajador de plazo indeterminado, desde el quince de marzo de dos mil veintidós,
+
+17
+00:01:18,213 --> 00:01:21,086
+es despedido el treinta de abril.
+
+18
+00:01:21,086 --> 00:01:27,964
+La indemnización es una remuneración y media por año, contada de fecha a fecha:
+
+19
+00:01:27,964 --> 00:01:28,834
+S/ 18 575.
+
+20
+00:01:28,834 --> 00:01:31,881
+No paga aportes ni renta de quinta:
+
+21
+00:01:31,881 --> 00:01:36,408
+la base de quinta son solo las truncas, S/ 2 563,33.
+
+22
+00:01:36,408 --> 00:01:43,286
+Sus vacaciones truncas, de un mes y dieciséis días desde el aniversario, son S/
+
+23
+00:01:43,286 --> 00:01:46,246
+383,33, y el neto es S/ 22 588,50.
+
+24
+00:01:47,820 --> 00:01:51,057
+En la ficha de la compañía están las opciones del cese.
+
+25
+00:01:51,057 --> 00:01:54,412
+La base de la indemnización suma las variables regulares;
+
+26
+00:01:54,412 --> 00:01:58,826
+el contrato modal que pasa su plazo máximo se indemniza como indeterminado;
+
+27
+00:01:58,826 --> 00:02:03,770
+y las vacaciones ganadas y no gozadas, por defecto, se avisan y se registran con una
+
+28
+00:02:03,770 --> 00:02:04,241
+entrada.
+
+29
+00:02:05,700 --> 00:02:10,996
+Esta es la hoja de liquidación de un despido con dos récords sin gozar.
+
+30
+00:02:10,996 --> 00:02:15,994
+Detalla cada beneficio con su periodo y su remuneración computable:
+
+31
+00:02:15,994 --> 00:02:22,260
+las vacaciones no gozadas, S/ 6 000, la indemnización vacacional del récord vencido,
+
+32
+00:02:22,260 --> 00:02:26,139
+S/ 3 000, y la indemnización por despido, S/ 11 250.
+
+33
+00:02:26,139 --> 00:02:27,705
+El neto es S/ 22 865.
+
+34
+00:02:29,180 --> 00:02:33,517
+Desde la liquidación validada, Imprimir ofrece la hoja de liquidación, el
+
+35
+00:02:33,517 --> 00:02:37,794
+certificado de trabajo y la constancia de cese para el retiro de la CTS.
+
+36
+00:02:37,794 --> 00:02:41,121
+Enviar por correo los manda todos juntos, con la boleta.
+
+37
+00:02:42,580 --> 00:02:45,282
+La liquidación resuelve también otros casos:
+
+38
+00:02:45,282 --> 00:02:50,439
+si el cese es en la primera quincena de julio, paga enero a junio como gratificación
+
+39
+00:02:50,439 --> 00:02:50,869
+trunca;
+
+40
+00:02:50,869 --> 00:02:55,474
+el récord que se cumple el día del cese se paga como vacaciones no gozadas;
+
+41
+00:02:55,474 --> 00:02:58,176
+con un reingreso, toma el contrato del cese;
+
+42
+00:02:58,176 --> 00:03:00,939
+una segunda liquidación del mismo cese avisa;
+
+43
+00:03:00,939 --> 00:03:04,439
+y el incentivo por cese se ingresa con su propia entrada.
+
+44
+00:03:05,900 --> 00:03:10,547
+Varios criterios, como la remuneración de la gratificación trunca o la indemnización
+
+45
+00:03:10,547 --> 00:03:15,140
+con un cambio de régimen, son criterios pendientes de confirmación de la contadora.
+
+46
+00:03:15,140 --> 00:03:17,685
+Todo está en el capítulo dieciséis del manual.
+

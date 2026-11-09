@@ -57,7 +57,7 @@ module.exports = (h) => {
       'Con la facturación instalada, la compañía nace con la dirección del laboratorio y sin tipo de documento (lote 70, capítulo 2).',
       '**No sirven para presentar** el PLAME, AFPnet ni el T-Registro de esas empresas: no tienen RUC. Los archivos y los PDF salen sin RUC.',
     ]),
-    ...figura('c02_06_empresa_consultora', 'Caso EMPRESA_CONSULTORA conforme: 137 celdas, 9 boletas validadas en SOLSE Demo Consultora S.A.C.'),
+    ...figura('c02_06_empresa_consultora', 'Caso EMPRESA_CONSULTORA conforme: la comparación del 09/11/2026 con 4 hojas, 137 celdas, 0 diferencias y 100,00.'),
 
     h2('E.3 Cómo correr un caso'),
     pasos([

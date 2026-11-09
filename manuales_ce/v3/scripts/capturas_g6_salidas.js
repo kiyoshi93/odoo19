@@ -145,7 +145,7 @@ const pasos = {
   async c29(p, c) {
     const rango = [['fecha_desde', 'fecha', '01/10/2026'], ['fecha_hasta', 'fecha', '22/10/2026']];
     await asistente(p, c, 4, 'solse_pe_payroll_ce.action_tregistro_wizard', [['operacion', 'sel', 'Altas'], ...rango], 'Generar archivos', 'c29_01_altas_resultado', { alto: 1300 });
-    await asistente(p, c, 4, 'solse_pe_payroll_ce.action_tregistro_wizard', [['operacion', 'sel', 'Modificaciones'], ...rango, ['concepto', 'sel', 'Tipo de trabajador'], ['fecha_cambio', 'fecha', '16/10/2026']], 'Generar archivos', 'c29_03_modificacion_resultado', { alto: 1100 });
+    await asistente(p, c, 4, 'solse_pe_payroll_ce.action_tregistro_wizard', [['operacion', 'sel', 'Modificaciones'], ['concepto', 'sel', 'Tipo de trabajador'], ['fecha_cambio', 'fecha', '16/10/2026']], 'Generar archivos', 'c29_03_modificacion_resultado', { alto: 1100 });
     await asistente(p, c, 4, 'solse_pe_payroll_ce.action_tregistro_wizard', [['operacion', 'sel', 'Altas de derechohabientes'], ...rango], 'Generar archivos', 'c29_04_dh_altas_resultado', { alto: 1300 });
   },
   // ---------------------------------------------------------------- 30 · recibos por honorarios

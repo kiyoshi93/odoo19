@@ -1,0 +1,164 @@
+1
+00:00:00,500 --> 00:00:05,496
+Los valores legales de la planilla, como la UIT, la remuneración mínima o las tasas
+
+2
+00:00:05,496 --> 00:00:08,626
+de las AFP, se guardan como parámetros con vigencia.
+
+3
+00:00:08,626 --> 00:00:12,840
+Veamos cómo se mantienen, y los dos parámetros nuevos de esta versión.
+
+4
+00:00:14,300 --> 00:00:19,183
+En Nómina PE, Parámetros de Nómina PE, están los 27 parámetros, agrupados por
+
+5
+00:00:19,183 --> 00:00:21,657
+categoría y con su valor vigente a hoy.
+
+6
+00:00:21,657 --> 00:00:22,608
+Hay dos nuevos:
+
+7
+00:00:22,608 --> 00:00:27,935
+la sobretasa del trabajo en feriado, uno punto cero, que es el cien por ciento, y la
+
+8
+00:00:27,935 --> 00:00:31,613
+tasa del trabajador no domiciliado, el treinta por ciento.
+
+9
+00:00:33,140 --> 00:00:36,464
+La remuneración mínima tiene dos vigencias:
+
+10
+00:00:36,464 --> 00:00:42,493
+S/ 1 130 desde el 1 de enero de 2025 y S/ 1 230 desde el 1 de octubre de 2026.
+
+11
+00:00:42,493 --> 00:00:45,431
+Cuando cambia, se agrega una vigencia;
+
+12
+00:00:45,431 --> 00:00:51,460
+la anterior se conserva, y el recálculo de un mes pasado sigue usando la suya.
+
+13
+00:00:52,860 --> 00:00:59,079
+La remuneración máxima asegurable de las AFP cambia cada trimestre:
+
+14
+00:00:59,079 --> 00:01:03,813
+tiene una vigencia por trimestre de 2025 y de 2026.
+
+15
+00:01:03,813 --> 00:01:07,340
+La de octubre de 2026 es S/ 12 732,70.
+
+16
+00:01:08,740 --> 00:01:12,579
+Los parámetros con varias tasas no se escriben como texto.
+
+17
+00:01:12,579 --> 00:01:18,139
+El botón Nueva vigencia abre un editor con una fila por AFP, la tasa en porcentaje y
+
+18
+00:01:18,139 --> 00:01:19,794
+el texto que se guardará.
+
+19
+00:01:21,260 --> 00:01:24,984
+Y Editar en tabla muestra los tramos de la renta de quinta:
+
+20
+00:01:24,984 --> 00:01:29,782
+cinco, veinte, treinta y cinco y cuarenta y cinco UIT, y el último sin tope.
+
+21
+00:01:29,782 --> 00:01:32,054
+Al guardar, cada valor se comprueba:
+
+22
+00:01:32,054 --> 00:01:36,915
+con punto decimal, sin separador de miles y con todas las claves que leen las
+
+23
+00:01:36,915 --> 00:01:37,357
+reglas.
+
+24
+00:01:38,820 --> 00:01:43,292
+Si falta una vigencia, la boleta avisa antes de calcular.
+
+25
+00:01:43,292 --> 00:01:49,883
+En una boleta de enero de 2027, sin guardar, la banda dice que la RMA es de octubre,
+
+26
+00:01:49,883 --> 00:01:56,395
+que faltan los feriados de 2027 y que falta la UIT de 2027, con lo que se usaría la
+
+27
+00:01:56,395 --> 00:01:57,023
+de 2026:
+
+28
+00:01:57,023 --> 00:01:57,729
+S/ 5 500.
+
+29
+00:01:57,729 --> 00:01:59,691
+El último aviso es nuevo:
+
+30
+00:01:59,691 --> 00:02:03,143
+el del SENATI, que tiene su propio episodio.
+
+31
+00:02:04,700 --> 00:02:10,899
+Si está instalado el catálogo de la facturación, con su tabla UIT por año, la misma
+
+32
+00:02:10,899 --> 00:02:15,679
+banda avisa cuando la UIT de ese catálogo no es la de la nómina.
+
+33
+00:02:15,679 --> 00:02:17,919
+No corrige ninguna de las dos:
+
+34
+00:02:17,919 --> 00:02:23,371
+la renta de quinta usa la de la nómina, y la detracción, la del catálogo.
+
+35
+00:02:23,371 --> 00:02:24,417
+Hoy coinciden:
+
+36
+00:02:24,417 --> 00:02:27,105
+S/ 5 500 en 2026 y S/ 5 350 en 2025.
+
+37
+00:02:28,580 --> 00:02:34,104
+Revise la RMA al inicio de cada trimestre, la UIT cada primero de enero, y la
+
+38
+00:02:34,104 --> 00:02:38,624
+remuneración mínima y las comisiones de las AFP cuando cambien.
+
+39
+00:02:38,624 --> 00:02:44,005
+La banda le recuerda la RMA y la UIT, pero no la remuneración mínima ni las
+
+40
+00:02:44,005 --> 00:02:44,794
+comisiones.
+
+41
+00:02:44,794 --> 00:02:48,597
+Está en los capítulos cuatro y veintiséis del manual.
+

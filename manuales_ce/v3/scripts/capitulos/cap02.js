@@ -19,7 +19,7 @@ module.exports = (h) => {
       ['6', '`solse_pe_plame_rxh` y `solse_pe_plame_4ta`', 'PLAME de recibos por honorarios; el segundo los agrega al ZIP de la planilla', '19.0.1.2.0 · 19.0.1.0.0', 'Opcional'],
       ['7', '`solse_pe_payroll_ce_demo` y los `*_demo`', 'Laboratorio de casos y datos de prueba. Solo en bases de prueba', '19.0.2.46.0 (ce_demo)', 'No (pruebas)'],
     ], [700, 2500, 3638, 1600, 1200]),
-    ...figura('c02_01_aplicaciones_versiones', 'Aplicaciones filtradas por «Nómina Peruana», «Payroll» y «PLAME», solo las instaladas: núcleo 19.0.1.39.202, base 19.0.1.21.14, detalle de 5.ª 19.0.1.0.4 y datos de prueba 19.0.2.46.0.'),
+    ...figura('c02_01_aplicaciones_versiones', 'Aplicaciones filtradas por «Nómina Peruana», «Payroll» y «PLAME», solo las instaladas (12): núcleo 19.0.1.39.202, base 19.0.1.21.14, datos de prueba 19.0.2.46.0 y, en el recuadro, el detalle de 5.ª nuevo, 19.0.1.0.4.'),
     nota('Las variantes Community y Enterprise **no se pueden mezclar**: `solse_pe_payroll_base` bloquea la instalación si encuentra la nómina Enterprise de SOLSE (`solse_pe_payroll`), porque ambas siembran los mismos parámetros. En Aplicaciones aparecen las dos; instale solo las «(Community)». También el detalle de 5.ª tiene dos: instale «Nómina Peruana - Detalle de Renta de 5ta (Community)».', 'importante'),
     nota('Con el detalle de 5.ª instalado, cada boleta guarda su detalle al calcularse y al validarse. Las validadas **antes** de instalarlo quedan «5ta sin calcular»: búsquelas en la lista de boletas con el filtro «5ta sin calcular», márquelas y use la acción **Actualizar detalle de 5ta** (en una sola boleta, el botón **Actualizar detalle** de su pestaña «Renta de 5ta»). En contable19, al instalarlo (05/11/2026), las 113 validadas de la demo que estaban sin calcular quedaron, con las demás, en 158 «Coincide» y 43 «No aplica», ninguna «Difiere».', 'implementador'),
 
@@ -88,14 +88,14 @@ module.exports = (h) => {
 
     h2('2.4 El laboratorio de casos'),
     p('El laboratorio (`solse_pe_demo_libros` con `solse_pe_payroll_ce_demo`) vive en la aplicación **SOLSE Demo** (el laboratorio, en **Configuración › Laboratorio**; los casos, en **Casos de demostración**) y trabaja en compañías propias de prueba: los **25 casos de siempre** en **SOLSE Demo Servicios S.A.C.** y los **5 casos `EMPRESA_*`**, cada uno en su compañía (2.5). Ninguno escribe en una compañía real (Q-01).'),
-    ...figura('c02_02_laboratorio', 'Laboratorio SOLSE Perú después de «② Sincronizar casos»: 33 casos registrados y 30 conformes. Los 3 pendientes (LC, ANTICIPOS y DETRACCION) son de la facturación, no de la nómina.'),
+    ...figura('c02_02_laboratorio', 'Laboratorio SOLSE Perú: 33 casos registrados, 30 conformes y cobertura 90,91 %. Los 3 pendientes (DETRACCION, LC y ANTICIPOS) son de la contabilidad y la facturación, no de la nómina.'),
     tabla(['Botón del laboratorio', 'Qué hace'], [
       ['① Construir laboratorio', 'Crea las compañías de prueba y su configuración (una vez por base).'],
       ['② Sincronizar casos', 'Registra los casos nuevos y actualiza nombre y estructuras de los existentes. Úselo después de cada `-u`. Con la versión del v3 deja 33 casos: 30 de la nómina y 3 de la facturación.'],
       ['Diagnosticar', 'Revisa la configuración del laboratorio.'],
       ['Limpiar todo', 'Ejecuta «⑤ Limpiar» de todos los casos sembrados.'],
     ], [3000, 6638]),
-    ...figura('c02_03_casos_100', 'Casos de demostración de la nómina: los 30 en estado «Comparado» y con 100,00 de coincidencia (25 de siempre y 5 EMPRESA_*).'),
+    ...figura('c02_03_casos_100', 'Casos de demostración agrupados por rama: los 30 de «Nómina» en «Comparado» con 100,00 de coincidencia (en recuadro, el primero y el último de los cinco EMPRESA_*); los 3 de contabilidad y facturación, pendientes.'),
     p('Cada caso se corre con sus botones numerados. Siempre en este orden y, en el mismo día, **NOMINA antes que PLAME**:'),
     pasos([
       '**⑤ Limpiar**: borra los datos que el caso sembró antes (2.6).',
@@ -131,7 +131,7 @@ module.exports = (h) => {
       'Si ya existe una compañía con ese nombre que **no** es de laboratorio (tiene RUC o no está marcada), el caso no la usa y lo dice.',
       '**«Limpiar»** borra lo del caso y deja la compañía.',
     ]),
-    ...figura('c02_06_empresa_consultora', 'Caso EMPRESA_CONSULTORA conforme: 137 celdas (Compañía 18, Conceptos 105, Avisos 8, Diagnóstico 6), 9 boletas validadas en SOLSE Demo Consultora S.A.C.'),
+    ...figura('c02_06_empresa_consultora', 'Caso EMPRESA_CONSULTORA conforme: la comparación del 09/11/2026 con 4 hojas, 137 celdas, 0 diferencias y 100,00 (la del 08/11 antes del lote 71 tenía 107). El caso escribe en SOLSE Demo Consultora S.A.C.; el campo «Compañía» del formulario muestra la del laboratorio.'),
     nota('Sus compañías no tienen RUC: el PLAME, AFPnet y el T-Registro de esas empresas se generan para mirarlos, no para presentarlos, y sus nombres salen sin RUC (el PLAME de junio de 2026 de la Consultora es `PLAME_0601202606.zip`). Los PDF también salen sin RUC.', 'limite'),
 
     h2('2.6 «Limpiar» y la tarea nocturna'),

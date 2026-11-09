@@ -25,7 +25,7 @@ module.exports = (h) => {
       'Pulse **Generar archivos**. El resumen dice cuántos se exportan y cuántos no, con el motivo de cada uno.',
       'Descargue el ZIP, valídelo en el **PVS T-Registro** y súbalo a SOL desde el PVS.',
     ]),
-    ...figura('c29_01_altas_resultado', 'Altas de octubre de 2026 (caso TREGISTRO): 4 exportados y 2 sin exportar; ide 4, tra 4, per 17, est 4, cta 2, edu 3.'),
+    ...figura('c29_01_altas_resultado', 'Altas del 01/10 al 22/10/2026 en SOLSE Demo Servicios: 8 propuestos, 4 exportados y 4 sin exportar (70001507 sin celular y tres trabajadores de otros casos sin la ficha completa); ide 4, tra 4, per 17, est 4, cta 2, edu 3, en T-Registro_20603456786_altas_20261022.zip.'),
     p('Antes de exportar, el asistente valida los datos que exige el PVS. Un trabajador incompleto **no se exporta** y el resumen dice qué le falta y con qué regla del manual del PVS. Por ejemplo, 70000805: «falta el tipo de trabajador (Tabla 8) en el contrato · faltan los apellidos y los nombres separados (EPE1.4 a EPE1.6) · falta la fecha de nacimiento · falta el sexo · falta el celular (9 dígitos que empiece en 9; EPR1.65) · falta un correo personal válido · falta el domicilio…».'),
     p('Las bajas de octubre: un solo archivo `RP_20603456786.per` con `01|70001505||1|1||15/10/2026|01||`, es decir, fin del periodo y motivo de baja 01.'),
     h3('Una liquidación en medio cierra el periodo (lote 55)'),
@@ -77,7 +77,7 @@ module.exports = (h) => {
 
     h2('29.3 Derechohabientes'),
     p('El registro de derechohabientes toma de la ficha (capítulo 8) el documento, los apellidos y nombres, el vínculo de la **Tabla 19**, la fecha de alta y el domicilio **del titular**. Exporta solo a quien tiene derecho: un hijo mayor de edad sin incapacidad permanente **no se exporta**.'),
-    ...figura('c29_04_dh_altas_resultado', 'Altas de derechohabientes de octubre de 2026: 4 exportados en RD_20603456786_22102026_ALTA.TXT y 5 sin exportar (hijos de otros casos sin documento ni apellidos separados).'),
+    ...figura('c29_04_dh_altas_resultado', 'Altas de derechohabientes del 01/10 al 22/10/2026: 5 propuestos, 4 exportados en RD_20603456786_09112026_ALTA.TXT (la fecha del nombre es la del día en que se genera) y 1 sin exportar: 71001502, hijo mayor de edad.'),
     tabla(['Derechohabiente (caso TREGISTRO)', 'Resultado'], [
       ['78001502 (hijo) y 40001502 (cónyuge) del titular 70001502', 'Exportados'],
       ['CD7654321, pasaporte con país 862, del titular 001234567', 'Exportado'],
