@@ -1,0 +1,160 @@
+1
+00:00:05,580 --> 00:00:10,130
+Este episodio muestra las horas extra y las demás entradas del mes, y el reparto de
+
+2
+00:00:10,130 --> 00:00:14,405
+utilidades, que ahora queda guardado con su hoja de liquidación y su planilla.
+
+3
+00:00:15,860 --> 00:00:19,868
+Las horas extra y las tardanzas se registran en Otras entradas.
+
+4
+00:00:19,868 --> 00:00:25,021
+Esta vendedora, con S/ 1 800 de sueldo, tiene diez horas extra al veinticinco por
+
+5
+00:00:25,021 --> 00:00:29,156
+ciento, cuatro al treinta y cinco, y sesenta minutos de tardanza.
+
+6
+00:00:30,620 --> 00:00:40,169
+El valor hora es el sueldo entre treinta, entre las ocho horas de su jornada:
+
+7
+00:00:40,169 --> 00:00:41,162
+S/ 7,50.
+
+8
+00:00:41,162 --> 00:00:49,967
+Las horas extra suman S/ 93,75 y S/ 40,50, y la tardanza resta S/ 7,50.
+
+9
+00:00:49,967 --> 00:00:56,540
+La base afecta es S/ 1 926,75 y el neto, S/ 1 676,27.
+
+10
+00:00:57,940 --> 00:01:02,909
+El valor hora divide entre las horas diarias de la jornada de cada trabajador, no
+
+11
+00:01:02,909 --> 00:01:04,075
+siempre entre ocho:
+
+12
+00:01:04,075 --> 00:01:06,959
+revise que el horario del contrato sea el real.
+
+13
+00:01:06,959 --> 00:01:08,308
+Y hay dos movilidades:
+
+14
+00:01:08,308 --> 00:01:11,683
+la de libre disposición es remuneración y paga aportes;
+
+15
+00:01:11,683 --> 00:01:16,039
+la supeditada a la asistencia no paga aportes, pero sí renta de quinta.
+
+16
+00:01:17,500 --> 00:01:20,421
+El reparto se calcula con Calcular un ejercicio:
+
+17
+00:01:20,421 --> 00:01:23,890
+el año, la renta neta y el porcentaje según la actividad.
+
+18
+00:01:23,890 --> 00:01:28,638
+Reparte la mitad por días laborados y la mitad por remuneraciones, con tope de
+
+19
+00:01:28,638 --> 00:01:30,159
+dieciocho remuneraciones.
+
+20
+00:01:31,620 --> 00:01:36,274
+Cuentan las remuneraciones de las reglas marcadas para utilidades y los días de
+
+21
+00:01:36,274 --> 00:01:37,983
+jornada, menos las ausencias;
+
+22
+00:01:37,983 --> 00:01:41,753
+la maternidad y el descanso por accidente de trabajo sí cuentan.
+
+23
+00:01:41,753 --> 00:01:44,110
+La microempresa queda fuera por defecto.
+
+24
+00:01:44,110 --> 00:01:48,057
+Y si la empresa tuvo veinte trabajadores o menos, el reparto avisa:
+
+25
+00:01:48,057 --> 00:01:52,652
+en la pequeña empresa del laboratorio, seis en promedio, reparte S/ 5 000 y lo
+
+26
+00:01:52,652 --> 00:01:53,182
+advierte.
+
+27
+00:01:54,700 --> 00:01:58,019
+El reparto queda guardado, uno por ejercicio.
+
+28
+00:01:58,019 --> 00:02:01,265
+En este, S/ 250 000 entre tres trabajadores;
+
+29
+00:02:01,265 --> 00:02:06,650
+el tope usa la remuneración vigente al cierre con la asignación familiar.
+
+30
+00:02:06,650 --> 00:02:12,625
+Uno llega al tope de S/ 54 000, y el remanente de S/ 11 104,17 va al FONDOEMPLEO.
+
+31
+00:02:12,625 --> 00:02:17,420
+La ex trabajadora está marcada y se le paga fuera de la planilla.
+
+32
+00:02:18,820 --> 00:02:24,269
+Confirmado el reparto, Generar la planilla de utilidades crea una boleta por
+
+33
+00:02:24,269 --> 00:02:25,989
+trabajador con contrato.
+
+34
+00:02:25,989 --> 00:02:31,868
+Las utilidades no pagan aportes, pero retienen renta de quinta en el mes del pago:
+
+35
+00:02:31,868 --> 00:02:34,808
+S/ 5 215,60 y S/ 15 936,53 en el ejemplo.
+
+36
+00:02:34,808 --> 00:02:40,185
+Con la fecha de la declaración anual, el sistema elige el código del PLAME.
+
+37
+00:02:40,185 --> 00:02:44,988
+Y desde cada línea se imprime la hoja de liquidación de utilidades.
+
+38
+00:02:46,460 --> 00:02:51,025
+Cómo se cuentan los trabajadores para el umbral de veinte y el tope del comisionista
+
+39
+00:02:51,025 --> 00:02:53,851
+sin sueldo son criterios pendientes de confirmación.
+
+40
+00:02:53,851 --> 00:02:56,406
+Lo demás está en el capítulo veinte del manual.
+

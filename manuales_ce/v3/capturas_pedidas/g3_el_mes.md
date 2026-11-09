@@ -65,3 +65,10 @@ controlar», leído el 09/11/2026).
 
 ## Estado (09/11/2026)
 Las 10 pedidas están tomadas con `scripts/capturas_g3_el_mes.js` (c18_04 en tres: a, b y c). Ninguna escribió nada.
+
+## Segunda tanda (09/11/2026, permiso ampliado en la compañía 4)
+Rehechas: c09_04, c10_01_contable, c10_05, c11_03/04/05 (lote «Planilla enero 2027 (manual v3)», borrado), c12_04, c18_01, c18_02
+(ahora en SOLSE Demo Microempresa), c19_02 a c19_07 (caso ASISTENCIA), c21_03, c22_01 a c22_04 (caso AUMENTO; la del mes entero
+con una boleta borrada después), c25_01/02/03/04 (caso ADICIONALES 70001707, restablecido con correr_casos.py: 100 %, 152 celdas),
+c26_01/02/03/03b/04 (boletas de la compañía 4 creadas y borradas). Quedan iguales al v2, sin uso en el manual ni en los guiones:
+c22_01_semana_sin_goce_calculo, c22_02_permiso_2_horas_dias y c22_03_mes_sin_goce_calculo.

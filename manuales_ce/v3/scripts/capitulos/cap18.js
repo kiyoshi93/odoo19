@@ -81,7 +81,7 @@ module.exports = (h) => {
 
     h2('18.6 Aviso de feriados del año sin cargar'),
     p('Si no hay ningún feriado registrado en el año de la boleta, la banda de avisos lo dice (V-05): «Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.» Sin ellos, las horas, la asistencia, el 0115 y el 1 de mayo salen mal.'),
-    ...figura('c18_02_banda_sin_feriados', 'Compañía de laboratorio sin feriados de 2026: «Faltan los días festivos de 2026…» arriba de la lista de boletas.'),
+    ...figura('c18_02_banda_sin_feriados', 'SOLSE Demo Microempresa, sin feriados de 2026: «Faltan los días festivos de 2026: no hay ninguno registrado…» arriba de la lista de boletas.'),
     nota('Cargue los feriados del año siguiente en diciembre (FM SYSTEMS no tiene todavía los de 2027). Los feriados de otro horario o de otra compañía no cuentan para el trabajador. Un feriado que solo existe como ausencia del trabajador (hoja con recurso) lo reconoce la conciliación de asistencias, pero no va al 0115.', 'implementador'),
     pieCapitulo(['base', 'ce', 'ce_demo'], 'C-09, C-24, V-05, C-43 y N-11 (18), C-47 y P-90 (24), P-31 y P-87 (31a), P-85 y P-88 (31b), O-110, O-111 y O-113 (43)'),
   );

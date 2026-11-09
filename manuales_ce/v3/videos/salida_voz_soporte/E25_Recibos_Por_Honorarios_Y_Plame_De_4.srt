@@ -1,0 +1,96 @@
+1
+00:00:00,500 --> 00:00:04,610
+Los recibos por honorarios se declaran en el PLAME de cuarta categoría.
+
+2
+00:00:04,610 --> 00:00:07,620
+Hay dos formas de generarlo, con el mismo contenido.
+
+3
+00:00:09,020 --> 00:00:11,582
+Sin nómina, desde Contabilidad, Reportes.
+
+4
+00:00:11,582 --> 00:00:16,642
+Con nómina, con la casilla Incluir cuarta categoría del PLAME, que viene marcada.
+
+5
+00:00:16,642 --> 00:00:21,578
+En los dos casos entran los recibos pagados en el mes, sin importar su fecha de
+
+6
+00:00:21,578 --> 00:00:22,078
+emisión.
+
+7
+00:00:23,540 --> 00:00:29,543
+Se elige el ejercicio y el mes, y Revisar periodo lista cada comprobante con su
+
+8
+00:00:29,543 --> 00:00:32,658
+serie, número, fechas, retención y monto.
+
+9
+00:00:32,658 --> 00:00:38,813
+En julio de 2026, ocho prestadores y nueve comprobantes, con una nota de crédito.
+
+10
+00:00:38,813 --> 00:00:40,029
+Total declarado:
+
+11
+00:00:40,029 --> 00:00:41,017
+S/ 15 022,60.
+
+12
+00:00:41,017 --> 00:00:44,664
+La pestaña Validaciones dice qué falta corregir.
+
+13
+00:00:46,140 --> 00:00:51,747
+En la compañía, pestaña Nómina PE cuarta categoría, se indica de dónde sale la
+
+14
+00:00:51,747 --> 00:00:55,988
+retención, por defecto automático, y el umbral de S/ 1 500.
+
+15
+00:00:57,460 --> 00:01:02,588
+Con nómina, la casilla Incluir cuarta categoría agrega los dos archivos al ZIP del
+
+16
+00:01:02,588 --> 00:01:02,963
+PLAME.
+
+17
+00:01:02,963 --> 00:01:08,154
+Cuando no hay recibos pagados en el mes, como en junio en la consultora, el resumen
+
+18
+00:01:08,154 --> 00:01:09,655
+lo dice y no los agrega.
+
+19
+00:01:11,180 --> 00:01:14,000
+Un practicante no emite recibos por honorarios:
+
+20
+00:01:14,000 --> 00:01:18,920
+su subvención no es renta de cuarta categoría y va en el personal en formación del
+
+21
+00:01:18,920 --> 00:01:19,280
+PLAME.
+
+22
+00:01:20,740 --> 00:01:23,983
+El formato se comparó con archivos aceptados por el PDT.
+
+23
+00:01:23,983 --> 00:01:26,241
+Verifíquelo con su primera declaración.
+
+24
+00:01:26,241 --> 00:01:28,500
+Está en el capítulo treinta del manual.
+

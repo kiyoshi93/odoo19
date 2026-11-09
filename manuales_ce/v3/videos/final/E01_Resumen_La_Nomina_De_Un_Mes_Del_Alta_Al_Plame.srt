@@ -1,0 +1,204 @@
+1
+00:00:05,580 --> 00:00:10,389
+En este resumen recorremos un mes completo de planilla en Odoo diecinueve Community,
+
+2
+00:00:10,389 --> 00:00:12,621
+del alta del trabajador hasta el PLAME.
+
+3
+00:00:12,621 --> 00:00:17,373
+Las cifras son las del manual versión tres, medidas en una base de prueba con datos
+
+4
+00:00:17,373 --> 00:00:17,946
+ficticios.
+
+5
+00:00:19,460 --> 00:00:21,719
+Todo vive en la aplicación Nómina.
+
+6
+00:00:21,719 --> 00:00:27,234
+El menú Nómina PE reúne los parámetros legales, los maestros de SUNAT, los seguros,
+
+7
+00:00:27,234 --> 00:00:31,554
+las salidas legales, las provisiones y la contabilidad de nómina.
+
+8
+00:00:33,020 --> 00:00:36,888
+Los valores legales no están escritos en las reglas.
+
+9
+00:00:36,888 --> 00:00:39,194
+Cada parámetro tiene vigencias:
+
+10
+00:00:39,194 --> 00:00:45,219
+la remuneración mínima vale S/ 1 130 desde enero de 2025 y S/ 1 230 desde el 1 de
+
+11
+00:00:45,219 --> 00:00:46,409
+octubre de 2026.
+
+12
+00:00:46,409 --> 00:00:49,906
+Cada boleta usa el valor vigente en su periodo.
+
+13
+00:00:51,380 --> 00:00:56,592
+En la ficha del trabajador van los datos del T-Registro, y en su contrato, la
+
+14
+00:00:56,592 --> 00:01:01,263
+estructura Nómina Mensual Empleados, el diario Planillas y el sueldo:
+
+15
+00:01:01,263 --> 00:01:01,872
+S/ 4 500.
+
+16
+00:01:03,340 --> 00:01:10,067
+La boleta calcula la remuneración, la asignación familiar de S/ 123, los aportes y
+
+17
+00:01:10,067 --> 00:01:11,626
+la renta de quinta.
+
+18
+00:01:11,626 --> 00:01:16,138
+En el caso BOLETA, el neto de diciembre es S/ 4 025,70.
+
+19
+00:01:17,620 --> 00:01:20,889
+La boleta impresa cuadra al centavo:
+
+20
+00:01:20,889 --> 00:01:28,334
+S/ 4 623 de ingresos, menos S/ 597,30 de descuentos, da el neto, con el importe en
+
+21
+00:01:28,334 --> 00:01:28,969
+letras.
+
+22
+00:01:30,460 --> 00:01:36,526
+Al validar, se genera el asiento en el diario Planillas, con el trabajador como
+
+23
+00:01:36,526 --> 00:01:39,443
+socio en la cuenta cuatro uno uno uno:
+
+24
+00:01:39,443 --> 00:01:41,823
+S/ 5 671,04 al debe y al haber.
+
+25
+00:01:43,300 --> 00:01:44,949
+Una regla evita errores:
+
+26
+00:01:44,949 --> 00:01:47,904
+los acumulados solo leen boletas validadas.
+
+27
+00:01:47,904 --> 00:01:49,278
+Primero el adelanto;
+
+28
+00:01:49,278 --> 00:01:54,431
+luego la gratificación, la CTS, las vacaciones y las planillas adicionales;
+
+29
+00:01:54,431 --> 00:01:55,736
+después la mensual;
+
+30
+00:01:55,736 --> 00:01:58,554
+y al final, la liquidación de quien cesa.
+
+31
+00:01:58,554 --> 00:02:00,340
+El lote ya las ordena así.
+
+32
+00:02:01,740 --> 00:02:08,752
+La gratificación de julio paga el sueldo más la asignación familiar, S/ 4 613, y la
+
+33
+00:02:08,752 --> 00:02:12,216
+bonificación extraordinaria de S/ 415,17.
+
+34
+00:02:13,700 --> 00:02:20,182
+La CTS de noviembre suma un sexto de la gratificación validada a la remuneración
+
+35
+00:02:20,182 --> 00:02:21,073
+computable:
+
+36
+00:02:21,073 --> 00:02:22,045
+S/ 5 391,83.
+
+37
+00:02:22,045 --> 00:02:26,339
+La liquidación del depósito sale lista para entregar.
+
+38
+00:02:27,820 --> 00:02:34,665
+Cuando alguien cesa, la liquidación paga las vacaciones truncas, la gratificación
+
+39
+00:02:34,665 --> 00:02:36,609
+trunca y la CTS trunca.
+
+40
+00:02:36,609 --> 00:02:39,735
+Carmen recibe un neto de S/ 3 331,89.
+
+41
+00:02:41,220 --> 00:02:46,379
+Con las boletas validadas se genera el PLAME en un solo archivo comprimido, listo
+
+42
+00:02:46,379 --> 00:02:47,907
+para importar en el PDT:
+
+43
+00:02:47,907 --> 00:02:52,811
+remuneraciones, jornada, suspensiones y, si los hay, los no domiciliados y el
+
+44
+00:02:52,811 --> 00:02:54,213
+personal en formación.
+
+45
+00:02:55,740 --> 00:02:58,404
+Y los archivos de pago para el banco:
+
+46
+00:02:58,404 --> 00:03:04,308
+en el caso BANCOS, el BCP abona a cuatro trabajadores S/ 7 918, y avisa del que no
+
+47
+00:03:04,308 --> 00:03:05,748
+tiene cuenta sueldo.
+
+48
+00:03:07,220 --> 00:03:12,335
+Al final se registra el pago del lote, con un asiento por lote o uno por trabajador,
+
+49
+00:03:12,335 --> 00:03:15,319
+y se entregan las boletas, impresas o por correo.
+
+50
+00:03:16,780 --> 00:03:21,415
+Cada uno de estos pasos tiene su capítulo en el manual y su episodio en esta serie,
+
+51
+00:03:21,415 --> 00:03:22,644
+con las mismas cifras.
+

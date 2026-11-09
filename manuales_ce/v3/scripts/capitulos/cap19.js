@@ -30,7 +30,7 @@ module.exports = (h) => {
       'Pulse **Calcular hoja**.',
     ]),
     ...figura('c19_02_jorge_oct_boton', 'Boleta en borrador con el botón «Cargar asistencias».'),
-    ...figura('c19_07_checadas_jorge', 'Asistencias de un trabajador del caso ASISTENCIA: horas trabajadas y esperadas por mes.'),
+    ...figura('c19_07_checadas_jorge', 'Asistencias de Jorge (caso ASISTENCIA), vista de análisis: 160 horas trabajadas y 160 esperadas en setiembre de 2026, 168 y 168 en octubre.'),
     h3('Qué significa cada marca del resumen'),
     tabla(['Marca', 'Significado'], [
       ['✔', 'Día trabajado completo'],
@@ -45,7 +45,7 @@ module.exports = (h) => {
     h2('19.3 Tardanzas'),
     p('Cada llegada tarde descuenta los minutos después de la tolerancia, al **valor minuto: sueldo ÷ 30 ÷ las horas diarias de la jornada ÷ 60** (regla TAR_001; lote 24). Con la jornada de 8 horas es lo mismo que antes (sueldo ÷ 240 ÷ 60). La opción «Valor hora» de la compañía permite volver a «Sueldo ÷ 30 ÷ 8». La tardanza **reduce la base afecta** de los aportes y de la renta de 5.ª (C-10, capítulo 12).'),
     ...figura('c19_03_carlos_tardanzas_asistencias', 'Caso ASISTENCIA, setiembre de 2026: tres tardanzas de 25 minutos; con 10 de tolerancia cuentan 15 cada una, 45 minutos en total.'),
-    ...figura('c19_03_carlos_tardanzas_calculo', 'Cálculo: descuento por tardanzas 10,94 (45 minutos de un sueldo de 3 500 con jornada de 8 horas).'),
+    ...figura('c19_03_carlos_tardanzas_calculo', 'Cálculo de setiembre de Carlos (sueldo 3 500): TAR_001 «Descuento por tardanzas» 10,94 (45 minutos con jornada de 8 horas), base afecta 3 602,06 y neto 3 139,55.'),
     h2('19.4 Faltas y medias jornadas'),
     tabla(['Trabajador (caso ASISTENCIA)', 'Setiembre de 2026', 'Resultado'], [
       ['Jorge (1 130)', '2 faltas (10 y 24)', 'RB **1 054,67** (1 130 − 2 × 1 130 / 30); línea FALTA de 2 días no pagada'],
@@ -65,7 +65,7 @@ module.exports = (h) => {
       'La línea de totales cuenta los días laborables **sin** los feriados y termina en «· Feriados: N».',
       '**Medio día no laborable** (por ejemplo, la tarde del 24 de diciembre): el día se mide contra la parte laborable y sale «· no laborable N h». Si el trabajador no viene en todo el día, sigue siendo falta, porque debía la mañana.',
     ]),
-    ...figura('c19_02_jorge_oct_feriado_asistencias', 'Caso ASISTENCIA, octubre de 2026: «Días laborables evaluados: 21 · Faltas: 0 · Tardanza acumulada: 0 min · Feriados: 1» y «2026-10-08 ◇ feriado» (Combate de Angamos, cargado como día no laborable del trabajador).'),
+    ...figura('c19_02_jorge_oct_feriado_asistencias', 'Caso ASISTENCIA, octubre de 2026 (boleta en borrador): «Días laborables evaluados: 21 · Faltas: 0 · Tardanza acumulada: 0 min · Feriados: 1» y «2026-10-08 ◇ feriado» (Combate de Angamos, cargado como día no laborable del trabajador). Arriba, el aviso de la RMV: el sueldo de Jorge (1 130,00) es menor que la RMV de octubre (1 230,00).'),
     ...figura('c19_02_jorge_oct_feriado_calculo', 'Cálculo de octubre: remuneración básica 1 130,00 completa y ninguna línea de falta.'),
     nota('Caso ASISTENCIA (94 celdas, estructura «Feriado»), re-medido en el lote 71 al 100 %: RB_001 1 130,00, FALTA 0 días, 1 feriado en el resumen, 21 marcaciones de octubre. La hoja de Angamos va en un calendario propio del caso, para que ningún otro caso la vea.', 'caso'),
     h2('19.6 El trabajo en feriado desde las asistencias (lote 18)'),

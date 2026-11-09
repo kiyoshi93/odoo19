@@ -64,14 +64,16 @@ REEMPLAZOS['E07'] = {
          'focos': ['COM_001', 'Neto a pagar'],
          'voz': 'Las comisiones pueden ir en su propia planilla adicional. En el caso ADICIONALES, la mensual de [[S 3000]] paga ONP de [[S 390]], '
                 'y la planilla de comisiones de [[S 500]] paga [[S 65]]: la base mínima y los topes son del mes. El trabajador recibe un solo abono de [[S 3045]].'},
-        {'t': 'cap', 'img': 'c10_06_conceptos_vales', 'rotulo': 'Una boleta validada no se edita: se rectifica',
+        {'t': 'cap', 'img': 'c25_01_original_rectificar', 'rotulo': 'Una boleta validada no se edita: se rectifica',
          'focos': ['Rectificar'],
          'voz': 'Si una boleta validada tiene un error, no se edita: se rectifica con el botón Rectificar.'},
-        {'t': 'tarjeta', 'ceja': 'Rectificar', 'titulo': 'Original, rectificativa y boleta nueva',
-         'items': ['La rectificativa copia la original y resta en todos los reportes', 'Se concilia con la original: no se paga dos veces',
-                   'Conserva el régimen pensionario y revierte las provisiones', 'Luego se calcula y valida la boleta correcta'],
-         'voz': 'La rectificativa copia las líneas de la original y resta en el PLAME, AFPnet, bancos, la planilla y las utilidades. Se concilia con la original, '
-                'conserva su régimen pensionario y revierte sus provisiones. En el ejemplo del manual, una mensual validada con [[S 2500]] se rectifica, '
+        {'t': 'cap', 'img': 'c25_02_rectificativa_calculo', 'rotulo': 'La rectificativa copia y resta',
+         'focos': ['Boleta rectificada', 'Neto a pagar'],
+         'voz': 'Se crea la rectificativa, validada y enlazada a la boleta rectificada, con las mismas líneas: [[S 3000]] de remuneración y [[S 2610]] de neto. '
+                'Resta en el PLAME, AFPnet, bancos, la planilla y las utilidades; se concilia con la original, conserva su régimen pensionario y revierte sus provisiones.'},
+        {'t': 'cap', 'img': 'c25_04_lista_boletas_rectificada', 'rotulo': 'Original, rectificativa y boleta nueva',
+         'focos': ['Rectificacion'],
+         'voz': 'Después se corrige el dato y se calcula la boleta nueva del mismo periodo. En el ejemplo del manual, una mensual validada con [[S 2500]] se rectifica, '
                 'y la boleta nueva de [[S 2700]] queda declarada una sola vez, con un neto de [[S 2349]].'},
     ],
     'cifra_clave': ('S/ 3 045,00', 'Un solo abono del mes: mensual 2 610,00 + planilla de comisiones 435,00 (caso ADICIONALES, 70001701).'),
@@ -133,16 +135,23 @@ REEMPLAZOS['E11'] = {
          'focos': ['America/Lima', 'Promedio'],
          'voz': 'El horario de trabajo debe estar en la zona horaria America Lima: si queda en UTC, las tardanzas salen desplazadas cinco horas. '
                 'Su promedio de horas por día es también el divisor del valor hora: con ocho horas, sueldo entre treinta, entre ocho.'},
-        {'t': 'tarjeta', 'ceja': 'Caso ASISTENCIA', 'titulo': 'Tardanzas y faltas de setiembre de 2026',
-         'items': ['Carlos: 3 tardanzas de 25 min; con 10 de tolerancia, 45 min: 10,94', 'Jorge: 2 faltas, básica 1 054,67',
-                   'María: media jornada, básica 7 866,67', 'Óscar: vacaciones justificadas, básica 2 500,00'],
-         'voz': 'Con Cargar asistencias, la boleta concilia las marcaciones del mes. Carlos llegó tres veces veinticinco minutos tarde: con diez de tolerancia, cuentan cuarenta y cinco minutos, '
-                '[[S 10.94]] sobre [[S 3500]]. Jorge tiene dos faltas y su básica baja a [[S 1054.67]]. Con la evaluación por horas, la media jornada de María deja '
-                '[[S 7866.67]]. Y las vacaciones de Óscar salen como justificadas.'},
-        {'t': 'tarjeta', 'ceja': 'Feriados', 'titulo': 'El feriado no es falta',
-         'items': ['Día no laborable del calendario, sin ausencia: feriado', 'Jorge, octubre de 2026: 21 días evaluados, 0 faltas, 1 feriado', 'Remuneración completa: 1 130,00'],
+        {'t': 'cap', 'img': 'c19_02_jorge_oct_boton', 'rotulo': 'Cargar asistencias',
+         'focos': ['Cargar asistencias'],
+         'voz': 'En la boleta en borrador, el botón Cargar asistencias concilia las marcaciones del periodo con el horario.'},
+        {'t': 'cap', 'img': 'c19_03_carlos_tardanzas_asistencias', 'rotulo': 'Tres tardanzas de 25 minutos',
+         'focos': ['tarde 15 min'],
+         'voz': 'Carlos llegó tres veces veinticinco minutos tarde. Con diez de tolerancia, cuentan quince cada una: cuarenta y cinco minutos.'},
+        {'t': 'cap', 'img': 'c19_03_carlos_tardanzas_calculo', 'rotulo': 'Descuento por tardanzas: 10,94',
+         'focos': ['TAR_001'],
+         'voz': 'Se descuentan al valor minuto, con la jornada de su horario: [[S 10.94]] sobre un sueldo de [[S 3500]]. La tardanza también reduce la base de los aportes.'},
+        {'t': 'cap', 'img': 'c19_04_jorge_set_faltas_asistencias', 'rotulo': 'Jorge: dos faltas',
+         'focos': ['FALTA'],
+         'voz': 'Un día laborable sin marcaciones ni ausencia aprobada es falta. Jorge tiene dos en setiembre, y su básica baja a [[S 1054.67]]. '
+                'Con la evaluación por horas, una media jornada se descuenta en proporción, y los días con una ausencia aprobada salen justificados.'},
+        {'t': 'cap', 'img': 'c19_02_jorge_oct_feriado_asistencias', 'rotulo': 'Octubre: el feriado no es falta',
+         'focos': ['feriado'],
          'voz': 'El día no laborable del calendario cuenta como feriado: no es falta ni tardanza. En octubre, Jorge tiene veintiún días evaluados, cero faltas y un feriado, '
-                'y su remuneración sale completa: [[S 1130]].'},
+                'y su remuneración sale completa: [[S 1130]]. Arriba, la boleta avisa además que su sueldo es menor que la remuneración mínima de octubre.'},
         {'t': 'cap', 'img': 'c18_03_feriados_aparte', 'rotulo': 'Trabajo en feriado: 8 horas al 100 %',
          'focos': ['TFER_001'],
          'voz': 'Si el trabajador marcó en un feriado y no tuvo descanso sustitutorio, se paga con el cien por ciento: con la casilla encendida, desde las asistencias; '

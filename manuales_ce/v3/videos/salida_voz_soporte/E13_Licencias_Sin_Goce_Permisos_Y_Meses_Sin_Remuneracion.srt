@@ -1,0 +1,144 @@
+1
+00:00:00,500 --> 00:00:03,245
+Este episodio muestra las ausencias sin goce:
+
+2
+00:00:03,245 --> 00:00:08,247
+una semana, un permiso de dos horas y un mes entero, y las opciones de la compañía
+
+3
+00:00:08,247 --> 00:00:10,199
+para los meses con suspensiones.
+
+4
+00:00:11,660 --> 00:00:15,052
+Las tres son ausencias del tipo Sin pagar, aprobadas:
+
+5
+00:00:15,052 --> 00:00:20,044
+un permiso de dos horas el 17 de noviembre y una semana del 9 al 13, del mismo
+
+6
+00:00:20,044 --> 00:00:23,116
+trabajador, y todo noviembre de una trabajadora.
+
+7
+00:00:24,580 --> 00:00:30,017
+En la boleta, la semana y el permiso restan cinco coma veinticinco días, sin marcar
+
+8
+00:00:30,017 --> 00:00:30,672
+en Pagado:
+
+9
+00:00:30,672 --> 00:00:33,554
+el permiso de dos horas es un cuarto de día.
+
+10
+00:00:35,020 --> 00:00:39,718
+Con un sueldo de S/ 2 400, la remuneración es S/ 1 980:
+
+11
+00:00:39,718 --> 00:00:46,551
+dos mil cuatrocientos entre treinta, por veinticuatro coma setenta y cinco días.
+
+12
+00:00:46,551 --> 00:00:48,515
+El neto es S/ 1 722,60.
+
+13
+00:00:48,515 --> 00:00:54,323
+En el PLAME, la semana va como suspensión cero cinco por cinco días;
+
+14
+00:00:54,323 --> 00:00:57,740
+el permiso por horas no va al punto snl.
+
+15
+00:00:59,140 --> 00:01:04,036
+Con todo el mes sin goce, la básica es cero y la asignación familiar tampoco se
+
+16
+00:01:04,036 --> 00:01:04,346
+paga.
+
+17
+00:01:04,346 --> 00:01:06,886
+Sin remuneración no hay aporte a EsSalud:
+
+18
+00:01:06,886 --> 00:01:09,551
+la boleta no tiene importes y no se valida.
+
+19
+00:01:09,551 --> 00:01:12,278
+El PLAME declara treinta días de suspensión.
+
+20
+00:01:13,740 --> 00:01:17,621
+Dos opciones de la compañía deciden los meses con suspensiones:
+
+21
+00:01:17,621 --> 00:01:22,303
+si se paga la asignación familiar en un mes entero sin goce, por defecto no;
+
+22
+00:01:22,303 --> 00:01:26,554
+y cómo se paga la básica en un mes de veintiocho o treinta y un días:
+
+23
+00:01:26,554 --> 00:01:30,620
+por defecto, el mes comercial, treinta menos los días suspendidos.
+
+24
+00:01:32,020 --> 00:01:35,195
+La básica nunca paga menos que los días con goce:
+
+25
+00:01:35,195 --> 00:01:40,507
+con el uno de julio trabajado y el resto sin goce, paga S/ 100, donde antes pagaba
+
+26
+00:01:40,507 --> 00:01:40,831
+cero.
+
+27
+00:01:40,831 --> 00:01:46,144
+Con la opción de días calendario con goce, julio con diecisiete días sin goce paga
+
+28
+00:01:46,144 --> 00:01:47,958
+S/ 1 400 en vez de S/ 1 300.
+
+29
+00:01:47,958 --> 00:01:51,650
+Son criterios pendientes de confirmación de la contadora.
+
+30
+00:01:53,180 --> 00:01:56,793
+Al validar, la boleta guarda las suspensiones de cada día.
+
+31
+00:01:56,793 --> 00:02:01,591
+Una licencia aprobada o rechazada después ya no cambia el punto snl de un mes
+
+32
+00:02:01,591 --> 00:02:02,027
+pagado:
+
+33
+00:02:02,027 --> 00:02:07,198
+la boleta lo deja dicho en su historial, y si el mes debe reflejarla, se rectifica.
+
+34
+00:02:08,660 --> 00:02:13,293
+El piso, la opción de los días con goce y la asignación familiar en un mes sin goce
+
+35
+00:02:13,293 --> 00:02:16,475
+son criterios pendientes de confirmación de la contadora.
+
+36
+00:02:16,475 --> 00:02:18,764
+Está en el capítulo veintidós del manual.
+

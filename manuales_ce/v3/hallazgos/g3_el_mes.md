@@ -48,6 +48,14 @@ Medido el 09/11/2026 en contable19 por JSON-RPC, solo lectura (`search_read`, `s
 - **Impacto:** documental (el plural sí está). El cap. 10 del v3 cita el texto medido. Conviene confirmar qué usan la hoja de
   liquidación y la constancia de la CTS.
 
+## 6. Una boleta nueva de un periodo sin contrato propone días trabajados de otros meses
+- **Dónde:** formulario de la boleta (sin guardar), SOLSE Demo Servicios, 09/11/2026. «Trabajador AUMENTO sin goce una semana»
+  (contrato desde el 01/09/2026), periodo 01/08/2026–31/08/2026: la banda dice bien «no tiene contrato vigente…», pero la pestaña
+  de días trabajados propone WORK100 65 días / 520 h y SINGOCE100 −5,25 días (la licencia de noviembre). Con «Trabajador AUMENTO a
+  mitad de mes» (dos versiones), WORK100 32 y 33 días.
+- **Impacto:** bajo (la banda avisa y sin contrato no se calcula), pero confunde. En el manual, c26_04 se recortó a la banda y la
+  cabecera. Revisar `get_worked_day_lines` / `_pe_tramos_de_versiones` cuando ninguna versión rige en el periodo.
+
 ## Para «Lo que no cubre» (capítulo 33), sin cambio de código
 - El dominical proporcional a los días trabajados de la semanal (D.Leg. 713, art. 4; O-112).
 - El 1 de mayo del destajero con el promedio de los 30 días previos (D.S. 012-92-TR, art. 10): solo con la entrada FMAY_001.
