@@ -1,0 +1,7 @@
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/00.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/01.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/02.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/03.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/04.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/05.mp4'
+file '/home/user/odoo19/manuales_ce/v3/videos/trabajo/E27/06.mp4'

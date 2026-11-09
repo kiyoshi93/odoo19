@@ -1,0 +1,434 @@
+[
+[
+"13",
+"28/10",
+"ce 19.0.1.28.0",
+"C-36 · utilidades: base de remuneraciones y días laborados del reparto"
+],
+[
+"14",
+"28/10",
+"ce 19.0.1.29.3",
+"C-37 · movilidad: MOV_001 supeditada a la asistencia (0909) y MOVL_001 de libre disposición (0908); C-38 · gratificación trunca con 0407; C-39 · SIS de la microempresa con 0811 (informativo en el .rem); C-40 · utilidades antes (UTIL_ANT_001, 0910) o después (UTIL_001, 0911) de la declaración anual"
+],
+[
+"15",
+"28/10",
+"ce 19.0.1.30.3",
+"INR_001 · categoría «Ingreso no afecto a aportes, afecto a renta de 5.ª»; N-09 · conceptos configurados del requerimiento de RRHH; C-44 · renta de 5.ª en el mes en que se pagan utilidades u otro ingreso extraordinario"
+],
+[
+"16",
+"29/10",
+"base 19.0.1.21.1 · ce 19.0.1.31.2",
+"C-42 · tipo de planilla en la estructura: las salidas eligen las boletas por el tipo y no por el xmlid de las de SOLSE; N-10 · planillas adicionales de comisiones, de bonificaciones y de utilidades; N-10 · renta de 5.ª del mes con las planillas adicionales"
+],
+[
+"16b",
+"29/10",
+"ce_demo 19.0.2.29.2 · ce 19.0.1.31.10",
+"O-71 · «Limpiar» del laboratorio de CE no borraba las entradas de trabajo de la tarea nocturna: los trabajadores quedaban archivados y la resiembra fallaba…; C-42 · «Tipo de planilla» en la lista de estructuras del menú (re-medición del lote 16, observación 2)"
+],
+[
+"17",
+"30/10",
+"ce 19.0.1.32.0",
+"C-41 · remuneración computable de la gratificación, la CTS, las vacaciones y las truncas con las variables regulares"
+],
+[
+"18",
+"30/10",
+"ce 19.0.1.33.1 · asistencia 19.0.1.5.0",
+"C-43 · feriados (0115) y licencia con goce (0907) aparte de la básica; N-11 · trabajo en día feriado o de descanso (0107); N-11 · con asistencias"
+],
+[
+"19",
+"30/10",
+"ce 19.0.1.34.0",
+"N-12 · SCTR por entidad"
+],
+[
+"20a",
+"31/10",
+"ce 19.0.1.35.0",
+"N-13 · provisiones mensuales (asiento)"
+],
+[
+"20b",
+"31/10",
+"ce 19.0.1.36.0",
+"N-13 · la provisión en la boleta mensual y en la semanal"
+],
+[
+"20c",
+"31/10",
+"ce 19.0.1.37.0",
+"N-13 · la aplicación en la boleta del beneficio"
+],
+[
+"21a",
+"01/11",
+"ce 19.0.1.38.0",
+"N-15 · los documentos del cese (hoja de liquidación, certificado de trabajo, constancia de cese)"
+],
+[
+"21b",
+"01/11",
+"ce 19.0.1.39.0",
+"N-16 · la constancia de utilidades (el reparto guardado)"
+],
+[
+"22a",
+"02/11",
+"ce 19.0.1.39.22 · ce_demo 19.0.2.37.2",
+"Las correcciones de la auditoría: el tope de utilidades con la asignación familiar por defecto; P-115 (la gratificación trunca con la remuneración del mes anterior al…"
+],
+[
+"22b",
+"02/11",
+"ce 19.0.1.39.30 · base 19.0.1.21.3",
+"C-48 / P-47 (el vínculo continuo en los beneficios: la gratificación, la CTS, las truncas y la proyección de la 5.ª, desde el inicio y hasta el fin del vínculo; C-34…"
+],
+[
+"22c",
+"02/11",
+"ce 19.0.1.39.50",
+"P-57 (la gratificación de enero a junio de un cese del 01 al 14/07 sin la de julio validada, como trunca en la liquidación; una sola vez; el aviso de la ordinaria…"
+],
+[
+"23a",
+"02/11",
+"ce 19.0.1.39.67",
+"P-59 (la gratificación de diciembre de un cese del 15 al 31/12, completa en la ordinaria y en la trunca, en cualquier orden; opción «Proporcional»), P-59 b (opción de…"
+],
+[
+"23b",
+"02/11",
+"ce 19.0.1.39.76 · ce_demo 19.0.2.37.3",
+"P-81 (las variables de la gratificación trunca hasta el mes anterior al cese, D.S. 005-2002-TR, art. 5.3; opción «Hasta el cese»; el caso COMPUTABLE) y P-80 (opción…"
+],
+[
+"24",
+"02/11",
+"ce 19.0.1.39.82 · asistencia 19.0.1.5.3",
+"C-47 / P-89 / P-40 (el valor hora con la jornada del trabajador en las horas extras, el feriado, la nocturna y las tardanzas; opción «÷ 8»), P-90 (el trabajo en…"
+],
+[
+"25a",
+"02/11",
+"base 19.0.1.21.6 · ce 19.0.1.39.90",
+"O-75 (la mensual de una parte del mes paga sus días; corrección), O-73 / P-41 a (un periodo entero sin remuneración no paga básica; corrección) y P-39 (la asignación…"
+],
+[
+"25b",
+"02/11",
+"ce 19.0.1.39.97",
+"P-41 b (la básica no paga menos que los días laborables con goce; corrección) y P-41 c (opción «Días calendario con goce»; por defecto, el mes comercial)"
+],
+[
+"26a",
+"02/11",
+"ce 19.0.1.39.104",
+"P-46 c (el incentivo por cese, gravado por defecto; inafecto hasta la indemnización con la marca del contrato); P-46 a, P-45 a y P-78 sin cambio, por norma"
+],
+[
+"26b",
+"02/11",
+"base 19.0.1.21.10 · ce 19.0.1.39.110",
+"P-46 b (las rentas y retenciones de otros empleadores: anterior y simultáneo, en la 5.ª, el cese y el certificado)"
+],
+[
+"27a",
+"03/11",
+"ce 19.0.1.39.116",
+"C-45 (la retención de 5.ª en la planilla semanal: proporcional por defecto, «todo en la última» o «no retener»)"
+],
+[
+"27b",
+"03/11",
+"ce 19.0.1.39.117",
+"P-44 (el subsidio de una boleta que cruza de mes, por sus días en el PLAME)"
+],
+[
+"28a",
+"03/11",
+"ce 19.0.1.39.121",
+"P-37, P-38, P-43 a y P-42 c (el promedio del subsidio por los días de afiliación; las horas extras siempre; el accidente sin requisito de aportes)"
+],
+[
+"28b",
+"03/11",
+"ce 19.0.1.39.126",
+"P-43 b, P-43 c y P-35 (el subsidio en soles enteros; el promedio fijo de la contingencia; la ONP, opción en no); La tanda del 28 (U-05: el promedio fijado se mostraba «modelo,id»)"
+],
+[
+"29",
+"03/11",
+"ce 19.0.1.39.127 · ce_demo 19.0.2.37.4",
+"P-75, P-74 c y d, P-73 b y c (el exceso de las prestaciones alimentarias como remuneración, el tope de 2 RMV; la opción del 0707 en la 5.ª; los aportes voluntarios…; La tanda del 29 y el 30 (COMPUTABLE: el caso esperaba la lista de variables regulares sin PRALI_EXC_001)"
+],
+[
+"30",
+"03/11",
+"ce 19.0.1.39.129",
+"P-49 b, P-64, P-73 a, P-91, P-63 / O-91, P-74 a y b, P-66 (el PLAME: casillas de informativos; 0406 en el cese del 15 al 31/12; utilidades por la fecha de la declaración)"
+],
+[
+"31a",
+"03/11",
+"ce 19.0.1.39.131",
+"P-31 y P-87 (el .jor: las horas trabajadas; el feriado trabajado a las ordinarias)"
+],
+[
+"31b",
+"03/11",
+"ce 19.0.1.39.133",
+"P-85 y P-88 (el dominical y los feriados de la semanal al 0115 del PLAME; el 1 de mayo en el día de descanso, FMAY_001)"
+],
+[
+"32a",
+"03/11",
+"ce 19.0.1.39.135",
+"P-48 a y b, P-50 a y c (la indemnización: la base con las variables; el modal en la MYPE, la mayor; los contratos 12 y 13; el desnaturalizado)"
+],
+[
+"32b",
+"03/11",
+"ce 19.0.1.39.137",
+"P-51 (las vacaciones truncas de fecha a fecha desde el aniversario; la opción por meses calendario de la indemnización)"
+],
+[
+"33a",
+"03/11",
+"ce 19.0.1.39.139",
+"P-82 y P-83 (la forma de la regla en la remuneración computable: fija mensual entera; periódica en la CTS sin el requisito de 3 meses, en la gratificación con la…"
+],
+[
+"33b",
+"03/11",
+"ce 19.0.1.39.141",
+"P-84 (la remuneración principal imprecisa: el comisionista y el destajero, con el promedio sin el requisito de 3 meses; diciembre de junio a noviembre; las 4 semanas…"
+],
+[
+"34a",
+"03/11",
+"ce 19.0.1.39.144",
+"C-46 y P-93 (el crédito EPS del mes con el aviso del tope de la empresa; el plan por importe fijo; el SCTR sobre la gratificación solo con la casilla de la póliza)"
+],
+[
+"34b",
+"03/11",
+"ce 19.0.1.39.146",
+"P-52 (la remuneración asegurable de Vida Ley: en la suspensión, los días a la última remuneración; fuera lo no mensual; las variables habituales; el promedio de las…"
+],
+[
+"35a",
+"03/11",
+"ce 19.0.1.39.147",
+"O-76, P-96 y P-109 (el adelanto de vacaciones: a cuenta del récord en curso; las truncas lo restan sin cobrar el exceso; las no gozadas lo cuentan; la provisión lo…"
+],
+[
+"35b",
+"03/11",
+"ce 19.0.1.39.149",
+"O-77, P-110 y P-98 (remedir el pasivo de vacaciones al cierre de cada mes con la remuneración vigente); P-71 c y d (la bonificación y desde el ingreso, sin cambio)"
+],
+[
+"36",
+"03/11",
+"ce 19.0.1.39.151",
+"O-78 / P-111 (corrección: la liquidación rectificada y no repuesta vuelve al pasivo); P-112 (las liquidaciones de meses anteriores sin aplicar, en su mes); P-97…"
+],
+[
+"37",
+"03/11",
+"ce 19.0.1.39.154",
+"P-94 b (el saldo inicial de ejercicios cerrados a la 59; el del anterior sin cerrar, al gasto de ese ejercicio); P-104 (la adicional después de la mensual registra la…"
+],
+[
+"38",
+"03/11",
+"ce 19.0.1.39.157",
+"O-84 («SOLES»); P-54 a (la boleta por correo sin acuerdo a quien cobra en cuenta, opción); O-81 (el reenvío reusa los PDF); O-82 (sin remitente no se envía); P-53 a…"
+],
+[
+"39",
+"05/11",
+"base 19.0.1.21.13 · ce 19.0.1.39.162 · renta5_ce 19.0.1.0.1",
+"El detalle de la renta de 5.ª por boleta en Community (módulo nuevo `solse_pe_payroll_renta5_ce`, variante del de Enterprise)"
+],
+[
+"40",
+"05/11",
+"ce 19.0.1.39.163 · ce_demo 19.0.2.37.8",
+"O-158 (reglas por compañía; el lote con compañía propia), O-159 (AFPnet con la AFP del cálculo y el vínculo del mes), O-160 (el documento de la versión vigente en el…"
+],
+[
+"41",
+"05/11",
+"ce 19.0.1.39.164",
+"O-85, O-96 y O-115 (el vínculo de C-48 en la indemnización y la hoja); O-116 (el plazo máximo del contrato modal, opción); O-117 (los avisos en el historial); O-127…"
+],
+[
+"42a",
+"05/11",
+"ce 19.0.1.39.166",
+"O-88 (la liquidación duplicada avisa), O-89 y O-107 (la liquidación con el contrato del cese), O-118 (las variables desde el inicio del vínculo)"
+],
+[
+"42b",
+"05/11",
+"ce 19.0.1.39.167",
+"O-120 (el récord que se completa el día del cese), O-121 (la trunca sin el corte por régimen, por tramos), O-122 (el aniversario del 29/02)"
+],
+[
+"43",
+"05/11",
+"ce 19.0.1.39.170",
+"O-101 (el subsidio que sigue al año nuevo), O-110 (el minuto del feriado), O-111 (el dominical guardado), O-113 (las estructuras hijas y el «Tiempo trabajado»)"
+],
+[
+"44",
+"05/11",
+"ce 19.0.1.39.172",
+"O-104 (las prestaciones alimentarias fuera del neto), O-105 (las entradas repetidas)"
+],
+[
+"45",
+"05/11",
+"ce 19.0.1.39.174",
+"O-131 (el SCTR de la ordinaria del cese), O-133 (las copias de las reglas EPS), O-135 (la vigencia del plan EPS), O-136 (documentado), O-137 (la nota al borrar o…"
+],
+[
+"46a",
+"05/11",
+"ce 19.0.1.39.176",
+"O-125 (las provisiones y la forma de las variables), O-128 (la ayuda), O-130 (el mes parcial en el divisor)"
+],
+[
+"46b",
+"05/11",
+"ce 19.0.1.39.177",
+"O-141 (el orden de las vacacionales), O-154 (los meses posteriores de la provisión)"
+],
+[
+"47",
+"05/11",
+"ce 19.0.1.39.178",
+"O-166 (desde cuándo rige la continuación del subsidio al año nuevo)"
+],
+[
+"48",
+"05/11",
+"ce 19.0.1.39.179",
+"O-165 (la provisión de vacaciones y el cambio de régimen), O-144 (el adelanto con el mismo vínculo)"
+],
+[
+"49a",
+"05/11",
+"ce 19.0.1.39.182",
+"O-156 (el personal en formación: estructura, subvención, EsSalud, avisos, el lote del mes del paso)"
+],
+[
+"49b",
+"05/11",
+"ce 19.0.1.39.184",
+"O-156 (media subvención, descanso y contador de formación)"
+],
+[
+"49c",
+"05/11",
+"ce 19.0.1.39.186",
+"O-156 (T-Registro y PLAME del personal en formación)"
+],
+[
+"50",
+"05/11",
+"ce 19.0.1.39.188",
+"O-147 (la indemnización vacacional del récord vencido en la provisión)"
+],
+[
+"51",
+"05/11",
+"ce 19.0.1.39.189",
+"O-97 (el `.or5` de otras rentas de 5.ª)"
+],
+[
+"52",
+"05/11",
+"ce 19.0.1.39.190",
+"O-132 (la póliza SCTR de la gratificación), O-134 (la UIT del aviso EPS)"
+],
+[
+"53",
+"05/11",
+"ce 19.0.1.39.191",
+"O-161 (los informes sin `html_container` anidado), O-162 (el pago de la planilla)"
+],
+[
+"54",
+"05/11",
+"ce 19.0.1.39.192",
+"O-167 (las suspensiones del `.snl`, guardadas al validar)"
+],
+[
+"55",
+"05/11",
+"ce 19.0.1.39.193",
+"O-124, O-163, O-86, O-94 (menores)"
+],
+[
+"56",
+"05/11",
+"ple_03 19.0.0.18",
+"O-157 (el 3.11 con el socio de la línea y el documento del trabajador)"
+],
+[
+"57",
+"08/11",
+"ce 19.0.1.39.194 · renta5_ce 19.0.1.0.3",
+"O-173 a O-176 (las observaciones de las re-mediciones de los lotes 39 a 56: el lote sin boletas y su compañía, «S.A.C..», el divisor de 5.ª con impuesto 0, los…"
+],
+[
+"58",
+"08/11",
+"ce 19.0.1.39.195",
+"O-177, O-179, O-180 y O-181 (el régimen de la micro y pequeña empresa: la asignación familiar de la pequeña, las utilidades de la micro, la acreditación en el REMYPE…"
+],
+[
+"59",
+"08/11",
+"ce 19.0.1.39.196 · ce_demo 19.0.2.37.10",
+"O-182, O-183 y la UIT en dos lugares (el año sin formato, los importes con miles)"
+],
+[
+"62",
+"08/11",
+"ce 19.0.1.39.198",
+"O-186 (el umbral de los 20 trabajadores del reparto de utilidades)"
+],
+[
+"64",
+"08/11",
+"ce 19.0.1.39.198",
+"O-189 (el aviso de la remuneración mínima)"
+],
+[
+"67",
+"08/11",
+"ce 19.0.1.39.200",
+"O-193 (la CTS del trabajador a tiempo parcial)"
+],
+[
+"70",
+"08/11",
+"ce_demo 19.0.2.45.0",
+"Lo que dejó la re-medición de los lotes 57 a 69 (la compañía de los EMPRESA_* con la validación de contactos, «Limpiar» con la tarea nocturna, los impactos antes del…"
+],
+[
+"71",
+"08/11",
+"ce 19.0.1.39.202 · ce_demo 19.0.2.46.0",
+"O-195 (el convenio para evitar la doble tributación, la Comunidad Andina con la escala, el campo 22 del T-Registro y el `.toc` del PLAME)"
+]
+]

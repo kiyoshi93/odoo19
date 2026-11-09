@@ -8,4 +8,5 @@ VERSIONES = {
 from guiones_a import EPISODIOS as A  # noqa: E402
 from guiones_b import EPISODIOS as B  # noqa: E402
 from guiones_c import EPISODIOS as C  # noqa: E402
-EPISODIOS = A + B + C
+from guiones_v3 import REEMPLAZOS, NUEVOS  # noqa: E402
+EPISODIOS = [REEMPLAZOS.get(e['id'], e) for e in A + B + C] + NUEVOS

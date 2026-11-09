@@ -1,0 +1,156 @@
+1
+00:00:00,500 --> 00:00:05,314
+La micro y la pequeña empresa inscritas en el REMYPE tienen un régimen laboral
+
+2
+00:00:05,314 --> 00:00:05,869
+especial.
+
+3
+00:00:05,869 --> 00:00:10,991
+En este episodio vemos sus opciones y sus cifras, con dos compañías de laboratorio:
+
+4
+00:00:10,991 --> 00:00:13,398
+una pequeña empresa y una microempresa.
+
+5
+00:00:14,860 --> 00:00:18,639
+El régimen laboral se elige en el contrato de cada trabajador.
+
+6
+00:00:18,639 --> 00:00:23,637
+En la pequeña empresa, la gratificación es de media remuneración, la CTS de quince
+
+7
+00:00:23,637 --> 00:00:27,477
+remuneraciones diarias por año y las vacaciones de quince días.
+
+8
+00:00:27,477 --> 00:00:32,536
+En la microempresa no hay gratificación ni CTS, las vacaciones son de quince días y
+
+9
+00:00:32,536 --> 00:00:33,694
+la salud va al SIS.
+
+10
+00:00:33,694 --> 00:00:38,449
+La indemnización por despido es de veinte remuneraciones diarias por año en la
+
+11
+00:00:38,449 --> 00:00:40,277
+pequeña y de diez en la micro.
+
+12
+00:00:41,860 --> 00:00:46,746
+En la compañía se registra la fecha de acreditación en el REMYPE, y se eligen las
+
+13
+00:00:46,746 --> 00:00:47,289
+opciones:
+
+14
+00:00:47,289 --> 00:00:51,692
+el régimen de salud de la micro, la asignación familiar y las utilidades.
+
+15
+00:00:51,692 --> 00:00:56,397
+Por defecto, la asignación familiar no se paga, porque no es parte del régimen
+
+16
+00:00:56,397 --> 00:00:56,939
+especial.
+
+17
+00:00:58,460 --> 00:01:04,445
+Una trabajadora de la pequeña empresa con S/ 2 400 recibe en julio media
+
+18
+00:01:04,445 --> 00:01:05,525
+remuneración:
+
+19
+00:01:05,525 --> 00:01:10,097
+S/ 1 200, más la bonificación extraordinaria de S/ 108.
+
+20
+00:01:10,097 --> 00:01:15,417
+Su CTS de mayo es S/ 650, quince remuneraciones diarias por año.
+
+21
+00:01:16,900 --> 00:01:23,162
+Un trabajador despedido el quince de octubre recibe sus truncas del régimen, y una
+
+22
+00:01:23,162 --> 00:01:27,362
+indemnización de veinte remuneraciones diarias por año:
+
+23
+00:01:27,362 --> 00:01:32,173
+sesenta soles diarios, por veinte, por once doceavos, S/ 1 100.
+
+24
+00:01:32,173 --> 00:01:35,304
+El neto de la liquidación es S/ 2 787,75.
+
+25
+00:01:36,780 --> 00:01:41,765
+Si el contrato del régimen especial empezó antes de la acreditación, la boleta
+
+26
+00:01:41,765 --> 00:01:42,148
+avisa:
+
+27
+00:01:42,148 --> 00:01:45,408
+ese contrato conserva el régimen en que se celebró.
+
+28
+00:01:45,408 --> 00:01:46,686
+El aviso no bloquea;
+
+29
+00:01:46,686 --> 00:01:47,836
+decide la empresa.
+
+30
+00:01:49,300 --> 00:01:55,464
+En la microempresa, un trabajador con S/ 1 500 paga ONP por S/ 195.
+
+31
+00:01:55,464 --> 00:02:00,340
+El empleador aporta S/ 15 al SIS en lugar de EsSalud.
+
+32
+00:02:00,340 --> 00:02:02,180
+El neto es S/ 1 305.
+
+33
+00:02:03,580 --> 00:02:11,581
+Y en la liquidación de la micro, la indemnización es de diez remuneraciones diarias
+
+34
+00:02:11,581 --> 00:02:12,352
+por año:
+
+35
+00:02:12,352 --> 00:02:13,316
+S/ 416,67.
+
+36
+00:02:13,316 --> 00:02:19,004
+Con las vacaciones truncas de S/ 625, el neto es S/ 960,42.
+
+37
+00:02:20,500 --> 00:02:25,235
+El tope de noventa remuneraciones diarias de la CTS de la pequeña empresa todavía no
+
+38
+00:02:25,235 --> 00:02:28,561
+se aplica, y queda como criterio pendiente de la contadora.
+
+39
+00:02:28,561 --> 00:02:31,324
+Todo está en el capítulo veinticuatro del manual.
+

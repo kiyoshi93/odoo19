@@ -24,13 +24,18 @@ module.exports = (h) => {
     ['11', '22/10', 'ce 19.0.1.27.1 · ce_demo 19.0.2.25.1', 'N-02 fase 2 (modificaciones y derechohabientes), U-11'],
     ['12', '22/10', 'asistencia 19.0.1.4.1 · asistencia_demo 19.0.1.2.1', 'C-35'],
   ];
+  const lotesV3 = JSON.parse(fs.readFileSync(path.join(MEDIDAS, 'historial_lotes_13_71.json'), 'utf8'));
   a(
     h1('Anexo D. Historial de versiones'),
-    p('Los 65 cambios de la versión 2 se entregaron en 12 lotes, del 12 al 22 de octubre de 2026. Cada lote se re-midió en `contable19` (informes `manuales_ce/evidencias/lote*/REMEDICION_*.md`). Los lotes 7a, 7b y 8 se midieron juntos, con el 8 instalado. C-04 y Q-03 se cerraron sin cambio de código (C-04 por la respuesta P-19 de la contadora, el 15/10). N-06 está bloqueado (formatos de los bancos).'),
+    p('Cada lote se entregó con su revisión y su verificación, y se re-midió en `contable19` antes de documentarlo (informes `REMEDICION_*.md` de cada lote en la biblia, rama `nomina-ce`). La **versión 2** de este manual documentó los lotes 1 a 12; la **versión 3**, los lotes 13 a 71.'),
+    h2('D.1 Versión 2: lotes 1 a 12 (octubre de 2026)'),
+    p('Los 65 cambios de la versión 2 se entregaron en 12 lotes, del 12 al 22 de octubre de 2026. Los lotes 7a, 7b y 8 se midieron juntos, con el 8 instalado. C-04 y Q-03 se cerraron sin cambio de código (C-04 por la respuesta P-19 de la contadora, el 15/10). N-06 está bloqueado (formatos de los bancos).'),
     tabla(['Lote', 'Validado (2026)', 'Versiones al validar', 'Ítems'], lotes, [800, 1300, 3800, 3738]),
-    p('Versiones finales documentadas: base 19.0.1.20.1 · ce 19.0.1.27.1 · ce_demo 19.0.2.25.1 · asistencia 19.0.1.4.1 · asistencia_demo 19.0.1.2.1 · plame_demo 19.0.1.4.1.'),
+    h2('D.2 Versión 3: lotes 13 a 71 (del 28 de octubre al 8 de noviembre de 2026)'),
+    p('Los lotes 13 a 38 siguieron el cronograma de las preguntas de la contadora (rondas de P-xx); los lotes 39 a 71, las observaciones del inventario (O-xx) y las del análisis de regímenes. La fecha es la de la re-medición que los validó; la versión, la del módulo que cambió en ese lote.'),
+    tabla(['Lote', 'Validado (2026)', 'Versión del lote', 'Ítems'], lotesV3, [700, 1100, 2600, 5238]),
+    p(`Versiones finales documentadas en la versión 3: base ${h.VERSIONES.base} · ce ${h.VERSIONES.ce} · ce_demo ${h.VERSIONES.ce_demo} · renta5_ce ${h.VERSIONES.renta5} · asistencia ${h.VERSIONES.asistencia} · asistencia_demo ${h.VERSIONES.asistencia_demo} · plame_demo ${h.VERSIONES.plame_demo} · plame_4ta ${h.VERSIONES.plame_4ta} · plame_rxh ${h.VERSIONES.plame_rxh}. El módulo \`solse_pe_payroll_renta5_ce\` es nuevo desde el lote 39.`),
   );
-
 
   return c;
 };

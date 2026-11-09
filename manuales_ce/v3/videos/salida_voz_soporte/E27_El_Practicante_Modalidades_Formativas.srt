@@ -1,0 +1,104 @@
+1
+00:00:00,500 --> 00:00:02,754
+El practicante no es un trabajador:
+
+2
+00:00:02,754 --> 00:00:05,523
+recibe una subvención, no una remuneración.
+
+3
+00:00:05,523 --> 00:00:10,740
+Desde esta versión, la localización calcula y declara las modalidades formativas.
+
+4
+00:00:12,140 --> 00:00:17,100
+En la versión del contrato se marca ¿Es practicante?, y se completan la modalidad,
+
+5
+00:00:17,100 --> 00:00:20,729
+la jornada del convenio, el seguro y el centro de formación.
+
+6
+00:00:20,729 --> 00:00:25,689
+La subvención pactada es el sueldo de la versión, y la estructura es Subvención de
+
+7
+00:00:25,689 --> 00:00:26,899
+modalidad formativa.
+
+8
+00:00:28,420 --> 00:00:32,469
+En junio, la practicante cumple seis meses.
+
+9
+00:00:32,469 --> 00:00:39,342
+La boleta paga la subvención de S/ 1 130 y la media subvención de S/ 565.
+
+10
+00:00:39,342 --> 00:00:45,180
+La compañía aporta a EsSalud el nueve por ciento de lo pagado:
+
+11
+00:00:45,180 --> 00:00:46,121
+S/ 152,55.
+
+12
+00:00:46,121 --> 00:00:49,417
+No hay AFP, ONP ni renta de quinta:
+
+13
+00:00:49,417 --> 00:00:51,300
+el neto es S/ 1 695.
+
+14
+00:00:52,700 --> 00:00:57,026
+La subvención es la mayor entre la pactada y el mínimo de su modalidad.
+
+15
+00:00:57,026 --> 00:00:59,525
+Cada seis meses se paga media subvención;
+
+16
+00:00:59,525 --> 00:01:04,399
+el descanso de quince días se paga en lugar de la subvención, y el no gozado, al
+
+17
+00:01:04,399 --> 00:01:05,679
+terminar el convenio.
+
+18
+00:01:07,140 --> 00:01:11,710
+La compañía decide si paga el mínimo cuando la subvención pactada es menor, si
+
+19
+00:01:11,710 --> 00:01:15,401
+descuenta las inasistencias y si el EsSalud usa la base mínima.
+
+20
+00:01:16,860 --> 00:01:20,064
+El practicante no va al punto rem del PLAME.
+
+21
+00:01:20,064 --> 00:01:26,107
+El asistente lo suma en un archivo aparte, para digitarlo en la sección Personal en
+
+22
+00:01:26,107 --> 00:01:27,417
+formación del PDT:
+
+23
+00:01:27,417 --> 00:01:29,747
+una persona y S/ 1 695 en junio.
+
+24
+00:01:31,220 --> 00:01:35,900
+Algunos criterios, como los periodos intermitentes o las cuentas contables, esperan
+
+25
+00:01:35,900 --> 00:01:37,704
+la confirmación de la contadora.
+
+26
+00:01:37,704 --> 00:01:40,524
+Todo está en el capítulo treinta y uno del manual.
+
