@@ -23,6 +23,9 @@ module.exports = (h) => {
     p('Si el trabajador no tiene remuneración en todo el mes, no corresponde aportar a EsSalud (C-32; SUNAT, Informe 003-2007-SUNAT/2B0000). La boleta queda **sin importes** y no se valida (C-18). El PLAME declara al trabajador en el `.jor` con 0 horas y en el `.snl` con `05|30`.'),
     ...figura('c22_03_mes_sin_goce_dias', 'Noviembre entero sin goce: «Sin pagar» −21 días / −168 h; la boleta no tiene importes.'),
     nota('Con días laborados en el mes, la base mínima de EsSalud sigue siendo la RMV (Informe 003-2007-SUNAT/2B0000, conclusión 1): un ingreso a fin de mes paga EsSalud sobre la RMV aunque su remuneración sea menor. Solo un mes **sin ninguna** remuneración no aporta.', 'importante'),
+    ...figura('c22_07_ausencias_aumento', 'Caso AUMENTO, noviembre de 2026: tres ausencias «Sin pagar» aprobadas: el 17/11 de 8:00 a 10:00 (2:00 horas) y del 9 al 13/11 (40 horas) del trabajador «sin goce una semana», y todo noviembre (168 horas) de la trabajadora «sin goce todo el mes».'),
+    ...figura('c22_06_aumento_sin_goce_dias', 'Caso AUMENTO, 70000903 (sueldo 2 400), noviembre de 2026: «Días laborados» 21 días / 168 h y «Unpaid» (SINGOCE100) −5,25 días / −42 h, sin marcar en «¿Pagado?».'),
+    p('En el caso AUMENTO, el trabajador 70000903 (sueldo 2 400) tiene en noviembre la semana sin goce y el permiso de 2 horas: 5,25 días no pagados. Remuneración = 2 400 / 30 × (30 − 5,25) = **1 980,00**; ONP 257,40, EsSalud 178,20 y neto 1 722,60 (medido el 09/11/2026).'),
     nota('Caso AUMENTO, re-medido en el lote 71: semana sin goce de 70000903 con `.snl` `05|5` y `.jor` 126 h; la trabajadora con todo noviembre sin goce no tiene mensual (sin importes) y su `.snl` declara `05|30` y su `.jor` `0`.', 'caso'),
 
     h2('22.4 Todo el periodo en suspensión perfecta: básica y asignación (lote 25a)'),

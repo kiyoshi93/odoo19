@@ -225,6 +225,7 @@ const pasos = {
     hechos.c08_03 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 2500);
     await cap(p, 'c08_03_nomina_pe_1');
     const l = p.locator('[name="relative_ids"]').first(); if (await l.count()) { await l.scrollIntoViewIfNeeded(); await p.waitForTimeout(400); }
+    await p.mouse.move(1300, 850); await p.waitForTimeout(800);
     await cap(p, 'c08_06_derechohabientes', { resaltar: ['[name="relative_ids"] .o_data_row'] });
     await contrato(p, c, 1, '99999901');
     hechos.c08_13 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 2500);

@@ -11,7 +11,7 @@ module.exports = (h) => {
   a(
     h1('17. Vacaciones'),
     p('Las vacaciones se devengan como **asignaciones** del tipo **Vacaciones PE (D.Leg. 713)** (2,5 días por mes en el régimen general; 15 días por año en la micro y pequeña empresa) y se gozan con una **ausencia** aprobada del mismo tipo. El récord se cuenta desde el inicio del **vínculo**: una renovación sin interrupción no lo corta (lote 22b).'),
-    ...figura('c17_03_asignaciones', 'Asignaciones de FM SYSTEMS: Lucía 52,5 días (21 meses) y Héctor 47,5 días (19 meses).'),
+    ...figura('c17_03_asignaciones', 'Asignaciones de FM SYSTEMS en noviembre de 2026, con el plan «Vacaciones PE - Devengo mensual»: Lucía 55 días (22 meses) y Héctor 50 días (20 meses).'),
     ...figura('c17_04_ausencias', 'Ausencias aprobadas: Lucía del 2 al 16 de febrero de 2026 (11 días hábiles) y Héctor del 14 al 23 de setiembre de 2026 (8 días hábiles).'),
     h2('17.1 Tipos de ausencia y Tabla 21'),
     p('Cada tipo de ausencia tiene su **Tipo de suspensión (Tabla 21)** (C-09). Con ese código, la boleta descuenta los días declarados y el PLAME los lleva al `.snl`. Por defecto: Vacaciones PE 23, «Sin pagar» 05, Enfermedad 20, Días compensatorios 27 y Maternidad 22. Desde el lote 54 las suspensiones del mes **quedan guardadas al validar** la boleta: una ausencia aprobada o rechazada después ya no cambia el `.snl` ni los días impresos de un mes ya pagado.'),

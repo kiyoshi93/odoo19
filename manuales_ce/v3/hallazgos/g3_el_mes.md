@@ -41,6 +41,13 @@ Medido el 09/11/2026 en contable19 por JSON-RPC, solo lectura (`search_read`, `s
 - **Impacto:** cosmético; solo se nota en las capturas de listas del laboratorio (y en los videos). Las boletas creadas
   desde el formulario y el lote sí llevan el nombre de U-06.
 
+## 5. La boleta impresa dice «… Y 70/100 SOLES», no «… SOLES Y … CÉNTIMOS» como la nota del lote 38
+- **Dónde:** `solse_pe_payroll_ce.reporte_boleta_pago`, boleta del caso BOLETA de diciembre de 2026 (captura c10_02 del 09/11/2026):
+  «SON: CUATRO MIL VEINTICINCO Y 70/100 SOLES». `NOTA_LOTE38.md` dice que la boleta escribe «… SOLES Y CINCUENTA CÉNTIMOS»
+  (el formato de `res.currency._pe_en_letras`), que la boleta no parece usar.
+- **Impacto:** documental (el plural sí está). El cap. 10 del v3 cita el texto medido. Conviene confirmar qué usan la hoja de
+  liquidación y la constancia de la CTS.
+
 ## Para «Lo que no cubre» (capítulo 33), sin cambio de código
 - El dominical proporcional a los días trabajados de la semanal (D.Leg. 713, art. 4; O-112).
 - El 1 de mayo del destajero con el promedio de los 30 días previos (D.S. 012-92-TR, art. 10): solo con la entrada FMAY_001.

@@ -49,7 +49,7 @@ borrar nada: las boletas «nuevas» se dejan **sin guardar** (o se descartan) de
 - **Compañía:** 4. **Registro:** `hr.payslip` id 9709.
 - **Resaltar:** FER_001 300,00, RB_001 2 700,00, TFER_001 200,00, GROSS 3 200,00, ONP 416,00 y NET 2 784,00. Si cabe, la pestaña de entradas con TFER_001 = 8.
 
-### c18_04_opciones_feriados (cap. 18.5)
+### c18_04a / c18_04b / c18_04c_opciones_feriados (cap. 18.5) · tomadas en tres recortes
 - **Qué debe verse:** la ficha de la compañía SOLSE Demo Servicios S.A.C. (id 4), pestaña «Nómina PE - Controles», los grupos «PLAME» (casilla «Declarar aparte los feriados (0115) y la licencia con goce (0907)», marcada en esta compañía), «Valor hora y feriados» (solo las dos primeras opciones), «PLAME: horas del .jor» y «Descanso semanal y 1 de mayo».
 - **Resaltar:** «Valor hora» = «Sueldo ÷ 30 ÷ las horas diarias de la jornada del trabajador…», «Trabajo en feriado en el promedio del subsidio» = «Siempre…», «Horas ordinarias del .jor» = «Solo las trabajadas», «Horas trabajadas en un feriado o día de descanso (.jor)» = «A las horas ordinarias», «Dominical y feriados de la semanal (PLAME)» = «Aparte, en el 0115», «1 de mayo en el día de descanso semanal» = «Pagar un día adicional» y «Pagar el 1 de mayo también en una ausencia» sin marcar. Pueden ser dos capturas recortadas si no entra en una (c18_04a / c18_04b).
 
@@ -62,3 +62,6 @@ c10_01_dias, c10_01_calculo, c10_01_contable, c10_05_boleta_sin_importes, c11_01
 c18_02, c19_02 a c19_08, c21_01 a c21_03, c22_01 a c22_04, c25_01 a c25_04, c26_01 a c26_04 y c09_04_compania_controles
 (el grupo «Controles al validar la boleta» de FM sigue con los cinco controles: cuatro en «Avisar» y Vida Ley en «No
 controlar», leído el 09/11/2026).
+
+## Estado (09/11/2026)
+Las 10 pedidas están tomadas con `scripts/capturas_g3_el_mes.js` (c18_04 en tres: a, b y c). Ninguna escribió nada.

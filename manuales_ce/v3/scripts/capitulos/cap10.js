@@ -111,7 +111,7 @@ module.exports = (h) => {
       ['K8, 450 con 15 horas semanales', '—', '«rmv» (1 230 × 15 ÷ 40 = 461,25)'],
     ], [3400, 2700, 3538]),
     p('El texto, medido en contable19 (re-medición del lote 64): «El sueldo del contrato de <trabajador> (1 130,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00. Revise el sueldo del contrato.» Hoy compara solo el sueldo del contrato (la asignación familiar no cuenta) y, con menos de 4 horas diarias, la RMV proporcional (A-2.1 y A-2.2, con valor por defecto).'),
-    ...figura('c10_07_aviso_rmv', 'EMPRESA_COMERCIO, K6 (repartidor con el sueldo de la RMV anterior), mensual de octubre de 2026 en borrador: «El sueldo del contrato de … (1 200,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00».'),
+    ...figura('c10_07_aviso_rmv', 'EMPRESA_COMERCIO, K6 (repartidor con el sueldo de la RMV anterior), boleta nueva de octubre de 2026 sin guardar: «El sueldo del contrato de Repartidor COMERCIO con el sueldo de la RMV anterior (1 200,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00. Revise el sueldo del contrato.» Arriba, la banda de los feriados de 2026, que esta compañía de laboratorio no tiene.'),
     nota('Caso EMPRESA_COMERCIO, hoja «Avisos» (re-medición del lote 71, 100 %): K5 junio «(ninguno)» y octubre «rmv_nocturna»; K6 junio «(ninguno)» y octubre «rmv»; K7 (44 h semanales) y K8 (15 h) en octubre «rmv»; K4, mensual validada de junio con 1 000 < 1 130, «rmv».', 'caso'),
 
     // ------------------------------------------------------------ 10.6
@@ -119,10 +119,10 @@ module.exports = (h) => {
     p('Desde la boleta, **Imprimir › Boleta de Pago (PE)**. Cuadra al centavo con el asiento (C-05): se imprimen los importes redondeados de cada línea. En la versión 3 cambian tres cosas:'),
     vinetas([
       '**Los importes llevan coma de miles** (lote 59, O-183), como el resto de Odoo en es_PE: el neto del caso BOLETA sale «4,025.70». En este manual las cifras se escriben con espacio de miles y coma decimal.',
-      '**«SON: … SOLES»** (lote 38, O-84): la unidad va en plural (Ley 30381). Un neto de 2 611,50 dice «DOS MIL SEISCIENTOS ONCE SOLES Y CINCUENTA CÉNTIMOS»; antes decía «SOL». «UN SOL» solo para 1,xx. Igual en la hoja de liquidación y la constancia de la CTS.',
+      '**«SON: … SOLES»** (lote 38, O-84): la unidad va en plural (Ley 30381). La boleta del caso BOLETA dice «SON: CUATRO MIL VEINTICINCO Y 70/100 SOLES» (medido el 09/11/2026); antes decía «SOL». La hoja de liquidación y la constancia de la CTS también llevan el plural.',
       '**Las provisiones no se imprimen** por defecto (lote 37, P-106): la boleta acredita lo que se paga. La opción **«Provisiones en la boleta impresa»** (capítulo 7) tiene «No», «Solo la provisión del mes» y «Provisión y aplicación»; con las dos últimas van debajo del neto, en un bloque aparte e informativo.',
     ]),
-    ...figura('c10_02_boleta_impresa', 'Boleta de diciembre de 2026: días laborados 31, no laborados 0, horas 184; ingresos 4,623.00, descuentos 597.30, aportes del empleador 450.74 y neto 4,025.70, con «SON: … SOLES».'),
+    ...figura('c10_02_boleta_impresa', 'Boleta de diciembre de 2026 (caso BOLETA): días laborados 31, no laborados 0, horas 184.0; total ingresos 4,623.00, total descuentos 597.30, total aportes 450.74, neto a pagar S/ 4,025.70 y «SON: CUATRO MIL VEINTICINCO Y 70/100 SOLES».'),
     h2('10.7 Asiento contable'),
     ...figura('c10_01_contable', 'Información contable: diario Planillas y el asiento de la boleta.'),
     ...figura('c10_03_asiento', 'Asiento PLLA/2026/12/0373 de la boleta de diciembre del caso BOLETA: 5 671,04 al debe y al haber. El trabajador figura como socio en las líneas de la cuenta 4111.'),

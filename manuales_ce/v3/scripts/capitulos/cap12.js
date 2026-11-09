@@ -35,6 +35,7 @@ module.exports = (h) => {
     p('Con días laborados, la base mínima de EsSalud es la RMV aunque la remuneración sea menor (capítulo 22). Un mes **sin ninguna** remuneración no aporta (C-32; SUNAT, Informe 003-2007-SUNAT/2B0000). Desde el lote 22a, lo mismo en la **liquidación**: si en el mes no hay remuneración afecta, ni en la liquidación ni en las demás boletas del trabajador (una liquidación sin truncas en un mes sin mensual), no carga el 9 % de la RMV. Con truncas o con la mensual del mes, el EsSalud se calcula como siempre.'),
     h3('El trabajador a tiempo parcial'),
     p('El trabajador de menos de 4 horas diarias (capítulos 15 y 17) aporta EsSalud **con la base mínima de la RMV** y su pensión sobre lo que gana (lote 67). Caso EMPRESA_CONSULTORA, S4, sueldo 500 con 3 horas diarias, junio de 2026: **ONP 65,00**, **EsSalud 101,70** (9 % de 1 130) y neto 435,00. Es «criterio según la norma, pendiente de confirmación (A-6.2 y A-6.3)», que deciden cómo se detecta el tiempo parcial. El practicante no: su EsSalud (ESSALUD_PF_001) es el 9 % de lo pagado, sin base mínima (capítulo 31).'),
+    ...figura('c12_07_tiempo_parcial_s4', 'EMPRESA_CONSULTORA, S4 (sueldo 500, 3 horas diarias), junio de 2026: ONP 65,00, ESSALUD 101,70 (9 % de la RMV de 1 130) y neto 435,00.'),
 
     h2('12.2 Lo que reduce la base: tardanza y descuento deducible'),
     p('El descuento por tardanza (`TARD_001`) es un «Descuento que reduce la base afecta» (C-10): la base de ONP, AFP, EsSalud y renta de 5.ª es el total de ingresos afectos **menos la tardanza**. En el ejemplo del capítulo 20, 45 minutos (7,50) bajan la base de 2 537,00 a 2 529,50. La tardanza se valora con la jornada del trabajador (lote 24; capítulo 10).'),
@@ -46,6 +47,7 @@ module.exports = (h) => {
       '**Aportes voluntarios del trabajador al SPP** (AFPV_001 con fin previsional, AFPVS_001 sin fin previsional; 0609): se descuentan del neto y van a AFPnet. No reducen ninguna base: la Ley del Impuesto a la Renta no los deduce (arts. 46 y 49). Solo para afiliados al SPP: a un trabajador de la ONP la boleta no los calcula y avisa («aporte_voluntario»).',
       '**Aporte voluntario del empleador** (AFPVE_001; AFPnet, columna O): aporte de la empresa (6272 / 4170). No es remuneración ni renta de 5.ª (TUO de la Ley del SPP, art. 74).',
     ]),
+    ...figura('c12_06_deducible_voluntarios', 'Caso CONCEPTOS, 70001602, noviembre de 2026: DESC_D_001 30,00 baja la base a 2 970,00; AFP 297,00; aportes voluntarios AFPV_001 100,00 y AFPVS_001 50,00; ESSALUD 267,30; AFPVE_001 80,00 del empleador; neto 2 086,27.'),
     nota('Caso CONCEPTOS, 70001602, noviembre de 2026: AFPV_001 100,00, AFPVS_001 50,00 y AFPVE_001 80,00; en AFPnet, 2 970,00 de remuneración asegurable y 100,00, 50,00 y 80,00 en las columnas de los aportes voluntarios; neto 2 086,27. Por defecto van solo a AFPnet; el `.rem` los lleva como informativos si se marcan las casillas «PLAME: aportes informativos en el .rem» de la compañía (P-73, capítulo 27).', 'caso'),
 
     h2('12.4 El crédito EPS del mes (lotes 34a, 45 y 52)'),

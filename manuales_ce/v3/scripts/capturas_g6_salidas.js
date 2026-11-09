@@ -17,13 +17,34 @@ async function cerrarModal(p) {
   if (await b.count()) await b.last().click(); else await p.keyboard.press('Escape');
   await p.waitForTimeout(800);
 }
+// Una fecha de botón con calendario, dentro de un asistente: sin Escape al final (cerraría el asistente)
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+async function fechaCalendario(p, raiz, campo, valor) {
+  await raiz.locator(`[data-field="${campo}"]`).first().click();
+  const sel = p.locator('.o_datetime_picker:has(.o_header_part)').first(); await sel.waitFor({ timeout: 6000 });
+  const [dia, mes, anio] = valor.split('/').map(Number);
+  for (let i = 0; i < 36; i++) {
+    const [nm, am] = (await sel.locator('.o_header_part').first().innerText()).toLowerCase().trim().split(/\s+/);
+    const ind = nm.startsWith('set') ? 8 : MESES.findIndex((m) => nm.startsWith(m.slice(0, 4)));
+    const dif = (anio - Number(am)) * 12 + (mes - 1 - ind);
+    if (dif === 0) break;
+    await sel.locator(dif < 0 ? '.o_previous' : '.o_next').click(); await p.waitForTimeout(200);
+  }
+  await sel.locator('.o_date_item_cell:not(.o_out_of_range)').filter({ hasText: new RegExp(`^${dia}$`) }).first().click();
+  await p.waitForTimeout(800);
+  if (await p.locator('.o_datetime_picker:visible').count()) { await raiz.locator('.modal-title, .o_form_label').first().click().catch(() => {}); await p.waitForTimeout(400); }
+}
 async function poner(p, raiz, campo, tipo, valor) {
   const w = raiz.locator(`.o_field_widget[name="${campo}"]`).first();
   if (tipo === 'sel') {
     if (await w.locator('select').count()) await w.locator('select').selectOption({ label: valor });
     else { await w.locator('input, .o_select_menu_toggler').first().click(); await p.locator('.o_select_menu_item, .dropdown-item').filter({ hasText: new RegExp('^\\s*' + valor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*$') }).first().click(); }
   } else if (tipo === 'txt') { const i = w.locator('input').first(); await i.click(); await i.fill(String(valor)); await i.press('Tab'); }
-  else if (tipo === 'fecha') { await u.fecha(raiz, campo, valor); }
+  else if (tipo === 'fecha') {
+    // las fechas del T-Registro son botones con calendario (sin entrada de texto): se eligen en el calendario
+    if (await w.locator('input').count()) await u.fecha(raiz, campo, valor);
+    else await fechaCalendario(p, raiz, campo, valor);
+  }
   else if (tipo === 'chk') { const i = w.locator('input[type=checkbox]'); if ((await i.isChecked()) !== valor) await i.click(); }
   await p.waitForTimeout(700);
 }

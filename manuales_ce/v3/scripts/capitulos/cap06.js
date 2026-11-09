@@ -11,7 +11,7 @@ module.exports = (h) => {
 
     h2('6.1 Planes EPS'),
     p('**Nómina PE › Seguros y EPS › Planes EPS.** Cada plan tiene la entidad, la **Entidad (T14)** que se declara en el T-Registro, el N.° de póliza, las fechas de inicio y de finalización y, para el empleador y para el trabajador, una **tasa** o un **importe**. La lista y la ficha del trabajador muestran el nombre de la entidad (U-01).'),
-    ...figura('c06_01_planes_eps', 'Planes EPS: «PACIFICO EPS (DEMO)», con tasa del empleador 4,5 % y del trabajador 2 %, y el plan del caso TREGISTRO con su código T14 «2 · Pacífico S.A. EPS».'),
+    ...figura('c06_01_planes_eps', 'Planes EPS: «PACIFICO EPS (DEMO)», del 01/01/2025 al 31/12/2026, con las tasas guardadas como fracción (empleador 0,045, que la lista muestra redondeada como 0.05, y trabajador 0.02), y el plan del caso TREGISTRO con su código T14 «2 · Pacífico S.A. EPS», vigente hasta el 31/12/2027.'),
     tabla(['Qué', 'Cómo lo calcula la versión 3'], [
       ['**Vigencia del plan** (O-135, lote 45)', 'El plan cuenta solo entre su fecha de inicio y la de finalización. Un plan que vence el 30/06 deja de dar aporte y crédito en julio, y la bonificación extraordinaria de la gratificación vuelve al 9 %. En el mes en que empieza o termina, cuenta si estuvo vigente algún día del mes'],
       ['**Plan por importe fijo** (lote 34a)', 'Con «Importe empleador» y sin tasa, aporta el importe una vez en el mes y genera su crédito. Antes el aporte salía en 0'],
@@ -80,6 +80,7 @@ module.exports = (h) => {
     ...figura('c06_02_polizas_vida_ley', 'Pólizas del caso VIDALEY: por tasa (0,53 %, 6 trabajadores), por importe fijo y vencida.'),
     ...figura('c06_03_poliza_vida_ley', 'Póliza por tasa con «Calcular la prima en la planilla» marcada y sus trabajadores.'),
     p('La regla `VIDA_001` es un aporte del empleador: tasa × **remuneración asegurable** del mes, con el tope de la RMA, menos lo que ya cargaron las demás boletas del mes. El neto del trabajador no cambia. Va al PLAME en el concepto 0803 (casilla marcada por defecto en «PLAME: aportes informativos en el .rem») y al asiento en 6274 / 4699.'),
+    ...figura('c06_08_boleta_vida_ley', 'Mensual de junio de 2026 del caso VIDALEY (DNI 70000561, sueldo 3 000), «Cálculo de la nómina»: Seguro Vida Ley (VIDA_001) 15,90 como contribución de la compañía; el neto sigue en 2 610,00.'),
     nota('Caso VIDALEY, junio de 2026, tasa 0,53 %: con sueldo 3 000 la prima es **15,90**; con sueldo 15 000 se topa en la RMA del trimestre (12 598,91) y es **66,77**; la póliza por importe fijo cobra **25,00**; la vencida, nada.', 'caso'),
     h3('La remuneración asegurable (lote 34b)'),
     p('Desde el lote 34b la prima va sobre la **remuneración mensual habitual** (D.Leg. 688, art. 9, con el texto de la Ley 31149), con el tope de la RMA:'),

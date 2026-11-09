@@ -32,6 +32,7 @@ module.exports = (h) => {
       ['70001703 a 70001705, sueldo 30 000 y comisiones 5 000, en los tres órdenes', 'Retiene 721,50', 'Retiene 350,00', '`.rem` 0605 1071.50, igual en los tres órdenes'],
       ['70001706, sueldo 30 000 y utilidades 20 000 (validadas antes)', 'Retiene 721,50', 'Retiene 2 800,00, sin ONP ni EsSalud', '`.rem` 0911 20000.00 y 0605 3521.50'],
     ], [2900, 2300, 2300, 2138]),
+    ...figura('c11_06_adicional_comisiones', 'Caso ADICIONALES, 70001701, «Planilla de comisiones» de noviembre de 2026: COM_001 500,00, ONP 65,00, ESSALUD 45,00 y neto 435,00.'),
     nota('Una estructura sin tipo (una copia propia anterior al lote 16 que la actualización no reconoció) queda fuera de todas las salidas: la boleta lo avisa («sin_tipo»; capítulo 26). Una estructura copiada con «Duplicar» hereda el tipo de la original: el caso ADICIONALES 70001707, con la copia de la mensual, da lo mismo que la original (0121 3000.00, abono 2 610,00).', 'importante'),
 
     h2('11.3 Orden del mes'),

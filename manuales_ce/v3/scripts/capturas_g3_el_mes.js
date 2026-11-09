@@ -117,6 +117,58 @@ const pasos = {
     await grupos(p, c, 4, 'Suspensiones', 'c22_05_opciones_suspensiones', ['pe_asignacion_sin_goce', 'pe_dias_mes_con_suspension']);
   },
 };
+
+// ---------------------------------------------------------------- para los videos (E06, E07, E08, E11, E12, E13): rehacer en el v3
+const { boleta } = require('./capturas_bloque3');
+async function lista(p, c, compania, ruta, buscar, nombre, quitar = true) {
+  await cia(c, compania); await u.irA(p, ruta);
+  if (buscar) {
+    for (let i = 0; i < (quitar ? 3 : 0); i++) { const x = p.locator('.o_searchview_facet .o_facet_remove').first(); if (await x.count()) { await x.click(); await p.waitForTimeout(700); } }
+    const s = p.locator('.o_searchview_input'); await s.fill(buscar); await p.waitForTimeout(600); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1200);
+    await p.keyboard.press('Escape'); await p.mouse.click(1300, 600); await p.waitForTimeout(600);
+    for (let k = 0; k < 2; k++) { const g = p.locator('.o_group_header:not(.o_group_open)').first(); if (await g.count()) { await g.click(); await p.waitForTimeout(900); } }
+  }
+  hechos[nombre] = limpio(await p.locator('.o_list_view, .o_content').first().innerText().catch(() => '')).slice(0, 2500);
+  await cap(p, nombre);
+}
+Object.assign(pasos, {
+  async v_e06(p, c) {
+    const id = await idBoleta(p, 4, '70000501', '2026-12-01', 'Mensual');
+    await boletaCalculo(p, c, 4, id, 'c10_01_calculo', { resaltar: ['ASF_001', 'NET'] });
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${id}`); await tab(p, 'Días trabajados y entradas');
+    await cap(p, 'c10_01_dias');
+  },
+  async v_e07(p, c) {
+    await lista(p, c, 1, '/odoo/action-1007', null, 'c11_01_lotes');
+    await cia(c, 1); await u.irA(p, '/odoo/action-1007/1'); await cap(p, 'c11_02_lote_diciembre_fm');
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70001701', '2026-11-01', 'comisiones'), 'c11_06_adicional_comisiones', { resaltar: ['COM_001', 'ONP_001', 'ESSALUD_001'] });
+  },
+  async v_e08(p, c) {
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '45781236', '2026-07-01', 'Mensual'), 'c12_01_carlos_calculo', { resaltar: ['EPS_CRED_001', 'NET'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '40125836', '2026-07-01', 'Mensual'), 'c12_02_ana_calculo', { resaltar: ['AFP_PRI_001', 'R5TA_001'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '42736514', '2026-07-01', 'Vacaciones'), 'c12_03_nilda_vac_calculo', { resaltar: ['ESSALUD_001'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70001602', '2026-11-01', 'Mensual'), 'c12_06_deducible_voluntarios', { resaltar: ['DESC_D_001', 'AFPV_001', 'AFPVE_001'] });
+    await boletaCalculo(p, c, 16, await idBoleta(p, 16, '70006804', '2026-06-01', 'Mensual'), 'c12_07_tiempo_parcial_s4', { resaltar: ['ESSALUD_001'] });
+  },
+  async v_e11(p, c) {
+    // c19_07 (checadas de Jorge) no se rehace: Jorge está archivado en FM y sus asistencias no se ven en la lista
+    const cal = await rpc(p, 'resource.calendar', 'search_read', [[['company_id', '=', 1]]], { fields: ['id', 'name', 'tz'], limit: 1, context: { allowed_company_ids: [1] } });
+    await cia(c, 1); await u.irA(p, `/odoo/action-resource.action_resource_calendar_form/${cal[0].id}`);
+    await cap(p, 'c19_08_calendario_zona_horaria', { resaltar: ['.o_field_widget[name="tz"]'] });
+  },
+  async v_e12(p, c) {
+    await boleta(p, c, 4, await idBoleta(p, 4, '70000901', '2026-10-01', 'Mensual'), 'c21_01_aumento_oct');
+    await recortarForm('c21_01_aumento_oct_calculo');
+    await boleta(p, c, 4, await idBoleta(p, 4, '70000902', '2026-10-01', 'Mensual'), 'c21_02_dos_contratos_oct');
+    await recortarForm('c21_02_dos_contratos_oct_calculo');
+  },
+  async v_e13(p, c) {
+    await boleta(p, c, 4, await idBoleta(p, 4, '70000903', '2026-11-01', 'Mensual'), 'c22_06_aumento_sin_goce');
+    await recortarForm('c22_06_aumento_sin_goce_calculo');
+    await lista(p, c, 4, '/odoo/action-hr_holidays.hr_leave_action_action_approve_department?view_type=list', 'AUMENTO', 'c22_07_ausencias_aumento');
+  },
+});
+
 pasos.todo = async (p, c) => { for (const n of Object.keys(pasos).filter((x) => x !== 'todo')) { try { await pasos[n](p, c); console.log('OK', n); } catch (e) { console.log('FALLÓ', n, e.message.split('\n')[0]); } } };
 
 module.exports = { pasos };

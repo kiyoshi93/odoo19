@@ -16,5 +16,81 @@
  "c06_07_opcionales": [
   "Póliza SCTR Tasa SCTR (%)"
  ],
- "c06_07_ancho": 1377
+ "c06_07_ancho": 1377,
+ "c04_02": "Nuevo Parámetros de Nómina PE RMV - Remuneración Mínima Vital 1 / 1 Nueva vigencia Nombre Código? Categoría PE? Tipo de valor? País Para registrar o corregir una vigencia sin escribir el texto, use «Nueva vigencia» o «Editar en tabla» (tasas en porcentaje). El valor de cada vigencia se comprueba al guardar según el «Tipo de valor»: números con punto decimal y sin separador de miles (1230, no 1,230), tasas en fracción (0.13 = 13 %) y, en diccionarios y tramos, todas las claves que leen las reglas. Vigencias Descripción Vigente desde Valor 1 oct. 1230 Editar en tabla 1 ene. 2025 1130 Editar en tabla Agregar una línea ​ Enviar mensaje Registrar una nota Actividad 0 10 ago. 2026 OdooBot 10 ago., 6:17 p. m. Parámetro de nómina (con vigencias) creado",
+ "c04_03": "Nuevo Parámetros de Nómina PE AFP - Remuneración Máxima Asegurable (tope prima, trimestral SBS) 1 / 1 Nueva vigencia Nombre Código? Categoría PE? Tipo de valor? País Para registrar o corregir una vigencia sin escribir el texto, use «Nueva vigencia» o «Editar en tabla» (tasas en porcentaje). El valor de cada vigencia se comprueba al guardar según el «Tipo de valor»: números con punto decimal y sin separador de miles (1230, no 1,230), tasas en fracción (0.13 = 13 %) y, en diccionarios y tramos, todas las claves que leen las reglas. Vigencias Descripción Vigente desde Valor 1 oct. 12732.70 Editar en tabla 1 jul. 12672.65 Editar en tabla 1 abr. 12598.91 Editar en tabla 1 ene. 12209.11 Editar en tabla 1 oct. 2025 12178.56 Editar en tabla 1 jul. 2025 12184.88 Editar en tabla 1 abr. 2025 12137.47 Editar en tabla 1 ene. 2025 12184.88 Editar en tabla Agregar una línea Enviar mensaje Registrar una nota Actividad 0 10 ago. 2026 OdooBot 10 ago., 6:17 p. m. Parámetro de nómina (con vigencias) creado",
+ "c04_05": "Nueva vigencia de AFP - Comisión sobre flujo por administradora Parámetro AFP - Comisión sobre flujo por administradora Tipo de valor? Comisión por AFP (diccionario) Vigente desde 9 nov. Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Se crea una vigencia nueva; las anteriores se conservan y los recálculos de periodos pasados siguen usándolas. Concepto Tasa (%) Habitat 1.4700 Integra 1.5500 Prima 1.6000 Profuturo 1.6900 Texto que se guardará {'habitat': 0.0147, 'integra': 0.0155, 'prima': 0.016, 'profuturo': 0.0169} Guardar vigencia Cancelar",
+ "c04_06": "Corregir vigencia de Renta 5ta - Tramos progresivos (límite en UIT, tasa) Parámetro Renta 5ta - Tramos progresivos (límite en UIT, tasa) Tipo de valor? Tramos de renta 5.ª (lista de límite en UIT y tasa) Vigente desde 1 ene. 2025 Las tasas se escriben en porcentaje: 1.47 para 1,47 %. Los tramos van de menor a mayor; el último no tiene tope (deje «Hasta (UIT)» en 0). Hasta (UIT) Tasa (%) 5.00 8.0000 20.00 14.0000 35.00 17.0000 45.00 20.0000 0.00 30.0000 Agregar una línea Texto que se guardará [(5, 0.08), (20, 0.14), (35, 0.17), (45, 0.2), (None, 0.3)] Guardar vigencia Cancelar",
+ "c04_08": "RMA de AFP posiblemente desactualizada: la vigente al 31/01/2027 es del 01/10/2026 y la SBS la publica cada trimestre. Verifique el valor en el portal de la SBS y regístrelo en Nómina › Nómina PE › Parámetros de Nómina PE. Faltan los días festivos de 2027: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos. Falta la UIT de 2027: al 31/01/2027 se usaría la de 2026 (5500). Regístrela en Nómina › Nómina PE › Parámetros de Nómina PE. La compañía está marcada «Afecta a SENATI», pero en 2026 tuvo 12,75 trabajadores en promedio dedicados a la actividad industrial o a instalación, reparación y mantenimiento (los contratos de cada mes, sin los de «Fuera de la base del SENATI», ÷ 12): la contribución obliga a la empresa con más de 20 el año anterior (Ley 26272, art. 13); con 20 o menos es voluntaria. Si no aporta voluntariamente, desmarque «Afecta a SENATI»; si aporta, elija «Aportar sin aviso» en «Con 20 trabajadores o menos: SENATI» de la compañía.",
+ "c05_01_t22_conceptos_plame": {
+  "total": "1-80 / 293",
+  "filas": [
+   "0100 INGRESOS",
+   "0101 ALIMENTACIÓN PRINCIPAL EN DINERO",
+   "0102 ALIMENTACIÓN PRINCIPAL EN ESPECIE",
+   "0103 COMISIONES O DESTAJO",
+   "0104 COMISIONES EVENTUALES A TRABAJADORES",
+   "0105 TRABAJO EN SOBRETIEMPO (HORAS EXTRAS) 25%"
+  ]
+ },
+ "c05_02_t11_sistemas_pensionarios": {
+  "total": "1-17 / 17",
+  "filas": [
+   "02 DL 19990 - SIST NAC DE PENS - ONP DECRETO LEY 19990 - SISTEMA NACIONAL DE PENSIONES - ONP",
+   "03 DECRETO LEY 20530 DECRETO LEY 20530",
+   "09 CBSSP CAJA DE BENEFICIOS DE SEGURIDAD SOCIAL DEL PESCADOR",
+   "10 CAJA DE PENSIONES MILITAR CAJA DE PENSIONES MILITAR",
+   "11 CAJA DE PENSIONES POLICIAL CAJA DE PENSIONES POLICIAL",
+   "12 OTROS REGIMENES PENSIONARIOS OTROS REGIMENES PENSIONARIOS (1)"
+  ]
+ },
+ "c05_05_t19_vinculos": {
+  "total": "1-9 / 9",
+  "filas": [
+   "Cónyuge 02 · Cónyuge",
+   "Pareja 03 · Concubina(o)",
+   "Hijo(a) 05 · Hijo menor de edad",
+   "Padre",
+   "Hermano(a)",
+   "Primo(a)"
+  ]
+ },
+ "c05_06_t28_ubigeo": {
+  "total": "1-80 / 1892",
+  "filas": [
+   "010101 AMAZONAS CHACHAPOYAS CHACHAPOYAS",
+   "010102 AMAZONAS CHACHAPOYAS ASUNCIÓN",
+   "010103 AMAZONAS CHACHAPOYAS BALSAS",
+   "010104 AMAZONAS CHACHAPOYAS CHETO",
+   "010105 AMAZONAS CHACHAPOYAS CHILIQUIN",
+   "010106 AMAZONAS CHACHAPOYAS CHUQUIBAMBA"
+  ]
+ },
+ "c05_07_t34_carreras": {
+  "total": "1-80 / 5925",
+  "filas": [
+   "150653592 13 DE JULIO DE 1882 121015 EDUCACIÓN EN COMPUTACIÓN E INFORMÁTICA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 112015 EDUCACIÓN PRIMARIA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121095 EDUCACIÓN SECUNDARIA TÉCNICA Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121055 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: CIENCIA, TECNOLOGÍA Y AMBIENTE Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121065 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: CIENCIAS SOCIALES Instituto superior pedagógico",
+   "150653592 13 DE JULIO DE 1882 121075 EDUCACIÓN SECUNDARIA, ESPECIALIDAD: COMUNICACIÓN Instituto superior pedagógico"
+  ]
+ },
+ "c05_03": [
+  "0121 REMUNERACIÓN O JORNAL BÁSICO"
+ ],
+ "c06_01": [
+  "PACIFICO EPS (DEMO) 1 ene. 2025 31 dic. 0.05 0.02 1",
+  "PACÍFICO S.A. EPS (laboratorio TREGISTRO) 2 · Pacífico S.A. EPS 1 ene. 31 dic. 2027 0.00 0.00 2"
+ ],
+ "c06_02": [
+  "Aseguradora VIDALEY (tasa) VL-TASA 1 ene. 31 dic. 0.5300 6",
+  "Aseguradora VIDALEY (importe fijo) VL-FIJA 1 ene. 31 dic. 0.0000 1",
+  "Aseguradora VIDALEY (vencida) VL-VENCIDA 1 jun. 2025 31 may. 0.5300 1"
+ ],
+ "c06_03": "Nuevo Vida Ley Aseguradora VIDALEY (tasa) 1 / 3 Entidad N° Póliza Plazo de contratación Fecha inicio vigencia 1 ene. Fecha fin vigencia 31 dic. Tasa (%)? Importe por trabajador? Calcular la prima en la planilla? Compañía? Empleados Nombre del empleado Departamento Puesto Obrero VIDALEY semanal Obrero VIDALEY semanal sobre el tope Trabajador VIDALEY tasa Trabajador VIDALEY utilidades Trabajadora VIDALEY tope Trabajadora VIDALEY vacaciones sobre el tope",
+ "c06_08": "Nombre Código Categoría Secuencia Cantidad Tasa (%) Regla Importe Total Salario base BASIC Básico 1.00 100.00 Salario base 0.00 0.00 Salario diario SD_001 Base de cálculo 1.00 100.00 Salario diario 100.00 100.00 Indicador de semanas del mes ISM_001 Base de cálculo 1.00 100.00 Indicador de semanas del mes 1.00 1.00 Remuneración básica RB_001 Ingreso Afecto 1.00 100.00 Remuneración básica 3,000.00 3,000.00 Asignación familiar ASF_001 Ingreso Afecto 1.00 100.00 Asignación familiar 0.00 0.00 Horas extras 25% HE25_001 Ingreso Afecto 1.00 100.00 Horas extras 25% 0.00 0.00 Horas extras 35% HE35_001 Ingreso Afecto 1.00 100.00 Horas extras 35% 0.00 0.00 Movilidad supeditada a la asistencia MOV_001 Ingreso no afecto a aportes, afecto a renta de 5.ª 1.00 100.00 Movilidad supeditada a la asistencia 0.00 0.00 Total ingresos GROSS Bruto 1.00 100.00 Total ingresos 3,000.00 3,000.00 Base afecta a renta de 5ta (auxiliar) BAR5_001 Base de cálculo 1.00 100.00 Base afecta a renta de 5ta (auxiliar) 3,000.00 3,000.00 ONP - Sistema Nacional de Pensiones ONP_001 Deducción aportaciones del trabajador 1.00 100.00 ONP - Sistema Nacional de Pensiones 390.00 390.00 Renta de 5ta categoría R5TA_001 Deducción 1.00 100.00 Renta de 5ta categoría 0.00 0.00 ESSALUD - Aporte del empleador ESSALUD_001 Contribución compañía 1.00 100.00 ESSALUD - Aporte del empleador 270.00 270.00 SENATI - Contribución SENATI_001 Contribución compañía 1.00 100.00 SENATI - Contribución 22.50 22.50 Seguro Vida Ley (aporte del empleador) VIDA_001 Contribución compañía 1.00 100.00 Seguro Vida Ley (aporte del empleador) 15.90 15.90 Neto a pagar NET Neto 1.00 100.00 Neto a pagar 2,610.00 2,610.00",
+ "c08_03": "IDENTIFICACIÓN T-REGISTRO Tipo de documento (T3)? Nombres Apellido paterno Apellido materno Situación educativa Discapacidad? Rentas de 5.ª exoneradas? Edad 35 SISTEMA PENSIONARIO Sistema pensionario CUSPP Tipo de comisión AFP No aplica prima de seguro AFP? No aporta pensión? SALUD Régimen de salud Plan EPS Cubierto por SCTR? Vida Ley CUENTAS BANCARIAS Cuenta sueldo Banco sueldo Cuenta CTS Banco CTS DESCUENTO JUDICIAL ¿Tiene beneficiario? FIRMA DE BOLETAS Firma como empleador? ENTREGA DE LA BOLETA Boleta por correo? DOMICILIO PARA EL T-REGISTRO Tipo de vía Nombre de la vía Número? Departamento (dpto.) Interior Manzana Lote Kilómetro Block Etapa Tipo de zona Nombre de la zona Referencia Distrito (ubigeo RENIEC, T28) ESTUDIOS SUPERIORES (T-REGISTRO) Estudios superiores concluidos en el Perú Institución y carrera (T34) Año de egreso DERECHOHABIENTES Parentesco Nombre Género Fecha de nacimiento Tipo de documento N.° de documento Apellido paterno Apellido materno Nombres Alta como derechohabiente Hijo(a) Mateo Quispe Ramos 20 jun. 2019 01 · DNI Agregar una línea ​ ​ RENTA DE 5.ª DE OTROS EMPLEADORES Ejercicio Tipo RUC del otro empleador Razón social Acreditado con Fecha de acreditación Renta bruta de 5.ª Retención de 5.ª Quién retiene Remuneración mensual en el otro empleador Gratificación ordinaria en el otro empleador Último mes en el otro empleador Agregar una línea ​ ​ ​ PROMEDIOS FIJADOS DEL SUBSIDIO Subsidio Inicio de la contingencia Promedio diario Sin remuneraciones previas Fijado por ​ ​ ​ ​",
+ "c08_13": "Nuevo Contratos 1 ene. 2025 1 / 1 Lucía Fernanda Ramos Ticona 1 ene. 2025 al Empresa Puesto Estructura salarial Categoría de empleado? Departamento Responsable de RR. HH.? CONTABILIDAD Cuenta analítica Diario de planillas Información salarial RESUMEN DEL CONTRATO Salario? S/ 4,500.00 S/ / mes Tipo de contrato Categoría del pago HORARIO Horas laborables? Periodicidad de pago? PERÚ - DATOS LABORALES (T-REGISTRO / PLAME) Régimen Laboral? Tipo de trabajador (T8)? Categoría ocupacional (T24)? Tipo de contrato (T12)? Ocupación de trabajo Situación especial Motivo de baja Despido arbitrario (se indemniza)? Fin pactado del contrato modal? Incentivo por cese inafecto (art. 18 a de la LIR)? Tipo de pago Remuneración variable Remuneración principal? Porcentaje de adelanto? Jornada de trabajo máxima Jornada atípica o acumulativa Trabajo en horario nocturno? Sindicalizado Fuera de la base del SENATI? No domiciliado (Impuesto a la Renta)? ¿Es practicante?? Remuneración en especie No mostrar horas extras en boleta Enviar mensaje Registrar una nota Actividad 1 7 oct. 2026 Administrator 7 oct., 7:25 p. m. NingunoD LEG N.° 728(Régimen Laboral) Administrator 7 oct., 6:52 p. m. Contrato del empleado creado"
 }

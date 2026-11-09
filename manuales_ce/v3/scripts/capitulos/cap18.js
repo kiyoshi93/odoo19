@@ -75,7 +75,9 @@ module.exports = (h) => {
       'Con otros conceptos fijos (la alimentación) o a destajo, el importe se registra con la entrada FMAY_001: el destajero cobra con el promedio de los 30 días previos (art. 10), y el módulo no lo calcula.',
       'Si la estructura se copió antes del lote y no tiene la regla, la boleta avisa («primero_mayo_sin_regla»).',
     ]),
-    ...figura('c18_04_opciones_feriados', 'Ficha de la compañía, pestaña «Nómina PE - Controles»: los grupos «Valor hora y feriados», «PLAME: horas del .jor» y «Descanso semanal y 1 de mayo» con sus valores por defecto, y «Declarar aparte los feriados (0115) y la licencia con goce (0907)» en el grupo PLAME.'),
+    ...figura('c18_04a_opciones_feriados', 'SOLSE Demo Servicios, «Nómina PE - Controles», grupo «Valor hora y feriados»: «Valor hora» = «Sueldo ÷ 30 ÷ las horas diarias de la jornada del trabajador (D.S. 007-2002-TR, art. 12)» y «Trabajo en feriado en el promedio del subsidio» = «Siempre (Ley 26790, art. 12 a.2)».'),
+    ...figura('c18_04b_opciones_feriados', 'Grupos «PLAME: horas del .jor» («Solo las trabajadas», «A las horas ordinarias») y «Descanso semanal y 1 de mayo» («Aparte, en el 0115», «Pagar un día adicional» y «Pagar el 1 de mayo también en una ausencia» sin marcar).'),
+    ...figura('c18_04c_opciones_feriados', 'Grupo «PLAME»: «Declarar aparte los feriados (0115) y la licencia con goce (0907)», marcada en la compañía del laboratorio (viene apagada).'),
 
     h2('18.6 Aviso de feriados del año sin cargar'),
     p('Si no hay ningún feriado registrado en el año de la boleta, la banda de avisos lo dice (V-05): «Faltan los días festivos de 2026: no hay ninguno registrado y las boletas de ese año no tendrán la línea de feriados en los días trabajados. Regístrelos en Vacaciones › Configuración › Días festivos.» Sin ellos, las horas, la asistencia, el 0115 y el 1 de mayo salen mal.'),
