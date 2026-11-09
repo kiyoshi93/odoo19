@@ -1,0 +1,172 @@
+1
+00:00:05,580 --> 00:00:08,769
+Este episodio muestra la gratificación y la CTS:
+
+2
+00:00:08,769 --> 00:00:13,951
+la remuneración computable con las variables, el vínculo continuo, el cese, el
+
+3
+00:00:13,951 --> 00:00:16,874
+tiempo parcial y la constancia del depósito.
+
+4
+00:00:18,340 --> 00:00:26,100
+La gratificación de julio de Lucía paga el sueldo más la asignación familiar, S/ 4
+
+5
+00:00:26,100 --> 00:00:32,724
+613, y la bonificación extraordinaria del nueve por ciento, S/ 415,17.
+
+6
+00:00:32,724 --> 00:00:34,805
+En total, S/ 5 028,17.
+
+7
+00:00:36,300 --> 00:00:41,413
+La remuneración computable suma el promedio de las variables regulares:
+
+8
+00:00:41,413 --> 00:00:45,807
+las horas extras, las comisiones y las demás reglas marcadas.
+
+9
+00:00:45,807 --> 00:00:50,200
+Un concepto es regular si se pagó en tres meses del semestre.
+
+10
+00:00:50,200 --> 00:00:56,249
+Con comisiones de mil ochocientos soles en tres meses, la gratificación de diciembre
+
+11
+00:00:56,249 --> 00:00:57,113
+es S/ 3 300;
+
+12
+00:00:57,113 --> 00:00:58,842
+con dos meses, S/ 3 000.
+
+13
+00:00:58,842 --> 00:01:03,667
+Al comisionista sin sueldo se le promedia todo, sin los tres meses:
+
+14
+00:01:03,667 --> 00:01:06,548
+S/ 2 166,67 en el caso EMPRESA_COMERCIO.
+
+15
+00:01:08,020 --> 00:01:11,619
+Un contrato renovado sin interrupción es el mismo vínculo:
+
+16
+00:01:11,619 --> 00:01:16,272
+la gratificación de julio cuenta los seis meses, S/ 3 000, y no solo junio.
+
+17
+00:01:16,272 --> 00:01:21,236
+Un cese liquidado sí cierra el vínculo, y la boleta del contrato nuevo lo avisa.
+
+18
+00:01:21,236 --> 00:01:26,014
+Quien cesa del uno al catorce de julio cobra enero a junio en su liquidación;
+
+19
+00:01:26,014 --> 00:01:30,047
+quien cesa desde el quince de diciembre cobra diciembre completo.
+
+20
+00:01:30,047 --> 00:01:33,460
+La trunca usa la remuneración del mes anterior al cese.
+
+21
+00:01:34,860 --> 00:01:39,792
+La CTS de noviembre se calcula con la remuneración computable:
+
+22
+00:01:39,792 --> 00:01:46,316
+sueldo, asignación familiar, variables regulares y un sexto de la gratificación ya
+
+23
+00:01:46,316 --> 00:01:47,032
+validada.
+
+24
+00:01:47,032 --> 00:01:49,020
+Lucía recibe S/ 2 695,92.
+
+25
+00:01:50,500 --> 00:01:56,249
+La liquidación del depósito detalla la remuneración computable, S/ 5 391,83, el
+
+26
+00:01:56,249 --> 00:01:59,450
+periodo de seis meses y el monto depositado.
+
+27
+00:01:59,450 --> 00:02:04,107
+Los datos de la empresa y de la cuenta se ocultan en este video.
+
+28
+00:02:05,580 --> 00:02:12,483
+Con un ingreso el quince de julio, el periodo tiene tres meses y diecisiete días:
+
+29
+00:02:12,483 --> 00:02:19,045
+las horas extras se dividen entre tres coma cinco seis seis siete, y no entre
+
+30
+00:02:19,045 --> 00:02:19,642
+cuatro.
+
+31
+00:02:19,642 --> 00:02:26,375
+Las variables suman S/ 70,09, la computable es S/ 1 570,09 y la CTS, S/ 466,67.
+
+32
+00:02:26,375 --> 00:02:30,295
+La constancia imprime el divisor con sus días.
+
+33
+00:02:31,780 --> 00:02:37,836
+El trabajador a tiempo parcial, con menos de cuatro horas diarias según su horario,
+
+34
+00:02:37,836 --> 00:02:38,784
+no tiene CTS:
+
+35
+00:02:38,784 --> 00:02:41,046
+la boleta sale en cero y avisa.
+
+36
+00:02:41,046 --> 00:02:47,029
+Si la empresa la paga por convenio, con la opción Pagar, son S/ 225 en el ejemplo.
+
+37
+00:02:47,029 --> 00:02:53,158
+En la pequeña empresa, una trabajadora con S/ 2 400 recibe media gratificación, S/ 1
+
+38
+00:02:53,158 --> 00:02:56,514
+200, y una CTS de quince días por año, S/ 650.
+
+39
+00:02:58,060 --> 00:03:00,365
+La CTS lee la gratificación validada:
+
+40
+00:03:00,365 --> 00:03:02,359
+valide primero la gratificación.
+
+41
+00:03:02,359 --> 00:03:07,593
+El vínculo continuo y la trunca de julio son criterios según la norma, pendientes de
+
+42
+00:03:07,593 --> 00:03:08,402
+confirmación.
+
+43
+00:03:08,402 --> 00:03:11,518
+Está en los capítulos catorce y quince del manual.
+
