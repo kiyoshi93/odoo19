@@ -1,0 +1,204 @@
+1
+00:00:05,580 --> 00:00:10,577
+Pagar la planilla, pagar AFPnet y entregar cada boleta y cada constancia a tiempo.
+
+2
+00:00:10,577 --> 00:00:15,574
+En este episodio vemos cómo se registra el pago, a quién se le envía la boleta por
+
+3
+00:00:15,574 --> 00:00:19,839
+correo y qué documentos acompañan a la liquidación y a las utilidades.
+
+4
+00:00:21,300 --> 00:00:26,578
+Desde el lote validado, Registrar pago muestra lo que se le debe a cada trabajador:
+
+5
+00:00:26,578 --> 00:00:28,994
+en la planilla de diciembre, S/ 1 914.
+
+6
+00:00:28,994 --> 00:00:31,791
+Se elige el banco, la fecha y la referencia.
+
+7
+00:00:31,791 --> 00:00:34,335
+Por defecto se hace un asiento por lote;
+
+8
+00:00:34,335 --> 00:00:39,167
+con la casilla Un asiento por trabajador, uno por trabajador, para conciliar
+
+9
+00:00:39,167 --> 00:00:41,202
+transferencia por transferencia.
+
+10
+00:00:41,202 --> 00:00:45,716
+El contable lo registra desde el lote, sin ser administrador de nómina.
+
+11
+00:00:47,180 --> 00:00:52,035
+Cada boleta queda con su fecha de pago, su número de operación y la fecha límite de
+
+12
+00:00:52,035 --> 00:00:52,503
+entrega.
+
+13
+00:00:52,503 --> 00:00:56,598
+La boleta común se entrega hasta el tercer día hábil después del pago;
+
+14
+00:00:56,598 --> 00:00:58,938
+la de utilidades, el mismo día del pago:
+
+15
+00:00:58,938 --> 00:01:01,922
+aquí, el treinta de abril de dos mil treinta y dos.
+
+16
+00:01:03,380 --> 00:01:08,547
+Los aportes retenidos al sistema privado quedan en la cuenta cuatro uno siete y se
+
+17
+00:01:08,547 --> 00:01:12,265
+pagan en los primeros cinco días hábiles del mes siguiente.
+
+18
+00:01:12,265 --> 00:01:14,722
+Este asistente hace un asiento por AFP:
+
+19
+00:01:14,722 --> 00:01:17,306
+debe la cuatro uno siete, haber el banco.
+
+20
+00:01:17,306 --> 00:01:19,637
+Si se paga tarde, el asiento lo dice.
+
+21
+00:01:21,100 --> 00:01:23,755
+Así queda el pago de octubre a Integra:
+
+22
+00:01:23,755 --> 00:01:29,202
+S/ 597,30 al debe de la cuatro uno siete y al haber del banco, conciliado con la
+
+23
+00:01:29,202 --> 00:01:29,679
+boleta.
+
+24
+00:01:29,679 --> 00:01:33,832
+Una segunda vez, el asistente ya no encuentra nada que pagar.
+
+25
+00:01:35,300 --> 00:01:38,526
+La compañía decide a quién se envía la boleta por correo.
+
+26
+00:01:38,526 --> 00:01:42,261
+Por defecto, solo a quien firmó el acuerdo de entrega electrónica.
+
+27
+00:01:42,261 --> 00:01:46,562
+Con la otra opción, también a quien cobra en cuenta, como permite el Decreto
+
+28
+00:01:46,562 --> 00:01:50,523
+Legislativo mil trescientos diez, siempre que el pago esté registrado.
+
+29
+00:01:51,980 --> 00:01:57,039
+El correo sale de la dirección de la compañía o, si no tiene, de la del usuario;
+
+30
+00:01:57,039 --> 00:01:59,252
+sin ninguna, la boleta no se envía.
+
+31
+00:01:59,252 --> 00:02:02,730
+Reenviar la misma boleta adjunta los mismos documentos;
+
+32
+00:02:02,730 --> 00:02:07,536
+si algo impreso cambió, se guardan los nuevos y los anteriores, como prueba.
+
+33
+00:02:07,536 --> 00:02:10,255
+El importe en letras dice soles, en plural.
+
+34
+00:02:10,255 --> 00:02:15,567
+Y el usuario de nómina ya puede calcular, validar, imprimir y enviar las boletas que
+
+35
+00:02:15,567 --> 00:02:15,757
+ve.
+
+36
+00:02:17,220 --> 00:02:21,425
+La liquidación con cese se imprime y se envía con tres documentos más:
+
+37
+00:02:21,425 --> 00:02:26,110
+la hoja de liquidación, el certificado de trabajo y la constancia de cese para
+
+38
+00:02:26,110 --> 00:02:27,011
+retirar la CTS.
+
+39
+00:02:27,011 --> 00:02:30,075
+Su plazo es de cuarenta y ocho horas desde el cese:
+
+40
+00:02:30,075 --> 00:02:34,520
+con cese el treinta y uno de agosto, se entrega hasta el dos de setiembre.
+
+41
+00:02:35,980 --> 00:02:40,465
+La hoja de liquidación de utilidades va junto con la boleta de la planilla de
+
+42
+00:02:40,465 --> 00:02:41,105
+utilidades.
+
+43
+00:02:41,105 --> 00:02:45,939
+El ex trabajador, que no tiene boleta, la recibe desde su línea del reparto, con el
+
+44
+00:02:45,939 --> 00:02:46,871
+pago registrado.
+
+45
+00:02:46,871 --> 00:02:49,784
+En los dos casos se entrega el mismo día del pago.
+
+46
+00:02:51,300 --> 00:02:56,201
+Si la compañía provisiona en la boleta mensual, esas boletas todavía no se pagan con
+
+47
+00:02:56,201 --> 00:02:57,076
+Registrar pago;
+
+48
+00:02:57,076 --> 00:02:58,535
+está anotado como límite.
+
+49
+00:02:58,535 --> 00:03:03,378
+Si se paga por lote o por trabajador es un criterio pendiente de confirmación de la
+
+50
+00:03:03,378 --> 00:03:03,961
+contadora.
+
+51
+00:03:03,961 --> 00:03:06,703
+Todo está en el capítulo veintiocho del manual.
+

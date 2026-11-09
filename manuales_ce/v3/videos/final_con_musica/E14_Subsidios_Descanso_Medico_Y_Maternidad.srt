@@ -1,0 +1,228 @@
+1
+00:00:05,580 --> 00:00:10,202
+Cuando un trabajador está con descanso médico o con descanso por maternidad, la
+
+2
+00:00:10,202 --> 00:00:14,357
+boleta separa lo que paga el empleador y lo que es subsidio de EsSalud.
+
+3
+00:00:14,357 --> 00:00:19,213
+En este episodio vemos el descanso, el promedio, el derecho al subsidio y el cambio
+
+4
+00:00:19,213 --> 00:00:19,623
+de año.
+
+5
+00:00:21,140 --> 00:00:25,585
+El descanso se registra como una ausencia, con el tipo Tiempo personal por
+
+6
+00:00:25,585 --> 00:00:27,987
+enfermedad y las fechas del certificado:
+
+7
+00:00:27,987 --> 00:00:29,909
+del uno al treinta de noviembre.
+
+8
+00:00:29,909 --> 00:00:34,714
+Si la incapacidad viene de un accidente, común o de trabajo, se marca la casilla
+
+9
+00:00:34,714 --> 00:00:36,697
+Accidente en la primera ausencia:
+
+10
+00:00:36,697 --> 00:00:39,820
+entonces basta la afiliación para tener el subsidio.
+
+11
+00:00:41,340 --> 00:00:47,299
+Los primeros veinte días del año los paga el empleador como remuneración:
+
+12
+00:00:47,299 --> 00:00:48,034
+S/ 2 000.
+
+13
+00:00:48,034 --> 00:00:54,809
+Los diez siguientes son subsidio por incapacidad, con un promedio diario de S/ 100:
+
+14
+00:00:54,809 --> 00:00:55,544
+S/ 1 000.
+
+15
+00:00:55,544 --> 00:00:58,401
+El subsidio no paga ONP ni EsSalud:
+
+16
+00:00:58,401 --> 00:01:03,707
+la ONP es S/ 260 y el EsSalud S/ 180, solo sobre la remuneración.
+
+17
+00:01:03,707 --> 00:01:05,340
+El neto es S/ 2 740.
+
+18
+00:01:06,740 --> 00:01:12,045
+El promedio suma las remuneraciones de los doce meses anteriores y las divide entre
+
+19
+00:01:12,045 --> 00:01:13,515
+los días de afiliación:
+
+20
+00:01:13,515 --> 00:01:16,967
+con los doce meses enteros, entre trescientos sesenta.
+
+21
+00:01:16,967 --> 00:01:20,547
+Las horas extras y el trabajo en feriado entran siempre.
+
+22
+00:01:20,547 --> 00:01:25,788
+El monto del subsidio se paga en soles enteros, y por defecto no se descuenta para
+
+23
+00:01:25,788 --> 00:01:26,235
+la ONP:
+
+24
+00:01:26,235 --> 00:01:29,431
+con la opción Sí, la ONP de este mes sería S/ 390.
+
+25
+00:01:29,431 --> 00:01:32,052
+Todo se elige en la ficha de la compañía.
+
+26
+00:01:33,580 --> 00:01:35,885
+El promedio queda fijo hasta el alta.
+
+27
+00:01:35,885 --> 00:01:40,868
+Se fija al validar la primera boleta de la contingencia, y se ve en la ficha del
+
+28
+00:01:40,868 --> 00:01:42,737
+trabajador, pestaña Nómina PE.
+
+29
+00:01:42,737 --> 00:01:47,346
+Esta trabajadora tiene dos contingencias, del doce de octubre y del uno de
+
+30
+00:01:47,346 --> 00:01:49,775
+noviembre, con S/ 100 diarios cada una.
+
+31
+00:01:51,300 --> 00:01:56,402
+El subsidio exige tres meses de aportes consecutivos, o cuatro no consecutivos, en
+
+32
+00:01:56,402 --> 00:01:58,020
+los seis meses anteriores.
+
+33
+00:01:58,020 --> 00:01:59,949
+Este trabajador tiene uno solo.
+
+34
+00:01:59,949 --> 00:02:03,433
+La boleta calcula el subsidio, S/ 1 000, y deja la nota:
+
+35
+00:02:03,433 --> 00:02:05,051
+EsSalud no lo reembolsará.
+
+36
+00:02:05,051 --> 00:02:07,851
+Si fue un accidente, se marca en la ausencia;
+
+37
+00:02:07,851 --> 00:02:11,958
+y la compañía puede elegir que este control bloquee la validación.
+
+38
+00:02:13,420 --> 00:02:16,537
+En maternidad, el mes entero es subsidio:
+
+39
+00:02:16,537 --> 00:02:20,339
+S/ 3 000, sin ONP, sin EsSalud y sin remuneración.
+
+40
+00:02:20,339 --> 00:02:24,140
+En diciembre, con treinta y un días, son S/ 3 100.
+
+41
+00:02:25,540 --> 00:02:30,833
+Al cambiar de año, si el treinta y uno de diciembre todavía pagaba el empleador, en
+
+42
+00:02:30,833 --> 00:02:35,041
+enero sigue pagando hasta completar los veinte días del año nuevo:
+
+43
+00:02:35,041 --> 00:02:40,270
+en el caso, diecisiete días en diciembre y, en enero, veinte del empleador y cinco
+
+44
+00:02:40,270 --> 00:02:42,375
+de subsidio, S/ 2 500 más S/ 500.
+
+45
+00:02:42,375 --> 00:02:46,201
+Si el treinta y uno ya era subsidio, enero sigue subsidiado.
+
+46
+00:02:46,201 --> 00:02:51,366
+Esa regla rige desde la fecha de la opción Continuación del subsidio al año nuevo
+
+47
+00:02:51,366 --> 00:02:51,749
+desde.
+
+48
+00:02:53,340 --> 00:02:58,276
+En el PLAME, el punto ese ene ele declara los días por tipo, y queda guardado al
+
+49
+00:02:58,276 --> 00:02:59,387
+validar la boleta:
+
+50
+00:02:59,387 --> 00:03:02,904
+una ausencia cambiada después ya no cambia un mes pagado.
+
+51
+00:03:02,904 --> 00:03:07,408
+El punto rem lleva el cero novecientos dieciséis de incapacidad y el cero
+
+52
+00:03:07,408 --> 00:03:09,445
+novecientos quince de maternidad.
+
+53
+00:03:09,445 --> 00:03:14,566
+Y en una semanal que cruza de mes, el subsidio se reparte por los días de cada mes:
+
+54
+00:03:14,566 --> 00:03:18,577
+en el ejemplo del lote, seiscientos a octubre y cien a noviembre.
+
+55
+00:03:20,100 --> 00:03:24,540
+Algunos criterios, como el trabajo en feriado en el promedio o los veinte días del
+
+56
+00:03:24,540 --> 00:03:28,221
+año nuevo, son criterios pendientes de confirmación de la contadora.
+
+57
+00:03:28,221 --> 00:03:30,766
+Todo está en el capítulo veintitrés del manual.
+

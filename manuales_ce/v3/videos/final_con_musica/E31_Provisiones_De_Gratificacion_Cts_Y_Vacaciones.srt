@@ -1,0 +1,168 @@
+1
+00:00:05,580 --> 00:00:10,793
+La gratificación, la CTS y las vacaciones se devengan cada mes, aunque se paguen
+
+2
+00:00:10,793 --> 00:00:11,314
+después.
+
+3
+00:00:11,314 --> 00:00:16,396
+Con las provisiones, el gasto se reconoce mes a mes y el pasivo se descarga al
+
+4
+00:00:16,396 --> 00:00:16,787
+pagar.
+
+5
+00:00:16,787 --> 00:00:19,850
+Veamos las tres formas de hacerlo y sus cifras.
+
+6
+00:00:21,380 --> 00:00:25,388
+Las opciones están en la compañía, pestaña Nómina PE Controles.
+
+7
+00:00:25,388 --> 00:00:27,423
+Provisión mensual de beneficios:
+
+8
+00:00:27,423 --> 00:00:32,767
+sin provisión, que es lo de fábrica, con un asiento mensual, o en la boleta mensual.
+
+9
+00:00:32,767 --> 00:00:38,047
+Debajo, dónde se aplica lo provisionado, el EsSalud de las vacaciones, el adelanto,
+
+10
+00:00:38,047 --> 00:00:42,436
+la remedición del pasivo de vacaciones y la indemnización vacacional.
+
+11
+00:00:43,900 --> 00:00:48,426
+Con el asiento mensual, el asistente Provisiones del mes se ejecuta después de
+
+12
+00:00:48,426 --> 00:00:50,051
+validar las boletas del mes.
+
+13
+00:00:50,051 --> 00:00:54,636
+El primer mes se marca Con el saldo inicial, para llevar al pasivo lo devengado
+
+14
+00:00:54,636 --> 00:00:54,984
+antes.
+
+15
+00:00:56,500 --> 00:01:03,765
+El asiento de enero de dos mil veintisiete del caso suma S/ 17 337,50, con el
+
+16
+00:01:03,765 --> 00:01:06,124
+trabajador en cada línea.
+
+17
+00:01:06,124 --> 00:01:13,483
+Con un sueldo de tres mil, un mes provisiona S/ 500 de gratificación, S/ 45 de
+
+18
+00:01:13,483 --> 00:01:18,578
+bonificación, S/ 291,67 de CTS y S/ 250 de vacaciones;
+
+19
+00:01:18,578 --> 00:01:24,711
+y el saldo inicial de la CTS de noviembre y diciembre, S/ 583,33.
+
+20
+00:01:26,300 --> 00:01:32,983
+El registro guarda lo provisionado y lo aplicado por trabajador, concepto y periodo.
+
+21
+00:01:32,983 --> 00:01:37,917
+En mayo, la CTS aplica S/ 1 750,01, y la boleta pagó S/ 1 500:
+
+22
+00:01:37,917 --> 00:01:40,940
+la diferencia vuelve al gasto del mes.
+
+23
+00:01:42,340 --> 00:01:47,907
+Con la provisión en la boleta mensual, la provisión va en sus líneas, en la
+
+24
+00:01:47,907 --> 00:01:49,539
+categoría Provisiones:
+
+25
+00:01:49,539 --> 00:01:55,106
+quinientos, cuarenta y cinco, doscientos noventa y uno con sesenta y siete,
+
+26
+00:01:55,106 --> 00:01:58,520
+doscientos cincuenta y el EsSalud de S/ 22,50.
+
+27
+00:01:58,520 --> 00:02:01,712
+No suman al neto, que sigue en S/ 2 583,07.
+
+28
+00:02:03,260 --> 00:02:08,902
+Con la aplicación en la boleta del beneficio, la gratificación de julio descarga su
+
+29
+00:02:08,902 --> 00:02:09,990
+propio semestre:
+
+30
+00:02:09,990 --> 00:02:15,429
+debe la cuatro uno uno cuatro y haber la seis dos uno cuatro, S/ 3 000 y S/ 270.
+
+31
+00:02:15,429 --> 00:02:17,672
+El neto del trabajador no cambia.
+
+32
+00:02:19,140 --> 00:02:24,831
+Las vacaciones se pagan con la remuneración vigente al goce, así que cada mes el
+
+33
+00:02:24,831 --> 00:02:26,040
+pasivo se remide:
+
+34
+00:02:26,040 --> 00:02:31,659
+con un aumento de tres mil a cuatro mil en julio, el pasivo al treinta y uno de
+
+35
+00:02:31,659 --> 00:02:34,860
+julio es S/ 2 333,33 en lugar de S/ 1 833,33.
+
+36
+00:02:34,860 --> 00:02:39,626
+El récord vencido sin gozar provisiona la indemnización vacacional.
+
+37
+00:02:39,626 --> 00:02:45,530
+Un mes ya contabilizado se corrige con un ajuste solo por la diferencia, y el saldo
+
+38
+00:02:45,530 --> 00:02:49,727
+inicial de un ejercicio cerrado va a resultados acumulados.
+
+39
+00:02:51,340 --> 00:02:56,000
+Las cuentas y la base de la provisión, las variables que no llegan a ser regulares,
+
+40
+00:02:56,000 --> 00:03:00,266
+la remedición con un aumento, la liquidación rectificada y las cuentas de la
+
+41
+00:03:00,266 --> 00:03:04,870
+indemnización vacacional son criterios pendientes de confirmación de la contadora.
+
+42
+00:03:04,870 --> 00:03:07,228
+Todo está en el capítulo siete del manual.
+
