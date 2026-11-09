@@ -6,6 +6,7 @@ module.exports = (h) => {
   const c = [];
   const a = (...x) => x.flat().forEach((e) => c.push(e));
   const MEDIDAS = path.join(__dirname, '..', '..', 'medidas');
+  const PEND = JSON.parse(fs.readFileSync(path.join(MEDIDAS, 'pendientes_contadora.json'), 'utf8'));
 
   // ------------------------------------------------------------------ Anexo A
   a(
@@ -28,7 +29,7 @@ module.exports = (h) => {
     h2('A.2 Observaciones abiertas'),
     tabla(['#', 'Observación', 'Qué hacer'], [
       ['O-51', 'Despliegue: dos copias de los módulos de nómina en el `addons_path` hicieron que un `-u` cargara la versión vieja (lotes 9 a 11)', 'Una sola copia; comprobar las versiones en Aplicaciones después de cada `-u` (capítulo 2). Gabriel la dejó en una sola copia'],
-      ['O-55', 'La edad de los derechohabientes se calcula a hoy, con decimales', 'Es la que leen las reglas de asignación familiar (17,92 < 18). Tenerlo en cuenta al recalcular meses pasados'],
+      ['O-55', 'La edad de los derechohabientes se mostraba a hoy, con decimales', 'Resuelta en el lote 22a: la asignación familiar mide la edad del hijo el primer día del mes del periodo (capítulo 8)'],
       ['O-56', 'El TXT de haberes no lleva el neto de las vacaciones, la liquidación ni el adelanto', 'Págueles con un archivo aparte o por otro medio'],
       ['O-57', 'Calendario de dos semanas con evaluación por horas: las horas esperadas de un día normal suman las dos semanas', 'No usar «Evaluar horas» con calendarios de dos semanas'],
       ['O-58', 'Turno de noche que cruza la medianoche: la conciliación es por día calendario', 'Revisar a mano las faltas y tardanzas de esos turnos'],
@@ -37,23 +38,15 @@ module.exports = (h) => {
       ['O-64', 'En el navegador, la vigencia faltante (V-02) se muestra como «¡Vaya! Ocurrió un error»; el mensaje funcional queda en «Ver detalles técnicos»', 'Leer la última línea de los detalles técnicos (capítulo 26). Reportado para corrección'],
       ['O-65', 'Boletas con descanso médico: la línea de días se llama «Sick Time Off» (código GLOBAL)', 'Solo de presentación'],
     ], [800, 5000, 3838]),
-    h2('A.3 Criterios pendientes de confirmación por la contadora'),
-    p('Estos comportamientos siguen la norma, pero el criterio de la contadora está **pendiente de confirmación**. No son hechos firmes: si la contadora responde distinto, cambiarán. La ficha de cada ítem (`mejoras-nomina-ce.md`) tiene la pregunta completa.'),
-    tabla(['Pregunta', 'Ítem', 'Tema'], [
-      ['Ronda 5', 'C-09, C-26', 'Mes con vacaciones: 25 días laborados + 5 de vacaciones; horas de los feriados en el `.jor`; base mínima de EsSalud y tope de la prima por mes'],
-      ['P-25, P-26, P-29', 'C-22, C-16', 'Reparto de utilidades: qué remuneración y qué días cuentan (vacaciones, subsidios, días no pagados)'],
-      ['P-35 a P-38, P-41 a P-45', 'N-01', 'Subsidios: promedio, contador de 20 días, derecho y casos de borde'],
-      ['P-39', 'C-32', 'Asignación familiar en un mes entero sin goce'],
-      ['P-40', 'C-31', 'Divisor del valor hora en los permisos por horas'],
-      ['P-46, P-47', 'N-04', 'Renta de 5.ª al cese; truncas de un contrato renovado'],
-      ['P-48, P-50, P-51', 'N-03', 'Indemnización: convención de días y casos de prueba'],
-      ['P-49, P-52', 'N-05', 'Vida Ley: base de la prima, mes subsidiado'],
-      ['P-53', 'N-07', 'Pago de la planilla'],
-      ['P-54 a P-56', 'N-08', 'Entrega de boletas por correo y constancias'],
-      ['P-57 a P-59', 'C-34', 'Gratificación del semestre al cese'],
-    ], [2200, 1500, 5938]),
+    h2('A.3 Observaciones de la versión 3'),
+    p('Encontradas al documentar la versión 3 y reportadas al equipo de desarrollo (detalle en el capítulo 33.4): el pago de la planilla con provisiones en la boleta, el récord descargado con «Avisar» al cese, la banda de feriados con un solo horario, la CTS sin concepto PLAME y los casos `EMPRESA_*` sin tipo de trabajador ni RUC. También: los textos de ayuda de los asistentes del PLAME y del T-Registro no nombran todavía los archivos nuevos (`.or5`, `.toc`, personal en formación, `.pfl`, `.lug`).'),
+    h2('A.4 Criterios pendientes de confirmación por la contadora'),
+    p('La contadora empezó a responder en noviembre de 2026 la lista `PREGUNTAS_CONTADORA_2026-11-08`. Lo de esta tabla **puede cambiar el código**: el manual lo describe según la norma y lo marca como **«criterio según la norma, pendiente de confirmación»**. Si la contadora responde distinto, cambiará en una versión siguiente.'),
+    tabla(['Código', 'Tema', 'Qué hace hoy el sistema'], PEND['1 · Pueden cambiar código'], [1000, 3600, 5038]),
+    h2('A.5 Criterios con valor por defecto'),
+    p('Lo de esta tabla ya tiene una **opción** en la compañía o un valor por defecto: el manual lo documenta con el valor de hoy y la contadora puede cambiarlo sin tocar el código.'),
+    tabla(['Código', 'Tema', 'Valor de hoy'], PEND['2 · Con valor por defecto'], [1000, 3600, 5038]),
   );
-
 
   return c;
 };

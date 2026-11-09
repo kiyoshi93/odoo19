@@ -55,7 +55,7 @@ module.exports = (h) => {
 
     h2('31.4 El practicante en el PLAME y en el T-Registro'),
     vinetas([
-      '**PLAME.** El practicante **no va al `.rem`**. El asistente del PLAME suma lo pagado en el mes y lo deja en un archivo aparte, `0601AAAAMM_personal_en_formacion.txt`, para digitarlo en la sección **«Personal en formación»** del PDT (un monto por practicante), y lo dice en el resumen. En el caso EMPRESA_CONSULTORA, junio de 2026: «Personal en formación (modalidades formativas): 1, monto pagado 1695.00, EsSalud … 152.55», y el archivo trae la línea `01|70006801|1695.00|` (capítulo 27).',
+      '**PLAME.** El practicante **no va al `.rem`**. El asistente del PLAME suma lo pagado en el mes y lo deja en un archivo aparte, `0601AAAAMMRUC_personal_en_formacion.txt` (la compañía de laboratorio, sin RUC, lo nombra `0601202606_personal_en_formacion.txt`), para digitarlo en la sección **«Personal en formación»** del PDT (un monto por practicante), y lo dice en el resumen. En el caso EMPRESA_CONSULTORA, junio de 2026: «Personal en formación (modalidades formativas): 1, monto pagado 1695.00, EsSalud … 152.55», y el archivo trae la línea `01|70006801|1695.00|` (capítulo 27).',
       '**T-Registro.** El alta del practicante se exporta con la **categoría 5** (personal en formación): `.ide`, `.pfl`, `.per` y `.lug`, sin `.tra` ni `.est`. La baja sin motivo sale con el motivo **07** (término del convenio). Un convenio seguido de un contrato de trabajo son dos periodos (capítulo 29).',
     ]),
     ...figura('c31_04_plame_personal_formacion', 'PLAME de junio de 2026 de SOLSE Demo Consultora: el resumen con el personal en formación (1, monto 1 695,00, EsSalud 152,55) y el archivo para el PDT.'),

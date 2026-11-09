@@ -8,5 +8,11 @@ VERSIONES = {
 from guiones_a import EPISODIOS as A  # noqa: E402
 from guiones_b import EPISODIOS as B  # noqa: E402
 from guiones_c import EPISODIOS as C  # noqa: E402
+import importlib, os  # noqa: E402
 from guiones_v3 import REEMPLAZOS, NUEVOS  # noqa: E402
-EPISODIOS = [REEMPLAZOS.get(e['id'], e) for e in A + B + C] + NUEVOS
+# Guiones de cada grupo de capítulos (guiones_g1.py … guiones_g6.py): reemplazos por id y episodios nuevos
+for _g in sorted(f[:-3] for f in os.listdir(os.path.dirname(os.path.abspath(__file__))) if f.startswith('guiones_g') and f.endswith('.py')):
+    _m = importlib.import_module(_g)
+    REEMPLAZOS.update(getattr(_m, 'REEMPLAZOS', {})); NUEVOS.extend(getattr(_m, 'NUEVOS', []))
+_nuevos = {e['id']: e for e in NUEVOS}
+EPISODIOS = [REEMPLAZOS.get(e['id'], e) for e in A + B + C] + [_nuevos[k] for k in sorted(_nuevos)]

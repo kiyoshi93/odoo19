@@ -12,7 +12,7 @@ module.exports = (h) => {
   a(
     h1('7. Contabilidad de nómina'),
     p('Cada regla salarial lleva su cuenta al debe y al haber **por compañía**. El **Mapeo contable PCGE** define los prefijos y el inicializador asigna la primera cuenta del plan que empieza con ese prefijo. El asistente **Asignar cuentas contables** vuelve a aplicar el mapeo a la compañía elegida y crea el diario Planillas si falta. Los dos están en **Nómina › Nómina PE › Contabilidad de nómina** (responsable de nómina).'),
-    ...figura('c07_01_mapeo_pcge', 'Mapeo contable PCGE de FM SYSTEMS: 79 filas (en el v2 eran 45). Cada fila se nombra «DESC_D_001 → 4111 / 6211» (U-05).'),
+    ...figura('c07_01_mapeo_pcge', 'Mapeo contable PCGE de FM SYSTEMS: «1-79 / 79» filas (en el v2 eran 45), cada una con la regla, el código, «Solo para la estructura», los prefijos de débito y de crédito y la nota; arriba, RB_001 6211 / 4111 y VAC_001 6215 / 4115.'),
     tabla(['Concepto', 'Regla', 'Debe', 'Haber'], [
       ['Remuneración básica, asignación familiar, horas extra, nocturnidad, feriados, alimentación en dinero, bonificaciones regulares', 'RB_001, ASF_001, HE25_001, HE35_001, BNOC_001, FER_001, ALIM_001, BONREG_001', '6211', '4111'],
       ['Comisiones o destajo', 'COM_001', '6212', '4111'],
@@ -79,7 +79,7 @@ module.exports = (h) => {
       ['Liquidaciones de meses anteriores sin aplicar (boleta mensual)', '«En el mes de la liquidación, si está abierto» · «En el mes que se genera»', '7.10'],
       ['Provisiones en la boleta impresa', '«No» · «Solo la provisión del mes» · «Provisión y aplicación»', '7.11'],
     ], [3300, 4938, 1400]),
-    ...figura('c07_05_opciones_provisiones', 'Ajustes › Nómina PE › «Provisiones de beneficios (N-13)» de SOLSE Demo Servicios con «En la boleta mensual»: todas las opciones visibles.'),
+    ...figura('c07_05_opciones_provisiones', 'Ficha de SOLSE Demo Servicios, pestaña Nómina PE - Controles, grupo «Provisiones (N-13)»: «Asiento mensual de provisiones», EsSalud de las vacaciones marcado, «En el asiento o la boleta del mes», «Al pagarlo, del récord en curso», «Remedir cada mes con la remuneración vigente» y «Provisionar la de los récords vencidos».'),
     p('Las opciones de los lotes 35a a 50 (del adelanto en adelante) nacieron con el criterio de la norma: su segunda opción es lo de antes del lote. Las compañías que ya provisionaban quedaron con el valor de fábrica; para mantener lo de antes hay que elegir la segunda.'),
     nota('Qué se provisiona y con qué cuentas (P-71), el adelanto de vacaciones (P-96, P-109), las variables que no llegan a ser regulares (P-98), el practicante (P-99), la gratificación de diciembre del obrero (P-101), el cambio de forma a mitad de mes (P-102), la provisión registrada después del pago (P-107), la remedición con un aumento (P-110) y la liquidación rectificada (P-111) siguen el **criterio según la norma, pendiente de confirmación** de la contadora.', 'importante'),
 
@@ -92,7 +92,7 @@ module.exports = (h) => {
       '**También los meses posteriores ya registrados** (lote 46b): para corregir un mes y los siguientes (7.10).',
       '**Generar asiento**: deja un borrador al último día del mes, «Provisiones de nómina MM/AAAA», con dos líneas por trabajador y concepto (gasto y pasivo, con el contacto del trabajador y la analítica de la regla). Regenerar el mes reemplaza el borrador.',
     ]),
-    ...figura('c07_06_asistente_provisiones', 'Asistente «Provisiones del mes» de SOLSE Demo Servicios: enero de 2027, diario Planillas, «Con el saldo inicial» marcado.'),
+    ...figura('c07_06_asistente_provisiones', 'Asistente «Provisiones del mes» de SOLSE Demo Servicios: enero de 2027, diario Planillas, «Con el saldo inicial» y «También los meses posteriores ya registrados» sin marcar.'),
     tabla(['Concepto', 'Por mes', 'Gasto', 'Pasivo'], [
       ['Gratificación', '(sueldo + asignación familiar + variables del mes) × factor ÷ 6, solo con el mes calendario completo', '6214', '4114'],
       ['Bonificación extraordinaria', 'la gratificación × 9 % (6,75 % con EPS)', '6214', '4114'],
@@ -115,7 +115,7 @@ module.exports = (h) => {
       ['70002101, saldo inicial', 'CTS **583,33** (noviembre y diciembre, computable 3 500), vacaciones del récord 2026 **3 000,00** (30 días) y su EsSalud **270,00**'],
       ['70002101, provisión de enero', 'Gratificación **500,00**, bonificación **45,00**, CTS **291,67**, vacaciones **250,00** (2,5 días) y EsSalud **22,50**'],
     ], [3800, 5838]),
-    ...figura('c07_07_asiento_provisiones_enero', 'Asiento «Provisiones de nómina 01/2027» del caso PROVISIONES: 17 337,50, con el contacto de cada trabajador en sus líneas.'),
+    ...figura('c07_07_asiento_provisiones_enero', 'Asiento «Provisiones de nómina 01/2027» del caso PROVISIONES, en borrador, diario Planillas, 31 ene. 2027, con 64 apuntes: arriba, los de 70002105 (bonificación 45,00, saldo inicial de la CTS 583,33 y CTS del mes 291,67), cada uno con el trabajador como contacto.'),
     h3('La aplicación al pagar'),
     p('Con «Aplicación de lo provisionado» en «En el asiento o la boleta del mes», el asiento del mes del pago descarga lo provisionado (**debe al pasivo, haber al gasto**) con las boletas de beneficios validadas que todavía no se aplicaron:'),
     vinetas([
@@ -127,7 +127,7 @@ module.exports = (h) => {
     p('Lo pagado de más o de menos queda en el gasto del mes. Medido en PROVISIONES: en mayo de 2027 la CTS de 70002101 aplica **1 750,01** (su saldo inicial más enero a abril) y su boleta pagó **1 500,00**: los 250,01 de diferencia vuelven al gasto. En julio, la gratificación aplica **3 000,00** y la bonificación **270,00**, y el asiento de julio deja la 6214 en **−4 632,50** (tres gratificaciones cancelan su semestre). Una boleta validada después del asiento de su mes se aplica en el siguiente. Si se cancela, vuelve a borrador o se rectifica con una nota de crédito, lo que aplicó vuelve al pasivo («Devolución») en el asiento siguiente.'),
     h3('El registro «Provisiones de beneficios»'),
     p('**Nómina › Nómina PE › Provisiones de beneficios** (usuario de nómina, solo lectura) guarda, por trabajador, vínculo, concepto y periodo, lo provisionado (con el saldo inicial aparte) y lo aplicado, con la base, la fracción, los **días** (desde el lote 35b), la parte **«De ejercicios anteriores»** (lote 37), el asiento y la boleta. Abre agrupado por trabajador y concepto, sin los asientos anulados ni revertidos: el subtotal es el saldo. Cada fila se llama, por ejemplo, «Trabajador provisiones régimen general · CTS 2027-05 · saldo inicial 01/2027». Tiene vista de pivote.'),
-    ...figura('c07_08_registro_provisiones', 'Provisiones de beneficios de 70002101 (caso PROVISIONES), grupo CTS: el saldo inicial de 583,33, la provisión de cada mes (291,67) y la aplicación de mayo (1 750,01).'),
+    ...figura('c07_08_registro_provisiones', 'Provisiones de beneficios filtradas por «Trabajador provisiones régimen general» (70002101, caso PROVISIONES): 41 filas, 16 637,53; el grupo CTS (9 filas, 4 375,03) muestra la provisión de cada mes (291,67), la de enero de 583,33 (el saldo inicial) y la aplicación de mayo de 1 750,01 con su boleta.'),
 
     h2('7.6 La provisión en la boleta mensual (lote 20b)'),
     p('Con **«En la boleta mensual»**, la mensual y la semanal llevan la provisión en sus líneas, en la categoría **«Provisiones»** (PRO), que no suma al neto, a los aportes ni al PLAME. Al validar, el asiento de la boleta lleva dos líneas por concepto (gasto y pasivo, con el contacto del trabajador) y el registro guarda lo provisionado con la boleta.'),
@@ -137,7 +137,7 @@ module.exports = (h) => {
       ['PRO_VAC_001 y PRO_ESSVAC_001 (con la opción)', 'Las vacaciones y su EsSalud del mes', '6215 / 4115 · 6271 / 4031 o la cuenta elegida'],
       ['APL_GRATI_001, APL_BONO_001, APL_CTS_001, APL_VAC_001 y APL_ESSVAC_001', 'La aplicación de las boletas de beneficios validadas antes de calcular esta', 'Al revés: debe al pasivo, haber al gasto'],
     ], [3300, 3938, 2400]),
-    ...figura('c07_09_boleta_lineas_provision', 'Mensual de enero de 2028 de 70002201 (caso PROVISIONES_BOLETA): PRO_GRATI_001 500,00, PRO_BONO_001 45,00, PRO_CTS_001 291,67, PRO_VAC_001 250,00 y PRO_ESSVAC_001 22,50; el neto sigue en 2 583,07.'),
+    ...figura('c07_09_boleta_lineas_provision', 'Mensual de enero de 2028 de 70002201 (caso PROVISIONES_BOLETA), «Cálculo de la nómina»: PRO_GRATI_001 500,00, PRO_BONO_001 45,00, PRO_CTS_001 291,67, PRO_VAC_001 250,00 y PRO_ESSVAC_001 22,50 en la categoría Provisiones; el neto sigue en 2 583,07 (arriba, «Por pagar» 3 669,74: ver el capítulo 28).'),
     vinetas([
       '**El mes una vez.** Cada boleta registra lo del mes menos lo ya provisionado por cualquier vía: una segunda mensual registra solo la diferencia, y cambiar de forma a mitad de mes no duplica el mes (P-102).',
       '**Validadas juntas**, las boletas que provisionan del mismo trabajador se validan de a una y por fecha, después de los beneficios; en el lote, la CTS va antes que la mensual.',
@@ -155,7 +155,7 @@ module.exports = (h) => {
       ['PROVISIONES_BENEFICIO, vacacional del 1 al 15/02/2029 de 70002302', 'APL_VAC_001 **1 500,00** y APL_ESSVAC_001 **135,00** del récord 2028; quedan 1 500,00 del récord'],
       ['PROVISIONES_BOLETA, liquidación del 31/03/2028 de 70002204', 'APL_GRATI_001 **1 500,00**, APL_BONO_001 **135,00**, APL_CTS_001 **875,01**, APL_VAC_001 **750,00** y APL_ESSVAC_001 **67,50**: el saldo del vínculo en cero'],
     ], [3800, 5838]),
-    ...figura('c07_10_asiento_gratificacion_aplicacion', 'Asiento de la gratificación de julio de 2029 de 70002301 (PROVISIONES_BENEFICIO): las líneas «Aplicación gratificación 2029-S1» y «Aplicación bonificación extraordinaria 2029-S1», debe 4114 / haber 6214, 3 000,00 y 270,00.'),
+    ...figura('c07_10_asiento_gratificacion_aplicacion', 'Asiento PLLA/2029/07/0001, gratificación de julio de 2029 de 70002301 (PROVISIONES_BENEFICIO): el pago (debe 6214 / haber 4114: 3 000,00 y 270,00) y debajo la aplicación de la bonificación (debe 4114 / haber 6214 270,00); la de la gratificación (3 000,00) sigue más abajo.'),
     vinetas([
       'No aplica nada anterior al primer mes provisionado. La boleta de quien todavía no tiene provisiones no queda procesada: la aplica el asiento o la mensual cuando haya saldo.',
       'Al validarla se recalcula: el saldo es el de ese momento. Cancelada, se borra lo suyo y el saldo vuelve al pasivo; su nota de crédito revierte lo que aplicó.',

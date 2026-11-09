@@ -12,15 +12,14 @@ module.exports = (h) => {
     h1('28. Pago de la planilla, entrega de boletas y constancias'),
     h2('28.1 Registrar el pago'),
     p('Con el lote **validado**, **Registrar pago** (N-07) abre el asistente: diario de pago (banco), fecha, referencia (N.° de operación), la casilla **«Un asiento por trabajador»** y la lista de boletas con su importe **por pagar**. Al registrar se crea el asiento del pago, que concilia la 41x de cada trabajador (la 411, 413, 415 o 419: lo que se le debe, no la 417 de la AFP). Cada boleta queda pagada con su fecha, su asiento y su número de operación. Un segundo «Registrar pago» no vuelve a tomar las boletas pagadas: «No hay boletas por pagar en el lote…».'),
-    ...figura('c28_02_registrar_pago', 'Registrar pago del lote «Planilla diciembre 2026» de FM SYSTEMS: la boleta de Héctor por S/ 1 914,00 y la casilla «Un asiento por trabajador», desmarcada.'),
+    ...figura('c28_02_registrar_pago', 'Registrar pago del lote «Planilla diciembre 2026» de FM SYSTEMS: diario Banco, fecha de pago 9 nov., la boleta de Héctor por S/ 1 914,00 y la casilla «Un asiento por trabajador», desmarcada (se canceló).'),
     tabla(['«Un asiento por trabajador»', 'Asiento', 'Medido (re-medición del lote 38)'], [
       ['Desmarcada (por defecto)', 'Uno por lote: debe a la 41x con una línea por boleta, cuenta y trabajador; haber al banco', 'Lote de prueba con tres mensuales de octubre de 2026 del caso COMPUTABLE: un asiento de **8 352,00** (2 784,00, 2 610,00 y 2 958,00), cada línea con su trabajador y conciliada'],
       ['Marcada', 'Uno por trabajador, con su contacto también en la línea del banco: se concilia transferencia por transferencia', 'Lote «Utilidades del ejercicio 2031» (UTILIDADES_REPARTO): dos asientos, **48 784,40** y **88 230,14**, cada uno con la 4111 conciliada'],
     ], [2200, 3638, 3800]),
     p('El Libro Diario admite el asiento consolidado del día con su detalle (PLE, formato 5.1), así que la casilla es para conciliar, no una obligación. Qué usa cada empresa es la pregunta P-53 a de la contadora; hoy, por lote.'),
-    ...figura('c28_03_asiento_pago', 'Asiento del pago del escenario del v2, un asiento por lote: debe 4111 de cada trabajador (2 175,00 y 2 610,00), haber banco 4 785,00; apuntes conciliados.'),
-    ...figura('c28_04_boleta_pagada', 'Boleta pagada del escenario del v2: fecha de pago 30/11, asiento del pago, N.° de operación OP-2026-11-30 y «Entregar hasta» 3 de diciembre.'),
-    nota('Para que el pago concilie, las líneas 41x del asiento de la boleta llevan al trabajador como socio (capítulo 7). Medido en el escenario del v2: el saldo 41x de cada trabajador queda en 0,00 después del pago. «Registrar pago» toma la compañía del lote aunque el usuario tenga otra activa (lote 40).', 'nota'),
+    ...figura('c28_04_boleta_pagada', 'Boleta de utilidades de 70002501 (UTILIDADES_REPARTO) con su pago registrado por otra vía: fecha de pago 30 abr. 2032, N.° de operación OP-UTIL-2031-70002501 y «Entregar hasta» 30 abr. 2032. Sin asiento del pago, «Por pagar» sigue en 48 784,40; con «Registrar pago» se ve además el «Asiento del pago».'),
+    nota('Para que el pago concilie, las líneas 41x del asiento de la boleta llevan al trabajador como socio (capítulo 7). Medido en la re-medición del lote 38: en los dos modos, cada línea de la 4111 queda conciliada después del pago. «Registrar pago» toma la compañía del lote aunque el usuario tenga otra activa (lote 40). En la base de las capturas no hay asientos de pago de la planilla (los de la prueba se borraron), por eso no se muestra uno.', 'nota'),
     p('**Quién lo registra (lote 53).** El botón «Registrar pago» del lote es del grupo **Contabilidad / Facturación**: el contable lo abre y registra el pago desde el lote sin ser «Nómina / Administrador».'),
     nota('Con «Provisión mensual de beneficios» en «En la boleta mensual», o con «Aplicación de lo provisionado» en «En la boleta del beneficio» (capítulo 7), las líneas de provisión y de aplicación del asiento de la boleta van a la 4114, 4115 y 4151 con el trabajador, y el asistente las cuenta como deuda con él. Medido en contable19: la mensual de enero de 2028 de 70002201 (PROVISIONES_BOLETA) tiene neto **2 583,07** y figura con **3 669,74** por pagar (el neto más 500,00, 45,00, 291,67 y 250,00 de provisión); la gratificación de julio de 2029 de 70002301 (PROVISIONES_BENEFICIO), con neto 3 270,00, figura con **0,00**. Esas boletas no se pagan con «Registrar pago» mientras no se corrija (hallazgo informado). Con «Asiento mensual de provisiones» no pasa: la provisión va en su propio asiento.', 'limite'),
 
@@ -31,7 +30,8 @@ module.exports = (h) => {
       'Elija el **Diario de pago**, la **Fecha de pago** y la **Referencia** (el número de la planilla AFPnet o de la operación del banco).',
       '**Registrar el pago**. Las boletas quedan con su **Pago de AFPnet**; una segunda vez no hay nada que pagar. Si el pago se anula o se revierte, se puede registrar otra vez.',
     ]),
-    ...figura('c28_06_afpnet_pago', 'Asistente «Registrar el pago de AFPnet» de FM SYSTEMS para noviembre de 2026: un asiento por AFP, debe 417 y haber banco.'),
+    ...figura('c28_06_afpnet_pago', 'Asistente «Registrar el pago de AFPnet» de FM SYSTEMS: noviembre de 2026, «Solo estas AFP» vacío, diario Banco, fecha de pago 9 nov., sin referencia (se canceló).'),
+    ...figura('c28_03_asiento_pago_afpnet', 'Asiento BNK1/2026/00007 de FM SYSTEMS, «AFPnet SPP INTEGRA 10/2026», 3 nov.: debe 4170000 597,30 y haber 1041001 Banco 597,30; el botón «Apuntes conciliados» muestra la 417 conciliada con la boleta de Lucía.'),
     vinetas([
       'La AFP es la **del cálculo de la boleta**: un traspaso posterior no la cambia (como el Excel de AFPnet, lote 40).',
       'Pagado después del plazo, el asiento lo dice en una nota. Medido en la re-medición del lote 38 (laboratorio, julio de 2026 pagado el 03/11): cuatro asientos (Habitat 2 358,03, Integra 1 232,60, Prima 217,88 y Profuturo 587,70), cada uno con «Pagado fuera del plazo: … hasta el 07/08/2026».',
@@ -50,7 +50,7 @@ module.exports = (h) => {
       ['«Solo con el acuerdo del trabajador» (por defecto)', 'A quien tiene en su ficha el **acuerdo de entrega electrónica** (capítulo 8): «Boleta por correo», fecha del acuerdo y correo', 'D.S. 001-98-TR, art. 19'],
       ['«Con el acuerdo o, sin él, a quien cobra en cuenta (D.Leg. 1310, art. 3.2)»', 'Además, la boleta de la remuneración a quien no firmó pero cobra en cuenta: con el pago registrado con un diario de banco o, registrado por otra vía (con su fecha), con una cuenta sueldo en su ficha. Va a su correo de trabajo o, si no tiene, al personal', 'D.Leg. 1310, art. 3.2'],
     ], [3200, 4438, 2000]),
-    ...figura('c28_08_opcion_boleta_correo', 'Ajustes › Nómina PE › «Boleta por correo (N-08)»: las dos opciones de «Boleta por correo» y «Documento del trabajador en su contacto».'),
+    ...figura('c28_08_opcion_boleta_correo', 'Ficha de SOLSE Demo Servicios, pestaña Nómina PE - Controles, grupo «Boleta por correo (N-08)»: «Solo con el acuerdo del trabajador» y «Documento del trabajador en su contacto de trabajo» sin marcar.'),
     vinetas([
       'Con la segunda opción, sin el pago registrado no se envía; sin correo de trabajo ni personal, tampoco, y el aviso lo dice. La nota del historial dice «Puesta a disposición por correo sin acuerdo previo: pago depositado en cuenta (D.Leg. 1310, art. 3.2).»',
       'La liquidación del depósito de la CTS y los documentos del cese **siguen pidiendo el acuerdo**.',
@@ -64,7 +64,7 @@ module.exports = (h) => {
 
     h2('28.4 Los documentos del cese (lote 21a)'),
     p('**Enviar por correo** de una liquidación con cese (N-15) lleva la **boleta**, la **hoja de liquidación de beneficios sociales**, el **certificado de trabajo** y, si el trabajador tiene cuenta CTS, la **constancia de cese para el retiro de la CTS**, con la plantilla «Nómina PE: liquidación de beneficios sociales y documentos del cese». La nota del historial dice «Con: …» y la lista de documentos. Los tres documentos se imprimen también desde **Imprimir** en la liquidación validada (capítulo 16).'),
-    ...figura('c28_07_documentos_cese_imprimir', 'Liquidación de 70002401 (caso DOCUMENTOS_CESE, renuncia el 31/08/2030): Imprimir con la hoja de liquidación, el certificado de trabajo y la constancia de cese; «Entregar hasta» 2 sep.'),
+    ...figura('c28_07_documentos_cese_imprimir', 'Liquidación de 70002401 (caso DOCUMENTOS_CESE, cese el 31 ago. 2030): el menú Imprimir con «Hoja de liquidación de beneficios sociales (PE)», «Certificado de trabajo (PE)» y «Constancia de cese para el retiro de la CTS (PE)»; «Por pagar» 6 440,00 y «Entregar hasta» 2 set. 2030.'),
     vinetas([
       '**La fecha límite** de una liquidación con cese es **48 horas desde el cese** (la del pago y la del certificado de trabajo), no los días hábiles desde el pago. En DOCUMENTOS_CESE, las cinco liquidaciones del 31/08/2030 dicen **Entregar hasta 02/09/2030**.',
       '«Enviar boletas por correo» de un lote cuenta **50 documentos por pulsación**, no 50 boletas: una liquidación con cese vale 3 o 4, así que cada pulsación envía unas 12 liquidaciones y avisa cuántas quedan. En DOCUMENTOS_CESE se enviarían **19 documentos** de cinco liquidaciones (70002404 no tiene cuenta CTS y su constancia no se emite).',

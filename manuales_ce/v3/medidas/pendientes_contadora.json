@@ -1,0 +1,731 @@
+{
+"1 · Pueden cambiar código": [
+[
+"P-39",
+"Nómina · asignación familiar en un mes entero sin goce",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-41",
+"Nómina · mes comercial con suspensión en meses de 28 y 31 días",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-45",
+"Nómina · días subsidiados en la 5.ª, las utilidades y el CITT",
+"(a) B: hoy la 5.ª proyecta con la remuneración del mes; alternativa, la del contrato. (b) A: pe_cuenta_utilidades del tipo de ausencia (lote 13). (c) C: el CITT en el .snl depende de la estructura SUNAT"
+],
+[
+"P-47",
+"Nómina · contrato renovado sin interrupción",
+""
+],
+[
+"P-57",
+"Nómina · cese en julio antes del pago de la gratificación de julio",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-58",
+"Nómina · el sexto de la gratificación en la CTS trunca",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-66",
+"Nómina · PLAME: utilidades pagadas antes o después de la declaración anual",
+"Hecho: Lote 30: «Fecha de la declaración jurada anual» en el reparto; con ella, «Se paga» se calcula (antes, 0910; ese día o después, 0911). ¿Presentación o vencimiento? (pregunta a la contadora). Falta medir"
+],
+[
+"P-71",
+"Nómina · provisiones mensuales de beneficios sociales",
+"(a) y (b) A: pe_provision_modo y las cuentas de las reglas. Hecho: Lote 35b: (c) la bonificación se sigue provisionando (Ley 30334, art. 3; D.S. 012-2016-TR, arts. 5 y 6); (d) desde el ingreso (D.Leg. 713, art. 11; NIC 1"
+],
+[
+"P-78",
+"Nómina · renta de 5.ª: meses siguientes a un ingreso extraordinario de mayo a julio",
+"Hoy, el texto literal del art. 40. Alternativa: restar también lo retenido en mayo por el extraordinario"
+],
+[
+"P-79",
+"Nómina · gratificación de diciembre: meses de las variables",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-80",
+"Nómina · CTS y vacaciones con menos de 6 meses: entre qué se dividen las variables",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-81",
+"Nómina · truncas: ¿cuentan las variables del mes del cese?",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-82",
+"Nómina · conceptos fijos mensuales: ¿enteros o promediados?",
+"Hecho: Lote 33a: forma «Fija mensual» en la regla; entra entera con el importe del mes de referencia de las boletas regulares; sin importe en él, va como variable; el prorrateo del ingreso o del cese no la reduce. Por de"
+],
+[
+"P-86",
+"Nómina · feriado trabajado: las horas que pasan la jornada",
+"Hoy todas van en 0107 × 2. Alternativa: la jornada en 0107 y el exceso como sobretiempo (0105 y 0106)"
+],
+[
+"P-89",
+"Nómina · valor hora con una jornada distinta de 8 horas",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-90",
+"Nómina · subsidio: el trabajo en feriado en el promedio",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-93",
+"Nómina · SCTR con una EPS o una compañía: ¿la gratificación entra en la base?",
+"Hecho: Lote 34a: por defecto con ninguna entidad (Ley 30334); con la ONP, una EPS o una compañía solo si su póliza marca «Cobra la prima sobre la gratificación ordinaria» (D.S. 003-98-SA, 3.ª DF), con aviso; reglas SCTR_"
+],
+[
+"P-96",
+"Nómina · provisiones: vacaciones adelantadas",
+"Hecho: Lote 35a (= O-76): descarga al pagarlo, del récord en curso"
+],
+[
+"P-98",
+"Nómina · provisiones: con comisiones u horas extras",
+"Hecho: Lote 35b, las vacaciones: las variables regulares a la fecha (C-41). La gratificación y la CTS siguen mes a mes: O-148"
+],
+[
+"P-99",
+"Nómina · provisiones: practicantes",
+"Lote 37, sin cambios: la media subvención va cada seis meses continuos desde el inicio del convenio y el descanso solo si el convenio pasa de doce meses (Ley 28518, art. 42); se provisionaría (NIC 19), pero el módulo no "
+],
+[
+"P-101",
+"Nómina · provisión en la boleta: la gratificación de diciembre del obrero",
+"Hecho: Lote 37, sin cambios: provisiona y aplica en la misma boleta (el mismo pasivo y el mismo gasto que no registrarla; no hay norma)"
+],
+[
+"P-102",
+"Nómina · provisión en la boleta: el cambio de forma a mitad de mes",
+"Hecho: Lote 37, sin cambios: el mes queda una vez (NIC 19, párr. 11); cambiar la vía no es un cambio de política (NIC 8)"
+],
+[
+"P-107",
+"Nómina · aplicación en la boleta del beneficio: el cierre del mes anterior al pago",
+"Hecho: Lote 36, sin cambios: queda en su mes y la aplica el mes del pago (NIC 19, párr. 11 a; Ley 27735, art. 5); «cancelarla en el propio mes» deja el pasivo corto: no se ofrece"
+],
+[
+"P-108",
+"Nómina · aplicación en la boleta del beneficio: la liquidación y un contrato desde el día siguiente",
+"Hoy es otro vínculo (con liquidación validada). Alternativa: aviso de continuidad, o un solo vínculo"
+],
+[
+"P-109",
+"Nómina · aplicación en la boleta del beneficio: el adelanto de vacaciones",
+"Hecho: Lote 35a (= O-76 y P-96)"
+],
+[
+"P-110",
+"Nómina · aplicación en la boleta del beneficio: el aumento durante el récord",
+"Hecho: Lote 35b (= O-77): los días pendientes al sueldo vigente"
+],
+[
+"P-111",
+"Nómina · aplicación en la boleta del beneficio: la liquidación rectificada y no repuesta",
+"Hecho: Lote 36 (= O-78): vuelve al pasivo (NIC 19, párr. 11 a)"
+],
+[
+"P-113",
+"Nómina · liquidación: las vacaciones ganadas y no gozadas al cese",
+"Revisión del lote 21a (H3): hoy «Avisar» con las entradas VAC_ADQ_001/IND_VAC_001; «Calcular» ya programado. Faltaría, si la contadora lo pide: los gozados desde las ausencias"
+],
+[
+"P-114",
+"Nómina · liquidación: la indemnización vacacional al cese",
+"Hoy proporcional a los días sin gozar del récord vencido, con la computable al cese, inafecta (0504). Alternativa: otro importe o afecta"
+],
+[
+"P-115",
+"Nómina · liquidación: la remuneración de la gratificación trunca",
+"Lo que describe el capítulo correspondiente (cambió con los lotes 22a a 25b)"
+],
+[
+"P-123",
+"Nómina · liquidación: truncas de un vínculo de menos de un mes",
+"Hoy, vacaciones y CTS truncas por días aunque el vínculo dure menos de un mes (revisión del lote 22a). Alternativa: sin CTS ni vacaciones truncas con menos de un mes (TUO del D.Leg. 650, art. 2)"
+],
+[
+"P-124",
+"Nómina · asignación familiar: el mes en que el hijo cumple 18 años",
+"Lote 22a: el mes completo se paga (la edad el primer día del mes). Alternativas: nada o por días"
+],
+[
+"P-125",
+"Nómina · asignación familiar en la planilla semanal",
+"Lote 22a: la semana es del mes con 4 o más de sus días (como ISM_001). Alternativa: el mes en que empieza"
+],
+[
+"P-126",
+"Nómina · gratificación y CTS cuando el trabajador cambia de régimen (MYPE a general)",
+"Lote 22b: el cambio de régimen corta el vínculo; la parte de pequeña empresa del semestre no se paga en ninguna boleta (como antes del lote). Alternativa: pagarla al cambiar o con su factor en la gratificación"
+],
+[
+"P-127",
+"Nómina · la gratificación de enero a junio pagada en la liquidación y la CTS trunca",
+"Lote 22c: con P-57, 1/6 de esa gratificación entra en la CTS trunca de mayo al cese (680,56 en vez de 583,33 con 3 000 y cese el 10/07). Alternativa: no entra (solo la ordinaria validada)"
+],
+[
+"P-128",
+"Cambio de régimen dentro del vínculo e indemnización",
+"Lote 41 (D1): la indemnización se calcula con el régimen del cese por todo el tiempo de servicios (como antes), y desde el H2 sus variables también cuentan del régimen anterior. Alternativa: por tramos, cada uno con su r"
+],
+[
+"P-130",
+"Modales renovados con una liquidación en medio: el tiempo del desnaturalizado",
+"Lote 41 H2 (R1): para el plazo máximo se cuentan como sucesivos; el tiempo de servicios del art. 38 cuenta desde el contrato siguiente a la liquidación (vínculo de C-48). Alternativa: desde el primer contrato de la caden"
+],
+[
+"P-131",
+"El ocasional: «seis meses al año»",
+"Lote 41 (D7): 6 meses desde su inicio en la cadena continua. Alternativa: 6 meses por año calendario"
+],
+[
+"P-133",
+"El récord trunco que cruza un cambio de régimen",
+"Lote 42b H2 (R5): por tramos, cada uno con sus días de vacaciones (como la provisión): 883,33 + 375,00 del general a la pequeña. Alternativa: entero con el régimen del cese (el H1) o del ingreso. Los récords cumplidos si"
+],
+[
+"P-134",
+"El subsidio que continúa al año nuevo y los 20 días del empleador",
+"Lote 43 (D2 y H2, R7): subsidiado al 31/12, los 20 días del empleador del año nuevo quedan para un descanso posterior; dos certificados seguidos (alta el 31/12 y otro desde el 01/01) cuentan como una sola incapacidad. Al"
+],
+[
+"P-135",
+"La cuenta del abono de las prestaciones alimentarias entregadas",
+"Lote 44 (D2): 4699 por defecto (el proveedor de los vales), en el mapeo contable de PRALI_ENT_001. Alternativa: la cuenta del activo si la compañía compra los vales por adelantado"
+],
+[
+"P-136",
+"La base del descuento judicial con prestaciones alimentarias",
+"Lote 44 H2 (R3): el 60 % del CPC (art. 648 inc. 6) y los topes de la 5.ª se miden con el dinero que paga la boleta, sin los vales. Alternativa: el total de los ingresos"
+],
+[
+"P-137",
+"El tope a) del crédito EPS: por trabajador o de la empresa",
+"Lote 45 (D2, O-136): por trabajador (nunca da de más). Alternativa: el monto total del mes de la empresa (D.S. 009-97-SA, art. 40), que da más con planes de distinta tasa"
+],
+[
+"P-138",
+"La tasa de la bonificación con un plan EPS que empieza o termina en el mes del pago",
+"Lote 45 H2 (D4, R6): con el plan vigente en algún día del mes del pago (julio, diciembre o el del cese), como el aporte del mes. Alternativa: la afiliación al día del pago (15/07 o 15/12)"
+],
+[
+"P-141",
+"Los periodos intermitentes de formación en la misma empresa",
+"Lote 49b: todas las modalidades, sin tope entre convenios, por meses calendario y días sueltos (30 = un mes). Alternativas: la misma modalidad, solo seguidos o todo por días"
+],
+[
+"P-142",
+"La subvención de la media subvención",
+"Lote 49b: la vigente el día en que se cumplen los seis meses. Alternativa: el promedio del bloque"
+],
+[
+"P-145",
+"El descanso en convenios de más de 24 meses",
+"Lote 49b: un solo descanso. Alternativa: uno por cada doce meses"
+],
+[
+"P-148",
+"Las cuentas de la subvención, el descanso, su pasivo y el EsSalud del practicante",
+"Lote 49a: el mapeo por prefijo (6220, 6271/4031; neto 4111)"
+],
+[
+"P-150",
+"El monto del PLAME del personal en formación",
+"Lote 49c: todo lo pagado en el mes (mensual, media subvención y descanso). Alternativa: solo la mensual"
+],
+[
+"P-152",
+"Las cuentas de la provisión de la indemnización vacacional",
+"Lote 50: 623 y el pasivo de las vacaciones (4115). Alternativa: otra del 41"
+],
+[
+"P-153",
+"El gerente que decidió no gozar el descanso (D.S. 012-92-TR, art. 24)",
+"Lote 50: el módulo no lo distingue (ni la provisión ni la liquidación)"
+],
+[
+"P-156",
+"La indemnización vacacional de ejercicios anteriores reconocida por primera vez",
+"Lote 50 H2 (H2): al gasto del mes, con un mensaje del asiento. Alternativa: a resultados acumulados (NIC 8), como el saldo inicial del lote 37"
+],
+[
+"P-159",
+"El tope de 90 remuneraciones diarias de la CTS de la pequeña empresa",
+"O-178: ¿tope acumulado (equivale a 6 años de 15 días) o por periodo?"
+],
+[
+"A-1.2",
+"Utilidades · empresas de 20 trabajadores o menos (D.Leg. 892, art. 2)",
+"La plantilla más alta a la vez (un cese y su reemplazo cuentan uno), sin practicantes; cuentan los de la microempresa y los de tiempo parcial"
+],
+[
+"A-1.3",
+"Utilidades · empresas de 20 trabajadores o menos",
+"Se calcula y se paga como el reparto del D.Leg. 892 (0911 y tope de 18)"
+],
+[
+"A-3",
+"Utilidades · el comisionista sin sueldo",
+"El tope sale del sueldo del contrato: sin sueldo, 0 (queda sin tope); sus días, de las mensuales validadas (en un mes sin comisiones no hay mensual)"
+],
+[
+"A-4",
+"Horas extras · el comisionista sin sueldo",
+"Sueldo ÷ 30 ÷ horas de la jornada: sin sueldo, las horas extras valen 0"
+],
+[
+"A-6.1",
+"Tiempo parcial · las vacaciones",
+"Las calcula como a cualquiera (30 días) y la boleta avisa"
+],
+[
+"A-6.2",
+"Tiempo parcial · cómo se detecta",
+"Por el horario; si la Tabla 12 dice otra cosa, la boleta avisa"
+],
+[
+"A-6.3",
+"Tiempo parcial · el promedio de las 4 horas",
+"Jornada semanal ÷ días de la jornada de la empresa (Informe 136-2018-MTPE; Tribunal de Fiscalización Laboral)"
+],
+[
+"A-7.2",
+"No domiciliado · el trabajo en el exterior",
+"El 30 % sobre todo lo afecto de la boleta"
+],
+[
+"A-7.3",
+"No domiciliado · la salida del país a mitad de año",
+"El 30 % desde la versión del contrato con la marca «No domiciliado»; lo anterior queda con la escala, sin ajuste"
+],
+[
+"A-7.4",
+"Extranjero · el convenio de seguridad social",
+"Con vínculo laboral se afilia a la ONP o a una AFP; «Sin régimen pensionario» (Tabla 11, 99) avisa; EsSalud se calcula siempre"
+],
+[
+"A-7.5",
+"No domiciliado · la fecha de llegada",
+"Desde el primer inicio de contrato en la compañía"
+],
+[
+"A-7.8",
+"No domiciliado · el andino al cese",
+"Se hace el ajuste final y se devuelve el exceso (DEV5_001), como a un domiciliado"
+]
+],
+"2 · Con valor por defecto": [
+[
+"P-30",
+"Nómina · días laborados en un mes con vacaciones (confirma P-27)",
+"Confirma lo hecho con P-20 y P-27. La alternativa (16) no cumple la regla del PDT (laborados + subsidiados + no laborados = días del mes)"
+],
+[
+"P-31",
+"Nómina · horas del .jor con feriados",
+"Hecho: Lote 31a: las efectivamente trabajadas (160) por defecto, como antes; opción «También las de los feriados no trabajados» (184). Falta medir"
+],
+[
+"P-32",
+"Nómina · EsSalud mínimo y tope de la prima AFP con varias boletas en el mes",
+"Confirma C-26 (base mínima y tope por mes). La alternativa (por boleta) es el error que corrigió C-26"
+],
+[
+"P-33",
+"Nómina · microempresa: monto del SIS",
+"Parámetro pe_sis_microempresa (por vigencia) y pe_micro_salud (SIS o EsSalud). La parte «no va al PLAME» la reemplaza P-64"
+],
+[
+"P-35",
+"Nómina · subsidio y ONP",
+"Hecho: Lote 28b (ce 19.0.1.39.125): opción «Subsidio afecto a la ONP», no por defecto (Informe SUNAT 049-2014); falta medir y revisar el Anexo 2 vigente (O-100)"
+],
+[
+"P-36",
+"Nómina · cuenta del subsidio por cobrar",
+"Mapeo contable de SUBI_001 y SUBM_001 (prefijo débito 1629), editable y noupdate"
+],
+[
+"P-37",
+"Nómina · promedio del subsidio con menos de 12 meses",
+"Hecho: Lote 28a (ce 19.0.1.39.123): los días de afiliación (360 con 12 meses; el mes que el vínculo no cubre, sus días); opción; falta medir"
+],
+[
+"P-38",
+"Nómina · qué entra al promedio del subsidio",
+"Hecho: Lote 28a: las horas extras siempre (D.S. 013-2019-TR, art. 33.2), con la opción «solo si son regulares»; la vacacional y los subsidios previos, como hoy; falta medir"
+],
+[
+"P-40",
+"Nómina · valor hora de un permiso sin goce",
+"Hoy: permisos y faltas parciales ÷ horas del horario; tardanzas, horas extras y TFER ÷ 8. Una opción con P-89 y C-47"
+],
+[
+"P-42",
+"Nómina · subsidio sin los aportes que dan derecho",
+"(a) A: pe_control_derecho_subsidio y la entrada SUBI_001 o SUBM_001. (b) C: el código, según la respuesta. (c) Hecho: Lote 28a: la casilla «Accidente» en la ausencia (basta la afiliación). (d) B opcional: el mes de la co"
+],
+[
+"P-43",
+"Nómina · promedio del subsidio: meses sin remuneración, redondeo y rectificaciones",
+"Hecho: Lotes 28a y 28b: (a) el mes entero sin goce con 0 (opción); (b) el monto de la contingencia en soles enteros (opción); (c) el promedio fijo desde la primera boleta de la contingencia; falta medir"
+],
+[
+"P-44",
+"Nómina · obrero semanal: subsidio de una semana que cruza de mes",
+"Hecho: Lote 27b (ce 19.0.1.39.120): el 0915 y el 0916 van a cada mes por sus días subsidiados (opción, con fecha «desde»); falta medir en contable19 y la respuesta de la contadora"
+],
+[
+"P-46",
+"Nómina · renta de 5.ª al cese",
+"(a) Hoy la devolución va en la liquidación (0928); alternativa, en la mensual. (b) Nuevo: rentas y retenciones de otros empleadores por ejercicio (ficha → R5TA_001 y certificado). (c) Nuevo concepto de incentivo por cese"
+],
+[
+"P-48",
+"Nómina · indemnización por despido arbitrario",
+"Hecho: Lote 32a: (a) la base con las variables regulares (D.S. 001-96-TR, art. 55), opción del 1/6 de la gratificación; (b) el modal en la MYPE, la mayor entre el art. 76 y la del régimen, con opciones. Falta medir. (c) "
+],
+[
+"P-49",
+"Nómina · seguro Vida Ley (D.Leg. 688)",
+"(a) A: póliza con tasa o importe. (c) A: cuentas y «Calcular la prima en la planilla». (d) A: pe_control_vida_ley. Hecho: (b) Lote 30: casilla «0803» de la compañía, marcada por defecto (como antes). Falta medir y probar"
+],
+[
+"P-50",
+"Nómina · indemnización en contratos especiales y desnaturalizados",
+"Hecho: Lote 32a: (a) los T12 12 y 13 por el art. 76 por analogía, opción «No calcular»; (c) el desnaturalizado por el art. 38 desde el primer contrato, opción «desde el fin pactado». (b) A: no calcula y se usa la entrada"
+],
+[
+"P-51",
+"Nómina · cómo contar los días de los beneficios truncos y de la indemnización",
+"Hecho: Lote 32b: vacaciones truncas de fecha a fecha desde el aniversario (opción «Por meses calendario»); indemnización de fecha a fecha (opción «Por meses calendario»); la CTS y la gratificación, por meses calendario. "
+],
+[
+"P-52",
+"Nómina · Vida Ley en un mes subsidiado o de licencia sin goce",
+"Hecho: Lote 34b: los días suspendidos del art. 12 (salvo la inhabilitación, con aviso) van a la última remuneración, la base guardada en la línea VIDA_001 del último mes validado (sin ella, el último mes con afectos o el"
+],
+[
+"P-53",
+"Nómina · pago de la planilla",
+"Hecho: Lote 38: (a) casilla «Un asiento por trabajador» en «Registrar pago» (por defecto, por lote, como hoy). (b) Hecho. (c) Opción «Documento del trabajador en su contacto de trabajo», apagada por defecto (el 3.11 toda"
+],
+[
+"P-54",
+"Nómina · boleta por correo",
+"(a) Hecho: Lote 38: opción «Con el acuerdo o, sin él, a quien cobra en cuenta (D.Leg. 1310, art. 3.2)», solo la boleta de la remuneración y con el pago registrado; por defecto, solo con el acuerdo. (b) C: firma digital, "
+],
+[
+"P-55",
+"Nómina · liquidación del depósito de CTS",
+"Es el impreso. (a) A: pe_operacion_pago editable por boleta. (b) y (c) son textos: tipo de cambio y leyenda (XS si se quieren)"
+],
+[
+"P-56",
+"Nómina · certificado de rentas y retenciones de 5.ª",
+"Impreso a pedido, con los dos contenidos. La firma es del trabajador marcado «Empleador». No cambia el cálculo"
+],
+[
+"P-59",
+"Nómina · gratificación de diciembre de un cese después de la quincena",
+"Hoy depende del orden: 5/6 si el cese se registró antes, 6/6 si después. Opción: completa o proporcional, y la remuneración vigente en la boleta o al 30/11"
+],
+[
+"P-60",
+"Nómina · utilidades: licencias con goce como días laborados",
+"pe_cuenta_utilidades del tipo de ausencia"
+],
+[
+"P-61",
+"Nómina · utilidades: conceptos no remunerativos en la base",
+"Casilla «¿Aplica para utilidades?» de la regla (hoy los excluye)"
+],
+[
+"P-62",
+"Nómina · utilidades: descanso médico por accidente de trabajo",
+"(a) El tipo «Descanso médico por accidente de trabajo…» con pe_cuenta_utilidades cuenta todos sus días. (b) C: el documento que acredita"
+],
+[
+"P-63",
+"Nómina · PLAME: gratificación trunca de la liquidación",
+"Hecho: Lote 30, sin opción por la norma: la trunca es 0407 (Tabla 22; pregunta frecuente 29); la de un cese del 15 al 31/12, la ordinaria, 0406 y 0312 (Ley 27735, art. 6; resuelve O-91). Falta medir"
+],
+[
+"P-64",
+"Nómina · PLAME: SIS de la microempresa",
+"Hecho: Lote 30: casilla «0811», marcada por defecto. ¿El PDT lo llena por su cuenta? Falta probar la importación"
+],
+[
+"P-65",
+"Nómina · movilidad: de libre disposición y supeditada a la asistencia",
+"pe_variable_computable y «¿Aplica para utilidades?» en MOVL_001 (lotes 14 y 17)"
+],
+[
+"P-67",
+"Nómina · remuneración computable: conceptos variables regulares",
+"pe_variable_computable por regla. Los 3 meses y el ÷ 6 son norma. Lo discutible está en P-79 a P-84"
+],
+[
+"P-68",
+"Nómina · PLAME: descansos, feriados y licencia con goce",
+"pe_separar_feriados_licencias (apagada)"
+],
+[
+"P-69",
+"Nómina · trabajo en día feriado o de descanso",
+"TFER_001 (0107), pe_feriado_sobretasa = 1,0, asistencia_pagar_feriado_trabajado. El valor hora es P-89"
+],
+[
+"P-70",
+"Nómina · PLAME: códigos del SCTR",
+"Lote 19: 0806, 0810, 0813 o 0814 según la entidad, sin 0805. Si se declaran: P-91"
+],
+[
+"P-72",
+"Nómina · renta de 5.ª en el mes en que se pagan las utilidades",
+"pe_renta5_extraordinario por regla (C-44): se desmarca si la respuesta es «repartir»"
+],
+[
+"P-73",
+"Nómina · aportes voluntarios al SPP (trabajador y empleador)",
+"(a) 0609 y 0801 en el .rem (hoy solo AFPnet), con la opción de informativos (lote 30). Hecho: (b) y (c) Lote 29 (ce 19.0.1.39.128), sin opción por la norma: el del empleador no es remuneración ni renta (TUO de la Ley del"
+],
+[
+"P-74",
+"Nómina · PLAME: códigos de los descuentos",
+"Hecho: (a) y (b) Lote 30, sin opción por la norma: el préstamo y la EPS en el 0706 (el 0703 es solo el judicial; el adelanto, 0701). Hecho: (c) y (d) Lote 29: el 0707 reduce los aportes y la 5.ª (Informe 004-2014, por an"
+],
+[
+"P-75",
+"Nómina · prestaciones alimentarias: tope de la Ley 28051",
+"Hecho: Lote 29: el exceso sobre el tope del mes (el menor entre el 20 % de la remuneración ordinaria y 2 RMV) se paga como remuneración (PRALI_EXC_001, 0116), afecto a aportes, 5.ª y beneficios; opción «Solo avisar». Par"
+],
+[
+"P-76",
+"Nómina · bono de productividad y renta de 5.ª: qué ingresos son extraordinarios",
+"BPRODR_001 (0303), BPROD_001 (0902) y GRATEX_001 (0403), más pe_renta5_extraordinario por regla"
+],
+[
+"P-77",
+"Nómina · cuentas contables de los conceptos nuevos",
+"Cuentas por regla y compañía (mapeo contable y «Asignar cuentas»)"
+],
+[
+"P-83",
+"Nómina · bonos bimestrales o trimestrales (remuneraciones periódicas)",
+"Hecho: Lote 33a: formas «Periódica» y «Periódica anual»: en la CTS ÷ 6 (o ÷ 12) sin el requisito de 3 meses; en la gratificación, la prueba de 3 meses (opción «No entran»); en las vacaciones, nada. (d) A: BPRODR_001 sigu"
+],
+[
+"P-84",
+"Nómina · comisionista sin sueldo fijo (remuneración principal imprecisa)",
+"Hecho: Lote 33b: marca «Remuneración principal» en el contrato (fija, comisionista, destajero; sin sueldo, comisionista o, con «Destajo» en el T-Registro, destajero); las reglas del 0103 entran con el promedio sin el req"
+],
+[
+"P-85",
+"Nómina · 0115: ¿solo los feriados o también el descanso semanal?",
+"Hecho: Lote 31b: en la semanal, el dominical y los feriados van al 0115 del .rem y el resto de RBS_002 al 0121 (base legal del 0115: D.S. 012-92-TR, art. 1); opción «En la remuneración básica (0121)». La mensual, igual q"
+],
+[
+"P-87",
+"Nómina · PLAME: el .jor del feriado trabajado",
+"Hecho: Lote 31a: a las horas ordinarias por defecto (no son sobretiempo: D.S. 007-2002-TR, art. 10); opciones «Al sobretiempo» y «No». Falta medir"
+],
+[
+"P-88",
+"Nómina · 1° de mayo en el día de descanso",
+"Hecho: Lote 31b: FMAY_001, un día de remuneración (sueldo ÷ 30 más la asignación ÷ 30, 0115) si coincide con el descanso semanal obligatorio (D.S. 012-92-TR, art. 9); opciones «también en un día libre», «No pagarlo» y «t"
+],
+[
+"P-91",
+"Nómina · PLAME: el SCTR con una EPS, la ONP o una compañía (0810, 0813, 0814)",
+"Hecho: Lote 30: casillas sin marcar (como antes); marcadas, solo con la entidad de la cobertura en la ficha. Falta probar la importación"
+],
+[
+"P-92",
+"Nómina · PLAME: la tasa del SCTR de EsSalud (0806)",
+"Exportarla depende de la estructura de importación de tasas de SUNAT (no verificada). (b) Conciliación informativa"
+],
+[
+"P-94",
+"Nómina · provisiones: el saldo inicial al empezar a provisionar",
+"(a) A: «Con el saldo inicial» del asistente. (b) Hecho: Lote 37: lo de los ejercicios cerrados a resultados acumulados (5922 o la cuenta de la compañía; NIC 8, párrs. 5 y 42); lo del ejercicio anterior sin cerrar, al gas"
+],
+[
+"P-95",
+"Nómina · provisiones: la cuenta del EsSalud provisionado de las vacaciones",
+"pe_provision_cuenta_essalud_id"
+],
+[
+"P-97",
+"Nómina · provisiones: corregir un mes ya cerrado",
+"Hecho: Lote 36: por defecto, asiento de ajuste por la diferencia en la primera fecha abierta (Código de Comercio, art. 44; Res. 234-2006/SUNAT, art. 13, num. 5.1, iii; NIC 8, párrs. 36, 37 y 41), con la nota en el correg"
+],
+[
+"P-100",
+"Nómina · provisión en la boleta: la fecha de la provisión del obrero",
+"pe_provision_semanal (la semanal que cierra el mes, por sus días o por el asiento). (c) mes cerrado: ver dudas"
+],
+[
+"P-104",
+"Nómina · provisión en la boleta: las variables de una planilla adicional validada después",
+"Hecho: Lote 37: con la boleta mensual, la adicional registra la diferencia del mes en su asiento (NIC 19, párr. 11); con el asiento mensual contabilizado, un aviso; opción «En la boleta del mes siguiente»"
+],
+[
+"P-105",
+"Nómina · provisión en la boleta: el saldo inicial con mensuales ya validadas",
+"Confirmación. La alternativa no cambia el pasivo, solo cuándo se registra"
+],
+[
+"P-106",
+"Nómina · provisión en la boleta: qué muestra la boleta impresa",
+"Hecho: Lote 37: «No» (por defecto), «Solo la provisión del mes» o «Provisión y aplicación» (la casilla de antes, encendida); D.S. 001-98-TR, art. 18"
+],
+[
+"P-112",
+"Nómina · aplicación en la boleta del beneficio: las liquidaciones de antes sin aplicar",
+"Hecho: Lote 36: en el asiento de su mes si está abierto; si no, en el mes que se genera (NIC 19, párr. 11 a; Res. 234-2006/SUNAT, art. 13, num. 5.1); opción «En el mes que se genera». Límite: O-153"
+],
+[
+"P-116",
+"Nómina · constancia de cese para el retiro de la CTS",
+"Hoy una por cuenta, sin adeudos (la nómina no registra préstamos con garantía de la CTS: N-14)"
+],
+[
+"P-129",
+"Los 5 años del art. 74 para un contrato que dura lo que su causa, solo",
+"Lote 41: por defecto no (letra del TUO; mezclado con otra modalidad sí); opción «Además, 5 años para cualquier modalidad»"
+],
+[
+"P-132",
+"El récord que se completa el día del cese y el año para gozar que termina ese día",
+"Lote 42b (D2 y H2, R2 y R8): el cese el día anterior al aniversario completa el récord (art. 10) y se paga siempre, con las dos opciones; el año para gozarlo que termina el día del cese venció (art. 23: indemnización). E"
+],
+[
+"P-139",
+"El mes parcial en el divisor de las variables regulares",
+"Lote 46a (D3, O-130): con un periodo menor de 6 meses, el mes del ingreso o del cese a mitad de mes cuenta sus días (4 meses y 15 días: ÷ 4,5; D.S. 004-97-TR, art. 6, «entre el período a liquidarse»). Alternativa: un mes"
+],
+[
+"P-140",
+"El descanso del practicante en un convenio de doce meses exactos",
+"Lote 49b: no corresponde (la ley: «superior a doce meses»); opción «Con doce meses cumplidos» (SUNAFIL, 2025)"
+],
+[
+"P-143",
+"El mes incompleto y las inasistencias del practicante",
+"Lote 49a: por días ÷ 30; las inasistencias no se descuentan (opción)"
+],
+[
+"P-144",
+"El EsSalud del practicante con seguro EsSalud",
+"Lote 49a: 9 % de lo pagado en el mes, sin la base mínima de la RMV (opción). ¿Lo calcula el PDT?"
+],
+[
+"P-146",
+"La afiliación facultativa a pensiones del practicante",
+"No se retiene. Alternativa: retener lo que indique (¿canal?)"
+],
+[
+"P-147",
+"El SCTR de practicantes",
+"No se contrata. Alternativa: opción de la compañía"
+],
+[
+"P-149",
+"La subvención pactada por debajo del mínimo",
+"Lote 49a: paga el mínimo y avisa; opción «Solo avisar»"
+],
+[
+"P-151",
+"La deducción de lo provisionado del practicante",
+"Tributario; lo resuelve la contadora en la DJ"
+],
+[
+"P-154",
+"El monto del .or5",
+"Lote 51: el del mes (por defecto) o el acumulado del ejercicio (opción). Confirmar con el PDT 4.7"
+],
+[
+"P-155",
+"El tipo de documento 26 (CPP) en el .or5",
+"Lote 51: va con aviso (la estructura 12 no lo lista)"
+],
+[
+"P-157",
+"El carné de solicitante de refugio (09) en el 3.11",
+"Lote 56 (D1): 0 (otros); la Tabla 2 no tiene código propio"
+],
+[
+"P-158",
+"La asignación familiar en la pequeña empresa, por defecto",
+"O-177: «No pagar» (norma) para las compañías nuevas y conservar «Pagar» en las que ya la pagan; o «Pagar» en todas"
+],
+[
+"P-160",
+"Las utilidades del trabajador de la microempresa",
+"O-179 (lote 58): fuera del reparto por defecto (el régimen de la micro no las tiene); «Incluir» como opción, y donde ya se repartió con ellos"
+],
+[
+"A-1.1",
+"Utilidades · empresas de 20 trabajadores o menos (D.Leg. 892, art. 2)",
+"Opción «Con 20 trabajadores o menos: utilidades» = «Repartir y avisar» (si faltan contratos en el sistema, el conteo sale menor que el real); también «No repartir» y «Repartir sin aviso»"
+],
+[
+"A-2.1",
+"Remuneración mínima · jornada menor de 8 horas",
+"Así lo hace el aviso de la boleta (no cambia importes)"
+],
+[
+"A-2.2",
+"Remuneración mínima · el aviso de la boleta",
+"Solo el sueldo del contrato; la asignación familiar no cuenta"
+],
+[
+"A-5.1",
+"SENATI · el personal administrativo",
+"Entra, salvo que se marque «Fuera de la base del SENATI» en su contrato"
+],
+[
+"A-5.2",
+"SENATI · el primer año de la empresa",
+"La boleta avisa que el año anterior tuvo 20 o menos (no deja de calcular)"
+],
+[
+"A-5.3",
+"SENATI · el promedio de los 20 trabajadores",
+"Como en utilidades: el mayor número del mes ÷ 12, con redondeo"
+],
+[
+"A-7.1",
+"No domiciliado · la Comunidad Andina y los convenios de doble imposición",
+"Desde el lote 71: «No domiciliado» + convenio CAN retiene con la escala; los demás convenios, el 30 %; el T-Registro y el PLAME (.toc) declaran la condición y el convenio"
+],
+[
+"A-7.6",
+"No domiciliado · la cuenta contable",
+"40173"
+],
+[
+"A-7.7",
+"No domiciliado · la residencia andina",
+"El sistema no pide documento: la ayuda del campo dice que se guarde el sustento"
+],
+[
+"A-7.9",
+"No domiciliado · los demás convenios de doble imposición",
+"El 30 % con cualquier convenio que no sea el «3 · Comunidad Andina»"
+]
+]
+}

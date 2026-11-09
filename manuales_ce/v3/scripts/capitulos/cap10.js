@@ -111,7 +111,7 @@ module.exports = (h) => {
       ['K8, 450 con 15 horas semanales', '—', '«rmv» (1 230 × 15 ÷ 40 = 461,25)'],
     ], [3400, 2700, 3538]),
     p('El texto, medido en contable19 (re-medición del lote 64): «El sueldo del contrato de <trabajador> (1 130,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00. Revise el sueldo del contrato.» Hoy compara solo el sueldo del contrato (la asignación familiar no cuenta) y, con menos de 4 horas diarias, la RMV proporcional (A-2.1 y A-2.2, con valor por defecto).'),
-    ...figura('c10_07_aviso_rmv', 'EMPRESA_COMERCIO, K6, mensual de octubre de 2026 en borrador: «El sueldo del contrato de … (1 200,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00».'),
+    ...figura('c10_07_aviso_rmv', 'EMPRESA_COMERCIO, K6 (repartidor con el sueldo de la RMV anterior), mensual de octubre de 2026 en borrador: «El sueldo del contrato de … (1 200,00, sin otros conceptos) es menor que la remuneración mínima vital del periodo, 1 230,00».'),
     nota('Caso EMPRESA_COMERCIO, hoja «Avisos» (re-medición del lote 71, 100 %): K5 junio «(ninguno)» y octubre «rmv_nocturna»; K6 junio «(ninguno)» y octubre «rmv»; K7 (44 h semanales) y K8 (15 h) en octubre «rmv»; K4, mensual validada de junio con 1 000 < 1 130, «rmv».', 'caso'),
 
     // ------------------------------------------------------------ 10.6

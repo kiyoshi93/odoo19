@@ -16,7 +16,7 @@ module.exports = (h) => {
       ['22', 'Maternidad: pre y post natal', 'Descanso por maternidad (pre y post natal)', 'Subsidio de EsSalud: `SUB_MAT_001`, PLAME 0915'],
     ], [1300, 3400, 2700, 2238]),
     p('Los 20 días del empleador se cuentan por año calendario con las ausencias anteriores, salvo la incapacidad que ya estaba subsidiada el 31/12 (23.5). El subsidio no paga EsSalud; tampoco ONP, salvo que la compañía elija lo contrario (23.2). Con AFP paga aporte y prima (categoría «Ingreso afecto AFP»).'),
-    ...figura('c23_04_descanso_medico', 'Descanso médico de noviembre de 2026 (caso SUBSIDIOS, 70000801): del 1 al 30 de noviembre, con la casilla «Accidente (común o de trabajo)» desmarcada.'),
+    ...figura('c23_04_descanso_medico', 'Descanso médico de noviembre de 2026 (caso SUBSIDIOS, 70000801), aprobado: «Tiempo personal por enfermedad» del 1 al 30 de noviembre (21 días hábiles), con la casilla «Accidente (común o de trabajo)» desmarcada.'),
     h3('Registrar un descanso médico'),
     pasos([
       'En **Vacaciones › Gestión › Vacaciones**, cree la ausencia del trabajador con el tipo «Tiempo personal por enfermedad» (o «Descanso por maternidad (pre y post natal)») y las fechas del certificado.',
@@ -50,7 +50,7 @@ module.exports = (h) => {
       '**Dónde se ve:** en la ficha del trabajador, pestaña «Nómina PE», sección **«Promedios fijados del subsidio»** (subsidio, inicio de la contingencia, promedio diario y la boleta que lo fijó). El usuario de nómina solo lo lee; el administrador lo cambia o lo borra, y la próxima boleta lo vuelve a calcular.',
       '**La ONP** no grava el subsidio (Informe SUNAT 049-2014-SUNAT/5D0000): noviembre con 1 000,00 de subsidio paga ONP 260,00 sobre la remuneración. Con la opción «Subsidio afecto a la ONP» en «Sí (nota del 0607 de la Tabla 22)», 390,00. El SPP lo grava siempre.',
     ]),
-    ...figura('c23_05_promedios_fijados', 'Ficha de la trabajadora SUBSIDIOS días previos (70000802), pestaña «Nómina PE»: dos promedios fijados de incapacidad temporal, desde el 12/10/2026 y desde el 01/11/2026, de 100,00 cada uno.'),
+    ...figura('c23_05_promedios_fijados', 'Ficha de la trabajadora SUBSIDIOS días previos (70000802), pestaña «Nómina PE», sección «Promedios fijados del subsidio»: dos contingencias de incapacidad temporal, con inicio el 12 oct. y el 1 nov., promedio diario 100 cada una, fijadas por sus boletas mensuales.'),
 
     h2('23.3 Derecho al subsidio'),
     p('El subsidio exige **3 meses de aportes consecutivos o 4 no consecutivos** en los 6 meses calendario anteriores al mes de la contingencia (Ley 26790, art. 10). La boleta lo comprueba con las boletas validadas. Si faltan, **calcula el subsidio y avisa** que EsSalud no lo reembolsará; con el control «Subsidio sin los aportes que dan derecho» en «Bloquear» no deja validar (capítulo 26). La entrada SUBI_001 o SUBM_001, con el importe, levanta el control.'),
@@ -71,7 +71,7 @@ module.exports = (h) => {
       ['70000806 · maternidad desde el 15/01/2027', 'Enero: RB 1 300,00 (30 − 17) · subsidio 1 700,00; febrero: subsidio 2 800,00', '22|17; febrero 22|28', '0121 1 300,00 · 0915 1 700,00; febrero 0915 2 800,00'],
       ['70000807 · descanso del 15/12/2026 al 25/01/2027', 'Diciembre: 17 días del empleador, RB 3 000,00; enero: RB 2 500,00 · subsidio 500,00', 'Diciembre 20|17; enero 20|20 y 21|5', 'Enero: 0121 2 500,00 · 0916 500,00'],
     ], [2700, 3200, 1700, 2038]),
-    ...figura('c23_02_maternidad_nov_calculo', 'Maternidad de noviembre (70000803): remuneración 0,00 y subsidio por maternidad 3 000,00, sin ONP ni EsSalud; neto 3 000,00.'),
+    ...figura('c23_02_maternidad_nov_calculo', 'Maternidad de noviembre (70000803): remuneración 0,00 y subsidio por maternidad 3 000,00 (promedio diario 100,00), sin ONP, EsSalud ni SENATI; neto 3 000,00.'),
     nota('Para 70000805, qué declarar en el PLAME sin derecho espera a la contadora (P-42): el caso solo compara la 0121 de su `.rem`. Las boletas del caso tienen todos sus promedios fijados en 100,00.', 'nota'),
     nota('En las boletas del caso, la línea de días del descanso médico se llama «Sick Time Off» con el código GLOBAL: es el nombre de la entrada de trabajo de Odoo, sin traducir (observación O-65). El cálculo y el `.snl` no se ven afectados.', 'nota'),
     nota('Caso SUBSIDIOS (344 celdas, 29 boletas): días por tipo de la Tabla 21, conceptos, `.snl` y `.rem` de noviembre de 2026 y de enero y febrero de 2027, promedio diario 100,00 y avisos de derecho.', 'caso'),

@@ -11,7 +11,7 @@ module.exports = (h) => {
   a(
     h1('16. Liquidación por cese'),
     p('Para cesar a un trabajador, ponga en el contrato la **fecha de fin** y el **motivo de baja** (T17); si es un despido sin causa justa, marque además **Despido arbitrario (se indemniza)**. La liquidación (estructura **Liquidación**, código LIQ) calcula las vacaciones truncas, la gratificación trunca y su bonificación, la CTS trunca, las vacaciones ganadas y no gozadas, la indemnización si corresponde, el incentivo por cese si se ingresa, y el ajuste final de la renta de 5.ª. Validada, imprime la hoja de liquidación, el certificado de trabajo y la constancia de cese para el retiro de la CTS (16.9).'),
-    ...figura('c16_03_contrato_despido', 'Contrato de la trabajadora modal del caso INDEMNIZACION (70000352): motivo de baja [03] DESPIDO O DESTITUCIÓN, «Despido arbitrario (se indemniza)» marcado y «Fin pactado del contrato modal» 31 ago.'),
+    ...figura('c16_03_contrato_despido', 'Contrato de la trabajadora modal del caso INDEMNIZACION (70000352), tipo [04] POR NECESIDADES DEL MERCADO: motivo de baja [03] DESPIDO O DESTITUCIÓN, «Despido arbitrario (se indemniza)» marcado, «Fin pactado del contrato modal» 31 ago. y «Incentivo por cese inafecto (art. 18 a de la LIR)» desmarcado.'),
     h3('El orden del cese'),
     pasos([
       'Valide primero las boletas del año del trabajador (la mensual del mes del cese incluida). La liquidación hace el ajuste final de la renta de 5.ª con las validadas: el control «Boletas del año antes que la liquidación del cese» (Avisar o Bloquear, capítulo 26) avisa si queda alguna en borrador.',
@@ -21,7 +21,7 @@ module.exports = (h) => {
     ]),
     h2('16.1 Truncas y sus aportes'),
     p('Las **vacaciones truncas** son remunerativas: pagan ONP o AFP y EsSalud (C-20) y entran en la renta de 5.ª. La gratificación trunca y su bonificación entran en la renta de 5.ª pero no pagan aportes; la CTS trunca y la indemnización no pagan ninguno de los dos.'),
-    ...figura('c16_01_carmen_liquidacion_calculo', 'Liquidación de Carmen (caso NOMINA), cese el 31/08/2026: vacaciones truncas 1 666,67 con AFP y EsSalud, gratificación trunca 833,33, bonificación 75,00, CTS trunca 972,22 y neto 3 331,89.'),
+    ...figura('c16_01_carmen_liquidacion_calculo', 'Liquidación de Carmen (caso NOMINA), cese el 31/08/2026: vacaciones truncas 1 666,67 con AFP (166,67, 25,83 y 22,83) y EsSalud 150,00, gratificación trunca 833,33, bonificación 75,00, CTS trunca 972,22, base de 5.ª 2 575,00 y neto 3 331,89; «Entregar hasta» 2 set.'),
     tabla(['Concepto', 'Cálculo', 'PLAME', 'Importe'], [
       ['Vacaciones truncas (VAC_TRUNCA_001)', '8/12 de 2 500', '0114', '1 666,67'],
       ['Gratificación trunca (GRATI_TRUNCA_001)', '2/6 (julio y agosto)', '0407', '833,33'],
@@ -108,7 +108,7 @@ module.exports = (h) => {
       ['Micro y pequeña empresa (TUO de la Ley MYPE, art. 56)', '10 (micro) o 20 (pequeña) remuneraciones diarias por año; tope 90 o 120 (capítulo 24)', '`IND_001` · 0501'],
     ], [3000, 4600, 2038]),
     p('La indemnización no paga aportes ni entra en la base de la renta de 5.ª, y se asienta en la 623. Sus avisos quedan en el historial al validar (lote 41).'),
-    ...figura('c16_02_indemnizacion_calculo', 'Caso INDEMNIZACION, 70000351, plazo indeterminado del 15/03/2022 al 30/04/2026: indemnización 18 575,00 sumada a las truncas; la base de 5.ª solo son las truncas (2 563,33); ONP 49,83 sobre las vacaciones truncas de 383,33; neto 22 588,50.'),
+    ...figura('c16_02_indemnizacion_calculo', 'Caso INDEMNIZACION, 70000351, plazo indeterminado del 15/03/2022 al 30/04/2026: indemnización 18 575,00 sumada a las truncas (total 22 638,33); la base de 5.ª solo son las truncas (2 563,33); ONP 49,83 sobre las vacaciones truncas de 383,33; neto 22 588,50.'),
     tabla(['Trabajador del caso', 'Situación', 'Indemnización'], [
       ['70000351', 'Plazo indeterminado: 4 años, 1 mes y 16 días', 'IND_001 **18 575,00**'],
       ['70000352', 'Modal resuelto el 30/04 con fin pactado el 31/08: 4 meses', 'IND_MOD_001 **18 000,00**'],
@@ -146,7 +146,7 @@ module.exports = (h) => {
       ['«Tiempo de servicios del contrato modal desnaturalizado»', '«Desde el inicio del primer contrato» o «Desde la desnaturalización (el día siguiente al fin pactado o al plazo máximo)»', 'Desde el primer contrato'],
       ['«Plazo máximo de los contratos modales»', '«El de cada modalidad y 5 años en conjunto», «Además, 5 años para cualquier modalidad» o «No controlar (como antes del lote 41)»', 'El de cada modalidad'],
     ], [3300, 4600, 1738]),
-    ...figura('c16_04_opciones_cese', 'Ficha de SOLSE Demo Servicios, pestaña «Nómina PE - Controles»: los grupos «Liquidación por cese (N-15)», «Indemnización por despido arbitrario», «Conteo de meses y días» y «Gratificaciones» con sus valores por defecto.'),
+    ...figura('c16_04_opciones_cese', 'Ficha de SOLSE Demo Servicios, pestaña «Nómina PE - Controles»: los grupos «Liquidación por cese (N-15)», «Indemnización por despido arbitrario», «Conteo de meses y días» y «Gratificaciones», todos con sus valores por defecto; resaltados, «Vacaciones ganadas y no gozadas al cese» en «Avisar…» y «Plazo máximo de los contratos modales» en «El de cada modalidad y 5 años en conjunto».'),
 
     h2('16.7 El incentivo por cese'),
     p('Es el monto que el empleador otorga al retiro del trabajador (mutuo disenso, renuncia incentivada; Tabla 22, 0906). Se ingresa en la liquidación con la entrada **INC_CESE_001** (lote 26a). No es remuneración: no paga EsSalud, ONP ni AFP.'),
@@ -180,7 +180,7 @@ module.exports = (h) => {
       ['«Constancia de cese para el retiro de la CTS (PE)»', 'Dirigida al banco de la cuenta con uso «CTS» (una por cuenta), con la fecha de ingreso y la de cese, sin el motivo del cese. No se emite sin cuenta CTS, con la cuenta sin banco o en un régimen sin CTS sin depósitos validados'],
     ], [3000, 6638]),
     p('La hoja guarda el detalle con que se calculó: si después cambia el sueldo, un hijo o una comisión, la hoja reimpresa sigue diciendo con qué se pagó. Si una entrada fijó el importe (VAC_TRUNCA_001, GRATI_TRUNCA_001 o CTS_TRUNCA_001), el bloque lo dice: «Importe fijado por la entrada de la liquidación (el cálculo con los datos de arriba da …)». Los campos «Labores …» y «Conducta …» están en la liquidación, debajo de la nota de crédito, y solo se ven en una liquidación con cese.'),
-    ...figura('c16_05_hoja_liquidacion', 'Hoja de liquidación de beneficios sociales del caso DOCUMENTOS_CESE, 70002402 (despido, ingreso el 01/03/2028, cese el 31/08/2030): vacaciones truncas 1 500,00, dos récords no gozados 6 000,00, indemnización vacacional 3 000,00, indemnización 11 250,00 y neto 22 865,00.'),
+    ...figura('c16_05_hoja_liquidacion', 'Hoja de liquidación de beneficios sociales del caso DOCUMENTOS_CESE, 70002402 (despido, ingreso el 01/03/2028, cese el 31/08/2030, 2 años, 6 meses y 0 días): vacaciones truncas 1 500,00 (6 meses y 0 días, de fecha a fecha), gratificación trunca 1 000,00 y 90,00, CTS trunca 1 000,00, dos récords no gozados 6 000,00 (uno vencido el 28/02/2030), indemnización vacacional 3 000,00, indemnización (art. 38) 11 250,00; total de ingresos 23 840,00, ONP 975,00 y neto 22 865,00.'),
     p('**«Enviar por correo»** de una liquidación con cese manda la boleta, la hoja, el certificado y, si hay cuenta CTS, la constancia, con la plantilla «Nómina PE: liquidación de beneficios sociales y documentos del cese». La fecha límite de entrega es **48 horas desde el cese** (capítulo 28). El certificado y la constancia los firma el representante del empleador (Empleados › «Es empleador»).'),
 
     h2('16.10 La renta de 5.ª del cese'),
