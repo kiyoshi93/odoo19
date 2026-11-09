@@ -41,7 +41,7 @@ module.exports = (h) => {
     ]),
     nota('La boleta lo marca en el campo «Periodo más corto que el mes». Ninguna boleta validada cambia: las mensuales de una parte del mes validadas antes del lote pagaron el mes entero; `impacto_lote25a.py` las cuenta para revisarlas. Que dos boletas del mismo mes no ajusten al mes comercial es «criterio según la norma, pendiente de confirmación (P-41)».', 'importante'),
     h2('21.4 Boletas sin versión'),
-    p('Una boleta creada por importación o por código sin versión en la cabecera toma al calcular la versión vigente al final del periodo y calcula una sola vez (O-31). En el caso AUMENTO, ninguna boleta queda sin versión (diagnóstico del lote 71: 0).'),
+    p('Una boleta creada por importación o por código sin versión en la cabecera toma al calcular la versión vigente al final del periodo y calcula una sola vez (O-31). En contable19 ninguna boleta queda sin versión: 0 de 409 (medido el 09/11/2026, todas las compañías; en la versión 2, 0 de 137).'),
     pieCapitulo(['base', 'ce', 'ce_demo'], 'C-28, C-30, C-33, O-31, C-47 (24), O-75 (25a), P-41 (25b)'),
   );
 
