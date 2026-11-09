@@ -1,0 +1,80 @@
+1
+00:00:00,500 --> 00:00:05,063
+La nómina peruana para Odoo diecinueve Community tiene una versión nueva, con
+
+2
+00:00:05,063 --> 00:00:08,441
+sesenta lotes de mejoras, todos probados contra la norma.
+
+3
+00:00:09,900 --> 00:00:14,363
+El practicante, con su subvención, la media subvención y el descanso.
+
+4
+00:00:14,363 --> 00:00:16,369
+La pequeña empresa y el REMYPE.
+
+5
+00:00:16,369 --> 00:00:19,409
+El SENATI con su umbral de veinte trabajadores.
+
+6
+00:00:19,409 --> 00:00:23,032
+El no domiciliado y el convenio con la Comunidad Andina.
+
+7
+00:00:23,032 --> 00:00:26,460
+Y las provisiones de gratificación, CTS y vacaciones.
+
+8
+00:00:27,860 --> 00:00:30,459
+La practicante cumple seis meses en junio:
+
+9
+00:00:30,459 --> 00:00:35,285
+la boleta le paga la subvención y la media subvención, sin aportes ni renta de
+
+10
+00:00:35,285 --> 00:00:35,718
+quinta.
+
+11
+00:00:37,180 --> 00:00:41,900
+En la pequeña empresa, las truncas y la indemnización siguen su propio régimen.
+
+12
+00:00:43,300 --> 00:00:48,096
+El no domiciliado de un país andino retiene con la escala, como un domiciliado;
+
+13
+00:00:48,096 --> 00:00:50,100
+los demás, el treinta por ciento.
+
+14
+00:00:51,500 --> 00:00:56,113
+Las provisiones se registran cada mes, en un asiento o en la propia boleta, y se
+
+15
+00:00:56,113 --> 00:00:57,842
+aplican al pagar el beneficio.
+
+16
+00:00:59,300 --> 00:01:03,777
+Y los documentos del cese, la hoja de liquidación de utilidades y el PLAME con sus
+
+17
+00:01:03,777 --> 00:01:06,125
+archivos nuevos salen listos para entregar.
+
+18
+00:01:07,580 --> 00:01:12,180
+Treinta casos de laboratorio, cinco mil cuatrocientas veintinueve celdas comparadas
+
+19
+00:01:12,180 --> 00:01:14,009
+contra la norma, todas conformes.
+
+20
+00:01:14,009 --> 00:01:17,445
+Todo está en el manual versión tres y en esta serie de videos.
+
