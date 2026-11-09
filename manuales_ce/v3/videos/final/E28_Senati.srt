@@ -1,0 +1,72 @@
+1
+00:00:05,580 --> 00:00:10,053
+La contribución al SENATI es el cero coma setenta y cinco por ciento de las
+
+2
+00:00:10,053 --> 00:00:13,215
+remuneraciones, a cargo de las empresas industriales.
+
+3
+00:00:13,215 --> 00:00:15,600
+Veamos cómo se configura y cuándo avisa.
+
+4
+00:00:17,060 --> 00:00:19,592
+En la compañía se marca Afecta a SENATI.
+
+5
+00:00:19,592 --> 00:00:24,782
+Con la opción Con veinte trabajadores o menos, se elige si la boleta avisa o si la
+
+6
+00:00:24,782 --> 00:00:26,997
+empresa aporta de forma voluntaria.
+
+7
+00:00:28,460 --> 00:00:33,132
+Al personal que no está en la actividad industrial, como el vendedor de la tienda de
+
+8
+00:00:33,132 --> 00:00:36,858
+la fábrica, se le marca Fuera de la base del SENATI en el contrato.
+
+9
+00:00:36,858 --> 00:00:38,804
+Su boleta no lleva la contribución.
+
+10
+00:00:40,260 --> 00:00:48,013
+Una administrativa con S/ 2 500 y media hora de tardanza tiene una base de S/ 2
+
+11
+00:00:48,013 --> 00:00:48,699
+494,79.
+
+12
+00:00:48,699 --> 00:00:53,115
+El SENATI es S/ 18,71, a cargo del empleador:
+
+13
+00:00:53,115 --> 00:00:54,882
+su neto no cambia.
+
+14
+00:00:56,380 --> 00:01:01,112
+La contribución obliga solo a la empresa que tuvo más de veinte trabajadores en
+
+15
+00:01:01,112 --> 00:01:02,610
+promedio el año anterior.
+
+16
+00:01:02,610 --> 00:01:04,047
+Esta compañía tuvo tres:
+
+17
+00:01:04,047 --> 00:01:08,240
+la boleta avisa que la contribución es voluntaria, y sigue calculando.
+
+18
+00:01:09,700 --> 00:01:12,100
+Está en el capítulo treinta y dos del manual.
+

@@ -106,6 +106,117 @@ const pasos = {
     await borradorConAvisos(p, c, 15, i3.name, '01/07/2026', '31/07/2026', 'c32_04_aviso_senati');
   },
 };
+
+// ---------------------------------------------------------------- utilidades del v3 (2)
+async function recortarForm(nombre, ancho = 1040) {
+  // la boleta sin el historial de la derecha y sin el espacio vacío de abajo, como las del v2
+  require('child_process').execSync(`python3 -c "
+from PIL import Image
+r='${path.join(process.env.CAPTURAS_DIR, nombre)}.png'; im=Image.open(r); im.crop((0,0,min(${ancho},im.width),im.height)).save(r)"`);
+  require('child_process').execSync(`python3 ${path.join(__dirname, 'recortar.py')} ${path.join(process.env.CAPTURAS_DIR, nombre)}.png`);
+}
+async function boletaCalculo(p, c, compania, id, nombre, { ancho = 1040, resaltar = [] } = {}) {
+  await cia(c, compania); await u.irA(p, `/odoo/action-${ACC.boletas}/${id}`);
+  await tab(p, 'Cálculo de la nómina');
+  hechos[nombre] = limpio(await p.locator('.o_notebook .tab-pane.active').innerText().catch(() => '')).slice(0, 3000);
+  const marcas = [];
+  for (const cod of resaltar) marcas.push(p.locator('.o_notebook .tab-pane.active .o_data_row').filter({ hasText: cod }).first());
+  await alta(p, () => cap(p, nombre, { resaltar: marcas }));
+  await recortarForm(nombre, ancho);
+}
+async function registro(p, c, compania, accion, id, nombre, { resaltar = [], altura = 0 } = {}) {
+  await cia(c, compania); await u.irA(p, `/odoo/action-${accion}/${id}`);
+  hechos[nombre] = limpio(await p.locator('.o_form_view').first().innerText().catch(() => '')).slice(0, 3000);
+  if (altura) { await p.setViewportSize({ width: 1600, height: altura }); await p.waitForTimeout(600); }
+  await cap(p, nombre, { resaltar });
+  if (altura) await p.setViewportSize({ width: 1600, height: Number(process.env.ALTO || 900) });
+}
+async function abrirBoton(p, nombreBoton) {
+  await p.locator(`button[name="${nombreBoton}"]`).first().click(); await p.waitForTimeout(2500); await u.esperarCarga(p, 800).catch(() => {});
+}
+async function cerrarModal(p) {
+  const b = p.locator('.modal:visible .modal-footer button, .modal:visible footer button').filter({ hasText: /^\s*(Cancelar|Descartar|Cerrar)\s*$/ });
+  if (await b.count()) await b.last().click(); else await p.keyboard.press('Escape');
+  await p.waitForTimeout(800);
+}
+async function filaLista(p, texto) { return p.locator('.o_data_row').filter({ hasText: texto }).first(); }
+const ACCX = (x) => `solse_pe_payroll_ce.${x}`;
+
+Object.assign(pasos, {
+  // ---------------------------------------------------------------- 16 · cese (g5)
+  async c16(p, c) {
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000351', '2026-04-01', 'Liquidaci'), 'c16_02_indemnizacion_calculo', { resaltar: ['IND_001', 'BAR5_001'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000301', '2026-11-01', 'Liquidaci').catch(() => 0) || 0, 'c16_01_carmen_liquidacion_calculo').catch((e) => console.log('  c16_01:', e.message));
+    await cia(c, 4); await u.irA(p, '/odoo/action-base.action_res_company_form/4'); await u.pestana(p, 'Nómina PE - Controles');
+    const sep = p.locator('.o_horizontal_separator').filter({ hasText: 'Liquidación por cese' }).first();
+    await sep.scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -60));
+    await alta(p, async () => { await sep.scrollIntoViewIfNeeded(); await cap(p, 'c16_04_opciones_cese', { resaltar: ['.o_field_widget[name="pe_vacaciones_no_gozadas_cese"]', '.o_field_widget[name="pe_plazo_maximo_modal"]'] }); });
+    require('child_process').execSync(`python3 ${path.join(__dirname, 'recortar.py')} ${path.join(process.env.CAPTURAS_DIR, 'c16_04_opciones_cese')}.png`);
+    await informe(p, c, 4, 'solse_pe_payroll_ce.reporte_liquidacion_beneficios', await idBoleta(p, 4, '70002402', '2030-08-01', 'Liquidaci'), 'c16_05_hoja_liquidacion');
+  },
+  // ---------------------------------------------------------------- 23 · subsidios (g5)
+  async c23(p, c) {
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000801', '2026-11-01', 'Mensual'), 'c23_01_descanso_nov_calculo', { resaltar: ['SUB_INC_001'] });
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70000805', '2026-11-01', 'Mensual'), 'c23_03_sin_derecho_aviso', { ancho: 1600, resaltar: ['SUB_INC_001'] });
+    const e1 = await empleado(p, 4, '70000801');
+    const aus = await rpc(p, 'hr.leave', 'search_read', [[['employee_id', '=', e1.id], ['request_date_from', '<=', '2026-11-30'], ['request_date_to', '>=', '2026-11-01']]], { fields: ['id'], ...ctx(4) });
+    if (aus.length) { await cia(c, 4); await u.irA(p, `/odoo/action-hr_holidays.hr_leave_action_action_approve_department/${aus[0].id}`);
+      await cap(p, 'c23_04_descanso_medico', { resaltar: ['.o_field_widget[name="pe_accidente"]'] }); }
+    const e2 = await empleado(p, 4, '70000802');
+    await cia(c, 4); await u.irA(p, `/odoo/employees/${e2.id}`); await u.pestana(p, 'Nómina PE');
+    const s = p.locator('.o_horizontal_separator, .o_form_label, h3').filter({ hasText: 'Promedios fijados' }).first();
+    if (await s.count()) { await s.scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -80)); await p.waitForTimeout(500); }
+    await cap(p, 'c23_05_promedios_fijados', { resaltar: (await s.count()) ? [s] : [] });
+  },
+  // ---------------------------------------------------------------- 7 · contabilidad y provisiones (g2)
+  async c07(p, c) {
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACCX('mapeo_contable_action')}`);
+    await cap(p, 'c07_01_mapeo_pcge');
+    await grupoCompania(p, c, 4, 'Nómina PE - Controles', 'Provisiones (N-13)', 'c07_05_opciones_provisiones');
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACCX('provision_wizard_action')}`);
+    const m = p.locator('.modal').last();
+    const wm = m.locator('.o_field_widget[name="mes"]').first();
+    if (await wm.count()) { if (await wm.locator('select').count()) await wm.locator('select').selectOption({ label: 'Enero' }); else { await wm.locator('input, .o_select_menu_toggler').first().click(); await p.locator('.o_select_menu_item, .dropdown-item').filter({ hasText: /^\s*Enero\s*$/ }).first().click(); } }
+    const wa = m.locator('.o_field_widget[name="anio"] input').first(); if (await wa.count()) { await wa.click(); await wa.fill('2027'); await wa.press('Tab'); }
+    await p.waitForTimeout(800); hechos.c07_06 = limpio(await m.innerText().catch(() => ''));
+    await cap(p, 'c07_06_asistente_provisiones'); await cerrarModal(p);
+    const asientoEnero = await rpc(p, 'account.move', 'search_read', [[['company_id', '=', 4], ['ref', 'ilike', 'Provisiones de nómina 01/2027']]], { fields: ['id'], ...ctx(4) });
+    const idEnero = asientoEnero.length ? asientoEnero[0].id : 11242;
+    await registro(p, c, 4, 'account.action_move_journal_line', idEnero, 'c07_07_asiento_provisiones_enero', { altura: 1500 });
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACCX('provision_action')}`);
+    await p.locator('.o_searchview_input').fill('70002101'); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1200);
+    const gr = p.locator('.o_group_header').filter({ hasText: /CTS/ }).first(); if (await gr.count()) { await gr.click(); await u.esperarCarga(p, 1000); }
+    await cap(p, 'c07_08_registro_provisiones');
+    await boletaCalculo(p, c, 4, await idBoleta(p, 4, '70002201', '2028-01-01', 'Mensual'), 'c07_09_boleta_lineas_provision', { resaltar: ['PRO_GRATI_001', 'PRO_CTS_001', 'PRO_VAC_001'] });
+    const grat = await idBoleta(p, 4, '70002301', '2029-07-01', 'Gratific');
+    const mv = await rpc(p, 'hr.payslip', 'read', [[grat]], { fields: ['move_id'], ...ctx(4) });
+    await registro(p, c, 4, 'account.action_move_journal_line', mv[0].move_id[0], 'c07_10_asiento_gratificacion_aplicacion', { altura: 1300 });
+  },
+  // ---------------------------------------------------------------- 28 · pago y entrega (g2)
+  async c28(p, c) {
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACC.lotes}/1`);
+    await abrirBoton(p, 'action_pe_registrar_pago');
+    hechos.c28_02 = limpio(await p.locator('.modal').last().innerText().catch(() => '')).slice(0, 2000);
+    await cap(p, 'c28_02_registrar_pago', { resaltar: ['.modal .o_field_widget[name="por_trabajador"]'] });
+    await cerrarModal(p);
+    await cia(c, 1); await u.irA(p, `/odoo/action-${ACCX('action_afpnet_pago_wizard')}`);
+    const m = p.locator('.modal').last(); const wm = m.locator('.o_field_widget[name="mes"]').first();
+    if (await wm.count()) { if (await wm.locator('select').count()) await wm.locator('select').selectOption({ label: 'Noviembre' }); else { await wm.locator('input, .o_select_menu_toggler').first().click(); await p.locator('.o_select_menu_item, .dropdown-item').filter({ hasText: /^\s*Noviembre\s*$/ }).first().click(); } }
+    const wa = m.locator('.o_field_widget[name="anio"] input').first(); if (await wa.count()) { await wa.click(); await wa.fill('2026'); await wa.press('Tab'); }
+    await p.waitForTimeout(800); hechos.c28_06 = limpio(await m.innerText().catch(() => ''));
+    await cap(p, 'c28_06_afpnet_pago'); await cerrarModal(p);
+    await cia(c, 4); await u.irA(p, `/odoo/action-${ACC.boletas}/${await idBoleta(p, 4, '70002401', '2030-08-01', 'Liquidaci')}`);
+    const imp = p.locator('.o_cp_action_menus button, button:has(.fa-print), .o_control_panel button').filter({ hasText: /Imprimir/ }).first();
+    if (await imp.count()) await imp.click(); else await p.locator('.o_cp_action_menus .dropdown-toggle, .o_control_panel .fa-cog').first().click();
+    await p.waitForTimeout(1000);
+    const imp2 = p.locator('.dropdown-menu:visible .dropdown-item, .o-dropdown--menu .dropdown-item').filter({ hasText: /Imprimir/ }).first();
+    if (await imp2.count()) { await imp2.hover(); await p.waitForTimeout(800); }
+    hechos.c28_07 = (await p.locator('.dropdown-menu:visible, .o-dropdown--menu').allInnerTexts()).map(limpio);
+    await cap(p, 'c28_07_documentos_cese_imprimir'); await p.keyboard.press('Escape');
+    await grupoCompania(p, c, 4, 'Nómina PE - Controles', 'Boleta por correo', 'c28_08_opcion_boleta_correo');
+  },
+});
+
 module.exports = { pasos, rpc, empleado, idBoleta, idVersion, borradorConAvisos, grupoCompania, asistentePlame, hechos };
 if (require.main === module) {
   (async () => {

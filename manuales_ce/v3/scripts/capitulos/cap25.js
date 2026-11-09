@@ -1,5 +1,6 @@
 // Manual v3 (origen: v2), bloque 3: capítulos 21 a 29 (lo nuevo de la versión 2). Medido en contable19 el 2026-10-22:
-// casos del laboratorio y escenarios propios en SOLSE Demo (trabajadores 70009xxx, borrados después).
+// casos del laboratorio y escenarios propios en SOLSE Demo (trabajadores 70009xxx, borrados después). Lo que la
+// rectificativa hace desde los lotes 15 a 54 sale del código de la versión 19.0.1.39.202 y de las notas de cada lote.
 module.exports = (h) => {
   const { p, h1, h2, h3, pasos, vinetas, nota, figura, tabla, pieCapitulo } = h;
   const c = [];
@@ -24,8 +25,25 @@ module.exports = (h) => {
       ['PLAME `.jor`', '`01|70009104|168|0|0|0|` (una vez)'],
       ['Planilla de sueldos', 'Remuneración 2 700,00; ONP 351,00; neto 2 349,00'],
     ], [3200, 6438]),
-    nota('Los controles de la compañía (capítulo 26) no bloquean una rectificativa. Rectificar una boleta del ejercicio cambia los acumulados de la renta de 5.ª: revise la 5.ª de los meses siguientes.', 'importante'),
-    pieCapitulo(['base', 'ce'], 'C-27'),
+    nota('Los controles de la compañía (capítulo 26) no bloquean una rectificativa, y la banda de avisos no se muestra en ella: copia una boleta ya validada. Rectificar una boleta del ejercicio cambia los acumulados de la renta de 5.ª: revise la 5.ª de los meses siguientes.', 'importante'),
+
+    h2('25.1 Qué copia y qué revierte la rectificativa'),
+    p('La rectificativa no se recalcula: copia las líneas de la original con su signo contrario en los reportes. Con los lotes de la versión 3, además:'),
+    tabla(['Qué', 'Cómo lo trata la rectificativa', 'Lote'], [
+      ['El pago', 'Su asiento se concilia con el de la original, cuenta por cuenta: la original deja de tener saldo y no se paga. Si ya estaba pagada, el saldo queda como cuenta por cobrar al trabajador y la original pierde la marca de pagada si el pago ya no la salda', 'Capítulo 28'],
+      ['El régimen pensionario', 'El de la original («Régimen pensionario del cálculo»), aunque el trabajador se haya cambiado de AFP o pasado a la ONP: AFPnet resta en la AFP correcta (O-159)', '40'],
+      ['Los aportes voluntarios al SPP', 'AFPnet resta también AFPV_001, AFPVS_001 y AFPVE_001', '15'],
+      ['Las provisiones en la boleta', 'Revierte lo que la original registró en «Provisiones de beneficios»; la rectificativa impresa lo dice: «Provisiones del empleador que esta rectificativa revierte». La nota de una adicional validada antes de la mensual también registra la diferencia del mes', '20b y 37'],
+      ['La prima de Vida Ley', 'Una nota de crédito hecha a mano también revierte la prima (O-138)', '45'],
+      ['Las suspensiones del `.snl` y el dominical', 'Usa las que guardó la boleta que rectifica; la boleta nueva guarda las suyas al validarse (O-111, O-167)', '43 y 54'],
+    ], [2400, 6038, 1200]),
+    h2('25.2 Cuándo conviene rectificar'),
+    vinetas([
+      '**Una ausencia aprobada, cambiada o rechazada después de validar** (capítulo 22): la boleta validada paga con sus días y el `.snl` declara los guardados. Si el mes debe reflejar la ausencia, rectifique y haga la boleta nueva.',
+      '**Una boleta validada que contó un borrador que después se borró o se canceló** (capítulo 12): recibe una nota en su historial para revisar el EsSalud, el crédito EPS y la Vida Ley del mes; si no cuadran, rectifíquela.',
+      '**Un dato del trabajador que cambió el cálculo** (el sueldo, la entidad SCTR, la asignación familiar): las boletas validadas no se recalculan nunca solas, ni con la actualización de los módulos.',
+    ]),
+    pieCapitulo(['base', 'ce'], 'C-27, N-09 (15), N-13 (20b), P-104 (37), O-159 (40), O-111 (43), O-137 y O-138 (45), O-167 (54)'),
   );
 
 

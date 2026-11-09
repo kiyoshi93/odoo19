@@ -1,0 +1,10 @@
+# Informe g2_contabilidad (cap. 7 y 28) · resumen del coordinador
+Capturas pedidas: 11 (capturas_pedidas/g2_contabilidad.md). Compañía 4 hoy en «Asiento mensual de provisiones».
+Hallazgos (hallazgos/g2_contabilidad.md): H1 alta Registrar pago con PRO_*/APL_*; H2 media liquidación 9756 con Avisar descarga récord 2028; H3 baja texto «anularlo para recalcular»; H4 diferencias notas/base.
+Corregido: mapeo PCGE 79 filas; MOV_001 supeditada / MOVL_001 libre; letras «DOS MIL SEISCIENTOS ONCE Y 50/100 SOLES»; «Firma como empleador».
+Por medir (criterios del lote): 35a −750; 35b tabla; 46a 250/500/329,17; 50 3000+3000; 36 267,33 y 3 260,01; 37 adicional 100/9/58,33/50.
+Para cap. 33: no se provisionan subvenciones del practicante (P-99); gerente que no goza descanso (P-153); no se remiden grati/CTS; sin saldo deudor del adelanto en activo; varios ejercicios sin cerrar → saldo inicial al último día del anterior.
+## E04 (contable): mapeo 79 filas y «Asignar cuentas»; DESC_D y TARD debe 4111/haber 6211; PRALI_ENT 4699; SCTR 4031/4032/4699; IND_VAC 623; pendientes P-77, P-135, P-148, P-152.
+## E06 (asiento): asiento PLLA con trabajador en 41x; CONCEPTOS 70001602 30,00 a 6211; 70001601 vales 150 fuera del neto a 4699; SCTR 15,90 a 4031 y 27,60 a 4032; opcional PROVISIONES_BOLETA PRO_* y neto 2 583,07.
+## E20 (reemplazar): «Un asiento por trabajador» (8 352,00 vs 48 784,40/88 230,14); «AFPnet: registrar el pago» (debe 417, haber banco, fuera de plazo); D.Leg. 1310, remitente, reenvío, «Y 50/100 SOLES»; liquidación con documentos y «Entregar hasta» 02/09/2030; hoja de utilidades al ex trabajador hasta 30/04/2032.
+## Provisiones (nuevo, nota 4): Ajustes › Provisiones (N-13); asistente con saldo inicial; asiento enero 2027 17 337,50; registro de 70002101 (583,33; CTS mayo 1 750,01 vs 1 500 pagado); boleta mensual PRO_* 500/45/291,67/250/22,50; gratificación APL 3 000 + 270 (debe 4114/haber 6214); remedición 2 333,33 vs 1 833,33; indemnización vacacional 3 000 a 623/4115; ajuste 267,33; saldo inicial 13 465,82 a 5922 con 2026 cerrado. Pendientes P-71, P-98, P-110, P-111, P-152.

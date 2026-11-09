@@ -21,7 +21,7 @@ module.exports = (h) => {
       '**Generar archivos** produce el `.ps4` y el `.4ta`.',
     ]),
     ...figura('c30_02_rxh_revision', 'Revisión de julio de 2026 (caso PLAME-RXH): 8 prestadores, 9 comprobantes y total declarado S/ 15 022,60, con una nota de crédito y un no domiciliado con pasaporte.'),
-    p('En la ficha de la compañía, pestaña **«Nómina PE - 4ta Categoría»**, grupo «Retención para el PLAME (.ps4)»: **Retención 4ta para PLAME** («Automático (comprobante primero, cálculo después)», por defecto; «Solo del comprobante» o «Calcular 8% sobre el bruto (con umbral)») y **Umbral de retención 4ta (S/)**, 1 500,00.'),
+    p('En la ficha de la compañía, pestaña **«Nómina PE - 4ta Categoría»**, grupo «Retención para el PLAME (.ps4)»: **Retención 4ta para PLAME** («Automático (comprobante primero, cálculo después)», por defecto; «Solo del comprobante (impuesto de retención)» o «Calcular 8% sobre el bruto (con umbral)») y **Umbral de retención 4ta (S/)**, 1 500,00.'),
     ...figura('c30_03_ajustes_4ta', 'Ajustes de 4.ª categoría de la compañía: retención para el PLAME y umbral de S/ 1 500.'),
     nota('Caso PLAME-RXH (202 celdas, corrido el 08/11/2026): los 8 prestadores del `.ps4` (7 con RUC y un pasaporte no domiciliado con convenio 2) y los 9 comprobantes del `.4ta`, con CRLF y en ASCII. En el caso PLAME, el mismo `.ps4` (8 líneas) y `.4ta` (9 líneas) van dentro del ZIP de julio de 2026 de la planilla.', 'caso'),
     nota('El prestador por recibos por honorarios no es un practicante: la subvención de una modalidad formativa no es renta de 4.ª y va en el «Personal en formación» del PLAME (capítulos 27 y 31).', 'nota'),

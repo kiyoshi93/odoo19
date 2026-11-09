@@ -21,7 +21,7 @@ module.exports = (h) => {
     ], [700, 2500, 3638, 1600, 1200]),
     ...figura('c02_01_aplicaciones_versiones', 'Aplicaciones filtradas por «Nómina Peruana», «Payroll» y «PLAME», solo las instaladas: núcleo 19.0.1.39.202, base 19.0.1.21.14, detalle de 5.ª 19.0.1.0.4 y datos de prueba 19.0.2.46.0.'),
     nota('Las variantes Community y Enterprise **no se pueden mezclar**: `solse_pe_payroll_base` bloquea la instalación si encuentra la nómina Enterprise de SOLSE (`solse_pe_payroll`), porque ambas siembran los mismos parámetros. En Aplicaciones aparecen las dos; instale solo las «(Community)». También el detalle de 5.ª tiene dos: instale «Nómina Peruana - Detalle de Renta de 5ta (Community)».', 'importante'),
-    nota('Con el detalle de 5.ª instalado, cada boleta guarda su detalle al calcularse y al validarse. Las validadas **antes** de instalarlo quedan «5ta sin calcular»: márquelas en **Nómina PE › Detalle de Renta de 5ta** y use **Actualizar detalle**. En contable19, al instalarlo (05/11/2026), las 113 validadas de la demo que estaban sin calcular quedaron, con las demás, en 158 «Coincide» y 43 «No aplica», ninguna «Difiere».', 'implementador'),
+    nota('Con el detalle de 5.ª instalado, cada boleta guarda su detalle al calcularse y al validarse. Las validadas **antes** de instalarlo quedan «5ta sin calcular»: búsquelas en la lista de boletas con el filtro «5ta sin calcular», márquelas y use la acción **Actualizar detalle de 5ta** (en una sola boleta, el botón **Actualizar detalle** de su pestaña «Renta de 5ta»). En contable19, al instalarlo (05/11/2026), las 113 validadas de la demo que estaban sin calcular quedaron, con las demás, en 158 «Coincide» y 43 «No aplica», ninguna «Difiere».', 'implementador'),
 
     h2('2.1 Base nueva: sin pasos manuales'),
     p('La nómina se instala en una base nueva **sin ningún paso manual** (C-14, C-15):'),
@@ -87,7 +87,7 @@ module.exports = (h) => {
     nota('Una opción nueva nunca cambia lo ya validado: rige para lo que se calcule o se genere después. Por ejemplo, «Declarar aparte los feriados (0115) y la licencia con goce (0907)» viene apagada y, encendida, no cambia el total, los aportes ni la 5.ª, solo cómo se separa la básica (capítulo 18). Ninguna opción de los casos `EMPRESA_*` toca la compañía de servicios ni FM: cada caso escribe en su propia compañía.', 'nota'),
 
     h2('2.4 El laboratorio de casos'),
-    p('El laboratorio (`solse_pe_demo_libros` con `solse_pe_payroll_ce_demo`) vive en la aplicación **SOLSE Demo** y trabaja en compañías propias de prueba: los **25 casos de siempre** en **SOLSE Demo Servicios S.A.C.** y los **5 casos `EMPRESA_*`**, cada uno en su compañía (2.5). Ninguno escribe en una compañía real (Q-01).'),
+    p('El laboratorio (`solse_pe_demo_libros` con `solse_pe_payroll_ce_demo`) vive en la aplicación **SOLSE Demo** (el laboratorio, en **Configuración › Laboratorio**; los casos, en **Casos de demostración**) y trabaja en compañías propias de prueba: los **25 casos de siempre** en **SOLSE Demo Servicios S.A.C.** y los **5 casos `EMPRESA_*`**, cada uno en su compañía (2.5). Ninguno escribe en una compañía real (Q-01).'),
     ...figura('c02_02_laboratorio', 'Laboratorio SOLSE Perú después de «② Sincronizar casos»: 33 casos registrados y 30 conformes. Los 3 pendientes (LC, ANTICIPOS y DETRACCION) son de la facturación, no de la nómina.'),
     tabla(['Botón del laboratorio', 'Qué hace'], [
       ['① Construir laboratorio', 'Crea las compañías de prueba y su configuración (una vez por base).'],

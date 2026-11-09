@@ -46,7 +46,7 @@ module.exports = (h) => {
     h2('E.2 Los laboratorios por empresa (EMPRESA_*)'),
     p('Cada uno es un mes completo de una empresa realista en su propia compañía de laboratorio, sin RUC y con el plan contable peruano. Sus hojas: **Compañía** (la configuración y las opciones del perfil), **Conceptos** (las líneas de las boletas), **Avisos** (los avisos que debe dar cada boleta) y **Diagnóstico**. El docstring de cada seeder (`solse_pe_payroll_ce_demo/models/seeder_empresa_*.py`) trae todos los esperados con su norma.'),
     tabla(['Caso', 'Celdas', 'Compañía y trabajadores', 'Cifras que muestra', 'Capítulos'], [
-      ['EMPRESA_PEQUENA', '217', 'SOLSE Demo Pequeña Empresa S.A.C. · 6 trabajadores (70006101 a 70006106)', 'P1, 2 400: gratificación de julio 1 200,00, bonificación 108,00, CTS de mayo 650,00. P3, despido el 15/10/2026: vacaciones truncas 862,50, CTS trunca 446,88, indemnización 1 100,00 (60 × 20 × 11/12). P6, régimen general: CTS 1 166,67. Utilidades: 68 ÷ 12 = 5,67 → 6, reparte 5 000,00 y avisa. Avisos del REMYPE (P4) y de la recontratada (P5)', '20, 24'],
+      ['EMPRESA_PEQUENA', '217', 'SOLSE Demo Pequeña Empresa S.A.C. · 6 trabajadores (70006101 a 70006106); P5, la recontratada, tiene además su ficha anterior archivada', 'P1, 2 400: gratificación de julio 1 200,00, bonificación 108,00, CTS de mayo 650,00. P3, despido el 15/10/2026: vacaciones truncas 862,50, CTS trunca 446,88, indemnización 1 100,00 (60 × 20 × 11/12). P6, régimen general: CTS 1 166,67. Utilidades: 68 ÷ 12 = 5,67 → 6, reparte 5 000,00 y avisa. Avisos del REMYPE (P4) y de la recontratada (P5)', '20, 24'],
       ['EMPRESA_MICRO', '104', 'SOLSE Demo Microempresa E.I.R.L. · 4 trabajadores (70006201 a 70006204)', 'M1, 1 300: SIS 15,00 y gratificación sin importe. M3, despido el 30/09/2026: vacaciones truncas 625,00, indemnización 416,67 (50 × 10 × 10/12), neto 960,42. Sin utilidades, y dice por qué', '24'],
       ['EMPRESA_COMERCIO', '138', 'SOLSE Demo Comercio S.A.C. · 9 trabajadores (70006301 a 70006309)', 'Horas extras, comisionista, nocturnas, utilidades al 8 % (8 000,00), avisos de la RMV (K5 «rmv_nocturna», mínimo 1 660,50; K6 y K8 «rmv»), tiempo parcial (K8: CTS 0,00 y aviso; 225,00 con «Pagar») y el mes parcial en el divisor (K9: CTS 466,67, lote 70)', '15, 17, 20, 26'],
       ['EMPRESA_INDUSTRIA', '92', 'SOLSE Demo Industria S.A.C. · 4 trabajadores (70006501 a 70006504)', 'SENATI: I1 obrero semanal 2,63; I2 sindicalizado 15,00 y cuota sindical 20,00; I3 con tardanza 18,71 (0,75 % de 2 494,79); I4 «Fuera de la base» 0,00. Utilidades al 10 % (10 000,00)', '20, 32'],
@@ -61,7 +61,7 @@ module.exports = (h) => {
 
     h2('E.3 Cómo correr un caso'),
     pasos([
-      'Después de cada actualización: **SOLSE Demo › Laboratorio › ② Sincronizar casos** (33 casos registrados: los 30 de la nómina y 3 de la facturación).',
+      'Después de cada actualización: **SOLSE Demo › Configuración › Laboratorio › ② Sincronizar casos** (33 casos registrados: los 30 de la nómina y 3 de la facturación).',
       'En **Casos de demostración**, abra el caso y pulse **⑤ Limpiar**, **① Sembrar datos**, **② Generar** y **④ Comparar** (o «⑤ Limpiar» y después **Ejecutar todo**). El mismo día, NOMINA antes que PLAME.',
       'El caso queda «Comparado» con su porcentaje de coincidencia. En **Comparaciones** se descarga el Excel con las columnas «esperado» y «generado» de cada celda.',
       'Si un caso no llega al 100 %, la hoja **Diagnóstico** del Excel dice en qué etapa se cortó y las demás hojas, qué celdas difieren. El porcentaje vale solo si las cuatro fases terminaron sin error.',
@@ -69,7 +69,6 @@ module.exports = (h) => {
     vinetas([
       '**UTILIDADES y SUBSIDIOS comparten tres DNI** (70000801 a 70000803, O-72): corra cada caso completo, de a uno.',
       '**«Limpiar» y la tarea nocturna** «Generate Missing Work Entries» no corren a la vez (lote 70): si la tarea está corriendo, «Limpiar» no borra nada, lo dice y pide pulsar otra vez en unos minutos. «Limpiar» borra también las entradas de trabajo, los trabajadores que una limpieza anterior dejó archivados y los asientos del pago de la planilla y de AFPnet de las boletas del caso (capítulo 2.6).',
-      'La corrida completa de los 30 casos tardó unos 10 minutos el 08/11/2026 (de 22:33 a 22:40 los 25 de siempre y de 22:39 a 22:40 los cinco `EMPRESA_*`, después de sus compañías creadas).',
     ]),
     nota('El laboratorio solo escribe en sus compañías (Q-01). No lo corra en una base de producción: siembra trabajadores, boletas y asientos de prueba.', 'importante'),
     pieCapitulo(['ce_demo', 'asistencia_demo', 'plame_demo'], 'Q-01, Q-04, Q-05, O-71 (lote 16b), lotes 14 a 21b (casos nuevos), O-175 (lote 57), lotes 60 a 68 (EMPRESA_*), lote 70'),

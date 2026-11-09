@@ -132,17 +132,7 @@ module.exports = (h) => {
     ...figura('c27_03_afpnet_resultado', 'AFPnet de julio de 2026 (caso NOMINA): AFPNET_2026_07.xlsx con 6 trabajadores del SPP.'),
     nota('Caso NOMINA, julio de 2026: 6 afiliados al SPP, entre ellos la obrera semanal 46321478 con asegurable 1 680,00 (las cuatro semanas) y 45781236 con 3 613,00.', 'caso'),
     h3('27.3.1 Registrar el pago de AFPnet'),
-    p('Los aportes retenidos al trabajador del SPP quedan en la 417 y se pagan a cada AFP dentro de los primeros cinco días hábiles del mes siguiente (TUO de la Ley del SPP, art. 34). **Nómina › Nómina PE › AFPnet: registrar el pago** (también en **Facturación › Proveedores**, para quien registra los pagos sin tener nómina; lote 38):'),
-    pasos([
-      'Elija **Compañía**, **Mes** y **Año** del periodo. En **Solo estas AFP** puede limitarlo a una o varias; vacío, todas.',
-      'Elija el **Diario de pago** (el banco), la **Fecha de pago** y, si quiere, la **Referencia** (el número de la planilla AFPnet o de la operación).',
-      'Pulse **Registrar el pago**: un asiento por AFP, con debe a la 417 por lo retenido del periodo y haber al banco, conciliado con las boletas si la cuenta es conciliable.',
-    ]),
-    vinetas([
-      'La AFP es la del cálculo de la boleta: un traspaso posterior no la cambia.',
-      'Las boletas quedan con su «Pago de AFPnet»: una segunda vez no hay nada que pagar. Si el pago se anula o se revierte, se puede registrar otra vez.',
-      'Pagado después del quinto día hábil, el asiento lo dice: «Pagado fuera del plazo: … (TUO de la Ley del SPP, art. 34)».',
-    ]),
+    p('Lo retenido al trabajador del SPP queda en la 417 y se paga a cada AFP dentro de los primeros cinco días hábiles del mes siguiente. **Nómina › Nómina PE › AFPnet: registrar el pago** (también en **Facturación › Proveedores**) hace un asiento por AFP con la fecha del pago, debe a la 417 y haber al banco, con la AFP del cálculo de la boleta (lote 38). El paso a paso está en el capítulo 28.'),
     nota('Medido en el laboratorio (re-medición del lote 38): julio de 2026 pagado el 03/11/2026 dio cuatro asientos, Habitat 2 358,03, Integra 1 232,60, Prima 217,88 y Profuturo 587,70, cada uno con «Pagado fuera del plazo» (hasta el 07/08/2026) y la 417 conciliada. El segundo pago del mismo mes se rechazó. Esos asientos de prueba se borraron después.', 'caso'),
 
     h2('27.4 Pago masivo a bancos'),
