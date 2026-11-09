@@ -1,0 +1,83 @@
+== Indice
+Comparacion — TREGISTRO — Nómina — archivos de la carga masiva del T-Registro (altas, bajas, modificaciones y derechohabientes)
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Archivos, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Archivos | 61 | 61 | 244 | 0 | 0 | 0 | OK
+Diagnóstico | 9 | 9 | 18 | 0 | 0 | 0 | OK
+== Archivos
+Fila | Origen | envio | archivo | linea | esta
+altas|ide|01|70001501||15/03/1990|PEÑA|GÓMEZ|MARÍA JOSÉ|2|||987654321|maria.pena@correo.com.pe|01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1| | ESPERADO | altas | ide | 01|70001501||15/03/1990|PEÑA|GÓMEZ|MARÍA JOSÉ|2|||987654321|maria.pena@correo.com.pe|01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1| | SI
+altas|ide|01|70001502||20/07/1985|QUISPE|MAMANI|JUAN|1|||912345678|juan.quispe@correo.pe||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1| | ESPERADO | altas | ide | 01|70001502||20/07/1985|QUISPE|MAMANI|JUAN|1|||912345678|juan.quispe@correo.pe||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1| | SI
+altas|ide|04|001234567||10/05/1992|RAMÍREZ|TORRES|CARLOS EDUARDO|1|9850||923456789|carlos.ramirez@correo.com|02|HUALLAGA|456|301||||||||||140101|||||||||||||||1| | ESPERADO | altas | ide | 04|001234567||10/05/1992|RAMÍREZ|TORRES|CARLOS EDUARDO|1|9850||923456789|carlos.ramirez@correo.com|02|HUALLAGA|456|301||||||||||140101|||||||||||||||1| | SI
+altas|ide|07|AB1234567|862|20/01/1995|TORRES||ANA|2|9850||934567890|ana.torres@correo.com|03|LAS FLORES|78|||||||||||140137|||||||||||||||1| | ESPERADO | altas | ide | 07|AB1234567|862|20/01/1995|TORRES||ANA|2|9850||934567890|ana.torres@correo.com|03|LAS FLORES|78|||||||||||140137|||||||||||||||1| | SI
+altas|tra|01|70001501||01|15|121001|0|123456MPGEA0||01|0|0|0|0|1|4500.00|1|0|0|2|||| | ESPERADO | altas | tra | 01|70001501||01|15|121001|0|123456MPGEA0||01|0|0|0|0|1|4500.00|1|0|0|2|||| | SI
+altas|tra|01|70001502||01|07||0|||01|0|0|0|0|3|1500.00|1|0||1|||| | ESPERADO | altas | tra | 01|70001502||01|07||0|||01|0|0|0|0|3|1500.00|1|0||1|||| | SI
+altas|tra|04|001234567||01|13||0|||01|0|0|0|0|1|2800.00|1|0||1|||| | ESPERADO | altas | tra | 04|001234567||01|13||0|||01|0|0|0|0|1|2800.00|1|0||1|||| | SI
+altas|tra|07|AB1234567|862|01|11||0|654321ATARE5|2|01|0|0|0|0|1|3200.00|1|0||2|||| | ESPERADO | altas | tra | 07|AB1234567|862|01|11||0|654321ATARE5|2|01|0|0|0|0|1|3200.00|1|0||2|||| | SI
+altas|per|01|70001501||1|1|01/10/2026|||| | ESPERADO | altas | per | 01|70001501||1|1|01/10/2026|||| | SI
+altas|per|01|70001501||1|2|01/10/2026||21|| | ESPERADO | altas | per | 01|70001501||1|2|01/10/2026||21|| | SI
+altas|per|01|70001501||1|3|01/10/2026||01|2| | ESPERADO | altas | per | 01|70001501||1|3|01/10/2026||01|2| | SI
+altas|per|01|70001501||1|4|01/10/2026||21|| | ESPERADO | altas | per | 01|70001501||1|4|01/10/2026||21|| | SI
+altas|per|01|70001502||1|1|01/10/2026|||| | ESPERADO | altas | per | 01|70001502||1|1|01/10/2026|||| | SI
+altas|per|01|70001502||1|2|01/10/2026||20|| | ESPERADO | altas | per | 01|70001502||1|2|01/10/2026||20|| | SI
+altas|per|01|70001502||1|3|01/10/2026||00|| | ESPERADO | altas | per | 01|70001502||1|3|01/10/2026||00|| | SI
+altas|per|01|70001502||1|4|01/10/2026||02|| | ESPERADO | altas | per | 01|70001502||1|4|01/10/2026||02|| | SI
+altas|per|04|001234567||1|1|01/10/2026|||| | ESPERADO | altas | per | 04|001234567||1|1|01/10/2026|||| | SI
+altas|per|04|001234567||1|2|01/10/2026||21|| | ESPERADO | altas | per | 04|001234567||1|2|01/10/2026||21|| | SI
+altas|per|04|001234567||1|3|01/10/2026||00|| | ESPERADO | altas | per | 04|001234567||1|3|01/10/2026||00|| | SI
+altas|per|04|001234567||1|4|01/10/2026||02|| | ESPERADO | altas | per | 04|001234567||1|4|01/10/2026||02|| | SI
+altas|per|07|AB1234567|862|1|1|01/10/2026|||| | ESPERADO | altas | per | 07|AB1234567|862|1|1|01/10/2026|||| | SI
+altas|per|07|AB1234567|862|1|2|01/10/2026||21|| | ESPERADO | altas | per | 07|AB1234567|862|1|2|01/10/2026||21|| | SI
+altas|per|07|AB1234567|862|1|3|01/10/2026||00|| | ESPERADO | altas | per | 07|AB1234567|862|1|3|01/10/2026||00|| | SI
+altas|per|07|AB1234567|862|1|4|01/10/2026||24|| | ESPERADO | altas | per | 07|AB1234567|862|1|4|01/10/2026||24|| | SI
+altas|per|07|AB1234567|862|1|5|01/10/2026||1|| | ESPERADO | altas | per | 07|AB1234567|862|1|5|01/10/2026||1|| | SI
+altas|est|01|70001501||20603456786|0000| | ESPERADO | altas | est | 01|70001501||20603456786|0000| | SI
+altas|est|01|70001502||20603456786|0000| | ESPERADO | altas | est | 01|70001502||20603456786|0000| | SI
+altas|est|04|001234567||20603456786|0000| | ESPERADO | altas | est | 04|001234567||20603456786|0000| | SI
+altas|est|07|AB1234567|862|20603456786|0001| | ESPERADO | altas | est | 07|AB1234567|862|20603456786|0001| | SI
+altas|cta|01|70001501||002|19112345678012| | ESPERADO | altas | cta | 01|70001501||002|19112345678012| | SI
+altas|cta|07|AB1234567|862|003|8983001234567| | ESPERADO | altas | cta | 07|AB1234567|862|003|8983001234567| | SI
+altas|edu|01|70001501||13|1|160000001|342056|2012| | ESPERADO | altas | edu | 01|70001501||13|1|160000001|342056|2012| | SI
+altas|edu|04|001234567||13|0|||| | ESPERADO | altas | edu | 04|001234567||13|0|||| | SI
+altas|edu|07|AB1234567|862|11|1|241123041|526225|2016| | ESPERADO | altas | edu | 07|AB1234567|862|11|1|241123041|526225|2016| | SI
+bajas|per|01|70001505||1|1||15/10/2026|01|| | ESPERADO | bajas | per | 01|70001505||1|1||15/10/2026|01|| | SI
+modificación tipo_trabajador|per|01|70001508||1|2||15/10/2026||| | ESPERADO | modificación tipo_trabajador | per | 01|70001508||1|2||15/10/2026||| | SI
+modificación tipo_trabajador|per|01|70001508||1|2|16/10/2026||21|| | ESPERADO | modificación tipo_trabajador | per | 01|70001508||1|2|16/10/2026||21|| | SI
+modificación contrato|tra|01|70001509||||||||01||||||||||2|||| | ESPERADO | modificación contrato | tra | 01|70001509||||||||01||||||||||2|||| | SI
+modificación contrato|per|01|70001509||1|2|||21|| | ESPERADO | modificación contrato | per | 01|70001509||1|2|||21|| | SI
+modificación contrato|cta|01|70001509||002|19187654321098| | ESPERADO | modificación contrato | cta | 01|70001509||002|19187654321098| | SI
+modificación cuenta|per|01|70001509||1|2|||21|| | ESPERADO | modificación cuenta | per | 01|70001509||1|2|||21|| | SI
+modificación cuenta|cta|01|70001509||002|19187654321098| | ESPERADO | modificación cuenta | cta | 01|70001509||002|19187654321098| | SI
+modificación pension|per|01|70001510||1|2|||21|| | ESPERADO | modificación pension | per | 01|70001510||1|2|||21|| | SI
+modificación pension|per|01|70001510||1|4||15/10/2026||| | ESPERADO | modificación pension | per | 01|70001510||1|4||15/10/2026||| | SI
+modificación pension|per|01|70001510||1|4|16/10/2026||25|| | ESPERADO | modificación pension | per | 01|70001510||1|4|16/10/2026||25|| | SI
+modificación pension|tra|01|70001510||||||765432HCCZU8|||||||||||||||| | ESPERADO | modificación pension | tra | 01|70001510||||||765432HCCZU8|||||||||||||||| | SI
+modificación salud|per|01|70001510||1|2|||21|| | ESPERADO | modificación salud | per | 01|70001510||1|2|||21|| | SI
+modificación salud|per|01|70001510||1|3||15/10/2026||| | ESPERADO | modificación salud | per | 01|70001510||1|3||15/10/2026||| | SI
+modificación salud|per|01|70001510||1|3|16/10/2026||01|2| | ESPERADO | modificación salud | per | 01|70001510||1|3|16/10/2026||01|2| | SI
+modificación sctr|per|01|70001510||1|2|||21|| | ESPERADO | modificación sctr | per | 01|70001510||1|2|||21|| | SI
+modificación sctr|per|01|70001510||1|5|16/10/2026||1|| | ESPERADO | modificación sctr | per | 01|70001510||1|5|16/10/2026||1|| | SI
+modificación establecimiento|est|01|70001510||20603456786|0001| | ESPERADO | modificación establecimiento | est | 01|70001510||20603456786|0001| | SI
+modificación estudios|tra|01|70001510|||13||||||||||||||||||| | ESPERADO | modificación estudios | tra | 01|70001510|||13||||||||||||||||||| | SI
+modificación estudios|per|01|70001510||1|2|||21|| | ESPERADO | modificación estudios | per | 01|70001510||1|2|||21|| | SI
+modificación estudios|edu|01|70001510||13|1|160000001|342056|2011| | ESPERADO | modificación estudios | edu | 01|70001510||13|1|160000001|342056|2011| | SI
+modificación personales|ide|01|70001510||12/12/1989|||||||989012345|jose.huaman@correo.pe|02|JUNÍN|250||||||||01|EL ROSAL||140137|||||||||||||||1| | ESPERADO | modificación personales | ide | 01|70001510||12/12/1989|||||||989012345|jose.huaman@correo.pe|02|JUNÍN|250||||||||01|EL ROSAL||140137|||||||||||||||1| | SI
+derechohabientes alta|TXT|01|70001502|01|78001502||10/05/2018|QUISPE|ROJAS|MATEO|1|05|||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1||| | ESPERADO | derechohabientes alta | TXT | 01|70001502|01|78001502||10/05/2018|QUISPE|ROJAS|MATEO|1|05|||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1||| | SI
+derechohabientes alta|TXT|01|70001502|01|40001502||03/03/1988|ROJAS|CCAMA|ELENA|2|02|05||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1||| | ESPERADO | derechohabientes alta | TXT | 01|70001502|01|40001502||03/03/1988|ROJAS|CCAMA|ELENA|2|02|05||||||||B|5||||05|LOS JAZMINES||140137|||||||||||||||1||| | SI
+derechohabientes alta|TXT|04|001234567|07|CD7654321|862|15/09/2019|RAMÍREZ|LÓPEZ|SOFÍA|2|05|10|||02|HUALLAGA|456|301||||||||||140101|||||||||||||||1||| | ESPERADO | derechohabientes alta | TXT | 04|001234567|07|CD7654321|862|15/09/2019|RAMÍREZ|LÓPEZ|SOFÍA|2|05|10|||02|HUALLAGA|456|301||||||||||140101|||||||||||||||1||| | SI
+derechohabientes alta|TXT|01|70001501|01|78001501||20/08/2020|TORRES|PEÑA|LUCÍA|2|05||||01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1||| | ESPERADO | derechohabientes alta | TXT | 01|70001501|01|78001501||20/08/2020|TORRES|PEÑA|LUCÍA|2|05||||01|LOS ALAMOS|123||||||||01|SANTA ROSA||140101|||||||||||||||1||| | SI
+derechohabientes baja|TXT|01|70001510|01|40001510||04/04/1990|MENDOZA|SILVA|CARMEN|02|15/10/2026|04 | ESPERADO | derechohabientes baja | TXT | 01|70001510|01|40001510||04/04/1990|MENDOZA|SILVA|CARMEN|02|15/10/2026|04 | SI
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · líneas de los documentos del caso que no se esperaban | ESPERADO | 1 · líneas de los documentos del caso que no se esperaban | 0
+2 · renovación (70001506) en las altas o en las bajas | ESPERADO | 2 · renovación (70001506) en las altas o en las bajas | NO
+3 · sin celular (70001507): no se exporta y se dice por qué | ESPERADO | 3 · sin celular (70001507): no se exporta y se dice por qué | SI
+4 · la baja (70001505) en las altas | ESPERADO | 4 · la baja (70001505) en las altas | NO
+5 · el cambio de tipo de trabajador (70001508) del 16/10 se propone | ESPERADO | 5 · el cambio de tipo de trabajador (70001508) del 16/10 se propone | SI
+6 · el cambio de contrato (70001509) del 16/10 se propone | ESPERADO | 6 · el cambio de contrato (70001509) del 16/10 se propone | SI
+7 · hijo de 19 años sin incapacidad (71001502): no se exporta y se dice por qué | ESPERADO | 7 · hijo de 19 años sin incapacidad (71001502): no se exporta y se dice por qué | SI
+8 · la cónyuge dada de baja (40001510) en las altas de derechohabientes | ESPERADO | 8 · la cónyuge dada de baja (40001510) en las altas de derechohabientes | NO
+9 · nombres RD_<RUC>_<DDMMAAAA>_ALTA.TXT y _BAJA.TXT | ESPERADO | 9 · nombres RD_<RUC>_<DDMMAAAA>_ALTA.TXT y _BAJA.TXT | SI

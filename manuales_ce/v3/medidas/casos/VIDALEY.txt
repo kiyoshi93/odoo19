@@ -1,0 +1,40 @@
+== Indice
+Comparacion — VIDALEY — Nómina — prima del seguro Vida Ley (tasa, tope, importe fijo, póliza vencida y semanal)
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Conceptos, PLAME, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Conceptos | 10 | 10 | 30 | 0 | 0 | 0 | OK
+PLAME | 9 | 9 | 18 | 0 | 0 | 0 | OK
+Diagnóstico | 5 | 5 | 10 | 0 | 0 | 0 | OK
+== Conceptos
+Fila | Origen | dni | codigo | importe
+70000561|VIDA_001 | ESPERADO | 70000561 | VIDA_001 | 15.90
+70000561|NET | ESPERADO | 70000561 | NET | 2610.00
+70000562|VIDA_001 | ESPERADO | 70000562 | VIDA_001 | 66.77
+70000563|VIDA_001 | ESPERADO | 70000563 | VIDA_001 | 15.90
+70000564|VIDA_001 | ESPERADO | 70000564 | VIDA_001 | 25.00
+70000565|VIDA_001 | ESPERADO | 70000565 | VIDA_001 | (sin línea)
+70000566|VIDA_001 | ESPERADO | 70000566 | VIDA_001 | (sin línea)
+70000567|VIDA_001 | ESPERADO | 70000567 | VIDA_001 | 14.84
+70000568|VIDA_001 | ESPERADO | 70000568 | VIDA_001 | 66.77
+70000569|VIDA_001 | ESPERADO | 70000569 | VIDA_001 | 66.77
+== PLAME
+Fila | Origen | dni | lineas
+70000561 | ESPERADO | 70000561 | 01|70000561|0803|15.90|15.90|
+70000562 | ESPERADO | 70000562 | 01|70000562|0803|66.77|66.77|
+70000563 | ESPERADO | 70000563 | 01|70000563|0803|15.90|15.90|
+70000564 | ESPERADO | 70000564 | 01|70000564|0803|25.00|25.00|
+70000565 | ESPERADO | 70000565 | (ninguna)
+70000566 | ESPERADO | 70000566 | (ninguna)
+70000567 | ESPERADO | 70000567 | 01|70000567|0803|14.84|14.84|
+70000568 | ESPERADO | 70000568 | 01|70000568|0803|66.77|66.77|
+70000569 | ESPERADO | 70000569 | 01|70000569|0803|66.77|66.77|
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas del caso | ESPERADO | 1 · boletas del caso | 16
+2 · validadas | ESPERADO | 2 · validadas | 16
+3 · aviso de la póliza vencida (70000565) | ESPERADO | 3 · aviso de la póliza vencida (70000565) | SI
+4 · asiento de 70000561: debe 6274 y haber 4699 | ESPERADO | 4 · asiento de 70000561: debe 6274 y haber 4699 | 15.90 / 15.90
+5 · prima de la vacacional de 70000568 (7 500 × 0,53 %) | ESPERADO | 5 · prima de la vacacional de 70000568 (7 500 × 0,53 %) | 39.75

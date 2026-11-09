@@ -1,0 +1,940 @@
+{
+ "hr.employee": {
+  "structure_type_id": {
+   "s": "Tipo de estructura salarial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "struct_id": {
+   "s": "Estructura salarial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "academic_degree_id": {
+   "s": "Situación educativa",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "disability": {
+   "s": "Discapacidad",
+   "t": "boolean",
+   "h": "Trabajador con discapacidad acreditada (CONADIS).",
+   "sel": null
+  },
+  "pension_system_id": {
+   "s": "Sistema pensionario",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "is_cuspp": {
+   "s": "Requiere CUSPP",
+   "t": "boolean",
+   "h": "Indica si el régimen exige CUSPP (afiliados al Sistema Privado de Pensiones).",
+   "sel": null
+  },
+  "commission_type": {
+   "s": "Tipo de comisión AFP",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "flow",
+     "Comisión por flujo"
+    ],
+    [
+     "mixed",
+     "Comisión mixta"
+    ]
+   ]
+  },
+  "management_eps": {
+   "s": "Plan EPS",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "relative_ids": {
+   "s": "Derechohabientes",
+   "t": "one2many",
+   "h": "",
+   "sel": null
+  },
+  "life_insurance_id": {
+   "s": "Vida Ley",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "age": {
+   "s": "Edad",
+   "t": "integer",
+   "h": "",
+   "sel": null
+  },
+  "pe_boleta_electronica": {
+   "s": "Boleta por correo",
+   "t": "boolean",
+   "h": "El trabajador aceptó recibir por correo la boleta de pago y la liquidación de la CTS (D.S. 001-98-TR, art. 19: la entrega por medios electrónicos requiere acuerdo previo). Sin el acuerdo no se envían: se entregan impresas, bajo cargo.",
+   "sel": null
+  },
+  "pe_boleta_electronica_desde": {
+   "s": "Acuerdo firmado el",
+   "t": "date",
+   "h": "",
+   "sel": null
+  },
+  "pe_correo_boleta": {
+   "s": "Correo para la boleta",
+   "t": "char",
+   "h": "El correo que el trabajador indicó en el acuerdo (una sola dirección).",
+   "sel": null
+  },
+  "pe_tipo_documento": {
+   "s": "Tipo de documento (T3)",
+   "t": "selection",
+   "h": "Tabla 3 de la Planilla Electrónica. El número va en «N.° de identificación». También lo usa el PLAME. El 26 (CPP) no figura en el Manual del PVS v2.22: confirmarlo con el PVS.",
+   "sel": [
+    [
+     "01",
+     "01 · DNI"
+    ],
+    [
+     "04",
+     "04 · Carné de extranjería"
+    ],
+    [
+     "07",
+     "07 · Pasaporte"
+    ],
+    [
+     "09",
+     "09 · Carné de solicitud de refugio"
+    ],
+    [
+     "22",
+     "22 · Carné de identidad - Relaciones Exteriores"
+    ],
+    [
+     "23",
+     "23 · Permiso temporal de permanencia"
+    ],
+    [
+     "24",
+     "24 · Documento de identidad extranjero"
+    ],
+    [
+     "26",
+     "26 · Carné de permiso temporal de permanencia"
+    ]
+   ]
+  },
+  "pe_pais_emisor_id": {
+   "s": "País emisor del documento",
+   "t": "many2one",
+   "h": "Solo para pasaporte (07) y documento de identidad extranjero (24): Tabla 26.",
+   "sel": null
+  },
+  "pe_rentas_exoneradas": {
+   "s": "Rentas de 5.ª exoneradas",
+   "t": "boolean",
+   "h": "Inciso e) del art. 19 de la Ley del Impuesto a la Renta (T-Registro, E05 campo 18).",
+   "sel": null
+  },
+  "pe_sctr_salud": {
+   "s": "SCTR salud",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "1",
+     "EsSalud"
+    ],
+    [
+     "2",
+     "EPS"
+    ]
+   ]
+  },
+  "pe_sctr_pension": {
+   "s": "SCTR pensión (entidad)",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "1",
+     "ONP"
+    ],
+    [
+     "2",
+     "Compañía de seguros privada"
+    ]
+   ]
+  },
+  "pe_via_tipo": {
+   "s": "Tipo de vía",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "01",
+     "Avenida"
+    ],
+    [
+     "02",
+     "Jirón"
+    ],
+    [
+     "03",
+     "Calle"
+    ],
+    [
+     "04",
+     "Pasaje"
+    ],
+    [
+     "05",
+     "Alameda"
+    ],
+    [
+     "06",
+     "Malecón"
+    ],
+    [
+     "07",
+     "Óvalo"
+    ],
+    [
+     "08",
+     "Parque"
+    ],
+    [
+     "09",
+     "Plaza"
+    ],
+    [
+     "10",
+     "Carretera"
+    ],
+    [
+     "13",
+     "Trocha"
+    ],
+    [
+     "14",
+     "Camino rural"
+    ],
+    [
+     "15",
+     "Bajada"
+    ],
+    [
+     "16",
+     "Galería"
+    ],
+    [
+     "17",
+     "Prolongación"
+    ],
+    [
+     "18",
+     "Paseo"
+    ],
+    [
+     "19",
+     "Plazuela"
+    ],
+    [
+     "20",
+     "Portal"
+    ],
+    [
+     "21",
+     "Camino afirmado"
+    ],
+    [
+     "22",
+     "Trocha carrozable"
+    ],
+    [
+     "99",
+     "Otros"
+    ]
+   ]
+  },
+  "pe_via_nombre": {
+   "s": "Nombre de la vía",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_via_numero": {
+   "s": "Número",
+   "t": "char",
+   "h": "«SN» si no tiene número (entonces la referencia es obligatoria).",
+   "sel": null
+  },
+  "pe_departamento": {
+   "s": "Departamento (dpto.)",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_interior": {
+   "s": "Interior",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_manzana": {
+   "s": "Manzana",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_lote": {
+   "s": "Lote",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_kilometro": {
+   "s": "Kilómetro",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_block": {
+   "s": "Block",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_etapa": {
+   "s": "Etapa",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_zona_tipo": {
+   "s": "Tipo de zona",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "01",
+     "Urb. Urbanización"
+    ],
+    [
+     "02",
+     "P.J. Pueblo joven"
+    ],
+    [
+     "03",
+     "U.V. Unidad vecinal"
+    ],
+    [
+     "04",
+     "C.H. Conjunto habitacional"
+    ],
+    [
+     "05",
+     "A.H. Asentamiento humano"
+    ],
+    [
+     "06",
+     "Coo. Cooperativa"
+    ],
+    [
+     "07",
+     "Res. Residencial"
+    ],
+    [
+     "08",
+     "Z.I. Zona industrial"
+    ],
+    [
+     "09",
+     "Gru. Grupo"
+    ],
+    [
+     "10",
+     "Cas. Caserío"
+    ],
+    [
+     "11",
+     "Fnd. Fundo"
+    ],
+    [
+     "99",
+     "Otros"
+    ]
+   ]
+  },
+  "pe_zona_nombre": {
+   "s": "Nombre de la zona",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_referencia": {
+   "s": "Referencia",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_ubigeo_t28_id": {
+   "s": "Distrito (ubigeo RENIEC, T28)",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "pe_estudio_peru": {
+   "s": "Estudios superiores concluidos en el Perú",
+   "t": "boolean",
+   "h": "",
+   "sel": null
+  },
+  "pe_carrera_t34_id": {
+   "s": "Institución y carrera (T34)",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "pe_anio_egreso": {
+   "s": "Año de egreso",
+   "t": "integer",
+   "h": "",
+   "sel": null
+  },
+  "journal_id": {
+   "s": "Diario de planillas",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "special_situation_id": {
+   "s": "Situación especial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "unionized": {
+   "s": "Sindicalizado",
+   "t": "boolean",
+   "h": "",
+   "sel": null
+  },
+  "pe_despido_arbitrario": {
+   "s": "Despido arbitrario (se indemniza)",
+   "t": "boolean",
+   "h": "El cese es un despido sin causa justa (o un despido indirecto por hostilidad): la liquidación paga la indemnización del art. 38 (plazo indeterminado: 1,5 remuneraciones por año, tope 12; en la micro y pequeña empresa, 10 o 20 remuneraciones diarias por año, tope 90 o 120) o del art. 76 (contrato modal: 1,5 remuneraciones por mes que falta, tope 12) del TUO del D.Leg. 728, superado el periodo de pr",
+   "sel": null
+  },
+  "pe_fin_pactado": {
+   "s": "Fin pactado del contrato modal",
+   "t": "date",
+   "h": "Vencimiento pactado del contrato sujeto a modalidad (Tabla 12: 03 a 13). Si se resuelve antes por despido arbitrario, la indemnización cuenta los meses que faltan hasta esta fecha (art. 76). La fecha de fin del contrato es la del cese.",
+   "sel": null
+  },
+  "pe_tipo_trabajador": {
+   "s": "Tipo de trabajador (T8)",
+   "t": "selection",
+   "h": "Tabla 8 de la Planilla Electrónica (sector privado). La exige el alta en el T-Registro.",
+   "sel": [
+    [
+     "19",
+     "19 · Ejecutivo"
+    ],
+    [
+     "20",
+     "20 · Obrero"
+    ],
+    [
+     "21",
+     "21 · Empleado"
+    ],
+    [
+     "22",
+     "22 · Trabajador portuario - Ley 27866"
+    ],
+    [
+     "23",
+     "23 · Practicante SENATI - D.Ley 20151"
+    ],
+    [
+     "27",
+     "27 · Construcción civil"
+    ],
+    [
+     "28",
+     "28 · Piloto y copiloto de aviación comercial"
+    ],
+    [
+     "29",
+     "29 · Marítimo, fluvial o lacustre"
+    ],
+    [
+     "30",
+     "30 · Periodista"
+    ],
+    [
+     "31",
+     "31 · Trabajador de la industria de cuero"
+    ],
+    [
+     "32",
+     "32 · Minero de mina de socavón"
+    ],
+    [
+     "36",
+     "36 · Trabajador pesquero"
+    ],
+    [
+     "37",
+     "37 · Minero de tajo abierto"
+    ],
+    [
+     "38",
+     "38 · Minero de industria minera metalúrgica y/o siderúrgica"
+    ],
+    [
+     "39",
+     "39 · Trabajador pesquero - Ley 30003"
+    ],
+    [
+     "48",
+     "48 · Agroindustrial"
+    ],
+    [
+     "56",
+     "56 · Artista - Ley 28131"
+    ],
+    [
+     "64",
+     "64 · Agrario dependiente - Ley 27360"
+    ],
+    [
+     "65",
+     "65 · Trabajador actividad acuícola - Ley 27460"
+    ],
+    [
+     "66",
+     "66 · Pescador y procesador artesanal independiente"
+    ],
+    [
+     "71",
+     "71 · Conductor de microempresa REMYPE - D.Leg. 1086"
+    ],
+    [
+     "73",
+     "73 · Socio de cooperativa agraria - Ley 29972"
+    ],
+    [
+     "76",
+     "76 · Agrario Ley 31110"
+    ],
+    [
+     "98",
+     "98 · Persona que genera ingresos de cuarta - quinta categoría"
+    ]
+   ]
+  },
+  "pe_categoria_ocupacional": {
+   "s": "Categoría ocupacional (T24)",
+   "t": "selection",
+   "h": "Obligatoria salvo para los tipos de trabajador 19, 20, 21, 23, 66, 71 y 98.",
+   "sel": [
+    [
+     "01",
+     "01 · Ejecutivo"
+    ],
+    [
+     "02",
+     "02 · Obrero"
+    ],
+    [
+     "03",
+     "03 · Empleado"
+    ]
+   ]
+  }
+ },
+ "hr.version": {
+  "structure_type_id": {
+   "s": "Tipo de estructura salarial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "struct_id": {
+   "s": "Estructura salarial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "journal_id": {
+   "s": "Diario de planillas",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "special_situation_id": {
+   "s": "Situación especial",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "unionized": {
+   "s": "Sindicalizado",
+   "t": "boolean",
+   "h": "",
+   "sel": null
+  },
+  "pe_despido_arbitrario": {
+   "s": "Despido arbitrario (se indemniza)",
+   "t": "boolean",
+   "h": "El cese es un despido sin causa justa (o un despido indirecto por hostilidad): la liquidación paga la indemnización del art. 38 (plazo indeterminado: 1,5 remuneraciones por año, tope 12; en la micro y pequeña empresa, 10 o 20 remuneraciones diarias por año, tope 90 o 120) o del art. 76 (contrato modal: 1,5 remuneraciones por mes que falta, tope 12) del TUO del D.Leg. 728, superado el periodo de pr",
+   "sel": null
+  },
+  "pe_fin_pactado": {
+   "s": "Fin pactado del contrato modal",
+   "t": "date",
+   "h": "Vencimiento pactado del contrato sujeto a modalidad (Tabla 12: 03 a 13). Si se resuelve antes por despido arbitrario, la indemnización cuenta los meses que faltan hasta esta fecha (art. 76). La fecha de fin del contrato es la del cese.",
+   "sel": null
+  },
+  "pe_tipo_trabajador": {
+   "s": "Tipo de trabajador (T8)",
+   "t": "selection",
+   "h": "Tabla 8 de la Planilla Electrónica (sector privado). La exige el alta en el T-Registro.",
+   "sel": [
+    [
+     "19",
+     "19 · Ejecutivo"
+    ],
+    [
+     "20",
+     "20 · Obrero"
+    ],
+    [
+     "21",
+     "21 · Empleado"
+    ],
+    [
+     "22",
+     "22 · Trabajador portuario - Ley 27866"
+    ],
+    [
+     "23",
+     "23 · Practicante SENATI - D.Ley 20151"
+    ],
+    [
+     "27",
+     "27 · Construcción civil"
+    ],
+    [
+     "28",
+     "28 · Piloto y copiloto de aviación comercial"
+    ],
+    [
+     "29",
+     "29 · Marítimo, fluvial o lacustre"
+    ],
+    [
+     "30",
+     "30 · Periodista"
+    ],
+    [
+     "31",
+     "31 · Trabajador de la industria de cuero"
+    ],
+    [
+     "32",
+     "32 · Minero de mina de socavón"
+    ],
+    [
+     "36",
+     "36 · Trabajador pesquero"
+    ],
+    [
+     "37",
+     "37 · Minero de tajo abierto"
+    ],
+    [
+     "38",
+     "38 · Minero de industria minera metalúrgica y/o siderúrgica"
+    ],
+    [
+     "39",
+     "39 · Trabajador pesquero - Ley 30003"
+    ],
+    [
+     "48",
+     "48 · Agroindustrial"
+    ],
+    [
+     "56",
+     "56 · Artista - Ley 28131"
+    ],
+    [
+     "64",
+     "64 · Agrario dependiente - Ley 27360"
+    ],
+    [
+     "65",
+     "65 · Trabajador actividad acuícola - Ley 27460"
+    ],
+    [
+     "66",
+     "66 · Pescador y procesador artesanal independiente"
+    ],
+    [
+     "71",
+     "71 · Conductor de microempresa REMYPE - D.Leg. 1086"
+    ],
+    [
+     "73",
+     "73 · Socio de cooperativa agraria - Ley 29972"
+    ],
+    [
+     "76",
+     "76 · Agrario Ley 31110"
+    ],
+    [
+     "98",
+     "98 · Persona que genera ingresos de cuarta - quinta categoría"
+    ]
+   ]
+  },
+  "pe_categoria_ocupacional": {
+   "s": "Categoría ocupacional (T24)",
+   "t": "selection",
+   "h": "Obligatoria salvo para los tipos de trabajador 19, 20, 21, 23, 66, 71 y 98.",
+   "sel": [
+    [
+     "01",
+     "01 · Ejecutivo"
+    ],
+    [
+     "02",
+     "02 · Obrero"
+    ],
+    [
+     "03",
+     "03 · Empleado"
+    ]
+   ]
+  }
+ },
+ "hr.employee.relative": {
+  "relation_id": {
+   "s": "Parentesco",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "gender": {
+   "s": "Género",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "masculino",
+     "Masculino"
+    ],
+    [
+     "femenino",
+     "Femenino"
+    ],
+    [
+     "otro",
+     "Otro"
+    ]
+   ]
+  },
+  "date_of_birth": {
+   "s": "Fecha de nacimiento",
+   "t": "date",
+   "h": "",
+   "sel": null
+  },
+  "age": {
+   "s": "Edad",
+   "t": "float",
+   "h": "",
+   "sel": null
+  },
+  "disability": {
+   "s": "Discapacidad",
+   "t": "boolean",
+   "h": "",
+   "sel": null
+  },
+  "pe_tipo_documento": {
+   "s": "Tipo de documento",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "01",
+     "01 · DNI"
+    ],
+    [
+     "04",
+     "04 · Carné de extranjería"
+    ],
+    [
+     "07",
+     "07 · Pasaporte"
+    ]
+   ]
+  },
+  "pe_numero_documento": {
+   "s": "N.° de documento",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_pais_emisor_id": {
+   "s": "País emisor (pasaporte)",
+   "t": "many2one",
+   "h": "",
+   "sel": null
+  },
+  "pe_apellido_paterno": {
+   "s": "Apellido paterno",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_apellido_materno": {
+   "s": "Apellido materno",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_nombres": {
+   "s": "Nombres",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_documento_vinculo": {
+   "s": "Documento que acredita el vínculo (T27)",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "01",
+     "01 · Escritura pública"
+    ],
+    [
+     "02",
+     "02 · Sentencia de declaratoria de paternidad"
+    ],
+    [
+     "03",
+     "03 · Testamento"
+    ],
+    [
+     "04",
+     "04 · Resolución de incapacidad"
+    ],
+    [
+     "05",
+     "05 · Acta o partida de matrimonio civil"
+    ],
+    [
+     "06",
+     "06 · Acta o partida de matrimonio inscrito en el registro consular peruano"
+    ],
+    [
+     "07",
+     "07 · Acta o partida de matrimonio realizado en el exterior e inscrito en RENIEC o municipalidad"
+    ],
+    [
+     "08",
+     "08 · Escritura pública de reconocimiento de unión de hecho (Ley 29560)"
+    ],
+    [
+     "09",
+     "09 · Resolución judicial de reconocimiento de unión de hecho"
+    ],
+    [
+     "10",
+     "10 · Acta de nacimiento o documento análogo que sustenta filiación"
+    ],
+    [
+     "11",
+     "11 · Declaración jurada de existencia de unión de hecho"
+    ]
+   ]
+  },
+  "pe_numero_documento_vinculo": {
+   "s": "N.° del documento que acredita",
+   "t": "char",
+   "h": "",
+   "sel": null
+  },
+  "pe_mes_concepcion": {
+   "s": "Mes de concepción",
+   "t": "date",
+   "h": "Solo gestante: se declara el mes y el año.",
+   "sel": null
+  },
+  "pe_fecha_alta": {
+   "s": "Alta como derechohabiente",
+   "t": "date",
+   "h": "Fecha en que el trabajador comunicó el derechohabiente: el alta en el T-Registro vence el día hábil siguiente. Las altas del asistente se proponen por esta fecha.",
+   "sel": null
+  },
+  "pe_fecha_baja": {
+   "s": "Baja como derechohabiente",
+   "t": "date",
+   "h": "",
+   "sel": null
+  },
+  "pe_motivo_baja": {
+   "s": "Motivo de baja (T20)",
+   "t": "selection",
+   "h": "",
+   "sel": [
+    [
+     "02",
+     "02 · Fallecimiento"
+    ],
+    [
+     "03",
+     "03 · Otros motivos no previstos"
+    ],
+    [
+     "04",
+     "04 · Divorcio o disolución de vínculo matrimonial"
+    ],
+    [
+     "05",
+     "05 · Fin de concubinato"
+    ],
+    [
+     "06",
+     "06 · Fin de la gestación"
+    ],
+    [
+     "07",
+     "07 · Hijo adquiere mayoría de edad"
+    ],
+    [
+     "08",
+     "08 · Error en el registro"
+    ],
+    [
+     "09",
+     "09 · Derechohabiente adquiere condición de asegurado regular"
+    ]
+   ]
+  }
+ }
+}

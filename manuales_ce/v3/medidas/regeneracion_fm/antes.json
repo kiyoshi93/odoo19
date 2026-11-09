@@ -1,0 +1,5045 @@
+{
+"boletas": [
+{
+"emp": 27,
+"periodo": "2025-01",
+"estructura": "NME",
+"id": 84,
+"estado": "done",
+"asiento": 922,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-02",
+"estructura": "NME",
+"id": 85,
+"estado": "done",
+"asiento": 923,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-03",
+"estructura": "NME",
+"id": 86,
+"estado": "done",
+"asiento": 924,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-03",
+"estructura": "NME",
+"id": 87,
+"estado": "done",
+"asiento": 925,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-04",
+"estructura": "NME",
+"id": 88,
+"estado": "done",
+"asiento": 926,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-2.0,
+-16.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-04",
+"estructura": "NME",
+"id": 89,
+"estado": "done",
+"asiento": 927,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-2.0,
+-16.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-05",
+"estructura": "CTS",
+"id": 90,
+"estado": "done",
+"asiento": 928,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+1537.67
+],
+[
+"GROSS",
+1537.67
+],
+[
+"NET",
+1537.67
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-05",
+"estructura": "NME",
+"id": 91,
+"estado": "done",
+"asiento": 930,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-05",
+"estructura": "CTS",
+"id": 92,
+"estado": "done",
+"asiento": 929,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+366.67
+],
+[
+"GROSS",
+366.67
+],
+[
+"NET",
+366.67
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-05",
+"estructura": "NME",
+"id": 93,
+"estado": "done",
+"asiento": 931,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-06",
+"estructura": "NME",
+"id": 94,
+"estado": "done",
+"asiento": 932,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-06",
+"estructura": "NME",
+"id": 95,
+"estado": "done",
+"asiento": 933,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-07",
+"estructura": "GRAT",
+"id": 96,
+"estado": "done",
+"asiento": 934,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+4613.0
+],
+[
+"BONO_GRATI_001",
+415.17
+],
+[
+"GROSS",
+5028.17
+],
+[
+"BAR5_001",
+5028.17
+],
+[
+"NET",
+5028.17
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-07",
+"estructura": "NME",
+"id": 97,
+"estado": "done",
+"asiento": 936,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.48
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.52
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-07",
+"estructura": "GRAT",
+"id": 98,
+"estado": "done",
+"asiento": 935,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+1466.67
+],
+[
+"BONO_GRATI_001",
+132.0
+],
+[
+"GROSS",
+1598.67
+],
+[
+"BAR5_001",
+1598.67
+],
+[
+"NET",
+1598.67
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-07",
+"estructura": "NME",
+"id": 99,
+"estado": "done",
+"asiento": 937,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-08",
+"estructura": "NME",
+"id": 100,
+"estado": "done",
+"asiento": 938,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.47
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.53
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-08",
+"estructura": "NME",
+"id": 101,
+"estado": "done",
+"asiento": 939,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-09",
+"estructura": "NME",
+"id": 102,
+"estado": "done",
+"asiento": 940,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.47
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.53
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-09",
+"estructura": "NME",
+"id": 103,
+"estado": "done",
+"asiento": 941,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-10",
+"estructura": "NME",
+"id": 104,
+"estado": "done",
+"asiento": 942,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.47
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.53
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-10",
+"estructura": "NME",
+"id": 105,
+"estado": "done",
+"asiento": 943,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-11",
+"estructura": "CTS",
+"id": 106,
+"estado": "done",
+"asiento": 944,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+2690.92
+],
+[
+"GROSS",
+2690.92
+],
+[
+"NET",
+2690.92
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-11",
+"estructura": "NME",
+"id": 107,
+"estado": "done",
+"asiento": 946,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.47
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.53
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-11",
+"estructura": "CTS",
+"id": 108,
+"estado": "done",
+"asiento": 945,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+1222.22
+],
+[
+"GROSS",
+1222.22
+],
+[
+"NET",
+1222.22
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-11",
+"estructura": "NME",
+"id": 109,
+"estado": "done",
+"asiento": 947,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-12",
+"estructura": "GRAT",
+"id": 110,
+"estado": "done",
+"asiento": 948,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+4613.0
+],
+[
+"BONO_GRATI_001",
+415.17
+],
+[
+"GROSS",
+5028.17
+],
+[
+"BAR5_001",
+5028.17
+],
+[
+"NET",
+5028.17
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2025-12",
+"estructura": "NME",
+"id": 111,
+"estado": "done",
+"asiento": 950,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+192.49
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3824.51
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-12",
+"estructura": "GRAT",
+"id": 112,
+"estado": "done",
+"asiento": 949,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+2200.0
+],
+[
+"BONO_GRATI_001",
+198.0
+],
+[
+"GROSS",
+2398.0
+],
+[
+"BAR5_001",
+2398.0
+],
+[
+"NET",
+2398.0
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2025-12",
+"estructura": "NME",
+"id": 113,
+"estado": "done",
+"asiento": 951,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-01",
+"estructura": "NME",
+"id": 114,
+"estado": "done",
+"asiento": 952,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.42
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.58
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-01",
+"estructura": "NME",
+"id": 115,
+"estado": "done",
+"asiento": 953,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-02",
+"estructura": "NME",
+"id": 117,
+"estado": "done",
+"asiento": 955,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+],
+[
+"VACPE100",
+-11.0,
+-88.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2250.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2363.0
+],
+[
+"BAR5_001",
+2363.0
+],
+[
+"AFP_APO_001",
+236.3
+],
+[
+"AFP_COM_001",
+36.63
+],
+[
+"AFP_PRI_001",
+32.37
+],
+[
+"R5TA_001",
+183.73
+],
+[
+"ESSALUD_001",
+212.67
+],
+[
+"SENATI_001",
+17.72
+],
+[
+"NET",
+1873.97
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-02",
+"estructura": "NME",
+"id": 118,
+"estado": "done",
+"asiento": 956,
+"dias": [
+[
+"WORK100",
+20.0,
+160.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-02",
+"estructura": "VAC",
+"id": 116,
+"estado": "done",
+"asiento": 954,
+"dias": [
+[
+"WORK100",
+11.0,
+88.0,
+true
+],
+[
+"VACPE100",
+-11.0,
+-88.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"VAC_001",
+2306.5
+],
+[
+"GROSS",
+2306.5
+],
+[
+"BAR5_001",
+2306.5
+],
+[
+"AFP_APO_001",
+230.65
+],
+[
+"AFP_COM_001",
+35.75
+],
+[
+"AFP_PRI_001",
+31.6
+],
+[
+"ESSALUD_001",
+207.59
+],
+[
+"SENATI_001",
+17.3
+],
+[
+"NET",
+2008.5
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-03",
+"estructura": "NME",
+"id": 119,
+"estado": "done",
+"asiento": 957,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.79
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.21
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-03",
+"estructura": "NME",
+"id": 120,
+"estado": "done",
+"asiento": 958,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-04",
+"estructura": "NME",
+"id": 121,
+"estado": "done",
+"asiento": 959,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-2.0,
+-16.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.4
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.6
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-04",
+"estructura": "NME",
+"id": 122,
+"estado": "done",
+"asiento": 960,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-2.0,
+-16.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-05",
+"estructura": "CTS",
+"id": 123,
+"estado": "done",
+"asiento": 961,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+2690.92
+],
+[
+"GROSS",
+2690.92
+],
+[
+"NET",
+2690.92
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-05",
+"estructura": "NME",
+"id": 124,
+"estado": "done",
+"asiento": 963,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.4
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.6
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-05",
+"estructura": "CTS",
+"id": 125,
+"estado": "done",
+"asiento": 962,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+1283.33
+],
+[
+"GROSS",
+1283.33
+],
+[
+"NET",
+1283.33
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-05",
+"estructura": "NME",
+"id": 126,
+"estado": "done",
+"asiento": 964,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-06",
+"estructura": "NME",
+"id": 127,
+"estado": "done",
+"asiento": 965,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.4
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.6
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-06",
+"estructura": "NME",
+"id": 128,
+"estado": "done",
+"asiento": 966,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-07",
+"estructura": "GRAT",
+"id": 129,
+"estado": "done",
+"asiento": 967,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+4613.0
+],
+[
+"BONO_GRATI_001",
+415.17
+],
+[
+"GROSS",
+5028.17
+],
+[
+"BAR5_001",
+5028.17
+],
+[
+"NET",
+5028.17
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-07",
+"estructura": "NME",
+"id": 130,
+"estado": "done",
+"asiento": 969,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.4
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.6
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-07",
+"estructura": "GRAT",
+"id": 131,
+"estado": "done",
+"asiento": 968,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+2200.0
+],
+[
+"BONO_GRATI_001",
+198.0
+],
+[
+"GROSS",
+2398.0
+],
+[
+"BAR5_001",
+2398.0
+],
+[
+"NET",
+2398.0
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-07",
+"estructura": "NME",
+"id": 132,
+"estado": "done",
+"asiento": 970,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-08",
+"estructura": "NME",
+"id": 133,
+"estado": "done",
+"asiento": 971,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.39
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.61
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-08",
+"estructura": "NME",
+"id": 134,
+"estado": "done",
+"asiento": 972,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-09",
+"estructura": "NME",
+"id": 135,
+"estado": "done",
+"asiento": 974,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+113.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4613.0
+],
+[
+"BAR5_001",
+4613.0
+],
+[
+"AFP_APO_001",
+461.3
+],
+[
+"AFP_COM_001",
+71.5
+],
+[
+"AFP_PRI_001",
+63.2
+],
+[
+"R5TA_001",
+179.39
+],
+[
+"ESSALUD_001",
+415.17
+],
+[
+"SENATI_001",
+34.6
+],
+[
+"NET",
+3837.61
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-09",
+"estructura": "NME",
+"id": 137,
+"estado": "done",
+"asiento": 975,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"VACPE100",
+-8.0,
+-64.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+1466.67
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+1466.67
+],
+[
+"BAR5_001",
+1466.67
+],
+[
+"ONP_001",
+190.67
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+132.0
+],
+[
+"SENATI_001",
+11.0
+],
+[
+"NET",
+1276.0
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-09",
+"estructura": "VAC",
+"id": 136,
+"estado": "done",
+"asiento": 973,
+"dias": [
+[
+"WORK100",
+8.0,
+64.0,
+true
+],
+[
+"VACPE100",
+-8.0,
+-64.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+4.0
+],
+[
+"VAC_001",
+733.33
+],
+[
+"GROSS",
+733.33
+],
+[
+"BAR5_001",
+733.33
+],
+[
+"ONP_001",
+95.33
+],
+[
+"ESSALUD_001",
+66.0
+],
+[
+"SENATI_001",
+5.5
+],
+[
+"NET",
+638.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-10",
+"estructura": "NME",
+"id": 138,
+"estado": "done",
+"asiento": 976,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+123.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4623.0
+],
+[
+"BAR5_001",
+4623.0
+],
+[
+"AFP_APO_001",
+462.3
+],
+[
+"AFP_COM_001",
+71.66
+],
+[
+"AFP_PRI_001",
+63.34
+],
+[
+"R5TA_001",
+180.21
+],
+[
+"ESSALUD_001",
+416.07
+],
+[
+"SENATI_001",
+34.67
+],
+[
+"NET",
+3845.49
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-10",
+"estructura": "NME",
+"id": 139,
+"estado": "done",
+"asiento": 977,
+"dias": [
+[
+"WORK100",
+22.0,
+176.0,
+true
+],
+[
+"GLOBAL",
+-1.0,
+-8.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-11",
+"estructura": "CTS",
+"id": 140,
+"estado": "done",
+"asiento": 978,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+2695.92
+],
+[
+"GROSS",
+2695.92
+],
+[
+"NET",
+2695.92
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-11",
+"estructura": "NME",
+"id": 141,
+"estado": "done",
+"asiento": 980,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+123.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4623.0
+],
+[
+"BAR5_001",
+4623.0
+],
+[
+"AFP_APO_001",
+462.3
+],
+[
+"AFP_COM_001",
+71.66
+],
+[
+"AFP_PRI_001",
+63.34
+],
+[
+"R5TA_001",
+180.21
+],
+[
+"ESSALUD_001",
+416.07
+],
+[
+"SENATI_001",
+34.67
+],
+[
+"NET",
+3845.49
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-11",
+"estructura": "CTS",
+"id": 142,
+"estado": "done",
+"asiento": 979,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"CTS_001",
+1283.33
+],
+[
+"GROSS",
+1283.33
+],
+[
+"NET",
+1283.33
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-11",
+"estructura": "NME",
+"id": 143,
+"estado": "done",
+"asiento": 981,
+"dias": [
+[
+"WORK100",
+21.0,
+168.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-12",
+"estructura": "GRAT",
+"id": 144,
+"estado": "done",
+"asiento": 982,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+4623.0
+],
+[
+"BONO_GRATI_001",
+416.07
+],
+[
+"GROSS",
+5039.07
+],
+[
+"BAR5_001",
+5039.07
+],
+[
+"NET",
+5039.07
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-12",
+"estructura": "GRAT",
+"id": 146,
+"estado": "done",
+"asiento": 983,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"GRATI_001",
+2200.0
+],
+[
+"BONO_GRATI_001",
+198.0
+],
+[
+"GROSS",
+2398.0
+],
+[
+"BAR5_001",
+2398.0
+],
+[
+"NET",
+2398.0
+]
+]
+},
+{
+"emp": 27,
+"periodo": "2026-12",
+"estructura": "NME",
+"id": 148,
+"estado": "done",
+"asiento": 984,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+150.0
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+4500.0
+],
+[
+"ASF_001",
+123.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+4623.0
+],
+[
+"BAR5_001",
+4623.0
+],
+[
+"AFP_APO_001",
+462.3
+],
+[
+"AFP_COM_001",
+71.66
+],
+[
+"AFP_PRI_001",
+63.34
+],
+[
+"R5TA_001",
+181.04
+],
+[
+"ESSALUD_001",
+416.07
+],
+[
+"SENATI_001",
+34.67
+],
+[
+"NET",
+3844.66
+]
+]
+},
+{
+"emp": 28,
+"periodo": "2026-12",
+"estructura": "NME",
+"id": 149,
+"estado": "done",
+"asiento": 985,
+"dias": [
+[
+"WORK100",
+23.0,
+184.0,
+true
+],
+[
+"GLOBAL",
+-3.0,
+-24.0,
+true
+]
+],
+"lineas": [
+[
+"BASIC",
+0.0
+],
+[
+"SD_001",
+73.33
+],
+[
+"ISM_001",
+1.0
+],
+[
+"RB_001",
+2200.0
+],
+[
+"ASF_001",
+0.0
+],
+[
+"HE25_001",
+0.0
+],
+[
+"HE35_001",
+0.0
+],
+[
+"MOV_001",
+0.0
+],
+[
+"GROSS",
+2200.0
+],
+[
+"BAR5_001",
+2200.0
+],
+[
+"ONP_001",
+286.0
+],
+[
+"R5TA_001",
+0.0
+],
+[
+"ESSALUD_001",
+198.0
+],
+[
+"SENATI_001",
+16.5
+],
+[
+"NET",
+1914.0
+]
+]
+}
+],
+"nombres": {
+"84": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for enero-2025",
+"Operaciones misceláneas",
+"SLIP/044"
+],
+"85": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for febrero-2025",
+"Operaciones misceláneas",
+"SLIP/045"
+],
+"86": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for marzo-2025",
+"Operaciones misceláneas",
+"SLIP/046"
+],
+"87": [
+"Salary Slip of Héctor Manuel Salas Quispe for marzo-2025",
+"Operaciones misceláneas",
+"SLIP/047"
+],
+"88": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for abril-2025",
+"Operaciones misceláneas",
+"SLIP/048"
+],
+"89": [
+"Salary Slip of Héctor Manuel Salas Quispe for abril-2025",
+"Operaciones misceláneas",
+"SLIP/049"
+],
+"90": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for mayo-2025",
+"Operaciones misceláneas",
+"SLIP/050"
+],
+"91": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for mayo-2025",
+"Operaciones misceláneas",
+"SLIP/051"
+],
+"92": [
+"Salary Slip of Héctor Manuel Salas Quispe for mayo-2025",
+"Operaciones misceláneas",
+"SLIP/052"
+],
+"93": [
+"Salary Slip of Héctor Manuel Salas Quispe for mayo-2025",
+"Operaciones misceláneas",
+"SLIP/053"
+],
+"94": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for junio-2025",
+"Operaciones misceláneas",
+"SLIP/054"
+],
+"95": [
+"Salary Slip of Héctor Manuel Salas Quispe for junio-2025",
+"Operaciones misceláneas",
+"SLIP/055"
+],
+"96": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for julio-2025",
+"Operaciones misceláneas",
+"SLIP/056"
+],
+"97": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for julio-2025",
+"Operaciones misceláneas",
+"SLIP/057"
+],
+"98": [
+"Salary Slip of Héctor Manuel Salas Quispe for julio-2025",
+"Operaciones misceláneas",
+"SLIP/058"
+],
+"99": [
+"Salary Slip of Héctor Manuel Salas Quispe for julio-2025",
+"Operaciones misceláneas",
+"SLIP/059"
+],
+"100": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for agosto-2025",
+"Operaciones misceláneas",
+"SLIP/060"
+],
+"101": [
+"Salary Slip of Héctor Manuel Salas Quispe for agosto-2025",
+"Operaciones misceláneas",
+"SLIP/061"
+],
+"102": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for setiembre-2025",
+"Operaciones misceláneas",
+"SLIP/062"
+],
+"103": [
+"Salary Slip of Héctor Manuel Salas Quispe for setiembre-2025",
+"Operaciones misceláneas",
+"SLIP/063"
+],
+"104": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for octubre-2025",
+"Operaciones misceláneas",
+"SLIP/064"
+],
+"105": [
+"Salary Slip of Héctor Manuel Salas Quispe for octubre-2025",
+"Operaciones misceláneas",
+"SLIP/065"
+],
+"106": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for noviembre-2025",
+"Operaciones misceláneas",
+"SLIP/066"
+],
+"107": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for noviembre-2025",
+"Operaciones misceláneas",
+"SLIP/067"
+],
+"108": [
+"Salary Slip of Héctor Manuel Salas Quispe for noviembre-2025",
+"Operaciones misceláneas",
+"SLIP/068"
+],
+"109": [
+"Salary Slip of Héctor Manuel Salas Quispe for noviembre-2025",
+"Operaciones misceláneas",
+"SLIP/069"
+],
+"110": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for diciembre-2025",
+"Operaciones misceláneas",
+"SLIP/070"
+],
+"111": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for diciembre-2025",
+"Operaciones misceláneas",
+"SLIP/071"
+],
+"112": [
+"Salary Slip of Héctor Manuel Salas Quispe for diciembre-2025",
+"Operaciones misceláneas",
+"SLIP/072"
+],
+"113": [
+"Salary Slip of Héctor Manuel Salas Quispe for diciembre-2025",
+"Operaciones misceláneas",
+"SLIP/073"
+],
+"114": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for enero-2026",
+"Operaciones misceláneas",
+"SLIP/074"
+],
+"115": [
+"Salary Slip of Héctor Manuel Salas Quispe for enero-2026",
+"Operaciones misceláneas",
+"SLIP/075"
+],
+"117": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for febrero-2026",
+"Operaciones misceláneas",
+"SLIP/077"
+],
+"118": [
+"Salary Slip of Héctor Manuel Salas Quispe for febrero-2026",
+"Operaciones misceláneas",
+"SLIP/078"
+],
+"116": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for febrero-2026",
+"Operaciones misceláneas",
+"SLIP/076"
+],
+"119": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for marzo-2026",
+"Operaciones misceláneas",
+"SLIP/079"
+],
+"120": [
+"Salary Slip of Héctor Manuel Salas Quispe for marzo-2026",
+"Operaciones misceláneas",
+"SLIP/080"
+],
+"121": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for abril-2026",
+"Operaciones misceláneas",
+"SLIP/081"
+],
+"122": [
+"Salary Slip of Héctor Manuel Salas Quispe for abril-2026",
+"Operaciones misceláneas",
+"SLIP/082"
+],
+"123": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for mayo-2026",
+"Operaciones misceláneas",
+"SLIP/083"
+],
+"124": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for mayo-2026",
+"Operaciones misceláneas",
+"SLIP/084"
+],
+"125": [
+"Salary Slip of Héctor Manuel Salas Quispe for mayo-2026",
+"Operaciones misceláneas",
+"SLIP/085"
+],
+"126": [
+"Salary Slip of Héctor Manuel Salas Quispe for mayo-2026",
+"Operaciones misceláneas",
+"SLIP/086"
+],
+"127": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for junio-2026",
+"Operaciones misceláneas",
+"SLIP/087"
+],
+"128": [
+"Salary Slip of Héctor Manuel Salas Quispe for junio-2026",
+"Operaciones misceláneas",
+"SLIP/088"
+],
+"129": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for julio-2026",
+"Operaciones misceláneas",
+"SLIP/089"
+],
+"130": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for julio-2026",
+"Operaciones misceláneas",
+"SLIP/090"
+],
+"131": [
+"Salary Slip of Héctor Manuel Salas Quispe for julio-2026",
+"Operaciones misceláneas",
+"SLIP/091"
+],
+"132": [
+"Salary Slip of Héctor Manuel Salas Quispe for julio-2026",
+"Operaciones misceláneas",
+"SLIP/092"
+],
+"133": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for agosto-2026",
+"Operaciones misceláneas",
+"SLIP/093"
+],
+"134": [
+"Salary Slip of Héctor Manuel Salas Quispe for agosto-2026",
+"Operaciones misceláneas",
+"SLIP/094"
+],
+"135": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for setiembre-2026",
+"Operaciones misceláneas",
+"SLIP/095"
+],
+"137": [
+"Salary Slip of Héctor Manuel Salas Quispe for setiembre-2026",
+"Operaciones misceláneas",
+"SLIP/097"
+],
+"136": [
+"Salary Slip of Héctor Manuel Salas Quispe for setiembre-2026",
+"Operaciones misceláneas",
+"SLIP/096"
+],
+"138": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for octubre-2026",
+"Operaciones misceláneas",
+"SLIP/098"
+],
+"139": [
+"Salary Slip of Héctor Manuel Salas Quispe for octubre-2026",
+"Operaciones misceláneas",
+"SLIP/099"
+],
+"140": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for noviembre-2026",
+"Operaciones misceláneas",
+"SLIP/100"
+],
+"141": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for noviembre-2026",
+"Operaciones misceláneas",
+"SLIP/101"
+],
+"142": [
+"Salary Slip of Héctor Manuel Salas Quispe for noviembre-2026",
+"Operaciones misceláneas",
+"SLIP/102"
+],
+"143": [
+"Salary Slip of Héctor Manuel Salas Quispe for noviembre-2026",
+"Operaciones misceláneas",
+"SLIP/103"
+],
+"144": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for diciembre-2026",
+"Operaciones misceláneas",
+"SLIP/104"
+],
+"146": [
+"Salary Slip of Héctor Manuel Salas Quispe for diciembre-2026",
+"Operaciones misceláneas",
+"SLIP/106"
+],
+"148": [
+"Salary Slip of Lucía Fernanda Ramos Ticona for diciembre-2026",
+"Planillas",
+"SLIP/108"
+],
+"149": [
+"Salary Slip of Héctor Manuel Salas Quispe for diciembre-2026",
+"Planillas",
+"SLIP/109"
+]
+},
+"correos": 48
+}

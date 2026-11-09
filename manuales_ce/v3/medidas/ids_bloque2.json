@@ -1,0 +1,205 @@
+{
+ "70004501": {
+  "emp": 496,
+  "nombre": "Trabajador CESE devolución",
+  "version": 533,
+  "boletas": [
+   [
+    1877,
+    "done",
+    "2026-01-01",
+    "Nómina Mensual",
+    2472
+   ],
+   [
+    1882,
+    "done",
+    "2026-02-01",
+    "Nómina Mensual",
+    2477
+   ],
+   [
+    1888,
+    "done",
+    "2026-03-01",
+    "Nómina Mensual",
+    2483
+   ],
+   [
+    1894,
+    "done",
+    "2026-04-01",
+    "Nómina Mensual",
+    2489
+   ],
+   [
+    1896,
+    "done",
+    "2026-04-01",
+    "Liquidación",
+    2491
+   ]
+  ]
+ },
+ "70000351": {
+  "emp": 501,
+  "nombre": "Trabajador INDEMNIZACION indeterminado",
+  "version": 540,
+  "boletas": [
+   [
+    1897,
+    "done",
+    "2026-04-01",
+    "Liquidación",
+    2492
+   ]
+  ]
+ },
+ "70000352": {
+  "emp": 502,
+  "nombre": "Trabajadora INDEMNIZACION modal",
+  "version": 541,
+  "boletas": [
+   [
+    1898,
+    "done",
+    "2026-04-01",
+    "Liquidación",
+    2493
+   ]
+  ]
+ },
+ "42736514": {
+  "emp": 474,
+  "nombre": "Nilda Beatriz Apaza Condori",
+  "version": 508,
+  "boletas": [
+   [
+    1779,
+    "done",
+    "2026-07-01",
+    "Vacaciones",
+    2380
+   ]
+  ]
+ },
+ "43815927": {
+  "emp": 475,
+  "nombre": "Óscar Eduardo Salazar Ibáñez",
+  "version": 509,
+  "boletas": [
+   [
+    1780,
+    "done",
+    "2026-07-01",
+    "Vacaciones",
+    2381
+   ],
+   [
+    1790,
+    "done",
+    "2026-07-01",
+    "Nómina Mensual",
+    2390
+   ],
+   [
+    1924,
+    "draft",
+    "2026-09-01",
+    "Nómina Mensual",
+    false
+   ]
+  ]
+ },
+ "70000568": {
+  "emp": 516,
+  "nombre": "Trabajadora VIDALEY vacaciones sobre el tope",
+  "version": 557,
+  "boletas": [
+   [
+    1915,
+    "done",
+    "2026-06-01",
+    "Vacaciones",
+    2510
+   ],
+   [
+    1916,
+    "done",
+    "2026-06-01",
+    "Nómina Mensual",
+    2511
+   ]
+  ]
+ },
+ "70000701": {
+  "emp": 483,
+  "nombre": "Trabajador MICRO (microempresa)",
+  "version": 517,
+  "boletas": [
+   [
+    1819,
+    "done",
+    "2026-06-01",
+    "Nómina Mensual",
+    2419
+   ],
+   [
+    1823,
+    "done",
+    "2026-11-01",
+    "Liquidación",
+    2421
+   ],
+   [
+    1821,
+    "draft",
+    "2026-11-01",
+    "CTS",
+    false
+   ],
+   [
+    1822,
+    "draft",
+    "2026-12-01",
+    "Gratificacione",
+    false
+   ]
+  ]
+ },
+ "70000801": {
+  "emp": 489,
+  "nombre": "Trabajador SUBSIDIOS descanso",
+  "version": 526,
+  "boletas": [
+   [
+    1848,
+    "done",
+    "2026-08-01",
+    "Nómina Mensual",
+    2443
+   ],
+   [
+    1852,
+    "done",
+    "2026-09-01",
+    "Nómina Mensual",
+    2447
+   ],
+   [
+    1857,
+    "done",
+    "2026-10-01",
+    "Nómina Mensual",
+    2452
+   ],
+   [
+    1864,
+    "done",
+    "2026-11-01",
+    "Nómina Mensual",
+    2459
+   ]
+  ]
+ }
+}

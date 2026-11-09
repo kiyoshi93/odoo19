@@ -1,0 +1,392 @@
+{
+ "C-01": [
+  "TXT BCP: código de banco por BIC; el TXT de CTS sale vacío",
+  "LOTE1",
+  "2026-10-12",
+  "solse_pe_payroll_ce 19.0.1.9.0"
+ ],
+ "C-02": [
+  "Vigencias faltantes en la data de parámetros",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.8.0"
+ ],
+ "C-03": [
+  "Renta de 5.ª: proyección de gratificaciones sin asignación familiar",
+  "LOTE3",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.11.1"
+ ],
+ "C-04": [
+  "Asignación familiar duplicada en el mes de goce parcial",
+  "",
+  "",
+  "✅ **CERRADO SIN CAMBIO** (contadora, 2026-10-15, P-19): «la "
+ ],
+ "C-05": [
+  "Boleta impresa descuadrada por redondeo",
+  "LOTE3",
+  "2026-10-13",
+  "solse_pe_payroll_base 19.0.1.10.0"
+ ],
+ "C-06": [
+  "Diario Planillas por defecto",
+  "LOTE3",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.11.3 y revisiones 19.0.1.11.6 / 19.0.1.11.9"
+ ],
+ "C-07": [
+  "Estructura por defecto en el contrato",
+  "LOTE3",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.11.4 y revisiones 19.0.1.11.7 / 19.0.1.11.10"
+ ],
+ "C-08": [
+  "TXT bancario: no bloquear por un trabajador sin cuenta",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.9.2"
+ ],
+ "C-09": [
+  "Días laborados con feriados en boleta y .jor",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.14.0"
+ ],
+ "C-10": [
+  "La tardanza no reduce la base afecta",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.13.0"
+ ],
+ "C-11": [
+  "Renta de 5.ª en el mes de vacaciones",
+  "LOTE3",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.11.2 y revisiones ce 19.0.1.11.5 / 19.0.1.11.8"
+ ],
+ "C-12": [
+  "TXT bancario con tildes",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.9.3"
+ ],
+ "C-13": [
+  "La opción Scotiabank genera el TXT con formato de Interbank",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.9.1"
+ ],
+ "C-14": [
+  "La nómina CE no se instala en una base nueva",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_base 19.0.1.9.0"
+ ],
+ "C-15": [
+  "Base nueva: cuentas de la nómina sin mapear si el plan contable llega ",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.12.0"
+ ],
+ "C-16": [
+  "Días trabajados: «¿Pagado?» se pierde al guardar la boleta desde el fo",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_base 19.0.1.13.0"
+ ],
+ "C-17": [
+  "El lote volvía a calcular y a contabilizar las boletas ya validadas",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_base 19.0.1.11.5 y revisión base 19.0.1.11.7"
+ ],
+ "C-18": [
+  "Una boleta sin importes no se puede validar",
+  "LOTE6A",
+  "2026-10-15",
+  "solse_pe_payroll_base 19.0.1.11.9 y revisión 19.0.1.11.10"
+ ],
+ "C-19": [
+  "TXT del BCP y de Scotiabank: un sol menos por ruido de coma flotante",
+  "LOTE5",
+  "2026-10-14",
+  "solse_pe_payroll_ce 19.0.1.12.12"
+ ],
+ "C-20": [
+  "Liquidación: las vacaciones truncas salen sin aportes",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_base 19.0.1.12.0"
+ ],
+ "C-21": [
+  "Cada actualización reemplaza la cuenta de crédito manual de las reglas",
+  "",
+  "2026-10-15",
+  "solse_pe_payroll_ce 19.0.1.12.13"
+ ],
+ "C-22": [
+  "Reparto de utilidades: el tope usaba el sueldo de hoy",
+  "LOTE6A",
+  "2026-10-15",
+  "solse_pe_payroll_ce 19.0.1.12.15"
+ ],
+ "C-23": [
+  "TXT de CTS de Interbank: la CTS de otro banco se abonaba por CCI",
+  "LOTE6A",
+  "2026-10-15",
+  "solse_pe_payroll_ce 19.0.1.12.14 y revisión 19.0.1.12.16"
+ ],
+ "C-24": [
+  "`.jor` del PLAME con un campo de días que la estructura oficial no tie",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.13.3"
+ ],
+ "C-25": [
+  "Microempresa: EsSalud y asignación familiar como el régimen general",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.13.2"
+ ],
+ "C-26": [
+  "EsSalud y prima AFP por boleta en la mensual y la vacacional",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.15.0"
+ ],
+ "C-27": [
+  "Las rectificativas sumaban como boletas nuevas",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_ce 19.0.1.15.1"
+ ],
+ "C-28": [
+  "Varias versiones del contrato: versión más antigua y días repetidos",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_base 19.0.1.14.0"
+ ],
+ "C-29": [
+  "Asistencias: faltas antes del ingreso",
+  "LOTE6",
+  "2026-10-17",
+  "solse_pe_payroll_asistencia 19.0.1.2.1"
+ ],
+ "C-30": [
+  "Aumento a mitad de mes y dos contratos en el mismo mes",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.16.0"
+ ],
+ "C-31": [
+  "«Sin pagar» no pagado por defecto",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.17.0"
+ ],
+ "C-32": [
+  "EsSalud sin remuneración en el mes",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.18.0"
+ ],
+ "C-33": [
+  "Días y horas con dos versiones en el mes",
+  "LOTES_9_10",
+  "2026-10-19",
+  "solse_pe_payroll_base 19.0.1.20.0"
+ ],
+ "C-34": [
+  "Cese con la gratificación ordinaria del semestre ya pagada",
+  "LOTES_9_10",
+  "2026-10-19",
+  "solse_pe_payroll_ce 19.0.1.25.0"
+ ],
+ "O-31": [
+  "Boleta sin versión",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.15.0"
+ ],
+ "U-01": [
+  "Planes EPS: la lista solo muestra el ID",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.0"
+ ],
+ "U-02": [
+  "Contratos: la lista no muestra al trabajador",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.1"
+ ],
+ "U-03": [
+  "Reglas salariales: filas repetidas, sin estructura, con reglas de Indi",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.2"
+ ],
+ "U-04": [
+  "Maestros SUNAT: solo la abreviatura",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.4"
+ ],
+ "U-05": [
+  "Registros que se muestran como «modelo,id»",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.5 y solse_pe_payroll_base 19.0.1.9.1"
+ ],
+ "U-06": [
+  "Textos en inglés y traducciones erróneas",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_base 19.0.1.9.2 y solse_pe_payroll_ce 19.0.1.10.6"
+ ],
+ "U-07": [
+  "Campos de India en el contrato",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.3"
+ ],
+ "U-08": [
+  "Editor de parámetros estructurados",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_base 19.0.1.11.2"
+ ],
+ "U-09": [
+  "Menú de parámetros duplicado",
+  "LOTE2",
+  "2026-10-13",
+  "solse_pe_payroll_ce 19.0.1.10.7"
+ ],
+ "U-10": [
+  "«Categoría del pago»: los tipos peruanos primero",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_ce 19.0.1.12.3"
+ ],
+ "C-35": [
+  "Asistencias: el feriado entre semana sin marcas sale como falta",
+  "",
+  "",
+  "solse_pe_payroll_asistencia 19.0.1.4.0 y revisión 19.0.1.4.1; caso en solse_pe_payroll_asistencia_demo 19.0.1.2.0 y revisión 19.0.1.2.1"
+ ],
+ "U-11": [
+  "La edad de la ficha, en años cumplidos",
+  "LOTE11",
+  "2026-10-22",
+  "solse_pe_payroll_ce 19.0.1.26.3"
+ ],
+ "V-01": [
+  "Validar el valor de los parámetros al guardar",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.7.0"
+ ],
+ "V-02": [
+  "Aviso previo de vigencias faltantes",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_base 19.0.1.11.0"
+ ],
+ "V-03": [
+  "Alertas de RMA y RMV visibles",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_base 19.0.1.11.1 y solse_pe_payroll_ce 19.0.1.12.1"
+ ],
+ "V-04": [
+  "Avisos de la boleta: sin contrato, sin sistema pensionario y orden de ",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_ce 19.0.1.12.2"
+ ],
+ "V-05": [
+  "Aviso de días festivos no registrados",
+  "LOTE5",
+  "2026-10-14",
+  "solse_pe_payroll_base 19.0.1.11.8 y solse_pe_payroll_ce 19.0.1.12.11"
+ ],
+ "Q-01": [
+  "La demo activa SENATI en la compañía donde corre",
+  "LOTE5",
+  "2026-10-14",
+  "solse_pe_payroll_ce_demo 19.0.2.6.0"
+ ],
+ "Q-02": [
+  "Maestro T12 sin datos",
+  "LOTE4",
+  "2026-10-14",
+  "solse_pe_payroll_ce 19.0.1.12.4"
+ ],
+ "Q-03": [
+  "Estructuras con compañía fija",
+  "",
+  "",
+  "✅ CERRADO SIN CAMBIO DE CÓDIGO (lote 4): no se reproduce. Cr"
+ ],
+ "Q-04": [
+  "Casos QA para las salidas sin cobertura",
+  "LOTE5",
+  "2026-10-14",
+  "solse_pe_payroll_ce_demo 19.0.2.7.0"
+ ],
+ "N-01": [
+  "Subsidios (incapacidad temporal y maternidad)",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.18.0"
+ ],
+ "N-02": [
+  "Exportación del T-Registro",
+  "LOTES_9_10",
+  "2026-10-19",
+  "solse_pe_payroll_ce 19.0.1.26.0"
+ ],
+ "N-03": [
+  "Indemnización por despido arbitrario",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.21.0"
+ ],
+ "N-04": [
+  "Regularización de la renta de 5.ª al cese",
+  "",
+  "",
+  "solse_pe_payroll_base 19.0.1.19.0"
+ ],
+ "N-05": [
+  "Prima de Vida Ley",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.22.0"
+ ],
+ "N-06": [
+  "TXT de Scotiabank y Banco de la Nación",
+  "",
+  "",
+  ""
+ ],
+ "N-07": [
+  "Pago de la planilla",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.23.0"
+ ],
+ "N-08": [
+  "Entrega de boletas por correo y constancias",
+  "",
+  "",
+  "solse_pe_payroll_ce 19.0.1.24.0"
+ ],
+ "Q-05": [
+  "Cobertura pendiente de medición",
+  "LOTE5",
+  "2026-10-14",
+  "✅ HECHO (lote 5) en solse_pe_payroll_ce_demo, con esperados "
+ ]
+}

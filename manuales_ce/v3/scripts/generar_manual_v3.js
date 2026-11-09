@@ -1,0 +1,95 @@
+// Genera el manual v3 de la nómina peruana (Odoo 19 Community) en Word.
+// Uso: NODE_PATH=$(npm root -g) node manuales_ce/v3/scripts/generar_manual_v3.js [bloques: 1,2,3,4]
+const fs = require('fs');
+const path = require('path');
+const {
+  Document, Packer, Paragraph, TextRun, AlignmentType, BorderStyle, LevelFormat, InternalHyperlink, PageBreak,
+  Header, Footer, PageNumber, PageOrientation,
+} = require('docx');
+const h = require('./base_docx');
+
+const SALIDA = path.join(__dirname, '..', '..', 'Manual_Nomina_PE_Odoo19_Community_v3.docx');
+// Un archivo por capítulo (v3). Los capítulos 31 y 32 son nuevos (modalidades formativas y SENATI); «Lo que no cubre» y
+// el cierre pasan al 33 y al 34.
+const ORDEN = ['cap01', 'cap02', 'cap03', 'cap04', 'cap05', 'cap06', 'cap07', 'cap08', 'cap09', 'cap10', 'cap11', 'cap12', 'cap13',
+  'cap14', 'cap15', 'cap16', 'cap17', 'cap18', 'cap19', 'cap20', 'cap21', 'cap22', 'cap23', 'cap24', 'cap25', 'cap26', 'cap27', 'cap28',
+  'cap29', 'cap30', 'cap31', 'cap32', 'cap33', 'cap34', 'anexo_a', 'anexo_b', 'anexo_c', 'anexo_d', 'anexo_e'];
+const capitulos = ORDEN.filter((n) => fs.existsSync(path.join(__dirname, 'capitulos', `${n}.js`)));
+const faltan = ORDEN.filter((n) => !capitulos.includes(n));
+const bloques = faltan.length ? ['parcial'] : ['1', '2', '3', '4'];
+
+const contenido = [];
+contenido.push(
+  new Paragraph({ spacing: { before: 2400 }, children: [] }),
+  new Paragraph({ children: [new TextRun({ text: 'MANUAL DE USUARIO · VERSIÓN 3', bold: true, size: 28, color: '888888' })] }),
+  new Paragraph({ spacing: { after: 200 }, children: [new TextRun({ text: 'Nómina Peruana en Odoo 19 Community', bold: true, size: 56, color: h.COLOR })] }),
+  new Paragraph({ spacing: { after: 600 }, children: [new TextRun({ text: 'Localización SOLSE sobre om_hr_payroll: planilla, aportes, renta de 5.ª, gratificaciones, CTS, liquidación e indemnización, vacaciones, feriados, asistencias, subsidios, microempresa, Vida Ley, PLAME, AFPnet, T-Registro, pago a bancos, pago de la planilla, boletas por correo y recibos por honorarios', size: 26, color: '444444' })] }),
+  new Paragraph({ border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: h.COLOR, space: 4 } }, children: [] }),
+  h.espacio(),
+  h.tabla(['Dato', 'Valor'], [
+    ['Versión de Odoo', '19.0 Community'],
+    ['Módulos documentados', `solse_pe_payroll_base ${h.VERSIONES.base} · solse_pe_payroll_ce ${h.VERSIONES.ce} · solse_pe_payroll_ce_demo ${h.VERSIONES.ce_demo} · solse_pe_payroll_renta5_ce ${h.VERSIONES.renta5} · solse_pe_payroll_asistencia ${h.VERSIONES.asistencia} · solse_pe_plame_rxh ${h.VERSIONES.plame_rxh} · solse_pe_plame_4ta ${h.VERSIONES.plame_4ta} · om_hr_payroll ${h.VERSIONES.om} · om_hr_payroll_account ${h.VERSIONES.om_account}`],
+    ['Base de medición', 'contable19: FM SYSTEMS SOLUTIONS EIRL (recorrido), SOLSE Demo Servicios S.A.C. (laboratorio de 25 casos) y las cinco compañías de laboratorio por empresa (SOLSE Demo Pequeña Empresa, Microempresa, Comercio, Industria y Consultora)'],
+    ['Público', 'Usuarios de RR. HH. y contabilidad, e implementadores'],
+    ['Fecha', 'Noviembre de 2026 · versión 3 (reemplaza a la versión 2 del 22 de octubre de 2026; lotes 12 a 71)'],
+    ['Estado de esta entrega', faltan.length ? `Avance: faltan ${faltan.join(', ')}` : 'Completo'],
+  ], [2600, 7038]),
+  h.espacio(),
+  h.nota('Todas las cifras salen de una **corrida real** en la base de pruebas (noviembre de 2026, con los 30 casos del laboratorio al 100 %). Los trabajadores del recorrido son **ficticios** y sus DNI **sintéticos**; los del laboratorio también. No se muestra ningún dato personal real.'),
+  new Paragraph({ children: [new PageBreak()] }),
+  new Paragraph({ children: [new TextRun({ text: 'Contenido', bold: true, size: 32, color: h.COLOR })], spacing: { after: 200 } }),
+  'INDICE',
+);
+// Referencias a la serie de videos: un recuadro bajo el título de cada capítulo que tiene episodio
+const EPISODIOS = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'videos', 'episodios.json'), 'utf8'));
+const tituloOriginal = h.h1;
+h.h1 = (texto) => {
+  const m = texto.match(/^(\d+)\.|^(Anexo [A-Z])\./);
+  const clave = m && (m[1] || m[2]);
+  const eps = clave ? EPISODIOS.filter((e) => e.capitulos.includes(clave)) : [];
+  if (!eps.length) return tituloOriginal(texto);
+  return [tituloOriginal(texto), h.nota(eps.map((e) => `**${e.id} · ${e.titulo}** (${e.duracion} min)`).join(' · ') + '. Ver el Anexo F.', 'video')];
+};
+for (const n of capitulos) contenido.push(...require(`./capitulos/${n}.js`)(h));
+if (capitulos.includes('anexo_e')) {
+  contenido.push(
+    h.h1('Anexo F. Serie de videos'),
+    h.p('La serie acompaña al manual con las **mismas cifras y capturas**. Cada episodio abre con la versión de los módulos y el capítulo que cubre, y cierra con la cifra clave. Narración en español con subtítulos; voz del equipo de soporte de SYSTION.'),
+    h.tabla(['Ep.', 'Título', 'Cap.', 'Caso', 'Dur.', 'Archivo'],
+      EPISODIOS.map((e) => [e.id, e.titulo, e.capitulos.join(', '), e.caso || '—', e.duracion, e.archivo]), [620, 2500, 900, 1500, 680, 3438]),
+    h.nota('Los archivos se entregan en la carpeta «Videos_Nomina_PE_v3_SYSTION», cada uno con su archivo de subtítulos (.srt) del mismo nombre.', 'nota'),
+  );
+}
+
+const entradas = h.indice.map(({ nivel, texto, id }) => new Paragraph({
+  spacing: { before: nivel === 1 ? 120 : 0, after: nivel === 1 ? 40 : 20 }, indent: { left: nivel === 1 ? 0 : 400 },
+  children: [new InternalHyperlink({ anchor: id, children: [new TextRun({ text: texto, bold: nivel === 1, size: nivel === 1 ? 22 : 20, color: nivel === 1 ? h.COLOR : '333333' })] })],
+}));
+contenido.splice(contenido.indexOf('INDICE'), 1, ...entradas);
+
+const documento = new Document({
+  creator: 'SOLSE - Implementación Odoo', title: 'Manual de Nómina Peruana - Odoo 19 Community (v3)',
+  description: 'Manual de usuario de la nómina peruana (localización SOLSE) en Odoo 19 Community, versión 3',
+  styles: {
+    default: { document: { run: { font: 'Calibri', size: 22 } } },
+    paragraphStyles: [
+      { id: 'Heading1', name: 'Heading 1', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { size: 36, bold: true, color: h.COLOR }, paragraph: { spacing: { before: 240, after: 200 }, outlineLevel: 0 } },
+      { id: 'Heading2', name: 'Heading 2', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { size: 28, bold: true, color: '333333' }, paragraph: { spacing: { before: 280, after: 140 }, outlineLevel: 1 } },
+      { id: 'Heading3', name: 'Heading 3', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { size: 24, bold: true, color: h.COLOR }, paragraph: { spacing: { before: 200, after: 100 }, outlineLevel: 2 } },
+    ],
+  },
+  numbering: { config: [
+    { reference: 'pasos', levels: [{ level: 0, format: LevelFormat.DECIMAL, text: '%1.', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 540, hanging: 360 } } } }] },
+    { reference: 'vinetas', levels: [{ level: 0, format: LevelFormat.BULLET, text: '•', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 540, hanging: 360 } } } }] },
+  ] },
+  sections: [{
+    properties: { page: { size: { width: 11906, height: 16838, orientation: PageOrientation.PORTRAIT }, margin: { top: 1134, bottom: 1134, left: 1134, right: 1134 } } },
+    headers: { default: new Header({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: 'Manual de Nómina Peruana · Odoo 19 Community · versión 3', size: 16, color: '888888' })] })] }) },
+    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ children: ['Página ', PageNumber.CURRENT, ' de ', PageNumber.TOTAL_PAGES], size: 16, color: '888888' })] })] }) },
+    children: contenido,
+  }],
+});
+Packer.toBuffer(documento).then((buffer) => {
+  fs.writeFileSync(SALIDA, buffer);
+  console.log(`Manual v3: ${SALIDA} · ${capitulos.length} capítulos y anexos · ${h.estado.figura} figuras` + (h.faltantes.length ? ` · FALTAN: ${h.faltantes.join(', ')}` : ''));
+});

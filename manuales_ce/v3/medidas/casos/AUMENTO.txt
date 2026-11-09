@@ -1,0 +1,40 @@
+== Indice
+Comparacion — AUMENTO — Nómina — aumento a mitad de mes, dos contratos y licencia sin goce
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Conceptos, PLAME, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Conceptos | 12 | 12 | 36 | 0 | 0 | 0 | OK
+PLAME | 6 | 6 | 18 | 0 | 0 | 0 | OK
+Diagnóstico | 6 | 6 | 12 | 0 | 0 | 0 | OK
+== Conceptos
+Fila | Origen | boleta | codigo | importe
+2026-10 aumento|RB_001 | ESPERADO | 2026-10 aumento | RB_001 | 2533.33
+2026-10 aumento|ONP_001 | ESPERADO | 2026-10 aumento | ONP_001 | 329.33
+2026-10 aumento|ESSALUD_001 | ESPERADO | 2026-10 aumento | ESSALUD_001 | 228.00
+2026-10 aumento|NET | ESPERADO | 2026-10 aumento | NET | 2204.00
+2026-10 dos contratos|RB_001 | ESPERADO | 2026-10 dos contratos | RB_001 | 2500.00
+2026-10 dos contratos|ONP_001 | ESPERADO | 2026-10 dos contratos | ONP_001 | 325.00
+2026-10 dos contratos|ESSALUD_001 | ESPERADO | 2026-10 dos contratos | ESSALUD_001 | 225.00
+2026-10 dos contratos|NET | ESPERADO | 2026-10 dos contratos | NET | 2175.00
+2026-11 sin goce una semana|RB_001 | ESPERADO | 2026-11 sin goce una semana | RB_001 | 1980.00
+2026-11 sin goce una semana|ONP_001 | ESPERADO | 2026-11 sin goce una semana | ONP_001 | 257.40
+2026-11 sin goce una semana|ESSALUD_001 | ESPERADO | 2026-11 sin goce una semana | ESSALUD_001 | 178.20
+2026-11 sin goce una semana|NET | ESPERADO | 2026-11 sin goce una semana | NET | 1722.60
+== PLAME
+Fila | Origen | archivo | linea | esta
+2026-11 snl|01|70000903|05|5| | ESPERADO | 2026-11 snl | 01|70000903|05|5| | SI
+2026-11 snl|01|70000904|05|30| | ESPERADO | 2026-11 snl | 01|70000904|05|30| | SI
+2026-11 jor|01|70000904|0|0|0|0| | ESPERADO | 2026-11 jor | 01|70000904|0|0|0|0| | SI
+2026-10 jor|01|70000901|176|0|0|0| | ESPERADO | 2026-10 jor | 01|70000901|176|0|0|0| | SI
+2026-10 jor|01|70000902|176|0|0|0| | ESPERADO | 2026-10 jor | 01|70000902|176|0|0|0| | SI
+2026-11 jor|01|70000903|126|0|0|0| | ESPERADO | 2026-11 jor | 01|70000903|126|0|0|0| | SI
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas validadas del caso | ESPERADO | 1 · boletas validadas del caso | 3
+2 · boletas del caso sin versión en la cabecera (O-31) | ESPERADO | 2 · boletas del caso sin versión en la cabecera (O-31) | 0
+3 · sueldo de la versión de la mensual de octubre del aumento (O-31) | ESPERADO | 3 · sueldo de la versión de la mensual de octubre del aumento (O-31) | 3000.00
+4 · mensual de noviembre sin goce todo el mes (C-32, C-18) | ESPERADO | 4 · mensual de noviembre sin goce todo el mes (C-32, C-18) | no existe (sin importes)
+5 · días de suspensión 05 de la semana sin goce | ESPERADO | 5 · días de suspensión 05 de la semana sin goce | 5
+6 · «Sin pagar»: código y no pagado en la mensual (C-31) | ESPERADO | 6 · «Sin pagar»: código y no pagado en la mensual (C-31) | SINGOCE100 · SI

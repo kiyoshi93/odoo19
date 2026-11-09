@@ -1,0 +1,69 @@
+== Indice
+Comparacion — CESE — Nómina — renta de 5.ª en el mes del cese: ajuste final y devolución
+Empresa: SOLSE Demo Principal S.A.C.
+Periodo: Conceptos, PLAME, Diagnóstico
+RESULTADO GLOBAL | CONFORME | 100.0% de celdas coincidentes
+Tolerancia aplicada | 0.005 absoluta · 0.0% relativa | ninguna celda necesitó el margen
+Estructura | Filas esperadas | Filas generadas | Celdas OK | Celdas distintas | Faltantes | Sobrantes | Estado
+Conceptos | 37 | 37 | 111 | 0 | 0 | 0 | OK
+PLAME | 6 | 6 | 18 | 0 | 0 | 0 | OK
+Diagnóstico | 10 | 10 | 20 | 0 | 0 | 0 | OK
+== Conceptos
+Fila | Origen | boleta | codigo | importe
+2026-01 devolución|R5TA_001 | ESPERADO | 2026-01 devolución | R5TA_001 | 736.80
+2026-02 devolución|R5TA_001 | ESPERADO | 2026-02 devolución | R5TA_001 | 736.80
+2026-03 devolución|R5TA_001 | ESPERADO | 2026-03 devolución | R5TA_001 | 736.80
+2026-04 devolución|R5TA_001 | ESPERADO | 2026-04 devolución | R5TA_001 | 0.00
+2026-04 devolución|ONP_001 | ESPERADO | 2026-04 devolución | ONP_001 | 1040.00
+2026-04 devolución|NET | ESPERADO | 2026-04 devolución | NET | 6960.00
+2026-04 devolución liquidación|VAC_TRUNCA_001 | ESPERADO | 2026-04 devolución liquidación | VAC_TRUNCA_001 | 1333.33
+2026-04 devolución liquidación|GRATI_TRUNCA_001 | ESPERADO | 2026-04 devolución liquidación | GRATI_TRUNCA_001 | 5333.33
+2026-04 devolución liquidación|BONO_GRATI_TRUNCA_001 | ESPERADO | 2026-04 devolución liquidación | BONO_GRATI_TRUNCA_001 | 480.00
+2026-04 devolución liquidación|BAR5_001 | ESPERADO | 2026-04 devolución liquidación | BAR5_001 | 7146.66
+2026-04 devolución liquidación|R5TA_001 | ESPERADO | 2026-04 devolución liquidación | R5TA_001 | 0.00
+2026-04 devolución liquidación|DEV5_001 | ESPERADO | 2026-04 devolución liquidación | DEV5_001 | 2158.67
+2026-01 retención|R5TA_001 | ESPERADO | 2026-01 retención | R5TA_001 | 26.93
+2026-02 retención|R5TA_001 | ESPERADO | 2026-02 retención | R5TA_001 | 26.93
+2026-03 retención|UTIL_001 | ESPERADO | 2026-03 retención | UTIL_001 | 50000.00
+2026-03 retención|BAR5_001 | ESPERADO | 2026-03 retención | BAR5_001 | 53000.00
+2026-03 retención|R5TA_001 | ESPERADO | 2026-03 retención | R5TA_001 | 1586.14
+2026-03 retención liquidación|VAC_TRUNCA_001 | ESPERADO | 2026-03 retención liquidación | VAC_TRUNCA_001 | 750.00
+2026-03 retención liquidación|GRATI_TRUNCA_001 | ESPERADO | 2026-03 retención liquidación | GRATI_TRUNCA_001 | 1500.00
+2026-03 retención liquidación|BONO_GRATI_TRUNCA_001 | ESPERADO | 2026-03 retención liquidación | BONO_GRATI_TRUNCA_001 | 135.00
+2026-03 retención liquidación|R5TA_001 | ESPERADO | 2026-03 retención liquidación | R5TA_001 | 190.80
+2026-03 retención liquidación|DEV5_001 | ESPERADO | 2026-03 retención liquidación | DEV5_001 | 0.00
+2026-01 renovación|R5TA_001 | ESPERADO | 2026-01 renovación | R5TA_001 | 26.93
+2026-02 renovación|R5TA_001 | ESPERADO | 2026-02 renovación | R5TA_001 | 26.93
+2026-03 renovación|R5TA_001 | ESPERADO | 2026-03 renovación | R5TA_001 | 26.93
+2026-01 reingreso|R5TA_001 | ESPERADO | 2026-01 reingreso | R5TA_001 | 736.80
+2026-02 reingreso|R5TA_001 | ESPERADO | 2026-02 reingreso | R5TA_001 | 0.00
+2026-02 reingreso liquidación|BAR5_001 | ESPERADO | 2026-02 reingreso liquidación | BAR5_001 | 4240.00
+2026-02 reingreso liquidación|R5TA_001 | ESPERADO | 2026-02 reingreso liquidación | R5TA_001 | 0.00
+2026-02 reingreso liquidación|DEV5_001 | ESPERADO | 2026-02 reingreso liquidación | DEV5_001 | 736.80
+2026-04 reingreso|R5TA_001 | ESPERADO | 2026-04 reingreso | R5TA_001 | 856.09
+2026-01 orden invertido|R5TA_001 | ESPERADO | 2026-01 orden invertido | R5TA_001 | 3191.25
+2026-02 orden invertido|R5TA_001 | ESPERADO | 2026-02 orden invertido | R5TA_001 | 3191.25
+2026-03 orden invertido liquidación|BAR5_001 | ESPERADO | 2026-03 orden invertido liquidación | BAR5_001 | 12566.67
+2026-03 orden invertido liquidación|R5TA_001 | ESPERADO | 2026-03 orden invertido liquidación | R5TA_001 | 0.00
+2026-03 orden invertido liquidación|DEV5_001 | ESPERADO | 2026-03 orden invertido liquidación | DEV5_001 | 5257.17
+2026-03 orden invertido|R5TA_001 | ESPERADO | 2026-03 orden invertido | R5TA_001 | 1994.00
+== PLAME
+Fila | Origen | periodo | dni | lineas
+2026-03|70004502 | ESPERADO | 2026-03 | 70004502 | 01|70004502|0605|1776.94|1776.94|
+2026-03|70004503 | ESPERADO | 2026-03 | 70004503 | 01|70004503|0605|26.93|26.93|
+2026-03|70004501 | ESPERADO | 2026-03 | 70004501 | 01|70004501|0605|736.80|736.80|
+2026-02|70004504 | ESPERADO | 2026-02 | 70004504 | 01|70004504|0928|736.80|736.80|
+2026-04|70004501 | ESPERADO | 2026-04 | 70004501 | 01|70004501|0928|2158.67|2158.67|
+2026-04|70004504 | ESPERADO | 2026-04 | 70004504 | 01|70004504|0605|856.09|856.09|
+== Diagnóstico
+Fila | Origen | etapa | cantidad
+1 · boletas del caso | ESPERADO | 1 · boletas del caso | 20
+2 · validadas | ESPERADO | 2 · validadas | 20
+3 · fecha de cese en la mensual de abril de 70004501 | ESPERADO | 3 · fecha de cese en la mensual de abril de 70004501 | 2026-04-30
+4 · ajuste final de 70004501 con abril validado (impuesto − retenido neto) | ESPERADO | 4 · ajuste final de 70004501 con abril validado (impuesto − retenido neto) | 0.00
+5 · fecha de cese en la mensual de marzo de 70004503 (renovación) | ESPERADO | 5 · fecha de cese en la mensual de marzo de 70004503 (renovación) | (vacía)
+6 · NET − GROSS de la liquidación de 70004501 (DEV5 − ONP) | ESPERADO | 6 · NET − GROSS de la liquidación de 70004501 (DEV5 − ONP) | 1985.34
+7 · asiento de la liquidación de 70004501: debe 40173 | ESPERADO | 7 · asiento de la liquidación de 70004501: debe 40173 | 2158.67
+8 · asiento de la liquidación de 70004501: líneas «Adjustment Entry» | ESPERADO | 8 · asiento de la liquidación de 70004501: líneas «Adjustment Entry» | 0
+9 · ajuste final de 70004505 con marzo validado, menos la retención de la mensual (orden invertido) | ESPERADO | 9 · ajuste final de 70004505 con marzo validado, menos la retención de la mensual (orden invertido) | 0.00
+10 · nota «rectifíquela» en el historial de la mensual de marzo de 70004505 | ESPERADO | 10 · nota «rectifíquela» en el historial de la mensual de marzo de 70004505 | SI
