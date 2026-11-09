@@ -44,7 +44,7 @@ async function informeTapado(p, c, compania, reporte, id, nombre, patrones) {
   // primero el formulario en la compañía, para que el cliente web deje la compañía activa (si no, el informe da 403)
   await cia(c, compania); await u.irA(p, `/odoo/action-${ACC.boletas}/${id}`).catch(() => {});
   if (reporte.includes('certificado')) await u.irA(p, `/odoo/employees/${id}`).catch(() => {});
-  await cia(c, compania); await p.goto(`${u.URL_BASE}/report/html/${reporte}/${id}`, { waitUntil: 'networkidle' });
+  await cia(c, compania); await p.goto(`${u.URL_BASE}/report/html/${reporte}/${id}?context=${encodeURIComponent(JSON.stringify({ allowed_company_ids: [compania] }))}`, { waitUntil: 'networkidle' });
   hechos[nombre] = limpio(await p.locator('body').innerText()).slice(0, 3000);
   if (patrones.length) hechos[nombre + '_tapados'] = await tapar(p, patrones);
   await cap(p, nombre, { completa: true });
