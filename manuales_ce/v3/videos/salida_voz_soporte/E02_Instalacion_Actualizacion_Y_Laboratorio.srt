@@ -1,0 +1,180 @@
+1
+00:00:00,500 --> 00:00:05,161
+En este episodio vemos qué módulos se instalan, qué hace cada actualización y cómo
+
+2
+00:00:05,161 --> 00:00:09,652
+usar el laboratorio de casos, que ahora tiene treinta casos de nómina, cinco de
+
+3
+00:00:09,652 --> 00:00:11,186
+ellos en compañías propias.
+
+4
+00:00:12,700 --> 00:00:17,711
+Después de actualizar, filtre Aplicaciones por Nómina Peruana, Payroll y PLAME, solo
+
+5
+00:00:17,711 --> 00:00:21,291
+las instaladas, y compare cada versión con la de la entrega.
+
+6
+00:00:21,291 --> 00:00:22,484
+Hay un módulo nuevo:
+
+7
+00:00:22,484 --> 00:00:27,435
+el detalle de la renta de quinta para Community, que muestra el cálculo paso a paso
+
+8
+00:00:27,435 --> 00:00:29,941
+en cada boleta sin cambiar ningún importe.
+
+9
+00:00:31,460 --> 00:00:36,059
+Cada entrega trae un script de impacto, de solo lectura, que se corre antes y
+
+10
+00:00:36,059 --> 00:00:37,374
+después de actualizar:
+
+11
+00:00:37,374 --> 00:00:41,854
+dice qué boletas validadas conviene revisar y cuáles en borrador cambian al
+
+12
+00:00:41,854 --> 00:00:42,511
+recalcular.
+
+13
+00:00:42,511 --> 00:00:46,214
+Cada módulo debe estar una sola vez en las rutas del servidor.
+
+14
+00:00:46,214 --> 00:00:50,754
+Después del menos u, el log debe salir sin errores, con cero asignaciones de
+
+15
+00:00:50,754 --> 00:00:53,681
+cuentas, y hay que levantar el servicio otra vez.
+
+16
+00:00:55,260 --> 00:00:59,902
+La actualización repara las estructuras y sus reglas, pero no vuelve a crear una
+
+17
+00:00:59,902 --> 00:01:03,384
+regla que usted archivó, y asigna cuentas solo donde faltan.
+
+18
+00:01:03,384 --> 00:01:07,794
+Algunas versiones traen post-migraciones, por ejemplo la que pone el tipo de
+
+19
+00:01:07,794 --> 00:01:09,360
+planilla a cada estructura.
+
+20
+00:01:09,360 --> 00:01:13,945
+Nada validado se recalcula, y cada opción nueva aparece en la pestaña Nómina PE
+
+21
+00:01:13,945 --> 00:01:16,846
+Controles de la compañía con su valor por defecto.
+
+22
+00:01:18,420 --> 00:01:23,861
+En SOLSE Demo, Configuración, Laboratorio, pulse Sincronizar casos después de cada
+
+23
+00:01:23,861 --> 00:01:24,791
+actualización.
+
+24
+00:01:24,791 --> 00:01:27,644
+Quedan 33 casos registrados y 30 conformes:
+
+25
+00:01:27,644 --> 00:01:32,754
+los tres pendientes son de la contabilidad y la facturación, no de la nómina.
+
+26
+00:01:34,220 --> 00:01:38,943
+Los treinta casos de la nómina están comparados al cien por ciento:
+
+27
+00:01:38,943 --> 00:01:44,723
+los veinticinco de siempre, en SOLSE Demo Servicios, con 4 741 celdas, y los cinco
+
+28
+00:01:44,723 --> 00:01:47,120
+laboratorios por empresa, con 688.
+
+29
+00:01:47,120 --> 00:01:51,350
+Cada caso se corre con Limpiar, Sembrar, Generar y Comparar.
+
+30
+00:01:52,820 --> 00:01:58,279
+Cada caso EMPRESA es un mes completo de una empresa realista en su propia compañía
+
+31
+00:01:58,279 --> 00:01:59,877
+de laboratorio, sin RUC:
+
+32
+00:01:59,877 --> 00:02:05,403
+una pequeña empresa, una microempresa, un comercio, una industria y una consultora.
+
+33
+00:02:05,403 --> 00:02:08,931
+La primera vez, la compañía la crea un administrador.
+
+34
+00:02:08,931 --> 00:02:12,193
+La consultora compara 137 celdas sin diferencias.
+
+35
+00:02:13,660 --> 00:02:18,850
+La tarea nocturna que genera entradas de trabajo y el botón Limpiar ya no corren a
+
+36
+00:02:18,850 --> 00:02:19,293
+la vez.
+
+37
+00:02:19,293 --> 00:02:24,356
+Si la tarea está corriendo, Limpiar no borra nada y pide pulsar otra vez en unos
+
+38
+00:02:24,356 --> 00:02:24,862
+minutos.
+
+39
+00:02:24,862 --> 00:02:27,836
+Terminada la tarea, una sola pasada borra todo:
+
+40
+00:02:27,836 --> 00:02:32,013
+en NOMINA, también las 528 entradas que la tarea acababa de crear.
+
+41
+00:02:33,540 --> 00:02:36,775
+El laboratorio solo escribe en sus compañías de prueba.
+
+42
+00:02:36,775 --> 00:02:41,540
+En una compañía real, el asistente de datos de prueba lo explica y no carga nada.
+
+43
+00:02:42,940 --> 00:02:44,850
+Después de cada actualización:
+
+44
+00:02:44,850 --> 00:02:49,053
+el impacto, las versiones, sincronizar casos y correr los treinta.
+
+45
+00:02:49,053 --> 00:02:52,300
+Está en el capítulo dos y en el anexo E del manual.
+

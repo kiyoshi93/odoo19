@@ -213,5 +213,6 @@
   "Renta de 5ta categoría R5TA_001 Nómina Mensual Empleados Deducción",
   "Devolución de retención en exceso de 5ta categoría DEV5_001 Nómina Mensual Empleados Ingreso no Afecto",
   "Descuento de adelanto DESC_ADEL_001 Nómina Mensual Empleados Deducción"
- ]
+ ],
+ "error_c08_02": "pasos[n] is not a function"
 }

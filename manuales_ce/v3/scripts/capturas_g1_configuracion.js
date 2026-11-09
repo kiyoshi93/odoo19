@@ -285,11 +285,22 @@ const pasos = {
     hechos.c07_04 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 1500);
     await cap(p, 'c07_04_regla_cuentas', { resaltar: ['.o_field_widget[name="account_debit"]', '.o_field_widget[name="account_credit"]'] });
   },
+  async c08_02(p, c) {
+    const lu = await empleado(p, 1, '99999901');
+    await cia(c, 1); await u.irA(p, `/odoo/employees/${lu.id}`); await u.pestana(p, 'Personal');
+    await p.setViewportSize({ width: 1600, height: 1500 }); await p.waitForTimeout(700);
+    await hasta(p, '.o_notebook .nav-link.active', 60);
+    await cap(p, 'c08_02_personal', { resaltar: ['.o_field_widget[name="identification_id"]', '.o_field_widget[name="birthday"]'] });
+    await p.setViewportSize({ width: 1600, height: ALTO });
+  },
   async c08_resto(p, c) {
     const lu = await empleado(p, 1, '99999901');
     await cia(c, 1); await u.irA(p, `/odoo/employees/${lu.id}`); await u.pestana(p, 'Personal');
     hechos.c08_02 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 1200);
+    await p.setViewportSize({ width: 1600, height: 1500 }); await p.waitForTimeout(700);
+    await hasta(p, '.o_notebook .nav-link.active', 60);
     await cap(p, 'c08_02_personal', { resaltar: ['.o_field_widget[name="identification_id"]', '.o_field_widget[name="birthday"]'] });
+    await p.setViewportSize({ width: 1600, height: ALTO });
     await ficha(p, c, 4, '70001501');
     hechos.c08_07 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 3000);
     await p.mouse.move(1300, 850);
@@ -313,7 +324,7 @@ const pasos = {
   },
   async c09_resto(p, c) {
     await cia(c, 1); await u.irA(p, '/odoo/action-999');
-    await p.locator('.o_data_row').filter({ hasText: /\bNME\b/ }).first().click(); await u.esperarCarga(p, 1000);
+    await p.locator('.o_data_row').filter({ hasText: 'Nómina Mensual Empleados' }).filter({ hasNotText: 'copia' }).first().click(); await u.esperarCarga(p, 1000);
     hechos.c09_02 = limpio(await p.locator('.o_form_view').first().innerText()).slice(0, 3000);
     await cap(p, 'c09_02_estructura_nme');
     await u.irA(p, '/odoo/action-1002');

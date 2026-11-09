@@ -204,8 +204,12 @@ Object.assign(pasos, {
     await cap(p, 'c18_02_banda_sin_feriados', { resaltar: ['.o_pe_alertas_nomina'] });
     await cia(c, 1); await u.irA(p, '/odoo/action-base.action_res_company_form/1'); await u.pestana(p, 'Nómina PE - Controles');
     hechos.c09_04 = limpio(await p.locator('.o_notebook .tab-pane.active').innerText()).slice(0, 1500); await cap(p, 'c09_04_compania_controles');
-    await cia(c, 4); await u.irA(p, '/odoo/action-1009'); const s = p.locator('.o_searchview_input'); await s.fill('AUMENTO'); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1200);
-    for (const g of await p.locator('.o_group_header').all()) { await g.click(); await p.waitForTimeout(500); }
+  },
+  async r_contratos(p, c) {
+    await cia(c, 4); await u.irA(p, '/odoo/action-1009'); const s = p.locator('.o_searchview_input'); await s.fill('AUMENTO'); await p.waitForTimeout(1200); await p.keyboard.press('Enter'); await u.esperarCarga(p, 1500);
+    await p.keyboard.press('Escape'); await p.mouse.click(1300, 800); await p.waitForTimeout(500);
+    const n = await p.locator('.o_group_header').count();
+    for (let i = 0; i < n; i++) { await p.locator('.o_group_header').nth(i).click(); await p.waitForTimeout(700); }
     hechos.c21_03 = (await p.locator('.o_data_row').allInnerTexts()).map(limpio); await cap(p, 'c21_03_versiones_del_contrato');
   },
   async r_asistencias(p, c) {
