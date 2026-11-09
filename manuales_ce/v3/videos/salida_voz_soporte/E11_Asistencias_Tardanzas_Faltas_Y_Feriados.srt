@@ -43,86 +43,118 @@ Su promedio de horas por día es también el divisor del valor hora:
 con ocho horas, sueldo entre treinta, entre ocho.
 
 12
-00:00:43,420 --> 00:00:48,737
-Con Cargar asistencias, la boleta concilia las marcaciones del mes.
+00:00:43,420 --> 00:00:48,123
+En la boleta en borrador, el botón Cargar asistencias concilia las marcaciones del
 
 13
-00:00:48,737 --> 00:00:52,705
-Carlos llegó tres veces veinticinco minutos tarde:
+00:00:48,123 --> 00:00:49,443
+periodo con el horario.
 
 14
-00:00:52,705 --> 00:00:59,213
-con diez de tolerancia, cuentan cuarenta y cinco minutos, S/ 10,94 sobre S/ 3 500.
+00:00:50,900 --> 00:00:54,054
+Carlos llegó tres veces veinticinco minutos tarde.
 
 15
-00:00:59,213 --> 00:01:03,498
-Jorge tiene dos faltas y su básica baja a S/ 1 054,67.
+00:00:54,054 --> 00:00:57,083
+Con diez de tolerancia, cuentan quince cada una:
 
 16
-00:01:03,498 --> 00:01:09,212
-Con la evaluación por horas, la media jornada de María deja S/ 7 866,67.
+00:00:57,083 --> 00:00:58,660
+cuarenta y cinco minutos.
 
 17
-00:01:09,212 --> 00:01:13,180
-Y las vacaciones de Óscar salen como justificadas.
+00:01:00,060 --> 00:01:04,631
+Se descuentan al valor minuto, con la jornada de su horario:
 
 18
-00:01:14,580 --> 00:01:18,461
-El día no laborable del calendario cuenta como feriado:
+00:01:04,631 --> 00:01:07,450
+S/ 10,94 sobre un sueldo de S/ 3 500.
 
 19
-00:01:18,461 --> 00:01:20,155
-no es falta ni tardanza.
+00:01:07,450 --> 00:01:11,260
+La tardanza también reduce la base de los aportes.
 
 20
-00:01:20,155 --> 00:01:25,729
-En octubre, Jorge tiene veintiún días evaluados, cero faltas y un feriado, y su
+00:01:12,660 --> 00:01:16,890
+Un día laborable sin marcaciones ni ausencia aprobada es falta.
 
 21
-00:01:25,729 --> 00:01:27,634
-remuneración sale completa:
+00:01:16,890 --> 00:01:20,985
+Jorge tiene dos en setiembre, y su básica baja a S/ 1 054,67.
 
 22
-00:01:27,634 --> 00:01:28,269
-S/ 1 130.
+00:01:20,985 --> 00:01:26,356
+Con la evaluación por horas, una media jornada se descuenta en proporción, y los
 
 23
-00:01:29,740 --> 00:01:35,194
-Si el trabajador marcó en un feriado y no tuvo descanso sustitutorio, se paga con el
+00:01:26,356 --> 00:01:29,713
+días con una ausencia aprobada salen justificados.
 
 24
-00:01:35,194 --> 00:01:36,233
-cien por ciento:
+00:01:31,180 --> 00:01:34,875
+El día no laborable del calendario cuenta como feriado:
 
 25
-00:01:36,233 --> 00:01:39,349
-con la casilla encendida, desde las asistencias;
+00:01:34,875 --> 00:01:36,487
+no es falta ni tardanza.
 
 26
-00:01:39,349 --> 00:01:42,206
-si no, con la entrada de trabajo en feriado.
+00:01:36,487 --> 00:01:41,794
+En octubre, Jorge tiene veintiún días evaluados, cero faltas y un feriado, y su
 
 27
-00:01:42,206 --> 00:01:45,452
-Ocho horas con un sueldo de tres mil pagan S/ 200:
+00:01:41,794 --> 00:01:43,608
+remuneración sale completa:
 
 28
-00:01:45,452 --> 00:01:47,595
-doce cincuenta por ocho, por dos.
+00:01:43,608 --> 00:01:44,212
+S/ 1 130.
 
 29
-00:01:49,060 --> 00:01:53,842
-El descanso semanal trabajado y un feriado en un día libre del horario no salen de
+00:01:44,212 --> 00:01:49,788
+Arriba, la boleta avisa además que su sueldo es menor que la remuneración mínima de
 
 30
-00:01:53,842 --> 00:01:54,484
-las marcas:
+00:01:49,788 --> 00:01:50,326
+octubre.
 
 31
-00:01:54,484 --> 00:01:55,592
-se ingresan a mano.
+00:01:51,860 --> 00:01:57,314
+Si el trabajador marcó en un feriado y no tuvo descanso sustitutorio, se paga con el
 
 32
-00:01:55,592 --> 00:01:58,042
+00:01:57,314 --> 00:01:58,353
+cien por ciento:
+
+33
+00:01:58,353 --> 00:02:01,469
+con la casilla encendida, desde las asistencias;
+
+34
+00:02:01,469 --> 00:02:04,326
+si no, con la entrada de trabajo en feriado.
+
+35
+00:02:04,326 --> 00:02:07,572
+Ocho horas con un sueldo de tres mil pagan S/ 200:
+
+36
+00:02:07,572 --> 00:02:09,715
+doce cincuenta por ocho, por dos.
+
+37
+00:02:11,180 --> 00:02:15,962
+El descanso semanal trabajado y un feriado en un día libre del horario no salen de
+
+38
+00:02:15,962 --> 00:02:16,604
+las marcas:
+
+39
+00:02:16,604 --> 00:02:17,712
+se ingresan a mano.
+
+40
+00:02:17,712 --> 00:02:20,162
 Está en el capítulo diecinueve del manual.
 

@@ -1,0 +1,140 @@
+1
+00:00:05,580 --> 00:00:09,980
+Cada laboratorio por empresa es un mes completo de una empresa realista.
+
+2
+00:00:09,980 --> 00:00:11,936
+Recorremos uno de punta a punta:
+
+3
+00:00:11,936 --> 00:00:17,009
+una consultora con una practicante, dos extranjeros no domiciliados, una extranjera
+
+4
+00:00:17,009 --> 00:00:19,759
+domiciliada y una asistente a tiempo parcial.
+
+5
+00:00:21,220 --> 00:00:23,472
+Hay cinco laboratorios por empresa:
+
+6
+00:00:23,472 --> 00:00:28,812
+una pequeña empresa, una microempresa, un comercio, una industria y una consultora.
+
+7
+00:00:28,812 --> 00:00:33,959
+Cada uno trabaja en su propia compañía, sin RUC, y se corre como cualquier caso:
+
+8
+00:00:33,959 --> 00:00:36,340
+Limpiar, Sembrar, Generar y Comparar.
+
+9
+00:00:37,740 --> 00:00:44,133
+La consultora siembra cinco trabajadores, valida nueve boletas y compara 137 celdas,
+
+10
+00:00:44,133 --> 00:00:45,351
+sin diferencias.
+
+11
+00:00:45,351 --> 00:00:48,624
+Ahora abrimos sus boletas de junio de 2026.
+
+12
+00:00:50,100 --> 00:00:54,275
+La practicante cumple seis meses en junio:
+
+13
+00:00:54,275 --> 00:01:00,737
+recibe la subvención de S/ 1 130 y la media subvención de S/ 565.
+
+14
+00:01:00,737 --> 00:01:06,900
+La compañía aporta S/ 152,55 a EsSalud, y el neto es S/ 1 695.
+
+15
+00:01:08,300 --> 00:01:14,156
+El consultor venezolano no domiciliado, sin convenio, gana S/ 8 000.
+
+16
+00:01:14,156 --> 00:01:20,271
+Se le retiene el treinta por ciento, S/ 2 400, sin deducción ni escala.
+
+17
+00:01:20,271 --> 00:01:24,060
+Con la ONP de S/ 1 040, el neto es S/ 4 560.
+
+18
+00:01:25,460 --> 00:01:31,857
+El consultor colombiano gana lo mismo, pero tiene el convenio de la Comunidad
+
+19
+00:01:31,857 --> 00:01:32,438
+Andina:
+
+20
+00:01:32,438 --> 00:01:38,005
+se le retiene con las siete UIT y la escala, como a un domiciliado.
+
+21
+00:01:38,005 --> 00:01:41,826
+La pestaña Renta de quinta muestra el cálculo:
+
+22
+00:01:41,826 --> 00:01:44,817
+S/ 278,03, y su neto es S/ 6 681,97.
+
+23
+00:01:46,300 --> 00:01:50,596
+La asistente a tiempo parcial gana S/ 500.
+
+24
+00:01:50,596 --> 00:01:57,756
+Paga ONP por S/ 65, y EsSalud se calcula sobre la remuneración mínima:
+
+25
+00:01:57,756 --> 00:01:58,779
+S/ 101,70.
+
+26
+00:01:58,779 --> 00:02:00,620
+Su neto es S/ 435.
+
+27
+00:02:02,020 --> 00:02:03,288
+Y el PLAME del mes:
+
+28
+00:02:03,288 --> 00:02:08,828
+cuatro trabajadores en el punto rem, el punto toc con los dos no domiciliados, y la
+
+29
+00:02:08,828 --> 00:02:13,233
+practicante en el archivo del personal en formación, con S/ 1 695.
+
+30
+00:02:14,700 --> 00:02:17,284
+Las compañías de laboratorio no tienen RUC:
+
+31
+00:02:17,284 --> 00:02:21,191
+sus archivos salen sin él y sirven para mirar, no para presentar.
+
+32
+00:02:21,191 --> 00:02:25,879
+Y como cada caso escribe en su propia compañía, no toca la de servicios ni una
+
+33
+00:02:25,879 --> 00:02:26,720
+compañía real.
+
+34
+00:02:28,180 --> 00:02:33,220
+Los cinco laboratorios por empresa dan las cifras completas de una empresa por tipo.
+
+35
+00:02:33,220 --> 00:02:36,340
+Están en el capítulo dos y en el anexo E del manual.
+
