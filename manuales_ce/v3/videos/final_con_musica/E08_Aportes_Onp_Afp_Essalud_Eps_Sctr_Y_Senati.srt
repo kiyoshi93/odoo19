@@ -1,0 +1,152 @@
+1
+00:00:05,580 --> 00:00:09,969
+Este episodio repasa los aportes y retenciones de la boleta, con los casos del
+
+2
+00:00:09,969 --> 00:00:10,644
+laboratorio.
+
+3
+00:00:12,100 --> 00:00:16,749
+Carlos está en la AFP Habitat y tiene EPS:
+
+4
+00:00:16,749 --> 00:00:26,046
+la boleta calcula el aporte, la comisión y la prima de seguro, EsSalud de S/ 325,17,
+
+5
+00:00:26,046 --> 00:00:33,684
+el aporte a la EPS de S/ 162,59 con su crédito de S/ 81,29, y SENATI.
+
+6
+00:00:33,684 --> 00:00:36,229
+Su neto es S/ 3 149,09.
+
+7
+00:00:37,740 --> 00:00:39,527
+Ana gana S/ 15 000.
+
+8
+00:00:39,527 --> 00:00:47,049
+La prima de seguro de la AFP se calcula hasta la remuneración máxima asegurable:
+
+9
+00:00:47,049 --> 00:00:48,460
+sale S/ 173,62.
+
+10
+00:00:49,860 --> 00:00:55,185
+La base mínima de EsSalud, el tope de la prima, el crédito EPS y la Vida Ley se
+
+11
+00:00:55,185 --> 00:00:57,139
+miran por mes, no por boleta.
+
+12
+00:00:57,139 --> 00:00:59,364
+Nilda goza vacaciones todo julio:
+
+13
+00:00:59,364 --> 00:01:05,025
+la vacacional de S/ 3 000 paga EsSalud por S/ 270, el nueve por ciento del mes, y la
+
+14
+00:01:05,025 --> 00:01:06,845
+mensual queda sin importes.
+
+15
+00:01:08,380 --> 00:01:11,929
+El crédito EPS se calcula con todas las boletas del mes:
+
+16
+00:01:11,929 --> 00:01:17,000
+con un sueldo de tres mil y comisiones de mil, son S/ 90, sin importar el orden.
+
+17
+00:01:17,000 --> 00:01:21,817
+Si el crédito de la empresa pasa el diez por ciento de la UIT por trabajador
+
+18
+00:01:21,817 --> 00:01:23,465
+cubierto, la boleta avisa.
+
+19
+00:01:23,465 --> 00:01:26,317
+Y un plan vencido ya no da aporte ni crédito.
+
+20
+00:01:27,780 --> 00:01:33,758
+Con Cubierto por SCTR, la boleta lleva una línea por cobertura, con la tasa de la
+
+21
+00:01:33,758 --> 00:01:35,308
+póliza de su entidad.
+
+22
+00:01:35,308 --> 00:01:41,138
+Con la EPS al uno coma dos por ciento y una compañía al uno coma cero cinco, un
+
+23
+00:01:41,138 --> 00:01:44,164
+sueldo de tres mil paga S/ 36 y S/ 31,50.
+
+24
+00:01:44,164 --> 00:01:48,592
+La gratificación no paga SCTR, salvo que la póliza lo exija.
+
+25
+00:01:50,140 --> 00:01:54,405
+El descuento deducible baja la base de los aportes:
+
+26
+00:01:54,405 --> 00:01:58,587
+con treinta, la base es S/ 2 970 y la AFP, S/ 297.
+
+27
+00:01:58,587 --> 00:02:05,529
+Los aportes voluntarios a la AFP se descuentan del neto y van a AFPnet, sin reducir
+
+28
+00:02:05,529 --> 00:02:06,616
+ninguna base.
+
+29
+00:02:08,100 --> 00:02:14,821
+Una asistente a tiempo parcial, con S/ 500 y tres horas diarias, paga ONP sobre lo
+
+30
+00:02:14,821 --> 00:02:20,558
+que gana, S/ 65, y su EsSalud se calcula sobre la remuneración mínima:
+
+31
+00:02:20,558 --> 00:02:21,378
+S/ 101,70.
+
+32
+00:02:22,860 --> 00:02:29,205
+En una empresa industrial, el SENATI es el cero coma setenta y cinco por ciento:
+
+33
+00:02:29,205 --> 00:02:32,298
+S/ 18,71 sobre una base de S/ 2 494,79.
+
+34
+00:02:32,298 --> 00:02:37,771
+Si el año anterior tuvo veinte trabajadores o menos, la boleta avisa.
+
+35
+00:02:37,771 --> 00:02:41,340
+El detalle está en el capítulo treinta y dos.
+
+36
+00:02:42,740 --> 00:02:47,263
+Que el tope del crédito EPS se mida por trabajador es un criterio pendiente de
+
+37
+00:02:47,263 --> 00:02:48,945
+confirmación de la contadora.
+
+38
+00:02:48,945 --> 00:02:51,322
+Todo está en el capítulo doce del manual.
+

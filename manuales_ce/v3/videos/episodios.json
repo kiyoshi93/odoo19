@@ -1,14 +1,14 @@
 [
  {
   "id": "E00",
-  "titulo": "Nómina peruana para Odoo 19 Community: versión 2",
+  "titulo": "Nómina peruana para Odoo 19 Community: versión 3",
   "capitulos": [
    "1",
-   "31"
+   "33"
   ],
   "caso": null,
-  "archivo": "E00_Nomina_Peruana_Para_Odoo_19_Community_Version_2.mp4",
-  "duracion": "1:07"
+  "archivo": "E00_Nomina_Peruana_Para_Odoo_19_Community_Version_3.mp4",
+  "duracion": "1:24"
  },
  {
   "id": "E01",
@@ -18,21 +18,20 @@
    "11",
    "27"
   ],
-  "caso": "NOMINA",
+  "caso": "BOLETA y NOMINA",
   "archivo": "E01_Resumen_La_Nomina_De_Un_Mes_Del_Alta_Al_Plame.mp4",
-  "duracion": "4:42"
+  "duracion": "3:24"
  },
  {
   "id": "E02",
   "titulo": "Instalación, actualización y laboratorio",
   "capitulos": [
    "2",
-   "3",
    "Anexo E"
   ],
-  "caso": "los 14 casos",
+  "caso": "los 30 casos de la nómina",
   "archivo": "E02_Instalacion_Actualizacion_Y_Laboratorio.mp4",
-  "duracion": "1:48"
+  "duracion": "2:59"
  },
  {
   "id": "E03",
@@ -43,7 +42,7 @@
   ],
   "caso": "NOMINA (hoja Parámetros)",
   "archivo": "E03_Parametros_Legales_Con_Vigencia.mp4",
-  "duracion": "2:10"
+  "duracion": "2:55"
  },
  {
   "id": "E04",
@@ -55,7 +54,7 @@
   ],
   "caso": null,
   "archivo": "E04_Maestros_Sunat_Seguros_Y_Mapeo_Contable.mp4",
-  "duracion": "1:59"
+  "duracion": "3:05"
  },
  {
   "id": "E05",
@@ -64,21 +63,20 @@
    "8",
    "9"
   ],
-  "caso": "TREGISTRO (fichas)",
+  "caso": "TREGISTRO, EMPRESA_CONSULTORA y EMPRESA_INDUSTRIA",
   "archivo": "E05_Alta_Del_Trabajador_Y_Su_Contrato.mp4",
-  "duracion": "2:10"
+  "duracion": "3:47"
  },
  {
   "id": "E06",
-  "titulo": "La boleta: cálculo, impresión y asiento",
+  "titulo": "La boleta: cálculo, avisos, impresión y asiento",
   "capitulos": [
    "10",
-   "7",
    "26"
   ],
-  "caso": "BOLETA",
-  "archivo": "E06_La_Boleta_Calculo_Impresion_Y_Asiento.mp4",
-  "duracion": "2:04"
+  "caso": "BOLETA, CONCEPTOS y EMPRESA_COMERCIO",
+  "archivo": "E06_La_Boleta_Calculo_Avisos_Impresion_Y_Asiento.mp4",
+  "duracion": "2:34"
  },
  {
   "id": "E07",
@@ -87,30 +85,30 @@
    "11",
    "25"
   ],
-  "caso": "NOMINA",
+  "caso": "Recorrido de FM, ADICIONALES y escenario del manual",
   "archivo": "E07_El_Lote_Mensual_Y_Las_Rectificativas.mp4",
-  "duracion": "1:48"
+  "duracion": "2:18"
  },
  {
   "id": "E08",
-  "titulo": "Aportes: ONP, AFP, EsSalud y EPS",
+  "titulo": "Aportes: ONP, AFP, EsSalud, EPS, SCTR y SENATI",
   "capitulos": [
-   "12"
+   "12",
+   "32"
   ],
-  "caso": "NOMINA",
-  "archivo": "E08_Aportes_Onp_Afp_Essalud_Y_Eps.mp4",
-  "duracion": "1:46"
+  "caso": "NOMINA, CONCEPTOS, SCTR, EMPRESA_CONSULTORA y EMPRESA_INDUSTRIA",
+  "archivo": "E08_Aportes_Onp_Afp_Essalud_Eps_Sctr_Y_Senati.mp4",
+  "duracion": "2:53"
  },
  {
   "id": "E09",
   "titulo": "Renta de 5.ª categoría de punta a punta",
   "capitulos": [
-   "13",
-   "16"
+   "13"
   ],
-  "caso": "Lucía (recorrido) y CESE",
+  "caso": "Lucía (recorrido), NOMINA, CONCEPTOS, CESE y EMPRESA_CONSULTORA",
   "archivo": "E09_Renta_De_5_Categoria_De_Punta_A_Punta.mp4",
-  "duracion": "1:47"
+  "duracion": "3:49"
  },
  {
   "id": "E10",
@@ -119,19 +117,20 @@
    "17",
    "18"
   ],
-  "caso": "NOMINA",
+  "caso": "Lucía (recorrido), NOMINA y FERIADOS",
   "archivo": "E10_Vacaciones_Y_Feriados.mp4",
-  "duracion": "2:11"
+  "duracion": "3:03"
  },
  {
   "id": "E11",
   "titulo": "Asistencias: tardanzas, faltas y feriados",
   "capitulos": [
-   "19"
+   "19",
+   "18"
   ],
-  "caso": "ASISTENCIA",
+  "caso": "ASISTENCIA y FERIADOS",
   "archivo": "E11_Asistencias_Tardanzas_Faltas_Y_Feriados.mp4",
-  "duracion": "2:09"
+  "duracion": "2:27"
  },
  {
   "id": "E12",
@@ -141,17 +140,17 @@
   ],
   "caso": "AUMENTO",
   "archivo": "E12_Cambios_De_Contrato_Dentro_Del_Mes.mp4",
-  "duracion": "1:24"
+  "duracion": "2:00"
  },
  {
   "id": "E13",
-  "titulo": "Licencias sin goce y permisos por horas",
+  "titulo": "Licencias sin goce, permisos y meses sin remuneración",
   "capitulos": [
    "22"
   ],
-  "caso": "AUMENTO y escenario del manual",
-  "archivo": "E13_Licencias_Sin_Goce_Y_Permisos_Por_Horas.mp4",
-  "duracion": "1:28"
+  "caso": "AUMENTO",
+  "archivo": "E13_Licencias_Sin_Goce_Permisos_Y_Meses_Sin_Remuneracion.mp4",
+  "duracion": "2:25"
  },
  {
   "id": "E14",
@@ -161,7 +160,7 @@
   ],
   "caso": "SUBSIDIOS",
   "archivo": "E14_Subsidios_Descanso_Medico_Y_Maternidad.mp4",
-  "duracion": "1:30"
+  "duracion": "3:32"
  },
  {
   "id": "E15",
@@ -170,9 +169,9 @@
    "14",
    "15"
   ],
-  "caso": "NOMINA y BANCOS",
+  "caso": "Lucía (recorrido), COMPUTABLE, EMPRESA_COMERCIO y EMPRESA_PEQUENA",
   "archivo": "E15_Gratificaciones_Y_Cts.mp4",
-  "duracion": "1:40"
+  "duracion": "3:13"
  },
  {
   "id": "E16",
@@ -180,30 +179,30 @@
   "capitulos": [
    "16"
   ],
-  "caso": "NOMINA, CESE e INDEMNIZACION",
+  "caso": "NOMINA, INDEMNIZACION y DOCUMENTOS_CESE",
   "archivo": "E16_Liquidacion_Por_Cese_E_Indemnizacion.mp4",
-  "duracion": "1:45"
+  "duracion": "3:24"
  },
  {
   "id": "E17",
-  "titulo": "Microempresa",
+  "titulo": "Micro y pequeña empresa",
   "capitulos": [
    "24"
   ],
-  "caso": "MICRO",
-  "archivo": "E17_Microempresa.mp4",
-  "duracion": "1:11"
+  "caso": "EMPRESA_PEQUENA y EMPRESA_MICRO",
+  "archivo": "E17_Micro_Y_Pequena_Empresa.mp4",
+  "duracion": "2:38"
  },
  {
   "id": "E18",
-  "titulo": "Seguro Vida Ley",
+  "titulo": "Seguro Vida Ley y SCTR",
   "capitulos": [
    "6",
    "12"
   ],
-  "caso": "VIDALEY",
-  "archivo": "E18_Seguro_Vida_Ley.mp4",
-  "duracion": "1:15"
+  "caso": "VIDALEY y SCTR",
+  "archivo": "E18_Seguro_Vida_Ley_Y_Sctr.mp4",
+  "duracion": "3:07"
  },
  {
   "id": "E19",
@@ -212,9 +211,9 @@
    "27",
    "15"
   ],
-  "caso": "BANCOS",
+  "caso": "BANCOS y ADICIONALES",
   "archivo": "E19_Pago_A_Bancos_Bcp_Interbank_Y_Scotiabank.mp4",
-  "duracion": "1:37"
+  "duracion": "2:08"
  },
  {
   "id": "E20",
@@ -222,9 +221,9 @@
   "capitulos": [
    "28"
   ],
-  "caso": "escenario del manual (lote de noviembre)",
+  "caso": "recorrido de FM (Héctor y Lucía), DOCUMENTOS_CESE y UTILIDADES_REPARTO",
   "archivo": "E20_Pago_De_La_Planilla_Y_Entrega_De_Boletas.mp4",
-  "duracion": "1:19"
+  "duracion": "3:08"
  },
  {
   "id": "E21",
@@ -232,9 +231,9 @@
   "capitulos": [
    "27"
   ],
-  "caso": "PLAME",
+  "caso": "EMPRESA_CONSULTORA, PLAME, NOMINA",
   "archivo": "E21_Plame_Afpnet_Y_Planilla_De_Sueldos.mp4",
-  "duracion": "1:00"
+  "duracion": "2:54"
  },
  {
   "id": "E22",
@@ -242,9 +241,9 @@
   "capitulos": [
    "20"
   ],
-  "caso": "UTILIDADES",
+  "caso": "EMPRESA_COMERCIO, EMPRESA_PEQUENA y UTILIDADES_REPARTO",
   "archivo": "E22_Horas_Extra_Otras_Entradas_Y_Utilidades.mp4",
-  "duracion": "1:29"
+  "duracion": "2:58"
  },
  {
   "id": "E23",
@@ -254,7 +253,7 @@
   ],
   "caso": "TREGISTRO",
   "archivo": "E23_T_Registro_I_Altas_Y_Bajas.mp4",
-  "duracion": "1:17"
+  "duracion": "1:58"
  },
  {
   "id": "E24",
@@ -262,9 +261,9 @@
   "capitulos": [
    "29"
   ],
-  "caso": "TREGISTRO",
+  "caso": "TREGISTRO y EMPRESA_CONSULTORA",
   "archivo": "E24_T_Registro_Ii_Modificaciones_Y_Derechohabientes.mp4",
-  "duracion": "1:18"
+  "duracion": "1:40"
  },
  {
   "id": "E25",
@@ -274,17 +273,74 @@
   ],
   "caso": "PLAME-RXH",
   "archivo": "E25_Recibos_Por_Honorarios_Y_Plame_De_4.mp4",
-  "duracion": "1:08"
+  "duracion": "1:35"
  },
  {
   "id": "E26",
   "titulo": "Cierre mensual y anual",
   "capitulos": [
-   "32",
+   "34",
    "Anexo E"
   ],
   "caso": null,
   "archivo": "E26_Cierre_Mensual_Y_Anual.mp4",
-  "duracion": "1:18"
+  "duracion": "1:45"
+ },
+ {
+  "id": "E27",
+  "titulo": "El practicante: modalidades formativas",
+  "capitulos": [
+   "31"
+  ],
+  "caso": "EMPRESA_CONSULTORA",
+  "archivo": "E27_El_Practicante_Modalidades_Formativas.mp4",
+  "duracion": "1:47"
+ },
+ {
+  "id": "E28",
+  "titulo": "SENATI",
+  "capitulos": [
+   "32"
+  ],
+  "caso": "EMPRESA_INDUSTRIA",
+  "archivo": "E28_Senati.mp4",
+  "duracion": "1:13"
+ },
+ {
+  "id": "E29",
+  "titulo": "El no domiciliado y el convenio para evitar la doble tributación",
+  "capitulos": [
+   "13",
+   "8",
+   "27",
+   "29"
+  ],
+  "caso": "EMPRESA_CONSULTORA",
+  "archivo": "E29_El_No_Domiciliado_Y_El_Convenio_Para_Evitar_La_Doble_Tributacion.mp4",
+  "duracion": "2:48"
+ },
+ {
+  "id": "E30",
+  "titulo": "Una empresa en un mes",
+  "capitulos": [
+   "2",
+   "Anexo E",
+   "13",
+   "27",
+   "31"
+  ],
+  "caso": "EMPRESA_CONSULTORA",
+  "archivo": "E30_Una_Empresa_En_Un_Mes.mp4",
+  "duracion": "2:38"
+ },
+ {
+  "id": "E31",
+  "titulo": "Provisiones de gratificación, CTS y vacaciones",
+  "capitulos": [
+   "7"
+  ],
+  "caso": "PROVISIONES, PROVISIONES_BOLETA y PROVISIONES_BENEFICIO",
+  "archivo": "E31_Provisiones_De_Gratificacion_Cts_Y_Vacaciones.mp4",
+  "duracion": "3:08"
  }
 ]

@@ -87,38 +87,50 @@ Si una boleta validada tiene un error, no se edita:
 se rectifica con el botón Rectificar.
 
 23
-00:01:29,020 --> 00:01:34,583
-La rectificativa copia las líneas de la original y resta en el PLAME, AFPnet,
+00:01:29,020 --> 00:01:34,440
+Se crea la rectificativa, validada y enlazada a la boleta rectificada, con las
 
 24
-00:01:34,583 --> 00:01:37,256
-bancos, la planilla y las utilidades.
+00:01:34,440 --> 00:01:35,412
+mismas líneas:
 
 25
-00:01:37,256 --> 00:01:42,674
-Se concilia con la original, conserva su régimen pensionario y revierte sus
+00:01:35,412 --> 00:01:38,469
+S/ 3 000 de remuneración y S/ 2 610 de neto.
 
 26
-00:01:42,674 --> 00:01:43,541
-provisiones.
+00:01:38,469 --> 00:01:42,916
+Resta en el PLAME, AFPnet, bancos, la planilla y las utilidades;
 
 27
-00:01:43,541 --> 00:01:49,176
-En el ejemplo del manual, una mensual validada con S/ 2 500 se rectifica, y la
+00:01:42,916 --> 00:01:48,127
+se concilia con la original, conserva su régimen pensionario y revierte sus
 
 28
-00:01:49,176 --> 00:01:54,883
-boleta nueva de S/ 2 700 queda declarada una sola vez, con un neto de S/ 2 349.
+00:01:48,127 --> 00:01:48,961
+provisiones.
 
 29
-00:01:56,500 --> 00:02:01,076
-Validar en orden y rectificar en lugar de editar mantiene los acumulados y los
+00:01:50,500 --> 00:01:55,757
+Después se corrige el dato y se calcula la boleta nueva del mismo periodo.
 
 30
-00:02:01,076 --> 00:02:02,191
-reportes correctos.
+00:01:55,757 --> 00:02:01,297
+En el ejemplo del manual, una mensual validada con S/ 2 500 se rectifica, y la
 
 31
-00:02:02,191 --> 00:02:05,241
+00:02:01,297 --> 00:02:06,909
+boleta nueva de S/ 2 700 queda declarada una sola vez, con un neto de S/ 2 349.
+
+32
+00:02:08,380 --> 00:02:12,956
+Validar en orden y rectificar en lugar de editar mantiene los acumulados y los
+
+33
+00:02:12,956 --> 00:02:14,071
+reportes correctos.
+
+34
+00:02:14,071 --> 00:02:17,121
 Está en los capítulos once y veinticinco del manual.
 

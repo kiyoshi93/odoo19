@@ -57,7 +57,7 @@ if (capitulos.includes('anexo_e')) {
     h.p('La serie acompaña al manual con las **mismas cifras y capturas**. Cada episodio abre con la versión de los módulos y el capítulo que cubre, y cierra con la cifra clave. Narración en español con subtítulos; voz del equipo de soporte de SYSTION.'),
     h.tabla(['Ep.', 'Título', 'Cap.', 'Caso', 'Dur.', 'Archivo'],
       EPISODIOS.map((e) => [e.id, e.titulo, e.capitulos.join(', '), e.caso || '—', e.duracion, e.archivo]), [620, 2500, 900, 1500, 680, 3438]),
-    h.nota('Los archivos se entregan en la carpeta «Videos_Nomina_PE_v3_SYSTION», cada uno con su archivo de subtítulos (.srt) del mismo nombre.', 'nota'),
+    h.nota('Los archivos se entregan en la carpeta «Videos_Nomina_PE_v3_SYSTION» (con música de fondo; también sin música), cada uno con su archivo de subtítulos (.srt) del mismo nombre.', 'nota'),
   );
 }
 
