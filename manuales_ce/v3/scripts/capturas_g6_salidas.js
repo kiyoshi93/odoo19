@@ -35,6 +35,7 @@ async function fechaCalendario(p, raiz, campo, valor) {
   if (await p.locator('.o_datetime_picker:visible').count()) { await raiz.locator('.modal-title, .o_form_label').first().click().catch(() => {}); await p.waitForTimeout(400); }
 }
 async function poner(p, raiz, campo, tipo, valor) {
+  if (process.env.DEPURAR) console.log('  poner', campo, valor, await p.locator('.modal').count());
   const w = raiz.locator(`.o_field_widget[name="${campo}"]`).first();
   if (tipo === 'sel') {
     if (await w.locator('select').count()) await w.locator('select').selectOption({ label: valor });
