@@ -1,0 +1,124 @@
+1
+00:00:00,500 --> 00:00:05,492
+Este episodio muestra cómo procesar el mes con un lote, en qué orden se validan las
+
+2
+00:00:05,492 --> 00:00:08,440
+boletas y cómo se corrige una boleta ya validada.
+
+3
+00:00:09,900 --> 00:00:12,588
+Los lotes están en Procesamientos de nóminas.
+
+4
+00:00:12,588 --> 00:00:17,485
+Cada lote agrupa las boletas de un periodo, nace con el diario Planillas y solo se
+
+5
+00:00:17,485 --> 00:00:18,560
+ve en su compañía.
+
+6
+00:00:20,020 --> 00:00:25,140
+Con Generar nóminas se eligen los trabajadores y el lote crea y calcula sus boletas.
+
+7
+00:00:25,140 --> 00:00:27,273
+Marcar como hecho las valida todas.
+
+8
+00:00:27,273 --> 00:00:32,271
+Un lote no vuelve a calcular las boletas ya validadas, y desde aquí se registra el
+
+9
+00:00:32,271 --> 00:00:34,039
+pago y se envían las boletas.
+
+10
+00:00:35,500 --> 00:00:38,279
+Los acumulados solo leen boletas validadas.
+
+11
+00:00:38,279 --> 00:00:43,255
+Por eso el lote valida primero la gratificación, las vacaciones, la CTS y las
+
+12
+00:00:43,255 --> 00:00:44,677
+planillas adicionales;
+
+13
+00:00:44,677 --> 00:00:46,939
+después la mensual y las semanales;
+
+14
+00:00:46,939 --> 00:00:48,878
+y al final, las liquidaciones.
+
+15
+00:00:48,878 --> 00:00:53,595
+Lo hace solo, también si se validan varias boletas juntas desde la lista.
+
+16
+00:00:55,060 --> 00:00:59,497
+Las comisiones pueden ir en su propia planilla adicional.
+
+17
+00:00:59,497 --> 00:01:05,957
+En el caso ADICIONALES, la mensual de S/ 3 000 paga ONP de S/ 390, y la planilla de
+
+18
+00:01:05,957 --> 00:01:08,448
+comisiones de S/ 500 paga S/ 65:
+
+19
+00:01:08,448 --> 00:01:11,484
+la base mínima y los topes son del mes.
+
+20
+00:01:11,484 --> 00:01:15,142
+El trabajador recibe un solo abono de S/ 3 045.
+
+21
+00:01:16,620 --> 00:01:20,051
+Si una boleta validada tiene un error, no se edita:
+
+22
+00:01:20,051 --> 00:01:22,540
+se rectifica con el botón Rectificar.
+
+23
+00:01:23,940 --> 00:01:29,503
+La rectificativa copia las líneas de la original y resta en el PLAME, AFPnet,
+
+24
+00:01:29,503 --> 00:01:32,176
+bancos, la planilla y las utilidades.
+
+25
+00:01:32,176 --> 00:01:37,594
+Se concilia con la original, conserva su régimen pensionario y revierte sus
+
+26
+00:01:37,594 --> 00:01:38,461
+provisiones.
+
+27
+00:01:38,461 --> 00:01:44,096
+En el ejemplo del manual, una mensual validada con S/ 2 500 se rectifica, y la
+
+28
+00:01:44,096 --> 00:01:49,803
+boleta nueva de S/ 2 700 queda declarada una sola vez, con un neto de S/ 2 349.
+
+29
+00:01:51,420 --> 00:01:55,996
+Validar en orden y rectificar en lugar de editar mantiene los acumulados y los
+
+30
+00:01:55,996 --> 00:01:57,111
+reportes correctos.
+
+31
+00:01:57,111 --> 00:02:00,161
+Está en los capítulos once y veinticinco del manual.
+
